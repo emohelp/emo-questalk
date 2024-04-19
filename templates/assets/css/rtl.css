@@ -1,0 +1,49 @@
+.rtl .emqa-search input {
+	background-position: 15px center !important;
+	padding-left: 40px;
+}
+
+.rtl .emqa-question-filter .emqa-sort-by {
+	float: left;
+}
+
+.rtl .emqa-questions-list .emqa-question-item {
+	padding: 15px 80px 15px 180px;
+}
+
+.rtl .emqa-questions-list .emqa-question-item .emqa-question-stats {
+	right: auto;
+	left: 10px;
+}
+
+.rtl .emqa-questions-list .emqa-question-item .avatar {
+	left: auto;
+	right: 15px;
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+.rtl .emqa-question-item .emqa-status {
+	margin-right: 0;
+	margin-left: 10px;
+	left: 0;
+	right: 15px;
+}
+
+.rtl.single-emqa-question .emqa-question-item .avatar,
+.rtl.single-emqa-question .emqa-answer-item .avatar {
+	float: right;
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+.rtl .emqa-question-item .emqa-question-actions,
+.rtl .emqa-answer-item .emqa-answer-actions,
+.rtl .emqa-answer-item .emqa-comment-actions {
+	float: left;
+}
+
+.rtl.single-emqa-question .emqa-question-item .emqa-staff,
+.rtl.single-emqa-question .emqa-answer-item .emqa-staff {
+	margin: 0 10px 0 0;
+}
