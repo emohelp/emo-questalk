@@ -187,7 +187,7 @@ class EMQA_Admin_Welcome {
 			<?php $this->tabs(); ?>
 
 			<div class="changelog">
-				<p><?php echo $this->parse_readme(); ?></p>
+				<p><?php echo $this->parse_changelog(); ?></p>
 			</div>
 		</div>
 		<?php
@@ -217,23 +217,22 @@ class EMQA_Admin_Welcome {
 		<?php
 	}
 
-	public function parse_readme() {
-		$file = file_exists( EMQA_DIR . 'readme.txt' ) ? EMQA_DIR . 'readme.txt' : false;
-
+	public function parse_changelog() {
+		$file = file_exists( EMQA_DIR . 'changelog.txt' ) ? EMQA_DIR . 'changelog.txt' : false;
+	
 		if ( !$file ) {
-			$readme = '<p>' . __( 'No valid changelog was found.', 'em-question-answer' ) . '</p>';
+			$changelog = '<p>' . __( 'No valid changelog was found.', 'em-question-answer' ) . '</p>';
 		} else {
-			$readme = wp_remote_get( $file );
-			$readme = nl2br( esc_html( $readme ) );
-			$readme = explode( '== Changelog ==', $readme );
-			$readme = end( $readme );
+			$changelog_content = file_get_contents( $file );
+			$changelog = nl2br( esc_html( $changelog_content ) );
 		}
-
-		return $readme;
+	
+		return $changelog;
 	}
+	
 
 	public function get_contributors() {
-		$response = wp_remote_get( 'https://api.github.com/repos/designwall/dw-question-answer/contributors?per_page=999', array( 'sslverify' => false ) );
+		$response = wp_remote_get( 'https://api.github.com/repos/emohelp/emo-questlak/contributors?per_page=999', array( 'sslverify' => false ) );
 
 		if ( is_wp_error( $response ) || 200 !== wp_remote_retrieve_response_code( $response ) ) {
 			return array();
