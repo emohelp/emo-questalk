@@ -16,6 +16,10 @@
 	</div>
 	<div class="emqa-question-meta">
 		<?php $user_id = get_post_field( 'post_author', get_the_ID() ) ? get_post_field( 'post_author', get_the_ID() ) : false ?>
+		<?php 
+			$post_id = get_the_ID();
+			$post_time_created = get_post_field( 'post_date', $post_id );
+		?>
 		<?php printf(
     // translators: %1$s is replaced with the author link, %2$s is replaced with the avatar image, %3$s is replaced with the author name, %4$s is replaced with the user badge, %5$s is replaced with the time difference
     ( '<span><a href="%1$s">%2$s%3$s</a> %4$s asked %5$s '.__('ago', 'em-question-answer').'</span>'),
@@ -23,7 +27,7 @@
     get_avatar( $user_id, 48 ),
     get_the_author(),
     emqa_print_user_badge( $user_id ),
-    human_time_diff( get_post_time( 'U', true ) )
+    $time_diff_created = human_time_diff( strtotime( $post_time_created ) )
 	); ?>
 
 		<span class="emqa-question-actions"><?php emqa_question_button_action() ?></span>
@@ -40,7 +44,7 @@
 					<select id="emqa-question-status" data-nonce="<?php echo wp_create_nonce( '_emqa_update_privacy_nonce' ) ?>" data-post="<?php the_ID(); ?>">
 						<optgroup label="<?php _e( 'Status', 'em-question-answer' ); ?>">
 							<option <?php selected( emqa_question_status(), 'open' ) ?> value="open"><?php _e( 'Open', 'em-question-answer' ) ?></option>
-							<option <?php selected( emqa_question_status(), 'closed' ) ?> value="close"><?php _e( 'Closed', 'em-question-answer' ) ?></option>
+							<option <?php selected( emqa_question_status(), 'closed' ) ?> value="closed"><?php _e( 'Closed', 'em-question-answer' ) ?></option>
 							<option <?php selected( emqa_question_status(), 'resolved' ) ?> value="resolved"><?php _e( 'Resolved', 'em-question-answer' ) ?></option>
 						</optgroup>
 					</select>
