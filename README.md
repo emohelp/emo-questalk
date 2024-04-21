@@ -9,7 +9,7 @@ More information can be found at [emohelp.com](https://www.emohelp.com/wordpress
 For detailed setup instructions, visit the official [Documentation](https://emohelp.gitbook.io/emo-questalk-pro) page.
 
 1. You can clone the GitHub repository: `https://github.com/emohelp/emo-questalk.git`
-2. Or download it directly as a ZIP file: `https://github.com/emohelp/emo-questalk/archive/master.zip`
+2. Or download it directly as a ZIP file: `https://github.com/emohelp/emo-questalk/archive/refs/heads/main.zip`
 
 This will download the latest developer copy of Emo Questalk.
 
