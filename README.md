@@ -1,5 +1,4 @@
 # [Emo Questalk](https://www.emohelp.com/wordpress/plugins/emo-questalk/) #
-[![Build Status](https://secure.travis-ci.org/emohelp/dw-question-answer.png?branch=master)](https://travis-ci.org/designwall/dw-question-answer)
 
 A WordPress plugin to build a complete Question & Answer system on WordPress like Quora and Stack Overflow. Packed with powerful features, yet easy to use.
 
