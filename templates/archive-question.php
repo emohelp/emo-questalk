@@ -2,8 +2,8 @@
 /**
  * The template for displaying question archive pages
  *
- * @package em Question & Answer
- * @since em Question & Answer 1.4.3
+ * @package EMO Questalk
+ * @since EMO Questalk 1.0.0
  */
 ?>
 <div class="emqa-questions-archive">
@@ -25,7 +25,7 @@
 		<div class="emqa-questions-footer">
 			<?php emqa_question_paginate_link() ?>
 			<?php if ( emqa_current_user_can( 'post_question' ) ) : ?>
-				<div class="emqa-ask-question"><a href="<?php echo emqa_get_ask_link(); ?>"><?php _e( 'Ask Question', 'em-question-answer' ); ?></a></div>
+				<div class="emqa-ask-question"><a href="<?php echo emqa_get_ask_link(); ?>"><?php _e( 'Ask Question', 'emqa' ); ?></a></div>
 			<?php endif; ?>
 		</div>
 

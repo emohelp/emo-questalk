@@ -2,8 +2,8 @@
 /**
  * The template for displaying answers
  *
- * @package em Question & Answer
- * @since em Question & Answer 1.4.3
+ * @package EMO Questalk
+ * @since EMO Questalk 1.0.0
  */
 ?>
 <div class="emqa-answers">
@@ -11,7 +11,7 @@
 	<?php if ( emqa_has_answers() ) : ?>
 	<div class="emqa-answers-title"><?php printf(
 		// translators: %s is replaced with the version number
-		__( '%s Answers', 'em-question-answer' ), emqa_question_answers_count( get_the_ID() ) ) ?></div>
+		__( '%s Answers', 'emqa' ), emqa_question_answers_count( get_the_ID() ) ) ?></div>
 	<div class="emqa-answers-list">
 		<?php do_action( 'emqa_before_answers_list' ) ?>
 			<?php while ( emqa_has_answers() ) : emqa_the_answers(); ?>

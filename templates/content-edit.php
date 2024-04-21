@@ -2,8 +2,8 @@
 /**
  * The template for editing question and answer
  *
- * @package em Question & Answer
- * @since em Question & Answer 1.4.3
+ * @package EMO Questalk
+ * @since EMO Questalk 1.0.0
  */
 ?>
 
@@ -18,7 +18,7 @@ $type = $comment_id ? 'comment' : ( 'emqa-question' == get_post_type( $edit_id )
 	<?php if ( 'emqa-question' == get_post_type( $edit_id ) ) : ?>
 	<?php $title = emqa_question_get_edit_title( $edit_id ) ?>
 	<p>
-		<label for="question_title"><?php _e( 'Title', 'em-question-answer' ) ?></label>
+		<label for="question_title"><?php _e( 'Title', 'emqa' ) ?></label>
 		<input type="text" name="question_title" value="<?php echo $title ?>" tabindex="1">
 	</p>
 	<?php endif; ?>
@@ -26,14 +26,14 @@ $type = $comment_id ? 'comment' : ( 'emqa-question' == get_post_type( $edit_id )
 	<p><?php emqa_init_tinymce_editor( array( 'content' => $content, 'textarea_name' => $type . '_content', 'wpautop' => true ) ) ?></p>
 	<?php if ( 'emqa-question' == get_post_type( $edit_id ) ) : ?>
 	<p>
-		<label for="question-category"><?php _e( 'Category', 'em-question-answer' ) ?></label>
+		<label for="question-category"><?php _e( 'Category', 'emqa' ) ?></label>
 		<?php $category = wp_get_post_terms( $edit_id, 'emqa-question_category' ); ?>
 		<?php
 			wp_dropdown_categories( array(
 				'name'          => 'question-category',
 				'id'            => 'question-category',
 				'taxonomy'      => 'emqa-question_category',
-				'show_option_none' => __( 'Select question category', 'em-question-answer' ),
+				'show_option_none' => __( 'Select question category', 'emqa' ),
 				'hide_empty'    => 0,
 				'quicktags'     => array( 'buttons' => 'strong,em,link,block,del,ins,img,ul,ol,li,code,spell,close' ),
 				'selected'      => isset( $category[0]->term_id ) ? $category[0]->term_id : false,
@@ -41,7 +41,7 @@ $type = $comment_id ? 'comment' : ( 'emqa-question' == get_post_type( $edit_id )
 		?>
 	</p>
 	<p>
-		<label for="question-tag"><?php _e( 'Tag', 'em-question-answer' ) ?></label>
+		<label for="question-tag"><?php _e( 'Tag', 'emqa' ) ?></label>
 		<input type="text" class="" name="question-tag" value="<?php emqa_get_tag_list( get_the_ID(), true ); ?>" >
 	</p>
 	<?php endif; ?>
@@ -49,6 +49,6 @@ $type = $comment_id ? 'comment' : ( 'emqa-question' == get_post_type( $edit_id )
 	<?php do_action( 'emqa_before_edit_submit_button' ) ?>
 	<input type="hidden" name="<?php echo $type ?>_id" value="<?php echo $edit_id ?>">
 	<?php wp_nonce_field( '_emqa_edit_' . $type ) ?>
-	<input type="submit" name="emqa-edit-<?php echo $type ?>-submit" value="<?php _e( 'Save Changes', 'em-question-answer' ) ?>" >
+	<input type="submit" name="emqa-edit-<?php echo $type ?>-submit" value="<?php _e( 'Save Changes', 'emqa' ) ?>" >
 </form>
 <?php do_action( 'emqa_after_edit_form' ); ?>

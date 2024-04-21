@@ -2,8 +2,8 @@
 /**
  * The template for displaying comments form
  *
- * @package em Question & Answer
- * @since em Question & Answer 1.4.3
+ * @package EMO Questalk
+ * @since EMO Questalk 1.0.0
  */
 ?>
 
@@ -15,7 +15,7 @@
 		<?php if ( have_comments() ) : ?>
 		<?php wp_list_comments( array( 'callback' => 'emqa_question_comment_callback' ) ); ?>
 		<?php endif; ?>
-		<?php do_action( 'dqwa_after_comments_list' ); ?>
+		<?php do_action( 'emqa_after_comments_list' ); ?>
 	</div>
 	<?php if ( ! emqa_is_closed( get_the_ID() ) && emqa_current_user_can( 'post_comment' ) ) : ?>
 		<?php
