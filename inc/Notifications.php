@@ -50,7 +50,7 @@ class EMQA_Notifications {
 
 		$subject = get_option( 'emqa_subscrible_new_question_email_subject' );
 		if ( ! $subject ) {
-			$subject = __( 'A new question was posted on {site_name}', 'em-question-answer' );
+			$subject = __( 'A new question was posted on {site_name}', 'emqa' );
 		}
 		$subject = str_replace( '{site_name}', get_bloginfo( 'name' ), $subject );
 		$subject = str_replace( '{question_title}', $question->post_title, $subject );
@@ -124,7 +124,7 @@ class EMQA_Notifications {
 		if ( $answer_is_anonymous ) {
 			$user_answer_id = 0;
 			$user_answer_display_name = get_post_meta( $answer_id, '_emqa_anonymous_name', true );
-			$user_answer_display_name = $user_answer_display_name ? sanitize_text_field( $user_answer_display_name ) : __( 'Anonymous', 'em-question-answer' );
+			$user_answer_display_name = $user_answer_display_name ? sanitize_text_field( $user_answer_display_name ) : __( 'Anonymous', 'emqa' );
 			$user_answer_email = get_post_meta( $answer_id, '_emqa_anonymous_email', true );
 			$user_answer_email = $user_answer_email ? sanitize_email( $user_answer_email ) : false;
 		} else {
@@ -144,7 +144,7 @@ class EMQA_Notifications {
 		if ( $question_is_anonymous ) {
 			$user_question_id = 0;
 			$user_question_display_name = get_post_meta( $question_id, '_emqa_anonymous_name', true );
-			$user_question_display_name = $user_question_display_name ? sanitize_text_field( $user_question_display_name ) : __( 'Anonymous', 'em-question-answer' );
+			$user_question_display_name = $user_question_display_name ? sanitize_text_field( $user_question_display_name ) : __( 'Anonymous', 'emqa' );
 			$user_question_email = get_post_meta( $question_id, '_emqa_anonymous_email', true );
 			$user_question_email = $user_question_email ? sanitize_email( $user_question_email ) : false;
 		} else {
@@ -181,7 +181,7 @@ class EMQA_Notifications {
 		// start send to followers
 		$answer_notify_enabled = get_option( 'emqa_subscrible_enable_new_answer_followers_notification', 1 );
 		if ( $answer_notify_enabled && !empty( $followers_email ) && is_array( $followers_email ) && 'private' !== get_post_status( $answer_id ) ) {
-			$subject = get_option( 'emqa_subscrible_new_answer_followers_email_subject', __( '[{site_name}] You have a new answer for your followed question', 'em-question-answer' ) );
+			$subject = get_option( 'emqa_subscrible_new_answer_followers_email_subject', __( '[{site_name}] You have a new answer for your followed question', 'emqa' ) );
 			$subject = str_replace( '{site_name}', esc_html( $site_name ), $subject );
 			$subject = str_replace( '{question_title}', $question_title, $subject );
 			$subject = str_replace( '{answer_author}', esc_html( $user_answer_display_name ), $subject );
@@ -233,7 +233,7 @@ class EMQA_Notifications {
 		// start send to question author
 		$answer_notify_for_question_enabled = get_option( 'emqa_subscrible_enable_new_answer_notification', 1 );
 		if ( $user_question_email && $answer_notify_for_question_enabled && absint( $user_answer_id ) !== absint( $user_question_id ) ) {
-			$subject = get_option( 'emqa_subscrible_new_answer_email_subject', __( '[{site_name}] A new answer for "{question_title}" was posted on {site_name}', 'em-question-answer' ) );
+			$subject = get_option( 'emqa_subscrible_new_answer_email_subject', __( '[{site_name}] A new answer for "{question_title}" was posted on {site_name}', 'emqa' ) );
 			$subject = str_replace( '{site_name}', esc_html( $site_name ), $subject );
 			$subject = str_replace( '{question_title}', $question_title, $subject );
 			$subject = str_replace( '{question_id}', absint( $question_id ), $subject );
@@ -320,12 +320,12 @@ class EMQA_Notifications {
 			
 			if ( $parent == 'emqa-question' ) {
 				$message = emqa_get_mail_template( 'emqa_subscrible_new_comment_question_email', 'new-comment-question' );    
-				$subject = get_option( 'emqa_subscrible_new_comment_question_email_subject',__( '[{site_name}] You have a new comment for question {question_title}', 'em-question-answer' ) );
+				$subject = get_option( 'emqa_subscrible_new_comment_question_email_subject',__( '[{site_name}] You have a new comment for question {question_title}', 'emqa' ) );
 				$message = str_replace( '{question_author}', get_the_author_meta( 'display_name', $post_parent->post_author ), $message );
 				$question = $post_parent;
 			} else {
 				$message = emqa_get_mail_template( 'emqa_subscrible_new_comment_answer_email', 'new-comment-answer' );
-				$subject = get_option( 'emqa_subscrible_new_comment_answer_email_subject',__( '[{site_name}] You have a new comment for answer', 'em-question-answer' ) );
+				$subject = get_option( 'emqa_subscrible_new_comment_answer_email_subject',__( '[{site_name}] You have a new comment for answer', 'emqa' ) );
 				$message = str_replace( '{answer_author}', get_the_author_meta( 'display_name', $post_parent->post_author ), $message );
 				$question_id = emqa_get_post_parent_id( $post_parent->ID );
 				$question = get_post( $question_id );
@@ -366,12 +366,12 @@ class EMQA_Notifications {
 
 				if ( $parent == 'emqa-question' ) {
 					$message_to_follower = emqa_get_mail_template( 'emqa_subscrible_new_comment_question_followers_email', 'new-comment-question' );    
-					$follow_subject = get_option( 'emqa_subscrible_new_comment_question_followers_email_subject',__( '[{site_name}] You have a new comment for question {question_title}', 'em-question-answer' )  );
+					$follow_subject = get_option( 'emqa_subscrible_new_comment_question_followers_email_subject',__( '[{site_name}] You have a new comment for question {question_title}', 'emqa' )  );
 					$message_to_follower = str_replace( '{question_author}', get_the_author_meta( 'display_name', $post_parent->post_author ), $message_to_follower );
 					$question = $post_parent;
 				} else {
 					$message_to_follower = emqa_get_mail_template( 'emqa_subscrible_new_comment_answer_followers_email', 'new-comment-answer' );
-					$follow_subject = get_option( 'emqa_subscrible_new_comment_answer_followers_email_subject',__( '[{site_name}] You have a new comment for answer', 'em-question-answer' )  );
+					$follow_subject = get_option( 'emqa_subscrible_new_comment_answer_followers_email_subject',__( '[{site_name}] You have a new comment for answer', 'emqa' )  );
 					$message_to_follower = str_replace( '{answer_author}', get_the_author_meta( 'display_name', $post_parent->post_author ), $message_to_follower );
 				}
 				$follow_subject = str_replace( '{site_name}', get_bloginfo( 'name' ), $follow_subject );

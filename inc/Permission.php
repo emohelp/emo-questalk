@@ -217,7 +217,7 @@ class EMQA_Permission {
             wp_redirect(admin_url('edit.php?post_type=emqa-question&page=emqa-settings&tab=permission'));
             exit;
         } else {
-            wp_die(__('Security check failed. Please try again.', 'em-question-answer') );
+            wp_die(__('Security check failed. Please try again.', 'emqa') );
         }
     }
 	}
@@ -337,7 +337,7 @@ class EMQA_Permission {
 	public function reset_permission_default() {
 		global $emqa;
 		if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), '_emqa_reset_permission' ) ) {
-			wp_send_json_error( array( 'message' => __( 'Are you cheating huh?', 'em-question-answer' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Are you cheating huh?', 'emqa' ) ) );
 		}
 		if ( isset( $_POST['type'] ) ) {
 			$old = $emqa->permission->perms;

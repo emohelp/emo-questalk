@@ -16,12 +16,12 @@ function emqa_breadcrumb() {
 		if ( ! is_singular( 'emqa-question' ) ) {
 			$term     = get_query_var( 'emqa-question_category' ) ? get_query_var( 'emqa-question_category' ) : ( get_query_var( 'emqa-question_tag' ) ? get_query_var( 'emqa-question_tag' ) : false );
 			$term     = get_term_by( 'slug', $term, get_query_var( 'taxonomy' ) );
-			$tax_name = 'emqa-question_tag' == get_query_var( 'taxonomy' ) ? __( 'Tag', 'em-question-answer' ) : __( 'Category', 'em-question-answer' );
+			$tax_name = 'emqa-question_tag' == get_query_var( 'taxonomy' ) ? __( 'Tag', 'emqa' ) : __( 'Category', 'emqa' );
 		} else {
 			$term = wp_get_post_terms( get_the_ID(), 'emqa-question_category' );
 			if ( $term ) {
 				$term     = $term[0];
-				$tax_name = __( 'Category', 'em-question-answer' );
+				$tax_name = __( 'Category', 'emqa' );
 			}
 		}
 		if ( is_singular( 'emqa-question' ) || $search || $author || $term ) {
@@ -40,11 +40,11 @@ function emqa_breadcrumb() {
 		}
 		if ( $search ) {
 			$output .= '<span class="emqa-sep"> &rsaquo; </span>';
-			$output .= sprintf( '<span class="emqa-current">%s "%s"</span>', __( 'Showing search results for', 'em-question-answer' ), htmlspecialchars( $search ) );
+			$output .= sprintf( '<span class="emqa-current">%s "%s"</span>', __( 'Showing search results for', 'emqa' ), htmlspecialchars( $search ) );
 		}
 		if ( $author ) {
 			$output .= '<span class="emqa-sep"> &rsaquo; </span>';
-			$output .= sprintf( '<span class="emqa-current">%s "%s"</span>', __( 'Author', 'em-question-answer' ), htmlspecialchars( $author ) );
+			$output .= sprintf( '<span class="emqa-current">%s "%s"</span>', __( 'Author', 'emqa' ), htmlspecialchars( $author ) );
 		}
 		if ( is_singular( 'emqa-question' ) ) {
 			$output .= '<span class="emqa-sep"> &rsaquo; </span>';
@@ -53,7 +53,7 @@ function emqa_breadcrumb() {
 			} else {
 				$output .= '<a href="' . get_permalink() . '">' . get_the_title() . '</a>';
 				$output .= '<span class="emqa-sep"> &rsaquo; </span>';
-				$output .= '<span class="emqa-current">' . __( 'Edit', 'em-question-answer' ) . '</span>';
+				$output .= '<span class="emqa-current">' . __( 'Edit', 'emqa' ) . '</span>';
 			}
 		}
 		if ( is_singular( 'emqa-question' ) || $search || $author || $term ) {
@@ -74,7 +74,7 @@ add_action( 'emqa_before_questions_archive', 'emqa_archive_question_filter_layou
 function emqa_search_form() {
 	?>
 	<form id="emqa-search" class="emqa-search">
-		<input data-nonce="<?php echo wp_create_nonce( '_emqa_filter_nonce' ) ?>" type="text" placeholder="<?php _e( 'What do you want to know?', 'em-question-answer' ); ?>" name="qs" value="<?php echo isset( $_GET['qs'] ) ? esc_html( $_GET['qs'] ) : '' ?>">
+		<input data-nonce="<?php echo wp_create_nonce( '_emqa_filter_nonce' ) ?>" type="text" placeholder="<?php _e( 'What do you want to know?', 'emqa' ); ?>" name="qs" value="<?php echo isset( $_GET['qs'] ) ? esc_html( $_GET['qs'] ) : '' ?>">
 	</form>
 	<?php
 }
@@ -157,18 +157,18 @@ function emqa_question_button_action() {
 	$html = '';
 	if ( is_user_logged_in() ) {
 		$followed = emqa_is_followed() ? 'followed' : 'follow';
-		$text = __( 'Subscribe', 'em-question-answer' );
+		$text = __( 'Subscribe', 'emqa' );
 		$html .= '<label for="emqa-favorites">';
 		$html .= '<input type="checkbox" id="emqa-favorites" data-post="'. get_the_ID() .'" data-nonce="'. wp_create_nonce( '_emqa_follow_question' ) .'" value="'. $followed .'" '. checked( $followed, 'followed', false ) .'/>';
 		$html .= '<span>' . $text . '</span>';
 		$html .= '</label>';
 		if ( emqa_current_user_can( 'edit_question' ) ) {
-			$html .= '<a class="emqa_edit_question" href="'. add_query_arg( array( 'edit' => get_the_ID() ), get_permalink() ) .'">' . __( 'Edit', 'em-question-answer' ) . '</a> ';
+			$html .= '<a class="emqa_edit_question" href="'. add_query_arg( array( 'edit' => get_the_ID() ), get_permalink() ) .'">' . __( 'Edit', 'emqa' ) . '</a> ';
 		}
 
 		if ( emqa_current_user_can( 'delete_question' ) ) {
 			$action_url = add_query_arg( array( 'action' => 'emqa_delete_question', 'question_id' => get_the_ID() ), admin_url( 'admin-ajax.php' ) );
-			$html .= '<a class="emqa_delete_question" href="'. wp_nonce_url( $action_url, '_emqa_action_remove_question_nonce' ) .'">' . __( 'Delete', 'em-question-answer' ) . '</a> ';
+			$html .= '<a class="emqa_delete_question" href="'. wp_nonce_url( $action_url, '_emqa_action_remove_question_nonce' ) .'">' . __( 'Delete', 'emqa' ) . '</a> ';
 		}
 	}
 
@@ -180,12 +180,12 @@ function emqa_answer_button_action() {
 	if ( is_user_logged_in() ) {
 		if ( emqa_current_user_can( 'edit_answer' ) ) {
 			$parent_id = emqa_get_question_from_answer_id();
-			$html .= '<a class="emqa_edit_question" href="'. add_query_arg( array( 'edit' => get_the_ID() ), get_permalink( $parent_id ) ) .'">' . __( 'Edit', 'em-question-answer' ) . '</a> ';
+			$html .= '<a class="emqa_edit_question" href="'. add_query_arg( array( 'edit' => get_the_ID() ), get_permalink( $parent_id ) ) .'">' . __( 'Edit', 'emqa' ) . '</a> ';
 		}
 
 		if ( emqa_current_user_can( 'delete_answer' ) ) {
 			$action_url = add_query_arg( array( 'action' => 'emqa_delete_answer', 'answer_id' => get_the_ID() ), admin_url( 'admin-ajax.php' ) );
-			$html .= '<a class="emqa_delete_answer" href="'. wp_nonce_url( $action_url, '_emqa_action_remove_answer_nonce' ) .'">' . __( 'Delete', 'em-question-answer' ) . '</a> ';
+			$html .= '<a class="emqa_delete_answer" href="'. wp_nonce_url( $action_url, '_emqa_action_remove_answer_nonce' ) .'">' . __( 'Delete', 'emqa' ) . '</a> ';
 		}
 	}
 
@@ -445,16 +445,11 @@ function emqa_comment_form( $args = array(), $post_id = null ) {
 	$aria_req = ( $req ? " aria-required='true'" : '' );
 	$html5    = 'html5' === $args['format'];
 	$fields   = array(
-		'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Email', 'em-question-answer' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+		'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Email', 'emqa' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
 					'<input id="email-'.$post_id.'" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></p>',
-		'author'  => '<p class="comment-form-name"><label for="name">' . __( 'Name', 'em-question-answer' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label>' . '<input id="name-' .$post_id.'" name="name" type="text" value="" size="30"/></p>'
+		'author'  => '<p class="comment-form-name"><label for="name">' . __( 'Name', 'emqa' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label>' . '<input id="name-' .$post_id.'" name="name" type="text" value="" size="30"/></p>'
 	);
-	$required_text = sprintf(
-		// translators: %s is replaced with the login URL
-    __( 'Required fields are marked %s', 'em-question-answer' ),
-    '<span class="required">*</span>'
-	);
-
+	$required_text = sprintf( ' ' . __( 'Required fields are marked %s' ), '<span class="required">*</span>' );
 	/**
 	 * Filter the default comment form fields.
 	 *
@@ -466,25 +461,16 @@ function emqa_comment_form( $args = array(), $post_id = null ) {
 	$defaults = array(
 		'fields'               => $fields,
 		'comment_field'        => '',
-		'must_log_in' => sprintf(
-			// translators: %s is replaced with the login URL
-			'<p class="must-log-in">' . __( 'You must be <a href="%s">logged in</a> to post a comment.', 'em-question-answer' ) . '</p>',
-			esc_url( wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) )
-		),
-		'logged_in_as'         => '<p class="comment-form-comment"><textarea id="comment" name="comment" placeholder="Comment" rows="2" aria-required="true"></textarea></p>',
-		'comment_notes_before' => '<p class="comment-form-comment"><textarea id="comment" name="comment" placeholder="Comment" rows="2" aria-required="true"></textarea></p>',
-		'comment_notes_after' => sprintf(
-			// translators: %s is replaced with HTML tags and attributes allowed in comments
-			'<p class="form-allowed-tags">' . __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s', 'em-question-answer' ) . '</p>',
-			' <code>' . allowed_tags() . '</code>'
-		),	
+		'must_log_in'          => '<p class="must-log-in">' . sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.','emqa' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
+		'logged_in_as'         => '<p class="comment-form-comment"><textarea class="emqa-comment-text" name="comment" placeholder="'.__('Comment', 'emqa').'" rows="2" aria-required="true"></textarea></p>',
+		'comment_notes_before' => '<p class="comment-form-comment"><textarea class="emqa-comment-text" name="comment" placeholder="Comment" rows="2" aria-required="true"></textarea></p>',
+		'comment_notes_after'  => '<p class="form-allowed-tags">' . sprintf( __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s','emqa' ), ' <code>' . allowed_tags() . '</code>' ) . '</p>',
 		'id_form'              => 'commentform',
 		'id_submit'            => 'submit',
-		'title_reply'          => __( 'Leave a Reply','em-question-answer' ),
-		// translators: %s is replaced with the login URL
-		'title_reply_to'       => __( 'Leave a Reply to %s','em-question-answer' ),
-		'cancel_reply_link'    => __( 'Cancel reply', 'em-question-answer' ),
-		'label_submit'         => __( 'Post Comment', 'em-question-answer' ),
+		'title_reply'          => __( 'Leave a Reply','emqa' ),
+		'title_reply_to'       => __( 'Leave a Reply to %s','emqa' ),
+		'cancel_reply_link'    => __( 'Cancel reply', 'emqa' ),
+		'label_submit'         => __( 'Post Comment', 'emqa' ),
 		'format'               => 'xhtml',
 	);
 	/**
@@ -505,7 +491,7 @@ function emqa_comment_form( $args = array(), $post_id = null ) {
 		 */
 		do_action( 'comment_form_before' );
 		?>
-		<div id="emqa-respond" class="emqa-comment-form">
+		<div class="emqa-comment-form">
 		<?php if ( !emqa_current_user_can( 'post_comment' ) ) : ?>
 			<?php echo $args['must_log_in']; ?>
 			<?php
@@ -518,7 +504,6 @@ function emqa_comment_form( $args = array(), $post_id = null ) {
 			?>
 		<?php else : ?>
 			<form method="post" id="<?php echo esc_attr( $args['id_form'] ); ?>" class="comment-form"<?php echo $html5 ? ' novalidate' : ''; ?>>
-			<?php wp_nonce_field( 'emqa_comment_nonce', 'emqa_comment_nonce' ); ?>
 			<?php
 			/**
 			 * Fires at the top of the comment form, inside the <form> tag.
@@ -593,7 +578,10 @@ function emqa_comment_form( $args = array(), $post_id = null ) {
 			 */
 			echo apply_filters( 'comment_form_field_comment', $args['comment_field'] );
 			?>
-			<input name="comment-submit" type="submit" id="<?php echo esc_attr( $args['id_submit'] ); ?>" value="<?php echo esc_attr( $args['label_submit'] ); ?>" class="emqa-btn emqa-btn-primary" />
+			<div class="emqa-comment-hide">
+				<?php do_action('emqa_show_captcha_comment', $post_id);?>
+				<input name="comment-submit" type="submit" value="<?php echo esc_attr( $args['label_submit'] ); ?>" class="emqa-btn emqa-btn-primary" />
+			</div>
 			<?php comment_id_fields( $post_id ); ?>
 			<?php
 			/**
@@ -660,7 +648,7 @@ function emqa_is_sticky( $question_id = false ) {
 
 function emqa_question_states( $states, $post ){
 	if ( emqa_is_sticky( $post->ID ) && 'emqa-question' == get_post_type( $post->ID ) ) {
-		$states[] = __( 'Sticky Question','em-question-answer' );
+		$states[] = __( 'Sticky Question','emqa' );
 	}
 	return $states;
 }
@@ -674,9 +662,9 @@ function emqa_get_ask_question_link( $echo = true, $label = false, $class = fals
 
 
 		if ( emqa_current_user_can( 'post_question' ) ) {
-			$label = $label ? $label : __( 'Ask a question', 'em-question-answer' );
+			$label = $label ? $label : __( 'Ask a question', 'emqa' );
 		} elseif ( ! is_user_logged_in() ) {
-			$label = $label ? $label : __( 'Login to ask a question', 'em-question-answer' );
+			$label = $label ? $label : __( 'Login to ask a question', 'emqa' );
 			$submit_question_link = wp_login_url( $submit_question_link );
 		} else {
 			return false;

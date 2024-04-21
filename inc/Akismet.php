@@ -81,10 +81,10 @@ class EMQA_Akismet {
 		echo '<div class="wrap"><h1>Reported Spam List</h1>';
 		$columns = array(
 				'id'	=> 'id',
-				'title' => __( 'Title', 'em-question-answer' ),
-				'type'    => __( 'Type', 'em-question-answer' ),
-				'author'    => __( 'Author', 'em-question-answer' ),
-				'countreport'	=>__( 'Count Report', 'em-question-answer' )
+				'title' => __( 'Title', 'emqa' ),
+				'type'    => __( 'Type', 'emqa' ),
+				'author'    => __( 'Author', 'emqa' ),
+				'countreport'	=>__( 'Count Report', 'emqa' )
 			  );
 			  
 		$hiddens = array(
@@ -160,7 +160,7 @@ class EMQA_Akismet {
 									),
 					'delete'    => sprintf( 
 										'<span class="delete"><a href="%s">%s</a><span>',
-										get_delete_post_link( $id , '', true), __( 'Delete permanently', 'em-question-answer' )
+										get_delete_post_link( $id , '', true), __( 'Delete permanently', 'emqa' )
 									)
 				);
 			$action='<div class="row-actions">';
@@ -198,7 +198,7 @@ class EMQA_Akismet {
 			$user_data['email'] = $userdata->user_email;
 			$user_data['website'] = $userdata->user_url;
 		} else if ( isset( $data['is_anonymous'] ) ) {
-			$user_data['name'] = isset( $data['emqa_anonymous_name'] ) ? $data['emqa_anonymous_name'] : __( 'Anonymous', 'em-question-answer' );
+			$user_data['name'] = isset( $data['emqa_anonymous_name'] ) ? $data['emqa_anonymous_name'] : __( 'Anonymous', 'emqa' );
 			$user_data['email'] = isset( $data['emqa_anonymous_email'] ) ? $data['emqa_anonymous_email'] : '';
 			$user_data['website'] = '';
 		} else {
@@ -565,7 +565,7 @@ public function akismet_comment_check( $key, $data ) {
 	
 	public function emqa_admin_show_spam_page(){
 		register_post_status( 'spam', array(
-			'label'                     => _x( 'Spam', 'em-question-answer' ),
+			'label'                     => _x( 'Spam', 'emqa' ),
 			'public'                    => false,
 			'exclude_from_search'       => false,
 			'show_in_admin_all_list'    => false,
@@ -659,13 +659,13 @@ public function akismet_comment_check( $key, $data ) {
 	public function emqa_report_spam_to_admin(){
 		$user_id = get_current_user_id();
 		if(!$user_id>0 || !is_numeric($user_id)){
-			wp_send_json_error( array( 'message' => __( 'You need login to report spam!', 'em-question-answer' ) ) );
+			wp_send_json_error( array( 'message' => __( 'You need login to report spam!', 'emqa' ) ) );
 		}
 		if ( ! isset( $_POST['post_id'] ) || !is_numeric($_POST['post_id']) ) {
-			wp_send_json_error( array( 'message' => __( 'Post not found!', 'em-question-answer' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Post not found!', 'emqa' ) ) );
 		}
 		if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), '_emqa_action_report_spam_to_admin' ) ) {
-			wp_send_json_error( array( 'message' => __( 'Are you cheating huh?', 'em-question-answer' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Are you cheating huh?', 'emqa' ) ) );
 		}
 		$post_id = $_POST['post_id'];
 		$key = '_emqa_spam_reported';
@@ -677,18 +677,18 @@ public function akismet_comment_check( $key, $data ) {
 			if(!in_array($user_id,$args)){
 				$args[] = $user_id;
 			}else{
-				wp_send_json_error( array( 'message' => __( 'You reported this post before!', 'em-question-answer' ) ) );
+				wp_send_json_error( array( 'message' => __( 'You reported this post before!', 'emqa' ) ) );
 			}
 		}
 		update_post_meta($post_id, $key, serialize($args));
 		// if(empty)
-		wp_send_json_success( array( 'message' => __( 'Reported to admin', 'em-question-answer' ) ) );
+		wp_send_json_success( array( 'message' => __( 'Reported to admin', 'emqa' ) ) );
 	}
 	
 	public function emqa_add_button_action_report_spam_to_admin($html){
 		if ( is_user_logged_in() ) {
 			$action_url = add_query_arg( array( 'action' => 'emqa_delete_answer', 'answer_id' => get_the_ID() ), admin_url( 'admin-ajax.php' ) );
-			$html .= '<a class="emqa_report_spam" data-nonce="'.wp_create_nonce( '_emqa_action_report_spam_to_admin' ).'" data-post="'. get_the_ID() .'">' . __( 'Report Spam', 'em-question-answer' ) . '</a> ';
+			$html .= '<a class="emqa_report_spam" data-nonce="'.wp_create_nonce( '_emqa_action_report_spam_to_admin' ).'" data-post="'. get_the_ID() .'">' . __( 'Report Spam', 'emqa' ) . '</a> ';
 		}
 		return $html;
 		

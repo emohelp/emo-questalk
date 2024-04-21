@@ -9,7 +9,7 @@ class EMQA_QA_Component extends BP_Component {
 	public function __construct() {
 		parent::start(
 			'emqa',
-			__( 'EMQA', 'em-question-answer' ),
+			__( 'EMQA', 'emqa' ),
 			EMQA_DIR .'inc/extend/buddypress/'
 		);
 		$this->includes();
@@ -41,7 +41,7 @@ class EMQA_QA_Component extends BP_Component {
 			'slug'          => BP_EMQA_SLUG,
 			'root_slug'     => BP_EMQA_SLUG,
 			'has_directory' => false,
-			'search_string' => __( 'Search EMQA...', 'em-question-answer' ),
+			'search_string' => __( 'Search EMQA...', 'emqa' ),
 		);
 
 		parent::setup_globals( $args );
@@ -58,7 +58,7 @@ class EMQA_QA_Component extends BP_Component {
 
 		// Add 'EMQA' to the main navigation
 		$main_nav = array(
-			'name'                => __( 'EMQA', 'em-question-answer' ),
+			'name'                => __( 'EMQA', 'emqa' ),
 			'slug'                => $this->slug,
 			'position'            => 80,
 			'screen_function'     => 'dp_emqa_screen_questions',
@@ -78,7 +78,7 @@ class EMQA_QA_Component extends BP_Component {
 		$emqa_link = trailingslashit( $user_domain . $this->slug );
 
 		$sub_nav[] = array(
-			'name'            => __( 'Questions', 'em-question-answer' ),
+			'name'            => __( 'Questions', 'emqa' ),
 			'slug'            => 'emqa-question',
 			'parent_url'      => $emqa_link,
 			'parent_slug'     => $this->slug,
@@ -109,13 +109,13 @@ class EMQA_QA_Component extends BP_Component {
 			$wp_admin_nav[] = array(
 				'parent' => buddypress()->my_account_menu_id,
 				'id'     => 'my-account-' . $this->id,
-				'title'  => __( 'EMQA', 'em-question-answer' ),
+				'title'  => __( 'EMQA', 'emqa' ),
 				'href'   => trailingslashit( $emqa_link )
 			);
 			$wp_admin_nav[] = array(
 				'parent' => 'my-account-' . $this->id,
 				'id'     => 'my-account-' . $this->id.'-question',
-				'title'  => __( 'Questions', 'em-question-answer' ),
+				'title'  => __( 'Questions', 'emqa' ),
 				'href'   => trailingslashit( $emqa_link )
 			);
 		 

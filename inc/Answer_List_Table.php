@@ -72,8 +72,8 @@ class EMQA_Answer_List_Table extends WP_List_Table {
 
 	function get_columns() {
 		$columns = array( 
-			'author'    => __( 'Author', 'em-question-answer' ),
-			'detail'    => __( 'Detail', 'em-question-answer' ),
+			'author'    => __( 'Author', 'emqa' ),
+			'detail'    => __( 'Detail', 'emqa' ),
 		);
 		return $columns;
 	}
@@ -92,7 +92,7 @@ class EMQA_Answer_List_Table extends WP_List_Table {
 				global $post;
 				setup_postdata( $item );
 				?>
-				<div class="submitted-on"><?php _e( 'Answered on ', 'em-question-answer' ) ?><a href="<?php echo get_permalink( $item->ID ) ?>"><?php echo $item->post_date ?></a></div>
+				<div class="submitted-on"><?php _e( 'Answered on ', 'emqa' ) ?><a href="<?php echo get_permalink( $item->ID ) ?>"><?php echo $item->post_date ?></a></div>
 				<?php the_excerpt(); ?>
 				<?php
 				break;
@@ -103,7 +103,7 @@ class EMQA_Answer_List_Table extends WP_List_Table {
 
 	function trim_exceprt_more( $excerpt ) {
 		if ( $excerpt ) {
-			return str_replace( '[...]', '<a href="'.get_permalink().'" title="'.__( 'Read more', 'em-question-answer' ).'" >...</a>', $excerpt ); 
+			return str_replace( '[...]', '<a href="'.get_permalink().'" title="'.__( 'Read more', 'emqa' ).'" >...</a>', $excerpt ); 
 		}
 	}
 

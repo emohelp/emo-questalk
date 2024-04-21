@@ -204,9 +204,9 @@ class EMQA_Posts_Answer extends EMQA_Posts_Base {
 
 	public function __construct() {
 		parent::__construct( 'emqa-answer', array(
-			'plural' => __( 'Answers', 'em-question-answer' ),
-			'singular' => __( 'Answer', 'em-question-answer' ),
-			'menu' => __( 'Answers', 'em-question-answer' ),
+			'plural' => __( 'Answers', 'emqa' ),
+			'singular' => __( 'Answer', 'emqa' ),
+			'menu' => __( 'Answers', 'emqa' ),
 		) );
 
 
@@ -249,10 +249,10 @@ class EMQA_Posts_Answer extends EMQA_Posts_Base {
 		if ( isset( $_GET['post_type'] ) && sanitize_text_field( $_GET['post_type'] ) == $this->get_slug() ) {
 			$defaults = array(
 				'cb'            => '<input type="checkbox">',
-				'info'          => __( 'Answer', 'em-question-answer' ),
-				'author'        => __( 'Author', 'em-question-answer' ),
+				'info'          => __( 'Answer', 'emqa' ),
+				'author'        => __( 'Author', 'emqa' ),
 				'comment'       => '<span><span class="vers"><div title="Comments" class="comment-grey-bubble"></div></span></span>',
-				'emqa-question' => __( 'In Response To', 'em-question-answer' ),
+				'emqa-question' => __( 'In Response To', 'emqa' ),
 			);
 		}
 		return $defaults;
@@ -302,8 +302,8 @@ class EMQA_Posts_Answer extends EMQA_Posts_Base {
 				);
 				printf(
 					'%s %s <a href="%s">%s %s</a> <br /> %s %s',
-					__( 'Submitted', 'em-question-answer' ),
-					__( 'on', 'em-question-answer' ),
+					__( 'Submitted', 'emqa' ),
+					__( 'on', 'emqa' ),
 					get_permalink(),
 					gmdate( 'M d Y', get_post_time( 'U', true, $answer ) ),
 					( time() - get_post_time( 'U', true, $answer ) ) > 60 * 60 * 24 * 2 ? '' : ' at ' . human_time_diff( get_post_time( 'U', true, $answer ) ) . ' ago',
@@ -338,7 +338,7 @@ class EMQA_Posts_Answer extends EMQA_Posts_Base {
 	public function question_metabox() {
 		add_meta_box(
 			'emqa-answer-question-metabox',
-			__( 'Question ID', 'em-question-answer' ),
+			__( 'Question ID', 'emqa' ),
 			array( $this, 'question_metabox_output' ),
 			'emqa-answer',
 			'side'
@@ -349,10 +349,10 @@ class EMQA_Posts_Answer extends EMQA_Posts_Base {
 		$question = $post->post_parent ? $post->post_parent : 0;
 		?>
 		<p>
-			<strong><?php _e( 'ID', 'em-question-answer' ) ?></strong>
+			<strong><?php _e( 'ID', 'emqa' ) ?></strong>
 		</p>
 		<p>
-			<label class="screen-reader-text"><?php _e( 'ID', 'em-question-answer' ) ?></label>
+			<label class="screen-reader-text"><?php _e( 'ID', 'emqa' ) ?></label>
 			<input name="_question" type="text" size="4" id="_question" value="<?php echo (int) $question ?>">
 		</p>
 		<?php

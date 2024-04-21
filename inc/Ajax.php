@@ -28,15 +28,15 @@ class EMQA_Ajax {
 
 	public function delete_comment() {
 		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_GET['_wpnonce'] ), '_emqa_delete_comment' ) ) {
-			wp_die( __( 'Are you cheating huh?', 'em-question-answer' ) );
+			wp_die( __( 'Are you cheating huh?', 'emqa' ) );
 		}
 
 		if ( !emqa_current_user_can( 'delete_comment' ) ) {
-			wp_die( __( 'You do not have permission to edit comment.', 'em-question-answer' ) );
+			wp_die( __( 'You do not have permission to edit comment.', 'emqa' ) );
 		}
 
 		if ( ! isset( $_GET['comment_id'] ) ) {
-			wp_die( __( 'Comment ID must be showed.', 'em-question-answer' ) );
+			wp_die( __( 'Comment ID must be showed.', 'emqa' ) );
 		}
 
 		wp_delete_comment( intval( $_GET['comment_id'] ) );
@@ -46,21 +46,21 @@ class EMQA_Ajax {
 
 	function delete_answer() {
 		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_GET['_wpnonce'] ), '_emqa_action_remove_answer_nonce' ) || 'emqa_delete_answer' !== $_GET['action'] ) {
-			wp_die( __( 'Are you cheating huh?', 'em-question-answer' ) );
+			wp_die( __( 'Are you cheating huh?', 'emqa' ) );
 		}
 
 		if ( ! isset( $_GET['answer_id'] ) ) {
-			wp_die( __( 'Answer is missing.', 'em-question-answer' ), 'error' );
+			wp_die( __( 'Answer is missing.', 'emqa' ), 'error' );
 		}
 
 		$answer_id = absint( $_GET['answer_id'] );
 
 		if ( 'emqa-answer' !== get_post_type( $answer_id ) ) {
-			wp_die( __( 'This post is not answer.', 'em-question-answer' ) );
+			wp_die( __( 'This post is not answer.', 'emqa' ) );
 		}
 
 		if ( !emqa_current_user_can( 'delete_answer', $answer_id ) && !emqa_current_user_can( 'edit_posts' ) ) {
-			wp_die( __( 'You do not have permission to delete this post.', 'em-question-answer' ) );
+			wp_die( __( 'You do not have permission to delete this post.', 'emqa' ) );
 		}
 
 		do_action( 'emqa_prepare_delete_answer', $answer_id );
@@ -88,10 +88,10 @@ class EMQA_Ajax {
 
 	public function flag_answer() {
 		if ( ! isset( $_POST['wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_POST['wpnonce'] ), '_emqa_action_flag_answer_nonce' ) ) {
-			wp_send_json_error( array( 'message' => __( 'Are you cheating huh?', 'em-question-answer' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Are you cheating huh?', 'emqa' ) ) );
 		}
 		if ( ! isset( $_POST['answer_id'] ) ) {
-			wp_send_json_error( array( 'message' => __( 'Missing id of answer', 'em-question-answer' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Missing id of answer', 'emqa' ) ) );
 		}
 		global $current_user;
 		$answer_id = intval( $_POST['answer_id'] );
@@ -118,7 +118,7 @@ class EMQA_Ajax {
 	public function vote_best_answer() {
 		global $current_user;
 		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( $_GET['_wpnonce'], '_emqa_vote_best_answer' ) ) {
-			wp_die( __( 'Are you cheating huh?', 'em-question-answer' ) );
+			wp_die( __( 'Are you cheating huh?', 'emqa' ) );
 		}
 		if ( ! isset( $_GET['answer'] ) ) {
 			exit( 0 );
@@ -140,7 +140,7 @@ class EMQA_Ajax {
 	public function unvote_best_answer() {
 		global $current_user;
 		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( $_GET['_wpnonce'], '_emqa_vote_best_answer' ) ) {
-			wp_die( __( 'Are you cheating huh?', 'em-question-answer' ) );
+			wp_die( __( 'Are you cheating huh?', 'emqa' ) );
 		}
 		if ( ! isset( $_GET['answer'] ) ) {
 			exit( 0 );
@@ -159,19 +159,19 @@ class EMQA_Ajax {
 	// public function delete_question() {
 	// 	global $emqa_general_settings;
 	// 	if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_GET['_wpnonce'] ), '_emqa_action_remove_question_nonce' ) || 'emqa_delete_question' !== $_GET['action'] ) {
-	// 		wp_die( __( 'Are you cheating huh?', 'em-question-answer' ) );
+	// 		wp_die( __( 'Are you cheating huh?', 'emqa' ) );
 	// 	}
 
 	// 	if ( ! isset( $_GET['question_id'] ) ) {
-	// 		wp_die( __( 'Question is missing.', 'em-question-answer' ), 'error' );
+	// 		wp_die( __( 'Question is missing.', 'emqa' ), 'error' );
 	// 	}
 
 	// 	if ( 'emqa-question' !== get_post_type( intval( $_GET['question_id'] ) ) ) {
-	// 		wp_die( __( 'This post is not question.', 'em-question-answer' ) );
+	// 		wp_die( __( 'This post is not question.', 'emqa' ) );
 	// 	}
 
 	// 	if ( !emqa_current_user_can( 'delete_answer' ) ) {
-	// 		wp_die( __( 'You do not have permission to delete this post.', 'em-question-answer' ) );
+	// 		wp_die( __( 'You do not have permission to delete this post.', 'emqa' ) );
 	// 	}
 
 	// 	do_action( 'before_delete_post', intval( $_GET['question_id'] ) );
@@ -197,21 +197,21 @@ class EMQA_Ajax {
 	public function delete_question() {
 		global $emqa_general_settings;
 		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( $_GET['_wpnonce'], '_emqa_action_remove_question_nonce' ) || 'emqa_delete_question' !== $_GET['action'] ) {
-			wp_die( __( 'Are you cheating huh?', 'em-question-answer' ) );
+			wp_die( __( 'Are you cheating huh?', 'emqa' ) );
 		}
 	
 		$question_id = absint( $_GET['question_id'] );
 	
 		if ( ! isset( $question_id ) ) {
-			wp_die( __( 'Question is missing.', 'em-question-answer' ), 'error' );
+			wp_die( __( 'Question is missing.', 'emqa' ), 'error' );
 		}
 	
 		if ( 'emqa-question' !== get_post_type( $question_id ) ) { // Updated post type check
-			wp_die( __( 'This post is not a question.', 'em-question-answer' ) );
+			wp_die( __( 'This post is not a question.', 'emqa' ) );
 		}
 	
 		if ( !emqa_current_user_can( 'delete_answer', $question_id ) && !emqa_current_user_can( 'manage_question' ) ) {
-			wp_die( __( 'You do not have permission to delete this post.', 'em-question-answer' ) );
+			wp_die( __( 'You do not have permission to delete this post.', 'emqa' ) );
 		}
 	
 		// Call remove_related_answers function to remove associated answers
@@ -241,7 +241,7 @@ class EMQA_Ajax {
 	public function remove_related_answers( $post_id ) {
 	error_log( "Removing related answers for post ID: $post_id" ); // Add a debug log
 	if ( 'emqa-question' == get_post_type( $post_id ) ) {
-			$answers = wp_cache_get( 'emqa-answers-for-' . $post_id, 'em-question-answer' );
+			$answers = wp_cache_get( 'emqa-answers-for-' . $post_id, 'emqa' );
 
 			if ( false == $answers ) {
 					$args = array(
@@ -253,7 +253,7 @@ class EMQA_Ajax {
 
 					$answers = get_posts( $args );
 
-					wp_cache_set( 'emqa-answers-for' . $post_id, $answers, 'em-question-answer', 21600 );
+					wp_cache_set( 'emqa-answers-for' . $post_id, $answers, 'emqa', 21600 );
 			}
 
 			if ( ! empty( $answers ) ) {
@@ -286,7 +286,7 @@ class EMQA_Ajax {
 			}
 		} else {
 			wp_send_json_error( array(
-				'message'   => __( 'You do not have permission to edit question status', 'em-question-answer' )
+				'message'   => __( 'You do not have permission to edit question status', 'emqa' )
 			) );
 		}
 	}
@@ -295,7 +295,7 @@ class EMQA_Ajax {
 		if ( ! isset( $_POST['nonce'])  ) {
 			wp_send_json_error( array( array( 
 				'error' => 'sercurity',
-				'message' => __( 'Are you cheating huh?', 'em-question-answer' ) 
+				'message' => __( 'Are you cheating huh?', 'emqa' ) 
 			) ) );
 		}
 		check_ajax_referer( '_emqa_filter_nonce', 'nonce' );
@@ -303,7 +303,7 @@ class EMQA_Ajax {
 		if ( ! isset( $_POST['title'] ) ) {
 			wp_send_json_error( array( array( 
 				'error' => 'empty title',
-				'message' => __( 'Not Found!!!', 'em-question-answer' ), 
+				'message' => __( 'Not Found!!!', 'emqa' ), 
 			) ) );
 		}
 
@@ -353,7 +353,7 @@ class EMQA_Ajax {
 			wp_send_json_success( $results );
 		} else {
 			wp_reset_query();
-			wp_send_json_error( array( array( 'error' => 'not found', 'message' => __( 'Not Found!!!', 'em-question-answer' ) ) ) );
+			wp_send_json_error( array( array( 'error' => 'not found', 'message' => __( 'Not Found!!!', 'emqa' ) ) ) );
 		}
 	}
 

@@ -66,7 +66,7 @@ function emqa_is_closed( $question_id = false ) {
 	}
 
 	$status = get_post_meta( $question_id, '_emqa_status', true );
-	if ( $status == 'close' ) {
+	if ( in_array( $status, array( 'close', 'closed' ) ) ) {
 		return true;
 	}
 	return false;
@@ -289,27 +289,27 @@ function emqa_question_get_status_name( $status ) {
 	$status = strtolower( $status );  
 	switch ( $status ) {
 		case 'resolved':
-			$message = __( 'Resolved', 'em-question-answer' );
+			$message = __( 'Resolved', 'emqa' );
 			break;
 		case 'pending':
-			$message = __( 'Pending', 'em-question-answer' );
+			$message = __( 'Pending', 'emqa' );
 			break;
 		case 're-open':
-			$message = __( 'Re-Open', 'em-question-answer' );
+			$message = __( 'Re-Open', 'emqa' );
 			break;
 		case 'closed':
-			$message = __( 'Closed', 'em-question-answer' );
+			$message = __( 'Closed', 'emqa' );
 			break;
 		case 'new':
-			$message = __( 'New', 'em-question-answer' );
+			$message = __( 'New', 'emqa' );
 			break;
 
 		case 'answered':
-			$message = __( 'Answered', 'em-question-answer' );
+			$message = __( 'Answered', 'emqa' );
 			break;
 		
 		default:
-			$message = __( 'Open', 'em-question-answer' );
+			$message = __( 'Open', 'emqa' );
 			break;
 	}
 	return $message;
@@ -324,12 +324,12 @@ class EMQA_Status {
 
 	public function update_privacy() {
 		if ( ! isset( $_POST['nonce'] ) ) {
-			wp_send_json_error( array( 'message' => __( 'Are you cheating huh?', 'em-question-answer' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Are you cheating huh?', 'emqa' ) ) );
 		}
 		check_ajax_referer( '_emqa_update_privacy_nonce', 'nonce' );
 
 		if ( ! isset( $_POST['post'] ) ) {
-			wp_send_json_error( array( 'message' => __( 'Missing post ID', 'em-question-answer' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Missing post ID', 'emqa' ) ) );
 		}
 
 		global $current_user;
@@ -352,7 +352,7 @@ class EMQA_Status {
 			}
 		} else {
 			wp_send_json_error( array(
-				'message'   => __( 'You do not have permission to edit question', 'em-question-answer' )
+				'message'   => __( 'You do not have permission to edit question', 'emqa' )
 			) );
 		}	
 	}

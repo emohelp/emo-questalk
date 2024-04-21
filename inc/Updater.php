@@ -94,7 +94,7 @@ class EMQA_Updater {
 		add_settings_section( $this->slug, $this->name, array( $this, 'display_description' ), 'emqa-addons-settings' );
 		// creates our settings in the options table
 		register_setting( 'emqa-addons', $this->license_option_key, array( $this, 'sanitize_license' ) );
-		add_settings_field( $this->license_option_key, __( 'License Key', 'em-question-answer' ), array( $this, 'license_setting_field' ), 'emqa-addons-settings', $this->slug );
+		add_settings_field( $this->license_option_key, __( 'License Key', 'emqa' ), array( $this, 'license_setting_field' ), 'emqa-addons-settings', $this->slug );
 	}
 
 	public function display_description() {
@@ -173,7 +173,7 @@ class EMQA_Updater {
 
 		update_option( $this->license_status_key, $license_data->license );
 
-		wp_send_json_success( array( 'message' => __( 'Plugin was activated', 'em-question-answer' ) ) );
+		wp_send_json_success( array( 'message' => __( 'Plugin was activated', 'emqa' ) ) );
 	}
 
 	public function deactivate_license() {

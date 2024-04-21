@@ -53,7 +53,7 @@ function emqa_related_question( $question_id = false, $number = 5, $echo = true 
 		if ( $echo ) {
 			echo '<ul>';
 			while ( $related_questions->have_posts() ) { $related_questions->the_post();
-				echo '<li><a href="'.get_permalink().'" class="question-title">'.get_the_title().'</a> '.__( 'asked by', 'em-question-answer' ).' ';
+				echo '<li><a href="'.get_permalink().'" class="question-title">'.get_the_title().'</a> '.__( 'asked by', 'emqa' ).' ';
 				the_author_posts_link();
 				echo '</li>';
 			}
@@ -97,9 +97,9 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 		}
 		$slug = isset( $emqa_general_settings['question-rewrite'] ) ? $emqa_general_settings['question-rewrite'] : 'question';
 		parent::__construct( 'emqa-question', array(
-			'plural' => __( 'Questions', 'em-question-answer' ),
-			'singular' => __( 'Question', 'em-question-answer' ),
-			'menu'	 => __( 'Questions', 'em-question-answer' ),
+			'plural' => __( 'Questions', 'emqa' ),
+			'singular' => __( 'Question', 'emqa' ),
+			'menu'	 => __( 'Questions', 'emqa' ),
 			'rewrite' => array( 'slug' => $slug, 'with_front' => false ),
 		) );
 
@@ -193,17 +193,17 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 		$tag_slug = $this->get_question_rewrite() . '/' . $this->get_tag_rewrite();
 
 		$labels = array(
-			'name'              => _x( 'Question Categories', 'taxonomy general name', 'em-question-answer' ),
-			'singular_name'     => _x( 'Question Category', 'taxonomy singular name', 'em-question-answer' ),
-			'search_items'      => __( 'Search Question Categories', 'em-question-answer' ),
-			'all_items'         => __( 'All Question Categories', 'em-question-answer' ),
-			'parent_item'       => __( 'Parent Question Category', 'em-question-answer' ),
-			'parent_item_colon' => __( 'Parent Question Category:', 'em-question-answer' ),
-			'edit_item'         => __( 'Edit Question Category', 'em-question-answer' ),
-			'update_item'       => __( 'Update Question Category', 'em-question-answer' ),
-			'add_new_item'      => __( 'Add New Question Category', 'em-question-answer' ),
-			'new_item_name'     => __( 'New Question Category Name', 'em-question-answer' ),
-			'menu_name'         => __( 'Question Category', 'em-question-answer' ),
+			'name'              => _x( 'Question Categories', 'taxonomy general name', 'emqa' ),
+			'singular_name'     => _x( 'Question Category', 'taxonomy singular name', 'emqa' ),
+			'search_items'      => __( 'Search Question Categories', 'emqa' ),
+			'all_items'         => __( 'All Question Categories', 'emqa' ),
+			'parent_item'       => __( 'Parent Question Category', 'emqa' ),
+			'parent_item_colon' => __( 'Parent Question Category:', 'emqa' ),
+			'edit_item'         => __( 'Edit Question Category', 'emqa' ),
+			'update_item'       => __( 'Update Question Category', 'emqa' ),
+			'add_new_item'      => __( 'Add New Question Category', 'emqa' ),
+			'new_item_name'     => __( 'New Question Category Name', 'emqa' ),
+			'menu_name'         => __( 'Question Category', 'emqa' ),
 		);
 
 		$args = array(
@@ -222,22 +222,22 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 		register_taxonomy( $this->get_slug() . '_category', array( $this->get_slug() ), $args );
 
 		$labels = array(
-			'name'                       => _x( 'Question Tags', 'taxonomy general name', 'em-question-answer' ),
-			'singular_name'              => _x( 'Question Tag', 'taxonomy singular name', 'em-question-answer' ),
-			'search_items'               => __( 'Search Question Tags', 'em-question-answer' ),
-			'popular_items'              => __( 'Popular Question Tags', 'em-question-answer' ),
-			'all_items'                  => __( 'All Question Tags', 'em-question-answer' ),
+			'name'                       => _x( 'Question Tags', 'taxonomy general name', 'emqa' ),
+			'singular_name'              => _x( 'Question Tag', 'taxonomy singular name', 'emqa' ),
+			'search_items'               => __( 'Search Question Tags', 'emqa' ),
+			'popular_items'              => __( 'Popular Question Tags', 'emqa' ),
+			'all_items'                  => __( 'All Question Tags', 'emqa' ),
 			'parent_item'                => null,
 			'parent_item_colon'          => null,
-			'edit_item'                  => __( 'Edit Question Tag', 'em-question-answer' ),
-			'update_item'                => __( 'Update Question Tag', 'em-question-answer' ),
-			'add_new_item'               => __( 'Add New Question Tag', 'em-question-answer' ),
-			'new_item_name'              => __( 'New Question Tag Name', 'em-question-answer' ),
-			'separate_items_with_commas' => __( 'Separate question tags with commas', 'em-question-answer' ),
-			'add_or_remove_items'        => __( 'Add or remove question tags', 'em-question-answer' ),
-			'choose_from_most_used'      => __( 'Choose from the most used question tags', 'em-question-answer' ),
-			'not_found'                  => __( 'No question tags found.', 'em-question-answer' ),
-			'menu_name'                  => __( 'Question Tags', 'em-question-answer' ),
+			'edit_item'                  => __( 'Edit Question Tag', 'emqa' ),
+			'update_item'                => __( 'Update Question Tag', 'emqa' ),
+			'add_new_item'               => __( 'Add New Question Tag', 'emqa' ),
+			'new_item_name'              => __( 'New Question Tag Name', 'emqa' ),
+			'separate_items_with_commas' => __( 'Separate question tags with commas', 'emqa' ),
+			'add_or_remove_items'        => __( 'Add or remove question tags', 'emqa' ),
+			'choose_from_most_used'      => __( 'Choose from the most used question tags', 'emqa' ),
+			'not_found'                  => __( 'No question tags found.', 'emqa' ),
+			'menu_name'                  => __( 'Question Tags', 'emqa' ),
 		);
 
 		$args = array(
@@ -263,7 +263,7 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 		) );
 
 		if ( empty( $cats ) ) {
-			wp_insert_term( __( 'Questions', 'em-question-answer' ), $this->get_slug() . '_category' );
+			wp_insert_term( __( 'Questions', 'emqa' ), $this->get_slug() . '_category' );
 		}
 
 		// global $emqa;
@@ -273,7 +273,7 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 	// ADD NEW COLUMN
 	public function columns_head( $defaults ) {
 		if ( isset( $_GET['post_type'] ) && esc_html( $_GET['post_type'] ) == $this->get_slug() ) {
-			$defaults['info'] = __( 'Info', 'em-question-answer' );
+			$defaults['info'] = __( 'Info', 'emqa' );
 			$defaults = emqa_array_insert( $defaults, array( 'question-category' => 'Category', 'question-tag' => 'Tags' ), 1 );
 		}
 		return $defaults;
@@ -284,9 +284,9 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 		switch ( $column_name ) {
 			case 'info':
 				echo ucfirst( get_post_meta( $post_ID, '_emqa_status', true ) ) . '<br>';
-				echo '<strong>'.emqa_question_answers_count( $post_ID ) . '</strong> '.__( 'answered', 'em-question-answer' ) . '<br>';
-				echo '<strong>'.emqa_vote_count( $post_ID ).'</strong> '.__( 'voted', 'em-question-answer' ) . '<br>';
-				echo '<strong>'.emqa_question_views_count( $post_ID ).'</strong> '.__( 'views', 'em-question-answer' ) . '<br>';
+				echo '<strong>'.emqa_question_answers_count( $post_ID ) . '</strong> '.__( 'answered', 'emqa' ) . '<br>';
+				echo '<strong>'.emqa_vote_count( $post_ID ).'</strong> '.__( 'voted', 'emqa' ) . '<br>';
+				echo '<strong>'.emqa_question_views_count( $post_ID ).'</strong> '.__( 'views', 'emqa' ) . '<br>';
 				break;
 			case 'question-category':
 				$terms = wp_get_post_terms( $post_ID, 'emqa-question_category' );
@@ -407,7 +407,7 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 	public function stick_question() {
 		check_ajax_referer( '_emqa_stick_question', 'nonce' );
 		if ( ! isset( $_POST['post'] ) ) {
-			wp_send_json_error( array( 'message' => __( 'Invalid Post', 'em-question-answer' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Invalid Post', 'emqa' ) ) );
 		}
 
 		$question = get_post( intval( $_POST['post'] ) );
@@ -470,7 +470,7 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 		$nonce = isset($_POST['nonce']) ? esc_html( $_POST['nonce'] ) : false;
 		if ( ! $valid_ajax || ! wp_verify_nonce( $nonce, '_emqa_delete_question' ) || ! is_user_logged_in() ) {
 			wp_send_json_error( array(
-				'message' => __( 'Hello, Are you cheating huh?', 'em-question-answer' )
+				'message' => __( 'Hello, Are you cheating huh?', 'emqa' )
 			) );
 		}
 

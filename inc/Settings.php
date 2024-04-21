@@ -49,7 +49,7 @@ function emqa_submit_question_page_display(){
 				'selected'          => $submit_question_page,
 			) );
 		?><br>
-		<span class="description"><?php _e( 'A page where users can submit questions. The <code>[emqa-submit-question-form]</code> short code must be on this page.','em-question-answer' ) ?></span>
+		<span class="description"><?php _e( 'A page where users can submit questions. The <code>-submit-question-form]</code> short code must be on this page.','em-question-answer' ) ?></span>
 	</p>
 	<?php
 }
@@ -123,7 +123,7 @@ function emqa_subscrible_email_logo_display(){
 }
 
 function emqa_subscrible_enable_new_question_notification(){
-	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" value="1" '.checked( 1, get_option( 'emqa_subscrible_enable_new_question_notification', 1 ), false ).' name="emqa_subscrible_enable_new_question_notification" id="emqa_subscrible_enable_new_question_notification" ><span class="description">'.__( 'Enable notification for new question.', 'em-question-answer' ).'</span></td>';
+	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" value="1" '.checked( 1, get_option( 'emqa_subscrible_enable_new_question_notification', 1 ), false ).' name="emqa_subscrible_enable_new_question_notification" id="emqa_subscrible_enable_new_question_notification" ><span class="description">'.__( 'Enable notification for new question.', 'emqa' ).'</span></td>';
 }
 // New Question - Enable Notification
 
@@ -158,7 +158,7 @@ function emqa_subscrible_new_question_email_display(){
 
 
 function emqa_subscrible_enable_new_answer_notification(){
-	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" value="1" '.checked( 1, get_option( 'emqa_subscrible_enable_new_answer_notification', 1 ), false ).' name="emqa_subscrible_enable_new_answer_notification" id="emqa_subscrible_enable_new_answer_notification" ><span class="description">'.__( 'Enable notification for new answer.', 'em-question-answer' ).'</span></td>';
+	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" value="1" '.checked( 1, get_option( 'emqa_subscrible_enable_new_answer_notification', 1 ), false ).' name="emqa_subscrible_enable_new_answer_notification" id="emqa_subscrible_enable_new_answer_notification" ><span class="description">'.__( 'Enable notification for new answer.', 'emqa' ).'</span></td>';
 }
 // New Answer - Enable Notification
 
@@ -194,7 +194,7 @@ function emqa_subscrible_new_answer_email_display(){
 // New Answer - Email Content
 
 function emqa_subscrible_enable_new_answer_followers_notification(){
-	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" value="1" '.checked( 1, get_option( 'emqa_subscrible_enable_new_answer_followers_notification', 1 ), false ).' name="emqa_subscrible_enable_new_answer_followers_notification" id="emqa_subscrible_enable_new_answer_followers_notification" ><span class="description">'.__( 'Enable notification for new answer ( to Followers ).', 'em-question-answer' ).'</span></td>';
+	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" value="1" '.checked( 1, get_option( 'emqa_subscrible_enable_new_answer_followers_notification', 1 ), false ).' name="emqa_subscrible_enable_new_answer_followers_notification" id="emqa_subscrible_enable_new_answer_followers_notification" ><span class="description">'.__( 'Enable notification for new answer ( to Followers ).', 'emqa' ).'</span></td>';
 }
 // New Answer - Follow - Enable Notification
 
@@ -230,7 +230,7 @@ function emqa_subscrible_new_answer_followers_email_display(){
 // New Answer - Follow - Email Content
 
 function emqa_subscrible_enable_new_comment_question_notification(){
-	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" '.checked( 1, get_option( 'emqa_subscrible_enable_new_comment_question_notification', 1 ), false ).' value="1" name="emqa_subscrible_enable_new_comment_question_notification" id="emqa_subscrible_enable_new_comment_question_notification" ><span class="description">'.__( 'Enable notification for new comment of question.', 'em-question-answer' ).'</span></td>';
+	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" '.checked( 1, get_option( 'emqa_subscrible_enable_new_comment_question_notification', 1 ), false ).' value="1" name="emqa_subscrible_enable_new_comment_question_notification" id="emqa_subscrible_enable_new_comment_question_notification" ><span class="description">'.__( 'Enable notification for new comment of question.', 'emqa' ).'</span></td>';
 }
 // New Comment - Question - Enable Notification
 
@@ -265,7 +265,7 @@ function emqa_subscrible_new_comment_question_email_display(){
 // New Comment - Question - Email Content
 
 function emqa_subscrible_enable_new_comment_question_followers_notification(){
-	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" '.checked( 1, get_option( 'emqa_subscrible_enable_new_comment_question_followers_notify', 1 ), false ).' value="1" name="emqa_subscrible_enable_new_comment_question_followers_notify" id="emqa_subscrible_enable_new_comment_question_followers_notify" ><span class="description">'.__( 'Enable notification for new comment of question.', 'em-question-answer' ).'</span></td>';
+	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" '.checked( 1, get_option( 'emqa_subscrible_enable_new_comment_question_followers_notify', 1 ), false ).' value="1" name="emqa_subscrible_enable_new_comment_question_followers_notify" id="emqa_subscrible_enable_new_comment_question_followers_notify" ><span class="description">'.__( 'Enable notification for new comment of question.', 'emqa' ).'</span></td>';
 }
 // New Comment - Question - Follow - Enable Notification
 
@@ -300,7 +300,7 @@ function emqa_subscrible_new_comment_question_followers_email_display(){
 // New Comment - Question - Follow - Email Content
 
 function emqa_subscrible_enable_new_comment_answer_notification(){
-	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" '.checked( 1, get_option( 'emqa_subscrible_enable_new_comment_answer_notification', 1 ), false ).' value="1" name="emqa_subscrible_enable_new_comment_answer_notification" id="emqa_subscrible_enable_new_comment_answer_notification" ><span class="description">'.__( 'Enable notification for new comment of answer.', 'em-question-answer' ).'</span></td>';
+	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" '.checked( 1, get_option( 'emqa_subscrible_enable_new_comment_answer_notification', 1 ), false ).' value="1" name="emqa_subscrible_enable_new_comment_answer_notification" id="emqa_subscrible_enable_new_comment_answer_notification" ><span class="description">'.__( 'Enable notification for new comment of answer.', 'emqa' ).'</span></td>';
 }
 // New Comment - Answer - Enable Notification
 
@@ -335,7 +335,7 @@ function emqa_subscrible_new_comment_answer_email_display(){
 // New Comment - Answer - Email Content
 
 function emqa_subscrible_enable_new_comment_answer_followers_notification(){
-	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" '.checked( 1, get_option( 'emqa_subscrible_enable_new_comment_answer_followers_notification', 1 ), false ).' value="1" name="emqa_subscrible_enable_new_comment_answer_followers_notification" id="emqa_subscrible_enable_new_comment_answer_followers_notification" ><span class="description">'.__( 'Enable notification for new comment of answer.', 'em-question-answer' ).'</span></td>';
+	echo '<th>'.__( 'Enable?','em-question-answer' ).'</th><td><input type="checkbox" '.checked( 1, get_option( 'emqa_subscrible_enable_new_comment_answer_followers_notification', 1 ), false ).' value="1" name="emqa_subscrible_enable_new_comment_answer_followers_notification" id="emqa_subscrible_enable_new_comment_answer_followers_notification" ><span class="description">'.__( 'Enable notification for new comment of answer.', 'emqa' ).'</span></td>';
 }
 // New Comment - Answer - Follow - Enable Notification
 
@@ -426,9 +426,9 @@ function EMQA_Permission_display(){
 		</tbody>
 	</table>
 	<p class="reset-button-container align-right" style="text-align:right">
-		<button data-type="question" class="button reset-permission" name="emqa-permission-reset" value="question"><?php _e( 'Reset Default', 'em-question-answer' ); ?></button>
+		<button data-type="question" class="button reset-permission" name="emqa-permission-reset" value="question"><?php _e( 'Reset Default', 'emqa' ); ?></button>
 	</p>
-	<h3><?php _e( 'Answers', 'em-question-answer' ); ?></h3>
+	<h3><?php _e( 'Answers', 'emqa' ); ?></h3>
 	<table class="table widefat emqa-permission-settings">
 		<thead>
 			<tr>
@@ -462,7 +462,7 @@ function EMQA_Permission_display(){
 		</tbody>
 	</table>
 	<p class="reset-button-container align-right" style="text-align:right">
-		<button data-type="answer" class="button reset-permission" name="emqa-permission-reset" value="answer"><?php _e( 'Reset Default', 'em-question-answer' ); ?></button>
+		<button data-type="answer" class="button reset-permission" name="emqa-permission-reset" value="answer"><?php _e( 'Reset Default', 'emqa' ); ?></button>
 	</p>
 	<h3><?php _e( 'Comments','em-question-answer' ) ?></h3>
 	<table class="table widefat emqa-permission-settings">
@@ -497,7 +497,7 @@ function EMQA_Permission_display(){
 	</table>
 
 	<p class="reset-button-container align-right" style="text-align:right">
-		<button data-type="comment" class="button reset-permission" name="emqa-permission-reset" value="comment"><?php _e( 'Reset Default', 'em-question-answer' ); ?></button>
+		<button data-type="comment" class="button reset-permission" name="emqa-permission-reset" value="comment"><?php _e( 'Reset Default', 'emqa' ); ?></button>
 	</p>
 	<?php
 }
@@ -530,7 +530,7 @@ function emqa_captcha_google_private_key_display() {
 function emqa_captcha_select_type_display() {
 	global $emqa_general_settings;
 
-	$types = apply_filters( 'emqa_captcha_type', array( 'default' => __( 'Default', 'em-question-answer' ) ) );
+	$types = apply_filters( 'emqa_captcha_type', array( 'default' => __( 'Default', 'emqa' ) ) );
 	$total = count( $types );
 	$type_selected = isset( $emqa_general_settings['captcha-type'] ) ? $emqa_general_settings['captcha-type'] : 'default';
 	echo '<select name="emqa_options[captcha-type]">';
@@ -555,32 +555,32 @@ function emqa_answer_per_page_display() {
 function emqa_allow_anonymous_vote() {
 	global $emqa_general_settings;
 	
-	echo '<p><label for="emqa_options_allow_anonymous_vote"><input type="checkbox" name="emqa_options[allow-anonymous-vote]"  id="emqa_options_allow_anonymous_vote" value="1" '.checked( 1, (isset($emqa_general_settings['allow-anonymous-vote'] ) ? $emqa_general_settings['allow-anonymous-vote'] : false ) , false ) .'><span class="description">'.__( 'Allow anonymous vote.', 'em-question-answer' ).'</span></label></p>';
+	echo '<p><label for="emqa_options_allow_anonymous_vote"><input type="checkbox" name="emqa_options[allow-anonymous-vote]"  id="emqa_options_allow_anonymous_vote" value="1" '.checked( 1, (isset($emqa_general_settings['allow-anonymous-vote'] ) ? $emqa_general_settings['allow-anonymous-vote'] : false ) , false ) .'><span class="description">'.__( 'Allow anonymous vote.', 'emqa' ).'</span></label></p>';
 }
 
 function emqa_use_akismet_antispam() {
 	global $emqa_general_settings;
 	
-	echo '<p><label for="emqa_options_use_akismet_antispam"><input type="checkbox" name="emqa_options[use-akismet-antispam]"  id="emqa_options_use_akismet_antispam" value="1" '.checked( 1, (isset($emqa_general_settings['use-akismet-antispam'] ) ? $emqa_general_settings['use-akismet-antispam'] : false ) , false ) .'><span class="description">'.__( 'Enable Akismet', 'em-question-answer' ).'</span></label></p>';
+	echo '<p><label for="emqa_options_use_akismet_antispam"><input type="checkbox" name="emqa_options[use-akismet-antispam]"  id="emqa_options_use_akismet_antispam" value="1" '.checked( 1, (isset($emqa_general_settings['use-akismet-antispam'] ) ? $emqa_general_settings['use-akismet-antispam'] : false ) , false ) .'><span class="description">'.__( 'Enable Akismet', 'emqa' ).'</span></label></p>';
 }
 
 function emqa_akismet_api_key() {
 	global $emqa_general_settings;
 
 	$akismet_api_key = isset( $emqa_general_settings['akismet-api-key'] ) ?  $emqa_general_settings['akismet-api-key'] : '';
-	echo '<p><input id="emqa_setting_akismet_api_key" type="text" name="emqa_options[akismet-api-key]" class="medium-text" value="'.$akismet_api_key.'" ><br><span class="description">'.__( 'Get in', 'em-question-answer' ).' <a href="https://akismet.com">akismet.com</a>'.'</span></p>';
+	echo '<p><input id="emqa_setting_akismet_api_key" type="text" name="emqa_options[akismet-api-key]" class="medium-text" value="'.$akismet_api_key.'" ><br><span class="description">'.__( 'Get in', 'emqa' ).' <a href="https://akismet.com">akismet.com</a>'.'</span></p>';
 }
 
 function emqa_akismet_connection_status() {
 	global $emqa_general_settings;
 	
-	$status = __( 'Not Connected', 'em-question-answer' );
+	$status = __( 'Not Connected', 'emqa' );
 	
 	if(isset($emqa_general_settings['use-akismet-antispam']) && $emqa_general_settings['use-akismet-antispam']){
 		//enable akismet
 		if ( class_exists( 'emQA_Akismet' ) ){
 			if(emQA_Akismet::akismet_verify_key($emqa_general_settings['akismet-api-key'])){
-				$status = __( 'Connected', 'em-question-answer' );
+				$status = __( 'Connected', 'emqa' );
 			}
 		}
 	}
@@ -591,7 +591,7 @@ function emqa_akismet_connection_status() {
 function emqa_use_auto_closure() {
 	global $emqa_general_settings;
 	
-	echo '<p><label for="emqa_options_use_auto_closure"><input type="checkbox" name="emqa_options[use-auto-closure]"  id="emqa_options_use_auto_closure" value="1" '.checked( 1, (isset($emqa_general_settings['use-auto-closure'] ) ? $emqa_general_settings['use-auto-closure'] : false ) , false ) .'><span class="description">'.__( 'Enable Auto Closure', 'em-question-answer' ).'</span></label></p>';
+	echo '<p><label for="emqa_options_use_auto_closure"><input type="checkbox" name="emqa_options[use-auto-closure]"  id="emqa_options_use_auto_closure" value="1" '.checked( 1, (isset($emqa_general_settings['use-auto-closure'] ) ? $emqa_general_settings['use-auto-closure'] : false ) , false ) .'><span class="description">'.__( 'Enable Auto Closure', 'emqa' ).'</span></label></p>';
 }
 function emqa_number_day_auto_closure() {
 	global $emqa_general_settings;
@@ -616,19 +616,19 @@ function emqa_enable_review_question_mode() {
 function emqa_show_status_icon() {
 	global $emqa_general_settings;
 
-	echo '<p><label for="emqa_options_enable_show_status_icon"><input type="checkbox" name="emqa_options[show-status-icon]"  id="emqa_options_enable_show_status_icon" value="1" '.checked( 1, (isset($emqa_general_settings['show-status-icon'] ) ? $emqa_general_settings['show-status-icon'] : false ) , false ) .'><span class="description">'.__( 'Display status icon on the left side.', 'em-question-answer' ).'</span></label></p>';
+	echo '<p><label for="emqa_options_enable_show_status_icon"><input type="checkbox" name="emqa_options[show-status-icon]"  id="emqa_options_enable_show_status_icon" value="1" '.checked( 1, (isset($emqa_general_settings['show-status-icon'] ) ? $emqa_general_settings['show-status-icon'] : false ) , false ) .'><span class="description">'.__( 'Display status icon on the left side.', 'emqa' ).'</span></label></p>';
 }
 
 function emqa_disable_question_status() {
 	global $emqa_general_settings;
 
-	echo '<p><label for="emqa_options_emqa_disable_question_status"><input type="checkbox" name="emqa_options[disable-question-status]"  id="emqa_options_emqa_disable_question_status" value="1" '.checked( 1, (isset($emqa_general_settings['disable-question-status'] ) ? $emqa_general_settings['disable-question-status'] : false ) , false ) .'><span class="description">'.__( 'Disable question status feature.', 'em-question-answer' ).'</span></label></p>';
+	echo '<p><label for="emqa_options_emqa_disable_question_status"><input type="checkbox" name="emqa_options[disable-question-status]"  id="emqa_options_emqa_disable_question_status" value="1" '.checked( 1, (isset($emqa_general_settings['disable-question-status'] ) ? $emqa_general_settings['disable-question-status'] : false ) , false ) .'><span class="description">'.__( 'Disable question status feature.', 'emqa' ).'</span></label></p>';
 }
 
 function emqa_show_all_answers() {
 	global $emqa_general_settings;
 
-	echo '<p><label for="emqa_options_emqa_show_all_answers"><input type="checkbox" name="emqa_options[show-all-answers-on-single-question-page]"  id="emqa_options_emqa_show_all_answers" value="1" '.checked( 1, (isset($emqa_general_settings['show-all-answers-on-single-question-page'] ) ? $emqa_general_settings['show-all-answers-on-single-question-page'] : false ) , false ) .'><span class="description">'.__( 'Show all answers on single question page.', 'em-question-answer' ).'</span></label></p>';
+	echo '<p><label for="emqa_options_emqa_show_all_answers"><input type="checkbox" name="emqa_options[show-all-answers-on-single-question-page]"  id="emqa_options_emqa_show_all_answers" value="1" '.checked( 1, (isset($emqa_general_settings['show-all-answers-on-single-question-page'] ) ? $emqa_general_settings['show-all-answers-on-single-question-page'] : false ) , false ) .'><span class="description">'.__( 'Show all answers on single question page.', 'emqa' ).'</span></label></p>';
 }
 
 function emqa_single_template_options() {
@@ -645,7 +645,7 @@ function emqa_single_template_options() {
 						<?php if ( is_dir( $file ) || strpos( $file, '.' === 0 ) || $ext != 'php' ) continue; ?>
 					<option <?php selected( $selected, $file ); ?> value="<?php echo $file; ?>"><?php echo $file ?></option>
 					<?php endforeach; ?>
-				</select> <span class="description"><?php _e( 'By default, your single.php template file will be used if you do not choose any template', 'em-question-answer' ) ?></span>
+				</select> <span class="description"><?php _e( 'By default, your single.php template file will be used if you do not choose any template', 'emqa' ) ?></span>
 			</label>
 		</p>
 	<?php
@@ -655,7 +655,7 @@ function emqa_single_template_options() {
 function emqa_permalink_section_layout() {
 	printf(
     // translators: %s is replaced with an example of a custom question URL structure
-    __( 'If you like, you may enter custom structure for your single question, question category, and question tag URLs here. For example, using <code>topic</code> as your question base would make your question links like <code>%s</code>. If you leave these blank, the default will be used.', 'em-question-answer' ),
+    __( 'If you like, you may enter custom structure for your single question, question category, and question tag URLs here. For example, using <code>topic</code> as your question base would make your question links like <code>%s</code>. If you leave these blank, the default will be used.', 'emqa' ),
     home_url( 'topic/question-name/' )
 	);
 
@@ -819,10 +819,10 @@ class EMQA_Settings {
 		ob_start();
 		?>
 		<ul class="subsubsub">
-			<li class="<?php echo $section == 'general' ? 'active' : '' ?>"><a href="<?php echo add_query_arg( 'section', 'general', admin_url( 'edit.php?post_type=emqa-question&page=emqa-settings&tab=email' ) ) ?>"><?php _e( 'Email Settings', 'em-question-answer' ) ?></a> &#124; </li>
-			<li class="<?php echo $section == 'new-question' ? 'active' : '' ?>"><a href="<?php echo add_query_arg( 'section', 'new-question', admin_url( 'edit.php?post_type=emqa-question&page=emqa-settings&tab=email' ) ) ?>"><?php _e( 'New Question Notifications', 'em-question-answer' ) ?></a> &#124; </li>
-			<li class="<?php echo $section == 'new-answer' ? 'active' : '' ?>"><a href="<?php echo add_query_arg( 'section', 'new-answer', admin_url( 'edit.php?post_type=emqa-question&page=emqa-settings&tab=email' ) ) ?>"><?php _e( 'New Answer Notifications', 'em-question-answer' ) ?></a> &#124; </li>
-			<li class="<?php echo $section == 'new-comment' ? 'active' : '' ?>"><a href="<?php echo add_query_arg( 'section', 'new-comment', admin_url( 'edit.php?post_type=emqa-question&page=emqa-settings&tab=email' ) ) ?>"><?php _e( 'New Comment Notifications', 'em-question-answer' ) ?></a></li>
+			<li class="<?php echo $section == 'general' ? 'active' : '' ?>"><a href="<?php echo add_query_arg( 'section', 'general', admin_url( 'edit.php?post_type=emqa-question&page=emqa-settings&tab=email' ) ) ?>"><?php _e( 'Email Settings', 'emqa' ) ?></a> &#124; </li>
+			<li class="<?php echo $section == 'new-question' ? 'active' : '' ?>"><a href="<?php echo add_query_arg( 'section', 'new-question', admin_url( 'edit.php?post_type=emqa-question&page=emqa-settings&tab=email' ) ) ?>"><?php _e( 'New Question Notifications', 'emqa' ) ?></a> &#124; </li>
+			<li class="<?php echo $section == 'new-answer' ? 'active' : '' ?>"><a href="<?php echo add_query_arg( 'section', 'new-answer', admin_url( 'edit.php?post_type=emqa-question&page=emqa-settings&tab=email' ) ) ?>"><?php _e( 'New Answer Notifications', 'emqa' ) ?></a> &#124; </li>
+			<li class="<?php echo $section == 'new-comment' ? 'active' : '' ?>"><a href="<?php echo add_query_arg( 'section', 'new-comment', admin_url( 'edit.php?post_type=emqa-question&page=emqa-settings&tab=email' ) ) ?>"><?php _e( 'New Comment Notifications', 'emqa' ) ?></a></li>
 		</ul>
 		<div class="clear"></div>
 		<?php
@@ -835,14 +835,14 @@ class EMQA_Settings {
 		//Register Setting Sections
 		add_settings_section( 
 			'emqa-general-settings', 
-			__( 'Page Settings', 'em-question-answer' ),
+			__( 'Page Settings', 'emqa' ),
 			null, 
 			'emqa-settings' 
 		);
 
 		add_settings_field( 
 			'emqa_options[pages][archive-question]', 
-			__( 'Question List Page', 'em-question-answer' ), 
+			__( 'Question List Page', 'emqa' ), 
 			'emqa_pages_settings_display', 
 			'emqa-settings', 
 			'emqa-general-settings'
@@ -850,7 +850,7 @@ class EMQA_Settings {
 
 		add_settings_field( 
 			'emqa_options[pages][submit-question]', 
-			__( 'Ask Question Page', 'em-question-answer' ), 
+			__( 'Ask Question Page', 'emqa' ), 
 			'emqa_submit_question_page_display', 
 			'emqa-settings', 
 			'emqa-general-settings'
@@ -858,7 +858,7 @@ class EMQA_Settings {
 
 		// add_settings_field( 
 		// 	'emqa_options[single-template]', 
-		// 	__( 'Single Question Template', 'em-question-answer' ), 
+		// 	__( 'Single Question Template', 'emqa' ), 
 		// 	'emqa_single_template_options', 
 		// 	'emqa-settings', 
 		// 	'emqa-general-settings' 
@@ -876,7 +876,7 @@ class EMQA_Settings {
 //
 //		add_settings_field( 
 //			'emqa_options[question-new-time-frame]', 
-//			__( 'New Question Time Frame', 'em-question-answer' ), 
+//			__( 'New Question Time Frame', 'emqa' ), 
 //			'emqa_question_new_time_frame_display', 
 //			'emqa-settings', 
 //			'emqa-time-settings'
@@ -884,7 +884,7 @@ class EMQA_Settings {
 //
 //		add_settings_field( 
 //			'emqa_options[question-overdue-time-frame]', 
-//			__( 'Question Overdue - Time Frame', 'em-question-answer' ), 
+//			__( 'Question Overdue - Time Frame', 'emqa' ), 
 //			'emqa_question_overdue_time_frame_display', 
 //			'emqa-settings', 
 //			'emqa-time-settings'
@@ -893,7 +893,7 @@ class EMQA_Settings {
 		// Question Settings
 		add_settings_section(
 			'emqa-misc-settings',
-			__( 'Question Settings', 'em-question-answer' ),
+			__( 'Question Settings', 'emqa' ),
 			false,
 			'emqa-settings'
 		);
@@ -908,7 +908,7 @@ class EMQA_Settings {
 
 		add_settings_field( 
 			'emqa_options[enable-review-question]', 
-			__( 'Before A Question Appears', 'em-question-answer' ), 
+			__( 'Before A Question Appears', 'emqa' ), 
 			'emqa_enable_review_question_mode', 
 			'emqa-settings', 
 			'emqa-misc-settings'
@@ -916,7 +916,7 @@ class EMQA_Settings {
 
 		add_settings_field( 
 			'emqa_options[enable-private-question]', 
-			__( 'Other Question Settings', 'em-question-answer' ), 
+			__( 'Other Question Settings', 'emqa' ), 
 			'emqa_enable_private_question_display', 
 			'emqa-settings', 
 			'emqa-misc-settings'
@@ -941,14 +941,14 @@ class EMQA_Settings {
 		// Answer Settings
 		add_settings_section(
 			'emqa-answer-settings',
-			__( 'Answer Settings', 'em-question-answer' ),
+			__( 'Answer Settings', 'emqa' ),
 			false,
 			'emqa-settings'
 		);
 
 		add_settings_field(
 			'emqa_options[show-all-answers-on-single-question-page]',
-			__( 'Answer Listing', 'em-question-answer' ),
+			__( 'Answer Listing', 'emqa' ),
 			'emqa_show_all_answers',
 			'emqa-settings',
 			'emqa-answer-settings'
@@ -965,14 +965,14 @@ class EMQA_Settings {
 		// Vote Settings
 		add_settings_section(
 			'emqa-vote-settings',
-			__( 'Vote Settings', 'em-question-answer' ),
+			__( 'Vote Settings', 'emqa' ),
 			false,
 			'emqa-settings'
 		);
 
 		add_settings_field(
 			'emqa_options[allow-anonymous-vote]',
-			__( 'Allow Anonymous Vote', 'em-question-answer' ),
+			__( 'Allow Anonymous Vote', 'emqa' ),
 			'emqa_allow_anonymous_vote',
 			'emqa-settings',
 			'emqa-vote-settings'
@@ -981,28 +981,28 @@ class EMQA_Settings {
 		// Akismet Settings
 		add_settings_section(
 			'emqa-akismet-settings',
-			__( 'Akismet Settings', 'em-question-answer' ),
+			__( 'Akismet Settings', 'emqa' ),
 			false,
 			'emqa-settings'
 		);
 
 		add_settings_field(
 			'emqa_options[use-akismet-antispam]',
-			__( 'Use Akismet anti-spam', 'em-question-answer' ),
+			__( 'Use Akismet anti-spam', 'emqa' ),
 			'emqa_use_akismet_antispam',
 			'emqa-settings',
 			'emqa-akismet-settings'
 		);
 		add_settings_field(
 			'emqa_options[akismet-api-key]',
-			__( 'Akismet API key', 'em-question-answer' ),
+			__( 'Akismet API key', 'emqa' ),
 			'emqa_akismet_api_key',
 			'emqa-settings',
 			'emqa-akismet-settings'
 		);
 		add_settings_field(
 			'emqa_options[akismet-connection-status]',
-			__( 'Akismet connection status', 'em-question-answer' ),
+			__( 'Akismet connection status', 'emqa' ),
 			'emqa_akismet_connection_status',
 			'emqa-settings',
 			'emqa-akismet-settings'
@@ -1011,21 +1011,21 @@ class EMQA_Settings {
 		//Auto closure Settings
 		add_settings_section(
 			'emqa-auto-closure-settings',
-			__( 'Auto Closure Settings', 'em-question-answer' ),
+			__( 'Auto Closure Settings', 'emqa' ),
 			false,
 			'emqa-settings'
 		);
 
 		add_settings_field(
 			'emqa_options[use-auto-closure]',
-			__( 'Use Auto Closure', 'em-question-answer' ),
+			__( 'Use Auto Closure', 'emqa' ),
 			'emqa_use_auto_closure',
 			'emqa-settings',
 			'emqa-auto-closure-settings'
 		);
 		add_settings_field(
 			'emqa_options[number-day-auto-closure]',
-			__( 'Closure after', 'em-question-answer' ),
+			__( 'Closure after', 'emqa' ),
 			'emqa_number_day_auto_closure',
 			'emqa-settings',
 			'emqa-auto-closure-settings'
@@ -1042,7 +1042,7 @@ class EMQA_Settings {
 
 		add_settings_field( 
 			'emqa_options[captcha-type]', 
-			__( 'Type', 'em-question-answer' ), 
+			__( 'Type', 'emqa' ), 
 			'emqa_captcha_select_type_display',
 			'emqa-settings', 
 			'emqa-captcha-settings'
@@ -1050,7 +1050,7 @@ class EMQA_Settings {
 
 		add_settings_field( 
 			'emqa_options[captcha-in-question]', 
-			__( 'Ask Question Page', 'em-question-answer' ), 
+			__( 'Ask Question Page', 'emqa' ), 
 			'emqa_captcha_in_question_display', 
 			'emqa-settings',
 			'emqa-captcha-settings'
@@ -1058,7 +1058,7 @@ class EMQA_Settings {
 
 		add_settings_field( 
 			'emqa_options[captcha-in-single-question]', 
-			__( 'Single Question Page', 'em-question-answer' ), 
+			__( 'Single Question Page', 'emqa' ), 
 			'emqa_captcha_in_single_question_display', 
 			'emqa-settings', 
 			'emqa-captcha-settings'
@@ -1077,7 +1077,7 @@ class EMQA_Settings {
 
 		add_settings_field( 
 			'emqa_options[question-rewrite]', 
-			__( 'Question Base', 'em-question-answer' ), 
+			__( 'Question Base', 'emqa' ), 
 			'emqa_question_rewrite_display', 
 			'emqa-settings', 
 			'emqa-permalink-settings'
@@ -1085,7 +1085,7 @@ class EMQA_Settings {
 
 		add_settings_field( 
 			'emqa_options[question-category-rewrite]', 
-			__( 'Question Category Base', 'em-question-answer' ), 
+			__( 'Question Category Base', 'emqa' ), 
 			'emqa_question_category_rewrite_display', 
 			'emqa-settings', 
 			'emqa-permalink-settings'
@@ -1093,7 +1093,7 @@ class EMQA_Settings {
 
 		add_settings_field( 
 			'emqa_options[question-tag-rewrite]', 
-			__( 'Question Tag Base', 'em-question-answer' ), 
+			__( 'Question Tag Base', 'emqa' ), 
 			'emqa_question_tag_rewrite_display', 
 			'emqa-settings', 
 			'emqa-permalink-settings'
@@ -1132,7 +1132,7 @@ class EMQA_Settings {
 		// Send to address setting
 		// add_settings_field( 
 		//     'emqa_subscrible_sendto_address', 
-		//     __( 'Admin Email', 'em-question-answer' ), 
+		//     __( 'Admin Email', 'emqa' ), 
 		//     array( $this, 'email_sendto_address_display' ), 
 		//     'emqa-email', 
 		//     'emqa-subscribe-settings'
@@ -1142,7 +1142,7 @@ class EMQA_Settings {
 		// Cc address setting
 		// add_settings_field( 
 		//     'emqa_subscrible_cc_address', 
-		//     __( 'Cc', 'em-question-answer' ), 
+		//     __( 'Cc', 'emqa' ), 
 		//     array( $this, 'email_cc_address_display' ), 
 		//     'emqa-email', 
 		//     'emqa-subscribe-settings'
@@ -1152,7 +1152,7 @@ class EMQA_Settings {
 		// Bcc address setting
 		// add_settings_field( 
 		//     'emqa_subscrible_bcc_address', 
-		//     __( 'Bcc', 'em-question-answer' ), 
+		//     __( 'Bcc', 'emqa' ), 
 		//     array( $this, 'email_bcc_address_display' ), 
 		//     'emqa-email', 
 		//     'emqa-subscribe-settings'
@@ -1162,7 +1162,7 @@ class EMQA_Settings {
 		// Bcc address setting
 		add_settings_field( 
 			'emqa_subscrible_from_address', 
-			__( 'From Email', 'em-question-answer' ), 
+			__( 'From Email', 'emqa' ), 
 			array( $this, 'email_from_address_display' ), 
 			'emqa-email', 
 			'emqa-subscribe-settings'
@@ -1192,7 +1192,7 @@ class EMQA_Settings {
 		// Logo setting in for email template
 		// add_settings_field( 
 		//     'emqa_subscrible_email_logo', 
-		//     __( 'Email Logo', 'em-question-answer' ), 
+		//     __( 'Email Logo', 'emqa' ), 
 		//     'emqa_subscrible_email_logo_display', 
 		//     'emqa-email', 
 		//     'emqa-subscribe-settings'
@@ -1285,7 +1285,7 @@ class EMQA_Settings {
 			}
 		</style>
 		<div class="wrap">
-			<h2><?php _e( 'EMQA Settings', 'em-question-answer' ) ?></h2>
+			<h2><?php _e( 'EMQA Settings', 'emqa' ) ?></h2>
 			<?php settings_errors(); ?>  
 			<?php $active_tab = isset( $_GET[ 'tab' ] ) ? esc_html( $_GET['tab'] ) : 'general'; ?>  
 			<h2 class="nav-tab-wrapper">  
@@ -1470,7 +1470,7 @@ class EMQA_Settings {
 					settings_fields( 'emqa-addons' );
 					echo '<p class="description">' . sprintf(
 						// translators: %s is replaced with the link to EMQA Extensions
-						__( 'Manage <a href="%s">EMQA Extensions</a> license keys', 'em-question-answer' ),
+						__( 'Manage <a href="%s">EMQA Extensions</a> license keys', 'emqa' ),
 						add_query_arg(
 								array( 'post_type' => 'emqa-question', 'page' => 'emqa-extensions' ),
 								admin_url( 'edit.php' )
@@ -1504,32 +1504,32 @@ class EMQA_Settings {
 	}
 
 	public function new_answer_forward() {
-		echo '<th>'.__( 'Forward to', 'em-question-answer' ).'</th>';
+		echo '<th>'.__( 'Forward to', 'emqa' ).'</th>';
 		$this->textarea_field( 'emqa_subscrible_new_answer_forward' );
 	}
 
 	public function new_comment_question_forward() {
-		echo '<th>'.__( 'Forward to', 'em-question-answer' ).'</th>';
+		echo '<th>'.__( 'Forward to', 'emqa' ).'</th>';
 		$this->textarea_field( 'emqa_subscrible_new_comment_question_forward' );
 	}
 
 	public function new_comment_answer_forward() {
-		echo '<th>'.__( 'Forward to', 'em-question-answer' ).'</th>';
+		echo '<th>'.__( 'Forward to', 'emqa' ).'</th>';
 		$this->textarea_field( 'emqa_subscrible_new_comment_answer_forward' );
 	}
 
 	public function email_sendto_address_display(){
-		echo '<th>'.__( 'Forward to', 'em-question-answer' ).'</th>';
+		echo '<th>'.__( 'Forward to', 'emqa' ).'</th>';
 		$this->textarea_field( 'emqa_subscrible_sendto_address' );
 	}
 
 	public function email_cc_address_display(){
-		echo '<p>'.__( 'Cc', 'em-question-answer' ).'</p>';
+		echo '<p>'.__( 'Cc', 'emqa' ).'</p>';
 		$this->input_text_field( 'emqa_subscrible_cc_address' );
 	}
 
 	public function email_bcc_address_display(){
-		echo '<p>'.__( 'Bcc', 'em-question-answer' ).'</p>';
+		echo '<p>'.__( 'Bcc', 'emqa' ).'</p>';
 		$this->input_text_field( 'emqa_subscrible_bcc_address' );
 	}
 

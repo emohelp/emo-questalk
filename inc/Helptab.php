@@ -44,24 +44,24 @@ class EMQA_Helptab {
 			// The assoc key represents the ID
 			// It is NOT allowed to contain spaces
 			'emqa-overview' => array(
-				'title'         => __( 'Overview', 'em-question-answer' ),
-				'content'       => '<h3>'.__( 'EMO Questalk Plugin', 'em-question-answer' ).'</h3>'.
-				'<p>'.__( 'EMO Questalk Plugin is a WordPress Plugin which helps you build a Question & Answer system on your WordPress sites. The plugin is easy to install and set up. Let start building up your community with this WordPress question & answer system.', 'em-question-answer' ).'</p>'.$this->help_tab_emohelp()
+				'title'         => __( 'Overview', 'emqa' ),
+				'content'       => '<h3>'.__( 'EMO Questalk Plugin', 'emqa' ).'</h3>'.
+				'<p>'.__( 'EMO Questalk Plugin is a WordPress Plugin which helps you build a Question & Answer system on your WordPress sites. The plugin is easy to install and set up. Let start building up your community with this WordPress question & answer system.', 'emqa' ).'</p>'.$this->help_tab_emohelp()
 			),
 			'emqa-guide-add-list-page' => array(
-				'title'         => __( 'Setup Question List Page', 'em-question-answer' ),
+				'title'         => __( 'Setup Question List Page', 'emqa' ),
 				'content'       => $this->help_tab_guide_make_question_list_page()
 			),
 			'emqa-guide-add-ask-page' => array(
-				'title'         => __( 'Setup Ask Question Page', 'em-question-answer' ),
+				'title'         => __( 'Setup Ask Question Page', 'emqa' ),
 				'content'       => $this->help_tab_guide_make_ask_question_page()
 			),
 			'emqa-guide-shortcode' => array(
-				'title'         => __( 'Shortcode', 'em-question-answer' ),
+				'title'         => __( 'Shortcode', 'emqa' ),
 				'content'       => $this->help_tab_guide_shortcode()
 			),
 			'emqa-guide-style-integration' => array(
-				'title'         => __( 'Style integration', 'em-question-answer' ),
+				'title'         => __( 'Style integration', 'emqa' ),
 				'content'       => $this->help_tab_guide_style_integration()
 			)
 		);
@@ -139,7 +139,7 @@ class EMQA_Helptab {
 		ob_start();
 		?>
 		<h3 id="Style_integration">Style integration</h3>
-		The EMO Questalk plugin can work well on any WordPress site, however, in order to get the plugin fit well in the style, we will need to work on CSS a bit. <a target="_blank" href=""><?php _e( 'Read more', 'em-question-answer' ) ?></a>
+		The EMO Questalk plugin can work well on any WordPress site, however, in order to get the plugin fit well in the style, we will need to work on CSS a bit. <a target="_blank" href=""><?php _e( 'Read more', 'emqa' ) ?></a>
 		<?php
 		$html = ob_get_contents();
 		ob_end_clean();

@@ -50,19 +50,19 @@ class EMQA_Autoclosure {
 		// add a 'weekly' schedule to the existing set
 		/* $schedules['weekly'] = array(
 			'interval' => 604800,
-			'display' => __('Once Weekly', 'em-question-answer')
+			'display' => __('Once Weekly', 'emqa')
 		);
 		$schedules['monthly'] = array(
 			'interval' => 2635200,
-			'display' => __('Once a month', 'em-question-answer')
+			'display' => __('Once a month', 'emqa')
 		);
 		$schedules['minutely'] = array(
 			'interval' => 60,
-			'display' => __('Minutely', 'em-question-answer')
+			'display' => __('Minutely', 'emqa')
 		); */
 		$schedules['half_daily'] = array(
 			'interval' => 43200,
-			'display' => __('Half Daily', 'em-question-answer')
+			'display' => __('Half Daily', 'emqa')
 		);
 		return $schedules;
 	}

@@ -24,24 +24,24 @@ class EMQA_Admin_Welcome {
 
 	public function admin_menus() {
 		add_dashboard_page(
-			__( 'Welcome to EMO Questalk', 'em-question-answer' ),
-			__( 'Welcome to EMO Questalk', 'em-question-answer' ),
+			__( 'Welcome to EMO Questalk', 'emqa' ),
+			__( 'Welcome to EMO Questalk', 'emqa' ),
 			'manage_options',
 			'emqa-about',
 			array( $this, 'about_layout' )
 		);
 
 		add_dashboard_page(
-			__( 'EMO Questalk Changelog', 'em-question-answer' ),
-			__( 'EMO Questalk Changelog', 'em-question-answer' ),
+			__( 'EMO Questalk Changelog', 'emqa' ),
+			__( 'EMO Questalk Changelog', 'emqa' ),
 			'manage_options',
 			'emqa-changelog',
 			array( $this, 'changelog_layout' )
 		);
 
 		add_dashboard_page(
-			__( 'EMO Questalk Credits', 'em-question-answer' ),
-			__( 'EMO Questalk Credits', 'em-question-answer' ),
+			__( 'EMO Questalk Credits', 'emqa' ),
+			__( 'EMO Questalk Credits', 'emqa' ),
 			'manage_options',
 			'emqa-credits',
 			array( $this, 'credits_layout' )
@@ -60,8 +60,8 @@ class EMQA_Admin_Welcome {
 		
 		<h1><?php
 		// translators: %1$s is replaced with the version number
-		 printf( __( 'Welcome to EMO Questalk %1$s', 'em-question-answer' ), $emqa->version ) ?></h1>
-		<p class="about-text"><?php _e( 'Thank you for installing our WordPress plugin. If you have any question about this plugin, please submit to our <a target="_blank" href="https://www.emohelp.com/question/">Q&A section</a>.', 'em-question-answer' ); ?></p>
+		 printf( __( 'Welcome to EMO Questalk %1$s', 'emqa' ), $emqa->version ) ?></h1>
+		<p class="about-text"><?php _e( 'Thank you for installing our WordPress plugin. If you have any question about this plugin, please submit to our <a target="_blank" href="https://www.emohelp.com/question/">Q&A section</a>.', 'emqa' ); ?></p>
 		<?php
 	}
 
@@ -202,7 +202,7 @@ class EMQA_Admin_Welcome {
 
 			<ul class="wp-people-group" id="wp-people-group-project-leaders">
 			<?php if ( !empty( $contributors ) ) : ?>
-				<h3 class="wp-people-group"><?php _e( 'Contributors', 'em-question-answer' ); ?></h3>
+				<h3 class="wp-people-group"><?php _e( 'Contributors', 'emqa' ); ?></h3>
 				<?php foreach( $contributors as $contributor ) : ?>
 					<li class="wp-person" id="wp-person-nacin">
 						<a href="<?php echo esc_url( $contributor->html_url ) ?>">
@@ -221,7 +221,7 @@ class EMQA_Admin_Welcome {
 		$file = file_exists( EMQA_DIR . 'changelog.txt' ) ? EMQA_DIR . 'changelog.txt' : false;
 	
 		if ( !$file ) {
-			$changelog = '<p>' . __( 'No valid changelog was found.', 'em-question-answer' ) . '</p>';
+			$changelog = '<p>' . __( 'No valid changelog was found.', 'emqa' ) . '</p>';
 		} else {
 			$changelog_content = file_get_contents( $file );
 			$changelog = nl2br( esc_html( $changelog_content ) );

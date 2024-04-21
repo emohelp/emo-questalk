@@ -28,23 +28,23 @@ function bp_emqa_format_buddypress_notifications( $action, $item_id, $secondary_
 		
 		$emqa_notif_title = get_the_title( $answer->post_parent );
 		$emqa_notif_link = wp_nonce_url( add_query_arg( array( 'action' => 'bp_emqa_mark_read', 'question_id' => $answer->post_parent, 'answer_id' => $answer->ID ), get_permalink( $answer->post_parent ) ), 'bp_emqa_mark_answer_' . $answer->ID );
-		$emqa_notif_title_attr  = __( 'Question Replies', 'em-question-answer' );
+		$emqa_notif_title_attr  = __( 'Question Replies', 'emqa' );
 		
 		if ( (int) $total_items > 1 ) {
 			$text   = sprintf(
 				// translators: %d is replaced with the number of new replies
-				__('EMQA: ','em-question-answer') .__( 'You have %d new replies', 'em-question-answer' ), (int) $total_items );
+				__('EMQA: ','em-question-answer') .__( 'You have %d new replies', 'emqa' ), (int) $total_items );
 			$filter = 'bp_emqa_multiple_new_subscription_notification';
 		} else {
 			if ( !empty( $secondary_item_id ) ) {
 				$text = sprintf( 
 					// translators: %1$d is replaced with the number of new replies, %2$s is replaced with the recipient's name, %3$s is replaced with the sender's name
-					__('EMQA: ','em-question-answer') .__( 'You have %1$d new reply to %2$s from %3$s', 'em-question-answer' ), (int) $total_items, $emqa_notif_title, bp_core_get_user_displayname( $secondary_item_id ) );
+					__('EMQA: ','em-question-answer') .__( 'You have %1$d new reply to %2$s from %3$s', 'emqa' ), (int) $total_items, $emqa_notif_title, bp_core_get_user_displayname( $secondary_item_id ) );
 				
 			} else {
 				$text = sprintf( 
 					// translators: %1$d is replaced with the number of new replies, %2$s is replaced with the recipient's name
-					__('EMQA: ','em-question-answer') .__( 'You have %1$d new reply to %2$s', 'em-question-answer' ), (int) $total_items, $emqa_notif_title );
+					__('EMQA: ','em-question-answer') .__( 'You have %1$d new reply to %2$s', 'emqa' ), (int) $total_items, $emqa_notif_title );
 				
 			}
 			$filter = 'bp_emqa_single_new_subscription_notification';
@@ -105,10 +105,10 @@ function bp_emqa_buddypress_mark_notifications() {
 	// Check nonce
 	$nonce = $_REQUEST['_wpnonce'];
 	if ( ! wp_verify_nonce( $nonce, 'bp_emqa_mark_answer_' . $answer_id ) ) {
-		emqa_add_notice( __( "Hello, Are you cheating huh?", 'em-question-answer' ), 'error' );
+		emqa_add_notice( __( "Hello, Are you cheating huh?", 'emqa' ), 'error' );
 	// Check current user's ability to edit the user
 	} elseif ( !current_user_can( 'edit_user', $user_id ) ) {
-		emqa_add_notice( __( "You do not have permission to mark notifications for that user.", 'em-question-answer' ), 'error' );
+		emqa_add_notice( __( "You do not have permission to mark notifications for that user.", 'emqa' ), 'error' );
 	}
 
 	if ( emqa_count_notices( 'error' ) > 0 ) {

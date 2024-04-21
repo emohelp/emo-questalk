@@ -26,48 +26,51 @@ class EMQA_Handle {
 		if ( isset( $_POST['emqa_add_answer_nonce'] ) && wp_verify_nonce( $_POST['emqa_add_answer_nonce'], 'emqa_add_answer_nonce' ) ) {
 			// Nonce is valid, proceed with processing the form data
 			if ( 'add-answer' !== sanitize_text_field( $_POST['emqa-action'] ) ) {
-					return false;
+				return false;
 			}
 		} else {
-				// Nonce is invalid, handle the error (e.g., display an error message, log the attempt, etc.)
-				echo 'Nonce verification failed. Please try again.';
+			// Nonce is invalid, handle the error (e.g., display an error message, log the attempt, etc.)
+			echo 'Nonce verification failed. Please try again.';
 		}
 
 		if ( ! isset( $_POST['_wpnonce'] ) || ! wp_verify_nonce( esc_html(  $_POST['_wpnonce'] ), '_emqa_add_new_answer' ) ) {
-			emqa_add_notice( __( '&quot;Helllo&quot;, Are you cheating huh?.', 'em-question-answer' ), 'error' );
+			// emqa_add_notice( __( '&quot;Helllo&quot;, Are you cheating huh?.', 'emqa' ), 'error' );
+			wp_die( __( '&quot;Hello&quot;, Are you cheating huh?', 'emqa' ) );
 		}
 
-		if ( sanitize_text_field( $_POST['submit-answer'] ) == __( 'Delete draft', 'em-question-answer' ) ) {
+		if ( $_POST['submit-answer'] == __( 'Delete draft', 'emqa' ) ) {
 			$draft = isset( $_POST['answer-id'] ) ? intval( $_POST['answer-id'] ) : 0;
 			if ( $draft )
 				wp_delete_post( $draft );
 		}
 
 		if ( empty( $_POST['answer-content'] ) ) {
-			emqa_add_notice( __( 'Answer content is empty', 'em-question-answer' ), 'error' );
+			emqa_add_notice( __( 'Answer content is empty', 'emqa' ), 'error' );
 		}
 		if ( empty( $_POST['question_id'] ) ) {
-			emqa_add_notice( __( 'Question is empty', 'em-question-answer' ), 'error' );
+			emqa_add_notice( __( 'Question is empty', 'emqa' ), 'error' );
 		}
 
 		if ( !emqa_current_user_can( 'post_answer' ) ) {
-			emqa_add_notice( __( 'You do not have permission to submit question.', 'em-question-answer' ), 'error' );
+			emqa_add_notice( __( 'You do not have permission to submit question.', 'emqa' ), 'error' );
 		}
 
-		if ( !is_user_logged_in() && ( empty( $_POST['user-email'] ) || !is_email( sanitize_email( $_POST['user-email'] ) ) ) ) {
-			emqa_add_notice( __( 'Missing email information', 'em-question-answer' ), 'error' );
+		if ( !is_user_logged_in() && apply_filters( 'emqa_require_user_email_fields', true ) && ( empty( $_POST['user-email'] ) || !is_email( sanitize_email( $_POST['user-email'] ) ) ) ) {
+			emqa_add_notice( __( 'Missing email information', 'emqa' ), 'error' );
 		}
 
-		if ( !is_user_logged_in() && ( empty( $_POST['user-name'] ) ) ) {
-			emqa_add_notice( __( 'Missing name information', 'em-question-answer' ), 'error' );
+		if ( !is_user_logged_in() && apply_filters( 'emqa_require_user_name_fields', true ) && ( empty( $_POST['user-name'] ) ) ) {
+			emqa_add_notice( __( 'Missing name information', 'emqa' ), 'error' );
 		}
 
 		if ( !emqa_valid_captcha( 'single-question' ) ) {
-			emqa_add_notice( __( 'Captcha is not correct', 'em-question-answer' ), 'error' );
+			emqa_add_notice( __( 'Captcha is not correct', 'emqa' ), 'error' );
 		}
 
 		$user_id = 0;
 		$is_anonymous = false;
+		$post_author_email = '';
+		$post_author_name = '';
 		if ( is_user_logged_in() ) {
 			$user_id = get_current_user_id();
 		} else {
@@ -82,7 +85,7 @@ class EMQA_Handle {
 
 		$question_id = intval( $_POST['question_id'] );
 
-		$answer_title = __( 'Answer for ', 'em-question-answer' ) . get_post_field( 'post_title', $question_id );
+		$answer_title = __( 'Answer for ', 'emqa' ) . get_post_field( 'post_title', $question_id );
 		$answ_content = apply_filters( 'emqa_prepare_answer_content', $_POST['answer-content'] );
 
 		$answers = array(
@@ -145,26 +148,27 @@ class EMQA_Handle {
 	public function update_answer() {
 		if ( isset( $_POST['emqa-edit-answer-submit'] ) ) {
 			if ( !emqa_current_user_can( 'edit_answer' ) ) {
-				emqa_add_notice( __( "You do not have permission to edit answer.", 'em-question-answer' ), 'error' );
+				emqa_add_notice( __( "You do not have permission to edit answer.", 'emqa' ), 'error' );
 			}
 
 			if ( !isset( $_POST['_wpnonce'] ) && !wp_verify_nonce( esc_html( $_POST['_wpnonce'] ), '_emqa_edit_answer' ) ) {
-				emqa_add_notice( __( 'Hello, Are you cheating huh?', 'em-question-answer' ), 'error' );
+				// emqa_add_notice( __( 'Hello, Are you cheating huh?', 'emqa' ), 'error' );
+				wp_die( __( 'Hello, Are you cheating huh?', 'emqa' ) );			
 			}
 
 			$answer_content = apply_filters( 'emqa_prepare_edit_answer_content', $_POST['answer_content'] );
 			if ( empty( $answer_content ) ) {
-				emqa_add_notice( __( 'You must enter a valid answer content.', 'em-question-answer' ), 'error' );
+				emqa_add_notice( __( 'You must enter a valid answer content.', 'emqa' ), 'error' );
 			}
 
 			$answer_id = isset( $_POST['answer_id'] ) ? intval( $_POST['answer_id'] ) : false;
 
 			if ( !$answer_id ) {
-				emqa_add_notice( __( 'Answer is missing.', 'em-question-answer' ), 'error' );
+				emqa_add_notice( __( 'Answer is missing.', 'emqa' ), 'error' );
 			}
 
 			if ( 'emqa-answer' !== get_post_type( $answer_id ) ) {
-				emqa_add_notice( __( 'This post is not answer.', 'em-question-answer' ), 'error' );
+				emqa_add_notice( __( 'This post is not answer.', 'emqa' ), 'error' );
 			}
 
 			do_action( 'emqa_prepare_insert_question', $answer_id );
@@ -201,18 +205,18 @@ class EMQA_Handle {
 	
 	// 	if ( isset( $_POST['comment-submit'] ) && isset( $_POST['emqa_comment_nonce'] ) && wp_verify_nonce( $_POST['emqa_comment_nonce'], 'emqa_comment_nonce' ) ) {
 	// 		if ( ! emqa_current_user_can( 'post_comment' ) ) {
-	// 			emqa_add_notice( __( 'You can\'t post comment', 'em-question-answer' ), 'error', true );
+	// 			emqa_add_notice( __( 'You can\'t post comment', 'emqa' ), 'error', true );
 	// 		}
 	
 	// 		if ( ! isset( $_POST['comment_post_ID'] ) ) {
-	// 			emqa_add_notice( __( 'Missing post id.', 'em-question-answer' ), 'error', true );
+	// 			emqa_add_notice( __( 'Missing post id.', 'emqa' ), 'error', true );
 	// 		}
 	
 	// 		$comment_content = isset( $_POST['comment'] ) ? $_POST['comment'] : '';
 	// 		$comment_content = apply_filters( 'emqa_pre_comment_content', $comment_content );
 	
 	// 		if ( empty( $comment_content ) ) {
-	// 			emqa_add_notice( __( 'Please enter your comment content', 'em-question-answer' ), 'error', true );
+	// 			emqa_add_notice( __( 'Please enter your comment content', 'emqa' ), 'error', true );
 	// 		}
 	
 	// 		$args = array(
@@ -227,11 +231,11 @@ class EMQA_Handle {
 	// 			$args['comment_author'] = $current_user->display_name;
 	// 		} else {
 	// 			if ( ! isset( $_POST['email'] ) || ! sanitize_email( $_POST['email'] ) ) {
-	// 				emqa_add_notice( __( 'Missing or invalid email information', 'em-question-answer' ), 'error', true );
+	// 				emqa_add_notice( __( 'Missing or invalid email information', 'emqa' ), 'error', true );
 	// 			}
 	
 	// 			if ( ! isset( $_POST['name'] ) || empty( $_POST['name'] ) ) {
-	// 				emqa_add_notice( __( 'Missing name information', 'em-question-answer' ), 'error', true );
+	// 				emqa_add_notice( __( 'Missing name information', 'emqa' ), 'error', true );
 	// 			}
 	
 	// 			$args['comment_author'] = isset( $_POST['name'] ) ? sanitize_text_field( $_POST['name'] ) : 'Anonymous';
@@ -273,105 +277,156 @@ class EMQA_Handle {
 	
 	public function insert_comment() {
 		global $current_user;
-	
-		if ( isset( $_POST['comment-submit'] ) && isset( $_POST['emqa_comment_nonce'] ) && wp_verify_nonce( $_POST['emqa_comment_nonce'], 'emqa_comment_nonce' ) ) {
+		if ( isset( $_POST['comment-submit'] ) ) {
+			if ( !emqa_valid_captcha( 'comment' ) ) {
+				emqa_add_notice( __( 'Captcha is not correct', 'emqa' ), 'error' , true );
+			}
 			if ( ! emqa_current_user_can( 'post_comment' ) ) {
-				emqa_add_notice( __( 'You can\'t post comment', 'em-question-answer' ), 'error', true );
+				emqa_add_notice( __( 'You can\'t post comment', 'emqa' ), 'error', true );
 			}
-	
 			if ( ! isset( $_POST['comment_post_ID'] ) ) {
-				emqa_add_notice( __( 'Missing post id.', 'em-question-answer' ), 'error', true );
+				emqa_add_notice( __( 'Missing post id.', 'emqa' ), 'error', true );
 			}
-	
 			$comment_content = isset( $_POST['comment'] ) ? $_POST['comment'] : '';
 			$comment_content = apply_filters( 'emqa_pre_comment_content', $comment_content );
-	
+
 			if ( empty( $comment_content ) ) {
-				emqa_add_notice( __( 'Please enter your comment content', 'em-question-answer' ), 'error', true );
+				emqa_add_notice( __( 'Please enter your comment content', 'emqa' ), 'error', true );
 			}
-	
+
 			$args = array(
 				'comment_post_ID'   => intval( $_POST['comment_post_ID'] ),
 				'comment_content'   => $comment_content,
 				'comment_parent'    => isset( $_POST['comment_parent']) ? intval( $_POST['comment_parent'] ) : 0,
-				'comment_type'      => 'emqa-comment'
+				'comment_type'		=> 'emqa-comment'
 			);
-	
+
 			if ( is_user_logged_in() ) {
 				$args['user_id'] = $current_user->ID;
 				$args['comment_author'] = $current_user->display_name;
 			} else {
-				if ( ! isset( $_POST['email'] ) || ! sanitize_email( $_POST['email'] ) ) {
-					emqa_add_notice( __( 'Missing or invalid email information', 'em-question-answer' ), 'error', true );
+				if ( ( ! isset( $_POST['email'] ) || ! is_email( $_POST['email'] ) ) && apply_filters( 'emqa_require_user_email_fields', true ) ) {
+					emqa_add_notice( __( 'Missing email information', 'emqa' ), 'error', true );
 				}
-	
-				if ( ! isset( $_POST['name'] ) || empty( $_POST['name'] ) ) {
-					emqa_add_notice( __( 'Missing name information', 'em-question-answer' ), 'error', true );
+
+				if ( ( ! isset( $_POST['name'] ) || empty( $_POST['name'] ) ) && apply_filters( 'emqa_require_user_name_fields', true ) ) {
+					emqa_add_notice( __( 'Missing name information', 'emqa' ), 'error', true );
 				}
-	
-				$args['comment_author'] = isset( $_POST['name'] ) ? sanitize_text_field( $_POST['name'] ) : 'Anonymous';
+				$_POST['name'] = sanitize_text_field( wp_filter_kses( _wp_specialchars( $_POST['name'] ) ) );
+				$args['comment_author'] = isset( $_POST['name'] ) ? $_POST['name'] : 'Anonymous';
 				$args['comment_author_email'] = sanitize_email(  $_POST['email'] );
 				$args['comment_author_url'] = isset( $_POST['url'] ) ? esc_url( $_POST['url'] ) : '';
 				$args['user_id']    = -1;
 			}
-	
+
+			if ( emqa_count_notices( 'error', true ) > 0 ) {
+				//redirect to clear content if refresh
+				$question_id = absint( $_POST['comment_post_ID'] );
+				if ( 'emqa-answer' == get_post_type( $question_id ) ) {
+					$question_id = emqa_get_question_from_answer_id( $question_id );
+				}
+				$redirect_to = get_permalink( $question_id );
+
+				if ( isset( $_GET['ans-page'] ) ) {
+					$redirect_to = add_query_arg( 'ans-page', absint( $_GET['ans-page'] ), $redirect_to );
+				}
+
+				$redirect_to = apply_filters( 'emqa_submit_comment_error_redirect', $redirect_to, $question_id);
+
+				exit(wp_safe_redirect( $redirect_to ));
+				return false;
+			}
+
+			$args = apply_filters( 'emqa_insert_comment_args', $args );
+
+			$comment_id = wp_insert_comment( $args );
+
 			$question_id = absint( $_POST['comment_post_ID'] );
 			if ( 'emqa-answer' == get_post_type( $question_id ) ) {
 				$question_id = emqa_get_question_from_answer_id( $question_id );
 			}
+
+			global $comment;
+			$comment = get_comment( $comment_id );
+			$client_id = isset( $_POST['clientId'] ) ? absint( $_POST['clientId'] ) : false;
+
+			$latest_activity_args = array(
+				'text' => 'commented',
+				'date' => $comment->comment_date,
+				'user_id' => $comment->user_id,
+				'act_id' => $comment->comment_ID
+			);
+
+			wp_update_post( array(
+				'ID' => absint( $question_id ),
+				'post_modified' => time(),
+				'post_modified_gmt' => time()
+			) );
+
+			update_post_meta( $question_id, '_latest_activity', $latest_activity_args );
+
+			if ( is_user_logged_in() ) {
+				if ( !emqa_is_followed( $question_id, $comment->user_id ) ) {
+					add_post_meta( $question_id, '_emqa_followers', $comment->user_id );
+				}
+			} else {
+				if ( !emqa_is_followed( $question_id, $comment->comment_author_email ) ) {
+					add_post_meta( $question_id, '_emqa_followers', $comment->comment_author_email );
+				}
+			}
+
+			do_action( 'emqa_add_comment', $comment_id, $client_id );
+
 			$redirect_to = get_permalink( $question_id );
-	
+
 			if ( isset( $_GET['ans-page'] ) ) {
 				$redirect_to = add_query_arg( 'ans-page', absint( $_GET['ans-page'] ), $redirect_to );
 			}
-	
-			if ( emqa_count_notices( 'error', true ) > 0 ) {
-				$redirect_to = apply_filters( 'emqa_submit_comment_error_redirect', $redirect_to, $question_id);
-				wp_safe_redirect( $redirect_to );
-				exit;
-			}
-	
-			$args = apply_filters( 'emqa_insert_comment_args', $args );
-	
-			$comment_id = wp_insert_comment( $args );
-	
-			global $comment;
-			$comment = get_comment( $comment_id );
-			$client_id = isset( $_POST['clientId'] ) ? sanitize_text_field( $_POST['clientId'] ) : false;
-			do_action( 'emqa_add_comment', $comment_id, $client_id );
-	
-			$redirect_to = apply_filters( 'emqa_submit_comment_success_redirect', $redirect_to, $question_id);
-			wp_safe_redirect( $redirect_to );
-			exit;
+
+			$redirect_to = apply_filters( 'emqa_submit_comment_redirect', $redirect_to, $question_id, $comment );
+			exit(wp_safe_redirect( $redirect_to ));
 		}
 	}
-	
 
 	public function update_comment() {
 		global $post_submit_filter;
+		
 		if ( isset( $_POST['emqa-edit-comment-submit'] ) ) {
 			if ( ! isset( $_POST['comment_id']) ) {
-				emqa_add_notice( __( 'Comment is missing', 'em-question-answer' ), 'error' );
+				emqa_add_notice( __( 'Comment is missing', 'emqa' ), 'error' );
 			}
 			$comment_id = intval( $_POST['comment_id'] );
-			$comment_content = isset( $_POST['comment_content'] ) ? $_POST['comment_content'] : '';
+			$comment_content = isset( $_POST['comment_content'] ) ? esc_html( $_POST['comment_content'] ) : '';
 			$comment_content = apply_filters( 'emqa_pre_update_comment_content', $comment_content );
 
 			if ( ! isset( $_POST['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_POST['_wpnonce'] ), '_emqa_edit_comment' ) ) {
-				emqa_add_notice( __( 'Are you cheating huh?', 'em-question-answer' ), 'error' );
+				// emqa_add_notice( __( 'Are you cheating huh?', 'emqa' ), 'error' );
+				wp_die( __( 'Are you cheating huh?', 'emqa' ) );
 			}
 
-			if ( !emqa_current_user_can( 'edit_comment', $comment_id ) ) {
-				emqa_add_notice( __( 'You do not have permission to edit comment.', 'em-question-answer' ), 'error' );
+			if ( !emqa_current_user_can( 'edit_comment', $comment_id ) && !emqa_current_user_can( 'manage_comment' ) ) {
+				emqa_add_notice( __( 'You do not have permission to edit comment.', 'emqa' ), 'error' );
 			}
 
+			if ( emqa_count_notices( 'error' ) > 0 ) {
+				return false;
+			}
+			
 			if ( strlen( $comment_content ) <= 0 || ! isset( $comment_id ) || ( int )$comment_id <= 0 ) {
-				emqa_add_notice( __( 'Comment content must not be empty.', 'em-question-answer' ), 'error' );
+				emqa_add_notice( __( 'Comment content must not be empty.', 'emqa' ), 'error' );
+				return false;
 			} else {
+				
 				$commentarr = array(
 					'comment_ID'        => $comment_id,
 					'comment_content'   => $comment_content
 				);
+				
+				// check only author and admin can edit comment
+				$emqa_comment_author = get_comment_author( $comment_id ); 
+				if  ( $emqa_comment_author != get_current_user_id() && !emqa_current_user_can( 'edit_comment', $comment_id ) && !emqa_current_user_can( 'manage_comment' ) ) {
+					return false;
+				}
 
 				$intval = wp_update_comment( $commentarr );
 				if ( !is_wp_error( $intval ) ) {
@@ -396,18 +451,18 @@ class EMQA_Handle {
 			if ( isset( $_POST['_wpnonce'] ) && wp_verify_nonce( esc_html( $_POST['_wpnonce'] ), '_emqa_submit_question' ) ) {
 				if ( $valid_captcha ) {
 					if ( empty( $_POST['question-title'] ) ) {
-						emqa_add_notice( __( 'You must enter a valid question title.', 'em-question-answer' ), 'error' );
+						emqa_add_notice( __( 'You must enter a valid question title.', 'emqa' ), 'error' );
 						return false;
 					}
 
 					if ( !is_user_logged_in() ) {
 						if ( empty( $_POST['_emqa_anonymous_email'] ) || !is_email( sanitize_email( $_POST['_emqa_anonymous_email'] ) ) ) {
-							emqa_add_notice( __( 'Missing email information', 'em-question-answer' ), 'error' );
+							emqa_add_notice( __( 'Missing email information', 'emqa' ), 'error' );
 							return false;
 						}
 
 						if ( empty( $_POST['_emqa_anonymous_name'] ) ) {
-							emqa_add_notice( __( 'Missing name information', 'em-question-answer' ), 'error' );
+							emqa_add_notice( __( 'Missing name information', 'emqa' ), 'error' );
 							return false;
 						}
 					}
@@ -533,8 +588,8 @@ class EMQA_Handle {
 						$new_question = $this->insert_question( $postarr );
 						do_action('emqa_after_insert_question',$new_question);
 					} else {
-						//$emqa_submit_question_errors->add( 'submit_question',  __( 'You do not have permission to submit question.', 'em-question-answer' ) );
-						emqa_add_notice( __( 'You do not have permission to submit question.', 'em-question-answer' ), 'error' );
+						//$emqa_submit_question_errors->add( 'submit_question',  __( 'You do not have permission to submit question.', 'emqa' ) );
+						emqa_add_notice( __( 'You do not have permission to submit question.', 'emqa' ), 'error' );
 						$new_question = $emqa_submit_question_errors;
 					}
 
@@ -546,18 +601,18 @@ class EMQA_Handle {
 						}
 
 						if ( isset( $emqa_options['enable-review-question'] ) && $emqa_options['enable-review-question'] && !current_user_can( 'manage_options' ) && $post_status != 'private' ) {
-							emqa_add_notice( __( 'Your question is waiting moderator.', 'em-question-answer' ), 'success' );
+							emqa_add_notice( __( 'Your question is waiting moderator.', 'emqa' ), 'success' );
 						} else {
 							exit( wp_safe_redirect( get_permalink( $new_question ) ) );
 						}
 					}
 				} else {
 					// $emqa_submit_question_errors->add( 'submit_question', __( 'Captcha is not correct','em-question-answer' ) );
-					emqa_add_notice( __( 'Captcha is not correct', 'em-question-answer' ), 'error' );
+					emqa_add_notice( __( 'Captcha is not correct', 'emqa' ), 'error' );
 				}
 			} else {
 				// $emqa_submit_question_errors->add( 'submit_question', __( 'Are you cheating huh?','em-question-answer' ) );
-				emqa_add_notice( __( 'Are you cheating huh?', 'em-question-answer' ), 'error' );
+				emqa_add_notice( __( 'Are you cheating huh?', 'emqa' ), 'error' );
 			}
 			//$emqa_current_error = $emqa_submit_question_errors;
 		}
@@ -568,22 +623,22 @@ class EMQA_Handle {
 			if ( isset( $_POST['_wpnonce'] ) && wp_verify_nonce( esc_html( $_POST['_wpnonce'] ), '_emqa_edit_question' ) ) {
 
 				if ( !emqa_current_user_can( 'edit_question' ) ) {
-					emqa_add_notice( __( "You do not have permission to edit question", 'em-question-answer' ), 'error' );
+					emqa_add_notice( __( "You do not have permission to edit question", 'emqa' ), 'error' );
 				}
 
 				$question_title = apply_filters( 'emqa_prepare_edit_question_title', sanitize_text_field( $_POST['question_title'] ) );
 				if ( empty( $question_title ) ) {
-					emqa_add_notice( __( 'You must enter a valid question title.', 'em-question-answer' ), 'error' );
+					emqa_add_notice( __( 'You must enter a valid question title.', 'emqa' ), 'error' );
 				}
 
 				$question_id = isset( $_POST['question_id'] ) ? sanitize_text_field( $_POST['question_id'] ) : false;
 
 				if ( !$question_id ) {
-					emqa_add_notice( __( 'Question is missing.', 'em-question-answer' ), 'error' );
+					emqa_add_notice( __( 'Question is missing.', 'emqa' ), 'error' );
 				}
 
 				if ( 'emqa-question' !== get_post_type( $question_id ) ) {
-					emqa_add_notice( __( 'This post is not question.', 'em-question-answer' ), 'error' );
+					emqa_add_notice( __( 'This post is not question.', 'emqa' ), 'error' );
 				}
 
 				$question_content = apply_filters( 'emqa_prepare_edit_question_content', $_POST['question_content'] );
@@ -622,7 +677,7 @@ class EMQA_Handle {
 					return false;
 				}
 			} else {
-				emqa_add_notice( __( 'Hello, Are you cheating huh?', 'em-question-answer' ), 'error' );
+				emqa_add_notice( __( 'Hello, Are you cheating huh?', 'emqa' ), 'error' );
 				return false;
 			}
 			exit(0);

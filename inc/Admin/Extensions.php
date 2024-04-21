@@ -10,31 +10,31 @@ class EMQA_Admin_Extensions {
 		global $emqa;
 		$extension = array(
 			'emqa-markdown' => array(
-				'name' => __( 'EMQA Markdown', 'em-question-answer' ),
+				'name' => __( 'EMQA Markdown', 'emqa' ),
 				'url' => 'http://bit.ly/emqa-markdown',
 				'img_url' => $emqa->uri . 'assets/img/em-markdown.png'
 			),
 
 			'emqa-leaderboard' => array(
-				'name' => __( 'EMQA Leaderboard', 'em-question-answer' ),
+				'name' => __( 'EMQA Leaderboard', 'emqa' ),
 				'url' => 'http://bit.ly/emqa-leaderboard',
 				'img_url' => $emqa->uri . 'assets/img/em-leaderboard.png'
 			),
 
 			'emqa-captcha' => array(
-				'name' => __( 'EMQA Captcha', 'em-question-answer' ),
+				'name' => __( 'EMQA Captcha', 'emqa' ),
 				'url' => 'http://bit.ly/emqa-captcha',
 				'img_url' => $emqa->uri . 'assets/img/em-captcha.png',
 			),
 
 			'emqa-embed-question' => array(
-				'name' => __( 'EMQA Embed Question', 'em-question-answer' ),
+				'name' => __( 'EMQA Embed Question', 'emqa' ),
 				'url' => 'http://bit.ly/emqa-embed-questions',
 				'img_url' => $emqa->uri . 'assets/img/em-embedquestion.png'
 			),
 
 			'emqa-widgets' => array(
-				'name' => __( 'EMQA Widgets', 'em-question-answer' ),
+				'name' => __( 'EMQA Widgets', 'emqa' ),
 				'url'	=> 'http://bit.ly/emqa-widgets',
 				'img_url'	=> $emqa->uri . 'assets/img/em-widgets.png'
 			),
@@ -44,7 +44,7 @@ class EMQA_Admin_Extensions {
 	}
 
 	function register_extension_menu() {
-		add_submenu_page( 'edit.php?post_type=emqa-question', __( 'Extensions', 'em-question-answer' ), sprintf( '<span style="color: #d54e21;">%s</span>', __( 'Extensions', 'em-question-answer' ) ), 'manage_options', 'emqa-extensions', array( $this, 'extension_menu_layout' ) );
+		add_submenu_page( 'edit.php?post_type=emqa-question', __( 'Extensions', 'emqa' ), sprintf( '<span style="color: #d54e21;">%s</span>', __( 'Extensions', 'emqa' ) ), 'manage_options', 'emqa-extensions', array( $this, 'extension_menu_layout' ) );
 	}
 
 	function extension_menu_layout() {
@@ -72,7 +72,7 @@ class EMQA_Admin_Extensions {
 
 							<h2 class="theme-name" id="<?php echo esc_attr( $slug ) ?>"><span><?php echo esc_attr( $info['name'] ) ?></span></h2>
 							<div class="theme-actions">
-								<a class="button button-primary" target="_blank" href="<?php echo esc_url( $info['url'] ) ?>"><?php _e( 'Get It Now!', 'em-question-answer' ); ?></a>
+								<a class="button button-primary" target="_blank" href="<?php echo esc_url( $info['url'] ) ?>"><?php _e( 'Get It Now!', 'emqa' ); ?></a>
 							</div>
 						</div>
 					<?php endforeach; ?>
@@ -194,7 +194,7 @@ class EMQA_Admin_Extensions {
 							<td>4</td>
 						</tr>
 						<tr>
-							<td>Get emQA</td>
+							<td>Get EMO Questalk Pro</td>
 							<td>
 								<a href="https://bit.ly/3vVuxYW" target="_blank" class="btn btn-sm btn-danger">Get Pro Version</a>
 							<td>

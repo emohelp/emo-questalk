@@ -134,7 +134,7 @@ function emqa_the_author( $display_name ) {
 	if ( 'emqa-answer' == $post->post_type || 'emqa-question' == $post->post_type) {
 		if ( emqa_is_anonymous( $post->ID ) ) {
 			$anonymous_name = get_post_meta( $post->ID, '_emqa_anonymous_name', true );
-			$display_name = $anonymous_name ? $anonymous_name : __( 'Anonymous', 'em-question-answer' );
+			$display_name = $anonymous_name ? $anonymous_name : __( 'Anonymous', 'emqa' );
 		}
 	}
 
@@ -215,7 +215,7 @@ function emqa_get_user_badge( $user_id = false ) {
 
 	$badges = array();
 	if ( user_can( $user_id, 'edit_posts' ) ) {
-		$badges['staff'] = __( 'Staff', 'em-question-answer' );
+		$badges['staff'] = __( 'Staff', 'emqa' );
 	}
 
 	return apply_filters( 'emqa_get_user_badge', $badges, $user_id );
@@ -251,7 +251,7 @@ class EMQA_User {
 	function follow_question() {
 		check_ajax_referer( '_emqa_follow_question', 'nonce' );
 		if ( ! isset( $_POST['post'] ) ) {
-			wp_send_json_error( array( 'message' => __( 'Invalid Post', 'em-question-answer' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Invalid Post', 'emqa' ) ) );
 		}
 		$question = get_post( intval( $_POST['post'] ) );
 		if ( is_user_logged_in() ) {

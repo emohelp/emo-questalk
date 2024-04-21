@@ -10,15 +10,15 @@ class EMQA_Widgets_Popular_Question extends WP_Widget {
 	function __construct() {
 		$widget_ops = array( 
 			'classname' => 'emqa-widget emqa-popular-question', 
-			'description' => __( 'Show a list of popular questions.', 'em-question-answer' ) 
+			'description' => __( 'Show a list of popular questions.', 'emqa' ) 
 		);
-		parent::__construct( 'emqa-popular-question', __( 'EMQA Popular Questions', 'em-question-answer' ), $widget_ops );
+		parent::__construct( 'emqa-popular-question', __( 'EMQA Popular Questions', 'emqa' ), $widget_ops );
 	}
 
 	function widget( $args, $instance ) {
 		extract( $args, EXTR_SKIP );
 		$instance = wp_parse_args( $instance, array( 
-			'title' => __( 'Popular Questions', 'em-question-answer' ),
+			'title' => __( 'Popular Questions', 'emqa' ),
 			'number' => 5,
 		) );
 		
@@ -40,7 +40,7 @@ class EMQA_Widgets_Popular_Question extends WP_Widget {
 			echo '<div class="emqa-popular-questions">';
 			echo '<ul>';
 			while ( $questions->have_posts() ) { $questions->the_post();
-				echo '<li><a href="'.get_permalink().'" class="question-title">'.get_the_title().'</a> '.__( 'asked by', 'em-question-answer' ).' ' . get_the_author_link() . '</li>';
+				echo '<li><a href="'.get_permalink().'" class="question-title">'.get_the_title().'</a> '.__( 'asked by', 'emqa' ).' ' . get_the_author_link() . '</li>';
 			}   
 			echo '</ul>';
 			echo '</div>';
@@ -63,10 +63,10 @@ class EMQA_Widgets_Popular_Question extends WP_Widget {
 			'number' => 5,
 		) );
 		?>
-		<p><label for="<?php echo $this->get_field_id( 'title' ) ?>"><?php _e( 'Widget title', 'em-question-answer' ) ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'title' ) ?>"><?php _e( 'Widget title', 'emqa' ) ?></label>
 		<input type="text" name="<?php echo $this->get_field_name( 'title' ) ?>" id="<?php echo $this->get_field_id( 'title' ) ?>" value="<?php echo $instance['title'] ?>" class="widefat">
 		</p>
-		<p><label for="<?php echo $this->get_field_id( 'number' ) ?>"><?php _e( 'Number of posts', 'em-question-answer' ) ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'number' ) ?>"><?php _e( 'Number of posts', 'emqa' ) ?></label>
 		<input type="text" name="<?php echo $this->get_field_name( 'number' ) ?>" id="<?php echo $this->get_field_id( 'number' ) ?>" value="<?php echo $instance['number'] ?>" class="widefat">
 		</p>
 		<?php

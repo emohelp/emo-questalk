@@ -119,7 +119,7 @@ class EMQA_Shortcode {
 	public function shortcode_popular_questions( $atts ){
 		extract( shortcode_atts( array(
 			'number' => 5,
-			'title' => __( 'Popular Questions', 'em-question-answer' ),
+			'title' => __( 'Popular Questions', 'emqa' ),
 		), $atts ) );
 
 		$args = array(
@@ -142,7 +142,7 @@ class EMQA_Shortcode {
 			$html .= '<div class="emqa-popular-questions">';
 			$html .= '<ul>';
 			while ( $questions->have_posts() ) { $questions->the_post();
-				$html .= '<li><a href="'.get_permalink().'" class="question-title">'.get_the_title().'</a> '.__( 'asked by', 'em-question-answer' ).' ' . get_the_author_link() . '</li>';
+				$html .= '<li><a href="'.get_permalink().'" class="question-title">'.get_the_title().'</a> '.__( 'asked by', 'emqa' ).' ' . get_the_author_link() . '</li>';
 			}   
 			$html .= '</ul>';
 			$html .= '</div>';
@@ -156,7 +156,7 @@ class EMQA_Shortcode {
 
 		extract( shortcode_atts( array(
 			'number' => 5,
-			'title' => __( 'Latest Answers', 'em-question-answer' )
+			'title' => __( 'Latest Answers', 'emqa' )
 		), $atts ) );
 
 		$args = array(
@@ -182,7 +182,7 @@ class EMQA_Shortcode {
 					continue;
 				}
 				if ( $question_id ) {
-					$html .= '<li>'.__( 'Answer at', 'em-question-answer' ).' <a href="'.get_permalink( $question_id ).'#answer-'.$answer_id.'" title="'.__( 'Link to', 'em-question-answer' ).' '.get_the_title( $question_id ).'">'.get_the_title( $question_id ).'</a></li>';
+					$html .= '<li>'.__( 'Answer at', 'emqa' ).' <a href="'.get_permalink( $question_id ).'#answer-'.$answer_id.'" title="'.__( 'Link to', 'emqa' ).' '.get_the_title( $question_id ).'">'.get_the_title( $question_id ).'</a></li>';
 				}
 			}   
 			$html .= '</ul>';
@@ -212,7 +212,7 @@ class EMQA_Shortcode {
 			$count = count( $followers );
 			printf(
 				// translators: %d is replaced with the number of people following the question
-				_n( '%d person who is following this question', '%d people who are following this question', $count, 'em-question-answer' ),
+				_n( '%d person who is following this question', '%d people who are following this question', $count, 'emqa' ),
 				$count
 			);
 			echo $after_title;
@@ -244,7 +244,7 @@ class EMQA_Shortcode {
 		extract( shortcode_atts( array(
 			'categories' 	=> '',
 			'number' 		=> '',
-			'title' 		=> __( 'Question List', 'em-question-answer' ),
+			'title' 		=> __( 'Question List', 'emqa' ),
 			'orderby' 		=> 'modified',
 			'order' 		=> 'DESC'
 		), $atts ) );

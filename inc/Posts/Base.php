@@ -31,7 +31,7 @@ function emqa_get_current_user_session() {
 function emqa_action_vote( ) {
 	$result = array(
 		'error_code'    => 'authorization',  
-		'error_message' => __( 'Are you cheating, huh?', 'em-question-answer' ),
+		'error_message' => __( 'Are you cheating, huh?', 'emqa' ),
 	);
 
 	$vote_for = isset( $_POST['vote_for'] ) && sanitize_text_field( $_POST['vote_for'] ) == 'question'
@@ -46,7 +46,7 @@ function emqa_action_vote( ) {
 		$result['error_code']       = 'missing ' . $vote_for;
 		$result['error_message']    =  sprintf(
 		// translators: %1$s is replaced with the subject being voted for
-    __('What %1$s are you looking for?', 'em-question-answer'), $vote_for);
+    __('What %1$s are you looking for?', 'emqa'), $vote_for);
 		wp_send_json_error( $result );
 	}
 
@@ -94,14 +94,14 @@ function emqa_action_vote( ) {
 			$result['error_code'] = 'voted';
 			$result['error_message'] = sprintf(
 				// translators: %1$s is replaced with the subject being voted for
-				__( 'You voted for this %1$s', 'em-question-answer' ), $vote_for );
+				__( 'You voted for this %1$s', 'emqa' ), $vote_for );
 			wp_send_json_error( $result );
 		}		
 	}else{
 		$result['error_code'] = 'anonymous';
 		$result['error_message'] = sprintf(
 			// translators: %1$s is replaced with the subject being voted for
-			__( 'You aren\'t allowed voted for this %1$s', 'em-question-answer' ), $vote_for );
+			__( 'You aren\'t allowed voted for this %1$s', 'emqa' ), $vote_for );
 		wp_send_json_error( $result );
 	}
 }
@@ -272,7 +272,7 @@ function emqa_get_latest_action_date( $question = false, $before = '<span>', $af
 		if ( $anonymous_name ) {
 			$display_name = $anonymous_name . ' ';
 		} else {
-			$display_name = __( 'Anonymous', 'em-question-answer' )  . ' ';
+			$display_name = __( 'Anonymous', 'emqa' )  . ' ';
 		}
 	} else {
 		$display_name = get_the_author_meta( 'display_name', $author_id );
@@ -291,7 +291,7 @@ function emqa_get_latest_action_date( $question = false, $before = '<span>', $af
     $author_url,
     esc_attr( sprintf(
         // translators: %s is replaced with the display name of the author
-        __( 'Posts by %s', 'em-question-answer' ),
+        __( 'Posts by %s', 'emqa' ),
         $display_name
     ) ),
     $display_name
@@ -307,7 +307,7 @@ function emqa_get_latest_action_date( $question = false, $before = '<span>', $af
 		$date = human_time_diff( strtotime( $last_activity_date ), current_time( 'timestamp' ) );
 		return sprintf(
 			// translators: %1$s is replaced with the author's link, %2$s is replaced with the date
-			__( '%1$s answered <span class="emqa-date">%2$s</span> ago', 'em-question-answer' ),
+			__( '%1$s answered <span class="emqa-date">%2$s</span> ago', 'emqa' ),
 			$author_link,
 			$date
 		);	
@@ -316,7 +316,7 @@ function emqa_get_latest_action_date( $question = false, $before = '<span>', $af
 	if ( 'emqa-answer' == get_post_type( $question ) ) {
 		return sprintf(
 			// translators: %1$s is replaced with the author's link, %2$s is replaced with the human-readable time difference
-			__( '%1$s answered <span class="emqa-date">%2$s</span> ago', 'em-question-answer' ),
+			__( '%1$s answered <span class="emqa-date">%2$s</span> ago', 'emqa' ),
 			$author_link,
 			human_time_diff( get_post_time( 'U', true, $question ) )
 	);
@@ -324,7 +324,7 @@ function emqa_get_latest_action_date( $question = false, $before = '<span>', $af
 	}
 	return sprintf(
     // translators: %1$s is replaced with the author's link, %2$s is replaced with the human-readable time difference
-    __( '%1$s asked <span class="emqa-date">%2$s</span> ago', 'em-question-answer' ),
+    __( '%1$s asked <span class="emqa-date">%2$s</span> ago', 'emqa' ),
     $author_link,
     human_time_diff( get_post_time( 'U', true, $question ) )
 	);
@@ -376,8 +376,8 @@ class EMQA_Posts_Base {
 
 	public function get_name_labels() {
 		return wp_parse_args( $this->labels, array(
-			'plural' => __( 'EMQA Posts', 'em-question-answer' ),
-			'singular' => __( 'EMQA Post', 'em-question-answer' ),
+			'plural' => __( 'EMQA Posts', 'emqa' ),
+			'singular' => __( 'EMQA Post', 'emqa' ),
 			'rewrite' => true,
 		) );
 	}
@@ -388,15 +388,15 @@ class EMQA_Posts_Base {
 		return $labels = array(
 			'name'                => $names['plural'],
 			'singular_name'       => $names['singular'],
-			'add_new'             => _x( 'Add New', 'emqa', 'em-question-answer' ) . ' ' . $names['singular'],
-			'add_new_item'        => __( 'Add New', 'em-question-answer' ) . ' ' . $names['singular'],
-			'edit_item'           => __( 'Edit', 'em-question-answer' ) . ' ' . $names['singular'],
-			'new_item'            => __( 'New', 'em-question-answer' ) . ' ' . $names['singular'],
-			'view_item'           => __( 'View', 'em-question-answer' ) . ' ' . $names['singular'],
-			'search_items'        => __( 'Search ', 'em-question-answer' ) . $names['plural'],
-			'not_found'           => $names['plural'] . ' ' . __( 'not found', 'em-question-answer' ),
-			'not_found_in_trash'  => $names['plural'] . ' ' . __( 'not found in Trash', 'em-question-answer' ),
-			'parent_item_colon'   => __( 'Parent:', 'em-question-answer' ) . ' ' . $names['singular'],
+			'add_new'             => _x( 'Add New', 'emqa', 'emqa' ) . ' ' . $names['singular'],
+			'add_new_item'        => __( 'Add New', 'emqa' ) . ' ' . $names['singular'],
+			'edit_item'           => __( 'Edit', 'emqa' ) . ' ' . $names['singular'],
+			'new_item'            => __( 'New', 'emqa' ) . ' ' . $names['singular'],
+			'view_item'           => __( 'View', 'emqa' ) . ' ' . $names['singular'],
+			'search_items'        => __( 'Search ', 'emqa' ) . $names['plural'],
+			'not_found'           => $names['plural'] . ' ' . __( 'not found', 'emqa' ),
+			'not_found_in_trash'  => $names['plural'] . ' ' . __( 'not found in Trash', 'emqa' ),
+			'parent_item_colon'   => __( 'Parent:', 'emqa' ) . ' ' . $names['singular'],
 			'menu_name'           => isset( $names['menu'] ) ? $names['menu'] : $names['plural'],
 		);
 	}

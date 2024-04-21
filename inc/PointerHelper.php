@@ -57,8 +57,8 @@ class EMQA_PointerHelper {
 			'target' => '#contextual-help-link',
 			'options' => array(
 				'content' => sprintf( '<h3> %s </h3> <p> %s </p>',
-					__( 'How to use EMO Questalk', 'em-question-answer' ),
-					__( 'Documents, Support From Emohelp', 'em-question-answer' )
+					__( 'How to use EMO Questalk', 'emqa' ),
+					__( 'Documents, Support From Emohelp', 'emqa' )
 				),
 				'position' => array( 'edge' => 'top', 'align' => 'right' )
 			)
@@ -67,8 +67,8 @@ class EMQA_PointerHelper {
 			'target' => '#adminmenu a[href="edit.php?post_type=emqa-question&page=emqa-settings"]',
 			'options' => array(
 				'content' => sprintf( '<h3> %s </h3> <p> %s </p>',
-					__( 'Config your support channel', 'em-question-answer' ),
-					__( 'Change comment settings, and create the Submit question page.', 'em-question-answer' )
+					__( 'Config your support channel', 'emqa' ),
+					__( 'Change comment settings, and create the Submit question page.', 'emqa' )
 				),
 				'position' => array( 'edge' => 'left', 'align' => 'middle' )
 			)
