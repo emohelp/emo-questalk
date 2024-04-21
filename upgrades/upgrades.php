@@ -6,7 +6,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 class EMQA_Upgrades {
 	public static $db_version;
-	private static $version = '1.3.5';
+	private static $version = '1.0.0';
 
 	public static function init() {
 		self::$db_version = get_option( 'emqa_version', false );
@@ -23,7 +23,7 @@ class EMQA_Upgrades {
 		if ( ! self::$db_version || version_compare( self::$db_version, self::$version, '<') ) {
 			printf(
 				// translators: %1$s and %2$s are replaced with the start and end of the link respectively
-				'<div class="error"><p>' . esc_html__( 'EMO Questalk needs to upgrade the database, click %1$shere%2$s to start the upgrade.', 'em-question-answer' ) . '</p></div>',
+				'<div class="error"><p>' . esc_html__( 'EMO Questalk needs to upgrade the database, click %1$shere%2$s to start the upgrade.', 'emqa' ) . '</p></div>',
 				'<a href="' . esc_url( admin_url( 'options.php?page=emqa-upgrades' ) ) . '">',
 				'</a>'
 			);		
@@ -31,7 +31,7 @@ class EMQA_Upgrades {
 	}
 
 	public static function upgrade_screen() {
-		add_submenu_page( null, __( 'EMQA Upgrade', 'em-question-answer' ),  __( 'EMQA Upgrade', 'em-question-answer' ), 'manage_options', 'emqa-upgrades', array( __CLASS__, 'proccess_upgrades' ) );
+		add_submenu_page( null, __( 'EMQA Upgrade', 'emqa' ),  __( 'EMQA Upgrade', 'emqa' ), 'manage_options', 'emqa-upgrades', array( __CLASS__, 'proccess_upgrades' ) );
 	}
 
 	public static function proccess_upgrades() {
@@ -131,7 +131,7 @@ class EMQA_Upgrades {
 
 	public static function ajax_upgrades() {
 		if ( ! current_user_can( 'manage_options' ) ) {
-			wp_send_json_error( array( 'message' => __( 'You do not have permission to do this task', 'em-question-answer' ) ) );
+			wp_send_json_error( array( 'message' => __( 'You do not have permission to do this task', 'emqa' ) ) );
 		}
 
 		if ( isset( $_POST['restart'] ) && intval( $_POST['restart'] ) ) {
@@ -148,7 +148,7 @@ class EMQA_Upgrades {
 				wp_send_json_success( array(
 					'start' => $start,
 					'finish' => 0,
-					'message' => __( 'Just do it..', 'em-question-answer' )
+					'message' => __( 'Just do it..', 'emqa' )
 				) );
 				break;
 			case 1:
@@ -157,7 +157,7 @@ class EMQA_Upgrades {
 					$start += 1;
 					update_option( 'emqa_upgrades_start', $start );
 					// translators: %d is replaced with the version number
-					$message = sprintf( __( 'Move to next step %d', 'em-question-answer' ), $start );
+					$message = sprintf( __( 'Move to next step %d', 'emqa' ), $start );
 				} else {
 					$message = $do_next;
 				}
