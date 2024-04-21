@@ -164,7 +164,7 @@ class EM_Question_Answer {
 
 		if ( ! isset( $options['pages']['archive-question'] ) || ( isset( $options['pages']['archive-question'] ) && ! get_post( $options['pages']['archive-question'] ) ) ) {
 			$args = array(
-				'post_title' => __( 'EMQA Questions', 'em-question-answer' ),
+				'post_title' => __( 'EMQA Questions', 'emqa' ),
 				'post_type' => 'page',
 				'post_status' => 'publish',
 				'post_content'  => '[emqa-list-questions]',
@@ -181,7 +181,7 @@ class EM_Question_Answer {
 		if ( ! isset( $options['pages']['submit-question'] ) || ( isset( $options['pages']['submit-question'] ) && ! get_post( $options['pages']['submit-question'] ) ) ) {
 
 			$args = array(
-				'post_title' => __( 'EMQA Ask Question', 'em-question-answer' ),
+				'post_title' => __( 'EMQA Ask Question', 'emqa' ),
 				'post_type' => 'page',
 				'post_status' => 'publish',
 				'post_content'  => '[emqa-submit-question-form]',
