@@ -25,17 +25,12 @@ Emo Questalk is a WordPress plugin which builds a complete Question & Answer sys
 * Private/ Public for Question and Answer
 * Questions / Answers follow function
 * Sticky Question
+
 * More to come
 
-= Add-on for the plugin: =
-* Embed question and Social Sharing: [http://wordpress.org/plugins/dw-question-answer-embed-question/](http://wordpress.org/plugins/dw-question-answer-embed-question/)
-* DWQA Markdown: [https://www.designwall.com/wordpress/dwqa-extensions/dwqa-markdown/](https://www.designwall.com/wordpress/dwqa-extensions/dwqa-markdown/)
-* DWQA Leaderboard: [https://www.designwall.com/wordpress/dwqa-extensions/dwqa-leaderboard/](https://www.designwall.com/wordpress/dwqa-extensions/dwqa-leaderboard/)
-* DWQA Captcha: [https://www.designwall.com/wordpress/dwqa-extensions/dwqa-captcha/](https://www.designwall.com/wordpress/dwqa-extensions/dwqa-captcha/)
-
 = Documents and Support: =
-You can find [Documents](http://www.designwall.com/guide/dw-question-answer-plugin/) and more detailed information about Emo Questalk plugin on [DesignWall.com](http://www.designwall.com/). 
-We provide support both on support forum on WordPress.org and our [support page](http://www.designwall.com/question/) on DesignWall.
+You can find [Documents]() and more detailed information about Emo Questalk plugin on [emohelp.com](https://www.emohelp.com/). 
+We provide support both on support forum on WordPress.org and our [support page](https://www.emohelp.com/question/) on EmoHelp.
 
 = Source =
 [Free for commercial use](https://www.iconfinder.com/icons/728992/configuration_control_dashboard_setting_speed_system_tool_icon#size=128)
