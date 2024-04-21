@@ -1,0 +1,1588 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMO Questalk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-20 07:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.7; wp-6.5.2\n"
+"X-Domain: emqa"
+
+#. %1$s is replaced with the author's link, %2$s is replaced with the date
+#. %1$s is replaced with the author's link, %2$s is replaced with the human-readable time difference
+#: inc/Posts/Base.php:310 inc/Posts/Base.php:319
+#, php-format
+msgid "%1$s answered <span class=\"emqa-date\">%2$s</span> ago"
+msgstr ""
+
+#. %1$s is replaced with the author's link, %2$s is replaced with the human-readable time difference
+#: inc/Posts/Base.php:327
+#, php-format
+msgid "%1$s asked <span class=\"emqa-date\">%2$s</span> ago"
+msgstr ""
+
+#. %d is replaced with the number of people following the question
+#: inc/Shortcode.php:215
+msgid "%d person who is following this question"
+msgid_plural "%d people who are following this question"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %s is replaced with human-readable time difference
+#: templates/content-comment.php:18
+#, php-format
+msgctxt "%s = human-readable time difference"
+msgid "replied %s ago"
+msgstr ""
+
+#. %s is replaced with the login URL
+#: inc/widgets/Latest_Question.php:45
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#. %s is replaced with the version number
+#: templates/answers.php:14
+#, php-format
+msgid "%s Answers"
+msgstr ""
+
+#: templates/content-single-answer.php:34 templates/content-question.php:35
+msgid "&nbsp;&bull;&nbsp;"
+msgstr ""
+
+#: inc/Handle.php:37
+msgid "&quot;Helllo&quot;, Are you cheating huh?."
+msgstr ""
+
+#. %1$s is replaced with the version number
+#: templates/content-question.php:48
+#, php-format
+msgid "<strong>%1$s</strong> answers"
+msgstr ""
+
+#. %1$s is replaced with the version number
+#: templates/content-question.php:42
+#, php-format
+msgid "<strong>%1$s</strong> views"
+msgstr ""
+
+#. %1$s is replaced with the version number
+#: templates/content-question.php:54
+#, php-format
+msgid "<strong>%1$s</strong> votes"
+msgstr ""
+
+#: inc/Notifications.php:236
+msgid ""
+"[{site_name}] A new answer for \"{question_title}\" was posted on {site_name}"
+msgstr ""
+
+#: inc/Notifications.php:184
+msgid "[{site_name}] You have a new answer for your followed question"
+msgstr ""
+
+#: inc/Notifications.php:328 inc/Notifications.php:374
+msgid "[{site_name}] You have a new comment for answer"
+msgstr ""
+
+#: inc/Notifications.php:323 inc/Notifications.php:369
+msgid "[{site_name}] You have a new comment for question {question_title}"
+msgstr ""
+
+#: inc/Notifications.php:53
+msgid "A new question was posted on {site_name}"
+msgstr ""
+
+#: inc/Settings.php:24
+msgid ""
+"A page where displays all questions. The <code>[emqa-list-questions]</code> "
+"short code must be on this page."
+msgstr ""
+
+#: inc/Settings.php:52
+msgid ""
+"A page where users can submit questions. The <code>[emqa-submit-question-"
+"form]</code> short code must be on this page."
+msgstr ""
+
+#: inc/Settings.php:31
+msgid ""
+"A period of time in which new questions are highlighted and marked as New"
+msgstr ""
+
+#: inc/Settings.php:36
+msgid ""
+"A Question will be marked as overdue if it passes this period of time, "
+"starting from the time the question was submitted"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"A WordPress plugin was make by emohelp.com to build an Question Answer "
+"system for support, asking and comunitcate with your customer"
+msgstr ""
+
+#: inc/Updater.php:122
+msgid "Activate"
+msgstr ""
+
+#: inc/Posts/Base.php:392
+msgid "Add New"
+msgstr ""
+
+#: inc/Posts/Question.php:204
+msgid "Add New Question Category"
+msgstr ""
+
+#: inc/Posts/Question.php:234
+msgid "Add New Question Tag"
+msgstr ""
+
+#: inc/Posts/Question.php:237
+msgid "Add or remove question tags"
+msgstr ""
+
+#. %1$s is replaced with the author link, %2$s is replaced with the avatar image, %3$s is replaced with the author name, %4$s is replaced with the user badge, %5$s is replaced with the time difference
+#. %1$s is replaced with the author link, %2$s is replaced with the avatar image, %3$s is replaced with the author name, %4$s is replaced with additional text, %5$s is replaced with the time difference
+#: templates/content-single-question.php:25
+#: templates/content-single-answer.php:25 templates/content-question.php:27
+msgid "ago"
+msgstr ""
+
+#: inc/Settings.php:998
+msgid "Akismet API key"
+msgstr ""
+
+#: inc/Settings.php:1005
+msgid "Akismet connection status"
+msgstr ""
+
+#: inc/Settings.php:984
+msgid "Akismet Settings"
+msgstr ""
+
+#: templates/archive-question-filter.php:16
+msgid "All"
+msgstr ""
+
+#: inc/Posts/Question.php:199
+msgid "All Question Categories"
+msgstr ""
+
+#: inc/Posts/Question.php:229
+msgid "All Question Tags"
+msgstr ""
+
+#: inc/Settings.php:975
+msgid "Allow Anonymous Vote"
+msgstr ""
+
+#: inc/Settings.php:558
+msgid "Allow anonymous vote."
+msgstr ""
+
+#: inc/Settings.php:607
+msgid "Allow members to post private question."
+msgstr ""
+
+#: inc/Answer_List_Table.php:86 inc/Settings.php:419 inc/Settings.php:455
+#: inc/Settings.php:490 inc/User.php:137 inc/Notifications.php:127
+#: inc/Notifications.php:147 inc/Akismet.php:201 inc/Posts/Base.php:275
+#: inc/Posts/Comment.php:102
+msgid "Anonymous"
+msgstr ""
+
+#: inc/Posts/Answer.php:208 inc/Posts/Answer.php:252
+msgid "Answer"
+msgstr ""
+
+#: inc/Shortcode.php:185
+msgid "Answer at"
+msgstr ""
+
+#: inc/Handle.php:47
+msgid "Answer content is empty"
+msgstr ""
+
+#: inc/Handle.php:85
+msgid "Answer for "
+msgstr ""
+
+#: inc/Ajax.php:53 inc/Handle.php:163
+msgid "Answer is missing."
+msgstr ""
+
+#: inc/Settings.php:951
+msgid "Answer Listing"
+msgstr ""
+
+#: inc/Settings.php:944
+msgid "Answer Settings"
+msgstr ""
+
+#: inc/Status.php:308
+msgid "Answered"
+msgstr ""
+
+#: templates/content-question.php:22 inc/Posts/Question.php:287
+msgid "answered"
+msgstr ""
+
+#: inc/Answer_List_Table.php:95
+msgid "Answered on "
+msgstr ""
+
+#: inc/Settings.php:431 inc/Metaboxes.php:45
+#: templates/archive-question-filter.php:34 inc/Posts/Answer.php:207
+#: inc/Posts/Answer.php:209
+msgid "Answers"
+msgstr ""
+
+#: inc/Settings.php:552
+msgid "answers."
+msgstr ""
+
+#: inc/Settings.php:903
+msgid "Archive Page Show At Most"
+msgstr ""
+
+#: inc/Ajax.php:31 inc/Ajax.php:49 inc/Ajax.php:91 inc/Ajax.php:121
+#: inc/Ajax.php:143 inc/Ajax.php:200 inc/Ajax.php:298 inc/Handle.php:361
+#: inc/Handle.php:560 inc/Status.php:327 inc/Akismet.php:668
+#: inc/Permission.php:340
+msgid "Are you cheating huh?"
+msgstr ""
+
+#: inc/Posts/Base.php:34
+msgid "Are you cheating, huh?"
+msgstr ""
+
+#: inc/Template.php:677
+msgid "Ask a question"
+msgstr ""
+
+#: templates/bp-archive-question.php:32 templates/archive-question.php:28
+msgid "Ask Question"
+msgstr ""
+
+#: inc/Settings.php:853 inc/Settings.php:1053
+msgid "Ask Question Page"
+msgstr ""
+
+#: templates/content-question.php:18
+msgid "asked"
+msgstr ""
+
+#: inc/Shortcode.php:145 inc/Posts/Question.php:56
+#: inc/widgets/Latest_Question.php:42 inc/widgets/Popular_Question.php:43
+#: inc/widgets/Closed_Question.php:49
+msgid "asked by"
+msgstr ""
+
+#: inc/Answer_List_Table.php:75 inc/Akismet.php:86 inc/Template.php:47
+#: inc/Posts/Answer.php:253
+msgid "Author"
+msgstr ""
+
+#: inc/Settings.php:1014
+msgid "Auto Closure Settings"
+msgstr ""
+
+#: inc/Settings.php:1532
+msgid "Bcc"
+msgstr ""
+
+#: inc/Settings.php:911
+msgid "Before A Question Appears"
+msgstr ""
+
+#: templates/content-single-answer.php:17
+#: templates/content-single-answer.php:19
+msgid "Best Answer"
+msgstr ""
+
+#: inc/Settings.php:648
+msgid ""
+"By default, your single.php template file will be used if you do not choose "
+"any template"
+msgstr ""
+
+#: inc/Template.php:486
+msgid "Cancel reply"
+msgstr ""
+
+#: inc/Handle.php:66 inc/Handle.php:556
+msgid "Captcha is not correct"
+msgstr ""
+
+#: inc/Settings.php:1038
+msgid "Captcha Settings"
+msgstr ""
+
+#: inc/Template.php:19 inc/Template.php:24
+#: templates/question-submit-form.php:32 templates/content-edit.php:29
+msgid "Category"
+msgstr ""
+
+#: inc/Settings.php:1527
+msgid "Cc"
+msgstr ""
+
+#: inc/PointerHelper.php:71
+msgid "Change comment settings, and create the Submit question page."
+msgstr ""
+
+#: inc/Template.php:1152
+msgid "Choose as the best answer"
+msgstr ""
+
+#: inc/Posts/Question.php:238
+msgid "Choose from the most used question tags"
+msgstr ""
+
+#: inc/Metaboxes.php:19 inc/Status.php:301
+#: templates/content-single-question.php:47
+#: templates/archive-question-filter.php:20
+msgid "Closed"
+msgstr ""
+
+#: inc/widgets/Closed_Question.php:18
+msgid "Closed Questions"
+msgstr ""
+
+#: inc/Settings.php:1028
+msgid "Closure after"
+msgstr ""
+
+#: inc/Handle.php:369
+msgid "Comment content must not be empty."
+msgstr ""
+
+#: inc/Ajax.php:39
+msgid "Comment ID must be showed."
+msgstr ""
+
+#: inc/Handle.php:354
+msgid "Comment is missing"
+msgstr ""
+
+#: inc/Settings.php:467
+msgid "Comments"
+msgstr ""
+
+#: inc/PointerHelper.php:70
+msgid "Config your support channel"
+msgstr ""
+
+#: inc/Settings.php:583
+msgid "Connected"
+msgstr ""
+
+#: inc/Admin/Welcome.php:205
+msgid "Contributors"
+msgstr ""
+
+#: inc/Akismet.php:87
+msgid "Count Report"
+msgstr ""
+
+#: inc/Settings.php:36
+msgid "days"
+msgstr ""
+
+#: inc/Settings.php:599
+msgid "Days.(greater 0)"
+msgstr ""
+
+#: inc/Settings.php:533
+msgid "Default"
+msgstr ""
+
+#: inc/Settings.php:403 inc/Template.php:171 inc/Template.php:188
+#: templates/content-comment.php:27
+msgid "Delete"
+msgstr ""
+
+#: inc/Posts/Question.php:500
+msgid "Delete Action was failed"
+msgstr ""
+
+#: inc/Handle.php:40
+msgid "Delete draft"
+msgstr ""
+
+#: inc/Akismet.php:163
+msgid "Delete permanently"
+msgstr ""
+
+#: inc/Answer_List_Table.php:76
+msgid "Detail"
+msgstr ""
+
+#: inc/Settings.php:625
+msgid "Disable question status feature."
+msgstr ""
+
+#: inc/Settings.php:619
+msgid "Display status icon on the left side."
+msgstr ""
+
+#: inc/PointerHelper.php:61
+msgid "Documents, Support From Emohelp"
+msgstr ""
+
+#: inc/Settings.php:402 inc/Template.php:56 inc/Template.php:166
+#: inc/Template.php:183 templates/content-comment.php:24 inc/Posts/Base.php:393
+msgid "Edit"
+msgstr ""
+
+#: inc/Posts/Question.php:202
+msgid "Edit Question Category"
+msgstr ""
+
+#: inc/Posts/Question.php:232
+msgid "Edit Question Tag"
+msgstr ""
+
+#: inc/Template.php:448
+msgid "Email"
+msgstr ""
+
+#: inc/Settings.php:136 inc/Settings.php:171 inc/Settings.php:207
+#: inc/Settings.php:243 inc/Settings.php:278 inc/Settings.php:313
+#: inc/Settings.php:348
+msgid "Email Content"
+msgstr ""
+
+#: inc/Settings.php:1550
+msgid "Email Delay*"
+msgstr ""
+
+#: inc/Settings.php:1311
+msgid "Email Logo"
+msgstr ""
+
+#: inc/Settings.php:822
+msgid "Email Settings"
+msgstr ""
+
+#: inc/Settings.php:1309
+msgid "Email settings"
+msgstr ""
+
+#: inc/Settings.php:131 inc/Settings.php:166 inc/Settings.php:202
+#: inc/Settings.php:238 inc/Settings.php:273 inc/Settings.php:308
+#: inc/Settings.php:343
+msgid "Email subject"
+msgstr ""
+
+#: inc/Settings.php:1293
+msgid "Emails"
+msgstr ""
+
+#. Name of the plugin
+msgid "EMO Questalk"
+msgstr ""
+
+#: inc/Admin/Welcome.php:35 inc/Admin/Welcome.php:36
+msgid "EMO Questalk Changelog"
+msgstr ""
+
+#: inc/Admin/Welcome.php:43 inc/Admin/Welcome.php:44
+msgid "EMO Questalk Credits"
+msgstr ""
+
+#. %1$s and %2$s are replaced with the start and end of the link respectively
+#: upgrades/upgrades.php:26
+#, php-format
+msgid ""
+"EMO Questalk needs to upgrade the database, click %1$shere%2$s to start the "
+"upgrade."
+msgstr ""
+
+#: inc/Helptab.php:48
+msgid "EMO Questalk Plugin"
+msgstr ""
+
+#: inc/Helptab.php:49
+msgid ""
+"EMO Questalk Plugin is a WordPress Plugin which helps you build a Question & "
+"Answer system on your WordPress sites. The plugin is easy to install and set "
+"up. Let start building up your community with this WordPress question & "
+"answer system."
+msgstr ""
+
+#. Author of the plugin
+msgid "Emohelp"
+msgstr ""
+
+#: inc/extend/buddypress/loader.php:12 inc/extend/buddypress/loader.php:61
+#: inc/extend/buddypress/loader.php:112
+msgid "EMQA"
+msgstr ""
+
+#: inc/Posts/Base.php:391
+msgctxt "emqa"
+msgid "Add New"
+msgstr ""
+
+#: em-question-answer.php:184
+msgid "EMQA Ask Question"
+msgstr ""
+
+#: inc/Admin/Extensions.php:25
+msgid "EMQA Captcha"
+msgstr ""
+
+#: inc/widgets/Closed_Question.php:12
+msgid "EMQA Closed Questions"
+msgstr ""
+
+#: inc/Admin/Extensions.php:31
+msgid "EMQA Embed Question"
+msgstr ""
+
+#: inc/widgets/Latest_Question.php:11
+msgid "EMQA Latest Questions"
+msgstr ""
+
+#: inc/Admin/Extensions.php:19
+msgid "EMQA Leaderboard"
+msgstr ""
+
+#: inc/Admin/Extensions.php:13
+msgid "EMQA Markdown"
+msgstr ""
+
+#: inc/widgets/Popular_Question.php:15
+msgid "EMQA Popular Questions"
+msgstr ""
+
+#: inc/Posts/Base.php:380
+msgid "EMQA Post"
+msgstr ""
+
+#: inc/Posts/Base.php:379
+msgid "EMQA Posts"
+msgstr ""
+
+#: em-question-answer.php:167
+msgid "EMQA Questions"
+msgstr ""
+
+#: inc/widgets/Related_Question.php:12
+msgid "EMQA Related Questions"
+msgstr ""
+
+#: inc/Settings.php:1288
+msgid "EMQA Settings"
+msgstr ""
+
+#: upgrades/upgrades.php:34
+msgid "EMQA Upgrade"
+msgstr ""
+
+#: inc/Admin/Extensions.php:37
+msgid "EMQA Widgets"
+msgstr ""
+
+#. %d is replaced with the number of new replies
+#. %1$d is replaced with the number of new replies, %2$s is replaced with the recipient's name, %3$s is replaced with the sender's name
+#. %1$d is replaced with the number of new replies, %2$s is replaced with the recipient's name
+#: inc/extend/buddypress/notifications.php:36
+#: inc/extend/buddypress/notifications.php:42
+#: inc/extend/buddypress/notifications.php:47
+msgid "EMQA: "
+msgstr ""
+
+#: inc/Settings.php:564
+msgid "Enable Akismet"
+msgstr ""
+
+#: inc/Settings.php:594
+msgid "Enable Auto Closure"
+msgstr ""
+
+#: inc/Settings.php:515
+msgid "Enable captcha on single question page."
+msgstr ""
+
+#: inc/Settings.php:509
+msgid "Enable captcha on submit question page."
+msgstr ""
+
+#: inc/Settings.php:197
+msgid "Enable notification for new answer ( to Followers )."
+msgstr ""
+
+#: inc/Settings.php:161
+msgid "Enable notification for new answer."
+msgstr ""
+
+#: inc/Settings.php:303 inc/Settings.php:338
+msgid "Enable notification for new comment of answer."
+msgstr ""
+
+#: inc/Settings.php:233 inc/Settings.php:268
+msgid "Enable notification for new comment of question."
+msgstr ""
+
+#: inc/Settings.php:126
+msgid "Enable notification for new question."
+msgstr ""
+
+#: inc/Settings.php:126 inc/Settings.php:161 inc/Settings.php:197
+#: inc/Settings.php:233 inc/Settings.php:268 inc/Settings.php:303
+#: inc/Settings.php:338
+msgid "Enable?"
+msgstr ""
+
+#: templates/captcha-form.php:20
+msgid "Enter the result"
+msgstr ""
+
+#: inc/Admin/Extensions.php:47
+msgid "Extensions"
+msgstr ""
+
+#: templates/archive-question-filter.php:14
+msgid "Filter:"
+msgstr ""
+
+#: inc/Settings.php:1507 inc/Settings.php:1512 inc/Settings.php:1517
+#: inc/Settings.php:1522
+msgid "Forward to"
+msgstr ""
+
+#: inc/Settings.php:1165
+msgid "From Email"
+msgstr ""
+
+#: inc/Settings.php:1292
+msgid "General"
+msgstr ""
+
+#: inc/Settings.php:571
+msgid "Get in"
+msgstr ""
+
+#: inc/Admin/Extensions.php:75
+msgid "Get It Now!"
+msgstr ""
+
+#: inc/Settings.php:1243 inc/Settings.php:1250
+msgid "Group Permission"
+msgstr ""
+
+#: inc/Autoclosure.php:65
+msgid "Half Daily"
+msgstr ""
+
+#: inc/Handle.php:152 inc/Handle.php:625 inc/Posts/Question.php:473
+#: inc/extend/buddypress/notifications.php:108
+msgid "Hello, Are you cheating huh?"
+msgstr ""
+
+#: inc/Settings.php:31
+msgid "hours"
+msgstr ""
+
+#: inc/PointerHelper.php:60
+msgid "How to use EMO Questalk"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://www.emohelp.com"
+msgstr ""
+
+#: inc/Posts/Answer.php:352 inc/Posts/Answer.php:355
+msgid "ID"
+msgstr ""
+
+#. %s is replaced with an example of a custom question URL structure
+#: inc/Settings.php:658
+#, php-format
+msgid ""
+"If you like, you may enter custom structure for your single question, "
+"question category, and question tag URLs here. For example, using <code>"
+"topic</code> as your question base would make your question links like <code>"
+"%s</code>. If you leave these blank, the default will be used."
+msgstr ""
+
+#: inc/Posts/Answer.php:255
+msgid "In Response To"
+msgstr ""
+
+#: inc/Posts/Question.php:276
+msgid "Info"
+msgstr ""
+
+#: inc/User.php:254 inc/Posts/Question.php:410
+msgid "Invalid Post"
+msgstr ""
+
+#: inc/Status.php:350
+msgid "Invalid post status"
+msgstr ""
+
+#: upgrades/upgrades.php:151
+msgid "Just do it.."
+msgstr ""
+
+#: inc/Shortcode.php:159
+msgid "Latest Answers"
+msgstr ""
+
+#: inc/widgets/Latest_Question.php:17
+msgid "Latest Questions"
+msgstr ""
+
+#: inc/Template.php:483
+msgid "Leave a Reply"
+msgstr ""
+
+#. %s is replaced with the login URL
+#: inc/Template.php:485
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: inc/Updater.php:97
+msgid "License Key"
+msgstr ""
+
+#: inc/Settings.php:1295
+msgid "Licenses"
+msgstr ""
+
+#: inc/Shortcode.php:185
+msgid "Link to"
+msgstr ""
+
+#: inc/Settings.php:8
+msgid "Login required. No anonymous post allowed"
+msgstr ""
+
+#: inc/Template.php:679
+msgid "Login to ask a question"
+msgstr ""
+
+#. %s is replaced with the link to EMQA Extensions
+#: inc/Settings.php:1473
+#, php-format
+msgid "Manage <a href=\"%s\">EMQA Extensions</a> license keys"
+msgstr ""
+
+#: inc/Handle.php:58 inc/Handle.php:405
+msgid "Missing email information"
+msgstr ""
+
+#: inc/Ajax.php:94
+msgid "Missing id of answer"
+msgstr ""
+
+#: inc/Handle.php:62 inc/Handle.php:309 inc/Handle.php:410
+msgid "Missing name information"
+msgstr ""
+
+#: inc/Handle.php:305
+msgid "Missing or invalid email information"
+msgstr ""
+
+#: inc/Status.php:332
+msgid "Missing post ID"
+msgstr ""
+
+#: inc/Handle.php:283
+msgid "Missing post id."
+msgstr ""
+
+#. %d is replaced with the version number
+#: upgrades/upgrades.php:160
+msgid "Move to next step %d"
+msgstr ""
+
+#: templates/archive-question-filter.php:24
+msgid "My questions"
+msgstr ""
+
+#: templates/archive-question-filter.php:25
+msgid "My subscribes"
+msgstr ""
+
+#: inc/Template.php:450
+msgid "Name"
+msgstr ""
+
+#: inc/Status.php:304 inc/Posts/Base.php:394
+msgid "New"
+msgstr ""
+
+#: inc/Settings.php:824
+msgid "New Answer Notifications"
+msgstr ""
+
+#: inc/Settings.php:1365
+msgid "New Answer Notifications (to Author)"
+msgstr ""
+
+#: inc/Settings.php:1349
+msgid "New Answer Notifications (to Followers)"
+msgstr ""
+
+#: inc/Settings.php:825
+msgid "New Comment Notifications"
+msgstr ""
+
+#: inc/Settings.php:1439
+msgid "New Comment to Answer Notifications (to Admin)"
+msgstr ""
+
+#: inc/Settings.php:1422
+msgid "New Comment to Answer Notifications (to Followers)"
+msgstr ""
+
+#: inc/Settings.php:1402
+msgid "New Comment to Question Notifications (to Admin)"
+msgstr ""
+
+#: inc/Settings.php:1385
+msgid "New Comment to Question Notifications (to Followers)"
+msgstr ""
+
+#: inc/Posts/Question.php:205
+msgid "New Question Category Name"
+msgstr ""
+
+#: inc/Settings.php:823
+msgid "New Question Notifications"
+msgstr ""
+
+#: inc/Settings.php:1325
+msgid "New Question Notifications (to Admin)"
+msgstr ""
+
+#: inc/Posts/Question.php:235
+msgid "New Question Tag Name"
+msgstr ""
+
+#: inc/Posts/Question.php:239
+msgid "No question tags found."
+msgstr ""
+
+#: inc/Admin/Welcome.php:224
+msgid "No valid changelog was found."
+msgstr ""
+
+#: inc/Settings.php:577
+msgid "Not Connected"
+msgstr ""
+
+#: inc/Posts/Base.php:397
+msgid "not found"
+msgstr ""
+
+#: inc/Posts/Base.php:398
+msgid "not found in Trash"
+msgstr ""
+
+#: inc/Ajax.php:306 inc/Ajax.php:356
+msgid "Not Found!!!"
+msgstr ""
+
+#: inc/widgets/Latest_Question.php:75 inc/widgets/Popular_Question.php:69
+#: inc/widgets/Closed_Question.php:75 inc/widgets/Related_Question.php:51
+msgid "Number of posts"
+msgstr ""
+
+#: inc/Posts/Answer.php:306
+msgid "on"
+msgstr ""
+
+#: templates/question-submit-form.php:26 templates/answer-submit-form.php:36
+msgid "Only Me &amp; Admin"
+msgstr ""
+
+#: inc/Metaboxes.php:15 inc/Status.php:312
+#: templates/content-single-question.php:46
+#: templates/archive-question-filter.php:18
+msgid "Open"
+msgstr ""
+
+#: inc/Settings.php:919
+msgid "Other Question Settings"
+msgstr ""
+
+#: inc/Helptab.php:47
+msgid "Overview"
+msgstr ""
+
+#: inc/Settings.php:838
+msgid "Page Settings"
+msgstr ""
+
+#: inc/Posts/Question.php:200
+msgid "Parent Question Category"
+msgstr ""
+
+#: inc/Posts/Question.php:201
+msgid "Parent Question Category:"
+msgstr ""
+
+#: inc/Posts/Base.php:399
+msgid "Parent:"
+msgstr ""
+
+#: inc/Metaboxes.php:16 inc/Status.php:295
+msgid "Pending"
+msgstr ""
+
+#: inc/Settings.php:1073
+msgid "Permalink Settings"
+msgstr ""
+
+#: inc/Settings.php:1294
+msgid "Permissions"
+msgstr ""
+
+#: inc/Metaboxes.php:29
+msgid "Pin question to top of archive page."
+msgstr ""
+
+#: inc/Handle.php:290
+msgid "Please enter your comment content"
+msgstr ""
+
+#: inc/Settings.php:786
+msgid "Plugin Settings"
+msgstr ""
+
+#: inc/Updater.php:176
+msgid "Plugin was activated"
+msgstr ""
+
+#: inc/Posts/Question.php:228
+msgid "Popular Question Tags"
+msgstr ""
+
+#: inc/Shortcode.php:122 inc/widgets/Popular_Question.php:21
+msgid "Popular Questions"
+msgstr ""
+
+#: inc/Settings.php:401
+msgid "Post"
+msgstr ""
+
+#: inc/Template.php:487
+msgid "Post Comment"
+msgstr ""
+
+#: inc/Status.php:345
+msgid "Post does not exist"
+msgstr ""
+
+#: inc/Akismet.php:665
+msgid "Post not found!"
+msgstr ""
+
+#. %s is replaced with the display name of the author
+#: inc/Posts/Base.php:294
+#, php-format
+msgid "Posts by %s"
+msgstr ""
+
+#: templates/content-single-answer.php:35
+msgid "Private"
+msgstr ""
+
+#: templates/question-submit-form.php:25 templates/answer-submit-form.php:35
+msgid "Public"
+msgstr ""
+
+#: inc/Posts/Question.php:101
+msgid "Question"
+msgstr ""
+
+#: inc/Settings.php:1080
+msgid "Question Base"
+msgstr ""
+
+#: inc/Posts/Question.php:206
+msgid "Question Category"
+msgstr ""
+
+#: inc/Settings.php:1088
+msgid "Question Category Base"
+msgstr ""
+
+#: inc/Posts/Answer.php:341
+msgid "Question ID"
+msgstr ""
+
+#: inc/Handle.php:50
+msgid "Question is empty"
+msgstr ""
+
+#: inc/Ajax.php:206 inc/Handle.php:582
+msgid "Question is missing."
+msgstr ""
+
+#: inc/Posts/Question.php:479
+msgid "Question is not valid"
+msgstr ""
+
+#: inc/Shortcode.php:247
+msgid "Question List"
+msgstr ""
+
+#: inc/Settings.php:845
+msgid "Question List Page"
+msgstr ""
+
+#: inc/Metaboxes.php:65
+msgid "Question Meta Data"
+msgstr ""
+
+#: inc/Settings.php:613
+msgid "Question must be manually approved."
+msgstr ""
+
+#: inc/extend/buddypress/notifications.php:31
+msgid "Question Replies"
+msgstr ""
+
+#: inc/Settings.php:896
+msgid "Question Settings"
+msgstr ""
+
+#: inc/Settings.php:1096
+msgid "Question Tag Base"
+msgstr ""
+
+#: inc/Posts/Question.php:240
+msgid "Question Tags"
+msgstr ""
+
+#: templates/content-single-question.php:39
+msgid "Question Tags: "
+msgstr ""
+
+#: inc/Settings.php:395 templates/archive-question-filter.php:28
+#: inc/Posts/Question.php:100 inc/Posts/Question.php:102
+#: inc/Posts/Question.php:266 inc/extend/buddypress/loader.php:81
+#: inc/extend/buddypress/loader.php:118
+msgid "Questions"
+msgstr ""
+
+#: inc/Settings.php:546
+msgid "questions."
+msgstr ""
+
+#: inc/Metaboxes.php:18 inc/Status.php:298
+msgid "Re-Open"
+msgstr ""
+
+#: inc/Settings.php:400
+msgid "Read"
+msgstr ""
+
+#: inc/Answer_List_Table.php:106 inc/Helptab.php:142
+msgid "Read more"
+msgstr ""
+
+#: inc/Akismet.php:74 inc/Akismet.php:691
+msgid "Report Spam"
+msgstr ""
+
+#: inc/Akismet.php:74
+msgid "Report Spam List"
+msgstr ""
+
+#: inc/Akismet.php:685
+msgid "Reported to admin"
+msgstr ""
+
+#. %s is replaced with the login URL
+#: inc/Template.php:454
+#, php-format
+msgid "Required fields are marked %s"
+msgstr ""
+
+#: inc/Settings.php:429 inc/Settings.php:465 inc/Settings.php:500
+msgid "Reset Default"
+msgstr ""
+
+#: inc/Metaboxes.php:17 inc/Status.php:292
+#: templates/content-single-question.php:48
+#: templates/archive-question-filter.php:19
+msgid "Resolved"
+msgstr ""
+
+#: inc/Settings.php:1457
+msgid "Save all changes"
+msgstr ""
+
+#: templates/content-edit.php:52
+msgid "Save Changes"
+msgstr ""
+
+#: inc/Posts/Base.php:396
+msgid "Search "
+msgstr ""
+
+#: inc/extend/buddypress/loader.php:44
+msgid "Search EMQA..."
+msgstr ""
+
+#: inc/Posts/Question.php:198
+msgid "Search Question Categories"
+msgstr ""
+
+#: inc/Posts/Question.php:227
+msgid "Search Question Tags"
+msgstr ""
+
+#: inc/Permission.php:220
+msgid "Security check failed. Please try again."
+msgstr ""
+
+#: inc/Settings.php:65
+msgid "Select 404 emQA Page"
+msgstr ""
+
+#: inc/Settings.php:20
+msgid "Select Archive Question Page"
+msgstr ""
+
+#: templates/question-submit-form.php:38 templates/content-edit.php:36
+msgid "Select question category"
+msgstr ""
+
+#: inc/Settings.php:47
+msgid "Select Submit Question Page"
+msgstr ""
+
+#: inc/Settings.php:642
+msgid "Select template for Single Quesiton page"
+msgstr ""
+
+#: inc/Settings.php:1543
+msgid "Send a copy of every email to admin."
+msgstr ""
+
+#: inc/Posts/Question.php:236
+msgid "Separate question tags with commas"
+msgstr ""
+
+#: inc/Settings.php:786
+msgid "Settings"
+msgstr ""
+
+#: inc/Helptab.php:56
+msgid "Setup Ask Question Page"
+msgstr ""
+
+#: inc/Helptab.php:52
+msgid "Setup Question List Page"
+msgstr ""
+
+#: inc/Helptab.php:60
+msgid "Shortcode"
+msgstr ""
+
+#: inc/widgets/Latest_Question.php:10
+msgid "Show a list of latest questions."
+msgstr ""
+
+#: inc/widgets/Popular_Question.php:13
+msgid "Show a list of popular questions."
+msgstr ""
+
+#: inc/widgets/Closed_Question.php:11
+msgid "Show a list of questions marked as closed."
+msgstr ""
+
+#: inc/widgets/Related_Question.php:11
+msgid ""
+"Show a list of questions that related to a question. Just show in single "
+"question page"
+msgstr ""
+
+#: inc/Settings.php:631
+msgid "Show all answers on single question page."
+msgstr ""
+
+#: inc/widgets/Latest_Question.php:80
+msgid "Show question date"
+msgstr ""
+
+#: inc/Template.php:43
+msgid "Showing search results for"
+msgstr ""
+
+#: inc/Settings.php:1061
+msgid "Single Question Page"
+msgstr ""
+
+#: templates/content-none.php:12
+msgid "Sorry, but nothing matched your filter"
+msgstr ""
+
+#: templates/archive-question-filter.php:32
+msgid "Sort by"
+msgstr ""
+
+#: inc/User.php:218
+msgid "Staff"
+msgstr ""
+
+#: inc/Metaboxes.php:13 templates/content-single-question.php:45
+#: templates/question-submit-form.php:22
+msgid "Status"
+msgstr ""
+
+#: inc/Metaboxes.php:25
+msgid "Sticky"
+msgstr ""
+
+#: inc/Template.php:663
+msgid "Sticky Question"
+msgstr ""
+
+#: inc/Posts/Question.php:445
+msgid "Sticky Questions"
+msgstr ""
+
+#: inc/Helptab.php:64
+msgid "Style integration"
+msgstr ""
+
+#: templates/question-submit-form.php:65 templates/answer-submit-form.php:40
+msgid "Submit"
+msgstr ""
+
+#: inc/Posts/Answer.php:305
+msgid "Submitted"
+msgstr ""
+
+#: inc/Template.php:160
+msgid "Subscribe"
+msgstr ""
+
+#: templates/archive-question-filter.php:29
+msgid "Subscribes"
+msgstr ""
+
+#: inc/Template.php:19 templates/question-submit-form.php:46
+#: templates/content-edit.php:44
+msgid "Tag"
+msgstr ""
+
+#: inc/Posts/Question.php:196
+msgctxt "taxonomy general name"
+msgid "Question Categories"
+msgstr ""
+
+#: inc/Posts/Question.php:225
+msgctxt "taxonomy general name"
+msgid "Question Tags"
+msgstr ""
+
+#: inc/Posts/Question.php:197
+msgctxt "taxonomy singular name"
+msgid "Question Category"
+msgstr ""
+
+#: inc/Posts/Question.php:226
+msgctxt "taxonomy singular name"
+msgid "Question Tag"
+msgstr ""
+
+#: inc/Admin/Welcome.php:64
+msgid ""
+"Thank you for installing our WordPress plugin. If you have any question "
+"about this plugin, please submit to our <a target=\"_blank\" href=\"https:"
+"//www.emohelp.com/question/\">Q&A section</a>."
+msgstr ""
+
+#: upgrades/upgrades.php:41
+msgid ""
+"The upgrade process has started, please be patient. This could take several "
+"minutes. You will be automatically redirected when the upgrade is finished..."
+msgstr ""
+
+#: inc/Settings.php:1537
+msgid "This address will be used as the sender of the outgoing emails."
+msgstr ""
+
+#: inc/Handle.php:492
+msgid "This email is already registered, please choose another one."
+msgstr ""
+
+#: inc/Session.php:68 inc/Session.php:85 inc/Session.php:95 inc/Session.php:118
+msgid "This function should not be called before init."
+msgstr ""
+
+#: inc/Settings.php:70
+msgid ""
+"This page will be redirected when users without authority click on a private "
+"question. You can customize the message of this page in.If not, a default "
+"404 page will be used."
+msgstr ""
+
+#: inc/Ajax.php:210
+msgid "This post is not a question."
+msgstr ""
+
+#: inc/Ajax.php:59 inc/Handle.php:167
+msgid "This post is not answer."
+msgstr ""
+
+#: inc/Handle.php:586
+msgid "This post is not question."
+msgstr ""
+
+#: templates/content-single-question.php:43
+msgid "This question is:"
+msgstr ""
+
+#: inc/Handle.php:495
+msgid "This username is already registered. Please use another one."
+msgstr ""
+
+#: inc/Akismet.php:84 templates/question-submit-form.php:13
+#: templates/content-edit.php:21
+msgid "Title"
+msgstr ""
+
+#: inc/Settings.php:1045 inc/Akismet.php:85
+msgid "Type"
+msgstr ""
+
+#: templates/archive-question-filter.php:22
+msgid "Unanswered"
+msgstr ""
+
+#: inc/Posts/Question.php:203
+msgid "Update Question Category"
+msgstr ""
+
+#: inc/Posts/Question.php:233
+msgid "Update Question Tag"
+msgstr ""
+
+#: upgrades/upgrades.php:177
+msgid "Upgrade process is done"
+msgstr ""
+
+#: inc/Settings.php:87
+msgid "Upload"
+msgstr ""
+
+#: inc/Settings.php:87
+msgid "Upload or choose a logo to be displayed at the top of the email."
+msgstr ""
+
+#: inc/Settings.php:991
+msgid "Use Akismet anti-spam"
+msgstr ""
+
+#: inc/Settings.php:1021
+msgid "Use Auto Closure"
+msgstr ""
+
+#: inc/Handle.php:489
+msgid "User Registration was disabled."
+msgstr ""
+
+#: inc/Akismet.php:159 inc/Posts/Base.php:395
+msgid "View"
+msgstr ""
+
+#: templates/archive-question-filter.php:33
+msgid "Views"
+msgstr ""
+
+#: inc/Posts/Question.php:289
+msgid "views"
+msgstr ""
+
+#: templates/content-single-question.php:15
+#: templates/content-single-answer.php:13
+msgid "Vote Down"
+msgstr ""
+
+#: inc/Settings.php:968
+msgid "Vote Settings"
+msgstr ""
+
+#: templates/content-single-question.php:14
+#: templates/content-single-answer.php:12
+msgid "Vote Up"
+msgstr ""
+
+#: inc/Posts/Question.php:288
+msgid "voted"
+msgstr ""
+
+#: templates/archive-question-filter.php:35
+msgid "Votes"
+msgstr ""
+
+#: inc/Admin/Welcome.php:27 inc/Admin/Welcome.php:28
+msgid "Welcome to EMO Questalk"
+msgstr ""
+
+#. %1$s is replaced with the version number
+#: inc/Admin/Welcome.php:63
+#, php-format
+msgid "Welcome to EMO Questalk %1$s"
+msgstr ""
+
+#. %1$s is replaced with the subject being voted for
+#: inc/Posts/Base.php:49
+#, php-format
+msgid "What %1$s are you looking for?"
+msgstr ""
+
+#: inc/Template.php:77
+msgid "What do you want to know?"
+msgstr ""
+
+#: templates/question-submit-form.php:24 templates/answer-submit-form.php:34
+msgid "Who can see this?"
+msgstr ""
+
+#: inc/widgets/Latest_Question.php:72 inc/widgets/Popular_Question.php:66
+#: inc/widgets/Closed_Question.php:72 inc/widgets/Related_Question.php:48
+msgid "Widget title"
+msgstr ""
+
+#. %1$s is replaced with the subject being voted for
+#: inc/Posts/Base.php:104
+#, php-format
+msgid "You aren't allowed voted for this %1$s"
+msgstr ""
+
+#: inc/Handle.php:279
+msgid "You can't post comment"
+msgstr ""
+
+#: inc/Ajax.php:63 inc/Ajax.php:214
+msgid "You do not have permission to delete this post."
+msgstr ""
+
+#: inc/Posts/Question.php:505
+msgid "You do not have permission to delete this question"
+msgstr ""
+
+#: upgrades/upgrades.php:134
+msgid "You do not have permission to do this task"
+msgstr ""
+
+#: inc/Handle.php:148
+msgid "You do not have permission to edit answer."
+msgstr ""
+
+#: inc/Ajax.php:35 inc/Handle.php:365
+msgid "You do not have permission to edit comment."
+msgstr ""
+
+#: inc/Handle.php:571 inc/Status.php:355
+msgid "You do not have permission to edit question"
+msgstr ""
+
+#: inc/Ajax.php:289
+msgid "You do not have permission to edit question status"
+msgstr ""
+
+#: inc/extend/buddypress/notifications.php:111
+msgid "You do not have permission to mark notifications for that user."
+msgstr ""
+
+#: templates/question-submit-form.php:69
+msgid "You do not have permission to submit a question"
+msgstr ""
+
+#: inc/Handle.php:54 inc/Handle.php:537
+msgid "You do not have permission to submit question."
+msgstr ""
+
+#: templates/content-none.php:10
+msgid "You do not have permission to view questions"
+msgstr ""
+
+#: inc/extend/buddypress/notifications.php:47
+#, php-format
+msgid "You have %1$d new reply to %2$s"
+msgstr ""
+
+#: inc/extend/buddypress/notifications.php:42
+#, php-format
+msgid "You have %1$d new reply to %2$s from %3$s"
+msgstr ""
+
+#: inc/extend/buddypress/notifications.php:36
+msgid "You have %d new replies"
+msgstr ""
+
+#. %s is replaced with HTML tags and attributes allowed in comments
+#: inc/Template.php:478
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+
+#. %s is replaced with the login URL
+#: inc/Template.php:471
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: inc/Handle.php:157
+msgid "You must enter a valid answer content."
+msgstr ""
+
+#: inc/Handle.php:399 inc/Handle.php:576
+msgid "You must enter a valid question title."
+msgstr ""
+
+#: inc/Akismet.php:662
+msgid "You need login to report spam!"
+msgstr ""
+
+#: inc/Akismet.php:680
+msgid "You reported this post before!"
+msgstr ""
+
+#. %1$s is replaced with the subject being voted for
+#: inc/Posts/Base.php:97
+#, php-format
+msgid "You voted for this %1$s"
+msgstr ""
+
+#: templates/answer-submit-form.php:12
+msgid "Your Answer"
+msgstr ""
+
+#: templates/question-submit-form.php:52 templates/answer-submit-form.php:22
+msgid "Your Email"
+msgstr ""
+
+#: templates/question-submit-form.php:57 templates/answer-submit-form.php:27
+msgid "Your Name"
+msgstr ""
+
+#: inc/Handle.php:549
+msgid "Your question is waiting moderator."
+msgstr ""

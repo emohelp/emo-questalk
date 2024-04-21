@@ -1,47 +1,48 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DW Question Answer\n"
+"Project-Id-Version: EMO Questalk \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-17 16:30+0700\n"
-"PO-Revision-Date: 2016-08-17 16:30+0700\n"
-"Last-Translator: DesignWall <webmaster@designwall.com>\n"
-"Language-Team: DesignWall <webmaster@designwall.com>\n"
-"Language: ca\n"
+"POT-Creation-Date: 2016-08-17 16:31+0700\n"
+"PO-Revision-Date: 2016-08-17 16:31+0700\n"
+"Last-Translator: Emohelp <dm@emohelp.com>\n"
+"Language-Team: Emohelp <dm@emohelp.com>\n"
+"Language: hr_HR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.7\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_n\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
 "X-Poedit-Basepath: .\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: dw-question-answer.php:147
-msgid "DWQA Questions"
-msgstr "DWQA Preguntes"
+#: em-question-answer.php:147
+msgid "EMQA Questions"
+msgstr "EMQA Pitanja"
 
-#: dw-question-answer.php:164
-msgid "DWQA Ask Question"
-msgstr "DWQA Preguntar"
+#: em-question-answer.php:164
+msgid "EMQA Ask Question"
+msgstr "EMQA Postavi pitanje"
 
 #: inc/Admin/Extensions.php:13
-msgid "DWQA Markdown"
+msgid "EMQA Markdown"
 msgstr ""
 
 #: inc/Admin/Extensions.php:19
-msgid "DWQA Leaderboard"
+msgid "EMQA Leaderboard"
 msgstr ""
 
 #: inc/Admin/Extensions.php:25
-msgid "DWQA Captcha"
+msgid "EMQA Captcha"
 msgstr ""
 
 #: inc/Admin/Extensions.php:31
-msgid "DWQA Embed Question"
+msgid "EMQA Embed Question"
 msgstr ""
 
 #: inc/Admin/Extensions.php:37
-msgid "DWQA Widgets"
+msgid "EMQA Widgets"
 msgstr ""
 
 #: inc/Admin/Extensions.php:47
@@ -53,27 +54,27 @@ msgid "Get It Now!"
 msgstr ""
 
 #: inc/Admin/Welcome.php:27 inc/Admin/Welcome.php:28
-msgid "Welcome to DW Question & Answer"
+msgid "Welcome to EMO Questalk"
 msgstr ""
 
 #: inc/Admin/Welcome.php:35 inc/Admin/Welcome.php:36
-msgid "DW Question & Answer Changelog"
+msgid "EMO Questalk Changelog"
 msgstr ""
 
 #: inc/Admin/Welcome.php:43 inc/Admin/Welcome.php:44
-msgid "DW Question & Answer Credits"
+msgid "EMO Questalk Credits"
 msgstr ""
 
 #: inc/Admin/Welcome.php:60
 #, php-format
-msgid "Welcome to DW Question & Answer %s"
+msgid "Welcome to EMO Questalk %s"
 msgstr ""
 
 #: inc/Admin/Welcome.php:61
 msgid ""
 "Thank you for installing our WordPress plugin. If you have any question "
 "about this plugin, please submit to our <a target=\"_blank\" href=\"https://"
-"www.designwall.com/question/\">Q&A section</a>."
+"www.Emohelp.com/question/\">Q&A section</a>."
 msgstr ""
 
 #: inc/Admin/Welcome.php:69
@@ -100,16 +101,15 @@ msgstr ""
 #: inc/Ajax.php:132 inc/Ajax.php:150 inc/Ajax.php:215 inc/Handle.php:256
 #: inc/Handle.php:455 inc/Permission.php:286 inc/Status.php:319
 msgid "Are you cheating huh?"
-msgstr "¿De debò?"
+msgstr "Varaš li, ha?"
 
 #: inc/Ajax.php:33 inc/Handle.php:260
 msgid "You do not have permission to edit comment."
 msgstr ""
 
 #: inc/Ajax.php:37
-#, fuzzy
 msgid "Comment ID must be showed."
-msgstr "El ID del comentari s'ha de veure."
+msgstr "ID komentara mora biti vidljiv."
 
 #: inc/Ajax.php:51 inc/Handle.php:154
 msgid "Answer is missing."
@@ -125,7 +125,7 @@ msgstr ""
 
 #: inc/Ajax.php:86
 msgid "Missing id of answer"
-msgstr "Falta ID de resposta"
+msgstr "Nedostaje ID odgovora"
 
 #: inc/Ajax.php:154 inc/Handle.php:477
 msgid "Question is missing."
@@ -138,7 +138,7 @@ msgstr ""
 #: inc/Ajax.php:206
 #, fuzzy
 msgid "You do not have permission to edit question status"
-msgstr "No tens permís per veure preguntes"
+msgstr "Nemate dozvolu vidjeti pitanja"
 
 #: inc/Ajax.php:223 inc/Ajax.php:273
 msgid "Not Found!!!"
@@ -150,22 +150,22 @@ msgstr "Autor"
 
 #: inc/Answer_List_Table.php:82
 msgid "Detail"
-msgstr "Detall"
+msgstr "Pojedinost"
 
 #: inc/Answer_List_Table.php:92 inc/Notifications.php:116
 #: inc/Notifications.php:214 inc/Notifications.php:233 inc/Posts/Base.php:230
 #: inc/Posts/Comment.php:102 inc/Settings.php:419 inc/Settings.php:455
 #: inc/Settings.php:490 inc/User.php:155
 msgid "Anonymous"
-msgstr "Anònim"
+msgstr "Anonimus"
 
 #: inc/Answer_List_Table.php:101
 msgid "Answered on "
-msgstr "Contestada en"
+msgstr "Odgovorio "
 
 #: inc/Answer_List_Table.php:112 inc/Helptab.php:153
 msgid "Read more"
-msgstr "Saber més"
+msgstr "Opširnije"
 
 #: inc/Handle.php:29
 msgid "&quot;Helllo&quot;, Are you cheating huh?."
@@ -173,7 +173,7 @@ msgstr ""
 
 #: inc/Handle.php:32
 msgid "Delete draft"
-msgstr "Esborrar esborrany"
+msgstr "Obriši skicu"
 
 #: inc/Handle.php:39
 msgid "Answer content is empty"
@@ -185,25 +185,23 @@ msgstr ""
 
 #: inc/Handle.php:46 inc/Handle.php:432
 msgid "You do not have permission to submit question."
-msgstr "No tens permís per enviar preguntes."
+msgstr "Nemate dozvolu za slanje odgovora. "
 
 #: inc/Handle.php:50 inc/Handle.php:218 inc/Handle.php:300
-#, fuzzy
 msgid "Missing email information"
-msgstr "Falta informació del correu electrònic"
+msgstr "Nedostaje e-mail "
 
 #: inc/Handle.php:54 inc/Handle.php:222 inc/Handle.php:305
-#, fuzzy
 msgid "Missing name information"
-msgstr "Falta informació del nom"
+msgstr "Nedostaje ime"
 
 #: inc/Handle.php:58 inc/Handle.php:451
 msgid "Captcha is not correct"
-msgstr "Captcha no és correcte"
+msgstr "Captcha nije pravilna"
 
 #: inc/Handle.php:77
 msgid "Answer for "
-msgstr "Resposta per"
+msgstr "Odgovor za "
 
 #: inc/Handle.php:139
 msgid "You do not have permission to edit answer."
@@ -211,7 +209,7 @@ msgstr ""
 
 #: inc/Handle.php:143 inc/Handle.php:520 inc/Posts/Question.php:473
 msgid "Hello, Are you cheating huh?"
-msgstr "Hola ¿de debò?"
+msgstr "Halo, varaš li?"
 
 #: inc/Handle.php:148
 msgid "You must enter a valid answer content."
@@ -219,7 +217,7 @@ msgstr ""
 
 #: inc/Handle.php:194
 msgid "You can't post comment"
-msgstr "No pots publicar el comentari"
+msgstr "Ne možete objaviti komentar"
 
 #: inc/Handle.php:197
 msgid "Missing post id."
@@ -227,7 +225,7 @@ msgstr ""
 
 #: inc/Handle.php:203
 msgid "Please enter your comment content"
-msgstr "Si us plau escriu el contingut del comentari"
+msgstr "Molim, unesite sadržaj komentara"
 
 #: inc/Handle.php:249
 msgid "Comment is missing"
@@ -235,7 +233,7 @@ msgstr ""
 
 #: inc/Handle.php:264
 msgid "Comment content must not be empty."
-msgstr "El contingut del comentari no pot ser buit."
+msgstr "Sadržaj komentara ne smije biti prazan."
 
 #: inc/Handle.php:294 inc/Handle.php:471
 msgid "You must enter a valid question title."
@@ -243,16 +241,15 @@ msgstr ""
 
 #: inc/Handle.php:384
 msgid "User Registration was disabled."
-msgstr "Registre d'Usuaris va ser deshabilitat."
+msgstr "Registracija korisnika je onemogućena."
 
 #: inc/Handle.php:387
 msgid "This email is already registered, please choose another one."
-msgstr "Aquest correu ja existeix, si us plau escriu-ne un altre."
+msgstr "Ovaj e-mail već je registriran, molimo odaberite drugi."
 
 #: inc/Handle.php:390
-#, fuzzy
 msgid "This username is already registered. Please use another one."
-msgstr "Aquest nom d'usuari ja existeix, si us plau escriu-ne un altre."
+msgstr "Ovo korisničko ime već je registrirano. Molimo odaberite drugo."
 
 #: inc/Handle.php:444
 msgid "Your question is waiting moderator."
@@ -261,35 +258,35 @@ msgstr ""
 #: inc/Handle.php:466 inc/Status.php:347
 #, fuzzy
 msgid "You do not have permission to edit question"
-msgstr "No tens permís per enviar preguntes."
+msgstr "Nemate dozvolu za slanje odgovora. "
 
 #: inc/Helptab.php:47
 msgid "Overview"
-msgstr "Visió General"
+msgstr "Pregled"
 
 #: inc/Helptab.php:48
-msgid "DW Question Answer Plugin"
-msgstr "DW Plugin Pregunta y Resposta"
+msgid "EMO Questalk  Plugin"
+msgstr "em Pitanje Odgovor dodatak"
 
 #: inc/Helptab.php:49
 msgid ""
-"DW Question Answer is a WordPress Plugin which helps you build a Question & "
+"EMO Questalk  is a WordPress Plugin which helps you build a Question & "
 "Answer system on your WordPress sites. The plugin is easy to install and set "
 "up. Let start building up your community with this WordPress question & "
 "answer system."
 msgstr ""
-"DW Question Answer és un Plugin de Wordpress que t'ajuda a crear un sistema "
-"de Preguntes i respostes al teu lloc Wordpress.  El Plugin és fàcil "
-"d'instal·lar i configurar.  Comença a crear la teva comunitat amb aquest "
-"sistema de preguntes i respostes en Wordpress."
+"EMO Questalk  is a WordPress Plugin which helps you build a Question & "
+"Answer system on your WordPress sites. The plugin is easy to install and set "
+"up. Let start building up your community with this WordPress question & "
+"answer system."
 
 #: inc/Helptab.php:52
 msgid "Setup Question List Page"
-msgstr "Configurar Pàgina de Llistat de Preguntes"
+msgstr "Postavke stranice Popis pitanja"
 
 #: inc/Helptab.php:56
 msgid "Setup Ask Question Page"
-msgstr "Configurar Pàgina per Fer una Pregunta"
+msgstr "Postavke stranice Postavi pitanje"
 
 #: inc/Helptab.php:60
 msgid "Shortcode"
@@ -297,148 +294,142 @@ msgstr "Shortcode"
 
 #: inc/Helptab.php:64
 msgid "Style integration"
-msgstr "Integració d'estil"
+msgstr "Integracija stila"
 
 #: inc/Helptab.php:173
 msgid "For more information:"
-msgstr "Per més informació:"
+msgstr "Za više informacija:"
 
 #: inc/Helptab.php:174
-msgid "DW Question Answer Guide"
-msgstr "Guia de DW Question Answer "
+msgid "EMO Questalk  Guide"
+msgstr "EMO Questalk  vodič"
 
 #: inc/Helptab.php:175
 msgid "Community"
-msgstr "Comunitat"
+msgstr "Zajednica"
 
 #: inc/Helptab.php:176
-msgid "DesignWall Wordpress Themes"
-msgstr "Temes DesignWall Wordpress"
+msgid "Emohelp Wordpress Themes"
+msgstr "Emohelp Wordpress Themes"
 
 #: inc/Helptab.php:177
-msgid "DesignWall Wordpress Plugins"
-msgstr "Plugins DesignWall Wordpress"
+msgid "Emohelp Wordpress Plugins"
+msgstr "Emohelp Wordpress Plugins"
 
 #: inc/Metaboxes.php:13 templates/content-single-question.php:31
 #: templates/question-submit-form.php:22
 msgid "Status"
-msgstr "Estat"
+msgstr "Status"
 
 #: inc/Metaboxes.php:15 inc/Status.php:304
 #: templates/archive-question-filter.php:18
 #: templates/content-single-question.php:32
 msgid "Open"
-msgstr "Oberta"
+msgstr "Otvoreno"
 
 #: inc/Metaboxes.php:16 inc/Status.php:287
 msgid "Pending"
-msgstr "Pendent"
+msgstr "U tijeku"
 
 #: inc/Metaboxes.php:17 inc/Status.php:284
 #: templates/archive-question-filter.php:19
 #: templates/content-single-question.php:34
 msgid "Resolved"
-msgstr "Resolta"
+msgstr "Riješeno"
 
 #: inc/Metaboxes.php:18 inc/Status.php:290
 msgid "Re-Open"
-msgstr "Re-oberta"
+msgstr "Reotvoreno"
 
 #: inc/Metaboxes.php:19 inc/Status.php:293
 #: templates/archive-question-filter.php:20
 #: templates/content-single-question.php:33
 msgid "Closed"
-msgstr "Tancada"
+msgstr "Zatvoreno"
 
 #: inc/Metaboxes.php:25
 msgid "Sticky"
-msgstr "Fixe"
+msgstr "Ljepljivo"
 
 #: inc/Metaboxes.php:29
-#, fuzzy
 msgid "Pin question to top of archive page."
-msgstr "Pregunta fixe al capdamunt de la pàgina d'arxiu"
+msgstr "Zalijepi ovo pitanje na vrh stranice arhive. "
 
 #: inc/Metaboxes.php:45 inc/Posts/Answer.php:225 inc/Posts/Answer.php:227
 #: inc/Settings.php:431 templates/archive-question-filter.php:34
 msgid "Answers"
-msgstr "Respostes"
+msgstr "Odgovori"
 
 #: inc/Metaboxes.php:65
 msgid "Question Meta Data"
-msgstr "Meta Data per Pregunta"
+msgstr "Pitanje Meta podatci"
 
 #: inc/Notifications.php:29
 msgid "A new question was posted on {site_name}"
-msgstr "Unanova pregunta ha sigut publicada a {site_name}"
+msgstr "Postavljeno je novo pitanje na {ime_stranice}"
 
 #: inc/Notifications.php:132
-#, fuzzy
 msgid "You have a new answer for your followed question"
-msgstr "Tens una resposta nova per la pregunta que segueixes"
+msgstr "Imate novi odgovor na pitanje koje slijedite"
 
 #: inc/Notifications.php:250
 msgid "A new answer for \"{question_title}\" was posted on {site_name}"
-msgstr ""
-"Una nova resposta de la pregunta \"{question_title}\" ha sigut publicada a "
-"{site_name}"
+msgstr "Novi odgovor za \"{pitanje_naslov} \" objavljen je na {stranica_ime}"
 
 #: inc/Notifications.php:334 inc/Notifications.php:380
 msgid "[{site_name}] You have a new comment for question {question_title}"
-msgstr "[{site_name}] Tens un nou comentari per la pregunta {question_title}"
+msgstr "[{ime_stranice}] Imate novi komentar na pitanje {pitanje_naslov}"
 
 #: inc/Notifications.php:339 inc/Notifications.php:385
 msgid "[{site_name}] You have a new comment for answer"
-msgstr "[{site_name}] Tens un nou comentari per la resposta"
+msgstr "[{ime_stranice}] Imate novi komentar na odgovor"
 
 #: inc/PointerHelper.php:60
-msgid "How to use DW Question Answer"
-msgstr "Com fer servir DW Question Answer"
+msgid "How to use EMO Questalk "
+msgstr "Kako koristiti EMQA"
 
 #: inc/PointerHelper.php:61
-msgid "Documents, Support From DesignWall (help)"
-msgstr "Documents, Suport de DesignWall (ajuda)"
+msgid "Documents, Support From Emohelp (help)"
+msgstr "Documents, Support From Emohelp (help)"
 
 #: inc/PointerHelper.php:70
 msgid "Config your support channel"
-msgstr "Configurar el teu canal de suport"
+msgstr "Config your support channel"
 
 #: inc/PointerHelper.php:71
-#, fuzzy
 msgid "Change comment settings, and create the Submit question page."
-msgstr ""
-"Canviar configuració de comentari i crear pàgina d'enviament de pregunta."
+msgstr "Promijenite postavke komentara i kreirajte stranicu za objavu pitanja."
 
 #: inc/Posts/Answer.php:226 inc/Posts/Answer.php:270
 msgid "Answer"
-msgstr "Resposta"
+msgstr "Odgovor"
 
 #: inc/Posts/Answer.php:273
 msgid "In Response To"
-msgstr "En resposta A"
+msgstr "Odgovor na"
 
 #: inc/Posts/Answer.php:317 inc/Posts/Base.php:320 inc/Settings.php:402
 #: inc/Template.php:58 inc/Template.php:163 inc/Template.php:180
 #: templates/content-comment.php:19
 msgid "Edit"
-msgstr "Editar"
+msgstr "Unesi"
 
 #: inc/Posts/Answer.php:318 inc/Settings.php:403 inc/Template.php:168
 #: inc/Template.php:185 templates/content-comment.php:22
 msgid "Delete"
-msgstr "Esborrar"
+msgstr "Izbriši"
 
 #: inc/Posts/Answer.php:319 inc/Posts/Base.php:322
 msgid "View"
-msgstr "Veure"
+msgstr "Vidi"
 
 #: inc/Posts/Answer.php:323
 msgid "Submitted"
-msgstr "Enviada"
+msgstr "Dostavljeno"
 
 #: inc/Posts/Answer.php:324
 msgid "on"
-msgstr "en"
+msgstr "on"
 
 #: inc/Posts/Answer.php:359
 msgid "Question ID"
@@ -450,52 +441,52 @@ msgstr ""
 
 #: inc/Posts/Base.php:5
 msgid "Are you cheating, huh?"
-msgstr "¿De debò?"
+msgstr "Varaš li, uh?"
 
 #: inc/Posts/Base.php:18
 msgid "What "
-msgstr "Què"
+msgstr "Što"
 
 #: inc/Posts/Base.php:46
 msgid "You voted for this "
-msgstr "Vas votar per això"
+msgstr "Glasali ste za ovo"
 
 #: inc/Posts/Base.php:242
 #, php-format
 msgid "Posts by %s"
-msgstr "Publicacions de %s"
+msgstr "Objavio%s"
 
 #: inc/Posts/Base.php:251 inc/Posts/Base.php:255
 #, php-format
-msgid "%s answered <span class=\"dwqa-date\">%s</span> ago"
-msgstr "%s contestat <span class=\"dwqa-date\">%s</span> abans"
+msgid "%s answered <span class=\"emqa-date\">%s</span> ago"
+msgstr ""
 
 #: inc/Posts/Base.php:257
 #, php-format
-msgid "%s asked <span class=\"dwqa-date\">%s</span> ago"
-msgstr "%s preguntat <span class=\"dwqa-date\">%s</span> abans"
+msgid "%s asked <span class=\"emqa-date\">%s</span> ago"
+msgstr ""
 
 #: inc/Posts/Base.php:306
-msgid "DWQA Posts"
+msgid "EMQA Posts"
 msgstr ""
 
 #: inc/Posts/Base.php:307
-msgid "DWQA Post"
+msgid "EMQA Post"
 msgstr ""
 
 #: inc/Posts/Base.php:318
-msgctxt "dwqa"
+msgctxt "EMQA"
 msgid "Add New"
 msgstr ""
 
 #: inc/Posts/Base.php:319
 #, fuzzy
 msgid "Add New"
-msgstr "Afegir nou"
+msgstr "Unesite novu"
 
 #: inc/Posts/Base.php:321 inc/Status.php:296
 msgid "New"
-msgstr "Nou"
+msgstr "Novo"
 
 #: inc/Posts/Base.php:323
 msgid "Search "
@@ -517,7 +508,7 @@ msgstr ""
 #: inc/widgets/Closed_Question.php:49 inc/widgets/Latest_Question.php:42
 #: inc/widgets/Popular_Question.php:43
 msgid "asked by"
-msgstr "preguntat per"
+msgstr "pitao"
 
 #: inc/Posts/Question.php:100 inc/Posts/Question.php:102
 #: inc/Posts/Question.php:266 inc/Settings.php:395
@@ -527,7 +518,7 @@ msgstr ""
 
 #: inc/Posts/Question.php:101
 msgid "Question"
-msgstr "Pregunta"
+msgstr "Pitanje"
 
 #: inc/Posts/Question.php:196
 msgctxt "taxonomy general name"
@@ -573,7 +564,7 @@ msgstr ""
 
 #: inc/Posts/Question.php:206
 msgid "Question Category"
-msgstr "Categoria de Pregunta"
+msgstr "Tema pitanja"
 
 #: inc/Posts/Question.php:225
 msgctxt "taxonomy general name"
@@ -631,7 +622,7 @@ msgstr ""
 
 #: inc/Posts/Question.php:240
 msgid "Question Tags"
-msgstr "Etiquetes de Preguntes"
+msgstr "Tagovi od pitanja"
 
 #: inc/Posts/Question.php:276
 msgid "Info"
@@ -639,90 +630,88 @@ msgstr "Info"
 
 #: inc/Posts/Question.php:287 templates/content-question.php:22
 msgid "answered"
-msgstr "contestada"
+msgstr "odgovoreno"
 
 #: inc/Posts/Question.php:288
 msgid "voted"
-msgstr "votada"
+msgstr "glasano"
 
 #: inc/Posts/Question.php:289
 msgid "views"
-msgstr "vistes"
+msgstr "pregledi"
 
 #: inc/Posts/Question.php:410 inc/User.php:266
 msgid "Invalid Post"
-msgstr "Publicació Invàlida"
+msgstr "Nevaljala objava"
 
 #: inc/Posts/Question.php:445
 msgid "Sticky Questions"
-msgstr "Preguntes fixes"
+msgstr "Istaknuta pitanja"
 
 #: inc/Posts/Question.php:479
 msgid "Question is not valid"
-msgstr "La Pregunta no és vàlida"
+msgstr "Nevažeće pitanje"
 
 #: inc/Posts/Question.php:500
 msgid "Delete Action was failed"
-msgstr "No s'ha pogut Esborrar"
+msgstr "Akcija brisanja nije uspjela"
 
 #: inc/Posts/Question.php:505
 msgid "You do not have permission to delete this question"
-msgstr "No tens permís per esborrar aquesta pregunta"
+msgstr "Nemate dozvolu brisati ovo pitanje"
 
 #: inc/Session.php:68 inc/Session.php:85 inc/Session.php:95 inc/Session.php:118
 msgid "This function should not be called before init."
 msgstr ""
 
 #: inc/Settings.php:8
-#, fuzzy
 msgid "Login required. No anonymous post allowed"
-msgstr "Es requereix ingressar a la pàgina. No es permeten anònims"
+msgstr "Potrebna je prijava. Anonimnost nije dozvoljena"
 
 #: inc/Settings.php:20
 msgid "Select Archive Question Page"
-msgstr "Seleccionar pàgina de Respostes Arxivades"
+msgstr "Odaberite stranicu Arhiva pitanja"
 
 #: inc/Settings.php:24
 msgid ""
-"A page where displays all questions. The <code>[dwqa-list-questions]</code> "
+"A page where displays all questions. The <code>[EMQA-list-questions]</code> "
 "short code must be on this page."
 msgstr ""
 
 #: inc/Settings.php:31
 msgid "hours"
-msgstr "hores"
+msgstr "sati"
 
 #: inc/Settings.php:31
 msgid ""
 "A period of time in which new questions are highlighted and marked as New"
-msgstr "Un període en el qual les noves preguntes són marcades com a Noves"
+msgstr "Vrijeme u kome će nova pitanja biti istaknuta i označena kao Nova"
 
 #: inc/Settings.php:36
 msgid "days"
-msgstr "dies"
+msgstr "dani"
 
 #: inc/Settings.php:36
-#, fuzzy
 msgid ""
 "A Question will be marked as overdue if it passes this period of time, "
 "starting from the time the question was submitted"
 msgstr ""
-"Una pregunta serà marcada com a endarrerida si es passa d'aquest període, "
-"començant des de la data en que la pregunta va ser enviada"
+"Pitanje će biti označeno kao isteklo ako premaši ovaj vremenski period, "
+"počevši od datuma kada je pitanje objavljeno"
 
 #: inc/Settings.php:47
 msgid "Select Submit Question Page"
-msgstr "Seleccionar Pàgina d'Enviar Pregunta"
+msgstr "Odaberi stranicu Objavi pitanje "
 
 #: inc/Settings.php:52
 msgid ""
-"A page where users can submit questions. The <code>[dwqa-submit-question-"
+"A page where users can submit questions. The <code>[EMQA-submit-question-"
 "form]</code> short code must be on this page."
 msgstr ""
 
 #: inc/Settings.php:65
-msgid "Select 404 DWQA Page"
-msgstr ""
+msgid "Select 404 EMQA Page"
+msgstr "Select 404 EMQA Page"
 
 #: inc/Settings.php:70
 msgid ""
@@ -730,10 +719,13 @@ msgid ""
 "question. You can customize the message of this page in.If not, a default "
 "404 page will be used."
 msgstr ""
+"Ova stranica će se pojaviti kada korisnici bez dozvole kliknu na privatno "
+"pitanje. Možete preurediti poruku na stranici. Inače će se koristitit zadana "
+"stranica 404."
 
 #: inc/Settings.php:87
 msgid "Upload"
-msgstr "Pujar"
+msgstr "Učitaj"
 
 #: inc/Settings.php:87
 msgid "Upload or choose a logo to be displayed at the top of the email."
@@ -753,13 +745,13 @@ msgstr ""
 #: inc/Settings.php:238 inc/Settings.php:273 inc/Settings.php:308
 #: inc/Settings.php:343
 msgid "Email subject"
-msgstr "Assumpte del correu"
+msgstr "E-mail predmet"
 
 #: inc/Settings.php:136 inc/Settings.php:171 inc/Settings.php:207
 #: inc/Settings.php:243 inc/Settings.php:278 inc/Settings.php:313
 #: inc/Settings.php:348
 msgid "Email Content"
-msgstr "Contingut del correu"
+msgstr "E-mail sadržaj"
 
 #: inc/Settings.php:161
 msgid "Enable notification for new answer."
@@ -779,15 +771,15 @@ msgstr ""
 
 #: inc/Settings.php:400
 msgid "Read"
-msgstr "Llegir"
+msgstr "Čitaj"
 
 #: inc/Settings.php:401
 msgid "Post"
-msgstr "Publicar"
+msgstr "Objavi"
 
 #: inc/Settings.php:429 inc/Settings.php:465 inc/Settings.php:500
 msgid "Reset Default"
-msgstr "Reiniciar a valors per defecte"
+msgstr "Resetiraj zadano"
 
 #: inc/Settings.php:467
 msgid "Comments"
@@ -836,7 +828,7 @@ msgstr ""
 #: inc/Settings.php:593
 #, fuzzy
 msgid "Select template for Single Quesiton page"
-msgstr "Seleccionar pàgina de Respostes Arxivades"
+msgstr "Captcha na Single Question Page"
 
 #: inc/Settings.php:599
 msgid ""
@@ -855,11 +847,11 @@ msgstr ""
 
 #: inc/Settings.php:732
 msgid "Plugin Settings"
-msgstr "Configuració del Plugin"
+msgstr "Postavke dodatka"
 
 #: inc/Settings.php:732
 msgid "Settings"
-msgstr "Configuració"
+msgstr "Postavke"
 
 #: inc/Settings.php:768
 msgid "Email Settings"
@@ -883,11 +875,11 @@ msgstr ""
 
 #: inc/Settings.php:791
 msgid "Question List Page"
-msgstr "Pàgina de Llistat de Preguntes"
+msgstr "Stranica Popis pitanja"
 
 #: inc/Settings.php:799 inc/Settings.php:930
 msgid "Ask Question Page"
-msgstr "Pàgina per Fer Preguntes"
+msgstr "Stranica Postavi pitanje "
 
 #: inc/Settings.php:842
 msgid "Question Settings"
@@ -927,7 +919,7 @@ msgstr ""
 
 #: inc/Settings.php:950
 msgid "Permalink Settings"
-msgstr "Configuració Permalink"
+msgstr "Permalink postavke"
 
 #: inc/Settings.php:957
 msgid "Question Base"
@@ -943,19 +935,19 @@ msgstr ""
 
 #: inc/Settings.php:1042
 msgid "From Email"
-msgstr "Del correu electrònic"
+msgstr "Sa e-maila"
 
 #: inc/Settings.php:1110 inc/Settings.php:1117
 msgid "Group Permission"
-msgstr "Premisos de Grup"
+msgstr "Grupna dozvola"
 
 #: inc/Settings.php:1145
-msgid "DWQA Settings"
-msgstr "Configuració DWQA"
+msgid "EMQA Settings"
+msgstr "EMQA Postavke"
 
 #: inc/Settings.php:1149
 msgid "General"
-msgstr "General"
+msgstr "Općenito"
 
 #: inc/Settings.php:1150
 msgid "Emails"
@@ -967,7 +959,7 @@ msgstr ""
 
 #: inc/Settings.php:1152
 msgid "Licenses"
-msgstr "Llicencies"
+msgstr ""
 
 #: inc/Settings.php:1166
 msgid "Email settings"
@@ -975,7 +967,7 @@ msgstr ""
 
 #: inc/Settings.php:1168
 msgid "Email Logo"
-msgstr "Logotip pel correu electrònic"
+msgstr "E-mail logo"
 
 #: inc/Settings.php:1182
 msgid "New Question Notifications (to Admin)"
@@ -1007,11 +999,11 @@ msgstr ""
 
 #: inc/Settings.php:1314
 msgid "Save all changes"
-msgstr "Desar tots els canvis"
+msgstr "Spremi sve promjene"
 
 #: inc/Settings.php:1328
 #, php-format
-msgid "Manage <a href=\"%s\">DWQA Extensions</a> license keys"
+msgid "Manage <a href=\"%s\">EMQA Extensions</a> license keys"
 msgstr ""
 
 #: inc/Settings.php:1346 inc/Settings.php:1351 inc/Settings.php:1356
@@ -1029,7 +1021,7 @@ msgstr "Bcc"
 
 #: inc/Settings.php:1376
 msgid "This address will be used as the sender of the outgoing emails."
-msgstr "Aquesta adreça es farà servir per el correu de sortida"
+msgstr "Ova adresa koristititi će se kao pošiljatelj za odlaznu poštu"
 
 #: inc/Settings.php:1382
 msgid "Send a copy of every email to admin."
@@ -1037,26 +1029,27 @@ msgstr ""
 
 #: inc/Shortcode.php:115 inc/widgets/Popular_Question.php:21
 msgid "Popular Questions"
-msgstr "Preguntas mas populares"
+msgstr "Popularna pitanja"
 
 #: inc/Shortcode.php:152
 msgid "Latest Answers"
-msgstr "Últimes Respostes"
+msgstr "Novi odgovori"
 
 #: inc/Shortcode.php:178
 msgid "Answer at"
-msgstr "Contestar a"
+msgstr "Odgovorio"
 
 #: inc/Shortcode.php:178
 msgid "Link to"
-msgstr "Enllaçar a"
+msgstr "Link za"
 
 #: inc/Shortcode.php:206
 #, php-format
 msgid "%d person who is following this question"
 msgid_plural "%d people who are following this question"
-msgstr[0] "%d persona que segueix la teva pregunta"
-msgstr[1] "%d persones que segueixen la teva pregunta"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: inc/Shortcode.php:236
 msgid "Question List"
@@ -1064,61 +1057,59 @@ msgstr ""
 
 #: inc/Status.php:300
 msgid "Answered"
-msgstr "Contestada"
+msgstr "Odgovoreno"
 
 #: inc/Status.php:324
 msgid "Missing post ID"
-msgstr "Falta ID de publicació"
+msgstr "Nedostaje ID objave"
 
 #: inc/Status.php:337
 msgid "Post does not exist"
-msgstr "Publicació no existeix"
+msgstr "Objava ne postoji"
 
 #: inc/Status.php:342
 msgid "Invalid post status"
-msgstr "Estatus de publicació no vàlid"
+msgstr "Nevažeći post status "
 
 #: inc/Template.php:15 templates/content-edit.php:44
 #: templates/question-submit-form.php:46
 msgid "Tag"
-msgstr "Etiqueta"
+msgstr ""
 
 #: inc/Template.php:15 inc/Template.php:20 templates/content-edit.php:29
 #: templates/question-submit-form.php:32
 msgid "Category"
-msgstr "Categoria"
+msgstr "tema"
 
 #: inc/Template.php:43
 msgid "Showing search results for"
-msgstr "Mostrant resultats per"
+msgstr ""
 
 #: inc/Template.php:78
 msgid "What do you want to know?"
-msgstr "Que vols saber?"
+msgstr ""
 
 #: inc/Template.php:157
 msgid "Subscribe"
-msgstr "Subscriu-te"
+msgstr ""
 
 #: inc/Template.php:445
 msgid "Email"
-msgstr "Email"
+msgstr "E-mail"
 
 #: inc/Template.php:447
 msgid "Name"
-msgstr "Nom"
+msgstr ""
 
 #: inc/Template.php:449
 #, php-format
 msgid "Required fields are marked %s"
-msgstr "Els camps necessaris estan marcats %s"
+msgstr "Obavezna polja su označena %s"
 
 #: inc/Template.php:461
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr ""
-"Has d'haver <a href=\"%s\">ingressat a la pàgina</a> per publicar un "
-"comentari."
+msgstr "Morate biti<a href=\"%s\">prijavljeni</a> za komentiranje."
 
 #: inc/Template.php:464
 #, php-format
@@ -1126,43 +1117,42 @@ msgid ""
 "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
 "and attributes: %s"
 msgstr ""
-"Pots fer servir aquestes <abbr title=\"HyperText Markup Language\">HTML</"
-"abbr> etiquetes i atributs: %s"
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
 
 #: inc/Template.php:467
 msgid "Leave a Reply"
-msgstr "Deixar una resposta"
+msgstr "Odgovori"
 
 #: inc/Template.php:468
 #, php-format
 msgid "Leave a Reply to %s"
-msgstr "Deixar una resposta a %s"
+msgstr "Odgovor za %s"
 
 #: inc/Template.php:469
 msgid "Cancel reply"
-msgstr "Cancel·lar resposta"
+msgstr "Otkaži odgovor"
 
 #: inc/Template.php:470
 msgid "Post Comment"
-msgstr "Publicar comentari"
+msgstr "Objavi komentar"
 
 #: inc/Template.php:645
 msgid "Sticky Question"
-msgstr "Pregunta Fixe"
+msgstr "Istaknuto pitanje"
 
 #: inc/Template.php:659
 msgid "Ask a question"
-msgstr "Fer una pregunta"
+msgstr "Postavite pitanje"
 
 #: inc/Template.php:661
 #, fuzzy
 msgid "Login to ask a question"
-msgstr "Ingressa per enviar la teva pregunta"
+msgstr "Prijava za objavu pitanja"
 
 #: inc/Template.php:1128
-#, fuzzy
 msgid "Choose as the best answer"
-msgstr "Seleccionar com a millor resposta"
+msgstr "Odaberi kao najbolji odgovor"
 
 #: inc/Updater.php:97
 msgid "License Key"
@@ -1178,55 +1168,51 @@ msgstr ""
 
 #: inc/User.php:230
 msgid "Staff"
-msgstr "Administrador"
+msgstr "Član DO tima "
 
 #: inc/Walker/Category.php:20 inc/Walker/Tag.php:20
 #, php-format
 msgid "View all posts filed under %s"
-msgstr "Veure totes les publicacions fetes per %s"
+msgstr "Vidi sve objave unutar %s"
 
 #: inc/Walker/Category.php:35 inc/Walker/Tag.php:35
 #, php-format
 msgid "Feed for all posts filed under %s"
-msgstr "Carregar totes les publicacions fetes sota %s"
+msgstr "Feed za sve postove dokumentirane unutar %s"
 
 #: inc/widgets/Closed_Question.php:11
 msgid "Show a list of questions marked as closed."
-msgstr "Mostra una llista de preguntes tancades"
+msgstr ""
 
 #: inc/widgets/Closed_Question.php:12
-#, fuzzy
-msgid "DWQA Closed Questions"
-msgstr "Preguntes relacionades amb DWQA"
+msgid "EMQA Closed Questions"
+msgstr "EMQA Zatvorena pitanja"
 
 #: inc/widgets/Closed_Question.php:18
-#, fuzzy
 msgid "Closed Questions"
-msgstr "Totes les Preguntes"
+msgstr "Zatvorena pitanja"
 
 #: inc/widgets/Closed_Question.php:72 inc/widgets/Latest_Question.php:71
 #: inc/widgets/Popular_Question.php:66 inc/widgets/Related_Question.php:48
 msgid "Widget title"
-msgstr "Títol del Widget"
+msgstr "Naslov widgeta"
 
 #: inc/widgets/Closed_Question.php:75 inc/widgets/Latest_Question.php:74
 #: inc/widgets/Popular_Question.php:69 inc/widgets/Related_Question.php:51
 msgid "Number of posts"
-msgstr "Nombre de publicacions"
+msgstr "Broj objava"
 
 #: inc/widgets/Latest_Question.php:10
 msgid "Show a list of latest questions."
-msgstr "Mostra una llista de les últimes preguntes"
+msgstr ""
 
 #: inc/widgets/Latest_Question.php:11
-#, fuzzy
-msgid "DWQA Latest Questions"
-msgstr "Preguntes relacionades amb DWQA"
+msgid "EMQA Latest Questions"
+msgstr "EMQA Nova pitanja"
 
 #: inc/widgets/Latest_Question.php:17
-#, fuzzy
 msgid "Latest Questions"
-msgstr "Pregunta Privada"
+msgstr "Nova pitanja"
 
 #: inc/widgets/Latest_Question.php:44
 msgid "ago"
@@ -1238,23 +1224,21 @@ msgstr ""
 
 #: inc/widgets/Popular_Question.php:13
 msgid "Show a list of popular questions."
-msgstr "Mostra una llista de les preguntes mes populars"
+msgstr ""
 
 #: inc/widgets/Popular_Question.php:15
-msgid "DWQA Popular Questions"
-msgstr "Preguntes Populars DWQA"
+msgid "EMQA Popular Questions"
+msgstr "EMQA Popularna pitanja"
 
 #: inc/widgets/Related_Question.php:11
 msgid ""
 "Show a list of questions that related to a question. Just show in single "
 "question page"
-msgstr ""
-"veure un llistat de preguntes que es relacionen amb una pregunta. Només "
-"veure en la pàgina de pregunta única."
+msgstr "Pokaži popis pitanja u vezi s pitanjem. Pokaži u single question page."
 
 #: inc/widgets/Related_Question.php:12
-msgid "DWQA Related Questions"
-msgstr "Preguntes relacionades amb DWQA"
+msgid "EMQA Related Questions"
+msgstr "EMQA Povezana pitanja"
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:181
 #, php-format
@@ -1277,19 +1261,19 @@ msgstr ""
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:326
 msgid "Error"
-msgstr "Error"
+msgstr ""
 
 #: templates/answer-submit-form.php:12
 msgid "Your Answer"
-msgstr "La teva pregunta"
+msgstr ""
 
 #: templates/answer-submit-form.php:21 templates/question-submit-form.php:52
 msgid "Your Email"
-msgstr "El teu email"
+msgstr ""
 
 #: templates/answer-submit-form.php:26 templates/question-submit-form.php:57
 msgid "Your Name"
-msgstr "El teu nom"
+msgstr ""
 
 #: templates/answer-submit-form.php:33 templates/question-submit-form.php:24
 msgid "Who can see this?"
@@ -1297,7 +1281,7 @@ msgstr ""
 
 #: templates/answer-submit-form.php:34 templates/question-submit-form.php:25
 msgid "Public"
-msgstr "Públic"
+msgstr "Javno"
 
 #: templates/answer-submit-form.php:35 templates/question-submit-form.php:26
 msgid "Only Me &amp; Admin"
@@ -1305,91 +1289,91 @@ msgstr ""
 
 #: templates/answer-submit-form.php:39 templates/question-submit-form.php:65
 msgid "Submit"
-msgstr "Envia"
+msgstr ""
 
 #: templates/answers.php:12
 #, php-format
 msgid "%s Answers"
-msgstr "%s Respostes"
+msgstr ""
 
 #: templates/archive-question-filter.php:14
 msgid "Filter:"
-msgstr "Filtre:"
+msgstr ""
 
 #: templates/archive-question-filter.php:16
 msgid "All"
-msgstr "Tot"
+msgstr "Sve"
 
 #: templates/archive-question-filter.php:22
 msgid "Unanswered"
-msgstr "Sense contestar"
+msgstr ""
 
 #: templates/archive-question-filter.php:24
 msgid "My questions"
-msgstr "Les meves preguntes"
+msgstr ""
 
 #: templates/archive-question-filter.php:25
 msgid "My subscribes"
-msgstr "Les meves subscripcions"
+msgstr ""
 
 #: templates/archive-question-filter.php:29
 msgid "Subscribes"
-msgstr "Subscripcions"
+msgstr ""
 
 #: templates/archive-question-filter.php:32
 msgid "Sort by"
-msgstr "Ordena per"
+msgstr ""
 
 #: templates/archive-question-filter.php:33
 msgid "Views"
-msgstr "Vistes"
+msgstr ""
 
 #: templates/archive-question-filter.php:35
 msgid "Votes"
-msgstr "Vots"
+msgstr ""
 
 #: templates/archive-question.php:28
 msgid "Ask Question"
-msgstr "Fer Pregunta"
+msgstr "Dostavi pitanje"
 
 #: templates/captcha-form.php:20
 msgid "Enter the result"
-msgstr "Introdueix el resultat"
+msgstr ""
 
 #: templates/content-comment.php:16
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid "replied %s ago"
-msgstr "contestat %s abans"
+msgstr ""
 
 #: templates/content-edit.php:21 templates/question-submit-form.php:13
 msgid "Title"
-msgstr "Títol"
+msgstr ""
 
 #: templates/content-edit.php:36 templates/question-submit-form.php:38
 msgid "Select question category"
-msgstr "Selecciona la categoria de la pregunta"
+msgstr "Odaberite temu "
 
 #: templates/content-edit.php:50
 msgid "Save Changes"
-msgstr "Desa els canvis"
+msgstr ""
 
 #: templates/content-none.php:10
 msgid "You do not have permission to view questions"
-msgstr "No tens permís per veure preguntes"
+msgstr "Nemate dozvolu vidjeti pitanja"
 
 #: templates/content-none.php:12
 msgid "Sorry, but nothing matched your filter"
-msgstr "Ho sento, pero no hem trobat res amb aquest filtre"
+msgstr ""
 
 #: templates/content-question.php:18
 msgid "asked"
-msgstr "preguntat"
+msgstr "pitao"
 
 #: templates/content-question.php:25
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s %s ago</span>"
-msgstr "<span><a href=\"%s\">%s%s</a> %s %s abans</span>"
+msgstr ""
 
 #: templates/content-question.php:26 templates/content-single-answer.php:25
 msgid "&nbsp;&bull;&nbsp;"
@@ -1398,27 +1382,27 @@ msgstr ""
 #: templates/content-question.php:31
 #, php-format
 msgid "<strong>%1$s</strong> views"
-msgstr "<strong>%1$s</strong> vistes"
+msgstr ""
 
 #: templates/content-question.php:35
 #, php-format
 msgid "<strong>%1$s</strong> answers"
-msgstr "<strong>%1$s</strong> respostes"
+msgstr ""
 
 #: templates/content-question.php:39
 #, php-format
 msgid "<strong>%1$s</strong> votes"
-msgstr "<strong>%1$s</strong> vots"
+msgstr ""
 
 #: templates/content-single-answer.php:12
 #: templates/content-single-question.php:14
 msgid "Vote Up"
-msgstr "Vot Positiu"
+msgstr "Glasaj za"
 
 #: templates/content-single-answer.php:13
 #: templates/content-single-question.php:15
 msgid "Vote Down"
-msgstr "Vot Negatiu"
+msgstr "Glasaj protiv"
 
 #: templates/content-single-answer.php:17
 #: templates/content-single-answer.php:19
@@ -1428,39 +1412,38 @@ msgstr ""
 #: templates/content-single-answer.php:23
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s answered %s ago</span>"
-msgstr "<span><a href=\"%s\">%s%s</a> %s contestat %s abans</span>"
+msgstr ""
 
 #: templates/content-single-answer.php:26
 msgid "Private"
-msgstr "Privat"
+msgstr "Privatno"
 
 #: templates/content-single-question.php:19
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s asked %s ago</span>"
-msgstr "<span><a href=\"%s\">%s%s</a> %s preguntat %s abans</span>"
+msgstr ""
 
 #: templates/content-single-question.php:25
 msgid "Question Tags: "
-msgstr "Etiquetes de preguntes"
+msgstr ""
 
 #: templates/content-single-question.php:29
 msgid "This question is:"
-msgstr "Aquesta pregunta es:"
+msgstr ""
 
 #: templates/question-submit-form.php:69
-#, fuzzy
 msgid "You do not have permission to submit a question"
-msgstr "No tens permís per enviar preguntes."
+msgstr "Nemate dozvolu za slanje odgovora. "
 
 #: upgrades/upgrades.php:25
 #, php-format
 msgid ""
-"DW Question Answer needs to upgrade the database, click %shere%s to start "
+"EMO Questalk  needs to upgrade the database, click %shere%s to start "
 "the upgrade."
 msgstr ""
 
 #: upgrades/upgrades.php:33
-msgid "DWQA Upgrade"
+msgid "EMQA Upgrade"
 msgstr ""
 
 #: upgrades/upgrades.php:40
@@ -1471,7 +1454,7 @@ msgstr ""
 
 #: upgrades/upgrades.php:130
 msgid "You do not have permission to do this task"
-msgstr "No tens permís per fer aquesta tasca"
+msgstr ""
 
 #: upgrades/upgrades.php:147
 msgid "Just do it.."
@@ -1487,746 +1470,737 @@ msgid "Upgrade process is done"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "DW Question Answer"
+msgid "EMO Questalk "
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"A WordPress plugin was make by DesignWall.com to build an Question Answer "
+"A WordPress plugin was make by Emohelp.com to build an Question Answer "
 "system for support, asking and comunitcate with your customer"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "DesignWall"
+msgid "Emohelp"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://www.designwall.com"
+msgid "http://www.Emohelp.com"
 msgstr ""
 
 #~ msgid "Next"
-#~ msgstr "Següent"
+#~ msgstr "Sljedeće"
 
 #~ msgid "Prev"
-#~ msgstr "Previ"
+#~ msgstr "Prethodno"
 
 #~ msgid "Please enter your question"
-#~ msgstr "Si us plau escriu la teva pregunta"
+#~ msgstr "Molimo, unesite vaše pitanje"
 
 #~ msgid "Your question must be at least 2 characters in length"
-#~ msgstr "La pregunta ha de tenir al menys 2 caràcters"
+#~ msgstr "Vaše pitanje mora imati barem 2 znaka"
 
 #~ msgid "Enter a valid email address"
-#~ msgstr "Escriu una adreça de correu vàlida"
+#~ msgstr "Upišite valjanu e-mail adresu"
 
 #~ msgid "Enter a question title"
-#~ msgstr "Escriu un títol per la pregunta"
+#~ msgstr "Unesite naslov pitanja - pitanje ukratko s ključnim pojmovima"
 
 #~ msgid "Please add your name"
-#~ msgstr "Si us plau afegeix el teu nom"
+#~ msgstr "Molimo, unesite vaše ime"
 
 #~ msgid "Please enter your answer"
-#~ msgstr "Si us plau escriu la teva resposta"
+#~ msgstr "Molimo, unesite vaš odgovor"
 
 #~ msgid "Comment must have more than 2 characters"
-#~ msgstr "El comentari ha de tenir més de 2 caràcters"
+#~ msgstr "Komentar mora imati više od 2 znaka"
 
 #~ msgid "Not found! Try another keyword."
-#~ msgstr "¡No trobat! Prova amb una paraula diferent"
+#~ msgstr "Nije pronađeno! Pokušajte drugu ključnu riječ."
 
 #~ msgid "Or press <strong>ENTER</strong> to get more questions"
-#~ msgstr "O pressiona <strong>INTRO</strong> per obtenir més preguntes"
+#~ msgstr "Ili pritisnite <strong>ENTER</strong>za više pitanja"
 
 #~ msgid "Update"
-#~ msgstr "Actualitzar"
+#~ msgstr "Obnovi"
 
 #~ msgid "Cancel"
-#~ msgstr "Cancel·lar"
+#~ msgstr "Otkaži"
 
 #~ msgid "Do you want to delete this comment?"
-#~ msgstr "¿Vols esborrar aquest comentari?"
+#~ msgstr "Želite li izbrisati ovaj komentar?"
 
 #~ msgid "Do you want to delete this answer?"
-#~ msgstr "¿Vols esborrar aquesta resposta?"
+#~ msgstr "Želite li izbrisati ovaj odgovor?"
 
-#, fuzzy
 #~ msgid "Do you want to update this answer?"
-#~ msgstr "¿Vols actualitzar aquesta resposta?"
+#~ msgstr "Želite obnoviti ovaj odgovor?"
 
-#, fuzzy
 #~ msgid "Do you want to report this answer?"
-#~ msgstr "¿Vols reportar aquesta resposta?"
+#~ msgstr "Želite li prijaviti ovaj odgovor?"
 
 #~ msgid "Report"
-#~ msgstr "Reportar"
+#~ msgstr "Prijavi"
 
 #~ msgid "Undo"
-#~ msgstr "Desfer"
+#~ msgstr "Vrati"
 
 #~ msgid ""
 #~ "This answer will be marked as spam and hidden. Do you want to flag it?"
 #~ msgstr ""
-#~ "Aquesta resposta serà marcada com a correu brossa i amagada. ¿Vols posar-"
-#~ "li una senyal?"
+#~ "Ovaj odgovor biti će označen kao spam ili skriven. Želite li ga označiti?"
 
 #~ msgid "This answer was flagged as spam. Do you want to show it"
-#~ msgstr ""
-#~ "Aquesta resposta va ser marcada com a correu brossa. ¿Vols que torni a "
-#~ "ser visible?"
+#~ msgstr "Ovaj je odgovor označen kao spam. Želite ga pokazati?"
 
 #~ msgid "This answer was flagged as spam"
-#~ msgstr "Aquesta resposta va ser marcada com a correu brossa"
+#~ msgstr "Ovaj odgovor označen je kao spam"
 
 #~ msgid "hide"
-#~ msgstr "amagar"
+#~ msgstr "sakrij"
 
 #~ msgid "show"
-#~ msgstr "mostrar"
+#~ msgstr "pokaži"
 
 #~ msgid "Follow This Question"
-#~ msgstr "Seguir Aquesta Pregunta"
+#~ msgstr "Slijedi ovo pitanje"
 
 #~ msgid "Unfollow This Question"
-#~ msgstr "Deixar de Seguir Aquesta Pregunta"
+#~ msgstr "Prestani slijediti ovo pitanje"
 
-#, fuzzy
 #~ msgid "Pin this question to top"
-#~ msgstr "Fixar pregunta a la pàgina principal"
+#~ msgstr "Zalijepi ovo pitanje na vrh "
 
-#, fuzzy
 #~ msgid "Unpin this question from top"
-#~ msgstr "Treure pregunta de la pàgina principal"
+#~ msgstr "Odlijepi ovo pitanje s vrha"
 
 #~ msgid "Do you want to delete this question?"
-#~ msgstr "¿Vols esborrar aquesta pregunta?"
+#~ msgstr "Želite li izbrisati ovo pitanje?"
 
 #~ msgid "Publish"
-#~ msgstr "Publicar"
+#~ msgstr "Objavi"
 
 #~ msgid "Everyone can see"
-#~ msgstr "Tothom ho pot veure"
+#~ msgstr "Svatko može vidjeti"
 
 #~ msgid "Only Author and Administrator can see"
-#~ msgstr "Només l'Autor i l'Administrador ho pot veure"
+#~ msgstr "Samo autor i administrator mogu vidjeti"
 
 #~ msgid "Sorry, but nothing matched your filter. "
-#~ msgstr "Ho sento, res no coincideix amb el teu filtre."
+#~ msgstr "Žao nam je ali ništa ne odgovara odabranom filteru."
 
 #~ msgid "You can ask question"
-#~ msgstr "Pots fer la teva pregunta"
+#~ msgstr "Možete postaviti pitanje"
 
 #~ msgid "here"
-#~ msgstr "aquí"
+#~ msgstr "ovdje"
 
 #~ msgid "Please"
-#~ msgstr "Si us plau"
+#~ msgstr "Molimo"
 
 #~ msgid "Login"
-#~ msgstr "Ingressa"
+#~ msgstr "Prijavite se"
 
 #~ msgid " or"
-#~ msgstr "o"
+#~ msgstr "ili"
 
 #~ msgid " to submit question."
-#~ msgstr "per fer una pregunta"
+#~ msgstr "za dostavu pitanja."
 
-#, fuzzy
 #~ msgid "Search query is empty"
-#~ msgstr "Resultat de búsqueda és buit"
+#~ msgstr "Upit za pretragu je prazan"
 
 #~ msgid "A page where displays all questions"
-#~ msgstr "Una pàgina on es veuem totes les respostes"
+#~ msgstr "Stranica na kojoj se prikazuju sva pitanja"
 
 #~ msgid "A page where users can submit questions."
-#~ msgstr "Una pàgina on els usuaris poden enviar preguntes"
+#~ msgstr "Stranica gdje korisnici mogu objaviti pitanja."
 
 #~ msgid "Upload or choose a logo to be displayed at the top of the email"
-#~ msgstr "Pujar o escollir un logo per la capçalera del correu electrònic"
+#~ msgstr "Učitaj ili odaberi logo koji će se prikazivati na vrhu e-maila"
 
 #~ msgid "Enable notification for new question"
-#~ msgstr "Activar notificació per nova pregunta"
+#~ msgstr "Omogući obavijest za novo pitanje"
 
 #~ msgid "Enable notification for new answer"
-#~ msgstr "Activar notificació per nova resposta"
+#~ msgstr "Omogući obavijest o novom pitanju "
 
 #, fuzzy
 #~ msgid "Enable notification for new answer (to Followers )"
-#~ msgstr "Enviar notificació de nova resposta (a Seguidors)"
+#~ msgstr "Obavijest o novom odgovoru (sljedbenicima)"
 
 #~ msgid "Enable notification for new comment of question"
-#~ msgstr "Activar notificació per un nou comentari d'una pregunta"
+#~ msgstr "Omogući obavijest za novi komentar na pitanje"
 
 #~ msgid "Enable notification for new comment of answer"
-#~ msgstr "Activar notificació per un nou comentari d'una resposta"
+#~ msgstr "Omogući obavijest za novi komentar na odgovor"
 
 #~ msgid "Comment"
-#~ msgstr "Comentar"
+#~ msgstr "Komentiraj "
 
 #~ msgid "Enable/Disable captcha on submit question page"
-#~ msgstr ""
-#~ "Habilitar/Deshabilitar captcha en la pàgina d'enviament de preguntes"
+#~ msgstr "Omogući/onemogući captcha na stranici Objavi pitanje"
 
 #~ msgid "Enable/Disable captcha on single question page"
-#~ msgstr ""
-#~ "Habilitar/Deshabilitar captcha en la pàgina d'enviament d'unasola pregunta"
+#~ msgstr "Omogući/onemogući captcha na singl pitanje stranici"
 
 #~ msgid "questions"
-#~ msgstr "preguntes"
+#~ msgstr "pitanja"
 
 #~ msgid "Allow members to post private question"
-#~ msgstr "Permetre als usuaris enviar preguntes privades"
+#~ msgstr "Dozvoli korisnicima objavu privatnog pitanja"
+
+#~ msgid "Question must be manually approved"
+#~ msgstr "Pitanje treba biti ručno odobreno"
 
 #~ msgid "New Question Notification"
-#~ msgstr "Notificació de Nova Pregunta"
+#~ msgstr "Obavijest o novom pitanju "
 
 #~ msgid "New Answer Notification"
-#~ msgstr "Notificacion a nova Resposta"
+#~ msgstr "Obavijest Novi odgovor"
 
 #, fuzzy
 #~ msgid "New Comment to Question Notification (to Followers )"
-#~ msgstr "Notificacioó a Nou Comentari a Preguntes (a Seguidors)"
+#~ msgstr "Novi komentar na obavijest o pitanju (sljedbenicima)"
 
 #~ msgid "New Comment to Answer Notification"
-#~ msgstr "Notificació a Nou Comentari a Respostes"
+#~ msgstr "Novi komentar na obavijest o odgovoru"
 
 #, fuzzy
 #~ msgid "New Answer Notification (to Followers )"
-#~ msgstr "Notificació a Nova Resposta (a Seguidors)"
+#~ msgstr "Obavijest o novom odgovoru (sljedbenicima)"
 
 #, fuzzy
 #~ msgid "New Comment to Answer Notification (to Followers )"
-#~ msgstr "Notificació a Nou Comentari a Respoestes (a Seguidors)"
+#~ msgstr "Novi komentar na obavijest o odgovoru (sljedbenicima)"
 
 #~ msgid "Archive page show at most"
-#~ msgstr "la pàgina d'Arxiu mostra màxim"
+#~ msgstr "Stranica arhive većinom prikazuje"
 
 #~ msgid "Private Question"
-#~ msgstr "Pregunta Privada"
+#~ msgstr "Privatno pitanje"
 
-#, fuzzy
 #~ msgid "Review Question"
-#~ msgstr "Veure Pregunta"
+#~ msgstr "Prikaži pitanje"
 
 #~ msgid "Time settings"
-#~ msgstr "Valors horaris"
+#~ msgstr "Postavke vremena"
 
 #~ msgid "New Question Time Frame"
-#~ msgstr "Període de Nova Pregunta"
+#~ msgstr "Vremenski okvir za novo pitanje "
 
 #~ msgid "Question Overdue - Time Frame"
-#~ msgstr "Pregunta Endarrerida - Període"
+#~ msgstr "Isteklo pitanje - vremenski okvir"
 
 #~ msgid "Captcha settings"
-#~ msgstr "Configuració del Captcha"
+#~ msgstr "Captcha postavke"
 
-#, fuzzy
 #~ msgid "Captcha on Submit Question Page"
-#~ msgstr "Captcha a la Pàgina d'Enviament de Preguntes"
+#~ msgstr "Captcha na stranici Objavi pitanje"
 
-#, fuzzy
 #~ msgid "Captcha on Single Question Page"
-#~ msgstr "Captcha a la pàgina d'Enviament d'una Pregunta Única"
+#~ msgstr "Captcha na Single Question Page"
 
 #~ msgid "Single Question"
-#~ msgstr "Pregunta Única"
+#~ msgstr "Single pitanje"
 
 #~ msgid "Single Category"
-#~ msgstr "Categoria Única"
+#~ msgstr "Single kategorija"
 
 #~ msgid "Single Tag"
-#~ msgstr "Etiqueta Única"
+#~ msgstr "Single tag"
 
 #~ msgid "Notification"
-#~ msgstr "Notificació"
+#~ msgstr "Obavijest"
 
 #~ msgid "Permission"
-#~ msgstr "Permís"
+#~ msgstr "Dozvola"
 
 #~ msgid "Email setup"
-#~ msgstr "Configuració del correu electrònic"
+#~ msgstr "E-mail postavke"
 
 #~ msgid "New Comment to Question Notification"
-#~ msgstr "Notificació a Nou Comentari a Preguntes"
+#~ msgstr "Nov komentar na obavijest o pitanju"
 
 #~ msgid "Send to"
-#~ msgstr "Enviar a"
+#~ msgstr "Pošalji"
 
 #~ msgid "Send A Copy Of Every Email To Admin"
-#~ msgstr "Enviar una còpia de TOT correu a l'Administrador"
+#~ msgstr "Pošalji kopiju svakog e-maila administratoru"
 
 #~ msgid "You need an account to submit question and get answers. Create one:"
 #~ msgstr ""
-#~ "Necessites registrar-te per poder fer preguntes i respondre.  Registrar-"
-#~ "se:"
+#~ "Kako bi postavili pitanje i dobili odgovor, potreban vam je korisnički "
+#~ "račun. Kreirajte ga: "
 
 #~ msgid "Type your email"
-#~ msgstr "Escriu el teu correu electrònic"
+#~ msgstr "Unesite svoju e-mail adresu"
 
 #~ msgid "Already a member?"
-#~ msgstr "¿Ja ets membre?"
+#~ msgstr "Već ste registrirani korisnik?"
 
 #~ msgid "Log In"
-#~ msgstr "Ingressar"
+#~ msgstr "Prijava"
 
 #~ msgid "Login to submit your question"
-#~ msgstr "Ingressa per enviar la teva pregunta"
+#~ msgstr "Prijava za objavu pitanja"
 
 #~ msgid "Type your username"
-#~ msgstr "Escriu el teu nom d'usuari"
+#~ msgstr "Unesite korisničko ime"
 
 #~ msgid "Type your password"
-#~ msgstr "Escriu la teva paraula de pas"
+#~ msgstr "Unesite zaporku"
 
 #~ msgid "Not yet a member?"
-#~ msgstr "¿Encara no ets membre?"
+#~ msgstr "Još niste korisnik?"
 
 #~ msgid "Register"
-#~ msgstr "Registrar-se"
+#~ msgstr "Registrirajte "
 
 #~ msgid ""
 #~ "Enter your email to receive notification regarding your question. Your "
 #~ "email is safe with us and will not be published."
 #~ msgstr ""
-#~ "Introdueix el teu mail per rebre notificacions sobre la pregunta. El teu "
-#~ "email el guardarem i no el publicarem."
+#~ "Unesite svoju e-mail adresu kako biste primili obavijest vezanu na vaše "
+#~ "pitanje. Vaša e-mail adresa je tajna i neće biti objavljena."
 
-#, fuzzy
 #~ msgid "Your email *"
-#~ msgstr "Escriu el teu correu electrònic"
+#~ msgstr "Vaša e-mail adresa*"
 
 #~ msgid "Email address ..."
-#~ msgstr "Adreça de email *"
+#~ msgstr "Upišite valjanu adresu"
 
 #~ msgid "or <strong><a href=\"%s\">login</a></strong> to submit question"
 #~ msgstr ""
-#~ "o  <strong><a href=\"%s\">login</a></strong> per penjar una pregunta"
+#~ "ili <strong><a href=\"%s\">se prijavite</a></strong> za objavu pitanja"
 
 #~ msgid "Private: %s"
-#~ msgstr "Privat: %s"
+#~ msgstr "Privatno: %s"
 
 #~ msgctxt "noun"
 #~ msgid "Comment"
-#~ msgstr "Comentari"
+#~ msgstr "Komentar"
 
 #~ msgid ""
 #~ "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out "
 #~ "of this account\">Log out?</a>"
 #~ msgstr ""
-#~ "Registrat como <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log "
-#~ "out of this account\">¿Sortir?</a>"
+#~ "Prijavljen kao <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log "
+#~ "out of this account\">Odjava?</a>"
 
 #~ msgid "Your email address will not be published."
-#~ msgstr "La teva adreça de correu no serà publicada."
-
-#~ msgid "Write a comment ..."
-#~ msgstr "Escriu un comentari ..."
+#~ msgstr "Vaša e-mail adresa neće biti javna (vidljiva)."
 
 #~ msgid "Add New Question"
-#~ msgstr "Afegir Nova Pregunta"
+#~ msgstr "Unesite novo pitanje"
 
 #~ msgid "Edit Question"
-#~ msgstr "Editar Pregunta"
+#~ msgstr "Napišite pitanje"
 
 #~ msgid "New Question"
-#~ msgstr "Nova Pregunta"
+#~ msgstr "Novo pitanje"
 
 #~ msgid "All Questions"
-#~ msgstr "Totes les Preguntes"
+#~ msgstr "Sva pitanja"
 
 #~ msgid "View Question"
-#~ msgstr "Veure Pregunta"
+#~ msgstr "Vidi pitanje"
 
 #~ msgid "Search Question"
-#~ msgstr "Buscar Pregunta"
+#~ msgstr "Traži pitanje"
 
 #~ msgid "No questions found"
-#~ msgstr "No s'han trobat preguntes"
+#~ msgstr "Nijedno pitanje nije pronađeno"
 
 #~ msgid "No questions found in Trash"
-#~ msgstr "No s'han trobat preguntes a la Paperera"
+#~ msgstr "Nije pronađeno ni jedno pitanje u smeću"
 
-#~ msgid "DW Q&A"
-#~ msgstr "DW P&R"
+#~ msgid "em Q&A"
+#~ msgstr "em Q&A"
 
 #~ msgid "Add new answer"
-#~ msgstr "Afegir nova resposta"
+#~ msgstr "Dodaj novi odgovor"
 
 #~ msgid "Edit answer"
-#~ msgstr "Editar resposta"
+#~ msgstr "Napiši odgovor"
 
 #~ msgid "New Answer"
-#~ msgstr "Nova Resposta"
+#~ msgstr "Novi odgovor"
 
 #~ msgid "All Answers"
-#~ msgstr "Totes les Respostes"
+#~ msgstr "Svi odgovori"
 
 #~ msgid "View Answer"
-#~ msgstr "Veure Resposta"
+#~ msgstr "Vidi odgovor"
 
 #~ msgid "Search Answer"
-#~ msgstr "Buscar Resposta"
+#~ msgstr "Traži odgovor"
 
 #~ msgid "No Answers found"
-#~ msgstr "No s'han trobat Respostes"
+#~ msgstr "Nije pronađen ni jedan odgovor"
 
 #~ msgid "No Answers found in Trash"
-#~ msgstr "No s'han trobat Respostes a la Paperera"
+#~ msgstr "Nije pronađen ni jedan odgovor u smeću"
 
 #~ msgctxt "taxonomy general name"
 #~ msgid "Categories"
-#~ msgstr "Categories"
+#~ msgstr "Teme"
 
 #~ msgctxt "taxonomy singular name"
 #~ msgid "Category"
-#~ msgstr "Categoria"
+#~ msgstr "Tema"
 
 #~ msgid "Search Categories"
-#~ msgstr "Buscar Categories"
+#~ msgstr "Traži teme"
 
 #~ msgid "All Categories"
-#~ msgstr "Totes les Categories"
+#~ msgstr "Sve teme"
 
 #~ msgid "Parent Category"
-#~ msgstr "Categoria Principal"
+#~ msgstr "Matična kategorija"
 
 #~ msgid "Parent Category:"
-#~ msgstr "Categoria Principal:"
+#~ msgstr "Matična kategorija:"
 
 #~ msgid "Edit Category"
-#~ msgstr "Editar Categoria"
+#~ msgstr "Napiši temu"
 
 #~ msgid "Update Category"
-#~ msgstr "Actualitzar Categoria"
+#~ msgstr "Obnovi temu"
 
 #~ msgid "Add New Category"
-#~ msgstr "Afegir Nova Categoria"
+#~ msgstr "Dodaj novu temu"
 
 #~ msgid "New Category Name"
-#~ msgstr "Nou Nom de Categoria"
+#~ msgstr "Novo ime teme"
 
 #~ msgid "Question Categories"
-#~ msgstr "Categories de Preguntes"
+#~ msgstr "Teme za pitanja"
 
 #~ msgctxt "taxonomy general name"
 #~ msgid "Tags"
-#~ msgstr "Etiquetes"
+#~ msgstr "Tagovi"
 
 #~ msgctxt "taxonomy singular name"
 #~ msgid "Tag"
-#~ msgstr "Etiqueta"
+#~ msgstr "Tag"
 
 #~ msgid "Search Tags"
-#~ msgstr "Buscar Etiqueta"
+#~ msgstr "Traži tagove"
 
 #~ msgid "Popular Tags"
-#~ msgstr "Etiquetes Populars"
+#~ msgstr "Popularni tagovi"
 
 #~ msgid "All Tags"
-#~ msgstr "Totes les Etiquetes"
+#~ msgstr "Svi tagovi"
 
 #~ msgid "Edit Tag"
-#~ msgstr "Editar Etiqueta"
+#~ msgstr ""
+#~ "Upišite kratku ključnu riječ ili tag. Možete unijeti do 5 tagova: tag1, "
+#~ "tag2, tag3 ..."
 
 #~ msgid "Update Tag"
-#~ msgstr "Actualitzar Etiqueta"
+#~ msgstr "Obnovi tag"
 
 #~ msgid "Add New Tag"
-#~ msgstr "Afegir Nova Etiqueta"
+#~ msgstr "Dodaj novi tag"
 
 #~ msgid "New Tag Name"
-#~ msgstr "Nou Nom d'Etiqueta"
+#~ msgstr "Novo ime taga"
 
 #~ msgid "Separate tags with commas"
-#~ msgstr "Separar etiquetes per comes"
+#~ msgstr "Odvoji tagove zarezima"
 
 #~ msgid "Add or remove tags"
-#~ msgstr "Afegir o treure etiquetes"
+#~ msgstr "Dodaj ili ukloni tagove"
 
 #~ msgid "Choose from the most used tags"
-#~ msgstr "Escollir entre les etiquetes més utilitzades"
+#~ msgstr "Odaberi od najviše korištenih tagova"
 
 #~ msgid "%s second"
 #~ msgid_plural "%s seconds"
-#~ msgstr[0] "%s segon"
-#~ msgstr[1] "%s segons"
+#~ msgstr[0] "%s sekunda"
+#~ msgstr[1] "%s sekunde"
+#~ msgstr[2] "%s sekundi"
 
 #~ msgid "about %s min"
 #~ msgid_plural "%s mins"
-#~ msgstr[0] "prop de %s min"
-#~ msgstr[1] "%s mins"
+#~ msgstr[0] "oko %s min"
+#~ msgstr[1] "oko %s min"
+#~ msgstr[2] "oko %s min"
 
 #~ msgid "about %s hour"
 #~ msgid_plural "%s hours"
-#~ msgstr[0] "prop de %s hora"
-#~ msgstr[1] "%s hores"
+#~ msgstr[0] "oko %s sat"
+#~ msgstr[1] "oko %s sata"
+#~ msgstr[2] "oko %s sati"
 
 #~ msgid "%s day"
 #~ msgid_plural "%s days"
-#~ msgstr[0] "%s dia"
-#~ msgstr[1] "%s dies"
+#~ msgstr[0] "%s dan"
+#~ msgstr[1] "%s dana"
+#~ msgstr[2] "%s dana"
 
 #~ msgid "%1$s ago"
-#~ msgstr "fa %1$s"
+#~ msgstr "%1$s prije"
 
 #~ msgid "Flag"
-#~ msgstr "Marcar"
+#~ msgstr "Označi"
 
 #~ msgid "Unflag"
-#~ msgstr "Desmarcar"
+#~ msgstr "Odznači"
 
-#, fuzzy
 #~ msgid ""
 #~ "This answer will be hidden when flagged. Are you sure you want to flag it?"
-#~ msgstr "Aquesta resposta serà amagada al marcar-la ¿n'estàs segur?"
+#~ msgstr "Nakon označavanja odgovor će biti skriven. Jeste li sigurni?"
 
-#, fuzzy
 #~ msgid "This answer was flagged as spam. Do you want to show it?"
-#~ msgstr ""
-#~ "Aquesta resposta va ser marcada com a correu brossa. ¿Vols que torni a "
-#~ "ser visible?"
+#~ msgstr "Ovaj je odgovor označen kao spam. Želite ga pokazati?"
 
-#, fuzzy
 #~ msgid "Reset all changes to default"
-#~ msgstr "Reinicialitzar tots els valors per defecte"
+#~ msgstr "Resetiraj sve promjene na zadano"
+
+#~ msgid "%s answered <span class=\"emqa-date\">%s</span>"
+#~ msgstr "%s odgovoreno <span class=\"EMQA-datum\">%s</span>"
+
+#~ msgid "%s asked <span class=\"emqa-date\">%s</span>"
+#~ msgstr "%s pitano <span class=\"EMQA-datum\">%s</span>"
 
 #~ msgid "Save draft"
-#~ msgstr "Desar esborrany"
+#~ msgstr "Spremi skicu"
 
 #, fuzzy
 #~ msgid "Answer is missing"
-#~ msgstr "Respondre aquesta Pregunta"
+#~ msgstr "Odgovori na pitanje"
 
 #, fuzzy
 #~ msgid "You do not have permission to edit this post"
-#~ msgstr "No tens permís per esborrar aquesta pregunta"
+#~ msgstr "Nemate dozvolu brisati ovo pitanje"
 
 #, fuzzy
 #~ msgid "This post is not an answer"
-#~ msgstr "Aquesta és la millor resposta"
+#~ msgstr "Ovo je najbolji odgovor"
 
 #~ msgid "Missing answer ID"
-#~ msgstr "Falta ID de resposta"
+#~ msgstr "Nedostaje ID odgovora"
+
+#, fuzzy
+#~ msgid "The question is missing"
+#~ msgstr "Ovo pitanje sada je zatvoreno"
+
+#~ msgid "EMQA 404 Page"
+#~ msgstr "EMQA 404 Stranica"
 
 #, fuzzy
 #~ msgid "Single Question Template"
-#~ msgstr "Pregunta Única"
+#~ msgstr "Single pitanje"
 
 #~ msgid "Google Captcha Public Key"
-#~ msgstr "Google Captcha Clau Pública"
+#~ msgstr "Google Captcha Public Key"
 
 #~ msgid "Google Captcha Private Key"
-#~ msgstr "Google Captcha Clau Privada"
+#~ msgstr "Google Captcha Private Key"
 
 #~ msgid "New Comment to Question"
-#~ msgstr "Nou comentari a la Pregunta"
+#~ msgstr "Novi komentar na pitanje "
 
 #~ msgid "New Comment to Answer"
-#~ msgstr "Nou comentari a la Resposta"
+#~ msgstr "Nov komentar na odgovor"
 
 #, fuzzy
 #~ msgid "New Answer (to Followers )"
-#~ msgstr "Nova Resposta (a Seguidors)"
+#~ msgstr "Novi odgovor (sljedbenicima)"
 
 #, fuzzy
 #~ msgid "New Comment to Question (to Followers )"
-#~ msgstr "Nou Comentari a Pregunta (a Seguidors)"
+#~ msgstr "Nov komentar na pitanje (sljedbenicima)"
 
 #, fuzzy
 #~ msgid "New Comment to Answer (to Followers )"
-#~ msgstr "Nou Comentari a Resposta (a Seguidors)"
+#~ msgstr "Nov komentar na odgovor (sljedbenicima)"
 
-#, fuzzy
 #~ msgid "% person who is following this question"
 #~ msgid_plural "% people who are following this question"
-#~ msgstr[0] "persones segueixen aquesta pregunta."
-#~ msgstr[1] "persones segueixen aquesta pregunta."
+#~ msgstr[0] "% korisnik prati ovo pitanje"
+#~ msgstr[1] "% korisnika prati ovo pitanje"
+#~ msgstr[2] "% korisnika prati ovo pitanje"
 
 #~ msgid "Answer this Question"
-#~ msgstr "Respondre aquesta Pregunta"
+#~ msgstr "Odgovori na pitanje"
 
 #~ msgid "Add answer"
-#~ msgstr "Afegir resposta"
+#~ msgstr "Unesi odgovor"
 
 #~ msgid "All questions from"
-#~ msgstr "Totes les preguntes de"
+#~ msgstr "Sva pitanja od"
 
-#, fuzzy
 #~ msgid "Unpin this Question from the top"
-#~ msgstr "Treure pregunta de la pàgina principal"
+#~ msgstr "Odlijepi ovo pitanje s vrha"
 
-#, fuzzy
 #~ msgid "Pin this Question to top"
-#~ msgstr "Fixar pregunta a la pàgina principal"
+#~ msgstr "Zalijepi ovo pitanje na vrh  "
 
 #~ msgid "answer"
 #~ msgid_plural "answers"
-#~ msgstr[0] "resposta"
-#~ msgstr[1] "respostes"
+#~ msgstr[0] "odgovor"
+#~ msgstr[1] "odgovora"
+#~ msgstr[2] "odgovora"
 
 #~ msgid "You do not have permission to view answers"
-#~ msgstr "No tens permís per veure les respostes"
+#~ msgstr "Nemate dozvolu vidjeti pitanja"
 
-#, fuzzy
 #~ msgid "This question is now closed"
-#~ msgstr "Pregunta tancada"
+#~ msgstr "Ovo pitanje sada je zatvoreno"
 
 #~ msgid "You do not have permission to submit answer."
-#~ msgstr "No tens permís per enviar una resposta."
+#~ msgstr "Nemate dozvolu za objavu pitanja. "
 
 #~ msgid "Please login or"
-#~ msgstr "Si ja ets usuari ingressa o sino fes clic a"
+#~ msgstr "Molimo prijavite se ili "
 
 #~ msgid "to Submit Answer"
-#~ msgstr "per Enviar Resposta"
+#~ msgstr "za objaviti pitanje"
 
 #~ msgid "Sorry, but nothing matched your filter."
-#~ msgstr "Ho sento, no trobo res amb aquest criteri."
+#~ msgstr "Žao nam je ali ništa ne odgovara odabranom filteru."
 
 #~ msgid "View previous comments"
-#~ msgstr "Veure comentaris previs"
+#~ msgstr "Vidi prijašnje komentare"
 
 #~ msgid "of"
-#~ msgstr "de"
+#~ msgstr "of"
 
 #~ msgid "Write a reply..."
-#~ msgstr "Escriure resposta..."
+#~ msgstr "Napiši odgovor..."
 
 #~ msgid "Link to answer"
-#~ msgstr "Enllaç a resposta"
+#~ msgstr "Link za odgovor"
 
 #~ msgid "Draft"
-#~ msgstr "Esborrany"
+#~ msgstr "Skica"
 
 #~ msgid "This answer was flagged as spam."
-#~ msgstr "Aquesta respota ha estat marcada com a spam"
+#~ msgstr "Ovaj odgovor označen je kao spam"
 
 #~ msgid "This is the best answer"
-#~ msgstr "Aquesta és la millor resposta"
+#~ msgstr "Ovo je najbolji odgovor"
 
 #~ msgid "The answer link"
-#~ msgstr "L'enllaç a la resposta"
+#~ msgstr "Link za odgovor"
 
 #~ msgid "Post by"
-#~ msgstr "Publicat per"
+#~ msgstr "Objavio"
 
 #~ msgid "Link to comment"
-#~ msgstr "Enllaç al comentari"
+#~ msgstr "Link za komentar"
 
 #~ msgid "Permalink to %s"
-#~ msgstr "Permalink a %s"
+#~ msgstr "Trajni link na %s"
 
 #~ msgid "view"
 #~ msgid_plural "views"
-#~ msgstr[0] "cop vist"
-#~ msgstr[1] "cops vist"
+#~ msgstr[0] "pregled"
+#~ msgstr[1] "pregleda"
+#~ msgstr[2] "pregleda"
 
 #~ msgid "vote"
 #~ msgid_plural "votes"
-#~ msgstr[0] "vot"
-#~ msgstr[1] "vots"
+#~ msgstr[0] "glas"
+#~ msgstr[1] "glasa"
+#~ msgstr[2] "glasova"
 
 #~ msgid "Status:"
-#~ msgstr "Estat:"
+#~ msgstr "Status:"
 
 #~ msgid "Need Answer"
-#~ msgstr "Necessita Resposta"
+#~ msgstr "Čeka odgovor"
 
 #~ msgid "Overdue"
-#~ msgstr "Endarrerida"
+#~ msgstr "Isteklo"
 
 #~ msgid "Queue"
-#~ msgstr "Cúa"
+#~ msgstr "Na čekanju"
 
 #~ msgid "Select a category"
-#~ msgstr "Selecciona una categoria"
+#~ msgstr "Odaberite temu"
 
 #~ msgid "Empty"
-#~ msgstr "Buidar"
+#~ msgstr "Isprazni"
 
 #~ msgid "Vote"
-#~ msgstr "Votar"
+#~ msgstr "Glasaj"
 
 #~ msgid "tag 1, tag 2,..."
-#~ msgstr "etiqueta 1, etiqueta 2,..."
+#~ msgstr "Upišite ključne riječi ili tagove, najviše 5."
 
 #~ msgid "Your question"
-#~ msgstr "La teva pregunta"
+#~ msgstr "Vaše pitanje"
 
 #~ msgid "How to..."
-#~ msgstr "Com..."
+#~ msgstr "Pitanje ukratko kao naslov"
 
 #~ msgid "Question details"
-#~ msgstr "Detalls de la pregunta"
+#~ msgstr ""
+#~ "Upišite i objasnite svoje pitanje u detalje kako bi dobili što "
+#~ "kvalitetniji odgovor!"
 
 #~ msgid "Post this Question as Private."
-#~ msgstr "Publicar aquesta pregunta com a Privada."
+#~ msgstr "Objavi ovo pitanje kao privatno."
 
 #~ msgid "Only you as Author and Admin can see the question"
-#~ msgstr "Només tu com a Autor i l'Administrador poden veure la pregunta"
+#~ msgstr "Samo vi kao autor i administrator možete vidjeti pitanje"
 
 #~ msgid "Search"
-#~ msgstr "Buscar"
+#~ msgstr "Traži"
+
+#~ msgid "Your question has been submitted and is currently awaiting approval"
+#~ msgstr "Vaše pitanje je poslano i trenutno čeka odobrenje "
+
+#~ msgid "This question is currently awaiting approval"
+#~ msgstr "Pitanje čeka odobrenje."
 
 #~ msgid "Posts by"
-#~ msgstr "Publicacions de"
+#~ msgstr "Objave od"
 
 #~ msgid "Show a list of questions that was ordered by views."
-#~ msgstr "Mostrar llista de preguntes que s'han ordenat per vistes."
+#~ msgstr "Vidi popis pitanja prema pregledima."
 
-#, fuzzy
 #~ msgid "Show a list of questions that ordered by views."
-#~ msgstr "Mostrar llista de preguntes que s'han ordenat per vistes."
+#~ msgstr "Pokaži popis pitanja po pregledima."
 
 #~ msgctxt "post type general name"
 #~ msgid "Question"
-#~ msgstr "Pregunta"
+#~ msgstr "Pitanja"
 
 #~ msgctxt "post type singular name"
 #~ msgid "Question"
-#~ msgstr "Pregunta"
+#~ msgstr "Pitanje"
 
 #~ msgctxt "post type general name"
 #~ msgid "Answer"
-#~ msgstr "Resposta"
+#~ msgstr "Odgovori"
 
 #~ msgctxt "post type singular name"
 #~ msgid "Answer"
-#~ msgstr "Resposta"
+#~ msgstr "Odgovor"
 
-#~ msgid "Stick This Question on Frontpage"
-#~ msgstr "Fixar aquesta pregunta a la pàgina principal"
-
-#~ msgid "Untick This Question on Frontpage"
-#~ msgstr "Desenganxar aquesta pregunta de la pàgina principal"
-
-#~ msgid "Choose your username"
-#~ msgstr "Escull el teu nom d'usuari"
-
-#~ msgid "Website"
-#~ msgstr "Lloc Web"
-
-#~ msgid "by"
-#~ msgstr "per"
-
-#~ msgid "DW Q&A Box"
-#~ msgstr "DW Q&A Box"
+#~ msgid "em Q&A Box"
+#~ msgstr "em Q&A Box"
 
 #~ msgid "Container Padding"
-#~ msgstr "Contenidor Farciment"
+#~ msgstr "Container Padding"
 
 #~ msgid "Container padding size"
-#~ msgstr "Mida del contenidor de farciment (padding)"
+#~ msgstr "Container padding size"
 
 #~ msgid ""
+#~ "By default, the container does not have a gutter. You can set padding "
+#~ "width to make a gutter. You make it by updating the setting here."
+#~ msgstr ""
 #~ "By default,The container is not have gutter. You can set padding width to "
 #~ "make a gutter. You make it by update setting here."
-#~ msgstr ""
-#~ "Per defecte, el contenidor no té cuneta (gutter). Podeu establir l'ample "
-#~ "del farciment (padding) per fer una cuneta. Ho pots fer actualitzant "
-#~ "l'ajust aquí."
 
 #~ msgid "You can ask question <a href=\""
-#~ msgstr "Pots fer preguntes <a href=\""
+#~ msgstr "Možete postaviti pitanje <a href=\""
 
 #~ msgid "Please <a href=\""
-#~ msgstr "Si us plau <a href=\""
+#~ msgstr "Molimo <a href=\""

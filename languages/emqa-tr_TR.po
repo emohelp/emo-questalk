@@ -1,52 +1,47 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DW Question Answer v1.3.1\n"
+"Project-Id-Version: EMO Questalk \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-17 16:32+0700\n"
 "PO-Revision-Date: 2016-08-17 16:32+0700\n"
-"Last-Translator: arika-varut <varut@arika.academy>\n"
-"Language-Team: \n"
-"Language: th_TH\n"
+"Last-Translator: Emohelp <dm@emohelp.com>\n"
+"Language-Team: Emohelp <dm@emohelp.com>\n"
+"Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 1.8.7\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
-"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
-"X-Poedit-Basepath: ..\n"
-"X-Textdomain-Support: yes\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: ..\n"
 
-# @ dwqa
-#: dw-question-answer.php:147
-msgid "DWQA Questions"
-msgstr ""
+#: em-question-answer.php:147
+msgid "EMQA Questions"
+msgstr "Tüm Sorular"
 
-# @ dwqa
-#: dw-question-answer.php:164
-msgid "DWQA Ask Question"
-msgstr ""
+#: em-question-answer.php:164
+msgid "EMQA Ask Question"
+msgstr "Soru Sor"
 
 #: inc/Admin/Extensions.php:13
-msgid "DWQA Markdown"
+msgid "EMQA Markdown"
 msgstr ""
 
 #: inc/Admin/Extensions.php:19
-msgid "DWQA Leaderboard"
+msgid "EMQA Leaderboard"
 msgstr ""
 
 #: inc/Admin/Extensions.php:25
-msgid "DWQA Captcha"
+msgid "EMQA Captcha"
 msgstr ""
 
 #: inc/Admin/Extensions.php:31
-msgid "DWQA Embed Question"
+msgid "EMQA Embed Question"
 msgstr ""
 
 #: inc/Admin/Extensions.php:37
-msgid "DWQA Widgets"
+msgid "EMQA Widgets"
 msgstr ""
 
 #: inc/Admin/Extensions.php:47
@@ -58,27 +53,27 @@ msgid "Get It Now!"
 msgstr ""
 
 #: inc/Admin/Welcome.php:27 inc/Admin/Welcome.php:28
-msgid "Welcome to DW Question & Answer"
+msgid "Welcome to EMO Questalk"
 msgstr ""
 
 #: inc/Admin/Welcome.php:35 inc/Admin/Welcome.php:36
-msgid "DW Question & Answer Changelog"
+msgid "EMO Questalk Changelog"
 msgstr ""
 
 #: inc/Admin/Welcome.php:43 inc/Admin/Welcome.php:44
-msgid "DW Question & Answer Credits"
+msgid "EMO Questalk Credits"
 msgstr ""
 
 #: inc/Admin/Welcome.php:60
 #, php-format
-msgid "Welcome to DW Question & Answer %s"
+msgid "Welcome to EMO Questalk %s"
 msgstr ""
 
 #: inc/Admin/Welcome.php:61
 msgid ""
 "Thank you for installing our WordPress plugin. If you have any question "
 "about this plugin, please submit to our <a target=\"_blank\" href=\"https://"
-"www.designwall.com/question/\">Q&A section</a>."
+"www.Emohelp.com/question/\">Q&A section</a>."
 msgstr ""
 
 #: inc/Admin/Welcome.php:69
@@ -101,22 +96,20 @@ msgstr ""
 msgid "No valid changelog was found."
 msgstr ""
 
-# @ dwqa
-# @ default
 #: inc/Ajax.php:29 inc/Ajax.php:47 inc/Ajax.php:83 inc/Ajax.php:113
 #: inc/Ajax.php:132 inc/Ajax.php:150 inc/Ajax.php:215 inc/Handle.php:256
 #: inc/Handle.php:455 inc/Permission.php:286 inc/Status.php:319
 msgid "Are you cheating huh?"
-msgstr ""
+msgstr "Hile mi yapıyorsun, hı ?"
 
 #: inc/Ajax.php:33 inc/Handle.php:260
 msgid "You do not have permission to edit comment."
 msgstr ""
 
-# @ dwqa
 #: inc/Ajax.php:37
+#, fuzzy
 msgid "Comment ID must be showed."
-msgstr ""
+msgstr "Yorum ID gösterilmeli."
 
 #: inc/Ajax.php:51 inc/Handle.php:154
 msgid "Answer is missing."
@@ -130,10 +123,9 @@ msgstr ""
 msgid "You do not have permission to delete this post."
 msgstr ""
 
-# @ dwqa
 #: inc/Ajax.php:86
 msgid "Missing id of answer"
-msgstr ""
+msgstr "Cevap ID bulunamadı"
 
 #: inc/Ajax.php:154 inc/Handle.php:477
 msgid "Question is missing."
@@ -143,51 +135,45 @@ msgstr ""
 msgid "This post is not question."
 msgstr ""
 
-# @ dwqa
 #: inc/Ajax.php:206
+#, fuzzy
 msgid "You do not have permission to edit question status"
-msgstr ""
+msgstr "Bu soruyu görmek için izniniz yok."
 
 #: inc/Ajax.php:223 inc/Ajax.php:273
 msgid "Not Found!!!"
 msgstr ""
 
-# @ dwqa
 #: inc/Answer_List_Table.php:81 inc/Posts/Answer.php:271 inc/Template.php:48
 msgid "Author"
-msgstr ""
+msgstr "Yazar"
 
-# @ dwqa
 #: inc/Answer_List_Table.php:82
 msgid "Detail"
-msgstr ""
+msgstr "Detaylar"
 
-# @ dwqa
 #: inc/Answer_List_Table.php:92 inc/Notifications.php:116
 #: inc/Notifications.php:214 inc/Notifications.php:233 inc/Posts/Base.php:230
 #: inc/Posts/Comment.php:102 inc/Settings.php:419 inc/Settings.php:455
 #: inc/Settings.php:490 inc/User.php:155
 msgid "Anonymous"
-msgstr ""
+msgstr "Anonymous"
 
-# @ dwqa
 #: inc/Answer_List_Table.php:101
 msgid "Answered on "
-msgstr ""
+msgstr "Cevaplandı"
 
-# @ dwqa
 #: inc/Answer_List_Table.php:112 inc/Helptab.php:153
 msgid "Read more"
-msgstr ""
+msgstr "Devamını Oku"
 
 #: inc/Handle.php:29
 msgid "&quot;Helllo&quot;, Are you cheating huh?."
 msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:32
 msgid "Delete draft"
-msgstr ""
+msgstr "Taslağı Sil"
 
 #: inc/Handle.php:39
 msgid "Answer content is empty"
@@ -197,304 +183,263 @@ msgstr ""
 msgid "Question is empty"
 msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:46 inc/Handle.php:432
 msgid "You do not have permission to submit question."
-msgstr ""
+msgstr "Souyu göndermek için yeterli izniniz yok."
 
-# @ dwqa
 #: inc/Handle.php:50 inc/Handle.php:218 inc/Handle.php:300
+#, fuzzy
 msgid "Missing email information"
-msgstr ""
+msgstr "Email bilgileri eksik"
 
-# @ dwqa
 #: inc/Handle.php:54 inc/Handle.php:222 inc/Handle.php:305
+#, fuzzy
 msgid "Missing name information"
-msgstr ""
+msgstr "İsim bilgisi eksik"
 
-# @ dwqa
 #: inc/Handle.php:58 inc/Handle.php:451
 msgid "Captcha is not correct"
-msgstr ""
+msgstr "Captcha kodu yanlış girdiniz."
 
-# @ dwqa
 #: inc/Handle.php:77
 msgid "Answer for "
-msgstr ""
+msgstr "Cevapla"
 
 #: inc/Handle.php:139
 msgid "You do not have permission to edit answer."
 msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:143 inc/Handle.php:520 inc/Posts/Question.php:473
+#, fuzzy
 msgid "Hello, Are you cheating huh?"
-msgstr ""
+msgstr "\"Merhaba\", Hile mi yapıyorsun, hı ?"
 
 #: inc/Handle.php:148
 msgid "You must enter a valid answer content."
 msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:194
 msgid "You can't post comment"
-msgstr ""
+msgstr "Yorum yapamazsınız."
 
 #: inc/Handle.php:197
 msgid "Missing post id."
 msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:203
 msgid "Please enter your comment content"
-msgstr ""
+msgstr "Lütfen yorum içeriğini giriniz"
 
-# @ dwqa
 #: inc/Handle.php:249
 msgid "Comment is missing"
 msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:264
 msgid "Comment content must not be empty."
-msgstr ""
+msgstr "Yorum içeriği boş bırakılamaz."
 
 #: inc/Handle.php:294 inc/Handle.php:471
 msgid "You must enter a valid question title."
 msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:384
 msgid "User Registration was disabled."
-msgstr ""
+msgstr "Kullanıcı Kayıtları devredışı bırakılmış."
 
-# @ dwqa
 #: inc/Handle.php:387
 msgid "This email is already registered, please choose another one."
-msgstr ""
+msgstr "Bu mail ile kayıt olunmuş. Lütfen farklı bir mail giriniz."
 
-# @ dwqa
 #: inc/Handle.php:390
+#, fuzzy
 msgid "This username is already registered. Please use another one."
-msgstr ""
+msgstr "Bu kullanıcı adı ile kayıt olunmuş. Lütfen farklı bir ad belirleyin."
 
 #: inc/Handle.php:444
 msgid "Your question is waiting moderator."
 msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:466 inc/Status.php:347
+#, fuzzy
 msgid "You do not have permission to edit question"
-msgstr ""
+msgstr "Souyu göndermek için yeterli izniniz yok."
 
-# @ dwqa
 #: inc/Helptab.php:47
 msgid "Overview"
-msgstr ""
+msgstr "Değerlendirme"
 
-# @ dwqa
 #: inc/Helptab.php:48
-msgid "DW Question Answer Plugin"
-msgstr ""
+#, fuzzy
+msgid "EMO Questalk  Plugin"
+msgstr "Tüm Sorular"
 
-# @ dwqa
 #: inc/Helptab.php:49
 msgid ""
-"DW Question Answer is a WordPress Plugin which helps you build a Question & "
+"EMO Questalk  is a WordPress Plugin which helps you build a Question & "
 "Answer system on your WordPress sites. The plugin is easy to install and set "
 "up. Let start building up your community with this WordPress question & "
 "answer system."
 msgstr ""
 
-# @ dwqa
 #: inc/Helptab.php:52
+#, fuzzy
 msgid "Setup Question List Page"
-msgstr ""
+msgstr "Soru Listesi Sayfası"
 
-# @ dwqa
 #: inc/Helptab.php:56
+#, fuzzy
 msgid "Setup Ask Question Page"
-msgstr ""
+msgstr "Soru Sor Sayfası"
 
-# @ dwqa
 #: inc/Helptab.php:60
 msgid "Shortcode"
 msgstr ""
 
-# @ dwqa
 #: inc/Helptab.php:64
 msgid "Style integration"
 msgstr ""
 
-# @ default
 #: inc/Helptab.php:173
 msgid "For more information:"
-msgstr ""
+msgstr "Daha fazla bilgi için:"
 
-# @ default
 #: inc/Helptab.php:174
-msgid "DW Question Answer Guide"
-msgstr ""
+#, fuzzy
+msgid "EMO Questalk  Guide"
+msgstr "Tüm Sorular"
 
-# @ default
 #: inc/Helptab.php:175
+#, fuzzy
 msgid "Community"
-msgstr ""
+msgstr "Yorum"
 
-# @ default
 #: inc/Helptab.php:176
-msgid "DesignWall Wordpress Themes"
+msgid "Emohelp Wordpress Themes"
 msgstr ""
 
-# @ default
 #: inc/Helptab.php:177
-msgid "DesignWall Wordpress Plugins"
+msgid "Emohelp Wordpress Plugins"
 msgstr ""
 
-# @ dwqa
 #: inc/Metaboxes.php:13 templates/content-single-question.php:31
 #: templates/question-submit-form.php:22
 msgid "Status"
-msgstr "สถานะ"
+msgstr "Durum"
 
-# @ dwqa
 #: inc/Metaboxes.php:15 inc/Status.php:304
 #: templates/archive-question-filter.php:18
 #: templates/content-single-question.php:32
 msgid "Open"
-msgstr "เปิด"
+msgstr "Açık"
 
-# @ dwqa
 #: inc/Metaboxes.php:16 inc/Status.php:287
 msgid "Pending"
-msgstr "รอพิจารณา"
+msgstr "Beklemede"
 
-# @ dwqa
 #: inc/Metaboxes.php:17 inc/Status.php:284
 #: templates/archive-question-filter.php:19
 #: templates/content-single-question.php:34
 msgid "Resolved"
-msgstr "คำตอบสมบูรณ์"
+msgstr "Çözülmüş"
 
-# @ dwqa
 #: inc/Metaboxes.php:18 inc/Status.php:290
 msgid "Re-Open"
-msgstr "เปิดใหม่"
+msgstr "Yeniden Gündemde"
 
-# @ dwqa
 #: inc/Metaboxes.php:19 inc/Status.php:293
 #: templates/archive-question-filter.php:20
 #: templates/content-single-question.php:33
 msgid "Closed"
-msgstr "ปิด"
+msgstr "Kapalı"
 
-# @ dwqa
 #: inc/Metaboxes.php:25
 msgid "Sticky"
-msgstr ""
+msgstr "Sabit"
 
-# @ dwqa
 #: inc/Metaboxes.php:29
+#, fuzzy
 msgid "Pin question to top of archive page."
-msgstr ""
+msgstr "Soruyu arşiv sayfasının en üstüne sabitle"
 
-# @ dwqa
 #: inc/Metaboxes.php:45 inc/Posts/Answer.php:225 inc/Posts/Answer.php:227
 #: inc/Settings.php:431 templates/archive-question-filter.php:34
 msgid "Answers"
-msgstr ""
+msgstr "Cevaplar"
 
-# @ dwqa
 #: inc/Metaboxes.php:65
 msgid "Question Meta Data"
-msgstr ""
+msgstr "Soru Meta Bilgisi"
 
-# @ dwqa
 #: inc/Notifications.php:29
 msgid "A new question was posted on {site_name}"
-msgstr ""
+msgstr "Yeni bir soru soruldu {site_name}"
 
-# @ dwqa
 #: inc/Notifications.php:132
+#, fuzzy
 msgid "You have a new answer for your followed question"
-msgstr ""
+msgstr "Takip ettiğiniz soruya bir cevap geldi."
 
-# @ dwqa
 #: inc/Notifications.php:250
 msgid "A new answer for \"{question_title}\" was posted on {site_name}"
-msgstr ""
+msgstr "Şu \"{question_title}\" soruya yeni cevap geldi."
 
-# @ dwqa
 #: inc/Notifications.php:334 inc/Notifications.php:380
+#, fuzzy
 msgid "[{site_name}] You have a new comment for question {question_title}"
-msgstr ""
+msgstr "[{site_name}] - {question_title}  sorunuza Yeni bir yorum aldınız"
 
-# @ dwqa
 #: inc/Notifications.php:339 inc/Notifications.php:385
 msgid "[{site_name}] You have a new comment for answer"
-msgstr ""
+msgstr "[{site_name}]  Cevabınıza yeni bir yorum aldınız"
 
-# @ dwqa
 #: inc/PointerHelper.php:60
-msgid "How to use DW Question Answer"
-msgstr ""
+#, fuzzy
+msgid "How to use EMO Questalk "
+msgstr "En iyi cevabı seç."
 
-# @ dwqa
 #: inc/PointerHelper.php:61
-msgid "Documents, Support From DesignWall (help)"
+msgid "Documents, Support From Emohelp (help)"
 msgstr ""
 
-# @ dwqa
 #: inc/PointerHelper.php:70
 msgid "Config your support channel"
 msgstr ""
 
-# @ dwqa
 #: inc/PointerHelper.php:71
+#, fuzzy
 msgid "Change comment settings, and create the Submit question page."
-msgstr ""
+msgstr "Yorum ayarlarını değiştir ve soru gönderme sayfası oluştur"
 
-# @ default
-# @ dwqa
 #: inc/Posts/Answer.php:226 inc/Posts/Answer.php:270
 msgid "Answer"
-msgstr "คำตอบ"
+msgstr "Cevap"
 
-# @ dwqa
 #: inc/Posts/Answer.php:273
 msgid "In Response To"
 msgstr ""
 
-# @ dwqa
-# @ edd-dw-membersip
 #: inc/Posts/Answer.php:317 inc/Posts/Base.php:320 inc/Settings.php:402
 #: inc/Template.php:58 inc/Template.php:163 inc/Template.php:180
 #: templates/content-comment.php:19
 msgid "Edit"
-msgstr "แก้ไข"
+msgstr "Düzenle"
 
-# @ edd-dw-membersip
-# @ dwqa
 #: inc/Posts/Answer.php:318 inc/Settings.php:403 inc/Template.php:168
 #: inc/Template.php:185 templates/content-comment.php:22
 msgid "Delete"
-msgstr "ลบ"
+msgstr "Sil"
 
-# @ edd-dw-membersip
-# @ dwqa
 #: inc/Posts/Answer.php:319 inc/Posts/Base.php:322
 msgid "View"
-msgstr "อ่าน"
+msgstr "Gösterim"
 
-# @ dwqa
 #: inc/Posts/Answer.php:323
 msgid "Submitted"
-msgstr ""
+msgstr "Kaydedildi."
 
-# @ dwqa
 #: inc/Posts/Answer.php:324
 msgid "on"
-msgstr ""
+msgstr "tarih"
 
 #: inc/Posts/Answer.php:359
 msgid "Question ID"
@@ -504,21 +449,18 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
-# @ dwqa
 #: inc/Posts/Base.php:5
 msgid "Are you cheating, huh?"
-msgstr ""
+msgstr "Hile mi yapıyorsun, hı ?"
 
 #: inc/Posts/Base.php:18
 msgid "What "
 msgstr ""
 
-# @ dwqa
 #: inc/Posts/Base.php:46
 msgid "You voted for this "
-msgstr ""
+msgstr "Buna oy verdiniz"
 
-# @ default
 #: inc/Posts/Base.php:242
 #, php-format
 msgid "Posts by %s"
@@ -526,37 +468,35 @@ msgstr ""
 
 #: inc/Posts/Base.php:251 inc/Posts/Base.php:255
 #, php-format
-msgid "%s answered <span class=\"dwqa-date\">%s</span> ago"
+msgid "%s answered <span class=\"emqa-date\">%s</span> ago"
 msgstr ""
 
 #: inc/Posts/Base.php:257
 #, php-format
-msgid "%s asked <span class=\"dwqa-date\">%s</span> ago"
+msgid "%s asked <span class=\"emqa-date\">%s</span> ago"
 msgstr ""
 
 #: inc/Posts/Base.php:306
-msgid "DWQA Posts"
+msgid "EMQA Posts"
 msgstr ""
 
 #: inc/Posts/Base.php:307
-msgid "DWQA Post"
+msgid "EMQA Post"
 msgstr ""
 
 #: inc/Posts/Base.php:318
-msgctxt "dwqa"
+msgctxt "EMQA"
 msgid "Add New"
 msgstr ""
 
-# @ theme
-# @ dwqa
 #: inc/Posts/Base.php:319
+#, fuzzy
 msgid "Add New"
-msgstr ""
+msgstr "Yeni Ekle"
 
-# @ dwqa
 #: inc/Posts/Base.php:321 inc/Status.php:296
 msgid "New"
-msgstr ""
+msgstr "Yeni"
 
 #: inc/Posts/Base.php:323
 msgid "Search "
@@ -574,12 +514,11 @@ msgstr ""
 msgid "Parent:"
 msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:56 inc/Shortcode.php:138
 #: inc/widgets/Closed_Question.php:49 inc/widgets/Latest_Question.php:42
 #: inc/widgets/Popular_Question.php:43
 msgid "asked by"
-msgstr ""
+msgstr "soran kişi"
 
 #: inc/Posts/Question.php:100 inc/Posts/Question.php:102
 #: inc/Posts/Question.php:266 inc/Settings.php:395
@@ -587,10 +526,9 @@ msgstr ""
 msgid "Questions"
 msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:101
 msgid "Question"
-msgstr "คำถาม"
+msgstr "Soru"
 
 #: inc/Posts/Question.php:196
 msgctxt "taxonomy general name"
@@ -634,10 +572,9 @@ msgstr ""
 msgid "New Question Category Name"
 msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:206
 msgid "Question Category"
-msgstr "หมวดหมู่คำถาม"
+msgstr "Soru Kategorisi"
 
 #: inc/Posts/Question.php:225
 msgctxt "taxonomy general name"
@@ -693,117 +630,101 @@ msgstr ""
 msgid "No question tags found."
 msgstr ""
 
-# @ default
-# @ dwqa
 #: inc/Posts/Question.php:240
 msgid "Question Tags"
-msgstr "Tag คำถาม"
+msgstr "Soru Etiketleri"
 
-# @ dwqa
 #: inc/Posts/Question.php:276
 msgid "Info"
-msgstr ""
+msgstr "Bilgi"
 
-# @ dwqa
 #: inc/Posts/Question.php:287 templates/content-question.php:22
 msgid "answered"
-msgstr "ตอบ"
+msgstr "cevaplanma"
 
-# @ dwqa
 #: inc/Posts/Question.php:288
 msgid "voted"
-msgstr ""
+msgstr "oylanma"
 
-# @ dwqa
 #: inc/Posts/Question.php:289
 msgid "views"
-msgstr "อ่าน"
+msgstr "gösterilme"
 
-# @ dwqa
 #: inc/Posts/Question.php:410 inc/User.php:266
 msgid "Invalid Post"
-msgstr ""
+msgstr "Geçersiz konu"
 
-# @ dwqa
 #: inc/Posts/Question.php:445
 msgid "Sticky Questions"
-msgstr ""
+msgstr "Sabit Sorular"
 
-# @ dwqa
 #: inc/Posts/Question.php:479
+#, fuzzy
 msgid "Question is not valid"
-msgstr ""
+msgstr "Soru Listesi Sayfası"
 
-# @ dwqa
 #: inc/Posts/Question.php:500
 msgid "Delete Action was failed"
 msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:505
+#, fuzzy
 msgid "You do not have permission to delete this question"
-msgstr ""
+msgstr "Bu soruyu görmek için izniniz yok."
 
 #: inc/Session.php:68 inc/Session.php:85 inc/Session.php:95 inc/Session.php:118
 msgid "This function should not be called before init."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:8
+#, fuzzy
 msgid "Login required. No anonymous post allowed"
-msgstr ""
+msgstr "Giriş gereklidir. Ziyaretçilere izin yok."
 
-# @ dwqa
 #: inc/Settings.php:20
 msgid "Select Archive Question Page"
-msgstr ""
+msgstr "Sorular için Arşiv Sayfasını Belirle"
 
 #: inc/Settings.php:24
 msgid ""
-"A page where displays all questions. The <code>[dwqa-list-questions]</code> "
+"A page where displays all questions. The <code>[EMQA-list-questions]</code> "
 "short code must be on this page."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:31
 msgid "hours"
-msgstr ""
+msgstr "saat"
 
-# @ dwqa
 #: inc/Settings.php:31
 msgid ""
 "A period of time in which new questions are highlighted and marked as New"
-msgstr ""
+msgstr "Sorunun Yeni özelliğinin geçerli olacağı zaman aralığı"
 
-# @ dwqa
 #: inc/Settings.php:36
 msgid "days"
-msgstr "วัน"
+msgstr "gün"
 
-# @ dwqa
 #: inc/Settings.php:36
+#, fuzzy
 msgid ""
 "A Question will be marked as overdue if it passes this period of time, "
 "starting from the time the question was submitted"
-msgstr ""
+msgstr "Srunun zaman aşımına ugraqması için geçecek süre"
 
-# @ dwqa
 #: inc/Settings.php:47
 msgid "Select Submit Question Page"
-msgstr ""
+msgstr "Soru Gönder Sayfasını Belirle"
 
 #: inc/Settings.php:52
 msgid ""
-"A page where users can submit questions. The <code>[dwqa-submit-question-"
+"A page where users can submit questions. The <code>[EMQA-submit-question-"
 "form]</code> short code must be on this page."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:65
-msgid "Select 404 DWQA Page"
+msgid "Select 404 EMQA Page"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:70
 msgid ""
 "This page will be redirected when users without authority click on a private "
@@ -811,10 +732,9 @@ msgid ""
 "404 page will be used."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:87
 msgid "Upload"
-msgstr ""
+msgstr "Yükle"
 
 #: inc/Settings.php:87
 msgid "Upload or choose a logo to be displayed at the top of the email."
@@ -830,19 +750,17 @@ msgstr ""
 msgid "Enable notification for new question."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:131 inc/Settings.php:166 inc/Settings.php:202
 #: inc/Settings.php:238 inc/Settings.php:273 inc/Settings.php:308
 #: inc/Settings.php:343
 msgid "Email subject"
-msgstr ""
+msgstr "Email Konusu"
 
-# @ dwqa
 #: inc/Settings.php:136 inc/Settings.php:171 inc/Settings.php:207
 #: inc/Settings.php:243 inc/Settings.php:278 inc/Settings.php:313
 #: inc/Settings.php:348
 msgid "Email Content"
-msgstr ""
+msgstr "Email İçeriği"
 
 #: inc/Settings.php:161
 msgid "Enable notification for new answer."
@@ -860,20 +778,18 @@ msgstr ""
 msgid "Enable notification for new comment of answer."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:400
+#, fuzzy
 msgid "Read"
-msgstr ""
+msgstr "Devamını Oku"
 
-# @ dwqa
 #: inc/Settings.php:401
 msgid "Post"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:429 inc/Settings.php:465 inc/Settings.php:500
 msgid "Reset Default"
-msgstr ""
+msgstr "Varsayılana Dön"
 
 #: inc/Settings.php:467
 msgid "Comments"
@@ -919,12 +835,11 @@ msgstr ""
 msgid "Show all answers on single question page."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:593
+#, fuzzy
 msgid "Select template for Single Quesiton page"
-msgstr ""
+msgstr "Sorular için Arşiv Sayfasını Belirle"
 
-# @ dwqa
 #: inc/Settings.php:599
 msgid ""
 "By default, your single.php template file will be used if you do not choose "
@@ -940,15 +855,13 @@ msgid ""
 "<code>%s</code>. If you leave these blank the default will be used."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:732
 msgid "Plugin Settings"
-msgstr ""
+msgstr "Eklenti Ayarları"
 
-# @ dwqa
 #: inc/Settings.php:732
 msgid "Settings"
-msgstr ""
+msgstr "Ayarlar"
 
 #: inc/Settings.php:768
 msgid "Email Settings"
@@ -970,15 +883,13 @@ msgstr ""
 msgid "Page Settings"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:791
 msgid "Question List Page"
-msgstr ""
+msgstr "Soru Listesi Sayfası"
 
-# @ dwqa
 #: inc/Settings.php:799 inc/Settings.php:930
 msgid "Ask Question Page"
-msgstr ""
+msgstr "Soru Sor Sayfası"
 
 #: inc/Settings.php:842
 msgid "Question Settings"
@@ -1016,10 +927,9 @@ msgstr ""
 msgid "Single Question Page"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:950
 msgid "Permalink Settings"
-msgstr ""
+msgstr "Kalıcı Bağlantı Ayarları"
 
 #: inc/Settings.php:957
 msgid "Question Base"
@@ -1033,25 +943,21 @@ msgstr ""
 msgid "Question Tag Base"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1042
 msgid "From Email"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1110 inc/Settings.php:1117
 msgid "Group Permission"
-msgstr ""
+msgstr "Grup İzinleri"
 
-# @ dwqa
 #: inc/Settings.php:1145
-msgid "DWQA Settings"
+msgid "EMQA Settings"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1149
 msgid "General"
-msgstr ""
+msgstr "Genel"
 
 #: inc/Settings.php:1150
 msgid "Emails"
@@ -1069,7 +975,6 @@ msgstr ""
 msgid "Email settings"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1168
 msgid "Email Logo"
 msgstr ""
@@ -1102,14 +1007,13 @@ msgstr ""
 msgid "New Comment to Answer Notifications (to Admin)"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1314
 msgid "Save all changes"
-msgstr ""
+msgstr "Tüm değişiklikleri Kaydet"
 
 #: inc/Settings.php:1328
 #, php-format
-msgid "Manage <a href=\"%s\">DWQA Extensions</a> license keys"
+msgid "Manage <a href=\"%s\">EMQA Extensions</a> license keys"
 msgstr ""
 
 #: inc/Settings.php:1346 inc/Settings.php:1351 inc/Settings.php:1356
@@ -1117,17 +1021,14 @@ msgstr ""
 msgid "Forward to"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1366
 msgid "Cc"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1371
 msgid "Bcc"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1376
 msgid "This address will be used as the sender of the outgoing emails."
 msgstr ""
@@ -1136,22 +1037,18 @@ msgstr ""
 msgid "Send a copy of every email to admin."
 msgstr ""
 
-# @ dwqa
 #: inc/Shortcode.php:115 inc/widgets/Popular_Question.php:21
 msgid "Popular Questions"
-msgstr ""
+msgstr "Popüler Sorular"
 
-# @ dwqa
 #: inc/Shortcode.php:152
 msgid "Latest Answers"
-msgstr ""
+msgstr "En Son Cevaplar"
 
-# @ dwqa
 #: inc/Shortcode.php:178
 msgid "Answer at"
-msgstr ""
+msgstr "Cevapla"
 
-# @ dwqa
 #: inc/Shortcode.php:178
 msgid "Link to"
 msgstr ""
@@ -1167,36 +1064,33 @@ msgstr[1] ""
 msgid "Question List"
 msgstr ""
 
-# @ dwqa
 #: inc/Status.php:300
 msgid "Answered"
-msgstr "ตอบแล้ว"
+msgstr "Cevaplanmış"
 
-# @ dwqa
 #: inc/Status.php:324
+#, fuzzy
 msgid "Missing post ID"
-msgstr ""
+msgstr "Cevap ID bulunmadı"
 
-# @ dwqa
 #: inc/Status.php:337
 msgid "Post does not exist"
 msgstr ""
 
-# @ dwqa
 #: inc/Status.php:342
 msgid "Invalid post status"
-msgstr ""
+msgstr "Geçersiz konu durumu"
 
 #: inc/Template.php:15 templates/content-edit.php:44
 #: templates/question-submit-form.php:46
 msgid "Tag"
 msgstr ""
 
-# @ dwqa
 #: inc/Template.php:15 inc/Template.php:20 templates/content-edit.php:29
 #: templates/question-submit-form.php:32
+#, fuzzy
 msgid "Category"
-msgstr "หมวดหมู่"
+msgstr "Kategori"
 
 #: inc/Template.php:43
 msgid "Showing search results for"
@@ -1210,28 +1104,24 @@ msgstr ""
 msgid "Subscribe"
 msgstr ""
 
-# @ default
 #: inc/Template.php:445
 msgid "Email"
 msgstr ""
 
 #: inc/Template.php:447
 msgid "Name"
-msgstr ""
+msgstr "Adınız"
 
-# @ default
 #: inc/Template.php:449
 #, php-format
 msgid "Required fields are marked %s"
-msgstr ""
+msgstr "%s le işaretli olanlar gereklidir."
 
-# @ dwqa
 #: inc/Template.php:461
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr ""
+msgstr "Yorum yapabilmeniz için <a href=\"%s\"> Giriş </a> yapmalısınız."
 
-# @ dwqa
 #: inc/Template.php:464
 #, php-format
 msgid ""
@@ -1239,46 +1129,40 @@ msgid ""
 "and attributes: %s"
 msgstr ""
 
-# @ dwqa
 #: inc/Template.php:467
 msgid "Leave a Reply"
-msgstr ""
+msgstr "Cevap Yaz"
 
-# @ dwqa
 #: inc/Template.php:468
 #, php-format
 msgid "Leave a Reply to %s"
-msgstr ""
+msgstr "%s kullanıcıya Cevap Yaz"
 
-# @ dwqa
 #: inc/Template.php:469
 msgid "Cancel reply"
-msgstr ""
+msgstr "İptal Et"
 
-# @ dwqa
 #: inc/Template.php:470
 msgid "Post Comment"
 msgstr ""
 
-# @ dwqa
 #: inc/Template.php:645
 msgid "Sticky Question"
-msgstr ""
+msgstr "Sabit Soru"
 
-# @ dwqa
 #: inc/Template.php:659
 msgid "Ask a question"
-msgstr "ต้ังคำถาม"
+msgstr "bir soru sor"
 
-# @ dwqa
 #: inc/Template.php:661
+#, fuzzy
 msgid "Login to ask a question"
-msgstr "เข้าระบบก่อนถามคำถาม"
+msgstr "Sorun girmek için girş yap"
 
-# @ dwqa
 #: inc/Template.php:1128
+#, fuzzy
 msgid "Choose as the best answer"
-msgstr "เลือกเป็นคำตอบที่ดีที่สุด"
+msgstr "En iyi cevabı seç."
 
 #: inc/Updater.php:97
 msgid "License Key"
@@ -1292,44 +1176,39 @@ msgstr ""
 msgid "Plugin was activated"
 msgstr ""
 
-# @ dwqa
 #: inc/User.php:230
 msgid "Staff"
 msgstr ""
 
-# @ default
 #: inc/Walker/Category.php:20 inc/Walker/Tag.php:20
 #, php-format
 msgid "View all posts filed under %s"
-msgstr ""
+msgstr "%s konu altındaki tüm konuları gör"
 
-# @ default
 #: inc/Walker/Category.php:35 inc/Walker/Tag.php:35
 #, php-format
 msgid "Feed for all posts filed under %s"
-msgstr ""
+msgstr "%s konu altındaki tüm konuların beslemeleri"
 
 #: inc/widgets/Closed_Question.php:11
 msgid "Show a list of questions marked as closed."
 msgstr ""
 
-# @ dwqa
 #: inc/widgets/Closed_Question.php:12
-msgid "DWQA Closed Questions"
-msgstr ""
+#, fuzzy
+msgid "EMQA Closed Questions"
+msgstr "Tüm Sorular"
 
-# @ dwqa
 #: inc/widgets/Closed_Question.php:18
+#, fuzzy
 msgid "Closed Questions"
-msgstr ""
+msgstr "Tüm Sorular"
 
-# @ default
 #: inc/widgets/Closed_Question.php:72 inc/widgets/Latest_Question.php:71
 #: inc/widgets/Popular_Question.php:66 inc/widgets/Related_Question.php:48
 msgid "Widget title"
 msgstr ""
 
-# @ default
 #: inc/widgets/Closed_Question.php:75 inc/widgets/Latest_Question.php:74
 #: inc/widgets/Popular_Question.php:69 inc/widgets/Related_Question.php:51
 msgid "Number of posts"
@@ -1339,15 +1218,15 @@ msgstr ""
 msgid "Show a list of latest questions."
 msgstr ""
 
-# @ dwqa
 #: inc/widgets/Latest_Question.php:11
-msgid "DWQA Latest Questions"
-msgstr ""
+#, fuzzy
+msgid "EMQA Latest Questions"
+msgstr "Tüm Sorular"
 
-# @ dwqa
 #: inc/widgets/Latest_Question.php:17
+#, fuzzy
 msgid "Latest Questions"
-msgstr ""
+msgstr "Soruyu Düzenle"
 
 #: inc/widgets/Latest_Question.php:44
 msgid "ago"
@@ -1361,21 +1240,18 @@ msgstr ""
 msgid "Show a list of popular questions."
 msgstr ""
 
-# @ dwqa
 #: inc/widgets/Popular_Question.php:15
-msgid "DWQA Popular Questions"
+msgid "EMQA Popular Questions"
 msgstr ""
 
-# @ dwqa
 #: inc/widgets/Related_Question.php:11
 msgid ""
 "Show a list of questions that related to a question. Just show in single "
 "question page"
 msgstr ""
 
-# @ dwqa
 #: inc/widgets/Related_Question.php:12
-msgid "DWQA Related Questions"
+msgid "EMQA Related Questions"
 msgstr ""
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:181
@@ -1417,10 +1293,9 @@ msgstr ""
 msgid "Who can see this?"
 msgstr ""
 
-# @ dwqa
 #: templates/answer-submit-form.php:34 templates/question-submit-form.php:25
 msgid "Public"
-msgstr "สาธารณะ"
+msgstr "Halka Açık"
 
 #: templates/answer-submit-form.php:35 templates/question-submit-form.php:26
 msgid "Only Me &amp; Admin"
@@ -1439,10 +1314,9 @@ msgstr ""
 msgid "Filter:"
 msgstr ""
 
-# @ dwqa
 #: templates/archive-question-filter.php:16
 msgid "All"
-msgstr "ทั้งหมด"
+msgstr "Tümü"
 
 #: templates/archive-question-filter.php:22
 msgid "Unanswered"
@@ -1472,10 +1346,9 @@ msgstr ""
 msgid "Votes"
 msgstr ""
 
-# @ dwqa
 #: templates/archive-question.php:28
 msgid "Ask Question"
-msgstr "โพสคำถาม"
+msgstr "Soru Sor"
 
 #: templates/captcha-form.php:20
 msgid "Enter the result"
@@ -1491,25 +1364,22 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-# @ dwqa
 #: templates/content-edit.php:36 templates/question-submit-form.php:38
 msgid "Select question category"
-msgstr "เลือกหมวดหมู่"
+msgstr "Soru Kategorisini Seç"
 
 #: templates/content-edit.php:50
 msgid "Save Changes"
 msgstr ""
 
-# @ dwqa
 #: templates/content-none.php:10
 msgid "You do not have permission to view questions"
-msgstr ""
+msgstr "Bu soruyu görmek için izniniz yok."
 
 #: templates/content-none.php:12
 msgid "Sorry, but nothing matched your filter"
 msgstr ""
 
-# @ dwqa
 #: templates/content-question.php:18
 msgid "asked"
 msgstr ""
@@ -1538,17 +1408,15 @@ msgstr ""
 msgid "<strong>%1$s</strong> votes"
 msgstr ""
 
-# @ dwqa
 #: templates/content-single-answer.php:12
 #: templates/content-single-question.php:14
 msgid "Vote Up"
-msgstr "โหวตขึ้น"
+msgstr "Olumlu Oyla"
 
-# @ dwqa
 #: templates/content-single-answer.php:13
 #: templates/content-single-question.php:15
 msgid "Vote Down"
-msgstr "โหวตลง"
+msgstr "Olumsuz Oyla"
 
 #: templates/content-single-answer.php:17
 #: templates/content-single-answer.php:19
@@ -1560,10 +1428,9 @@ msgstr ""
 msgid "<span><a href=\"%s\">%s%s</a> %s answered %s ago</span>"
 msgstr ""
 
-# @ dwqa
 #: templates/content-single-answer.php:26
 msgid "Private"
-msgstr "ส่วนตัว"
+msgstr "Özel"
 
 #: templates/content-single-question.php:19
 #, php-format
@@ -1578,20 +1445,20 @@ msgstr ""
 msgid "This question is:"
 msgstr ""
 
-# @ dwqa
 #: templates/question-submit-form.php:69
+#, fuzzy
 msgid "You do not have permission to submit a question"
-msgstr ""
+msgstr "Souyu göndermek için yeterli izniniz yok."
 
 #: upgrades/upgrades.php:25
 #, php-format
 msgid ""
-"DW Question Answer needs to upgrade the database, click %shere%s to start "
+"EMO Questalk  needs to upgrade the database, click %shere%s to start "
 "the upgrade."
 msgstr ""
 
 #: upgrades/upgrades.php:33
-msgid "DWQA Upgrade"
+msgid "EMQA Upgrade"
 msgstr ""
 
 #: upgrades/upgrades.php:40
@@ -1618,179 +1485,615 @@ msgid "Upgrade process is done"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "DW Question Answer"
+msgid "EMO Questalk "
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"A WordPress plugin was make by DesignWall.com to build an Question Answer "
+"A WordPress plugin was make by Emohelp.com to build an Question Answer "
 "system for support, asking and comunitcate with your customer"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "DesignWall"
+msgid "Emohelp"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://www.designwall.com"
+msgid "http://www.Emohelp.com"
 msgstr ""
 
-# @ dwqa
+#~ msgid "Next"
+#~ msgstr "Sonraki"
+
+#~ msgid "Prev"
+#~ msgstr "Önceki"
+
+#~ msgid "Please enter your question"
+#~ msgstr "Lütfen sorunuzu yazın"
+
+#~ msgid "Your question must be at least 2 characters in length"
+#~ msgstr "Sorunuzun uzunluğu en az iki karakter olmalı"
+
+#~ msgid "Enter a valid email address"
+#~ msgstr "Geçerli bir mail adresi giriniz."
+
+#~ msgid "Enter a question title"
+#~ msgstr "Soru başlığını yazınız"
+
+#~ msgid "Please add your name"
+#~ msgstr "Lütfen isminizi giriniz"
+
+#~ msgid "Please enter your answer"
+#~ msgstr "Lütfen cevabınızı giriniz"
+
+#~ msgid "Comment must have more than 2 characters"
+#~ msgstr "Yorum en az iki karakterden oluşmalı"
+
+#~ msgid "Not found! Try another keyword."
+#~ msgstr "Bulunamadı ! Farklı bir kelime ile dene."
+
+#~ msgid "Or press <strong>ENTER</strong> to get more questions"
+#~ msgstr "veya <strong>ENTER</strong> a basarak daha fazla soruya bak."
+
+#~ msgid "Update"
+#~ msgstr "Güncelle"
+
+#~ msgid "Cancel"
+#~ msgstr "İptal Et"
+
+#~ msgid "Do you want to delete this comment?"
+#~ msgstr "Bu yorumu silmek istediğinizden emin misiniz?"
+
+#~ msgid "Do you want to delete this answer?"
+#~ msgstr "Bu cevabı silmek istediğinizden emin misiniz?"
+
+#, fuzzy
+#~ msgid "Do you want to update this answer?"
+#~ msgstr "Bu cevabı güncellemek istediğinizden emin misiniz?"
+
+#, fuzzy
+#~ msgid "Do you want to report this answer?"
+#~ msgstr "Bu cevabı ihbar etmek istediğinizden emin misiniz?"
+
+#~ msgid "Report"
+#~ msgstr "İhbar ET"
+
+#~ msgid "Undo"
+#~ msgstr "Geri Al"
+
+#~ msgid ""
+#~ "This answer will be marked as spam and hidden. Do you want to flag it?"
+#~ msgstr ""
+#~ "Bu cevap spam olarak işaretlenip  gizlenecek. İhbar etmek ister misiniz ?"
+
+#~ msgid "This answer was flagged as spam. Do you want to show it"
+#~ msgstr ""
+#~ "Bu cevap spam olarak işaretlenmiş. Görmek istediğinizden emin misiniz ?"
+
+#~ msgid "This answer was flagged as spam"
+#~ msgstr "Bu cevap spam olarak işaretlendi."
+
+#~ msgid "hide"
+#~ msgstr "gizle"
+
+#~ msgid "show"
+#~ msgstr "göster"
+
 #~ msgid "Follow This Question"
-#~ msgstr "ติดตามคำถามนี้"
+#~ msgstr "Bu Soruyu Takip Et"
 
-# @ dwqa
 #~ msgid "Unfollow This Question"
-#~ msgstr "ไม่ติดตามคำถามนี้"
+#~ msgstr "Takibi Bırak"
 
-# @ dwqa
+#, fuzzy
 #~ msgid "Pin this question to top"
-#~ msgstr "ปักหมุดคำถามนี้"
+#~ msgstr "Bu Soruyu Önsayfada Sabitle"
 
-# @ dwqa
+#, fuzzy
 #~ msgid "Unpin this question from top"
-#~ msgstr "เลิกปักหมุดคำถามนี้"
+#~ msgstr "Bu Sorunun Sabitliğini Kaldır"
 
-# @ dwqa
+#, fuzzy
+#~ msgid "Do you want to delete this question?"
+#~ msgstr "Bu yorumu silmek istediğinizden emin misiniz?"
+
+#~ msgid "Publish"
+#~ msgstr "Yayınla"
+
+#~ msgid "Everyone can see"
+#~ msgstr "Herke görebilir"
+
+#~ msgid "Only Author and Administrator can see"
+#~ msgstr "Yalnızca soru sahibi ve yönetici görebilir"
+
+#~ msgid "Sorry, but nothing matched your filter. "
+#~ msgstr "Üzgünüz ama filtre sonucu eşleşme bulunamadı."
+
+#, fuzzy
+#~ msgid "You can ask question"
+#~ msgstr "Sorunuz"
+
+#~ msgid " or"
+#~ msgstr "veya"
+
+#, fuzzy
+#~ msgid "Search query is empty"
+#~ msgstr "Arama sorgusu boş"
+
+#, fuzzy
+#~ msgid "A page where users can submit questions."
+#~ msgstr "Souyu göndermek için yeterli izniniz yok."
+
+#~ msgid "Enable notification for new question"
+#~ msgstr "Yeni soru için uyarıları aktif et"
+
+#~ msgid "Enable notification for new answer"
+#~ msgstr "Yeni cevaplar için uyarıları etkinleştir"
+
+#, fuzzy
+#~ msgid "Enable notification for new answer (to Followers )"
+#~ msgstr "Yeni cevaplar için uyarıları etkinleştir"
+
+#~ msgid "Comment"
+#~ msgstr "Yorum"
+
+#~ msgid "questions"
+#~ msgstr "sorular"
+
+#~ msgid "New Question Notification"
+#~ msgstr "Yeni Soeu Uyarısı"
+
+#~ msgid "New Answer Notification"
+#~ msgstr "Yeni Cevap Uyarısı"
+
+#, fuzzy
+#~ msgid "New Comment to Question Notification (to Followers )"
+#~ msgstr "Soruya Yeni bir Yorum (Takipçilerine)"
+
+#, fuzzy
+#~ msgid "New Answer Notification (to Followers )"
+#~ msgstr "Yeni Cevap Uyarısı (Takipçilerine)"
+
+#, fuzzy
+#~ msgid "New Comment to Answer Notification (to Followers )"
+#~ msgstr "Yeni Cevap Uyarısı (Takipçilerine)"
+
+#, fuzzy
+#~ msgid "Private Question"
+#~ msgstr "Soruyu Düzenle"
+
+#, fuzzy
+#~ msgid "Review Question"
+#~ msgstr "Soruya Bak"
+
+#~ msgid "Time settings"
+#~ msgstr "Zaman Ayarları"
+
+#~ msgid "New Question Time Frame"
+#~ msgstr "Yeni Soru için Zaman Aralığı"
+
+#~ msgid "Question Overdue - Time Frame"
+#~ msgstr "Soru zaman aşımı süresi "
+
+#~ msgid "Captcha settings"
+#~ msgstr "Captcha Ayarları"
+
+#, fuzzy
+#~ msgid "Captcha on Submit Question Page"
+#~ msgstr "Soru Gönder Sayfasında Captcha Ekle"
+
+#, fuzzy
+#~ msgid "Captcha on Single Question Page"
+#~ msgstr "Tekil Soru  Sayfasında Captcha Ekle"
+
+#~ msgid "Single Question"
+#~ msgstr "Tekil Soru"
+
+#~ msgid "Single Category"
+#~ msgstr "Tekil Kategori"
+
+#~ msgid "Single Tag"
+#~ msgstr "Tekil Etiket"
+
+#~ msgid "Notification"
+#~ msgstr "Uyarılar"
+
+#~ msgid "Permission"
+#~ msgstr "İzinler"
+
+#, fuzzy
+#~ msgid "Email setup"
+#~ msgstr "Email Konusu"
+
+#~ msgid "You need an account to submit question and get answers. Create one:"
+#~ msgstr "soru veya cevap yollamanız için kayıt olmalısınız. Hemen oluştur:"
+
+#~ msgid "Type your email"
+#~ msgstr "Email adresiniz gir"
+
 #~ msgid "Already a member?"
-#~ msgstr "กรุณาเข้าระบบก่อนโพส:"
+#~ msgstr "Zaten üye misin ?"
 
-# @ dwqa
+#~ msgid "Log In"
+#~ msgstr "Giriş Yap"
+
+#~ msgid "Login to submit your question"
+#~ msgstr "Sorun girmek için girş yap"
+
+#, fuzzy
+#~ msgid "Type your username"
+#~ msgstr "Email adresiniz gir"
+
+#, fuzzy
+#~ msgid "Type your password"
+#~ msgstr "Email adresiniz gir"
+
+#~ msgid "Not yet a member?"
+#~ msgstr "Hala üye olmadın mı ?"
+
 #~ msgid "Register"
-#~ msgstr "สมัครสมาชิก"
+#~ msgstr "Kayıt Ol"
 
-# @ dwqa
-#~ msgid "%1$s ago"
-#~ msgstr "%1$s ที่แล้ว"
+#, fuzzy
+#~ msgid "Your email *"
+#~ msgstr "Email adresiniz gir"
 
-# @ dwqa
-#~ msgid "%s answered <span class=\"dwqa-date\">%s</span>"
-#~ msgstr "%s ตอบเมื่อ <span class=\"dwqa-date\">%s</span>"
+#~ msgid "Private: %s"
+#~ msgstr "Özel: %s"
 
-# @ default
-#~ msgid "%s day"
-#~ msgid_plural "%s days"
-#~ msgstr[0] "%s วัน"
-#~ msgstr[1] "%s วัน"
+#~ msgid ""
+#~ "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out "
+#~ "of this account\">Log out?</a>"
+#~ msgstr ""
+#~ "Giriş yapılan isim  <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title="
+#~ "\"Bu hesaptan çıkış yap\">Çıkış Yap?</a>"
 
-# @ dwqa
-#~ msgid "Add answer"
-#~ msgstr "โพสคำตอบ"
+#~ msgid "Your email address will not be published."
+#~ msgstr "Email adresiniz gösterilmeyecektir."
 
-# @ dwqa
-#~ msgid "Answer this Question"
-#~ msgstr "ตอบคำถามนี้"
+#~ msgid "Add New Question"
+#~ msgstr "Yeni Soru Ekle"
 
-# @ dwqa
-#~ msgid "How to..."
-#~ msgstr "คำถามฉันคือ..."
+#~ msgid "Edit Question"
+#~ msgstr "Soruyu Düzenle"
 
-# @ dwqa
-#~ msgid "Need Answer"
-#~ msgstr "รอตอบ"
-
-# @ default
-# @ dwqa
 #~ msgid "New Question"
-#~ msgstr "คำถามใหม่"
+#~ msgstr "Yeni Soru"
 
-# @ dwqa
-#~ msgid "Overdue"
-#~ msgstr "เลยกำหนด"
+#~ msgid "All Questions"
+#~ msgstr "Tüm Sorular"
 
-# @ dwqa
-#~ msgid "Pin this Question to top"
-#~ msgstr "ปักหมุดคำถามนี้"
+#~ msgid "View Question"
+#~ msgstr "Soruya Bak"
 
-# @ dwqa
-#~ msgid "Please login or"
-#~ msgstr "กรุณา Login หรือ"
+#~ msgid "Search Question"
+#~ msgstr "Sorularda Ara"
 
-# @ dwqa
-#~ msgid "Question details"
-#~ msgstr "รายละเอียดคำถาม"
+#~ msgid "No questions found"
+#~ msgstr "Hiç soru bulunamadı"
 
-# @ dwqa
-#~ msgid "Queue"
-#~ msgstr "คิว"
+#~ msgid "No questions found in Trash"
+#~ msgstr "Çöpte soru bulunamadı."
 
-# @ dwqa
-#~ msgid "Save draft"
-#~ msgstr "บันทึกแบบร่าง"
+#~ msgid "em Q&A"
+#~ msgstr "S&C"
 
-# @ dwqa
-#~ msgid "Search"
-#~ msgstr "ค้นหา"
+#~ msgid "Add new answer"
+#~ msgstr "Yeni cevap ekle"
 
-# @ dwqa
-#~ msgid "Select a category"
-#~ msgstr "เลือกหมวดหมู่"
+#~ msgid "Edit answer"
+#~ msgstr "Cevabı Düzenle"
 
-# @ dwqa
-# @ default
-#~ msgid "Status:"
-#~ msgstr "สถานะ:"
+#~ msgid "New Answer"
+#~ msgstr "Yeni CEvap"
 
-# @ dwqa
-#~ msgid "This is the best answer"
-#~ msgstr "นี่คือคำตอบที่ดีที่สุด"
+#~ msgid "All Answers"
+#~ msgstr "Tüm Cevaplar"
 
-# @ dwqa
-#~ msgid "Unpin this Question from the top"
-#~ msgstr "เลิกปักหมุดคำถามนี้"
+#~ msgid "View Answer"
+#~ msgstr "Cevabı Gör"
 
-# @ dwqa
-#~ msgid "Vote"
-#~ msgstr "โหวด"
+#~ msgid "Search Answer"
+#~ msgstr "Cevaplarda Ara"
 
-# @ dwqa
-#~ msgid "You can ask question <a href=\"\">here</a>"
-#~ msgstr "คุณสามารถโพสคำถามได้<a href=\"\">ที่นี้</a>"
+#~ msgid "No Answers found"
+#~ msgstr "Hiç cevap bulunamadı"
 
-# @ dwqa
-#~ msgid "Your question"
-#~ msgstr "คำถามของคุณ"
+#~ msgid "No Answers found in Trash"
+#~ msgstr "Çöpte hiç cevap bulunamadı"
 
-# @ dwqa
-#~ msgid "answer"
-#~ msgid_plural "answers"
-#~ msgstr[0] "คำตอบ"
-#~ msgstr[1] "คำตอบ"
-
-# @ dwqa
-#~ msgid "follow"
-#~ msgstr "ตามคำถาม"
-
-# @ dwqa
-#~ msgid "following"
-#~ msgstr "กำลังติดตาม"
-
-# @ default
 #~ msgctxt "taxonomy general name"
 #~ msgid "Categories"
-#~ msgstr "หมวดหมู่"
+#~ msgstr "Kategoriler"
 
-# @ default
 #~ msgctxt "taxonomy singular name"
 #~ msgid "Category"
-#~ msgstr "หมวดหมู่"
+#~ msgstr "Kategori"
 
-# @ dwqa
+#~ msgid "Search Categories"
+#~ msgstr "Kategorilerde Ara"
+
+#~ msgid "All Categories"
+#~ msgstr "Tüm Kategoriler"
+
+#~ msgid "Parent Category"
+#~ msgstr "Ana Kategori"
+
+#~ msgid "Parent Category:"
+#~ msgstr "Ana Kategori:"
+
+#~ msgid "Edit Category"
+#~ msgstr "Kategoriyi Düzenle"
+
+#~ msgid "Update Category"
+#~ msgstr "Kategoriyi Güncelle"
+
+#~ msgid "Add New Category"
+#~ msgstr "Yeni Kategori Ekle"
+
+#~ msgid "New Category Name"
+#~ msgstr "Yen Kategori İsmi"
+
+#~ msgid "Question Categories"
+#~ msgstr "Soru Kategorileri"
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Tags"
+#~ msgstr "Etiketler"
+
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Tag"
+#~ msgstr "Etiket"
+
+#~ msgid "Search Tags"
+#~ msgstr "Etiketlerde Ara"
+
+#~ msgid "Popular Tags"
+#~ msgstr "Popüler Etiketler"
+
+#~ msgid "All Tags"
+#~ msgstr "Tüm Etiketler"
+
+#~ msgid "Edit Tag"
+#~ msgstr "Etiketi Düzenle"
+
+#~ msgid "Update Tag"
+#~ msgstr "Etiketi Güncelle"
+
+#~ msgid "Add New Tag"
+#~ msgstr "Yeni Etiket Ekle"
+
+#~ msgid "New Tag Name"
+#~ msgstr "Yeni Etiket İsmi"
+
+#~ msgid "Separate tags with commas"
+#~ msgstr "Etiketleri virgül ile ayır"
+
+#~ msgid "Add or remove tags"
+#~ msgstr "Sil veya yeni etiket ekle"
+
+#~ msgid "Choose from the most used tags"
+#~ msgstr "Sık kullanılan etiketlerden kullanılan"
+
+#~ msgid "%s second"
+#~ msgid_plural "%s seconds"
+#~ msgstr[0] "%s saniye"
+#~ msgstr[1] "%s saniye"
+
+#~ msgid "about %s min"
+#~ msgid_plural "%s mins"
+#~ msgstr[0] "yaklaşık %s dakika"
+#~ msgstr[1] "yaklaşık %s dakika"
+
+#~ msgid "about %s hour"
+#~ msgid_plural "%s hours"
+#~ msgstr[0] "yaklaşık %s saat "
+#~ msgstr[1] "yaklaşık %s saat"
+
+#~ msgid "%s day"
+#~ msgid_plural "%s days"
+#~ msgstr[0] "%s gün"
+#~ msgstr[1] "%s gün"
+
+#~ msgid "%1$s ago"
+#~ msgstr "%1$s önce"
+
+#~ msgid "Flag"
+#~ msgstr "Şaretle"
+
+#~ msgid "Unflag"
+#~ msgstr "İşareti Kaldır"
+
+#, fuzzy
+#~ msgid ""
+#~ "This answer will be hidden when flagged. Are you sure you want to flag it?"
+#~ msgstr "Bu soru işaretlendiği zaman gizlenecektir. Emin misiniz ?"
+
+#, fuzzy
+#~ msgid "This answer was flagged as spam. Do you want to show it?"
+#~ msgstr ""
+#~ "Bu cevap spam olarak işaretlenmiş. Görmek istediğinizden emin misiniz ?"
+
+#, fuzzy
+#~ msgid "Reset all changes to default"
+#~ msgstr "Tüm değişiklikleri sıfırla."
+
+#~ msgid "Save draft"
+#~ msgstr "Taslak olarak kaydet"
+
+#, fuzzy
+#~ msgid "Answer is missing"
+#~ msgstr "Bu soruyu Cevapla"
+
+#, fuzzy
+#~ msgid "You do not have permission to edit this post"
+#~ msgstr "Bu soruyu görmek için izniniz yok."
+
+#, fuzzy
+#~ msgid "This post is not an answer"
+#~ msgstr "Bu en iyi cevaptır"
+
+#~ msgid "Missing answer ID"
+#~ msgstr "Cevap ID bulunmadı"
+
+#, fuzzy
+#~ msgid "Single Question Template"
+#~ msgstr "Tekil Soru"
+
+#~ msgid "New Comment to Question"
+#~ msgstr "Soruya Yeni bir Yorum"
+
+#~ msgid "New Comment to Answer"
+#~ msgstr "Cevaba Yeni bir Yorum"
+
+#, fuzzy
+#~ msgid "New Answer (to Followers )"
+#~ msgstr "Yeni Cevap ( Takipçilere )"
+
+#, fuzzy
+#~ msgid "New Comment to Question (to Followers )"
+#~ msgstr "Soruya Yeni bir Yorum (Takipçilerine)"
+
+#, fuzzy
+#~ msgid "New Comment to Answer (to Followers )"
+#~ msgstr "Cevaba Yeni bir Yorum (Takipçilerine)"
+
+#, fuzzy
+#~ msgid "% person who is following this question"
+#~ msgid_plural "% people who are following this question"
+#~ msgstr[0] "kişi bu soruyu takip ediyor."
+#~ msgstr[1] "kişi bu soruyu takip ediyor."
+
+#~ msgid "Answer this Question"
+#~ msgstr "Bu soruyu Cevapla"
+
+#~ msgid "Add answer"
+#~ msgstr "Cevap Ekle"
+
+#, fuzzy
+#~ msgid "Unpin this Question from the top"
+#~ msgstr "Bu Sorunun Sabitliğini Kaldır"
+
+#, fuzzy
+#~ msgid "Pin this Question to top"
+#~ msgstr "Bu soruyu Cevapla"
+
+#~ msgid "You do not have permission to view answers"
+#~ msgstr "Bu cevabı görüntülemeye izniniz yok."
+
+#, fuzzy
+#~ msgid "This question is now closed"
+#~ msgstr "Bu soru kapandı."
+
+#~ msgid "You do not have permission to submit answer."
+#~ msgstr "Cevap göndermek için yeterli izniniz yok."
+
+#~ msgid "Please login or"
+#~ msgstr "Lütfen giriş yapın veya"
+
 #~ msgid "to Submit Answer"
-#~ msgstr "ก่อนโพสคำตอบ"
+#~ msgstr "Cevabı Kaydetmek için"
 
-# @ dwqa
-#~ msgid "unfollow"
-#~ msgstr "ไม่ติดตาม"
+#~ msgid "Sorry, but nothing matched your filter."
+#~ msgstr "Üzgünüz, ama filtreleme sonucu eşleşme bulunamadı"
 
-# @ dwqa
-#~ msgid "view"
-#~ msgid_plural "views"
-#~ msgstr[0] "อ่าน"
-#~ msgstr[1] "อ่าน"
+#~ msgid "View previous comments"
+#~ msgstr "Önceki yorumları göster"
 
-# @ dwqa
-#~ msgid "vote"
-#~ msgid_plural "votes"
-#~ msgstr[0] "โหวด"
-#~ msgstr[1] "โหวด"
+#~ msgid "Write a reply..."
+#~ msgstr "Bir Cevap yaz..."
+
+#~ msgid "Draft"
+#~ msgstr "Kaydet"
+
+#~ msgid "This answer was flagged as spam."
+#~ msgstr "Bu cevap spam olarak işaretlenmiş"
+
+#~ msgid "This is the best answer"
+#~ msgstr "Bu en iyi cevaptır"
+
+#~ msgid "Permalink to %s"
+#~ msgstr "Direkt Bağlantı %s"
+
+#~ msgid "Status:"
+#~ msgstr "Durum:"
+
+#~ msgid "Need Answer"
+#~ msgstr "Cevap Bekleyenler"
+
+#~ msgid "Overdue"
+#~ msgstr "Zaman Aşımına Uğramış"
+
+#~ msgid "Queue"
+#~ msgstr "Sırada Bekleyen"
+
+#~ msgid "Select a category"
+#~ msgstr "Kategori Seç"
+
+#~ msgid "Empty"
+#~ msgstr "Boş"
+
+#~ msgid "Vote"
+#~ msgstr "Oylanma"
+
+#~ msgid "tag 1, tag 2,..."
+#~ msgstr "cinsellik, evlilik, gibi..."
+
+#~ msgid "Your question"
+#~ msgstr "Sorunuz"
+
+#~ msgid "Question details"
+#~ msgstr "Soru detayları"
+
+#~ msgid "Post this Question as Private."
+#~ msgstr "Bu soruyu Özel olarak Gönder"
+
+#~ msgid "Only you as Author and Admin can see the question"
+#~ msgstr "Yalnızca Soru Sahibi ve admin bu soruyu görebilir"
+
+#~ msgid "Search"
+#~ msgstr "Ara"
+
+#~ msgctxt "post type general name"
+#~ msgid "Question"
+#~ msgstr "Sorular"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Question"
+#~ msgstr "Soru"
+
+#~ msgctxt "post type general name"
+#~ msgid "Answer"
+#~ msgstr "Cevaplar"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Answer"
+#~ msgstr "Cevap"
+
+#~ msgid "by"
+#~ msgstr "tarafından"
+
+#~ msgid "You need a support channel inside wordpress page?"
+#~ msgstr "Wordpress sayfasında destek kanalı ister miydin ?"
+
+#~ msgid "Create Submit Question Page"
+#~ msgstr "Soru Gönderme Sayfası Oluştur"
+
+#~ msgid "How to create submit question page?"
+#~ msgstr "Soru Gönderme Sayfası Nasıl Oluşturulur ?"
+
+#~ msgid "Go to <strong>Dashboard -> Question -> Settings</strong>"
+#~ msgstr ""
+#~ "Başlangıç sayfasına git Sorular sekmesinin altındaki Ayarlar seçeneği ile."
+
+#~ msgid "Available Settings"
+#~ msgstr "Kullanılabilir Seçenekler"
+
+#~ msgid "Documentations"
+#~ msgstr "Dokümentasyon"
+
+#~ msgid "Support"
+#~ msgstr "Destek"
+
+#~ msgid "Email Template"
+#~ msgstr "E-Mail Şablonu"

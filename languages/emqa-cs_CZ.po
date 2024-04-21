@@ -1,85 +1,95 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DW Question Answer\n"
+"Project-Id-Version: EMO Questalk  v1.2.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-17 16:31+0700\n"
-"PO-Revision-Date: 2016-08-17 16:31+0700\n"
-"Last-Translator: DesignWall <webmaster@designwall.com>\n"
-"Language-Team: DesignWall <webmaster@designwall.com>\n"
-"Language: hr_HR\n"
+"POT-Creation-Date: 2016-08-17 16:30+0700\n"
+"PO-Revision-Date: 2016-08-17 16:30+0700\n"
+"Last-Translator: Sam Straka <samstraka@e-levne.com>\n"
+"Language-Team: \n"
+"Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Poedit 1.8.7\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
-"X-Poedit-Basepath: .\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: dw-question-answer.php:147
-msgid "DWQA Questions"
-msgstr "DWQA Pitanja"
+# @ emqa
+#: em-question-answer.php:147
+msgid "EMQA Questions"
+msgstr "Dotazy"
 
-#: dw-question-answer.php:164
-msgid "DWQA Ask Question"
-msgstr "DWQA Postavi pitanje"
+# @ emqa
+#: em-question-answer.php:164
+msgid "EMQA Ask Question"
+msgstr "Položit dotaz"
 
 #: inc/Admin/Extensions.php:13
-msgid "DWQA Markdown"
+msgid "EMQA Markdown"
 msgstr ""
 
 #: inc/Admin/Extensions.php:19
-msgid "DWQA Leaderboard"
+msgid "EMQA Leaderboard"
 msgstr ""
 
 #: inc/Admin/Extensions.php:25
-msgid "DWQA Captcha"
-msgstr ""
+msgid "EMQA Captcha"
+msgstr "EMQA Captcha"
 
+# @ emqa
 #: inc/Admin/Extensions.php:31
-msgid "DWQA Embed Question"
-msgstr ""
+msgid "EMQA Embed Question"
+msgstr "Uzavřené dotazy"
 
 #: inc/Admin/Extensions.php:37
-msgid "DWQA Widgets"
+msgid "EMQA Widgets"
 msgstr ""
 
+# @ emqa
 #: inc/Admin/Extensions.php:47
 msgid "Extensions"
-msgstr ""
+msgstr "Rozšíření"
 
 #: inc/Admin/Extensions.php:75
 msgid "Get It Now!"
-msgstr ""
+msgstr "Dostaň to nyní !"
 
+# @ emqa
 #: inc/Admin/Welcome.php:27 inc/Admin/Welcome.php:28
-msgid "Welcome to DW Question & Answer"
-msgstr ""
+msgid "Welcome to EMO Questalk"
+msgstr "Vítejte v systému em Otázky & Odpovědi"
 
+# @ emqa
 #: inc/Admin/Welcome.php:35 inc/Admin/Welcome.php:36
-msgid "DW Question & Answer Changelog"
-msgstr ""
+msgid "EMO Questalk Changelog"
+msgstr "Plugin em Otázky & Odpovědi Změny"
 
+# @ default
 #: inc/Admin/Welcome.php:43 inc/Admin/Welcome.php:44
-msgid "DW Question & Answer Credits"
-msgstr ""
+msgid "EMO Questalk Credits"
+msgstr "Zásluhy - em Otázky & Odpovědi"
 
+# @ emqa
 #: inc/Admin/Welcome.php:60
 #, php-format
-msgid "Welcome to DW Question & Answer %s"
-msgstr ""
+msgid "Welcome to EMO Questalk %s"
+msgstr "Vítejte v systému em Otázky & Odpovědi %s"
 
 #: inc/Admin/Welcome.php:61
 msgid ""
 "Thank you for installing our WordPress plugin. If you have any question "
 "about this plugin, please submit to our <a target=\"_blank\" href=\"https://"
-"www.designwall.com/question/\">Q&A section</a>."
+"www.Emohelp.com/question/\">Q&A section</a>."
 msgstr ""
 
 #: inc/Admin/Welcome.php:69
 msgid "What&#8217;s New"
-msgstr ""
+msgstr "Co je nového"
 
 #: inc/Admin/Welcome.php:70
 msgid "Changelog"
@@ -97,339 +107,415 @@ msgstr ""
 msgid "No valid changelog was found."
 msgstr ""
 
+# @ emqa
+# @ default
 #: inc/Ajax.php:29 inc/Ajax.php:47 inc/Ajax.php:83 inc/Ajax.php:113
 #: inc/Ajax.php:132 inc/Ajax.php:150 inc/Ajax.php:215 inc/Handle.php:256
 #: inc/Handle.php:455 inc/Permission.php:286 inc/Status.php:319
 msgid "Are you cheating huh?"
-msgstr "Varaš li, ha?"
+msgstr "Nepodvádíte?"
 
+# @ emqa
 #: inc/Ajax.php:33 inc/Handle.php:260
 msgid "You do not have permission to edit comment."
-msgstr ""
+msgstr "Nemáte práva pro úpravu komentáře"
 
+# @ emqa
 #: inc/Ajax.php:37
 msgid "Comment ID must be showed."
-msgstr "ID komentara mora biti vidljiv."
+msgstr "ID komentáře musí být zobrazeno."
 
+# @ emqa
 #: inc/Ajax.php:51 inc/Handle.php:154
 msgid "Answer is missing."
-msgstr ""
+msgstr "Odpověď chybí"
 
+# @ emqa
 #: inc/Ajax.php:55 inc/Handle.php:158
 msgid "This post is not answer."
-msgstr ""
+msgstr "Tento příspěvek není odpověď"
 
+# @ emqa
 #: inc/Ajax.php:59 inc/Ajax.php:162
 msgid "You do not have permission to delete this post."
-msgstr ""
+msgstr "Nemáte oprávnění k smazání tohoto příspěvku"
 
+# @ emqa
 #: inc/Ajax.php:86
 msgid "Missing id of answer"
-msgstr "Nedostaje ID odgovora"
+msgstr "Chybí ID odpovědi"
 
+# @ emqa
 #: inc/Ajax.php:154 inc/Handle.php:477
 msgid "Question is missing."
-msgstr ""
+msgstr "Dotaz chybí"
 
+# @ emqa
 #: inc/Ajax.php:158 inc/Handle.php:481
 msgid "This post is not question."
-msgstr ""
+msgstr "Tento příspěvek není dotaz"
 
+# @ emqa
 #: inc/Ajax.php:206
-#, fuzzy
 msgid "You do not have permission to edit question status"
-msgstr "Nemate dozvolu vidjeti pitanja"
+msgstr "Nemáte dostatečná práva k úpravě stavu dotazu"
 
 #: inc/Ajax.php:223 inc/Ajax.php:273
 msgid "Not Found!!!"
 msgstr ""
 
+# @ emqa
 #: inc/Answer_List_Table.php:81 inc/Posts/Answer.php:271 inc/Template.php:48
 msgid "Author"
 msgstr "Autor"
 
+# @ emqa
 #: inc/Answer_List_Table.php:82
 msgid "Detail"
-msgstr "Pojedinost"
+msgstr "Podrobnosti"
 
+# @ emqa
 #: inc/Answer_List_Table.php:92 inc/Notifications.php:116
 #: inc/Notifications.php:214 inc/Notifications.php:233 inc/Posts/Base.php:230
 #: inc/Posts/Comment.php:102 inc/Settings.php:419 inc/Settings.php:455
 #: inc/Settings.php:490 inc/User.php:155
 msgid "Anonymous"
-msgstr "Anonimus"
+msgstr "Anonymní"
 
+# @ emqa
 #: inc/Answer_List_Table.php:101
 msgid "Answered on "
-msgstr "Odgovorio "
+msgstr "Odpovězeno"
 
+# @ emqa
 #: inc/Answer_List_Table.php:112 inc/Helptab.php:153
 msgid "Read more"
-msgstr "Opširnije"
+msgstr "Zobrazit celé"
 
+# @ emqa
 #: inc/Handle.php:29
 msgid "&quot;Helllo&quot;, Are you cheating huh?."
-msgstr ""
+msgstr "Dobrý den, nepodvádíte náhodou?"
 
+# @ emqa
 #: inc/Handle.php:32
 msgid "Delete draft"
-msgstr "Obriši skicu"
+msgstr "Smazat koncept"
 
+# @ emqa
 #: inc/Handle.php:39
 msgid "Answer content is empty"
-msgstr ""
+msgstr "Obsah odpovědi je prázdný"
 
+# @ emqa
 #: inc/Handle.php:42
 msgid "Question is empty"
-msgstr ""
+msgstr "Otázka chybí"
 
+# @ emqa
 #: inc/Handle.php:46 inc/Handle.php:432
 msgid "You do not have permission to submit question."
-msgstr "Nemate dozvolu za slanje odgovora. "
+msgstr "Nemáte práva pro položení dotazu."
 
+# @ emqa
 #: inc/Handle.php:50 inc/Handle.php:218 inc/Handle.php:300
 msgid "Missing email information"
-msgstr "Nedostaje e-mail "
+msgstr "Chybí email"
 
+# @ emqa
 #: inc/Handle.php:54 inc/Handle.php:222 inc/Handle.php:305
 msgid "Missing name information"
-msgstr "Nedostaje ime"
+msgstr "Chybí jméno"
 
+# @ emqa
 #: inc/Handle.php:58 inc/Handle.php:451
 msgid "Captcha is not correct"
-msgstr "Captcha nije pravilna"
+msgstr "Captcha není správně"
 
+# @ emqa
 #: inc/Handle.php:77
 msgid "Answer for "
-msgstr "Odgovor za "
+msgstr "Odpověď pro"
 
+# @ emqa
 #: inc/Handle.php:139
 msgid "You do not have permission to edit answer."
-msgstr ""
+msgstr "Nemáte práva k odpovědi."
 
+# @ emqa
 #: inc/Handle.php:143 inc/Handle.php:520 inc/Posts/Question.php:473
 msgid "Hello, Are you cheating huh?"
-msgstr "Halo, varaš li?"
+msgstr "Dobrý den, nepodvádíte náhodou?"
 
 #: inc/Handle.php:148
 msgid "You must enter a valid answer content."
-msgstr ""
+msgstr "Musíte vložit validní obsah odpovědi"
 
+# @ emqa
 #: inc/Handle.php:194
 msgid "You can't post comment"
-msgstr "Ne možete objaviti komentar"
+msgstr "Nemůžete vkládat komentáře"
 
+# @ emqa
 #: inc/Handle.php:197
 msgid "Missing post id."
-msgstr ""
+msgstr "Chybí ID příspěvku"
 
+# @ emqa
 #: inc/Handle.php:203
 msgid "Please enter your comment content"
-msgstr "Molim, unesite sadržaj komentara"
+msgstr "Zadejte obsah komentáře"
 
 #: inc/Handle.php:249
 msgid "Comment is missing"
-msgstr ""
+msgstr "Poznámka chybí"
 
+# @ emqa
 #: inc/Handle.php:264
 msgid "Comment content must not be empty."
-msgstr "Sadržaj komentara ne smije biti prazan."
+msgstr "Obsah komentáře nesmí být prázdný."
 
+# @ emqa
 #: inc/Handle.php:294 inc/Handle.php:471
 msgid "You must enter a valid question title."
-msgstr ""
+msgstr "Zadejte nadpis dotazu"
 
+# @ emqa
 #: inc/Handle.php:384
 msgid "User Registration was disabled."
-msgstr "Registracija korisnika je onemogućena."
+msgstr "Registrace uživatelů byla zakázána."
 
+# @ emqa
 #: inc/Handle.php:387
 msgid "This email is already registered, please choose another one."
-msgstr "Ovaj e-mail već je registriran, molimo odaberite drugi."
+msgstr "Tento email již byl zaregistrován, zadejte prosím jiný."
 
+# @ emqa
 #: inc/Handle.php:390
 msgid "This username is already registered. Please use another one."
-msgstr "Ovo korisničko ime već je registrirano. Molimo odaberite drugo."
+msgstr "Toto uživatelské jméno již bylo registrováno. Prosíme, zvolte si jiné."
 
 #: inc/Handle.php:444
 msgid "Your question is waiting moderator."
-msgstr ""
+msgstr "Váš dotaz čeká na schválení moderátorem"
 
+# @ emqa
 #: inc/Handle.php:466 inc/Status.php:347
-#, fuzzy
 msgid "You do not have permission to edit question"
-msgstr "Nemate dozvolu za slanje odgovora. "
+msgstr "Nemáte práva pro úpravu dotazu."
 
+# @ emqa
 #: inc/Helptab.php:47
 msgid "Overview"
-msgstr "Pregled"
+msgstr "Přehled"
 
+# @ emqa
 #: inc/Helptab.php:48
-msgid "DW Question Answer Plugin"
-msgstr "DW Pitanje Odgovor dodatak"
+msgid "EMO Questalk  Plugin"
+msgstr "Plugin em Otázky & Odpovědi"
 
+# @ emqa
 #: inc/Helptab.php:49
 msgid ""
-"DW Question Answer is a WordPress Plugin which helps you build a Question & "
+"EMO Questalk  is a WordPress Plugin which helps you build a Question & "
 "Answer system on your WordPress sites. The plugin is easy to install and set "
 "up. Let start building up your community with this WordPress question & "
 "answer system."
 msgstr ""
-"DW Question Answer is a WordPress Plugin which helps you build a Question & "
-"Answer system on your WordPress sites. The plugin is easy to install and set "
-"up. Let start building up your community with this WordPress question & "
-"answer system."
+"em Otázky & Odpovědi je WordPressový plugin, který vám umožní vytvořit "
+"systém otázek a odpovědí na vaší prezentaci. Plugin je snadné nainstalovat a "
+"nastavit. Začněte budovat svou komunitu s tímto systémem pro otázky a "
+"odpovědi."
 
+# @ emqa
 #: inc/Helptab.php:52
 msgid "Setup Question List Page"
-msgstr "Postavke stranice Popis pitanja"
+msgstr "Nastavit stránku se seznamem dotazů"
 
+# @ emqa
 #: inc/Helptab.php:56
 msgid "Setup Ask Question Page"
-msgstr "Postavke stranice Postavi pitanje"
+msgstr "Nastavit stránku pro položení dotazu"
 
+# @ emqa
 #: inc/Helptab.php:60
 msgid "Shortcode"
 msgstr "Shortcode"
 
+# @ emqa
 #: inc/Helptab.php:64
 msgid "Style integration"
-msgstr "Integracija stila"
+msgstr "Integrace stylu"
 
+# @ default
 #: inc/Helptab.php:173
 msgid "For more information:"
-msgstr "Za više informacija:"
+msgstr "Pro více informací:"
 
+# @ default
 #: inc/Helptab.php:174
-msgid "DW Question Answer Guide"
-msgstr "DW Question Answer vodič"
+msgid "EMO Questalk  Guide"
+msgstr "Průvodce po em Otázky & Odpovědi"
 
+# @ default
 #: inc/Helptab.php:175
 msgid "Community"
-msgstr "Zajednica"
+msgstr "Komunita"
 
+# @ default
 #: inc/Helptab.php:176
-msgid "DesignWall Wordpress Themes"
-msgstr "DesignWall Wordpress Themes"
+msgid "Emohelp Wordpress Themes"
+msgstr "Emohelp Wordpress témata"
 
+# @ default
 #: inc/Helptab.php:177
-msgid "DesignWall Wordpress Plugins"
-msgstr "DesignWall Wordpress Plugins"
+msgid "Emohelp Wordpress Plugins"
+msgstr "Emohelp Wordpress pluginy"
 
+# @ emqa
 #: inc/Metaboxes.php:13 templates/content-single-question.php:31
 #: templates/question-submit-form.php:22
 msgid "Status"
-msgstr "Status"
+msgstr "Stav"
 
+# @ emqa
 #: inc/Metaboxes.php:15 inc/Status.php:304
 #: templates/archive-question-filter.php:18
 #: templates/content-single-question.php:32
 msgid "Open"
-msgstr "Otvoreno"
+msgstr "Otevřené"
 
+# @ emqa
 #: inc/Metaboxes.php:16 inc/Status.php:287
 msgid "Pending"
-msgstr "U tijeku"
+msgstr "Neodpovězené"
 
+# @ emqa
 #: inc/Metaboxes.php:17 inc/Status.php:284
 #: templates/archive-question-filter.php:19
 #: templates/content-single-question.php:34
 msgid "Resolved"
-msgstr "Riješeno"
+msgstr "Vyřešeno"
 
+# @ emqa
 #: inc/Metaboxes.php:18 inc/Status.php:290
 msgid "Re-Open"
-msgstr "Reotvoreno"
+msgstr "Znovuotevřené"
 
+# @ emqa
 #: inc/Metaboxes.php:19 inc/Status.php:293
 #: templates/archive-question-filter.php:20
 #: templates/content-single-question.php:33
 msgid "Closed"
-msgstr "Zatvoreno"
+msgstr "Uzavřené"
 
+# @ emqa
 #: inc/Metaboxes.php:25
 msgid "Sticky"
-msgstr "Ljepljivo"
+msgstr "Zvýrazněný"
 
+# @ emqa
 #: inc/Metaboxes.php:29
 msgid "Pin question to top of archive page."
-msgstr "Zalijepi ovo pitanje na vrh stranice arhive. "
+msgstr "Připíchnout dotaz nahoru.."
 
+# @ emqa
 #: inc/Metaboxes.php:45 inc/Posts/Answer.php:225 inc/Posts/Answer.php:227
 #: inc/Settings.php:431 templates/archive-question-filter.php:34
 msgid "Answers"
-msgstr "Odgovori"
+msgstr "Odpovědi"
 
+# @ emqa
 #: inc/Metaboxes.php:65
 msgid "Question Meta Data"
-msgstr "Pitanje Meta podatci"
+msgstr "Metadata dotazu"
 
+# @ emqa
 #: inc/Notifications.php:29
 msgid "A new question was posted on {site_name}"
-msgstr "Postavljeno je novo pitanje na {ime_stranice}"
+msgstr "Nový dotaz byl zaslán na {site_name}"
 
+# @ emqa
 #: inc/Notifications.php:132
 msgid "You have a new answer for your followed question"
-msgstr "Imate novi odgovor na pitanje koje slijedite"
+msgstr "Máte novou odpověd na sledovanou otázku"
 
+# @ emqa
 #: inc/Notifications.php:250
 msgid "A new answer for \"{question_title}\" was posted on {site_name}"
-msgstr "Novi odgovor za \"{pitanje_naslov} \" objavljen je na {stranica_ime}"
+msgstr "Nová odpověď pro \"{question_title}\" byl zaslána na {site_name}"
 
+# @ emqa
 #: inc/Notifications.php:334 inc/Notifications.php:380
 msgid "[{site_name}] You have a new comment for question {question_title}"
-msgstr "[{ime_stranice}] Imate novi komentar na pitanje {pitanje_naslov}"
+msgstr "[{site_name}] Máte nový komentář k otázce {question_title}"
 
+# @ emqa
 #: inc/Notifications.php:339 inc/Notifications.php:385
 msgid "[{site_name}] You have a new comment for answer"
-msgstr "[{ime_stranice}] Imate novi komentar na odgovor"
+msgstr "[{site_name}] Máte nový komentář pro odpověď"
 
+# @ emqa
 #: inc/PointerHelper.php:60
-msgid "How to use DW Question Answer"
-msgstr "Kako koristiti DWQA"
+msgid "How to use EMO Questalk "
+msgstr "Jak používat em Otázky & Odpovědi"
 
+# @ emqa
 #: inc/PointerHelper.php:61
-msgid "Documents, Support From DesignWall (help)"
-msgstr "Documents, Support From DesignWall (help)"
+msgid "Documents, Support From Emohelp (help)"
+msgstr "Dokumenty a podpora od Emohelp (nápověda)"
 
+# @ emqa
 #: inc/PointerHelper.php:70
 msgid "Config your support channel"
-msgstr "Config your support channel"
+msgstr "Nastavit kanál s podporou"
 
+# @ emqa
 #: inc/PointerHelper.php:71
 msgid "Change comment settings, and create the Submit question page."
-msgstr "Promijenite postavke komentara i kreirajte stranicu za objavu pitanja."
+msgstr "Upravit nastavení komentářů a vytvořit stránku pro zaslání dotazu."
 
+# @ default
+# @ emqa
 #: inc/Posts/Answer.php:226 inc/Posts/Answer.php:270
 msgid "Answer"
-msgstr "Odgovor"
+msgstr "Odpověď"
 
+# @ emqa
 #: inc/Posts/Answer.php:273
 msgid "In Response To"
-msgstr "Odgovor na"
+msgstr "V reakci na"
 
+# @ emqa
+# @ edd-em-membersip
 #: inc/Posts/Answer.php:317 inc/Posts/Base.php:320 inc/Settings.php:402
 #: inc/Template.php:58 inc/Template.php:163 inc/Template.php:180
 #: templates/content-comment.php:19
 msgid "Edit"
-msgstr "Unesi"
+msgstr "Upravit"
 
+# @ edd-em-membersip
+# @ emqa
 #: inc/Posts/Answer.php:318 inc/Settings.php:403 inc/Template.php:168
 #: inc/Template.php:185 templates/content-comment.php:22
 msgid "Delete"
-msgstr "Izbriši"
+msgstr "Smazat"
 
+# @ edd-em-membersip
+# @ emqa
 #: inc/Posts/Answer.php:319 inc/Posts/Base.php:322
 msgid "View"
-msgstr "Vidi"
+msgstr "Zobrazit"
 
+# @ emqa
 #: inc/Posts/Answer.php:323
 msgid "Submitted"
-msgstr "Dostavljeno"
+msgstr "Odesláno"
 
+# @ emqa
 #: inc/Posts/Answer.php:324
 msgid "on"
-msgstr "on"
+msgstr "na"
 
 #: inc/Posts/Answer.php:359
 msgid "Question ID"
@@ -439,293 +525,353 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
+# @ emqa
 #: inc/Posts/Base.php:5
 msgid "Are you cheating, huh?"
-msgstr "Varaš li, uh?"
+msgstr "Nepodvádíte?"
 
 #: inc/Posts/Base.php:18
 msgid "What "
-msgstr "Što"
+msgstr "Co"
 
+# @ emqa
 #: inc/Posts/Base.php:46
 msgid "You voted for this "
-msgstr "Glasali ste za ovo"
+msgstr "Hlasovali jste pro tuto"
 
+# @ default
 #: inc/Posts/Base.php:242
 #, php-format
 msgid "Posts by %s"
-msgstr "Objavio%s"
+msgstr "Příspěvky od %s"
 
 #: inc/Posts/Base.php:251 inc/Posts/Base.php:255
 #, php-format
-msgid "%s answered <span class=\"dwqa-date\">%s</span> ago"
-msgstr ""
+msgid "%s answered <span class=\"emqa-date\">%s</span> ago"
+msgstr "%s odpověděl(a) <span class=\"emqa-date\">%s</span>"
 
 #: inc/Posts/Base.php:257
 #, php-format
-msgid "%s asked <span class=\"dwqa-date\">%s</span> ago"
-msgstr ""
+msgid "%s asked <span class=\"emqa-date\">%s</span> ago"
+msgstr "%s se zeptal(a) na <span class=\"emqa-date\">%s</span>"
 
+# @ emqa
 #: inc/Posts/Base.php:306
-msgid "DWQA Posts"
-msgstr ""
+msgid "EMQA Posts"
+msgstr "Příspěvky"
 
+# @ emqa
 #: inc/Posts/Base.php:307
-msgid "DWQA Post"
-msgstr ""
+msgid "EMQA Post"
+msgstr "Příspěvek"
 
 #: inc/Posts/Base.php:318
-msgctxt "dwqa"
+msgctxt "EMQA"
 msgid "Add New"
-msgstr ""
+msgstr "Přidat nový"
 
 #: inc/Posts/Base.php:319
-#, fuzzy
 msgid "Add New"
-msgstr "Unesite novu"
+msgstr "Přidat nový"
 
+# @ emqa
 #: inc/Posts/Base.php:321 inc/Status.php:296
 msgid "New"
-msgstr "Novo"
+msgstr "Nový"
 
+# @ emqa
 #: inc/Posts/Base.php:323
 msgid "Search "
-msgstr ""
+msgstr "Hledat"
 
 #: inc/Posts/Base.php:324
 msgid "not found"
-msgstr ""
+msgstr "nenalezeno"
 
+# @ default
 #: inc/Posts/Base.php:325
 msgid "not found in Trash"
-msgstr ""
+msgstr "V koši nebyly nalezené žádné dotazy"
 
+# @ default
 #: inc/Posts/Base.php:326
 msgid "Parent:"
-msgstr ""
+msgstr "Nadřazená kategorie:"
 
+# @ emqa
 #: inc/Posts/Question.php:56 inc/Shortcode.php:138
 #: inc/widgets/Closed_Question.php:49 inc/widgets/Latest_Question.php:42
 #: inc/widgets/Popular_Question.php:43
 msgid "asked by"
-msgstr "pitao"
+msgstr "dotaz od"
 
+# @ emqa
 #: inc/Posts/Question.php:100 inc/Posts/Question.php:102
 #: inc/Posts/Question.php:266 inc/Settings.php:395
 #: templates/archive-question-filter.php:28
 msgid "Questions"
-msgstr ""
+msgstr "Dotaz"
 
+# @ emqa
 #: inc/Posts/Question.php:101
 msgid "Question"
-msgstr "Pitanje"
+msgstr "Dotaz"
 
+# @ default
 #: inc/Posts/Question.php:196
 msgctxt "taxonomy general name"
 msgid "Question Categories"
-msgstr ""
+msgstr "Kategorie dotazů"
 
+# @ emqa
 #: inc/Posts/Question.php:197
 msgctxt "taxonomy singular name"
 msgid "Question Category"
-msgstr ""
+msgstr "Kategorie dotazu"
 
+# @ default
 #: inc/Posts/Question.php:198
 msgid "Search Question Categories"
-msgstr ""
+msgstr "Hledej kategorii dotazů"
 
+# @ default
 #: inc/Posts/Question.php:199
 msgid "All Question Categories"
-msgstr ""
+msgstr "Všechny kategorie dotazů"
 
+# @ emqa
 #: inc/Posts/Question.php:200
 msgid "Parent Question Category"
-msgstr ""
+msgstr "Nadřazená kategorie dotazů"
 
+# @ emqa
 #: inc/Posts/Question.php:201
 msgid "Parent Question Category:"
-msgstr ""
+msgstr "Nadřazená kategorie dotazů:"
 
+# @ emqa
 #: inc/Posts/Question.php:202
 msgid "Edit Question Category"
-msgstr ""
+msgstr "Uprav kategorii dotazů"
 
+# @ emqa
 #: inc/Posts/Question.php:203
 msgid "Update Question Category"
-msgstr ""
+msgstr "Aktualizuj kategorii dotazů"
 
+# @ emqa
 #: inc/Posts/Question.php:204
 msgid "Add New Question Category"
-msgstr ""
+msgstr "Přidej novou kategorii dotazů"
 
+# @ emqa
 #: inc/Posts/Question.php:205
 msgid "New Question Category Name"
-msgstr ""
+msgstr "Nový název kategorie dotazů"
 
+# @ emqa
 #: inc/Posts/Question.php:206
 msgid "Question Category"
-msgstr "Tema pitanja"
+msgstr "Kategorie dotazu"
 
+# @ default
+# @ emqa
 #: inc/Posts/Question.php:225
 msgctxt "taxonomy general name"
 msgid "Question Tags"
-msgstr ""
+msgstr "Štítky dotazů"
 
+# @ default
+# @ emqa
 #: inc/Posts/Question.php:226
 msgctxt "taxonomy singular name"
 msgid "Question Tag"
-msgstr ""
+msgstr "Štítky dotazu"
 
+# @ default
 #: inc/Posts/Question.php:227
 msgid "Search Question Tags"
-msgstr ""
+msgstr "Vyhledat štítek dotazů"
 
+# @ emqa
 #: inc/Posts/Question.php:228
 msgid "Popular Question Tags"
-msgstr ""
+msgstr "Populární štítky dotazů"
 
+# @ default
+# @ emqa
 #: inc/Posts/Question.php:229
 msgid "All Question Tags"
-msgstr ""
+msgstr "Všechny štítky dotazů"
 
+# @ default
 #: inc/Posts/Question.php:232
 msgid "Edit Question Tag"
-msgstr ""
+msgstr "Upravit štítek dotazu"
 
+# @ default
+# @ emqa
 #: inc/Posts/Question.php:233
 msgid "Update Question Tag"
-msgstr ""
+msgstr "Aktualizuj štítek dotazu"
 
+# @ default
 #: inc/Posts/Question.php:234
 msgid "Add New Question Tag"
-msgstr ""
+msgstr "Přidat nový štítek dotazu"
 
+# @ emqa
 #: inc/Posts/Question.php:235
 msgid "New Question Tag Name"
-msgstr ""
+msgstr "Nový název štítku dotazu"
 
+# @ default
 #: inc/Posts/Question.php:236
 msgid "Separate question tags with commas"
-msgstr ""
+msgstr "Oddělte štítky čárkami"
 
+# @ default
 #: inc/Posts/Question.php:237
 msgid "Add or remove question tags"
-msgstr ""
+msgstr "Přidat nebo odebrat štítky"
 
+# @ default
 #: inc/Posts/Question.php:238
 msgid "Choose from the most used question tags"
-msgstr ""
+msgstr "Vyberte z nejpoužívanějších štítků"
 
+# @ default
 #: inc/Posts/Question.php:239
 msgid "No question tags found."
-msgstr ""
+msgstr "Nebyly nalezeny žádné štítky"
 
+# @ default
+# @ emqa
 #: inc/Posts/Question.php:240
 msgid "Question Tags"
-msgstr "Tagovi od pitanja"
+msgstr "Štítky dotazu"
 
+# @ emqa
 #: inc/Posts/Question.php:276
 msgid "Info"
 msgstr "Info"
 
+# @ emqa
 #: inc/Posts/Question.php:287 templates/content-question.php:22
 msgid "answered"
-msgstr "odgovoreno"
+msgstr "odpovězeno"
 
+# @ emqa
 #: inc/Posts/Question.php:288
 msgid "voted"
-msgstr "glasano"
+msgstr "hlasováno"
 
+# @ emqa
 #: inc/Posts/Question.php:289
 msgid "views"
-msgstr "pregledi"
+msgstr "zobrazení"
 
+# @ emqa
 #: inc/Posts/Question.php:410 inc/User.php:266
 msgid "Invalid Post"
-msgstr "Nevaljala objava"
+msgstr "Neplatný příspěvek"
 
+# @ emqa
 #: inc/Posts/Question.php:445
 msgid "Sticky Questions"
-msgstr "Istaknuta pitanja"
+msgstr "Zvýrazněný dotaz"
 
+# @ emqa
 #: inc/Posts/Question.php:479
 msgid "Question is not valid"
-msgstr "Nevažeće pitanje"
+msgstr "Neplatná otázka"
 
+# @ emqa
 #: inc/Posts/Question.php:500
 msgid "Delete Action was failed"
-msgstr "Akcija brisanja nije uspjela"
+msgstr "Odstranění se nezdařilo"
 
+# @ emqa
 #: inc/Posts/Question.php:505
 msgid "You do not have permission to delete this question"
-msgstr "Nemate dozvolu brisati ovo pitanje"
+msgstr "Nemáte práva ke smazání tohoto dotazu"
 
 #: inc/Session.php:68 inc/Session.php:85 inc/Session.php:95 inc/Session.php:118
 msgid "This function should not be called before init."
-msgstr ""
+msgstr "Tato funkce nemůže být volána před"
 
+# @ emqa
 #: inc/Settings.php:8
 msgid "Login required. No anonymous post allowed"
-msgstr "Potrebna je prijava. Anonimnost nije dozvoljena"
+msgstr "Vyžadováno přihlášení"
 
+# @ emqa
 #: inc/Settings.php:20
 msgid "Select Archive Question Page"
-msgstr "Odaberite stranicu Arhiva pitanja"
+msgstr "Vybrat stránku s archivem dotazů"
 
 #: inc/Settings.php:24
 msgid ""
-"A page where displays all questions. The <code>[dwqa-list-questions]</code> "
+"A page where displays all questions. The <code>[EMQA-list-questions]</code> "
 "short code must be on this page."
 msgstr ""
 
+# @ emqa
 #: inc/Settings.php:31
 msgid "hours"
-msgstr "sati"
+msgstr "hodin"
 
+# @ emqa
 #: inc/Settings.php:31
 msgid ""
 "A period of time in which new questions are highlighted and marked as New"
-msgstr "Vrijeme u kome će nova pitanja biti istaknuta i označena kao Nova"
+msgstr "Časové období, po které bude dotaz zvýrazněn a označen jako Nový"
 
+# @ emqa
 #: inc/Settings.php:36
 msgid "days"
-msgstr "dani"
+msgstr "dny"
 
+# @ emqa
 #: inc/Settings.php:36
 msgid ""
 "A Question will be marked as overdue if it passes this period of time, "
 "starting from the time the question was submitted"
 msgstr ""
-"Pitanje će biti označeno kao isteklo ako premaši ovaj vremenski period, "
-"počevši od datuma kada je pitanje objavljeno"
+"Dotaz bude označen jako zastaralý, pokud od zadáni uplyne nastavené časové "
+"období-"
 
+# @ emqa
 #: inc/Settings.php:47
 msgid "Select Submit Question Page"
-msgstr "Odaberi stranicu Objavi pitanje "
+msgstr "Vybrat stránku pro odslání dotazu"
 
 #: inc/Settings.php:52
 msgid ""
-"A page where users can submit questions. The <code>[dwqa-submit-question-"
+"A page where users can submit questions. The <code>[EMQA-submit-question-"
 "form]</code> short code must be on this page."
 msgstr ""
 
+# @ emqa
 #: inc/Settings.php:65
-msgid "Select 404 DWQA Page"
-msgstr "Select 404 DWQA Page"
+msgid "Select 404 EMQA Page"
+msgstr "Vybrat 404 stránku"
 
+# @ emqa
 #: inc/Settings.php:70
 msgid ""
 "This page will be redirected when users without authority click on a private "
 "question. You can customize the message of this page in.If not, a default "
 "404 page will be used."
 msgstr ""
-"Ova stranica će se pojaviti kada korisnici bez dozvole kliknu na privatno "
-"pitanje. Možete preurediti poruku na stranici. Inače će se koristitit zadana "
-"stranica 404."
+"Na tuto stránku budou přesměrováni uživatelé bez dostatečných práv pro "
+"zobrazení soukromých dotazů. Na této stránce můžete upravit zobrazenou "
+"zprávu. Pokud tak neučiníte, použije se výchozí 404 stránka."
 
+# @ emqa
 #: inc/Settings.php:87
 msgid "Upload"
-msgstr "Učitaj"
+msgstr "Nahrát"
 
 #: inc/Settings.php:87
 msgid "Upload or choose a logo to be displayed at the top of the email."
@@ -741,17 +887,19 @@ msgstr ""
 msgid "Enable notification for new question."
 msgstr ""
 
+# @ emqa
 #: inc/Settings.php:131 inc/Settings.php:166 inc/Settings.php:202
 #: inc/Settings.php:238 inc/Settings.php:273 inc/Settings.php:308
 #: inc/Settings.php:343
 msgid "Email subject"
-msgstr "E-mail predmet"
+msgstr "Předmět emailu"
 
+# @ emqa
 #: inc/Settings.php:136 inc/Settings.php:171 inc/Settings.php:207
 #: inc/Settings.php:243 inc/Settings.php:278 inc/Settings.php:313
 #: inc/Settings.php:348
 msgid "Email Content"
-msgstr "E-mail sadržaj"
+msgstr "Obsah emailu"
 
 #: inc/Settings.php:161
 msgid "Enable notification for new answer."
@@ -769,17 +917,20 @@ msgstr ""
 msgid "Enable notification for new comment of answer."
 msgstr ""
 
+# @ emqa
 #: inc/Settings.php:400
 msgid "Read"
-msgstr "Čitaj"
+msgstr "Číst"
 
+# @ emqa
 #: inc/Settings.php:401
 msgid "Post"
-msgstr "Objavi"
+msgstr "Napsat"
 
+# @ emqa
 #: inc/Settings.php:429 inc/Settings.php:465 inc/Settings.php:500
 msgid "Reset Default"
-msgstr "Resetiraj zadano"
+msgstr "Obnovit výchozí"
 
 #: inc/Settings.php:467
 msgid "Comments"
@@ -793,9 +944,10 @@ msgstr ""
 msgid "Enable captcha on single question page."
 msgstr ""
 
+# @ emqa
 #: inc/Settings.php:533
 msgid "Default"
-msgstr ""
+msgstr "Obnovit výchozí"
 
 #: inc/Settings.php:546
 msgid "questions."
@@ -826,15 +978,14 @@ msgid "Show all answers on single question page."
 msgstr ""
 
 #: inc/Settings.php:593
-#, fuzzy
 msgid "Select template for Single Quesiton page"
-msgstr "Captcha na Single Question Page"
+msgstr "Vyberte šablonu pro stránku s jedním dotazem"
 
 #: inc/Settings.php:599
 msgid ""
 "By default, your single.php template file will be used if you do not choose "
 "any template"
-msgstr ""
+msgstr "Jako výchozí se použije šablona single.php, pokud nezvolíte jinak"
 
 #: inc/Settings.php:607
 #, php-format
@@ -845,13 +996,15 @@ msgid ""
 "<code>%s</code>. If you leave these blank the default will be used."
 msgstr ""
 
+# @ emqa
 #: inc/Settings.php:732
 msgid "Plugin Settings"
-msgstr "Postavke dodatka"
+msgstr "Nastavení pluginu"
 
+# @ emqa
 #: inc/Settings.php:732
 msgid "Settings"
-msgstr "Postavke"
+msgstr "Nastavení"
 
 #: inc/Settings.php:768
 msgid "Email Settings"
@@ -873,13 +1026,15 @@ msgstr ""
 msgid "Page Settings"
 msgstr ""
 
+# @ emqa
 #: inc/Settings.php:791
 msgid "Question List Page"
-msgstr "Stranica Popis pitanja"
+msgstr "Stránka se seznamem dotazů"
 
+# @ emqa
 #: inc/Settings.php:799 inc/Settings.php:930
 msgid "Ask Question Page"
-msgstr "Stranica Postavi pitanje "
+msgstr "Stránka s formulářem dotazu"
 
 #: inc/Settings.php:842
 msgid "Question Settings"
@@ -917,9 +1072,10 @@ msgstr ""
 msgid "Single Question Page"
 msgstr ""
 
+# @ emqa
 #: inc/Settings.php:950
 msgid "Permalink Settings"
-msgstr "Permalink postavke"
+msgstr "Nastavení permalinků"
 
 #: inc/Settings.php:957
 msgid "Question Base"
@@ -933,21 +1089,25 @@ msgstr ""
 msgid "Question Tag Base"
 msgstr ""
 
+# @ emqa
 #: inc/Settings.php:1042
 msgid "From Email"
-msgstr "Sa e-maila"
+msgstr "Od (email)"
 
+# @ emqa
 #: inc/Settings.php:1110 inc/Settings.php:1117
 msgid "Group Permission"
-msgstr "Grupna dozvola"
+msgstr "Oprávnění skupiny"
 
+# @ emqa
 #: inc/Settings.php:1145
-msgid "DWQA Settings"
-msgstr "DWQA Postavke"
+msgid "EMQA Settings"
+msgstr "Nastavení EMQA"
 
+# @ emqa
 #: inc/Settings.php:1149
 msgid "General"
-msgstr "Općenito"
+msgstr "Obecné"
 
 #: inc/Settings.php:1150
 msgid "Emails"
@@ -959,15 +1119,16 @@ msgstr ""
 
 #: inc/Settings.php:1152
 msgid "Licenses"
-msgstr ""
+msgstr "Licence"
 
 #: inc/Settings.php:1166
 msgid "Email settings"
 msgstr ""
 
+# @ emqa
 #: inc/Settings.php:1168
 msgid "Email Logo"
-msgstr "E-mail logo"
+msgstr "Logo emailu"
 
 #: inc/Settings.php:1182
 msgid "New Question Notifications (to Admin)"
@@ -997,13 +1158,14 @@ msgstr ""
 msgid "New Comment to Answer Notifications (to Admin)"
 msgstr ""
 
+# @ emqa
 #: inc/Settings.php:1314
 msgid "Save all changes"
-msgstr "Spremi sve promjene"
+msgstr "Uložit změny"
 
 #: inc/Settings.php:1328
 #, php-format
-msgid "Manage <a href=\"%s\">DWQA Extensions</a> license keys"
+msgid "Manage <a href=\"%s\">EMQA Extensions</a> license keys"
 msgstr ""
 
 #: inc/Settings.php:1346 inc/Settings.php:1351 inc/Settings.php:1356
@@ -1011,208 +1173,245 @@ msgstr ""
 msgid "Forward to"
 msgstr ""
 
+# @ emqa
 #: inc/Settings.php:1366
 msgid "Cc"
-msgstr "Cc"
+msgstr "Kopie"
 
+# @ emqa
 #: inc/Settings.php:1371
 msgid "Bcc"
-msgstr "Bcc"
+msgstr "Skrytá kopie"
 
+# @ emqa
 #: inc/Settings.php:1376
 msgid "This address will be used as the sender of the outgoing emails."
-msgstr "Ova adresa koristititi će se kao pošiljatelj za odlaznu poštu"
+msgstr "Tato adresa bude použita jako odesílatel odchozích emailů"
 
 #: inc/Settings.php:1382
 msgid "Send a copy of every email to admin."
 msgstr ""
 
+# @ emqa
 #: inc/Shortcode.php:115 inc/widgets/Popular_Question.php:21
 msgid "Popular Questions"
-msgstr "Popularna pitanja"
+msgstr "Populární dotazy"
 
+# @ emqa
 #: inc/Shortcode.php:152
 msgid "Latest Answers"
-msgstr "Novi odgovori"
+msgstr "Poslední odpovědi"
 
+# @ emqa
 #: inc/Shortcode.php:178
 msgid "Answer at"
-msgstr "Odgovorio"
+msgstr "Odpověď na"
 
+# @ emqa
 #: inc/Shortcode.php:178
 msgid "Link to"
-msgstr "Link za"
+msgstr "Link k"
 
+# @ emqa
 #: inc/Shortcode.php:206
 #, php-format
 msgid "%d person who is following this question"
 msgid_plural "%d people who are following this question"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%d člověk sledujících tento dotaz"
+msgstr[1] "%d lidé sledující tento dotaz"
+msgstr[2] "%d lidí sledujících tento dotaz"
 
 #: inc/Shortcode.php:236
 msgid "Question List"
 msgstr ""
 
+# @ emqa
 #: inc/Status.php:300
 msgid "Answered"
-msgstr "Odgovoreno"
+msgstr "Odpovězen"
 
+# @ emqa
 #: inc/Status.php:324
 msgid "Missing post ID"
-msgstr "Nedostaje ID objave"
+msgstr "Chybí ID příspěvku"
 
+# @ emqa
 #: inc/Status.php:337
 msgid "Post does not exist"
-msgstr "Objava ne postoji"
+msgstr "Příspěvek neexistuje"
 
+# @ emqa
 #: inc/Status.php:342
 msgid "Invalid post status"
-msgstr "Nevažeći post status "
+msgstr "Neplatný stav příspěvku"
 
+# @ default
 #: inc/Template.php:15 templates/content-edit.php:44
 #: templates/question-submit-form.php:46
 msgid "Tag"
-msgstr ""
+msgstr "Štítek"
 
+# @ emqa
 #: inc/Template.php:15 inc/Template.php:20 templates/content-edit.php:29
 #: templates/question-submit-form.php:32
 msgid "Category"
-msgstr "tema"
+msgstr "Kategorie dotazu"
 
 #: inc/Template.php:43
 msgid "Showing search results for"
-msgstr ""
+msgstr "Výsledek hledání pro:"
 
 #: inc/Template.php:78
 msgid "What do you want to know?"
-msgstr ""
+msgstr "Začněte psát hledaný výraz. Hledání začne ihned ..."
 
 #: inc/Template.php:157
 msgid "Subscribe"
-msgstr ""
+msgstr "Odběr"
 
+# @ default
 #: inc/Template.php:445
 msgid "Email"
-msgstr "E-mail"
+msgstr "Email"
 
 #: inc/Template.php:447
 msgid "Name"
 msgstr ""
 
+# @ default
 #: inc/Template.php:449
 #, php-format
 msgid "Required fields are marked %s"
-msgstr "Obavezna polja su označena %s"
+msgstr "Povinné položky jsou označeny %s"
 
+# @ emqa
 #: inc/Template.php:461
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr "Morate biti<a href=\"%s\">prijavljeni</a> za komentiranje."
+msgstr "Musíte být <a href=\"%s\">přihlášen</a> k napsání komentáře."
 
+# @ emqa
 #: inc/Template.php:464
 #, php-format
 msgid ""
 "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
 "and attributes: %s"
 msgstr ""
-"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
-"and attributes: %s"
+"Můžete použít tyto <abbr title=\"HyperText Markup Language\">HTML</abbr> "
+"tagy a atributy: %s"
 
+# @ emqa
 #: inc/Template.php:467
 msgid "Leave a Reply"
-msgstr "Odgovori"
+msgstr "Přidejte odpověď"
 
+# @ emqa
 #: inc/Template.php:468
 #, php-format
 msgid "Leave a Reply to %s"
-msgstr "Odgovor za %s"
+msgstr "Přidejte odpověď k %s"
 
+# @ emqa
 #: inc/Template.php:469
 msgid "Cancel reply"
-msgstr "Otkaži odgovor"
+msgstr "Zrušit odpověď"
 
+# @ emqa
 #: inc/Template.php:470
 msgid "Post Comment"
-msgstr "Objavi komentar"
+msgstr "Odeslat komentář"
 
+# @ emqa
 #: inc/Template.php:645
 msgid "Sticky Question"
-msgstr "Istaknuto pitanje"
+msgstr "Zvýrazněný dotaz"
 
+# @ emqa
 #: inc/Template.php:659
 msgid "Ask a question"
-msgstr "Postavite pitanje"
+msgstr "Položit dotaz"
 
+# @ emqa
 #: inc/Template.php:661
-#, fuzzy
 msgid "Login to ask a question"
-msgstr "Prijava za objavu pitanja"
+msgstr "Přihlašte se k položení vašeho dotazu"
 
+# @ emqa
 #: inc/Template.php:1128
 msgid "Choose as the best answer"
-msgstr "Odaberi kao najbolji odgovor"
+msgstr "Vyberte nejlepší odpověď"
 
 #: inc/Updater.php:97
 msgid "License Key"
-msgstr ""
+msgstr "Licenční klíč"
 
+# @ emqa
 #: inc/Updater.php:122
 msgid "Activate"
-msgstr ""
+msgstr "Aktivuj"
 
 #: inc/Updater.php:176
 msgid "Plugin was activated"
-msgstr ""
+msgstr "Plugin byl aktivován"
 
+# @ emqa
 #: inc/User.php:230
 msgid "Staff"
-msgstr "Član DO tima "
+msgstr "Personál"
 
+# @ default
 #: inc/Walker/Category.php:20 inc/Walker/Tag.php:20
 #, php-format
 msgid "View all posts filed under %s"
-msgstr "Vidi sve objave unutar %s"
+msgstr "Zobrazit všechny příspěvky zařazené pod %s"
 
+# @ default
 #: inc/Walker/Category.php:35 inc/Walker/Tag.php:35
 #, php-format
 msgid "Feed for all posts filed under %s"
-msgstr "Feed za sve postove dokumentirane unutar %s"
+msgstr "Feed pro všechny zařazené pod %s"
 
+# @ emqa
 #: inc/widgets/Closed_Question.php:11
 msgid "Show a list of questions marked as closed."
-msgstr ""
+msgstr "Zobrazit seznam uzavřených dotazů"
 
+# @ emqa
 #: inc/widgets/Closed_Question.php:12
-msgid "DWQA Closed Questions"
-msgstr "DWQA Zatvorena pitanja"
+msgid "EMQA Closed Questions"
+msgstr "Uzavřené dotazy"
 
+# @ emqa
 #: inc/widgets/Closed_Question.php:18
 msgid "Closed Questions"
-msgstr "Zatvorena pitanja"
+msgstr "Uzavřené dotazy"
 
+# @ default
 #: inc/widgets/Closed_Question.php:72 inc/widgets/Latest_Question.php:71
 #: inc/widgets/Popular_Question.php:66 inc/widgets/Related_Question.php:48
 msgid "Widget title"
-msgstr "Naslov widgeta"
+msgstr "Nadpis widgetu"
 
+# @ default
 #: inc/widgets/Closed_Question.php:75 inc/widgets/Latest_Question.php:74
 #: inc/widgets/Popular_Question.php:69 inc/widgets/Related_Question.php:51
 msgid "Number of posts"
-msgstr "Broj objava"
+msgstr "Počet příspěvků"
 
+# @ emqa
 #: inc/widgets/Latest_Question.php:10
 msgid "Show a list of latest questions."
-msgstr ""
+msgstr "Zobrazit seznam posledních dotazů"
 
+# @ emqa
 #: inc/widgets/Latest_Question.php:11
-msgid "DWQA Latest Questions"
-msgstr "DWQA Nova pitanja"
+msgid "EMQA Latest Questions"
+msgstr "Poslední dotazy"
 
+# @ emqa
 #: inc/widgets/Latest_Question.php:17
 msgid "Latest Questions"
-msgstr "Nova pitanja"
+msgstr "Poslední dotazy"
 
 #: inc/widgets/Latest_Question.php:44
 msgid "ago"
@@ -1222,23 +1421,27 @@ msgstr ""
 msgid "Show question date"
 msgstr ""
 
+# @ emqa
 #: inc/widgets/Popular_Question.php:13
 msgid "Show a list of popular questions."
-msgstr ""
+msgstr "Zobrazit seznam dotazů seřazený podle počtu zobrazení."
 
+# @ emqa
 #: inc/widgets/Popular_Question.php:15
-msgid "DWQA Popular Questions"
-msgstr "DWQA Popularna pitanja"
+msgid "EMQA Popular Questions"
+msgstr "Oblíbené dotazy"
 
+# @ emqa
 #: inc/widgets/Related_Question.php:11
 msgid ""
 "Show a list of questions that related to a question. Just show in single "
 "question page"
-msgstr "Pokaži popis pitanja u vezi s pitanjem. Pokaži u single question page."
+msgstr "Zobrazit seznam dotazů podobných tomuto."
 
+# @ emqa
 #: inc/widgets/Related_Question.php:12
-msgid "DWQA Related Questions"
-msgstr "DWQA Povezana pitanja"
+msgid "EMQA Related Questions"
+msgstr "Podobné dotazy"
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:181
 #, php-format
@@ -1255,21 +1458,25 @@ msgid ""
 "\">update now</a>."
 msgstr ""
 
+# @ emqa
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:326
 msgid "You do not have permission to install plugin updates"
-msgstr ""
+msgstr "Nemáte dostatečná práva k instalaci update pluginu"
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:326
 msgid "Error"
-msgstr ""
+msgstr "Chyba"
 
+# @ default
+# @ emqa
 #: templates/answer-submit-form.php:12
 msgid "Your Answer"
-msgstr ""
+msgstr "Vaše odpověď"
 
+# @ emqa
 #: templates/answer-submit-form.php:21 templates/question-submit-form.php:52
 msgid "Your Email"
-msgstr ""
+msgstr "Váš email *"
 
 #: templates/answer-submit-form.php:26 templates/question-submit-form.php:57
 msgid "Your Name"
@@ -1277,103 +1484,119 @@ msgstr ""
 
 #: templates/answer-submit-form.php:33 templates/question-submit-form.php:24
 msgid "Who can see this?"
-msgstr ""
+msgstr "Kdo to může vidět ?"
 
+# @ emqa
 #: templates/answer-submit-form.php:34 templates/question-submit-form.php:25
 msgid "Public"
-msgstr "Javno"
+msgstr "Veřejné"
 
 #: templates/answer-submit-form.php:35 templates/question-submit-form.php:26
 msgid "Only Me &amp; Admin"
-msgstr ""
+msgstr "Pouze já &amp; Admin"
 
+# @ emqa
 #: templates/answer-submit-form.php:39 templates/question-submit-form.php:65
 msgid "Submit"
-msgstr ""
+msgstr "Odeslat"
 
+# @ emqa
 #: templates/answers.php:12
 #, php-format
 msgid "%s Answers"
-msgstr ""
+msgstr "%s Odpovědi"
 
 #: templates/archive-question-filter.php:14
 msgid "Filter:"
-msgstr ""
+msgstr "Filtr:"
 
+# @ emqa
 #: templates/archive-question-filter.php:16
 msgid "All"
-msgstr "Sve"
+msgstr "Všechny"
 
+# @ emqa
 #: templates/archive-question-filter.php:22
 msgid "Unanswered"
-msgstr ""
+msgstr "Neodpovězeno"
 
+# @ emqa
 #: templates/archive-question-filter.php:24
 msgid "My questions"
-msgstr ""
+msgstr "Mé otázky"
 
 #: templates/archive-question-filter.php:25
 msgid "My subscribes"
-msgstr ""
+msgstr "Mé odběry"
 
 #: templates/archive-question-filter.php:29
 msgid "Subscribes"
-msgstr ""
+msgstr "Odběry"
 
+# @ emqa
 #: templates/archive-question-filter.php:32
 msgid "Sort by"
-msgstr ""
+msgstr "Třídit dle"
 
+# @ edd-em-membersip
+# @ emqa
 #: templates/archive-question-filter.php:33
 msgid "Views"
-msgstr ""
+msgstr "Zobrazit"
 
+# @ emqa
 #: templates/archive-question-filter.php:35
 msgid "Votes"
-msgstr ""
+msgstr "Hlasy"
 
+# @ emqa
 #: templates/archive-question.php:28
 msgid "Ask Question"
-msgstr "Dostavi pitanje"
+msgstr "Položit dotaz"
 
 #: templates/captcha-form.php:20
 msgid "Enter the result"
-msgstr ""
+msgstr "Vlož výsledek"
 
 #: templates/content-comment.php:16
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid "replied %s ago"
-msgstr ""
+msgstr "odpovězeno před %s"
 
 #: templates/content-edit.php:21 templates/question-submit-form.php:13
 msgid "Title"
-msgstr ""
+msgstr "Titulek"
 
+# @ emqa
 #: templates/content-edit.php:36 templates/question-submit-form.php:38
 msgid "Select question category"
-msgstr "Odaberite temu "
+msgstr "Vyberte kategorii"
 
+# @ emqa
 #: templates/content-edit.php:50
 msgid "Save Changes"
-msgstr ""
+msgstr "Uložit změny"
 
+# @ emqa
 #: templates/content-none.php:10
 msgid "You do not have permission to view questions"
-msgstr "Nemate dozvolu vidjeti pitanja"
+msgstr "Nemáte práva k zobrazení dotazů"
 
+# @ emqa
 #: templates/content-none.php:12
 msgid "Sorry, but nothing matched your filter"
-msgstr ""
+msgstr "Nic k zobrazení."
 
+# @ emqa
 #: templates/content-question.php:18
 msgid "asked"
-msgstr "pitao"
+msgstr "dotaz"
 
 #: templates/content-question.php:25
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s %s ago</span>"
-msgstr ""
+msgstr "<span><a href=\"%s\">%s%s</a> %s před %s</span>"
 
 #: templates/content-question.php:26 templates/content-single-answer.php:25
 msgid "&nbsp;&bull;&nbsp;"
@@ -1382,27 +1605,29 @@ msgstr ""
 #: templates/content-question.php:31
 #, php-format
 msgid "<strong>%1$s</strong> views"
-msgstr ""
+msgstr "<strong>%1$s</strong> shlédnutí"
 
 #: templates/content-question.php:35
 #, php-format
 msgid "<strong>%1$s</strong> answers"
-msgstr ""
+msgstr "<strong>%1$s</strong> odpovědí"
 
 #: templates/content-question.php:39
 #, php-format
 msgid "<strong>%1$s</strong> votes"
-msgstr ""
+msgstr "<strong>%1$s</strong> hlasování"
 
+# @ emqa
 #: templates/content-single-answer.php:12
 #: templates/content-single-question.php:14
 msgid "Vote Up"
-msgstr "Glasaj za"
+msgstr "Palec nahoru"
 
+# @ emqa
 #: templates/content-single-answer.php:13
 #: templates/content-single-question.php:15
 msgid "Vote Down"
-msgstr "Glasaj protiv"
+msgstr "Palec dolů"
 
 #: templates/content-single-answer.php:17
 #: templates/content-single-answer.php:19
@@ -1412,38 +1637,43 @@ msgstr ""
 #: templates/content-single-answer.php:23
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s answered %s ago</span>"
-msgstr ""
+msgstr "<span><a href=\"%s\">%s%s</a> %s odpověděl před %s</span>"
 
+# @ emqa
 #: templates/content-single-answer.php:26
 msgid "Private"
-msgstr "Privatno"
+msgstr "Soukromé"
 
 #: templates/content-single-question.php:19
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s asked %s ago</span>"
-msgstr ""
+msgstr "<span><a href=\"%s\">%s%s</a> %s zeptal se před %s</span>"
 
+# @ default
+# @ emqa
 #: templates/content-single-question.php:25
 msgid "Question Tags: "
-msgstr ""
+msgstr "Štítky dotazu:"
 
+# @ emqa
 #: templates/content-single-question.php:29
 msgid "This question is:"
-msgstr ""
+msgstr "Tento dotaz je:"
 
+# @ emqa
 #: templates/question-submit-form.php:69
 msgid "You do not have permission to submit a question"
-msgstr "Nemate dozvolu za slanje odgovora. "
+msgstr "Nemáte oprávnění k položení dotazu."
 
 #: upgrades/upgrades.php:25
 #, php-format
 msgid ""
-"DW Question Answer needs to upgrade the database, click %shere%s to start "
+"EMO Questalk  needs to upgrade the database, click %shere%s to start "
 "the upgrade."
 msgstr ""
 
 #: upgrades/upgrades.php:33
-msgid "DWQA Upgrade"
+msgid "EMQA Upgrade"
 msgstr ""
 
 #: upgrades/upgrades.php:40
@@ -1452,755 +1682,735 @@ msgid ""
 "minutes. You will be automatically redirected when the upgrade is finished..."
 msgstr ""
 
+# @ emqa
 #: upgrades/upgrades.php:130
 msgid "You do not have permission to do this task"
-msgstr ""
+msgstr "Nemáte oprávnění k této akci"
 
 #: upgrades/upgrades.php:147
 msgid "Just do it.."
-msgstr ""
+msgstr "Právě to udělej"
 
 #: upgrades/upgrades.php:155
 #, php-format
 msgid "Move to next step %d"
-msgstr ""
+msgstr "Jdi na další krok %d"
 
 #: upgrades/upgrades.php:172
 msgid "Upgrade process is done"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "DW Question Answer"
+msgid "EMO Questalk "
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"A WordPress plugin was make by DesignWall.com to build an Question Answer "
+"A WordPress plugin was make by Emohelp.com to build an Question Answer "
 "system for support, asking and comunitcate with your customer"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "DesignWall"
+msgid "Emohelp"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://www.designwall.com"
+msgid "http://www.Emohelp.com"
 msgstr ""
 
+# @ emqa
 #~ msgid "Next"
-#~ msgstr "Sljedeće"
+#~ msgstr "Další"
 
+# @ emqa
 #~ msgid "Prev"
-#~ msgstr "Prethodno"
+#~ msgstr "Předchozí"
 
+# @ emqa
 #~ msgid "Please enter your question"
-#~ msgstr "Molimo, unesite vaše pitanje"
+#~ msgstr "Prosím zadejte váš dotaz"
 
+# @ emqa
 #~ msgid "Your question must be at least 2 characters in length"
-#~ msgstr "Vaše pitanje mora imati barem 2 znaka"
+#~ msgstr "Váš dotaz musí být minimálně 2 znaky dlouhý"
 
+# @ emqa
 #~ msgid "Enter a valid email address"
-#~ msgstr "Upišite valjanu e-mail adresu"
+#~ msgstr "Zadejte platný email"
 
+# @ emqa
 #~ msgid "Enter a question title"
-#~ msgstr "Unesite naslov pitanja - pitanje ukratko s ključnim pojmovima"
+#~ msgstr "Zadejte nadpis dotazu"
 
+# @ emqa
 #~ msgid "Please add your name"
-#~ msgstr "Molimo, unesite vaše ime"
+#~ msgstr "Zadejte vaše jméno"
 
+# @ emqa
 #~ msgid "Please enter your answer"
-#~ msgstr "Molimo, unesite vaš odgovor"
+#~ msgstr "Zadejte vaši odpověď"
 
+# @ emqa
 #~ msgid "Comment must have more than 2 characters"
-#~ msgstr "Komentar mora imati više od 2 znaka"
+#~ msgstr "Komentář musí být delší než 2 znaky"
 
+# @ emqa
 #~ msgid "Not found! Try another keyword."
-#~ msgstr "Nije pronađeno! Pokušajte drugu ključnu riječ."
+#~ msgstr "Nenalezeno. Zkuste jiné klíčové slovo."
 
+# @ emqa
 #~ msgid "Or press <strong>ENTER</strong> to get more questions"
-#~ msgstr "Ili pritisnite <strong>ENTER</strong>za više pitanja"
+#~ msgstr "Nebo zmáčkněte <strong>ENTER</strong> k zobrazení více dotazů"
 
+# @ emqa
 #~ msgid "Update"
-#~ msgstr "Obnovi"
+#~ msgstr "Aktualizace"
 
+# @ emqa
 #~ msgid "Cancel"
-#~ msgstr "Otkaži"
+#~ msgstr "Zrušit"
 
+# @ emqa
 #~ msgid "Do you want to delete this comment?"
-#~ msgstr "Želite li izbrisati ovaj komentar?"
+#~ msgstr "Chcete smazat tento komentář?"
 
+# @ emqa
 #~ msgid "Do you want to delete this answer?"
-#~ msgstr "Želite li izbrisati ovaj odgovor?"
+#~ msgstr "Chcete smazat tuto odpověď?"
 
+# @ emqa
 #~ msgid "Do you want to update this answer?"
-#~ msgstr "Želite obnoviti ovaj odgovor?"
+#~ msgstr "Chcete aktualizovat tuto odpověď?"
 
+# @ emqa
 #~ msgid "Do you want to report this answer?"
-#~ msgstr "Želite li prijaviti ovaj odgovor?"
+#~ msgstr "Chcete nahlásit tuto odpověď?"
 
+# @ emqa
 #~ msgid "Report"
-#~ msgstr "Prijavi"
+#~ msgstr "Nahlásit"
 
+# @ emqa
 #~ msgid "Undo"
-#~ msgstr "Vrati"
+#~ msgstr "Zpět"
 
+# @ emqa
 #~ msgid ""
 #~ "This answer will be marked as spam and hidden. Do you want to flag it?"
 #~ msgstr ""
-#~ "Ovaj odgovor biti će označen kao spam ili skriven. Želite li ga označiti?"
+#~ "Tato odpověď bude označena jako spam a skryta. Chcete ji tak označit?"
 
+# @ emqa
 #~ msgid "This answer was flagged as spam. Do you want to show it"
-#~ msgstr "Ovaj je odgovor označen kao spam. Želite ga pokazati?"
+#~ msgstr "Tato odpověď byla označena jako spam. Chcete ji zobrazit"
 
+# @ emqa
 #~ msgid "This answer was flagged as spam"
-#~ msgstr "Ovaj odgovor označen je kao spam"
+#~ msgstr "Tato odpověď byla označena jako spam"
 
+# @ emqa
 #~ msgid "hide"
-#~ msgstr "sakrij"
+#~ msgstr "schovat"
 
+# @ emqa
 #~ msgid "show"
-#~ msgstr "pokaži"
+#~ msgstr "zobrazit"
 
+# @ emqa
 #~ msgid "Follow This Question"
-#~ msgstr "Slijedi ovo pitanje"
+#~ msgstr "Sledovat tento dotaz"
 
+# @ emqa
 #~ msgid "Unfollow This Question"
-#~ msgstr "Prestani slijediti ovo pitanje"
+#~ msgstr "Zrušit sledování tohoto dotazu"
 
+# @ emqa
 #~ msgid "Pin this question to top"
-#~ msgstr "Zalijepi ovo pitanje na vrh "
+#~ msgstr "Připíchnout tento dotaz nahoru"
 
+# @ emqa
 #~ msgid "Unpin this question from top"
-#~ msgstr "Odlijepi ovo pitanje s vrha"
+#~ msgstr "Odpíchnout tento dotaz z vrchu"
 
+# @ emqa
 #~ msgid "Do you want to delete this question?"
-#~ msgstr "Želite li izbrisati ovo pitanje?"
+#~ msgstr "Chcete smazat tento dotaz?"
 
-#~ msgid "Publish"
-#~ msgstr "Objavi"
-
-#~ msgid "Everyone can see"
-#~ msgstr "Svatko može vidjeti"
-
-#~ msgid "Only Author and Administrator can see"
-#~ msgstr "Samo autor i administrator mogu vidjeti"
-
-#~ msgid "Sorry, but nothing matched your filter. "
-#~ msgstr "Žao nam je ali ništa ne odgovara odabranom filteru."
-
-#~ msgid "You can ask question"
-#~ msgstr "Možete postaviti pitanje"
-
-#~ msgid "here"
-#~ msgstr "ovdje"
-
-#~ msgid "Please"
-#~ msgstr "Molimo"
-
-#~ msgid "Login"
-#~ msgstr "Prijavite se"
-
-#~ msgid " or"
-#~ msgstr "ili"
-
-#~ msgid " to submit question."
-#~ msgstr "za dostavu pitanja."
-
-#~ msgid "Search query is empty"
-#~ msgstr "Upit za pretragu je prazan"
-
+# @ emqa
 #~ msgid "A page where displays all questions"
-#~ msgstr "Stranica na kojoj se prikazuju sva pitanja"
+#~ msgstr "Stránka, kde se zobrazí všechny dotazy"
 
+# @ emqa
 #~ msgid "A page where users can submit questions."
-#~ msgstr "Stranica gdje korisnici mogu objaviti pitanja."
+#~ msgstr "Stránka, kde mohou návštěvníci odeslat své dotazy."
 
+# @ emqa
 #~ msgid "Upload or choose a logo to be displayed at the top of the email"
-#~ msgstr "Učitaj ili odaberi logo koji će se prikazivati na vrhu e-maila"
+#~ msgstr "Nahrát nebo vybrat logo, které se zobrazí v zápatí emailu."
 
+# @ emqa
 #~ msgid "Enable notification for new question"
-#~ msgstr "Omogući obavijest za novo pitanje"
+#~ msgstr "Povolit upozornění na nové dotazy"
 
+# @ emqa
 #~ msgid "Enable notification for new answer"
-#~ msgstr "Omogući obavijest o novom pitanju "
+#~ msgstr "Povolit upozornění na novou odpověď"
 
-#, fuzzy
 #~ msgid "Enable notification for new answer (to Followers )"
-#~ msgstr "Obavijest o novom odgovoru (sljedbenicima)"
+#~ msgstr ""
+#~ "Povolit upozornění na novou odpověď (návštěvníkům, kteří sledují dotaz)"
 
+# @ emqa
 #~ msgid "Enable notification for new comment of question"
-#~ msgstr "Omogući obavijest za novi komentar na pitanje"
+#~ msgstr "Povolit upozornění na nový komentář nebo dotaz"
 
+# @ emqa
 #~ msgid "Enable notification for new comment of answer"
-#~ msgstr "Omogući obavijest za novi komentar na odgovor"
+#~ msgstr "Povolit upozornění na nový komentář nebo odpověď"
 
+# @ emqa
 #~ msgid "Comment"
-#~ msgstr "Komentiraj "
+#~ msgstr "Komentáře"
 
+# @ emqa
 #~ msgid "Enable/Disable captcha on submit question page"
-#~ msgstr "Omogući/onemogući captcha na stranici Objavi pitanje"
+#~ msgstr "Povolit/zakázat Captchu na stránce s odesláním dotazu"
 
+# @ emqa
 #~ msgid "Enable/Disable captcha on single question page"
-#~ msgstr "Omogući/onemogući captcha na singl pitanje stranici"
+#~ msgstr "Povolit/zakázat Captchu na stránce s jedním dotazem"
 
+# @ emqa
 #~ msgid "questions"
-#~ msgstr "pitanja"
+#~ msgstr "otázky"
 
+# @ emqa
 #~ msgid "Allow members to post private question"
-#~ msgstr "Dozvoli korisnicima objavu privatnog pitanja"
+#~ msgstr "Povolit návštěvníkům pokládat soukromé dotazy"
 
+# @ emqa
 #~ msgid "Question must be manually approved"
-#~ msgstr "Pitanje treba biti ručno odobreno"
+#~ msgstr "Dotazy musí být ručně schváleny"
 
-#~ msgid "New Question Notification"
-#~ msgstr "Obavijest o novom pitanju "
-
-#~ msgid "New Answer Notification"
-#~ msgstr "Obavijest Novi odgovor"
-
-#, fuzzy
-#~ msgid "New Comment to Question Notification (to Followers )"
-#~ msgstr "Novi komentar na obavijest o pitanju (sljedbenicima)"
-
-#~ msgid "New Comment to Answer Notification"
-#~ msgstr "Novi komentar na obavijest o odgovoru"
-
-#, fuzzy
-#~ msgid "New Answer Notification (to Followers )"
-#~ msgstr "Obavijest o novom odgovoru (sljedbenicima)"
-
-#, fuzzy
-#~ msgid "New Comment to Answer Notification (to Followers )"
-#~ msgstr "Novi komentar na obavijest o odgovoru (sljedbenicima)"
-
+# @ emqa
 #~ msgid "Archive page show at most"
-#~ msgstr "Stranica arhive većinom prikazuje"
+#~ msgstr "Stránka z archive zobrazí nejvíce"
 
+# @ emqa
 #~ msgid "Private Question"
-#~ msgstr "Privatno pitanje"
+#~ msgstr "Soukromý dotaz"
 
+# @ emqa
 #~ msgid "Review Question"
-#~ msgstr "Prikaži pitanje"
+#~ msgstr "Zhodnotit dotaz"
 
+# @ emqa
+#~ msgid "EMQA 404 Page"
+#~ msgstr "Stránka 404"
+
+# @ emqa
+#~ msgid "Single Question Template"
+#~ msgstr "Šablona stránky s jedním dotazem"
+
+# @ emqa
 #~ msgid "Time settings"
-#~ msgstr "Postavke vremena"
+#~ msgstr "Nastavení času"
 
+# @ emqa
 #~ msgid "New Question Time Frame"
-#~ msgstr "Vremenski okvir za novo pitanje "
+#~ msgstr "Časové období nového dotazu"
 
+# @ emqa
 #~ msgid "Question Overdue - Time Frame"
-#~ msgstr "Isteklo pitanje - vremenski okvir"
+#~ msgstr "Zastaralý dotaz - časové období"
 
+# @ emqa
 #~ msgid "Captcha settings"
-#~ msgstr "Captcha postavke"
+#~ msgstr "Nastavení Captcha"
 
+# @ emqa
 #~ msgid "Captcha on Submit Question Page"
-#~ msgstr "Captcha na stranici Objavi pitanje"
+#~ msgstr "Captcha na stránce s odesláním dotazu"
 
+# @ emqa
 #~ msgid "Captcha on Single Question Page"
-#~ msgstr "Captcha na Single Question Page"
+#~ msgstr "Captcha na stránce s jedním dotazem"
 
+# @ emqa
+#~ msgid "Google Captcha Public Key"
+#~ msgstr "Veřejný klíč Google Captcha"
+
+# @ emqa
+#~ msgid "Google Captcha Private Key"
+#~ msgstr "Privátní klíč Google Captcha"
+
+# @ emqa
 #~ msgid "Single Question"
-#~ msgstr "Single pitanje"
+#~ msgstr "Jeden dotaz"
 
+# @ emqa
 #~ msgid "Single Category"
-#~ msgstr "Single kategorija"
+#~ msgstr "Jedna kategorie"
 
+# @ emqa
 #~ msgid "Single Tag"
-#~ msgstr "Single tag"
+#~ msgstr "Jeden štítek"
 
+# @ emqa
 #~ msgid "Notification"
-#~ msgstr "Obavijest"
+#~ msgstr "Upozornění"
 
+# @ emqa
 #~ msgid "Permission"
-#~ msgstr "Dozvola"
+#~ msgstr "Oprávnění"
 
+# @ emqa
 #~ msgid "Email setup"
-#~ msgstr "E-mail postavke"
+#~ msgstr "Nastavení emailu"
 
+# @ default
+# @ emqa
+#~ msgid "New Question"
+#~ msgstr "Nový dotaz"
+
+# @ default
+# @ emqa
+#~ msgid "New Answer"
+#~ msgstr "Nová odpověď"
+
+# @ emqa
+#~ msgid "New Comment to Question"
+#~ msgstr "Nový komentář k otázce"
+
+# @ emqa
+#~ msgid "New Comment to Answer"
+#~ msgstr "Nový komentář k dotazu"
+
+#~ msgid "New Answer (to Followers )"
+#~ msgstr "Nová odpověď (followerům)"
+
+#~ msgid "New Comment to Question (to Followers )"
+#~ msgstr "Nový komentář k dotazu (followerům)"
+
+#~ msgid "New Comment to Answer (to Followers )"
+#~ msgstr "Nový komentář k odpovědi (followerům)"
+
+# @ emqa
+#~ msgid "New Question Notification"
+#~ msgstr "Upozornění na nový dotaz"
+
+# @ emqa
+#~ msgid "New Answer Notification"
+#~ msgstr "Upozornění na novou odpověď"
+
+#~ msgid "New Answer Notification (to Followers )"
+#~ msgstr "Upozornění na novou odpověď (followerům)"
+
+# @ emqa
 #~ msgid "New Comment to Question Notification"
-#~ msgstr "Nov komentar na obavijest o pitanju"
+#~ msgstr "Nový komentář na upozornění na dotaz"
 
+# @ emqa
+#~ msgid "New Comment to Answer Notification"
+#~ msgstr "Nový komentář na upozornění na odpověď"
+
+#~ msgid "New Comment to Question Notification (to Followers )"
+#~ msgstr "Nový komentář na upozornění na dotaz (followerům)"
+
+#~ msgid "New Comment to Answer Notification (to Followers )"
+#~ msgstr "Nový komentář na upozornění na odpověď (followerům)"
+
+# @ emqa
 #~ msgid "Send to"
-#~ msgstr "Pošalji"
+#~ msgstr "Poslat komu"
 
+# @ emqa
 #~ msgid "Send A Copy Of Every Email To Admin"
-#~ msgstr "Pošalji kopiju svakog e-maila administratoru"
+#~ msgstr "Odeslat kopii každého emailu adminovi"
 
+# @ emqa
 #~ msgid "You need an account to submit question and get answers. Create one:"
 #~ msgstr ""
-#~ "Kako bi postavili pitanje i dobili odgovor, potreban vam je korisnički "
-#~ "račun. Kreirajte ga: "
+#~ "Potřebujte účet k položení dotazu a získání odpovědi. Vytvořte si jej:"
 
+# @ emqa
 #~ msgid "Type your email"
-#~ msgstr "Unesite svoju e-mail adresu"
+#~ msgstr "Zadejte váš email"
 
+# @ emqa
 #~ msgid "Already a member?"
-#~ msgstr "Već ste registrirani korisnik?"
+#~ msgstr "Již registrován?"
 
+# @ emqa
 #~ msgid "Log In"
-#~ msgstr "Prijava"
+#~ msgstr "Přihlašte se"
 
+# @ emqa
 #~ msgid "Login to submit your question"
-#~ msgstr "Prijava za objavu pitanja"
+#~ msgstr "Přihlašte se k položení vašeho dotazu"
 
+# @ emqa
 #~ msgid "Type your username"
-#~ msgstr "Unesite korisničko ime"
+#~ msgstr "Zadejte vaše uživatelské jméno"
 
+# @ emqa
 #~ msgid "Type your password"
-#~ msgstr "Unesite zaporku"
+#~ msgstr "Zadejte vaše heslo"
 
+# @ emqa
 #~ msgid "Not yet a member?"
-#~ msgstr "Još niste korisnik?"
+#~ msgstr "Neregistrován?"
 
+# @ emqa
 #~ msgid "Register"
-#~ msgstr "Registrirajte "
+#~ msgstr "Registrujte se"
 
+# @ emqa
 #~ msgid ""
 #~ "Enter your email to receive notification regarding your question. Your "
 #~ "email is safe with us and will not be published."
 #~ msgstr ""
-#~ "Unesite svoju e-mail adresu kako biste primili obavijest vezanu na vaše "
-#~ "pitanje. Vaša e-mail adresa je tajna i neće biti objavljena."
+#~ "Zadejte váš email, k dostávání notifikací. Nebojte se, váš email "
+#~ "nezobrazujeme."
 
+# @ emqa
 #~ msgid "Your email *"
-#~ msgstr "Vaša e-mail adresa*"
+#~ msgstr "Váš email *"
 
+# @ emqa
 #~ msgid "Email address ..."
-#~ msgstr "Upišite valjanu adresu"
+#~ msgstr "Email ..."
 
+# @ emqa
 #~ msgid "or <strong><a href=\"%s\">login</a></strong> to submit question"
 #~ msgstr ""
-#~ "ili <strong><a href=\"%s\">se prijavite</a></strong> za objavu pitanja"
+#~ "nebo <strong><a href=\"%s\">se přihlašte</a></strong> k položení dotazu"
 
+# @ default
 #~ msgid "Private: %s"
-#~ msgstr "Privatno: %s"
+#~ msgstr "Soukromé: %s"
 
+# @ default
 #~ msgctxt "noun"
 #~ msgid "Comment"
-#~ msgstr "Komentar"
+#~ msgstr "Komentovat"
 
+# @ default
 #~ msgid ""
 #~ "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out "
 #~ "of this account\">Log out?</a>"
 #~ msgstr ""
-#~ "Prijavljen kao <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log "
-#~ "out of this account\">Odjava?</a>"
+#~ "Přihlášen jako <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title="
+#~ "\"Odhlásit se z účtu\">Odhlásit?</a>"
 
+# @ emqa
 #~ msgid "Your email address will not be published."
-#~ msgstr "Vaša e-mail adresa neće biti javna (vidljiva)."
+#~ msgstr "Váš email nebude zobrazován."
 
-#~ msgid "Add New Question"
-#~ msgstr "Unesite novo pitanje"
+# @ emqa
+#~ msgid "Sorry, but nothing matched your filter. "
+#~ msgstr "Nic k zobrazení"
 
-#~ msgid "Edit Question"
-#~ msgstr "Napišite pitanje"
+# @ emqa
+#~ msgid "You can ask question"
+#~ msgstr "Můžete položit dotaz"
 
-#~ msgid "New Question"
-#~ msgstr "Novo pitanje"
+# @ emqa
+#~ msgid "here"
+#~ msgstr "zde"
 
-#~ msgid "All Questions"
-#~ msgstr "Sva pitanja"
+# @ emqa
+#~ msgid "Please"
+#~ msgstr "Prosíme"
 
-#~ msgid "View Question"
-#~ msgstr "Vidi pitanje"
+# @ emqa
+#~ msgid "Login"
+#~ msgstr "přihlašte se"
 
-#~ msgid "Search Question"
-#~ msgstr "Traži pitanje"
+# @ emqa
+#~ msgid " or"
+#~ msgstr "nebo"
 
-#~ msgid "No questions found"
-#~ msgstr "Nijedno pitanje nije pronađeno"
+# @ emqa
+#~ msgid " to submit question."
+#~ msgstr "k položení dotazu."
 
-#~ msgid "No questions found in Trash"
-#~ msgstr "Nije pronađeno ni jedno pitanje u smeću"
+# @ emqa
+#~ msgid "Search query is empty"
+#~ msgstr "Nic nezadáno"
 
-#~ msgid "DW Q&A"
-#~ msgstr "DW Q&A"
+#~ msgid "%s answered <span class=\"emqa-date\">%s</span>"
+#~ msgstr "%s odpověděl(a) <span class=\"emqa-date\">%s</span>"
 
-#~ msgid "Add new answer"
-#~ msgstr "Dodaj novi odgovor"
+#~ msgid "%s asked <span class=\"emqa-date\">%s</span>"
+#~ msgstr "%s se zeptal(a) na <span class=\"emqa-date\">%s</span>"
 
-#~ msgid "Edit answer"
-#~ msgstr "Napiši odgovor"
-
-#~ msgid "New Answer"
-#~ msgstr "Novi odgovor"
-
-#~ msgid "All Answers"
-#~ msgstr "Svi odgovori"
-
-#~ msgid "View Answer"
-#~ msgstr "Vidi odgovor"
-
-#~ msgid "Search Answer"
-#~ msgstr "Traži odgovor"
-
-#~ msgid "No Answers found"
-#~ msgstr "Nije pronađen ni jedan odgovor"
-
-#~ msgid "No Answers found in Trash"
-#~ msgstr "Nije pronađen ni jedan odgovor u smeću"
-
-#~ msgctxt "taxonomy general name"
-#~ msgid "Categories"
-#~ msgstr "Teme"
-
-#~ msgctxt "taxonomy singular name"
-#~ msgid "Category"
-#~ msgstr "Tema"
-
-#~ msgid "Search Categories"
-#~ msgstr "Traži teme"
-
-#~ msgid "All Categories"
-#~ msgstr "Sve teme"
-
-#~ msgid "Parent Category"
-#~ msgstr "Matična kategorija"
-
-#~ msgid "Parent Category:"
-#~ msgstr "Matična kategorija:"
-
-#~ msgid "Edit Category"
-#~ msgstr "Napiši temu"
-
-#~ msgid "Update Category"
-#~ msgstr "Obnovi temu"
-
-#~ msgid "Add New Category"
-#~ msgstr "Dodaj novu temu"
-
-#~ msgid "New Category Name"
-#~ msgstr "Novo ime teme"
-
-#~ msgid "Question Categories"
-#~ msgstr "Teme za pitanja"
-
-#~ msgctxt "taxonomy general name"
-#~ msgid "Tags"
-#~ msgstr "Tagovi"
-
-#~ msgctxt "taxonomy singular name"
-#~ msgid "Tag"
-#~ msgstr "Tag"
-
-#~ msgid "Search Tags"
-#~ msgstr "Traži tagove"
-
-#~ msgid "Popular Tags"
-#~ msgstr "Popularni tagovi"
-
-#~ msgid "All Tags"
-#~ msgstr "Svi tagovi"
-
-#~ msgid "Edit Tag"
-#~ msgstr ""
-#~ "Upišite kratku ključnu riječ ili tag. Možete unijeti do 5 tagova: tag1, "
-#~ "tag2, tag3 ..."
-
-#~ msgid "Update Tag"
-#~ msgstr "Obnovi tag"
-
-#~ msgid "Add New Tag"
-#~ msgstr "Dodaj novi tag"
-
-#~ msgid "New Tag Name"
-#~ msgstr "Novo ime taga"
-
-#~ msgid "Separate tags with commas"
-#~ msgstr "Odvoji tagove zarezima"
-
-#~ msgid "Add or remove tags"
-#~ msgstr "Dodaj ili ukloni tagove"
-
-#~ msgid "Choose from the most used tags"
-#~ msgstr "Odaberi od najviše korištenih tagova"
-
-#~ msgid "%s second"
-#~ msgid_plural "%s seconds"
-#~ msgstr[0] "%s sekunda"
-#~ msgstr[1] "%s sekunde"
-#~ msgstr[2] "%s sekundi"
-
-#~ msgid "about %s min"
-#~ msgid_plural "%s mins"
-#~ msgstr[0] "oko %s min"
-#~ msgstr[1] "oko %s min"
-#~ msgstr[2] "oko %s min"
-
-#~ msgid "about %s hour"
-#~ msgid_plural "%s hours"
-#~ msgstr[0] "oko %s sat"
-#~ msgstr[1] "oko %s sata"
-#~ msgstr[2] "oko %s sati"
-
-#~ msgid "%s day"
-#~ msgid_plural "%s days"
-#~ msgstr[0] "%s dan"
-#~ msgstr[1] "%s dana"
-#~ msgstr[2] "%s dana"
-
-#~ msgid "%1$s ago"
-#~ msgstr "%1$s prije"
-
-#~ msgid "Flag"
-#~ msgstr "Označi"
-
-#~ msgid "Unflag"
-#~ msgstr "Odznači"
-
-#~ msgid ""
-#~ "This answer will be hidden when flagged. Are you sure you want to flag it?"
-#~ msgstr "Nakon označavanja odgovor će biti skriven. Jeste li sigurni?"
-
-#~ msgid "This answer was flagged as spam. Do you want to show it?"
-#~ msgstr "Ovaj je odgovor označen kao spam. Želite ga pokazati?"
-
-#~ msgid "Reset all changes to default"
-#~ msgstr "Resetiraj sve promjene na zadano"
-
-#~ msgid "%s answered <span class=\"dwqa-date\">%s</span>"
-#~ msgstr "%s odgovoreno <span class=\"dwqa-datum\">%s</span>"
-
-#~ msgid "%s asked <span class=\"dwqa-date\">%s</span>"
-#~ msgstr "%s pitano <span class=\"dwqa-datum\">%s</span>"
-
-#~ msgid "Save draft"
-#~ msgstr "Spremi skicu"
-
-#, fuzzy
-#~ msgid "Answer is missing"
-#~ msgstr "Odgovori na pitanje"
-
-#, fuzzy
-#~ msgid "You do not have permission to edit this post"
-#~ msgstr "Nemate dozvolu brisati ovo pitanje"
-
-#, fuzzy
-#~ msgid "This post is not an answer"
-#~ msgstr "Ovo je najbolji odgovor"
-
-#~ msgid "Missing answer ID"
-#~ msgstr "Nedostaje ID odgovora"
-
-#, fuzzy
-#~ msgid "The question is missing"
-#~ msgstr "Ovo pitanje sada je zatvoreno"
-
-#~ msgid "DWQA 404 Page"
-#~ msgstr "DWQA 404 Stranica"
-
-#, fuzzy
-#~ msgid "Single Question Template"
-#~ msgstr "Single pitanje"
-
-#~ msgid "Google Captcha Public Key"
-#~ msgstr "Google Captcha Public Key"
-
-#~ msgid "Google Captcha Private Key"
-#~ msgstr "Google Captcha Private Key"
-
-#~ msgid "New Comment to Question"
-#~ msgstr "Novi komentar na pitanje "
-
-#~ msgid "New Comment to Answer"
-#~ msgstr "Nov komentar na odgovor"
-
-#, fuzzy
-#~ msgid "New Answer (to Followers )"
-#~ msgstr "Novi odgovor (sljedbenicima)"
-
-#, fuzzy
-#~ msgid "New Comment to Question (to Followers )"
-#~ msgstr "Nov komentar na pitanje (sljedbenicima)"
-
-#, fuzzy
-#~ msgid "New Comment to Answer (to Followers )"
-#~ msgstr "Nov komentar na odgovor (sljedbenicima)"
-
+# @ emqa
 #~ msgid "% person who is following this question"
 #~ msgid_plural "% people who are following this question"
-#~ msgstr[0] "% korisnik prati ovo pitanje"
-#~ msgstr[1] "% korisnika prati ovo pitanje"
-#~ msgstr[2] "% korisnika prati ovo pitanje"
+#~ msgstr[0] "% lidí sledujících tento dotaz"
+#~ msgstr[1] "% člověk sledující tento dotaz"
+#~ msgstr[2] "% lidí sledujících tento dotaz"
 
-#~ msgid "Answer this Question"
-#~ msgstr "Odgovori na pitanje"
+# @ emqa
+#~ msgid "Save draft"
+#~ msgstr "Uložit koncept"
 
-#~ msgid "Add answer"
-#~ msgstr "Unesi odgovor"
+# @ emqa
+#~ msgid "Answer is missing"
+#~ msgstr "Odpověď chybí"
 
+# @ emqa
+#~ msgid "You do not have permission to edit this post"
+#~ msgstr "Nemáte oprávnění k úpravám tohoto příspěvku"
+
+# @ emqa
+#~ msgid "This post is not an answer"
+#~ msgstr "Tento příspěvek není odpověď"
+
+# @ emqa
+#~ msgid "Missing answer ID"
+#~ msgstr "Chybějící ID odpovědi"
+
+# @ emqa
+#~ msgid "Publish"
+#~ msgstr "Odeslat"
+
+# @ emqa
+#~ msgid "Everyone can see"
+#~ msgstr "Všichni mohou zobrazit"
+
+# @ emqa
+#~ msgid "Only Author and Administrator can see"
+#~ msgstr "Pouze autor a administrátor mohou zobrazit"
+
+# @ emqa
+#~ msgid "The question is missing"
+#~ msgstr "Tento dotaz chybí"
+
+# @ emqa
+#~ msgid "Captcha Type"
+#~ msgstr "Zadej Captcha"
+
+# @ emqa
 #~ msgid "All questions from"
-#~ msgstr "Sva pitanja od"
+#~ msgstr "Všechny dotazy z"
 
+#~ msgid "follow"
+#~ msgstr "sledovat"
+
+#~ msgid "following"
+#~ msgstr "sledujete"
+
+#~ msgid "unfollow"
+#~ msgstr "zrušit sledování"
+
+# @ emqa
 #~ msgid "Unpin this Question from the top"
-#~ msgstr "Odlijepi ovo pitanje s vrha"
+#~ msgstr "Zrušit zvýraznění tohoto dotazu"
 
+# @ emqa
 #~ msgid "Pin this Question to top"
-#~ msgstr "Zalijepi ovo pitanje na vrh  "
+#~ msgstr "Zvýraznit tento dotaz"
 
+#~ msgid "EMQA ReIndex"
+#~ msgstr "Reindex EMQA"
+
+# @ emqa
+#~ msgid "Questions Index"
+#~ msgstr "Index dotazů"
+
+#~ msgid "Total questions: %d ( %d publish - %d private )"
+#~ msgstr "Celkem otázek: %d ( %d publikovaných - %d privátních )"
+
+# @ emqa
+#~ msgid "Answer this Question"
+#~ msgstr "Odpovědět na tento dotaz"
+
+# @ emqa
+#~ msgid "Add answer"
+#~ msgstr "Přidat odpověď"
+
+# @ emqa
 #~ msgid "answer"
 #~ msgid_plural "answers"
-#~ msgstr[0] "odgovor"
-#~ msgstr[1] "odgovora"
-#~ msgstr[2] "odgovora"
+#~ msgstr[0] "odpověď"
+#~ msgstr[1] "odpověď"
+#~ msgstr[2] "odpovědí"
 
+# @ emqa
 #~ msgid "You do not have permission to view answers"
-#~ msgstr "Nemate dozvolu vidjeti pitanja"
+#~ msgstr "Nemáte práva k zobrazení odpovědí"
 
+# @ emqa
+#~ msgid "Answer page %d"
+#~ msgstr "Odpověď strana %d"
+
+# @ emqa
 #~ msgid "This question is now closed"
-#~ msgstr "Ovo pitanje sada je zatvoreno"
+#~ msgstr "Tento dotaz je nyní uzavřen"
 
+# @ emqa
 #~ msgid "You do not have permission to submit answer."
-#~ msgstr "Nemate dozvolu za objavu pitanja. "
+#~ msgstr "Nemáte práva k odpovědi."
 
+# @ emqa
 #~ msgid "Please login or"
-#~ msgstr "Molimo prijavite se ili "
+#~ msgstr "Prosíme přihlašte se nebo"
 
+# @ emqa
 #~ msgid "to Submit Answer"
-#~ msgstr "za objaviti pitanje"
+#~ msgstr "k odeslání odpovědi"
 
-#~ msgid "Sorry, but nothing matched your filter."
-#~ msgstr "Žao nam je ali ništa ne odgovara odabranom filteru."
+# @ emqa
+#~ msgid "Search"
+#~ msgstr "Hledat"
 
-#~ msgid "View previous comments"
-#~ msgstr "Vidi prijašnje komentare"
+# @ emqa
+#~ msgid "Unflag"
+#~ msgstr "Odznačit"
 
-#~ msgid "of"
-#~ msgstr "of"
+# @ emqa
+#~ msgid "Flag"
+#~ msgstr "Označit"
 
-#~ msgid "Write a reply..."
-#~ msgstr "Napiši odgovor..."
-
+# @ emqa
 #~ msgid "Link to answer"
-#~ msgstr "Link za odgovor"
+#~ msgstr "Link k odpovědi"
 
+# @ emqa
 #~ msgid "Draft"
-#~ msgstr "Skica"
+#~ msgstr "Koncept"
 
+# @ emqa
 #~ msgid "This answer was flagged as spam."
-#~ msgstr "Ovaj odgovor označen je kao spam"
+#~ msgstr "Tato odpověď byla označena jako spam."
 
+# @ emqa
 #~ msgid "This is the best answer"
-#~ msgstr "Ovo je najbolji odgovor"
+#~ msgstr "Toto je nejlepší odpověď"
 
+# @ emqa
 #~ msgid "The answer link"
-#~ msgstr "Link za odgovor"
+#~ msgstr "Link odpovědi"
 
+# @ default
+#~ msgid "Status:"
+#~ msgstr "Stav:"
+
+# @ emqa
+#~ msgid "Need Answer"
+#~ msgstr "Bez odpovědi"
+
+# @ emqa
+#~ msgid "Overdue"
+#~ msgstr "Expirován"
+
+# @ emqa
+#~ msgid "Queue"
+#~ msgstr "Fronta"
+
+# @ emqa
+#~ msgid "Select a category"
+#~ msgstr "Vyberte kategorii"
+
+# @ emqa
+#~ msgid "Empty"
+#~ msgstr "Prázdné"
+
+# @ emqa
+#~ msgid "Vote"
+#~ msgstr "Hlasovat"
+
+# @ emqa
+#~ msgid "View previous comments"
+#~ msgstr "Zobrazit předchozí komentáře"
+
+# @ emqa
+#~ msgid "of"
+#~ msgstr "z"
+
+# @ emqa
+#~ msgid "Write a reply..."
+#~ msgstr "Napište odpověď..."
+
+# @ emqa
 #~ msgid "Post by"
-#~ msgstr "Objavio"
+#~ msgstr "Napsal"
 
+# @ emqa
 #~ msgid "Link to comment"
-#~ msgstr "Link za komentar"
+#~ msgstr "Link komentáře"
 
+# @ emqa
+#~ msgid "Sorry, but nothing matched your filter."
+#~ msgstr "Nic k zobrazení."
+
+# @ emqa
+#~ msgid "Your question has been submitted and is currently awaiting approval"
+#~ msgstr "Váš dotaz byl položen a nyní čeká na schválení"
+
+# @ emqa
+#~ msgid "This question is currently awaiting approval"
+#~ msgstr "Tento dotaz nyní čeká na schválení"
+
+# @ emqa
+#~ msgid "Posts by"
+#~ msgstr "Napsal"
+
+# @ emqa
 #~ msgid "Permalink to %s"
-#~ msgstr "Trajni link na %s"
+#~ msgstr "Permalink k %s"
 
+# @ emqa
 #~ msgid "view"
 #~ msgid_plural "views"
-#~ msgstr[0] "pregled"
-#~ msgstr[1] "pregleda"
-#~ msgstr[2] "pregleda"
+#~ msgstr[0] "zobrazení"
+#~ msgstr[1] "zobrazení"
+#~ msgstr[2] "zobrazení"
 
+# @ emqa
 #~ msgid "vote"
 #~ msgid_plural "votes"
-#~ msgstr[0] "glas"
-#~ msgstr[1] "glasa"
-#~ msgstr[2] "glasova"
+#~ msgstr[0] "hlasů"
+#~ msgstr[1] "hlas"
+#~ msgstr[2] "hlasů"
 
-#~ msgid "Status:"
-#~ msgstr "Status:"
-
-#~ msgid "Need Answer"
-#~ msgstr "Čeka odgovor"
-
-#~ msgid "Overdue"
-#~ msgstr "Isteklo"
-
-#~ msgid "Queue"
-#~ msgstr "Na čekanju"
-
-#~ msgid "Select a category"
-#~ msgstr "Odaberite temu"
-
-#~ msgid "Empty"
-#~ msgstr "Isprazni"
-
-#~ msgid "Vote"
-#~ msgstr "Glasaj"
-
+# @ emqa
 #~ msgid "tag 1, tag 2,..."
-#~ msgstr "Upišite ključne riječi ili tagove, najviše 5."
+#~ msgstr "štítek 1, štítek 2,..."
 
+# @ emqa
 #~ msgid "Your question"
-#~ msgstr "Vaše pitanje"
+#~ msgstr "Váš dotaz"
 
+# @ emqa
 #~ msgid "How to..."
-#~ msgstr "Pitanje ukratko kao naslov"
+#~ msgstr "Jak a co ..."
 
+# @ emqa
 #~ msgid "Question details"
-#~ msgstr ""
-#~ "Upišite i objasnite svoje pitanje u detalje kako bi dobili što "
-#~ "kvalitetniji odgovor!"
+#~ msgstr "Detaily dotazu"
 
+# @ emqa
 #~ msgid "Post this Question as Private."
-#~ msgstr "Objavi ovo pitanje kao privatno."
+#~ msgstr "Odeslat tento dotaz jako soukromý."
 
+# @ emqa
 #~ msgid "Only you as Author and Admin can see the question"
-#~ msgstr "Samo vi kao autor i administrator možete vidjeti pitanje"
+#~ msgstr "Pouze autor a admin můžou vidět dotaz"
 
-#~ msgid "Search"
-#~ msgstr "Traži"
-
-#~ msgid "Your question has been submitted and is currently awaiting approval"
-#~ msgstr "Vaše pitanje je poslano i trenutno čeka odobrenje "
-
-#~ msgid "This question is currently awaiting approval"
-#~ msgstr "Pitanje čeka odobrenje."
-
-#~ msgid "Posts by"
-#~ msgstr "Objave od"
-
+# @ emqa
 #~ msgid "Show a list of questions that was ordered by views."
-#~ msgstr "Vidi popis pitanja prema pregledima."
+#~ msgstr "Zobrazit seznam dotazů seřazen podle počtu zobrazení."
 
+# @ emqa
 #~ msgid "Show a list of questions that ordered by views."
-#~ msgstr "Pokaži popis pitanja po pregledima."
+#~ msgstr "Zobrazit seznam dotazů seřazený podle počtu zobrazení."
 
-#~ msgctxt "post type general name"
-#~ msgid "Question"
-#~ msgstr "Pitanja"
+# @ emqa
+#~ msgid "Write a comment ..."
+#~ msgstr "Napište komentář..."
 
-#~ msgctxt "post type singular name"
-#~ msgid "Question"
-#~ msgstr "Pitanje"
-
-#~ msgctxt "post type general name"
-#~ msgid "Answer"
-#~ msgstr "Odgovori"
-
-#~ msgctxt "post type singular name"
-#~ msgid "Answer"
-#~ msgstr "Odgovor"
-
-#~ msgid "DW Q&A Box"
-#~ msgstr "DW Q&A Box"
-
-#~ msgid "Container Padding"
-#~ msgstr "Container Padding"
-
-#~ msgid "Container padding size"
-#~ msgstr "Container padding size"
-
-#~ msgid ""
-#~ "By default, the container does not have a gutter. You can set padding "
-#~ "width to make a gutter. You make it by updating the setting here."
-#~ msgstr ""
-#~ "By default,The container is not have gutter. You can set padding width to "
-#~ "make a gutter. You make it by update setting here."
-
-#~ msgid "You can ask question <a href=\""
-#~ msgstr "Možete postaviti pitanje <a href=\""
-
-#~ msgid "Please <a href=\""
-#~ msgstr "Molimo <a href=\""
+#~ msgid "&nbsp; &bull; &nbsp;"
+#~ msgstr "&nbsp; &bull; &nbsp;"

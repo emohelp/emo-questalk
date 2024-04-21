@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DW Question Answer\n"
+"Project-Id-Version: EMO Questalk \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-17 16:32+0700\n"
 "PO-Revision-Date: 2016-08-17 16:32+0700\n"
 "Last-Translator: Christian Widlund <christian.widlund@gmail.com>\n"
-"Language-Team: DesignWall <webmaster@designwall.com>\n"
+"Language-Team: Emohelp <dm@emohelp.com>\n"
 "Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,32 +16,32 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: dw-question-answer.php:147
-msgid "DWQA Questions"
-msgstr "DWQA Frågor"
+#: em-question-answer.php:147
+msgid "EMQA Questions"
+msgstr "EMQA Frågor"
 
-#: dw-question-answer.php:164
-msgid "DWQA Ask Question"
-msgstr "DWQA Ställ en Fråga"
+#: em-question-answer.php:164
+msgid "EMQA Ask Question"
+msgstr "EMQA Ställ en Fråga"
 
 #: inc/Admin/Extensions.php:13
-msgid "DWQA Markdown"
+msgid "EMQA Markdown"
 msgstr ""
 
 #: inc/Admin/Extensions.php:19
-msgid "DWQA Leaderboard"
+msgid "EMQA Leaderboard"
 msgstr ""
 
 #: inc/Admin/Extensions.php:25
-msgid "DWQA Captcha"
+msgid "EMQA Captcha"
 msgstr ""
 
 #: inc/Admin/Extensions.php:31
-msgid "DWQA Embed Question"
+msgid "EMQA Embed Question"
 msgstr ""
 
 #: inc/Admin/Extensions.php:37
-msgid "DWQA Widgets"
+msgid "EMQA Widgets"
 msgstr ""
 
 #: inc/Admin/Extensions.php:47
@@ -53,27 +53,27 @@ msgid "Get It Now!"
 msgstr ""
 
 #: inc/Admin/Welcome.php:27 inc/Admin/Welcome.php:28
-msgid "Welcome to DW Question & Answer"
+msgid "Welcome to EMO Questalk"
 msgstr ""
 
 #: inc/Admin/Welcome.php:35 inc/Admin/Welcome.php:36
-msgid "DW Question & Answer Changelog"
+msgid "EMO Questalk Changelog"
 msgstr ""
 
 #: inc/Admin/Welcome.php:43 inc/Admin/Welcome.php:44
-msgid "DW Question & Answer Credits"
+msgid "EMO Questalk Credits"
 msgstr ""
 
 #: inc/Admin/Welcome.php:60
 #, php-format
-msgid "Welcome to DW Question & Answer %s"
+msgid "Welcome to EMO Questalk %s"
 msgstr ""
 
 #: inc/Admin/Welcome.php:61
 msgid ""
 "Thank you for installing our WordPress plugin. If you have any question "
 "about this plugin, please submit to our <a target=\"_blank\" href=\"https://"
-"www.designwall.com/question/\">Q&A section</a>."
+"www.Emohelp.com/question/\">Q&A section</a>."
 msgstr ""
 
 #: inc/Admin/Welcome.php:69
@@ -262,17 +262,17 @@ msgid "Overview"
 msgstr "Översikt"
 
 #: inc/Helptab.php:48
-msgid "DW Question Answer Plugin"
-msgstr "DW Question Answer Plugin"
+msgid "EMO Questalk  Plugin"
+msgstr "EMO Questalk  Plugin"
 
 #: inc/Helptab.php:49
 msgid ""
-"DW Question Answer is a WordPress Plugin which helps you build a Question & "
+"EMO Questalk  is a WordPress Plugin which helps you build a Question & "
 "Answer system on your WordPress sites. The plugin is easy to install and set "
 "up. Let start building up your community with this WordPress question & "
 "answer system."
 msgstr ""
-"DW Question Answer är en Wordpress Plugin som hjälper dig att bygga ett "
+"EMO Questalk  är en Wordpress Plugin som hjälper dig att bygga ett "
 "fråga & svar-system på dina Wordpress webbplatser. Insticksprogrammet är "
 "lätt att installera och konfigurera. Låt oss börja bygga upp ditt samhälle "
 "med denna Wordpress fråge & svar-system."
@@ -298,20 +298,20 @@ msgid "For more information:"
 msgstr "För mer information"
 
 #: inc/Helptab.php:174
-msgid "DW Question Answer Guide"
-msgstr "DW Question Answer Guide"
+msgid "EMO Questalk  Guide"
+msgstr "EMO Questalk  Guide"
 
 #: inc/Helptab.php:175
 msgid "Community"
 msgstr "Community"
 
 #: inc/Helptab.php:176
-msgid "DesignWall Wordpress Themes"
-msgstr "DesignWall Wordpress Themes"
+msgid "Emohelp Wordpress Themes"
+msgstr "Emohelp Wordpress Themes"
 
 #: inc/Helptab.php:177
-msgid "DesignWall Wordpress Plugins"
-msgstr "DesignWall Wordpress Plugins"
+msgid "Emohelp Wordpress Plugins"
+msgstr "Emohelp Wordpress Plugins"
 
 #: inc/Metaboxes.php:13 templates/content-single-question.php:31
 #: templates/question-submit-form.php:22
@@ -382,12 +382,12 @@ msgid "[{site_name}] You have a new comment for answer"
 msgstr "[{site_name}] Du har en ny kommentar till svar"
 
 #: inc/PointerHelper.php:60
-msgid "How to use DW Question Answer"
-msgstr "Så här använder du DW Question Answer"
+msgid "How to use EMO Questalk "
+msgstr "Så här använder du EMO Questalk "
 
 #: inc/PointerHelper.php:61
-msgid "Documents, Support From DesignWall (help)"
-msgstr "Dokument, Support Från DesignWall (help)"
+msgid "Documents, Support From Emohelp (help)"
+msgstr "Dokument, Support Från Emohelp (help)"
 
 #: inc/PointerHelper.php:70
 msgid "Config your support channel"
@@ -455,24 +455,24 @@ msgstr "Inlägg av %s"
 
 #: inc/Posts/Base.php:251 inc/Posts/Base.php:255
 #, php-format
-msgid "%s answered <span class=\"dwqa-date\">%s</span> ago"
+msgid "%s answered <span class=\"emqa-date\">%s</span> ago"
 msgstr ""
 
 #: inc/Posts/Base.php:257
 #, php-format
-msgid "%s asked <span class=\"dwqa-date\">%s</span> ago"
+msgid "%s asked <span class=\"emqa-date\">%s</span> ago"
 msgstr ""
 
 #: inc/Posts/Base.php:306
-msgid "DWQA Posts"
+msgid "EMQA Posts"
 msgstr ""
 
 #: inc/Posts/Base.php:307
-msgid "DWQA Post"
+msgid "EMQA Post"
 msgstr ""
 
 #: inc/Posts/Base.php:318
-msgctxt "dwqa"
+msgctxt "EMQA"
 msgid "Add New"
 msgstr ""
 
@@ -670,7 +670,7 @@ msgstr "Välj Arkiv för Fråge sidan"
 
 #: inc/Settings.php:24
 msgid ""
-"A page where displays all questions. The <code>[dwqa-list-questions]</code> "
+"A page where displays all questions. The <code>[EMQA-list-questions]</code> "
 "short code must be on this page."
 msgstr ""
 
@@ -701,13 +701,13 @@ msgstr "Välj Sida för ställ en fråga"
 
 #: inc/Settings.php:52
 msgid ""
-"A page where users can submit questions. The <code>[dwqa-submit-question-"
+"A page where users can submit questions. The <code>[EMQA-submit-question-"
 "form]</code> short code must be on this page."
 msgstr ""
 
 #: inc/Settings.php:65
-msgid "Select 404 DWQA Page"
-msgstr "Välj 404 DWQA Sida"
+msgid "Select 404 EMQA Page"
+msgstr "Välj 404 EMQA Sida"
 
 #: inc/Settings.php:70
 msgid ""
@@ -939,8 +939,8 @@ msgid "Group Permission"
 msgstr "Grupp Behörighet"
 
 #: inc/Settings.php:1145
-msgid "DWQA Settings"
-msgstr "DWQA Inställningar"
+msgid "EMQA Settings"
+msgstr "EMQA Inställningar"
 
 #: inc/Settings.php:1149
 msgid "General"
@@ -1000,7 +1000,7 @@ msgstr "Spara alla ändringar"
 
 #: inc/Settings.php:1328
 #, php-format
-msgid "Manage <a href=\"%s\">DWQA Extensions</a> license keys"
+msgid "Manage <a href=\"%s\">EMQA Extensions</a> license keys"
 msgstr ""
 
 #: inc/Settings.php:1346 inc/Settings.php:1351 inc/Settings.php:1356
@@ -1180,8 +1180,8 @@ msgid "Show a list of questions marked as closed."
 msgstr ""
 
 #: inc/widgets/Closed_Question.php:12
-msgid "DWQA Closed Questions"
-msgstr "DWQA Stängda Frågor"
+msgid "EMQA Closed Questions"
+msgstr "EMQA Stängda Frågor"
 
 #: inc/widgets/Closed_Question.php:18
 msgid "Closed Questions"
@@ -1202,8 +1202,8 @@ msgid "Show a list of latest questions."
 msgstr ""
 
 #: inc/widgets/Latest_Question.php:11
-msgid "DWQA Latest Questions"
-msgstr "DWQA Senaste Frågor"
+msgid "EMQA Latest Questions"
+msgstr "EMQA Senaste Frågor"
 
 #: inc/widgets/Latest_Question.php:17
 msgid "Latest Questions"
@@ -1222,8 +1222,8 @@ msgid "Show a list of popular questions."
 msgstr ""
 
 #: inc/widgets/Popular_Question.php:15
-msgid "DWQA Popular Questions"
-msgstr "DWQA Populära Frågor"
+msgid "EMQA Popular Questions"
+msgstr "EMQA Populära Frågor"
 
 #: inc/widgets/Related_Question.php:11
 msgid ""
@@ -1232,8 +1232,8 @@ msgid ""
 msgstr "Visa en lista med frågor som rör en fråga. Visa på enstaka sida"
 
 #: inc/widgets/Related_Question.php:12
-msgid "DWQA Related Questions"
-msgstr "DWQA Frågor"
+msgid "EMQA Related Questions"
+msgstr "EMQA Frågor"
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:181
 #, php-format
@@ -1433,12 +1433,12 @@ msgstr "Du har inte behörighet att skicka en fråga"
 #: upgrades/upgrades.php:25
 #, php-format
 msgid ""
-"DW Question Answer needs to upgrade the database, click %shere%s to start "
+"EMO Questalk  needs to upgrade the database, click %shere%s to start "
 "the upgrade."
 msgstr ""
 
 #: upgrades/upgrades.php:33
-msgid "DWQA Upgrade"
+msgid "EMQA Upgrade"
 msgstr ""
 
 #: upgrades/upgrades.php:40
@@ -1465,21 +1465,21 @@ msgid "Upgrade process is done"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "DW Question Answer"
+msgid "EMO Questalk "
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"A WordPress plugin was make by DesignWall.com to build an Question Answer "
+"A WordPress plugin was make by Emohelp.com to build an Question Answer "
 "system for support, asking and comunitcate with your customer"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "DesignWall"
+msgid "Emohelp"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://www.designwall.com"
+msgid "http://www.Emohelp.com"
 msgstr ""
 
 #~ msgid "Next"
@@ -1807,8 +1807,8 @@ msgstr ""
 #~ msgid "No questions found in Trash"
 #~ msgstr "Inga frågor hittade i papperskorgen"
 
-#~ msgid "DW Q&A"
-#~ msgstr "DW Frågor&Svar"
+#~ msgid "em Q&A"
+#~ msgstr "em Frågor&Svar"
 
 #~ msgid "Add new answer"
 #~ msgstr "Lägg till Svar"
@@ -1948,11 +1948,11 @@ msgstr ""
 #~ msgid "Reset all changes to default"
 #~ msgstr "Återställ alla ändringar till standard"
 
-#~ msgid "%s answered <span class=\"dwqa-date\">%s</span>"
-#~ msgstr "%s svarade <span class=\"dwqa-date\">%s</span>"
+#~ msgid "%s answered <span class=\"emqa-date\">%s</span>"
+#~ msgstr "%s svarade <span class=\"emqa-date\">%s</span>"
 
-#~ msgid "%s asked <span class=\"dwqa-date\">%s</span>"
-#~ msgstr "%s frågade <span class=\"dwqa-date\">%s</span>"
+#~ msgid "%s asked <span class=\"emqa-date\">%s</span>"
+#~ msgstr "%s frågade <span class=\"emqa-date\">%s</span>"
 
 #~ msgid "Save draft"
 #~ msgstr "Spara utkast"
@@ -1972,8 +1972,8 @@ msgstr ""
 #~ msgid "The question is missing"
 #~ msgstr "Frågan saknas"
 
-#~ msgid "DWQA 404 Page"
-#~ msgstr "DWQA 404 Sida"
+#~ msgid "EMQA 404 Page"
+#~ msgstr "EMQA 404 Sida"
 
 #~ msgid "Single Question Template"
 #~ msgstr "Mall för Egen Fråge sida"

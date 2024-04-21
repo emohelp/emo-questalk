@@ -1,142 +1,146 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DW Question Answer\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-17 16:31+0700\n"
-"PO-Revision-Date: 2016-08-17 16:31+0700\n"
-"Last-Translator: Yehuda <yehuda@korotkin.co.il>\n"
-"Language-Team: DesignWall <webmaster@designwall.com>\n"
-"Language: he_IL\n"
+"Project-Id-Version: EMO Questalk \n"
+"POT-Creation-Date: 2016-08-17 16:33+0700\n"
+"PO-Revision-Date: 2016-08-17 16:33+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.8.7\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
-"X-Poedit-Basepath: .\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: em-question-answer.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: dw-question-answer.php:147
-msgid "DWQA Questions"
-msgstr "DWQA שאלות"
+#: em-question-answer.php:147
+msgid "EMQA Questions"
+msgstr "EMQA Vragen"
 
-#: dw-question-answer.php:164
-msgid "DWQA Ask Question"
-msgstr "DWQA שאל שאלה"
+#: em-question-answer.php:164
+msgid "EMQA Ask Question"
+msgstr "EMQA Stel Vraag"
 
 #: inc/Admin/Extensions.php:13
-msgid "DWQA Markdown"
-msgstr ""
+msgid "EMQA Markdown"
+msgstr "EMQA Korting"
 
 #: inc/Admin/Extensions.php:19
-msgid "DWQA Leaderboard"
-msgstr ""
+msgid "EMQA Leaderboard"
+msgstr "EMQA Banner"
 
 #: inc/Admin/Extensions.php:25
-msgid "DWQA Captcha"
-msgstr ""
+msgid "EMQA Captcha"
+msgstr "EMQA Captcha"
 
 #: inc/Admin/Extensions.php:31
-msgid "DWQA Embed Question"
-msgstr ""
+msgid "EMQA Embed Question"
+msgstr "EMQA Ingebedde Vraag"
 
 #: inc/Admin/Extensions.php:37
-msgid "DWQA Widgets"
-msgstr ""
+msgid "EMQA Widgets"
+msgstr "EMQA Widgets"
 
 #: inc/Admin/Extensions.php:47
 msgid "Extensions"
-msgstr ""
+msgstr "Extensies"
 
 #: inc/Admin/Extensions.php:75
 msgid "Get It Now!"
-msgstr ""
+msgstr "Nu verkrijgen!"
 
 #: inc/Admin/Welcome.php:27 inc/Admin/Welcome.php:28
-msgid "Welcome to DW Question & Answer"
-msgstr ""
+msgid "Welcome to EMO Questalk"
+msgstr "Welkom bij EMO Questalk"
 
 #: inc/Admin/Welcome.php:35 inc/Admin/Welcome.php:36
-msgid "DW Question & Answer Changelog"
-msgstr ""
+msgid "EMO Questalk Changelog"
+msgstr "EMO Questalk Veranderlog"
 
 #: inc/Admin/Welcome.php:43 inc/Admin/Welcome.php:44
-msgid "DW Question & Answer Credits"
-msgstr ""
+msgid "EMO Questalk Credits"
+msgstr "EMO Questalk Credits"
 
 #: inc/Admin/Welcome.php:60
 #, php-format
-msgid "Welcome to DW Question & Answer %s"
-msgstr ""
+msgid "Welcome to EMO Questalk %s"
+msgstr "Welkom bij EMO Questalk %s"
 
 #: inc/Admin/Welcome.php:61
 msgid ""
 "Thank you for installing our WordPress plugin. If you have any question "
 "about this plugin, please submit to our <a target=\"_blank\" href=\"https://"
-"www.designwall.com/question/\">Q&A section</a>."
+"www.Emohelp.com/question/\">Q&A section</a>."
 msgstr ""
 
 #: inc/Admin/Welcome.php:69
 msgid "What&#8217;s New"
-msgstr ""
+msgstr "Wat Is Nieuw"
 
 #: inc/Admin/Welcome.php:70
 msgid "Changelog"
-msgstr ""
+msgstr "Veranderlog"
 
 #: inc/Admin/Welcome.php:71
 msgid "Credits"
-msgstr ""
+msgstr "Credits"
 
 #: inc/Admin/Welcome.php:199
 msgid "Contributors"
-msgstr ""
+msgstr "Bijdragers"
 
 #: inc/Admin/Welcome.php:218
 msgid "No valid changelog was found."
-msgstr ""
+msgstr "Er is geen geldig Veranderlog gevonden"
 
 #: inc/Ajax.php:29 inc/Ajax.php:47 inc/Ajax.php:83 inc/Ajax.php:113
 #: inc/Ajax.php:132 inc/Ajax.php:150 inc/Ajax.php:215 inc/Handle.php:256
 #: inc/Handle.php:455 inc/Permission.php:286 inc/Status.php:319
 msgid "Are you cheating huh?"
-msgstr "אתה מרמה?"
+msgstr "Probeer je vals te spelen?"
 
 #: inc/Ajax.php:33 inc/Handle.php:260
 msgid "You do not have permission to edit comment."
-msgstr ""
+msgstr "Je hebt geen toestemming om deze reactie te bewerken"
 
 #: inc/Ajax.php:37
 msgid "Comment ID must be showed."
-msgstr "ה ID של תגובה חייב להיות מוצג"
+msgstr "Reactie ID moet worden getoond."
 
 #: inc/Ajax.php:51 inc/Handle.php:154
 msgid "Answer is missing."
-msgstr ""
+msgstr "Antwoord ontbreekt."
 
 #: inc/Ajax.php:55 inc/Handle.php:158
 msgid "This post is not answer."
-msgstr ""
+msgstr "Deze inzending is geen antwoord."
 
 #: inc/Ajax.php:59 inc/Ajax.php:162
 msgid "You do not have permission to delete this post."
-msgstr ""
+msgstr "Je hebt geen toestemming op deze inzending te bewerken."
 
 #: inc/Ajax.php:86
 msgid "Missing id of answer"
-msgstr "ה ID חסר"
+msgstr "Ontbrekend ID van antwoord"
 
 #: inc/Ajax.php:154 inc/Handle.php:477
 msgid "Question is missing."
-msgstr ""
+msgstr "Vraag ontbreekt."
 
 #: inc/Ajax.php:158 inc/Handle.php:481
 msgid "This post is not question."
-msgstr ""
+msgstr "Deze inzending is geen vraag."
 
 #: inc/Ajax.php:206
 msgid "You do not have permission to edit question status"
-msgstr "איך לך הרשאות לערוך"
+msgstr "Je hebt geen toestemming om de vraagstatus te bewerken"
 
 #: inc/Ajax.php:223 inc/Ajax.php:273
 msgid "Not Found!!!"
@@ -144,288 +148,290 @@ msgstr ""
 
 #: inc/Answer_List_Table.php:81 inc/Posts/Answer.php:271 inc/Template.php:48
 msgid "Author"
-msgstr "מחבר"
+msgstr "Auteur"
 
 #: inc/Answer_List_Table.php:82
 msgid "Detail"
-msgstr "פרטים"
+msgstr "Detail"
 
 #: inc/Answer_List_Table.php:92 inc/Notifications.php:116
 #: inc/Notifications.php:214 inc/Notifications.php:233 inc/Posts/Base.php:230
 #: inc/Posts/Comment.php:102 inc/Settings.php:419 inc/Settings.php:455
 #: inc/Settings.php:490 inc/User.php:155
 msgid "Anonymous"
-msgstr "אנונימי"
+msgstr "Anoniem"
 
 #: inc/Answer_List_Table.php:101
 msgid "Answered on "
-msgstr "ענה על "
+msgstr "Beantwoord op"
 
 #: inc/Answer_List_Table.php:112 inc/Helptab.php:153
 msgid "Read more"
-msgstr "קרא עוד"
+msgstr "Lees verder"
 
 #: inc/Handle.php:29
 msgid "&quot;Helllo&quot;, Are you cheating huh?."
-msgstr ""
+msgstr "&quot;Halllo&quot;, probeer je vals te spelen?"
 
 #: inc/Handle.php:32
 msgid "Delete draft"
-msgstr "מחק טיוטא"
+msgstr "Verwijder concept"
 
 #: inc/Handle.php:39
 msgid "Answer content is empty"
-msgstr ""
+msgstr "Antwoord inhoud is leeg"
 
 #: inc/Handle.php:42
 msgid "Question is empty"
-msgstr ""
+msgstr "Vraag is leeg"
 
 #: inc/Handle.php:46 inc/Handle.php:432
 msgid "You do not have permission to submit question."
-msgstr "אין לך הרשאות לשאול."
+msgstr "Je hebt geen toestemming om een vraag in te dienen."
 
 #: inc/Handle.php:50 inc/Handle.php:218 inc/Handle.php:300
 msgid "Missing email information"
-msgstr "חסר אימייל"
+msgstr "Ontbrekende e-mail informatie"
 
 #: inc/Handle.php:54 inc/Handle.php:222 inc/Handle.php:305
 msgid "Missing name information"
-msgstr "חסר שם"
+msgstr "Ontbrekende naam informatie"
 
 #: inc/Handle.php:58 inc/Handle.php:451
 msgid "Captcha is not correct"
-msgstr "הזיהוי נכשל"
+msgstr "Catcha is onjuist"
 
 #: inc/Handle.php:77
 msgid "Answer for "
-msgstr "תשובה ל"
+msgstr "Antwoord voor"
 
 #: inc/Handle.php:139
 msgid "You do not have permission to edit answer."
-msgstr ""
+msgstr "Je hebt geen toestemming om het antwoord te bewerken."
 
 #: inc/Handle.php:143 inc/Handle.php:520 inc/Posts/Question.php:473
 msgid "Hello, Are you cheating huh?"
-msgstr "היי, אתה מרמה?"
+msgstr "Hallo, probeer je vals te spelen?"
 
 #: inc/Handle.php:148
 msgid "You must enter a valid answer content."
-msgstr ""
+msgstr "Je moet een geldige antwoord inhoud invoeren."
 
 #: inc/Handle.php:194
 msgid "You can't post comment"
-msgstr "אתה לא יכול להגיב"
+msgstr "Je kunt geen reactie inzenden"
 
 #: inc/Handle.php:197
 msgid "Missing post id."
-msgstr ""
+msgstr "Ontbrekende inzend-ID"
 
 #: inc/Handle.php:203
 msgid "Please enter your comment content"
-msgstr "הזן את תוכן הערתך"
+msgstr "Voer je reactie in"
 
 #: inc/Handle.php:249
 msgid "Comment is missing"
-msgstr "חסרה תגובה"
+msgstr "Reactie ontbreekt"
 
 #: inc/Handle.php:264
 msgid "Comment content must not be empty."
-msgstr "חייב להזין תוכן תגובה"
+msgstr "Reactie inhoud mag niet leeg zijn."
 
 #: inc/Handle.php:294 inc/Handle.php:471
 msgid "You must enter a valid question title."
-msgstr ""
+msgstr "Je moet een geldige vraag-titel invoeren."
 
 #: inc/Handle.php:384
 msgid "User Registration was disabled."
-msgstr "הרשמת משתמשים חדשים בוטלה"
+msgstr "Gebruikersregistratie is uitgeschakeld."
 
 #: inc/Handle.php:387
 msgid "This email is already registered, please choose another one."
-msgstr "הדוא\"ל כבר רשום, נסה אחר"
+msgstr "Dit e-mailadres is al geregistreed, kies een ander."
 
 #: inc/Handle.php:390
 msgid "This username is already registered. Please use another one."
-msgstr "שם משתמש תפוס, נסה אחר"
+msgstr "Deze gebruikersnaam is al geregistreerd. Kies een ander."
 
 #: inc/Handle.php:444
 msgid "Your question is waiting moderator."
-msgstr ""
+msgstr "Je vraag wacht op moderator."
 
 #: inc/Handle.php:466 inc/Status.php:347
 msgid "You do not have permission to edit question"
-msgstr "אין לך הרשאות לערוך את השאלה"
+msgstr "Je hebt geen toestemming om een vraag te bewerken"
 
 #: inc/Helptab.php:47
 msgid "Overview"
-msgstr "סקירה"
+msgstr "Overzicht"
 
 #: inc/Helptab.php:48
-msgid "DW Question Answer Plugin"
-msgstr "תוסף DW שאלות ותשובות"
+msgid "EMO Questalk  Plugin"
+msgstr "EMO Questalk  Plug-in"
 
 #: inc/Helptab.php:49
 msgid ""
-"DW Question Answer is a WordPress Plugin which helps you build a Question & "
+"EMO Questalk  is a WordPress Plugin which helps you build a Question & "
 "Answer system on your WordPress sites. The plugin is easy to install and set "
 "up. Let start building up your community with this WordPress question & "
 "answer system."
 msgstr ""
-"תוסף DW שאלות ותשובות לוורדפרס שעוזר לך לבנות מערכת שאלות ותשובות באתרי "
-"הוורדפרס שלך.התוסף הוא קל להתקנה ולהגדרה. בואו להתחיל לבנות את הקהילה שלך עם "
-"מערכת שאלות ותשובות בוורדפרס."
+"EMO Questalk  is een WordPress Plugin die je helpt om een Question & "
+"Answer systeem op je WordPress sites te bouwen. Je kunt de plug-in "
+"gemakkelijk installeren en instellen. Maak een start met het opbouwen van je "
+"aanhang met dit WordPress question & answer systeem."
 
 #: inc/Helptab.php:52
 msgid "Setup Question List Page"
-msgstr "התקנת דף רשימת שאלות"
+msgstr "Instellen Vragen Lijst Pagina"
 
 #: inc/Helptab.php:56
 msgid "Setup Ask Question Page"
-msgstr "התקנת דף שאל שאלה"
+msgstr "Instellen Stel Vraag Pagina"
 
 #: inc/Helptab.php:60
 msgid "Shortcode"
-msgstr "קיצורי קוד"
+msgstr "Shortcode"
 
 #: inc/Helptab.php:64
 msgid "Style integration"
-msgstr "אינטגרצית עיצוב"
+msgstr "Stijl integratie"
 
 #: inc/Helptab.php:173
 msgid "For more information:"
-msgstr "למידע נוסף:"
+msgstr "Voor meer informatie:"
 
 #: inc/Helptab.php:174
-msgid "DW Question Answer Guide"
-msgstr "מדריך DW Question Answer"
+msgid "EMO Questalk  Guide"
+msgstr "EMO Questalk  Gids"
 
 #: inc/Helptab.php:175
 msgid "Community"
-msgstr "קהילה"
+msgstr "Gemeenschap"
 
 #: inc/Helptab.php:176
-msgid "DesignWall Wordpress Themes"
-msgstr "DesignWall Wordpress ערכות נושא"
+msgid "Emohelp Wordpress Themes"
+msgstr "Emohelp Wordpress Thema's"
 
 #: inc/Helptab.php:177
-msgid "DesignWall Wordpress Plugins"
-msgstr "DesignWall Wordpress תוספים"
+msgid "Emohelp Wordpress Plugins"
+msgstr "Emohelp Wordpress Plug-ins"
 
 #: inc/Metaboxes.php:13 templates/content-single-question.php:31
 #: templates/question-submit-form.php:22
 msgid "Status"
-msgstr "מצב"
+msgstr "Status"
 
 #: inc/Metaboxes.php:15 inc/Status.php:304
 #: templates/archive-question-filter.php:18
 #: templates/content-single-question.php:32
 msgid "Open"
-msgstr "פתוח"
+msgstr "Open"
 
 #: inc/Metaboxes.php:16 inc/Status.php:287
 msgid "Pending"
-msgstr "ממתין"
+msgstr "Wachtend"
 
 #: inc/Metaboxes.php:17 inc/Status.php:284
 #: templates/archive-question-filter.php:19
 #: templates/content-single-question.php:34
 msgid "Resolved"
-msgstr "פתור"
+msgstr "Opgelost"
 
 #: inc/Metaboxes.php:18 inc/Status.php:290
 msgid "Re-Open"
-msgstr "נפתח מחדש"
+msgstr "Heropen"
 
 #: inc/Metaboxes.php:19 inc/Status.php:293
 #: templates/archive-question-filter.php:20
 #: templates/content-single-question.php:33
 msgid "Closed"
-msgstr "נסגר"
+msgstr "Afgesloten"
 
 #: inc/Metaboxes.php:25
 msgid "Sticky"
-msgstr "דביק"
+msgstr "Sticky"
 
 #: inc/Metaboxes.php:29
 msgid "Pin question to top of archive page."
-msgstr "הדבק שאלה לראש עמוד ארכיון."
+msgstr "Pin de vraag aan de top van de archief pagina."
 
 #: inc/Metaboxes.php:45 inc/Posts/Answer.php:225 inc/Posts/Answer.php:227
 #: inc/Settings.php:431 templates/archive-question-filter.php:34
 msgid "Answers"
-msgstr "תשובות"
+msgstr "Antwoorden"
 
 #: inc/Metaboxes.php:65
 msgid "Question Meta Data"
-msgstr "פרטי שאלה"
+msgstr "Vraag Meta Data"
 
 #: inc/Notifications.php:29
 msgid "A new question was posted on {site_name}"
-msgstr "שאלה חדשה נשאלה ב {site_name}"
+msgstr "Een nieuwe vraag is ingezonden vanaf {site_name}"
 
 #: inc/Notifications.php:132
 msgid "You have a new answer for your followed question"
-msgstr "יש תשובה חדשה לשאלה"
+msgstr "Er is een nieuw antwoord op een door jou gevolgde vraag"
 
 #: inc/Notifications.php:250
 msgid "A new answer for \"{question_title}\" was posted on {site_name}"
-msgstr "תשובה חדשה \"{question_title}\" נענתה ב {site_name}"
+msgstr ""
+"Een nieuw antwoord op \"{question_title}\" is ingezonden vanaf {site_name}"
 
 #: inc/Notifications.php:334 inc/Notifications.php:380
 msgid "[{site_name}] You have a new comment for question {question_title}"
-msgstr "[{site_name}] יש תגובה חדשה על השאלה {question_title}"
+msgstr "[{site_name}] Er is een nieuwe reactie op vraag {question_title}"
 
 #: inc/Notifications.php:339 inc/Notifications.php:385
 msgid "[{site_name}] You have a new comment for answer"
-msgstr "[{site_name}] יש תגובה חדשה לשאלה"
+msgstr "[{site_name}] Er is een nieuwe reactie op antwoord"
 
 #: inc/PointerHelper.php:60
-msgid "How to use DW Question Answer"
-msgstr "איך להשתמש DW Question Answer"
+msgid "How to use EMO Questalk "
+msgstr "Hoe gebruik je EMO Questalk "
 
 #: inc/PointerHelper.php:61
-msgid "Documents, Support From DesignWall (help)"
-msgstr "תיעוד תמיכה מ DesignWall (עזרה)"
+msgid "Documents, Support From Emohelp (help)"
+msgstr "Documenten, Support van Emohelp (help)"
 
 #: inc/PointerHelper.php:70
 msgid "Config your support channel"
-msgstr "הגדרת ערוץ תמיכה"
+msgstr "Stel je support kanaal in"
 
 #: inc/PointerHelper.php:71
 msgid "Change comment settings, and create the Submit question page."
-msgstr "שנה הגדרת תגובות וצור עמוד \"יצירת השאלה\""
+msgstr "Verander reactie instellingen en creëer de Stel-vraag-pagina"
 
 #: inc/Posts/Answer.php:226 inc/Posts/Answer.php:270
 msgid "Answer"
-msgstr "תשובה"
+msgstr "Antwoord"
 
 #: inc/Posts/Answer.php:273
 msgid "In Response To"
-msgstr "בתגובה ל"
+msgstr "Als Reactie Op"
 
 #: inc/Posts/Answer.php:317 inc/Posts/Base.php:320 inc/Settings.php:402
 #: inc/Template.php:58 inc/Template.php:163 inc/Template.php:180
 #: templates/content-comment.php:19
 msgid "Edit"
-msgstr "ערוך"
+msgstr "Bewerk"
 
 #: inc/Posts/Answer.php:318 inc/Settings.php:403 inc/Template.php:168
 #: inc/Template.php:185 templates/content-comment.php:22
 msgid "Delete"
-msgstr "מחק"
+msgstr "Verwijder"
 
 #: inc/Posts/Answer.php:319 inc/Posts/Base.php:322
 msgid "View"
-msgstr "הצג"
+msgstr "Toon"
 
 #: inc/Posts/Answer.php:323
 msgid "Submitted"
-msgstr "נשלח"
+msgstr "Ingezonden"
 
 #: inc/Posts/Answer.php:324
 msgid "on"
-msgstr "על"
+msgstr "op"
 
 #: inc/Posts/Answer.php:359
 msgid "Question ID"
@@ -437,274 +443,282 @@ msgstr ""
 
 #: inc/Posts/Base.php:5
 msgid "Are you cheating, huh?"
-msgstr "אתה מרמה? הא?"
+msgstr "Speel je misschien vals?"
 
 #: inc/Posts/Base.php:18
 msgid "What "
-msgstr "מה"
+msgstr "Wat "
 
 #: inc/Posts/Base.php:46
 msgid "You voted for this "
-msgstr "הצבעת על זה"
+msgstr "Je stemde hierop"
 
 #: inc/Posts/Base.php:242
 #, php-format
 msgid "Posts by %s"
-msgstr "פוסטים מ %s"
+msgstr "Inzendingen van %s"
 
 #: inc/Posts/Base.php:251 inc/Posts/Base.php:255
 #, php-format
-msgid "%s answered <span class=\"dwqa-date\">%s</span> ago"
-msgstr ""
+msgid "%s answered <span class=\"emqa-date\">%s</span> ago"
+msgstr "%s beantwoord <span class=\"emqa-date\">%s</span> geleden"
 
 #: inc/Posts/Base.php:257
 #, php-format
-msgid "%s asked <span class=\"dwqa-date\">%s</span> ago"
-msgstr ""
+msgid "%s asked <span class=\"emqa-date\">%s</span> ago"
+msgstr "%s gevraagd <span class=\"emqa-date\">%s</span> geleden"
 
 #: inc/Posts/Base.php:306
-msgid "DWQA Posts"
-msgstr ""
+msgid "EMQA Posts"
+msgstr "EMQA Inzendingen"
 
 #: inc/Posts/Base.php:307
-msgid "DWQA Post"
-msgstr ""
+msgid "EMQA Post"
+msgstr "EMQA Inzending"
 
 #: inc/Posts/Base.php:318
-msgctxt "dwqa"
+msgctxt "EMQA"
 msgid "Add New"
-msgstr ""
+msgstr "Voeg nieuwe toe"
 
 #: inc/Posts/Base.php:319
 msgid "Add New"
-msgstr "הוסף"
+msgstr "Voeg nieuwe toe"
 
 #: inc/Posts/Base.php:321 inc/Status.php:296
 msgid "New"
-msgstr "חדש"
+msgstr "Nieuw"
 
 #: inc/Posts/Base.php:323
 msgid "Search "
-msgstr ""
+msgstr "Zoek"
 
 #: inc/Posts/Base.php:324
 msgid "not found"
-msgstr ""
+msgstr "niet gevonden"
 
 #: inc/Posts/Base.php:325
 msgid "not found in Trash"
-msgstr ""
+msgstr "niet gevonden in Prullenbak"
 
 #: inc/Posts/Base.php:326
 msgid "Parent:"
-msgstr ""
+msgstr "Oorspronkelijk:"
 
 #: inc/Posts/Question.php:56 inc/Shortcode.php:138
 #: inc/widgets/Closed_Question.php:49 inc/widgets/Latest_Question.php:42
 #: inc/widgets/Popular_Question.php:43
 msgid "asked by"
-msgstr "נשאל ע\"י"
+msgstr "gevraagd door"
 
 #: inc/Posts/Question.php:100 inc/Posts/Question.php:102
 #: inc/Posts/Question.php:266 inc/Settings.php:395
 #: templates/archive-question-filter.php:28
 msgid "Questions"
-msgstr ""
+msgstr "Vragen"
 
 #: inc/Posts/Question.php:101
 msgid "Question"
-msgstr "שאלה"
+msgstr "Vraag"
 
 #: inc/Posts/Question.php:196
 msgctxt "taxonomy general name"
 msgid "Question Categories"
-msgstr ""
+msgstr "Vraag categorieën"
 
 #: inc/Posts/Question.php:197
 msgctxt "taxonomy singular name"
 msgid "Question Category"
-msgstr ""
+msgstr "Vraagcetegorie"
 
 #: inc/Posts/Question.php:198
 msgid "Search Question Categories"
-msgstr ""
+msgstr "Doorzoek Vraagcategorieën"
 
 #: inc/Posts/Question.php:199
 msgid "All Question Categories"
-msgstr ""
+msgstr "Alle Vraagcategorieën"
 
 #: inc/Posts/Question.php:200
 msgid "Parent Question Category"
-msgstr ""
+msgstr "Oorspronkelijke Vraagcategorie"
 
 #: inc/Posts/Question.php:201
 msgid "Parent Question Category:"
-msgstr ""
+msgstr "Oorspronkelijke vraagcategorie"
 
 #: inc/Posts/Question.php:202
 msgid "Edit Question Category"
-msgstr ""
+msgstr "Bewerk Vraagcategorieën"
 
 #: inc/Posts/Question.php:203
 msgid "Update Question Category"
-msgstr ""
+msgstr "Bijwerken Vraagcategorie"
 
 #: inc/Posts/Question.php:204
 msgid "Add New Question Category"
-msgstr ""
+msgstr "Voeg nieuwe Vraagcategorie toe"
 
 #: inc/Posts/Question.php:205
 msgid "New Question Category Name"
-msgstr ""
+msgstr "Naam nieuwe Vraagcategorie"
 
 #: inc/Posts/Question.php:206
 msgid "Question Category"
-msgstr "קטגורית השאלה"
+msgstr "Vraagcetegorie"
 
 #: inc/Posts/Question.php:225
 msgctxt "taxonomy general name"
 msgid "Question Tags"
-msgstr ""
+msgstr "Vraag tags"
 
 #: inc/Posts/Question.php:226
 msgctxt "taxonomy singular name"
 msgid "Question Tag"
-msgstr ""
+msgstr "Vraagtag"
 
 #: inc/Posts/Question.php:227
 msgid "Search Question Tags"
-msgstr ""
+msgstr "Doorzoek Vraagtags"
 
 #: inc/Posts/Question.php:228
 msgid "Popular Question Tags"
-msgstr ""
+msgstr "Populaire Vraagtags"
 
 #: inc/Posts/Question.php:229
 msgid "All Question Tags"
-msgstr ""
+msgstr "Alle Vraagtagss"
 
 #: inc/Posts/Question.php:232
 msgid "Edit Question Tag"
-msgstr ""
+msgstr "Bewerk Vraagtag"
 
 #: inc/Posts/Question.php:233
 msgid "Update Question Tag"
-msgstr ""
+msgstr "Werk Vraagtag bij"
 
 #: inc/Posts/Question.php:234
 msgid "Add New Question Tag"
-msgstr ""
+msgstr "Voeg nieuwe Vraagtag tie"
 
 #: inc/Posts/Question.php:235
 msgid "New Question Tag Name"
-msgstr ""
+msgstr "Naam Nieuwe Vraagtag"
 
 #: inc/Posts/Question.php:236
 msgid "Separate question tags with commas"
-msgstr ""
+msgstr "Plaats comma's tussen vraagtags"
 
 #: inc/Posts/Question.php:237
 msgid "Add or remove question tags"
-msgstr ""
+msgstr "Vraagtags toevoegen of verwijderen"
 
 #: inc/Posts/Question.php:238
 msgid "Choose from the most used question tags"
-msgstr ""
+msgstr "Kies uit de meest gebruikte vraagtags"
 
 #: inc/Posts/Question.php:239
 msgid "No question tags found."
-msgstr ""
+msgstr "Geen vraagtags gevonden"
 
 #: inc/Posts/Question.php:240
 msgid "Question Tags"
-msgstr "תגיות השאלה"
+msgstr "Vraag tags"
 
 #: inc/Posts/Question.php:276
 msgid "Info"
-msgstr "מידע"
+msgstr "Info"
 
 #: inc/Posts/Question.php:287 templates/content-question.php:22
 msgid "answered"
-msgstr "נענה"
+msgstr "beantwoord"
 
 #: inc/Posts/Question.php:288
 msgid "voted"
-msgstr "הוצבע"
+msgstr "gestemd"
 
 #: inc/Posts/Question.php:289
 msgid "views"
-msgstr "צפיות"
+msgstr "vertoningen"
 
 #: inc/Posts/Question.php:410 inc/User.php:266
 msgid "Invalid Post"
-msgstr "פוסט לא חוקי"
+msgstr "Ongeldige inzending"
 
 #: inc/Posts/Question.php:445
 msgid "Sticky Questions"
-msgstr "שאלות דביקות"
+msgstr "Sticky vragen"
 
 #: inc/Posts/Question.php:479
 msgid "Question is not valid"
-msgstr "שאלה לא תקינה"
+msgstr "Vraag is niet geldig"
 
 #: inc/Posts/Question.php:500
 msgid "Delete Action was failed"
-msgstr "פעולת מחיקה נכשלה"
+msgstr "Verwijder-actie niet geslaagd"
 
 #: inc/Posts/Question.php:505
 msgid "You do not have permission to delete this question"
-msgstr "אין לך הרשאות למחוק שאלה זאת"
+msgstr "Je hebt geen toestemming om deze vraag te verwijderen"
 
 #: inc/Session.php:68 inc/Session.php:85 inc/Session.php:95 inc/Session.php:118
 msgid "This function should not be called before init."
-msgstr ""
+msgstr "Deze functie moet niet aangeroepen worden voor init."
 
 #: inc/Settings.php:8
 msgid "Login required. No anonymous post allowed"
-msgstr "התחברות נדרשת. שליחה אנונימית אסורה"
+msgstr "Inloggen vereist. Anonieme inzendingen niet toegestaan"
 
 #: inc/Settings.php:20
 msgid "Select Archive Question Page"
-msgstr "בחר דף ארכיון שאלות"
+msgstr "Kies Archief Vraagpagina"
 
 #: inc/Settings.php:24
 msgid ""
-"A page where displays all questions. The <code>[dwqa-list-questions]</code> "
+"A page where displays all questions. The <code>[EMQA-list-questions]</code> "
 "short code must be on this page."
 msgstr ""
+"Een pagina welke alle vragen toont. De <code>[EMQA-list-questions]</code> "
+"shortcode moet op deze pagina worden gebruikt"
 
 #: inc/Settings.php:31
 msgid "hours"
-msgstr "שעות"
+msgstr "uren"
 
 #: inc/Settings.php:31
 msgid ""
 "A period of time in which new questions are highlighted and marked as New"
-msgstr "טווח זמן שהשאלות יסומנו כחדשות"
+msgstr ""
+"Een tijdsperiode waarbinnen nieuwe vragen worden uitgelicht en gemarkeerd "
+"als Nieuw"
 
 #: inc/Settings.php:36
 msgid "days"
-msgstr "ימים"
+msgstr "dagen"
 
 #: inc/Settings.php:36
 msgid ""
 "A Question will be marked as overdue if it passes this period of time, "
 "starting from the time the question was submitted"
-msgstr "שאלה תסומן כ\"איחור\" אם תעבור את טווח הזמנים החל מזמן שהשאלה נשלחה"
+msgstr ""
+"Een vraag zal als overtijd worden gemarkeerd, als het deze tijdsperiode "
+"overschrijdt, geteld vanaf het tijdstip dat de vraag was ingediend "
 
 #: inc/Settings.php:47
 msgid "Select Submit Question Page"
-msgstr "בחר דף שליחת שאלה"
+msgstr "Kies Stel Vraag Pagina"
 
 #: inc/Settings.php:52
 msgid ""
-"A page where users can submit questions. The <code>[dwqa-submit-question-"
+"A page where users can submit questions. The <code>[EMQA-submit-question-"
 "form]</code> short code must be on this page."
 msgstr ""
+"Een pagina waar gebruiker vragen kunnen indienen. De <code>[EMQA-submit-"
+"question-form]</code> shortcode moet op deze pagina worden gebruikt"
 
 #: inc/Settings.php:65
-msgid "Select 404 DWQA Page"
-msgstr "בחר דף 404"
+msgid "Select 404 EMQA Page"
+msgstr "Kies 404 EMQA Pagina"
 
 #: inc/Settings.php:70
 msgid ""
@@ -712,120 +726,124 @@ msgid ""
 "question. You can customize the message of this page in.If not, a default "
 "404 page will be used."
 msgstr ""
-"דף זה ינותב כאשר משתמשים ללא הרשאות לחצו על שאלה פרטית. ניתן להתאים אישית את "
-"ההודעה בדף זה. אם לא, דף ברירת מחדל יהיה 404."
+"Deze pagina zal herleid worden wanneer gebruikers zonder toestemming op een "
+"privévraag klikken. Je kunt de boodschap van deze pagina aanpassen. Zo niet, "
+"dan zal de standaard 404 pagina worden getoond."
 
 #: inc/Settings.php:87
 msgid "Upload"
-msgstr "העלאה"
+msgstr "Upload"
 
 #: inc/Settings.php:87
 msgid "Upload or choose a logo to be displayed at the top of the email."
 msgstr ""
+"Upload of kies een logo om aan de bovenkant van de e-mail te worden getoond"
 
 #: inc/Settings.php:126 inc/Settings.php:161 inc/Settings.php:197
 #: inc/Settings.php:233 inc/Settings.php:268 inc/Settings.php:303
 #: inc/Settings.php:338
 msgid "Enable?"
-msgstr ""
+msgstr "Aanzetten?"
 
 #: inc/Settings.php:126
 msgid "Enable notification for new question."
-msgstr ""
+msgstr "Kennisgeving aanzetten voor nieuwe vraag"
 
 #: inc/Settings.php:131 inc/Settings.php:166 inc/Settings.php:202
 #: inc/Settings.php:238 inc/Settings.php:273 inc/Settings.php:308
 #: inc/Settings.php:343
 msgid "Email subject"
-msgstr "נושא הדוא\"ל"
+msgstr "E-mail onderwerp"
 
 #: inc/Settings.php:136 inc/Settings.php:171 inc/Settings.php:207
 #: inc/Settings.php:243 inc/Settings.php:278 inc/Settings.php:313
 #: inc/Settings.php:348
 msgid "Email Content"
-msgstr "תוכן הדוא\"ל"
+msgstr "E-mail inhoud"
 
 #: inc/Settings.php:161
 msgid "Enable notification for new answer."
-msgstr ""
+msgstr "Kennisgeving voor nieuw antwoord aanzetten."
 
 #: inc/Settings.php:197
 msgid "Enable notification for new answer ( to Followers )."
-msgstr ""
+msgstr "Kennisgeving voor nieuw antwoord aanzetten (voor Volgers)"
 
 #: inc/Settings.php:233 inc/Settings.php:268
 msgid "Enable notification for new comment of question."
-msgstr ""
+msgstr "Kennisgeving voor nieuwe reactie op vraag aanzetten"
 
 #: inc/Settings.php:303 inc/Settings.php:338
 msgid "Enable notification for new comment of answer."
-msgstr ""
+msgstr "Kennisgeving voor nieuwe reactie op antwoord aanzetten"
 
 #: inc/Settings.php:400
 msgid "Read"
-msgstr "קרא"
+msgstr "Lees"
 
 #: inc/Settings.php:401
 msgid "Post"
-msgstr "שלח"
+msgstr "Zend in"
 
 #: inc/Settings.php:429 inc/Settings.php:465 inc/Settings.php:500
 msgid "Reset Default"
-msgstr "אפס לברירת מחדל"
+msgstr "Herstel default"
 
 #: inc/Settings.php:467
 msgid "Comments"
-msgstr ""
+msgstr "Reacties"
 
 #: inc/Settings.php:509
 msgid "Enable captcha on submit question page."
-msgstr ""
+msgstr "Captcha op de Stel vraag pagina aan-/uitzetten"
 
 #: inc/Settings.php:515
 msgid "Enable captcha on single question page."
-msgstr ""
+msgstr "Captcha op de Enkele vraag pagina aan-/uitzetten"
 
 #: inc/Settings.php:533
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 #: inc/Settings.php:546
 msgid "questions."
-msgstr ""
+msgstr "vragen"
 
 #: inc/Settings.php:552
 msgid "answers."
-msgstr ""
+msgstr "antwoorden."
 
 #: inc/Settings.php:558
 msgid "Allow members to post private question."
-msgstr ""
+msgstr "Sta leden toe om privévragen te stellen"
 
 #: inc/Settings.php:564
 msgid "Question must be manually approved."
-msgstr ""
+msgstr "Vraag moet handmatig worden goedgekeurd"
 
 #: inc/Settings.php:570
 msgid "Display status icon on the left side."
-msgstr ""
+msgstr "Toon status icoon aan de linker zijde"
 
 #: inc/Settings.php:576
 msgid "Disable question status feature."
-msgstr ""
+msgstr "Zet vraag statuskenmerk uit"
 
 #: inc/Settings.php:582
 msgid "Show all answers on single question page."
-msgstr ""
+msgstr "Toon alle antwoorden op enkele vraag pagina."
 
 #: inc/Settings.php:593
 msgid "Select template for Single Quesiton page"
-msgstr "בחר תבנית לדף שאלה"
+msgstr "Kies sjabloon voor Enkele vraag pagina"
 
 #: inc/Settings.php:599
 msgid ""
 "By default, your single.php template file will be used if you do not choose "
 "any template"
-msgstr "כברירת מחדל, קובץ תבנית single.php ישמש אם לא בחרת תבנית אחרת"
+msgstr ""
+"Standaard zal je single.php sjabloon-file worden gebruikt, als je geen ander "
+"sjabloon kies"
 
 #: inc/Settings.php:607
 #, php-format
@@ -835,271 +853,276 @@ msgid ""
 "<code>topic</code> as your question base would make your question links like "
 "<code>%s</code>. If you leave these blank the default will be used."
 msgstr ""
+"Indien gewenst, kun je een eigen structuur voor de enkele vraag, vraag "
+"categorie en vraag tag URLs hier invoeren. Bijvoorbeeld,  met <code>topic</"
+"code> als je vraag basis, zouden je je vraag links er uitzien als <code>%s</"
+"code>. Als je niets invoert zal de default worden gebruikt."
 
 #: inc/Settings.php:732
 msgid "Plugin Settings"
-msgstr "הגדרות תוסף"
+msgstr "Plug-in Instellingen"
 
 #: inc/Settings.php:732
 msgid "Settings"
-msgstr "הגדרות"
+msgstr "Instellingen"
 
 #: inc/Settings.php:768
 msgid "Email Settings"
-msgstr ""
+msgstr "E-mail instellingen"
 
 #: inc/Settings.php:769
 msgid "New Question Notifications"
-msgstr ""
+msgstr "Nieuwe Vraag Kennisgevingen"
 
 #: inc/Settings.php:770
 msgid "New Answer Notifications"
-msgstr ""
+msgstr "Nieuwe Vraag Kennisgevingen"
 
 #: inc/Settings.php:771
 msgid "New Comment Notifications"
-msgstr ""
+msgstr "Nieuwe Reactie Kennisgevingen"
 
 #: inc/Settings.php:784
 msgid "Page Settings"
-msgstr ""
+msgstr "Pagina Instellingen"
 
 #: inc/Settings.php:791
 msgid "Question List Page"
-msgstr "דף רשימת שאלות"
+msgstr "Vragenlijst Pagina"
 
 #: inc/Settings.php:799 inc/Settings.php:930
 msgid "Ask Question Page"
-msgstr "דף שאל שאלה"
+msgstr "Stel Vraag Pagina"
 
 #: inc/Settings.php:842
 msgid "Question Settings"
-msgstr ""
+msgstr "Vragen Instellingen"
 
 #: inc/Settings.php:849
 msgid "Archive Page Show At Most"
-msgstr ""
+msgstr "Archief pagina toont hoogstens"
 
 #: inc/Settings.php:857
 msgid "Before A Question Appears"
-msgstr ""
+msgstr "Vóór aan vraag verschijnt"
 
 #: inc/Settings.php:865
 msgid "Other Question Settings"
-msgstr ""
+msgstr "Andere Vragag Instellingen"
 
 #: inc/Settings.php:890
 msgid "Answer Settings"
-msgstr ""
+msgstr "Antwoorrd Instellingen"
 
 #: inc/Settings.php:897
 msgid "Answer Listing"
-msgstr ""
+msgstr "Antwoord lijst"
 
 #: inc/Settings.php:915
 msgid "Captcha Settings"
-msgstr ""
+msgstr "Captcha instellingen"
 
 #: inc/Settings.php:922
 msgid "Type"
-msgstr ""
+msgstr "Soort"
 
 #: inc/Settings.php:938
 msgid "Single Question Page"
-msgstr ""
+msgstr "Enkele Vraag Pagina"
 
 #: inc/Settings.php:950
 msgid "Permalink Settings"
-msgstr "הגדרות קישור קבוע"
+msgstr "Permalink Instellingen"
 
 #: inc/Settings.php:957
 msgid "Question Base"
-msgstr ""
+msgstr "Vraag Basis"
 
 #: inc/Settings.php:965
 msgid "Question Category Base"
-msgstr ""
+msgstr "Vraag Categorie Basis"
 
 #: inc/Settings.php:973
 msgid "Question Tag Base"
-msgstr ""
+msgstr "Vraag Tag Basis"
 
 #: inc/Settings.php:1042
 msgid "From Email"
-msgstr "דוא\"ל מאת"
+msgstr "Van E-mail"
 
 #: inc/Settings.php:1110 inc/Settings.php:1117
 msgid "Group Permission"
-msgstr "הרשאות קבוצה"
+msgstr "Groep-toestemming"
 
 #: inc/Settings.php:1145
-msgid "DWQA Settings"
-msgstr "הגדרות DWQA"
+msgid "EMQA Settings"
+msgstr "EMQA Instellingen"
 
 #: inc/Settings.php:1149
 msgid "General"
-msgstr "כללי"
+msgstr "Algemeen"
 
 #: inc/Settings.php:1150
 msgid "Emails"
-msgstr ""
+msgstr "E-mails"
 
 #: inc/Settings.php:1151
 msgid "Permissions"
-msgstr ""
+msgstr "Toestemmingen"
 
 #: inc/Settings.php:1152
 msgid "Licenses"
-msgstr ""
+msgstr "Licensies"
 
 #: inc/Settings.php:1166
 msgid "Email settings"
-msgstr ""
+msgstr "E-mail instellingen"
 
 #: inc/Settings.php:1168
 msgid "Email Logo"
-msgstr "לוגו דוא\"ל"
+msgstr "E-mail Logo"
 
 #: inc/Settings.php:1182
 msgid "New Question Notifications (to Admin)"
-msgstr ""
+msgstr "Nieuwe Vraag Kennisgevingen (voor Admin)"
 
 #: inc/Settings.php:1206
 msgid "New Answer Notifications (to Followers)"
-msgstr ""
+msgstr "Nieuw Antwoord Kennisgeving (voor Volgers)"
 
 #: inc/Settings.php:1222
 msgid "New Answer Notifications (to Admin)"
-msgstr ""
+msgstr "Nieuw Antwoord Kennisgevingen (voor Admin)"
 
 #: inc/Settings.php:1242
 msgid "New Comment to Question Notifications (to Followers)"
-msgstr ""
+msgstr "Nieuwe Reactie op Vraag Kennisgeving (voor Volgers)"
 
 #: inc/Settings.php:1259
 msgid "New Comment to Question Notifications (to Admin)"
-msgstr ""
+msgstr "Nieuwe Vraag Kennisgevingen (voor Admin)"
 
 #: inc/Settings.php:1279
 msgid "New Comment to Answer Notifications (to Followers)"
-msgstr ""
+msgstr "Nieuwe Reactie op Antwoord Kennisgeving (voor Volgers)"
 
 #: inc/Settings.php:1296
 msgid "New Comment to Answer Notifications (to Admin)"
-msgstr ""
+msgstr "Nieuwe Reactie op Antwoord Kennisgevingen (voor Admin)"
 
 #: inc/Settings.php:1314
 msgid "Save all changes"
-msgstr "שמור כל השינויים"
+msgstr "Bewaar alle veranderingen"
 
 #: inc/Settings.php:1328
 #, php-format
-msgid "Manage <a href=\"%s\">DWQA Extensions</a> license keys"
-msgstr ""
+msgid "Manage <a href=\"%s\">EMQA Extensions</a> license keys"
+msgstr "Beheer <a href=\"%s\">EMQA Extensions</a> license keys"
 
 #: inc/Settings.php:1346 inc/Settings.php:1351 inc/Settings.php:1356
 #: inc/Settings.php:1361
 msgid "Forward to"
-msgstr ""
+msgstr "Stuur door naar"
 
 #: inc/Settings.php:1366
 msgid "Cc"
-msgstr "העתק"
+msgstr "Cc"
 
 #: inc/Settings.php:1371
 msgid "Bcc"
-msgstr "העתק מוסתר"
+msgstr "Bcc"
 
 #: inc/Settings.php:1376
 msgid "This address will be used as the sender of the outgoing emails."
-msgstr "כתובת זו תשמש כשולח של הודעות הדוא\"ל היוצאות."
+msgstr ""
+"Dit adres zal gebruikt worden als de verzender van de uitgaande e-mails"
 
 #: inc/Settings.php:1382
 msgid "Send a copy of every email to admin."
-msgstr ""
+msgstr "Verstuur een kopie van elke e-mail aan de Admin"
 
 #: inc/Shortcode.php:115 inc/widgets/Popular_Question.php:21
 msgid "Popular Questions"
-msgstr "שאלות פופולריות"
+msgstr "Populaire Vragen"
 
 #: inc/Shortcode.php:152
 msgid "Latest Answers"
-msgstr "תשובות אחרונות"
+msgstr "Laatste antwoorden"
 
 #: inc/Shortcode.php:178
 msgid "Answer at"
-msgstr "תשובה ב"
+msgstr "Antwoord op"
 
 #: inc/Shortcode.php:178
 msgid "Link to"
-msgstr "קישור ל"
+msgstr "Link naar"
 
 #: inc/Shortcode.php:206
 #, php-format
 msgid "%d person who is following this question"
 msgid_plural "%d people who are following this question"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d persoon volgt deze vraag"
+msgstr[1] "%d personen volgen deze vraag"
 
 #: inc/Shortcode.php:236
 msgid "Question List"
-msgstr ""
+msgstr "Vragenlijst"
 
 #: inc/Status.php:300
 msgid "Answered"
-msgstr "נענה"
+msgstr "Beantwoord"
 
 #: inc/Status.php:324
 msgid "Missing post ID"
-msgstr "חסר ID של הפוסט"
+msgstr "Ontbrekende inzend-ID"
 
 #: inc/Status.php:337
 msgid "Post does not exist"
-msgstr "הפוסט לא קיים"
+msgstr "Post bestaat niet"
 
 #: inc/Status.php:342
 msgid "Invalid post status"
-msgstr "סטוטס פוסט לא תקין"
+msgstr "Ongeldige post status"
 
 #: inc/Template.php:15 templates/content-edit.php:44
 #: templates/question-submit-form.php:46
 msgid "Tag"
-msgstr ""
+msgstr "Tag"
 
 #: inc/Template.php:15 inc/Template.php:20 templates/content-edit.php:29
 #: templates/question-submit-form.php:32
 msgid "Category"
-msgstr "קטגוריה"
+msgstr "Categorie"
 
 #: inc/Template.php:43
 msgid "Showing search results for"
-msgstr ""
+msgstr "Toon zoekresultaten voor"
 
 #: inc/Template.php:78
 msgid "What do you want to know?"
-msgstr ""
+msgstr "Wat wil je weten?"
 
 #: inc/Template.php:157
 msgid "Subscribe"
-msgstr ""
+msgstr "Abonneer"
 
 #: inc/Template.php:445
 msgid "Email"
-msgstr "דוא\"ל"
+msgstr "E-mail"
 
 #: inc/Template.php:447
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 #: inc/Template.php:449
 #, php-format
 msgid "Required fields are marked %s"
-msgstr "השדות שמסומנים הם נדרשים %s"
+msgstr "Verplichte velden zijn gemarkeerd met %s"
 
 #: inc/Template.php:461
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr "חייב להיות <a href=\"%s\">מחובר</a> בכדי לשלוח תגובה."
+msgstr "U moet <a href=\"%s\">inloggen</a> om een reactie te kunnen plaatsen."
 
 #: inc/Template.php:464
 #, php-format
@@ -1107,100 +1130,101 @@ msgid ""
 "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
 "and attributes: %s"
 msgstr ""
-"אפשר להשתמש בתגיות <abbr title=\"HyperText Markup Language\">HTML</abbr>: %s"
+"Je  kunt deze <abbr title=\"HyperText Markup Language\">HTML</abbr> tags en "
+"attributen gebruiken: %s"
 
 #: inc/Template.php:467
 msgid "Leave a Reply"
-msgstr "השאר תגובה"
+msgstr "Geef een reactie"
 
 #: inc/Template.php:468
 #, php-format
 msgid "Leave a Reply to %s"
-msgstr "השאר תגובה ל %s"
+msgstr "Laat een reactie achter bij %s"
 
 #: inc/Template.php:469
 msgid "Cancel reply"
-msgstr "בטל תגובה"
+msgstr "Reactie annuleren"
 
 #: inc/Template.php:470
 msgid "Post Comment"
-msgstr "שלח תגובה"
+msgstr "Reactie plaatsen"
 
 #: inc/Template.php:645
 msgid "Sticky Question"
-msgstr "שאלה דביקה"
+msgstr "Sticky vraag"
 
 #: inc/Template.php:659
 msgid "Ask a question"
-msgstr "שאל שאלה"
+msgstr "Stel een vraag"
 
 #: inc/Template.php:661
 msgid "Login to ask a question"
-msgstr "כנס בכדי לשלוח שאלה"
+msgstr "Log in om een vraag te stellen"
 
 #: inc/Template.php:1128
 msgid "Choose as the best answer"
-msgstr "בחר את התשובה הטובה ביותר"
+msgstr "Kies het beste antwoord"
 
 #: inc/Updater.php:97
 msgid "License Key"
-msgstr ""
+msgstr "License Key"
 
 #: inc/Updater.php:122
 msgid "Activate"
-msgstr ""
+msgstr "Activeer"
 
 #: inc/Updater.php:176
 msgid "Plugin was activated"
-msgstr ""
+msgstr "Plug-in is geactiveerd"
 
 #: inc/User.php:230
 msgid "Staff"
-msgstr "צוות"
+msgstr "Staf"
 
 #: inc/Walker/Category.php:20 inc/Walker/Tag.php:20
 #, php-format
 msgid "View all posts filed under %s"
-msgstr "ראה כל הפוסטים תחת %s"
+msgstr "Toon alle post opgeslagen onder %s"
 
 #: inc/Walker/Category.php:35 inc/Walker/Tag.php:35
 #, php-format
 msgid "Feed for all posts filed under %s"
-msgstr "הזן כל הפוסטים תחת %s"
+msgstr "Feed voor alle berichten opgeslagen onder %s"
 
 #: inc/widgets/Closed_Question.php:11
 msgid "Show a list of questions marked as closed."
-msgstr ""
+msgstr "Toon een lijst van vragen welke als gesloten zijn gemarkeerd"
 
 #: inc/widgets/Closed_Question.php:12
-msgid "DWQA Closed Questions"
-msgstr "DWQA שאלות סגורות"
+msgid "EMQA Closed Questions"
+msgstr "EMQA gesloten vragen"
 
 #: inc/widgets/Closed_Question.php:18
 msgid "Closed Questions"
-msgstr "שאלות סגורות"
+msgstr "Gesloten vragen"
 
 #: inc/widgets/Closed_Question.php:72 inc/widgets/Latest_Question.php:71
 #: inc/widgets/Popular_Question.php:66 inc/widgets/Related_Question.php:48
 msgid "Widget title"
-msgstr "כותרת הוידג'ט"
+msgstr "Widget titel"
 
 #: inc/widgets/Closed_Question.php:75 inc/widgets/Latest_Question.php:74
 #: inc/widgets/Popular_Question.php:69 inc/widgets/Related_Question.php:51
 msgid "Number of posts"
-msgstr "מספר הפוסטים"
+msgstr "Aantal inzendingen"
 
 #: inc/widgets/Latest_Question.php:10
 msgid "Show a list of latest questions."
-msgstr ""
+msgstr "Toon een lijst van laatste vragen"
 
 #: inc/widgets/Latest_Question.php:11
-msgid "DWQA Latest Questions"
-msgstr "DWQA שאלות אחרונות"
+msgid "EMQA Latest Questions"
+msgstr "EMQA laatste vragen"
 
 #: inc/widgets/Latest_Question.php:17
 msgid "Latest Questions"
-msgstr "שאלות אחרונות"
+msgstr "Toon een lijst van laatste vragen"
 
 #: inc/widgets/Latest_Question.php:44
 msgid "ago"
@@ -1212,21 +1236,23 @@ msgstr ""
 
 #: inc/widgets/Popular_Question.php:13
 msgid "Show a list of popular questions."
-msgstr ""
+msgstr "Toon een lijst van populaire vragen"
 
 #: inc/widgets/Popular_Question.php:15
-msgid "DWQA Popular Questions"
-msgstr "DWQA שאלות פופולריות"
+msgid "EMQA Popular Questions"
+msgstr "EMQA populaire vragen"
 
 #: inc/widgets/Related_Question.php:11
 msgid ""
 "Show a list of questions that related to a question. Just show in single "
 "question page"
-msgstr "הצג רשימה של שאלות שקשורות לשאלה. רק להציג בדף 'שאלה בודדה'"
+msgstr ""
+"Toon een lijst vragen gerelateerd aan een vraag. Toon alleen op een enkele-"
+"vraag-pagina"
 
 #: inc/widgets/Related_Question.php:12
-msgid "DWQA Related Questions"
-msgstr "DWQA שאלות קשורות"
+msgid "EMQA Related Questions"
+msgstr "EMQA gerelateerde vragen"
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:181
 #, php-format
@@ -1234,6 +1260,8 @@ msgid ""
 "There is a new version of %1$s available. <a target=\"_blank\" class="
 "\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
 msgstr ""
+"Er is een nieuwe versie van %1$s beschikbaar. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">Bekijk versie %3$s details</a>."
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:188
 #, php-format
@@ -1242,907 +1270,393 @@ msgid ""
 "\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s"
 "\">update now</a>."
 msgstr ""
+"Er is een nieuwe versie van %1$s beschikbaar. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">Bekijk versie %3$s details</a> of <a href=\"%4$s"
+"\">werk nu bij</a>."
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:326
 msgid "You do not have permission to install plugin updates"
-msgstr ""
+msgstr "Je hebt geen toestemming om plug-in updates te installeren"
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:326
 msgid "Error"
-msgstr ""
+msgstr "Fout"
 
 #: templates/answer-submit-form.php:12
 msgid "Your Answer"
-msgstr ""
+msgstr "Je antwoord"
 
 #: templates/answer-submit-form.php:21 templates/question-submit-form.php:52
 msgid "Your Email"
-msgstr ""
+msgstr "Je e-mail"
 
 #: templates/answer-submit-form.php:26 templates/question-submit-form.php:57
 msgid "Your Name"
-msgstr ""
+msgstr "Je naam"
 
 #: templates/answer-submit-form.php:33 templates/question-submit-form.php:24
 msgid "Who can see this?"
-msgstr ""
+msgstr "Wie kan dit zien?"
 
 #: templates/answer-submit-form.php:34 templates/question-submit-form.php:25
 msgid "Public"
-msgstr "ציבורי"
+msgstr "Openbaar"
 
 #: templates/answer-submit-form.php:35 templates/question-submit-form.php:26
 msgid "Only Me &amp; Admin"
-msgstr ""
+msgstr "Alleen ik &amp; Admin"
 
 #: templates/answer-submit-form.php:39 templates/question-submit-form.php:65
 msgid "Submit"
-msgstr ""
+msgstr "Indienen"
 
 #: templates/answers.php:12
 #, php-format
 msgid "%s Answers"
-msgstr ""
+msgstr "%s Antwoorden"
 
 #: templates/archive-question-filter.php:14
 msgid "Filter:"
-msgstr ""
+msgstr "Filter:"
 
 #: templates/archive-question-filter.php:16
 msgid "All"
-msgstr "הכל"
+msgstr "Alles"
 
 #: templates/archive-question-filter.php:22
 msgid "Unanswered"
-msgstr ""
+msgstr "Onbeantwoord"
 
 #: templates/archive-question-filter.php:24
 msgid "My questions"
-msgstr ""
+msgstr "Mijn vragen"
 
 #: templates/archive-question-filter.php:25
 msgid "My subscribes"
-msgstr ""
+msgstr "Mijn abonnementen"
 
 #: templates/archive-question-filter.php:29
 msgid "Subscribes"
-msgstr ""
+msgstr "Abonnementen"
 
 #: templates/archive-question-filter.php:32
 msgid "Sort by"
-msgstr ""
+msgstr "Sorteer op"
 
 #: templates/archive-question-filter.php:33
 msgid "Views"
-msgstr ""
+msgstr "Vertoningen"
 
 #: templates/archive-question-filter.php:35
 msgid "Votes"
-msgstr ""
+msgstr "Stemmen"
 
 #: templates/archive-question.php:28
 msgid "Ask Question"
-msgstr "שאל שאלה"
+msgstr "Stel Vraag"
 
 #: templates/captcha-form.php:20
 msgid "Enter the result"
-msgstr ""
+msgstr "Voer je antwoord in"
 
 #: templates/content-comment.php:16
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid "replied %s ago"
-msgstr ""
+msgstr "%s geleden beantwoord"
 
 #: templates/content-edit.php:21 templates/question-submit-form.php:13
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: templates/content-edit.php:36 templates/question-submit-form.php:38
 msgid "Select question category"
-msgstr "בחר קטגורית תשובה"
+msgstr "Kies een vraagcategorie"
 
 #: templates/content-edit.php:50
 msgid "Save Changes"
-msgstr ""
+msgstr "Bewaar alle veranderingen"
 
 #: templates/content-none.php:10
 msgid "You do not have permission to view questions"
-msgstr "אין לך הרשאות לצפיה בשאלות"
+msgstr "Je hebt geen toestemming om vragen in te zien"
 
 #: templates/content-none.php:12
 msgid "Sorry, but nothing matched your filter"
-msgstr ""
+msgstr "Er kwam niets met je filter overeen."
 
 #: templates/content-question.php:18
 msgid "asked"
-msgstr "נשאל"
+msgstr "gevraagd"
 
 #: templates/content-question.php:25
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s %s ago</span>"
-msgstr ""
+msgstr "<span><a href=\"%s\">%s%s</a> %s %s geleden</span>"
 
 #: templates/content-question.php:26 templates/content-single-answer.php:25
 msgid "&nbsp;&bull;&nbsp;"
-msgstr ""
+msgstr "&nbsp; &bull; &nbsp;"
 
 #: templates/content-question.php:31
 #, php-format
 msgid "<strong>%1$s</strong> views"
-msgstr ""
+msgstr "<strong>%1$s</strong> vertoningen"
 
 #: templates/content-question.php:35
 #, php-format
 msgid "<strong>%1$s</strong> answers"
-msgstr ""
+msgstr "<strong>%1$s</strong> antwoorden"
 
 #: templates/content-question.php:39
 #, php-format
 msgid "<strong>%1$s</strong> votes"
-msgstr ""
+msgstr "<strong>%1$s</strong> stemmen"
 
 #: templates/content-single-answer.php:12
 #: templates/content-single-question.php:14
 msgid "Vote Up"
-msgstr "תן קול"
+msgstr "Stem omhoog"
 
 #: templates/content-single-answer.php:13
 #: templates/content-single-question.php:15
 msgid "Vote Down"
-msgstr "הסר קול"
+msgstr "Stem omlaag"
 
 #: templates/content-single-answer.php:17
 #: templates/content-single-answer.php:19
 msgid "Best Answer"
-msgstr ""
+msgstr "Beste Antwoord"
 
 #: templates/content-single-answer.php:23
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s answered %s ago</span>"
-msgstr ""
+msgstr "<span><a href=\"%s\">%s%s</a> %s beantwoord, %s geleden</span>"
 
 #: templates/content-single-answer.php:26
 msgid "Private"
-msgstr "פרטי"
+msgstr "Priv&#233;"
 
 #: templates/content-single-question.php:19
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s asked %s ago</span>"
-msgstr ""
+msgstr "<span><a href=\"%s\">%s%s</a> %s gevraagd, %s geleden</span>"
 
 #: templates/content-single-question.php:25
 msgid "Question Tags: "
-msgstr ""
+msgstr "Vraagtags"
 
 #: templates/content-single-question.php:29
 msgid "This question is:"
-msgstr ""
+msgstr "Deze vraag is:"
 
 #: templates/question-submit-form.php:69
 msgid "You do not have permission to submit a question"
-msgstr "אין לך הרשאות לשלוח שאלה"
+msgstr "Je hebt geen toestemming om een vraag te stellen"
 
 #: upgrades/upgrades.php:25
 #, php-format
 msgid ""
-"DW Question Answer needs to upgrade the database, click %shere%s to start "
+"EMO Questalk  needs to upgrade the database, click %shere%s to start "
 "the upgrade."
 msgstr ""
+"EMO Questalk  moet de database bijwerken, klik %shier%s om te starten "
+"met de upgrade."
 
 #: upgrades/upgrades.php:33
-msgid "DWQA Upgrade"
-msgstr ""
+msgid "EMQA Upgrade"
+msgstr "EMQA Upgrade"
 
 #: upgrades/upgrades.php:40
 msgid ""
 "The upgrade process has started, please be patient. This could take several "
 "minutes. You will be automatically redirected when the upgrade is finished..."
 msgstr ""
+"Het upgrade proces is gestart. Even geduld: dit kan enkele minuten duren. Je "
+"zult automatisch worden doorgestuurd wanneer de upgrade gereed is."
 
 #: upgrades/upgrades.php:130
 msgid "You do not have permission to do this task"
-msgstr ""
+msgstr "U hebt geen toestemming voor het uitvoeren van deze taak."
 
 #: upgrades/upgrades.php:147
 msgid "Just do it.."
-msgstr ""
+msgstr "Gewoon doen..."
 
 #: upgrades/upgrades.php:155
 #, php-format
 msgid "Move to next step %d"
-msgstr ""
+msgstr "Ga naar volgende stap %d"
 
 #: upgrades/upgrades.php:172
 msgid "Upgrade process is done"
-msgstr ""
+msgstr "Upgrade proces is gereed"
 
 #. Plugin Name of the plugin/theme
-msgid "DW Question Answer"
-msgstr ""
+msgid "EMO Questalk "
+msgstr "EMO Questalk "
 
 #. Description of the plugin/theme
 msgid ""
-"A WordPress plugin was make by DesignWall.com to build an Question Answer "
+"A WordPress plugin was make by Emohelp.com to build an Question Answer "
 "system for support, asking and comunitcate with your customer"
 msgstr ""
+"Een WordPress plugin is gemaakt door Emohelp.com om een Question Answer "
+"system te bouwen voor ondersteuning en vragen van en communicatie met je "
+"klant"
 
 #. Author of the plugin/theme
-msgid "DesignWall"
-msgstr ""
+msgid "Emohelp"
+msgstr "Emohelp"
 
 #. Author URI of the plugin/theme
-msgid "http://www.designwall.com"
-msgstr ""
+msgid "http://www.Emohelp.com"
+msgstr "http://www.Emohelp.com"
 
 #~ msgid "Next"
-#~ msgstr "Suivant"
+#~ msgstr "Volgende"
 
 #~ msgid "Prev"
-#~ msgstr "קודם"
+#~ msgstr "Vorige"
 
 #~ msgid "Please enter your question"
-#~ msgstr "הכנס את שאלתך"
+#~ msgstr "Stel je vraag"
 
 #~ msgid "Your question must be at least 2 characters in length"
-#~ msgstr "שאלתך חיבת להיות לפחות 2 תווים"
+#~ msgstr "Je vraag moet minstens 2 letters lang zijn"
 
 #~ msgid "Enter a valid email address"
-#~ msgstr "הכנס דוא\"ל תקין"
+#~ msgstr "Voer een geldig e-mailadres in"
 
 #~ msgid "Enter a question title"
-#~ msgstr "הכנס כותרת השאלה"
+#~ msgstr "Voer een vraagtitel in"
 
 #~ msgid "Please add your name"
-#~ msgstr "הזן את שמך"
+#~ msgstr "Voer je naam in"
 
 #~ msgid "Please enter your answer"
-#~ msgstr "הזן את תשובתך"
+#~ msgstr "Voer je antwoord in"
 
 #~ msgid "Comment must have more than 2 characters"
-#~ msgstr "הערה חיבת להיות לפחת 2 תווים"
+#~ msgstr "Je reactie moet minstens 2 letters lang zijn"
 
 #~ msgid "Not found! Try another keyword."
-#~ msgstr "לא נמצא! נסה מילים אחרות"
+#~ msgstr "Niets gevonden! Probeer een ander zoekwoord."
 
 #~ msgid "Or press <strong>ENTER</strong> to get more questions"
-#~ msgstr "או לחץ <strong>אנטר</strong>  בכדי לקבל עוד שאלות"
+#~ msgstr "Of druk <strong>ENTER</strong>om meer vragen te zien"
 
 #~ msgid "Update"
-#~ msgstr "עדכן"
+#~ msgstr "Bijwerken"
 
 #~ msgid "Cancel"
-#~ msgstr "בטל"
+#~ msgstr "Annuleer"
 
 #~ msgid "Do you want to delete this comment?"
-#~ msgstr "האם ברצונך למחוק את התגובה הזאת?"
+#~ msgstr "Wil je deze reactie verwijderen?"
 
 #~ msgid "Do you want to delete this answer?"
-#~ msgstr "האם ברצונך למחוק את התשובה הזאת?"
+#~ msgstr "Wil je dit antwoord verwijderen?"
 
 #~ msgid "Do you want to update this answer?"
-#~ msgstr "האם ברצונך לעדכן תשובה הזאת?"
+#~ msgstr "Wil je dit antwoord bijwerken?"
 
 #~ msgid "Do you want to report this answer?"
-#~ msgstr "האם ברצונך לדווח על התשובה הזאת?"
+#~ msgstr "Wil je dit antwoord rapporteren?"
 
 #~ msgid "Report"
-#~ msgstr "דווח"
+#~ msgstr "Rapporteer"
 
 #~ msgid "Undo"
-#~ msgstr "בטל"
+#~ msgstr "Ongedaan maken"
 
 #~ msgid ""
 #~ "This answer will be marked as spam and hidden. Do you want to flag it?"
-#~ msgstr "התשובה הזאת תחשב כספאם ותעלם. האם ברצונך לסמן אותה?"
+#~ msgstr ""
+#~ "Dit antwoord zal als spam worden gemarkeerd en worden verborgen. Doorgaan?"
 
 #~ msgid "This answer was flagged as spam. Do you want to show it"
-#~ msgstr "התשובה הזאת סומנה כספאם. ברוצנך להציג?"
+#~ msgstr "Dit antwoord was aangemerkt als spam. Wil je het tonen?"
 
 #~ msgid "This answer was flagged as spam"
-#~ msgstr "תשובה הזאת סומנה כספאם"
+#~ msgstr "Dit antwoord was aangemerkt als spam"
 
 #~ msgid "hide"
-#~ msgstr "הסתר"
+#~ msgstr "verberg"
 
 #~ msgid "show"
-#~ msgstr "הצג"
+#~ msgstr "toon"
 
 #~ msgid "Follow This Question"
-#~ msgstr "עקוב אחר השאלה"
+#~ msgstr "Volg deze vraag"
 
 #~ msgid "Unfollow This Question"
-#~ msgstr "בטל מעקב אחר השאל"
+#~ msgstr "Stop deze vraag te volgen"
 
 #~ msgid "Pin this question to top"
-#~ msgstr "הדבק למעלה את השאלה"
+#~ msgstr "Pin deze vraag vast aan de top"
 
 #~ msgid "Unpin this question from top"
-#~ msgstr "בטל מצב 'הדבק למעלה' בשאלה"
+#~ msgstr "Maak deze vraag los van de top"
 
 #~ msgid "Do you want to delete this question?"
-#~ msgstr "רצונך למחוק את שאלה הזאת?"
-
-#~ msgid "Publish"
-#~ msgstr "פרסם"
-
-#~ msgid "Everyone can see"
-#~ msgstr "כולם יכולים לראות"
-
-#~ msgid "Only Author and Administrator can see"
-#~ msgstr "רק המחבר והמנהל יכולים לראות"
-
-#~ msgid "Sorry, but nothing matched your filter. "
-#~ msgstr "לא נמצא"
-
-#~ msgid "You can ask question"
-#~ msgstr "שאל שאלה"
-
-#~ msgid "here"
-#~ msgstr "כאן"
-
-#~ msgid "Please"
-#~ msgstr "בבקשה"
-
-#~ msgid "Login"
-#~ msgstr "כניסה"
-
-#~ msgid " or"
-#~ msgstr " או "
-
-#~ msgid " to submit question."
-#~ msgstr " לשליחת שאלה."
-
-#~ msgid "Search query is empty"
-#~ msgstr "ביטוי חיפוש ריק"
-
-#~ msgid "A page where displays all questions"
-#~ msgstr "דף שמוצג בו כל השאלות"
-
-#~ msgid "A page where users can submit questions."
-#~ msgstr "דף איכן שהמשתמשים יכולים לשלוח שאלות"
-
-#~ msgid "Upload or choose a logo to be displayed at the top of the email"
-#~ msgstr "להעלות או לבחור לוגו שיוצג בחלק העליון של הדואר האלקטרוני"
-
-#~ msgid "Enable notification for new question"
-#~ msgstr "אפשר התראה לשאלה חדשה"
-
-#~ msgid "Enable notification for new answer"
-#~ msgstr "אפשר התראה לתשובה חדשה"
-
-#~ msgid "Enable notification for new answer (to Followers )"
-#~ msgstr "אפשר התראה לתשובה חדשה (לעוקבים)"
-
-#~ msgid "Enable notification for new comment of question"
-#~ msgstr "אפשר התראה לתגובה חדשה על שאלה"
-
-#~ msgid "Enable notification for new comment of answer"
-#~ msgstr "אפשר התראה לתגובה חדשה על תשובה"
-
-#~ msgid "Comment"
-#~ msgstr "תגובה"
-
-#~ msgid "Enable/Disable captcha on submit question page"
-#~ msgstr "הפעל/בטל captcha באת שליחה בדף 'שאלה חדשה'"
-
-#~ msgid "Enable/Disable captcha on single question page"
-#~ msgstr "הפעל/בטל captcha באת שליחה בדף שאלה"
-
-#~ msgid "questions"
-#~ msgstr "שאלות"
-
-#~ msgid "Allow members to post private question"
-#~ msgstr "לאפשר לחברים לפרסם את השאלה פרטית"
-
-#~ msgid "Question must be manually approved"
-#~ msgstr "השאלה חייבת להיות מאושרת באופן ידני"
-
-#~ msgid "New Question Notification"
-#~ msgstr "התראה לשאלה חדשה"
-
-#~ msgid "New Answer Notification"
-#~ msgstr "התראה לתשובה חדשה"
-
-#~ msgid "New Comment to Question Notification (to Followers )"
-#~ msgstr "התראה לתגובה על שאלה (לעוקב)"
-
-#~ msgid "New Comment to Answer Notification"
-#~ msgstr "התראה לתגובה על תשובה"
-
-#~ msgid "New Answer Notification (to Followers )"
-#~ msgstr "התראה לתשובה חדשה (לעוקב)"
-
-#~ msgid "New Comment to Answer Notification (to Followers )"
-#~ msgstr "התראה לתגובה על תשובה (לעוקב)"
-
-#~ msgid "Archive page show at most"
-#~ msgstr "דף ארכיון מוצג לרוב"
-
-#~ msgid "Private Question"
-#~ msgstr "שאלה פרטית"
-
-#~ msgid "Review Question"
-#~ msgstr "סקירת שאלה"
-
-#~ msgid "Time settings"
-#~ msgstr "הגדרות זמן"
-
-#~ msgid "New Question Time Frame"
-#~ msgstr "חלון זמנים לשאלה חדשה"
-
-#~ msgid "Question Overdue - Time Frame"
-#~ msgstr "איחור שאלה - חלון זמנים"
-
-#~ msgid "Captcha settings"
-#~ msgstr "הגדרות Captcha"
-
-#~ msgid "Captcha on Submit Question Page"
-#~ msgstr "Captcha בדף שליחת שאלה"
-
-#~ msgid "Captcha on Single Question Page"
-#~ msgstr "Captcha בדף שאלה בודדה"
-
-#~ msgid "Single Question"
-#~ msgstr "שאלה בודדה"
-
-#~ msgid "Single Category"
-#~ msgstr "קטגוריה בודדה"
-
-#~ msgid "Single Tag"
-#~ msgstr "תג בודד"
-
-#~ msgid "Notification"
-#~ msgstr "התראות"
-
-#~ msgid "Permission"
-#~ msgstr "הרשאות"
-
-#~ msgid "Email setup"
-#~ msgstr "הגדרות דוא\"ל"
-
-#~ msgid "New Comment to Question Notification"
-#~ msgstr "התראה לתגובה על שאלה חדשה"
-
-#~ msgid "Send to"
-#~ msgstr "שלח ל"
-
-#~ msgid "Send A Copy Of Every Email To Admin"
-#~ msgstr "שלח עותק של כל דוא\"ל למנהל"
-
-#~ msgid "You need an account to submit question and get answers. Create one:"
-#~ msgstr "בכדי לשאול שאלות ולקבל תשובות צריך משתמש. צור משתמש:"
-
-#~ msgid "Type your email"
-#~ msgstr "הזן דוא\"ל שלך"
-
-#~ msgid "Already a member?"
-#~ msgstr "משתמש רשום?"
-
-#~ msgid "Log In"
-#~ msgstr "כנס"
-
-#~ msgid "Login to submit your question"
-#~ msgstr "כנס בכדי לשלוח שאלה"
-
-#~ msgid "Type your username"
-#~ msgstr "הזן שם משתמש"
-
-#~ msgid "Type your password"
-#~ msgstr "הזן סיסמה"
-
-#~ msgid "Not yet a member?"
-#~ msgstr "עדיין לא משתמש?"
-
-#~ msgid "Register"
-#~ msgstr "הרשם"
+#~ msgstr "Wil je deze vraag verwijderen?"
 
 #~ msgid ""
-#~ "Enter your email to receive notification regarding your question. Your "
-#~ "email is safe with us and will not be published."
-#~ msgstr "הזן את כתובת הדוא\"ל שלך כדי לקבל התראה על שאלתך."
+#~ "Thank you for installing our WordPress plugin. If you have any question "
+#~ "about this theme, please submit to our <a target=\"_blank\" href="
+#~ "\"https://www.Emohelp.com/question/\">Q&A section</a>."
+#~ msgstr ""
+#~ "Bedankt voor het installeren van onze WordPress plugin. Als je vragen "
+#~ "hebt over dit thema, stel dan je vraag in onze<a target=\"_blank\" href="
+#~ "\"https://www.Emohelp.com/question/\">Q&A sectie</a>."
 
-#~ msgid "Your email *"
-#~ msgstr "הדוא\"ל שלך *"
+#~ msgid "Search query is empty"
+#~ msgstr "Zoekveld is leeg"
 
-#~ msgid "Email address ..."
-#~ msgstr "דואר אלקטרוני ..."
+#~ msgid "Publish"
+#~ msgstr "Publiceer"
 
-#~ msgid "or <strong><a href=\"%s\">login</a></strong> to submit question"
-#~ msgstr "או <strong><a href=\"%s\">כנס</a></strong> בכדי לשלוח שאלה"
+#~ msgid "Everyone can see"
+#~ msgstr "Zichtbaar voor iedereen"
 
-#~ msgid "Private: %s"
-#~ msgstr "פרטי: %s"
+#~ msgid "Only Author and Administrator can see"
+#~ msgstr "Alleen de auteur en de Administrator kunnen dit zien"
+
+#~ msgid "Sorry, but nothing matched your filter. "
+#~ msgstr "Er kwam niets met je filter overeen."
+
+#~ msgid "You can ask question"
+#~ msgstr "Je kunt een vraag stellen"
+
+#~ msgid "here"
+#~ msgstr "hier"
+
+#~ msgid "Please"
+#~ msgstr "Alsjeblieft"
+
+#~ msgid "Login"
+#~ msgstr "Inloggen"
+
+#~ msgid " or"
+#~ msgstr "of"
+
+#~ msgid " to submit question."
+#~ msgstr "om een vraag in te dienen."
 
 #~ msgctxt "noun"
 #~ msgid "Comment"
-#~ msgstr "תגובה"
+#~ msgstr "Reactie"
 
 #~ msgid ""
 #~ "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out "
 #~ "of this account\">Log out?</a>"
 #~ msgstr ""
-#~ "מחובר כ <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"צא מהמשתמש הזה"
-#~ "\">יציאה?</a>"
+#~ "Ingelogd als <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log uit "
+#~ "van deze account\">Log uit?</a>"
 
 #~ msgid "Your email address will not be published."
-#~ msgstr "הדוא\"ל שלך לא יפורסם."
+#~ msgstr "Je e-mailadres wordt niet gepubliceerd."
 
-#~ msgid "Add New Question"
-#~ msgstr "הוסף שאלה חדשה"
-
-#~ msgid "Edit Question"
-#~ msgstr "ערוך שאלה"
-
-#~ msgid "New Question"
-#~ msgstr "שאלה חדשה"
-
-#~ msgid "All Questions"
-#~ msgstr "כל השאלות"
-
-#~ msgid "View Question"
-#~ msgstr "ראה שאלה"
-
-#~ msgid "Search Question"
-#~ msgstr "חפש שאלה"
-
-#~ msgid "No questions found"
-#~ msgstr "לא נמצאו שאלות"
-
-#~ msgid "No questions found in Trash"
-#~ msgstr "לא נמצאו שאלות בפח"
-
-#~ msgid "DW Q&A"
-#~ msgstr "שו\"ת - שאלות ותשובות"
-
-#~ msgid "Add new answer"
-#~ msgstr "הוסף תשובה חדשה"
-
-#~ msgid "Edit answer"
-#~ msgstr "ערוך תשובה"
-
-#~ msgid "New Answer"
-#~ msgstr "תשובה חדשה"
-
-#~ msgid "All Answers"
-#~ msgstr "כל התשובות"
-
-#~ msgid "View Answer"
-#~ msgstr "ראה תשובה"
-
-#~ msgid "Search Answer"
-#~ msgstr "חפש תשובה"
-
-#~ msgid "No Answers found"
-#~ msgstr "לא נמצאה תשובה"
-
-#~ msgid "No Answers found in Trash"
-#~ msgstr "לא נמצאו תשובות בפח"
-
-#~ msgctxt "taxonomy general name"
-#~ msgid "Categories"
-#~ msgstr "קטגוריות"
-
-#~ msgctxt "taxonomy singular name"
-#~ msgid "Category"
-#~ msgstr "קטגוריה"
-
-#~ msgid "Search Categories"
-#~ msgstr "חפש קטגוריות"
-
-#~ msgid "All Categories"
-#~ msgstr "כל הקטגוריות"
-
-#~ msgid "Parent Category"
-#~ msgstr "קטגורית אב"
-
-#~ msgid "Parent Category:"
-#~ msgstr "קטגורית אב:"
-
-#~ msgid "Edit Category"
-#~ msgstr "ערוך קטגוריה"
-
-#~ msgid "Update Category"
-#~ msgstr "עדכן קטגוריה"
-
-#~ msgid "Add New Category"
-#~ msgstr "הוסף קטגוריה"
-
-#~ msgid "New Category Name"
-#~ msgstr "שם קטגוריה חדשה"
-
-#~ msgid "Question Categories"
-#~ msgstr "קטגוריות השאלה"
-
-#~ msgctxt "taxonomy general name"
-#~ msgid "Tags"
-#~ msgstr "תגיות"
-
-#~ msgctxt "taxonomy singular name"
-#~ msgid "Tag"
-#~ msgstr "תג"
-
-#~ msgid "Search Tags"
-#~ msgstr "חפש תגיות"
-
-#~ msgid "Popular Tags"
-#~ msgstr "תגיות הפופולריות"
-
-#~ msgid "All Tags"
-#~ msgstr "כל התגיות"
-
-#~ msgid "Edit Tag"
-#~ msgstr "ערוך תג"
-
-#~ msgid "Update Tag"
-#~ msgstr "עדכן תג"
-
-#~ msgid "Add New Tag"
-#~ msgstr "הוסף תג"
-
-#~ msgid "New Tag Name"
-#~ msgstr "שם תג החדש"
-
-#~ msgid "Separate tags with commas"
-#~ msgstr "פצל תגיות על-ידי  פסיקים"
-
-#~ msgid "Add or remove tags"
-#~ msgstr "הוסף או מחק תגיות"
-
-#~ msgid "Choose from the most used tags"
-#~ msgstr "בחר מתוך תגיות הנפוצות ביותר"
-
-#~ msgid "%s second"
-#~ msgid_plural "%s seconds"
-#~ msgstr[0] "%s שניות"
-#~ msgstr[1] "%s שניות"
-
-#~ msgid "about %s min"
-#~ msgid_plural "%s mins"
-#~ msgstr[0] "בערך %s דקות"
-#~ msgstr[1] "בערך %s דקות"
-
-#~ msgid "about %s hour"
-#~ msgid_plural "%s hours"
-#~ msgstr[0] "בערך %s שעות"
-#~ msgstr[1] "%s שעות"
-
-#~ msgid "%s day"
-#~ msgid_plural "%s days"
-#~ msgstr[0] "%s ימים"
-#~ msgstr[1] "%s ימים"
-
-#~ msgid "%1$s ago"
-#~ msgstr "לפני %1$s"
-
-#~ msgid "Flag"
-#~ msgstr "הרם דגל"
-
-#~ msgid "Unflag"
-#~ msgstr "בטל דגל"
-
-#~ msgid ""
-#~ "This answer will be hidden when flagged. Are you sure you want to flag it?"
-#~ msgstr ""
-#~ "התשובה תהיה מוחבאת מתי שמורם הדגל. האם אתה בטוח שאתה רוצה להרים דגל?"
-
-#~ msgid "This answer was flagged as spam. Do you want to show it?"
-#~ msgstr "התשובה סומנה כספאם. האם להציג בכל זאת?"
-
-#~ msgid "Reset all changes to default"
-#~ msgstr "אפס את כל ההגדרות"
-
-#~ msgid "%s answered <span class=\"dwqa-date\">%s</span>"
-#~ msgstr "%s הושב <span class=\"dwqa-date\">%s</span>"
-
-#~ msgid "%s asked <span class=\"dwqa-date\">%s</span>"
-#~ msgstr "%s נשאל <span class=\"dwqa-date\">%s</span>"
-
-#~ msgid "Save draft"
-#~ msgstr "שמור טיוטא"
-
-#~ msgid "Answer is missing"
-#~ msgstr "חסרה תשובה"
-
-#~ msgid "You do not have permission to edit this post"
-#~ msgstr "אין לך הרשאות עריכה"
-
-#~ msgid "This post is not an answer"
-#~ msgstr "זה לא תשובה"
-
-#~ msgid "Missing answer ID"
-#~ msgstr "חסר ID של התשובה"
-
-#~ msgid "The question is missing"
-#~ msgstr "חסרה שאלה"
-
-#~ msgid "DWQA ReIndex"
-#~ msgstr "DWQA אינקס מחדש"
-
-#~ msgid "Questions Index"
-#~ msgstr "אינדקס שאלות"
-
-#~ msgid "Total questions: %d ( %d publish - %d private )"
-#~ msgstr "סה\"כ שאלות: %d ( %d ציבורי - %d פרטי)"
-
-#~ msgid "DWQA 404 Page"
-#~ msgstr "דף 404 DWQA"
-
-#~ msgid "Single Question Template"
-#~ msgstr "תבנית שאלה יחידה"
-
-#~ msgid "Google Captcha Public Key"
-#~ msgstr "Google Captcha מפתח ציבורי"
-
-#~ msgid "Google Captcha Private Key"
-#~ msgstr "Google Captcha מפתח פרטי"
-
-#~ msgid "New Comment to Question"
-#~ msgstr "תגובה חדשה לשאלה"
-
-#~ msgid "New Comment to Answer"
-#~ msgstr "תגובה חדשה לתשובה"
-
-#~ msgid "New Answer (to Followers )"
-#~ msgstr "תשובה חדשה (לעוקב)"
-
-#~ msgid "New Comment to Question (to Followers )"
-#~ msgstr "תגובה חדשה לשאלה (לעוקב)"
-
-#~ msgid "New Comment to Answer (to Followers )"
-#~ msgstr "תגובה חדשה לתשובה (לעוקב)"
-
-#~ msgid "% person who is following this question"
-#~ msgid_plural "% people who are following this question"
-#~ msgstr[0] "% עוקבים אחר השאלה"
-#~ msgstr[1] "% עוקבים אחר השאלה"
-
-#~ msgid "All questions from"
-#~ msgstr "כל השאלות מ"
-
-#~ msgid "follow"
-#~ msgstr "עקב"
-
-#~ msgid "following"
-#~ msgstr "עוקב"
-
-#~ msgid "unfollow"
-#~ msgstr "אל תעקב"
-
-#~ msgid "Unpin this Question from the top"
-#~ msgstr "בטל מצב 'הדבק למעלה' בשאלה"
-
-#~ msgid "Pin this Question to top"
-#~ msgstr "הדבק שאלה לראש עמוד."
-
-#~ msgid "Answer this Question"
-#~ msgstr "ענה על שאלה"
-
-#~ msgid "Add answer"
-#~ msgstr "הוסף תשובה"
-
-#~ msgid "answer"
-#~ msgid_plural "answers"
-#~ msgstr[0] "תשובה"
-#~ msgstr[1] "תשובות"
-
-#~ msgid "You do not have permission to view answers"
-#~ msgstr "אין לך הרשאות צפיה בשאלות"
-
-#~ msgid "Answer page %d"
-#~ msgstr "דף תשובה %d"
-
-#~ msgid "This question is now closed"
-#~ msgstr "השאלה הזאת סגורה"
-
-#~ msgid "You do not have permission to submit answer."
-#~ msgstr "אין לך הרשאות לשלוח שאלה"
-
-#~ msgid "Please login or"
-#~ msgstr "כנס או"
-
-#~ msgid "to Submit Answer"
-#~ msgstr "לשלוח תשובה"
-
-#~ msgid "Sorry, but nothing matched your filter."
-#~ msgstr "לא נמצא"
-
-#~ msgid "View previous comments"
-#~ msgstr "צפה בתגובות קודמות"
-
-#~ msgid "of"
-#~ msgstr "מ"
-
-#~ msgid "Write a reply..."
-#~ msgstr "כתוב תגובה"
-
-#~ msgid "Link to answer"
-#~ msgstr "קישור לתשובה"
-
-#~ msgid "Draft"
-#~ msgstr "טיוטא"
-
-#~ msgid "This answer was flagged as spam."
-#~ msgstr "תשובה הזאת סומנה כספאם"
-
-#~ msgid "This is the best answer"
-#~ msgstr "זו התשובה הטובה ביותר"
-
-#~ msgid "The answer link"
-#~ msgstr "קישור לתשובה"
-
-#~ msgid "Post by"
-#~ msgstr "פוסט על ידי"
-
-#~ msgid "Link to comment"
-#~ msgstr "קישור לתגובה"
-
-#~ msgid "Permalink to %s"
-#~ msgstr "קישור קבוע ל %s"
-
-#~ msgid "view"
-#~ msgid_plural "views"
-#~ msgstr[0] "צפיה"
-#~ msgstr[1] "צפיות"
-
-#~ msgid "vote"
-#~ msgid_plural "votes"
-#~ msgstr[0] "קול"
-#~ msgstr[1] "קולות"
-
-#~ msgid "Status:"
-#~ msgstr "מצב:"
-
-#~ msgid "Need Answer"
-#~ msgstr "צריך תשובה"
-
-#~ msgid "Overdue"
-#~ msgstr "איחור"
-
-#~ msgid "Queue"
-#~ msgstr "תור"
-
-#~ msgid "Select a category"
-#~ msgstr "בחר קטגוריה"
-
-#~ msgid "Empty"
-#~ msgstr "ריק"
-
-#~ msgid "Vote"
-#~ msgstr "קול"
-
-#~ msgid "tag 1, tag 2,..."
-#~ msgstr "תג 1, תג 2 ..."
-
-#~ msgid "Your question"
-#~ msgstr "שאלה שלך"
-
-#~ msgid "How to..."
-#~ msgstr "איך..."
-
-#~ msgid "Question details"
-#~ msgstr "פרטי השאלה"
-
-#~ msgid "Post this Question as Private."
-#~ msgstr "שלח שאלה פרטית"
-
-#~ msgid "Only you as Author and Admin can see the question"
-#~ msgstr "רק המחבר והמנהל יכולים לראות את השאלה"
-
-#~ msgid "Search"
-#~ msgstr "חפש"
-
-#~ msgid "Your question has been submitted and is currently awaiting approval"
-#~ msgstr "השאלתך נשלחה וכעת היא ממתינה לאישור"
-
-#~ msgid "This question is currently awaiting approval"
-#~ msgstr "שאלה זו כרגע ממתינה לאישור"
-
-#~ msgid "Posts by"
-#~ msgstr "פוסטים של"
-
-#~ msgid "Show a list of questions that was ordered by views."
-#~ msgstr "הצג רשימת שאלות מסודרת לפי צפיות."
-
-#~ msgid "Show a list of questions that ordered by views."
-#~ msgstr "הצג רשימת שאלות מסודרת לפי צפיות."
+#~ msgid "Write a comment ..."
+#~ msgstr "Schrijf een reactie..."

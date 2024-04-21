@@ -1,0 +1,1781 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EMO Questalk \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-17 16:32+0700\n"
+"PO-Revision-Date: 2024-04-20 07:18+0000\n"
+"Last-Translator: Emohelp <dm@emohelp.com>\n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. %1$s is replaced with the author's link, %2$s is replaced with the date
+#. %1$s is replaced with the author's link, %2$s is replaced with the human-readable time difference
+#: inc/Posts/Base.php:310 inc/Posts/Base.php:319
+#, fuzzy, php-format
+#| msgid "%s answered <span class=\"emqa-date\">%s</span> ago"
+msgid "%1$s answered <span class=\"emqa-date\">%2$s</span> ago"
+msgstr "%s đã trả lời <span class=\"emqa-date\">%s</span> trước"
+
+#. %1$s is replaced with the author's link, %2$s is replaced with the human-readable time difference
+#: inc/Posts/Base.php:327
+#, fuzzy, php-format
+#| msgid "%s asked <span class=\"emqa-date\">%s</span> ago"
+msgid "%1$s asked <span class=\"emqa-date\">%2$s</span> ago"
+msgstr "%s đã hỏi <span class=\"emqa-date\">%s</span> trước"
+
+#. %d is replaced with the number of people following the question
+#: inc/Shortcode.php:215
+msgid "%d person who is following this question"
+msgid_plural "%d people who are following this question"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %s is replaced with human-readable time difference
+#: templates/content-comment.php:18
+#, php-format
+msgctxt "%s = human-readable time difference"
+msgid "replied %s ago"
+msgstr "trả lời  %s trước"
+
+#. %s is replaced with the login URL
+#: inc/widgets/Latest_Question.php:45
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#. %s is replaced with the version number
+#: templates/answers.php:14
+#, php-format
+msgid "%s Answers"
+msgstr ""
+
+#: templates/content-single-answer.php:34 templates/content-question.php:35
+msgid "&nbsp;&bull;&nbsp;"
+msgstr ""
+
+#: inc/Handle.php:37
+msgid "&quot;Helllo&quot;, Are you cheating huh?."
+msgstr "&quot;Xin chào&quot;, bạn đang lừa dối phải phải không?."
+
+#. %1$s is replaced with the version number
+#: templates/content-question.php:48
+#, php-format
+msgid "<strong>%1$s</strong> answers"
+msgstr "<strong>%1$s</strong> trả lời"
+
+#. %1$s is replaced with the version number
+#: templates/content-question.php:42
+#, php-format
+msgid "<strong>%1$s</strong> views"
+msgstr "<strong>%1$s</strong> lượt xem"
+
+#. %1$s is replaced with the version number
+#: templates/content-question.php:54
+#, php-format
+msgid "<strong>%1$s</strong> votes"
+msgstr "<strong>%1$s</strong> ủng hộ"
+
+# @ emqa
+#: inc/Notifications.php:236
+#, fuzzy
+#| msgid "A new answer for \"{question_title}\" was posted on {site_name}"
+msgid ""
+"[{site_name}] A new answer for \"{question_title}\" was posted on {site_name}"
+msgstr "Câu trả lời mới cho \"{question_title}\" đã được đăng trên {site_name}"
+
+#: inc/Notifications.php:184
+msgid "[{site_name}] You have a new answer for your followed question"
+msgstr ""
+
+# @ emqa
+#: inc/Notifications.php:328 inc/Notifications.php:374
+msgid "[{site_name}] You have a new comment for answer"
+msgstr "[{site_name}] bạn có bình luận mới cho câu trả lời"
+
+# @ emqa
+#: inc/Notifications.php:323 inc/Notifications.php:369
+msgid "[{site_name}] You have a new comment for question {question_title}"
+msgstr "[{site_name}] bạn có bình luận mới cho câu hỏi {question_title}"
+
+# @ emqa
+#: inc/Notifications.php:53
+msgid "A new question was posted on {site_name}"
+msgstr "Câu hỏi mới đã được đăng trên {site_name}"
+
+#: inc/Settings.php:24
+msgid ""
+"A page where displays all questions. The <code>[emqa-list-questions]</code> "
+"short code must be on this page."
+msgstr ""
+
+#: inc/Settings.php:52
+msgid ""
+"A page where users can submit questions. The <code>[emqa-submit-question-"
+"form]</code> short code must be on this page."
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:31
+msgid ""
+"A period of time in which new questions are highlighted and marked as New"
+msgstr ""
+"Một khoảng thời gian cho những câu hỏi mới được đề cập và được đánh dấu như "
+"mới"
+
+# @ emqa
+#: inc/Settings.php:36
+msgid ""
+"A Question will be marked as overdue if it passes this period of time, "
+"starting from the time the question was submitted"
+msgstr ""
+"Một câu hỏi sẽ được đánh dấu là quá hạn khi tính từ lúc câu hỏi được gửi cho "
+"đến lúc này"
+
+#. Description of the plugin
+msgid ""
+"A WordPress plugin was make by emohelp.com to build an Question Answer "
+"system for support, asking and comunitcate with your customer"
+msgstr ""
+
+#: inc/Updater.php:122
+msgid "Activate"
+msgstr ""
+
+#: inc/Posts/Base.php:392
+msgid "Add New"
+msgstr ""
+
+#: inc/Posts/Question.php:204
+msgid "Add New Question Category"
+msgstr ""
+
+#: inc/Posts/Question.php:234
+msgid "Add New Question Tag"
+msgstr ""
+
+#: inc/Posts/Question.php:237
+msgid "Add or remove question tags"
+msgstr ""
+
+#. %1$s is replaced with the author link, %2$s is replaced with the avatar image, %3$s is replaced with the author name, %4$s is replaced with the user badge, %5$s is replaced with the time difference
+#. %1$s is replaced with the author link, %2$s is replaced with the avatar image, %3$s is replaced with the author name, %4$s is replaced with additional text, %5$s is replaced with the time difference
+#: templates/content-single-question.php:25
+#: templates/content-single-answer.php:25 templates/content-question.php:27
+msgid "ago"
+msgstr ""
+
+#: inc/Settings.php:998
+msgid "Akismet API key"
+msgstr ""
+
+#: inc/Settings.php:1005
+msgid "Akismet connection status"
+msgstr ""
+
+#: inc/Settings.php:984
+msgid "Akismet Settings"
+msgstr ""
+
+# @ emqa
+#: templates/archive-question-filter.php:16
+msgid "All"
+msgstr "Toàn bộ"
+
+#: inc/Posts/Question.php:199
+msgid "All Question Categories"
+msgstr ""
+
+#: inc/Posts/Question.php:229
+msgid "All Question Tags"
+msgstr ""
+
+#: inc/Settings.php:975
+msgid "Allow Anonymous Vote"
+msgstr ""
+
+#: inc/Settings.php:558
+msgid "Allow anonymous vote."
+msgstr ""
+
+#: inc/Settings.php:607
+msgid "Allow members to post private question."
+msgstr ""
+
+# @ emqa
+#: inc/Answer_List_Table.php:86 inc/Settings.php:419 inc/Settings.php:455
+#: inc/Settings.php:490 inc/User.php:137 inc/Notifications.php:127
+#: inc/Notifications.php:147 inc/Akismet.php:201 inc/Posts/Base.php:275
+#: inc/Posts/Comment.php:102
+msgid "Anonymous"
+msgstr "Vô danh"
+
+# @ default
+# @ emqa
+#: inc/Posts/Answer.php:208 inc/Posts/Answer.php:252
+msgid "Answer"
+msgstr "Trả lời"
+
+# @ emqa
+#: inc/Shortcode.php:185
+msgid "Answer at"
+msgstr "Trả lời tại"
+
+#: inc/Handle.php:47
+msgid "Answer content is empty"
+msgstr "Nội dung câu trả lời không được trống"
+
+# @ emqa
+#: inc/Handle.php:85
+msgid "Answer for "
+msgstr "Trả lời cho"
+
+#: inc/Ajax.php:53 inc/Handle.php:163
+msgid "Answer is missing."
+msgstr "Trả lời câu hỏi này."
+
+#: inc/Settings.php:951
+msgid "Answer Listing"
+msgstr ""
+
+#: inc/Settings.php:944
+msgid "Answer Settings"
+msgstr ""
+
+# @ emqa
+#: inc/Status.php:308
+msgid "Answered"
+msgstr "Đã trả lời"
+
+# @ emqa
+#: templates/content-question.php:22 inc/Posts/Question.php:287
+msgid "answered"
+msgstr "đã trả lời"
+
+# @ emqa
+#: inc/Answer_List_Table.php:95
+msgid "Answered on "
+msgstr "Đã trả lời ở"
+
+# @ emqa
+#: inc/Settings.php:431 inc/Metaboxes.php:45
+#: templates/archive-question-filter.php:34 inc/Posts/Answer.php:207
+#: inc/Posts/Answer.php:209
+msgid "Answers"
+msgstr "Các câu trả lời"
+
+#: inc/Settings.php:552
+msgid "answers."
+msgstr ""
+
+#: inc/Settings.php:903
+msgid "Archive Page Show At Most"
+msgstr ""
+
+# @ emqa
+# @ default
+#: inc/Ajax.php:31 inc/Ajax.php:49 inc/Ajax.php:91 inc/Ajax.php:121
+#: inc/Ajax.php:143 inc/Ajax.php:200 inc/Ajax.php:298 inc/Handle.php:361
+#: inc/Handle.php:560 inc/Status.php:327 inc/Akismet.php:668
+#: inc/Permission.php:340
+msgid "Are you cheating huh?"
+msgstr "Bạn đang lừa dối phải không?"
+
+# @ emqa
+#: inc/Posts/Base.php:34
+msgid "Are you cheating, huh?"
+msgstr "Bạn đang lừa dối, phải không?"
+
+# @ emqa
+#: inc/Template.php:677
+msgid "Ask a question"
+msgstr "Đặt câu hỏi"
+
+# @ emqa
+#: templates/bp-archive-question.php:32 templates/archive-question.php:28
+msgid "Ask Question"
+msgstr "Gửi câu hỏi"
+
+# @ emqa
+#: inc/Settings.php:853 inc/Settings.php:1053
+msgid "Ask Question Page"
+msgstr "Trang đặt câu hỏi"
+
+# @ emqa
+#: templates/content-question.php:18
+msgid "asked"
+msgstr "đã hỏi"
+
+# @ emqa
+#: inc/Shortcode.php:145 inc/Posts/Question.php:56
+#: inc/widgets/Latest_Question.php:42 inc/widgets/Popular_Question.php:43
+#: inc/widgets/Closed_Question.php:49
+msgid "asked by"
+msgstr "hỏi bởi"
+
+# @ emqa
+#: inc/Answer_List_Table.php:75 inc/Akismet.php:86 inc/Template.php:47
+#: inc/Posts/Answer.php:253
+msgid "Author"
+msgstr "Tác giả"
+
+#: inc/Settings.php:1014
+msgid "Auto Closure Settings"
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:1532
+msgid "Bcc"
+msgstr "Bcc"
+
+#: inc/Settings.php:911
+msgid "Before A Question Appears"
+msgstr ""
+
+#: templates/content-single-answer.php:17
+#: templates/content-single-answer.php:19
+msgid "Best Answer"
+msgstr ""
+
+#: inc/Settings.php:648
+msgid ""
+"By default, your single.php template file will be used if you do not choose "
+"any template"
+msgstr ""
+
+# @ emqa
+#: inc/Template.php:486
+msgid "Cancel reply"
+msgstr "Hủy bỏ phản hồi"
+
+# @ emqa
+#: inc/Handle.php:66 inc/Handle.php:556
+msgid "Captcha is not correct"
+msgstr "Captcha không đúng"
+
+#: inc/Settings.php:1038
+msgid "Captcha Settings"
+msgstr ""
+
+# @ emqa
+#: inc/Template.php:19 inc/Template.php:24
+#: templates/question-submit-form.php:32 templates/content-edit.php:29
+msgid "Category"
+msgstr "Danh mục đơn"
+
+# @ emqa
+#: inc/Settings.php:1527
+msgid "Cc"
+msgstr "Cc"
+
+# @ emqa
+#: inc/PointerHelper.php:71
+msgid "Change comment settings, and create the Submit question page."
+msgstr "Các cài đặt thay đổi lời bình luận, và tạo trang gửi câu hỏi"
+
+# @ emqa
+#: inc/Template.php:1152
+msgid "Choose as the best answer"
+msgstr "Lựa chọn câu trả lời tốt nhất"
+
+#: inc/Posts/Question.php:238
+msgid "Choose from the most used question tags"
+msgstr ""
+
+# @ emqa
+#: inc/Metaboxes.php:19 inc/Status.php:301
+#: templates/content-single-question.php:47
+#: templates/archive-question-filter.php:20
+msgid "Closed"
+msgstr "Đã đóng"
+
+# @ emqa
+#: inc/widgets/Closed_Question.php:18
+msgid "Closed Questions"
+msgstr "Câu hỏi đóng"
+
+#: inc/Settings.php:1028
+msgid "Closure after"
+msgstr ""
+
+# @ emqa
+#: inc/Handle.php:369
+msgid "Comment content must not be empty."
+msgstr "Nội dung bình luận không được để trống"
+
+# @ emqa
+#: inc/Ajax.php:39
+msgid "Comment ID must be showed."
+msgstr "ID lời bình luận phải được hiện ra"
+
+#: inc/Handle.php:354
+msgid "Comment is missing"
+msgstr ""
+
+#: inc/Settings.php:467
+msgid "Comments"
+msgstr ""
+
+# @ emqa
+#: inc/PointerHelper.php:70
+msgid "Config your support channel"
+msgstr "Cấu hình kênh hỗ trợ của bạn"
+
+#: inc/Settings.php:583
+msgid "Connected"
+msgstr ""
+
+#: inc/Admin/Welcome.php:205
+msgid "Contributors"
+msgstr ""
+
+#: inc/Akismet.php:87
+msgid "Count Report"
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:36
+msgid "days"
+msgstr "ngày"
+
+#: inc/Settings.php:599
+msgid "Days.(greater 0)"
+msgstr ""
+
+#: inc/Settings.php:533
+msgid "Default"
+msgstr ""
+
+# @ edd-em-membersip
+# @ emqa
+#: inc/Settings.php:403 inc/Template.php:171 inc/Template.php:188
+#: templates/content-comment.php:27
+msgid "Delete"
+msgstr "Xóa"
+
+# @ emqa
+#: inc/Posts/Question.php:500
+msgid "Delete Action was failed"
+msgstr "Việc xóa bị lỗi"
+
+# @ emqa
+#: inc/Handle.php:40
+msgid "Delete draft"
+msgstr "Xóa nháp"
+
+#: inc/Akismet.php:163
+msgid "Delete permanently"
+msgstr ""
+
+# @ emqa
+#: inc/Answer_List_Table.php:76
+msgid "Detail"
+msgstr "Chi tiết"
+
+#: inc/Settings.php:625
+msgid "Disable question status feature."
+msgstr ""
+
+#: inc/Settings.php:619
+msgid "Display status icon on the left side."
+msgstr ""
+
+#: inc/PointerHelper.php:61
+msgid "Documents, Support From Emohelp"
+msgstr ""
+
+# @ emqa
+# @ edd-em-membersip
+#: inc/Settings.php:402 inc/Template.php:56 inc/Template.php:166
+#: inc/Template.php:183 templates/content-comment.php:24 inc/Posts/Base.php:393
+msgid "Edit"
+msgstr "Sửa"
+
+#: inc/Posts/Question.php:202
+msgid "Edit Question Category"
+msgstr ""
+
+#: inc/Posts/Question.php:232
+msgid "Edit Question Tag"
+msgstr ""
+
+# @ default
+#: inc/Template.php:448
+msgid "Email"
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:136 inc/Settings.php:171 inc/Settings.php:207
+#: inc/Settings.php:243 inc/Settings.php:278 inc/Settings.php:313
+#: inc/Settings.php:348
+msgid "Email Content"
+msgstr "Nội dung email"
+
+#: inc/Settings.php:1550
+msgid "Email Delay*"
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:1311
+msgid "Email Logo"
+msgstr "Email Logo"
+
+#: inc/Settings.php:822
+msgid "Email Settings"
+msgstr ""
+
+#: inc/Settings.php:1309
+msgid "Email settings"
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:131 inc/Settings.php:166 inc/Settings.php:202
+#: inc/Settings.php:238 inc/Settings.php:273 inc/Settings.php:308
+#: inc/Settings.php:343
+msgid "Email subject"
+msgstr "Chủ đề email"
+
+#: inc/Settings.php:1293
+msgid "Emails"
+msgstr ""
+
+#. Name of the plugin
+msgid "EMO Questalk"
+msgstr ""
+
+#: inc/Admin/Welcome.php:35 inc/Admin/Welcome.php:36
+msgid "EMO Questalk Changelog"
+msgstr ""
+
+#: inc/Admin/Welcome.php:43 inc/Admin/Welcome.php:44
+msgid "EMO Questalk Credits"
+msgstr ""
+
+#. %1$s and %2$s are replaced with the start and end of the link respectively
+#: upgrades/upgrades.php:26
+#, php-format
+msgid ""
+"EMO Questalk needs to upgrade the database, click %1$shere%2$s to start the "
+"upgrade."
+msgstr ""
+
+#: inc/Helptab.php:48
+msgid "EMO Questalk Plugin"
+msgstr ""
+
+# @ emqa
+#: inc/Helptab.php:49
+#, fuzzy
+#| msgid ""
+#| "EMO Questalk  is a WordPress Plugin which helps you build a Question "
+#| "& Answer system on your WordPress sites. The plugin is easy to install "
+#| "and set up. Let start building up your community with this WordPress "
+#| "question & answer system."
+msgid ""
+"EMO Questalk Plugin is a WordPress Plugin which helps you build a Question & "
+"Answer system on your WordPress sites. The plugin is easy to install and set "
+"up. Let start building up your community with this WordPress question & "
+"answer system."
+msgstr ""
+"EMO Questalk  là một Plugin của WordPress giúp bạn xây dựng hệ thống "
+"câu hỏi và câu trả lời trên các trang web nền tảng WordPress. Plugin này dễ "
+"dàng cài đặt, sử dụng để tiến hành xây dựng cộng đồng với hệ thống câu hỏi "
+"và câu trả lời trên WordPress"
+
+#. Author of the plugin
+msgid "Emohelp"
+msgstr ""
+
+#: inc/extend/buddypress/loader.php:12 inc/extend/buddypress/loader.php:61
+#: inc/extend/buddypress/loader.php:112
+msgid "EMQA"
+msgstr ""
+
+#: inc/Posts/Base.php:391
+msgctxt "emqa"
+msgid "Add New"
+msgstr ""
+
+# @ emqa
+#: em-question-answer.php:184
+#, fuzzy
+#| msgid "EMQA Ask Question"
+msgid "EMQA Ask Question"
+msgstr "Đăng câu hỏi EMQA"
+
+#: inc/Admin/Extensions.php:25
+msgid "EMQA Captcha"
+msgstr ""
+
+# @ emqa
+#: inc/widgets/Closed_Question.php:12
+#, fuzzy
+#| msgid "EMQA Closed Questions"
+msgid "EMQA Closed Questions"
+msgstr "Câu hỏi EMQA đã đóng"
+
+#: inc/Admin/Extensions.php:31
+msgid "EMQA Embed Question"
+msgstr ""
+
+# @ emqa
+#: inc/widgets/Latest_Question.php:11
+#, fuzzy
+#| msgid "EMQA Latest Questions"
+msgid "EMQA Latest Questions"
+msgstr "Câu hỏi EMQA mới nhất "
+
+#: inc/Admin/Extensions.php:19
+msgid "EMQA Leaderboard"
+msgstr ""
+
+#: inc/Admin/Extensions.php:13
+msgid "EMQA Markdown"
+msgstr ""
+
+# @ emqa
+#: inc/widgets/Popular_Question.php:15
+#, fuzzy
+#| msgid "EMQA Popular Questions"
+msgid "EMQA Popular Questions"
+msgstr "Các câu hỏi EMQA phổ biến"
+
+#: inc/Posts/Base.php:380
+msgid "EMQA Post"
+msgstr ""
+
+#: inc/Posts/Base.php:379
+msgid "EMQA Posts"
+msgstr ""
+
+# @ emqa
+#: em-question-answer.php:167
+#, fuzzy
+#| msgid "EMQA Questions"
+msgid "EMQA Questions"
+msgstr "Các câu hỏi EMQA"
+
+# @ emqa
+#: inc/widgets/Related_Question.php:12
+#, fuzzy
+#| msgid "EMQA Related Questions"
+msgid "EMQA Related Questions"
+msgstr "Các câu hỏi EMQA liên quan"
+
+# @ emqa
+#: inc/Settings.php:1288
+#, fuzzy
+#| msgid "EMQA Settings"
+msgid "EMQA Settings"
+msgstr "Cài đặt EMQA"
+
+#: upgrades/upgrades.php:34
+msgid "EMQA Upgrade"
+msgstr ""
+
+#: inc/Admin/Extensions.php:37
+msgid "EMQA Widgets"
+msgstr ""
+
+#. %d is replaced with the number of new replies
+#. %1$d is replaced with the number of new replies, %2$s is replaced with the recipient's name, %3$s is replaced with the sender's name
+#. %1$d is replaced with the number of new replies, %2$s is replaced with the recipient's name
+#: inc/extend/buddypress/notifications.php:36
+#: inc/extend/buddypress/notifications.php:42
+#: inc/extend/buddypress/notifications.php:47
+msgid "EMQA: "
+msgstr ""
+
+#: inc/Settings.php:564
+msgid "Enable Akismet"
+msgstr ""
+
+#: inc/Settings.php:594
+msgid "Enable Auto Closure"
+msgstr ""
+
+#: inc/Settings.php:515
+msgid "Enable captcha on single question page."
+msgstr ""
+
+#: inc/Settings.php:509
+msgid "Enable captcha on submit question page."
+msgstr ""
+
+#: inc/Settings.php:197
+msgid "Enable notification for new answer ( to Followers )."
+msgstr ""
+
+#: inc/Settings.php:161
+msgid "Enable notification for new answer."
+msgstr ""
+
+#: inc/Settings.php:303 inc/Settings.php:338
+msgid "Enable notification for new comment of answer."
+msgstr ""
+
+#: inc/Settings.php:233 inc/Settings.php:268
+msgid "Enable notification for new comment of question."
+msgstr ""
+
+#: inc/Settings.php:126
+msgid "Enable notification for new question."
+msgstr ""
+
+#: inc/Settings.php:126 inc/Settings.php:161 inc/Settings.php:197
+#: inc/Settings.php:233 inc/Settings.php:268 inc/Settings.php:303
+#: inc/Settings.php:338
+msgid "Enable?"
+msgstr ""
+
+#: templates/captcha-form.php:20
+msgid "Enter the result"
+msgstr ""
+
+#: inc/Admin/Extensions.php:47
+msgid "Extensions"
+msgstr "Tiện ích"
+
+#: templates/archive-question-filter.php:14
+msgid "Filter:"
+msgstr ""
+
+#: inc/Settings.php:1507 inc/Settings.php:1512 inc/Settings.php:1517
+#: inc/Settings.php:1522
+msgid "Forward to"
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:1165
+msgid "From Email"
+msgstr "Từ email"
+
+# @ emqa
+#: inc/Settings.php:1292
+msgid "General"
+msgstr "Tổng thể"
+
+#: inc/Settings.php:571
+msgid "Get in"
+msgstr ""
+
+#: inc/Admin/Extensions.php:75
+msgid "Get It Now!"
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:1243 inc/Settings.php:1250
+msgid "Group Permission"
+msgstr "Nhóm cho phép"
+
+#: inc/Autoclosure.php:65
+msgid "Half Daily"
+msgstr ""
+
+# @ emqa
+#: inc/Handle.php:152 inc/Handle.php:625 inc/Posts/Question.php:473
+#: inc/extend/buddypress/notifications.php:108
+msgid "Hello, Are you cheating huh?"
+msgstr "Xin chào, bạn đang lừa dối phải phải không?"
+
+# @ emqa
+#: inc/Settings.php:31
+msgid "hours"
+msgstr "giờ"
+
+#: inc/PointerHelper.php:60
+msgid "How to use EMO Questalk"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://www.emohelp.com"
+msgstr ""
+
+#: inc/Posts/Answer.php:352 inc/Posts/Answer.php:355
+msgid "ID"
+msgstr ""
+
+#. %s is replaced with an example of a custom question URL structure
+#: inc/Settings.php:658
+#, php-format
+msgid ""
+"If you like, you may enter custom structure for your single question, "
+"question category, and question tag URLs here. For example, using <code>"
+"topic</code> as your question base would make your question links like <code>"
+"%s</code>. If you leave these blank, the default will be used."
+msgstr ""
+
+# @ emqa
+#: inc/Posts/Answer.php:255
+msgid "In Response To"
+msgstr "Trong phản hồi tới"
+
+# @ emqa
+#: inc/Posts/Question.php:276
+msgid "Info"
+msgstr "Thông tin"
+
+# @ emqa
+#: inc/User.php:254 inc/Posts/Question.php:410
+msgid "Invalid Post"
+msgstr "Bài viết không hợp lệ"
+
+# @ emqa
+#: inc/Status.php:350
+msgid "Invalid post status"
+msgstr "Tình trạng bài viết không hợp lệ"
+
+#: upgrades/upgrades.php:151
+msgid "Just do it.."
+msgstr ""
+
+# @ emqa
+#: inc/Shortcode.php:159
+msgid "Latest Answers"
+msgstr "Câu trả lời mới nhất"
+
+# @ emqa
+#: inc/widgets/Latest_Question.php:17
+msgid "Latest Questions"
+msgstr "Câu hỏi mới nhất"
+
+# @ emqa
+#: inc/Template.php:483
+msgid "Leave a Reply"
+msgstr "Để lại một phản hồi"
+
+# @ emqa
+#. %s is replaced with the login URL
+#: inc/Template.php:485
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Để lại phản hồi tới %s"
+
+#: inc/Updater.php:97
+msgid "License Key"
+msgstr ""
+
+#: inc/Settings.php:1295
+msgid "Licenses"
+msgstr ""
+
+# @ emqa
+#: inc/Shortcode.php:185
+msgid "Link to"
+msgstr "Liên kết đến"
+
+# @ emqa
+#: inc/Settings.php:8
+msgid "Login required. No anonymous post allowed"
+msgstr "Yêu cầu đăng nhập. Người vô danh không được phép đăng bài"
+
+# @ emqa
+#: inc/Template.php:679
+msgid "Login to ask a question"
+msgstr "Đăng nhập để gửi câu hỏi"
+
+#. %s is replaced with the link to EMQA Extensions
+#: inc/Settings.php:1473
+#, php-format
+msgid "Manage <a href=\"%s\">EMQA Extensions</a> license keys"
+msgstr ""
+
+# @ emqa
+#: inc/Handle.php:58 inc/Handle.php:405
+msgid "Missing email information"
+msgstr "Thiếu thông tin email"
+
+# @ emqa
+#: inc/Ajax.php:94
+msgid "Missing id of answer"
+msgstr "Thiếu ID của câu trả lời"
+
+# @ emqa
+#: inc/Handle.php:62 inc/Handle.php:309 inc/Handle.php:410
+msgid "Missing name information"
+msgstr "Thiếu thông tin họ tên"
+
+#: inc/Handle.php:305
+msgid "Missing or invalid email information"
+msgstr ""
+
+# @ emqa
+#: inc/Status.php:332
+msgid "Missing post ID"
+msgstr "Thiếu ID bài viết"
+
+#: inc/Handle.php:283
+msgid "Missing post id."
+msgstr ""
+
+#. %d is replaced with the version number
+#: upgrades/upgrades.php:160
+msgid "Move to next step %d"
+msgstr ""
+
+#: templates/archive-question-filter.php:24
+msgid "My questions"
+msgstr "Câu hỏi của tôi"
+
+#: templates/archive-question-filter.php:25
+msgid "My subscribes"
+msgstr "Theo dõi của tôi"
+
+#: inc/Template.php:450
+msgid "Name"
+msgstr "Tên"
+
+# @ emqa
+#: inc/Status.php:304 inc/Posts/Base.php:394
+msgid "New"
+msgstr "Mới"
+
+#: inc/Settings.php:824
+msgid "New Answer Notifications"
+msgstr ""
+
+#: inc/Settings.php:1365
+msgid "New Answer Notifications (to Author)"
+msgstr ""
+
+#: inc/Settings.php:1349
+msgid "New Answer Notifications (to Followers)"
+msgstr ""
+
+#: inc/Settings.php:825
+msgid "New Comment Notifications"
+msgstr ""
+
+#: inc/Settings.php:1439
+msgid "New Comment to Answer Notifications (to Admin)"
+msgstr ""
+
+#: inc/Settings.php:1422
+msgid "New Comment to Answer Notifications (to Followers)"
+msgstr ""
+
+#: inc/Settings.php:1402
+msgid "New Comment to Question Notifications (to Admin)"
+msgstr ""
+
+#: inc/Settings.php:1385
+msgid "New Comment to Question Notifications (to Followers)"
+msgstr ""
+
+#: inc/Posts/Question.php:205
+msgid "New Question Category Name"
+msgstr ""
+
+#: inc/Settings.php:823
+msgid "New Question Notifications"
+msgstr ""
+
+#: inc/Settings.php:1325
+msgid "New Question Notifications (to Admin)"
+msgstr ""
+
+#: inc/Posts/Question.php:235
+msgid "New Question Tag Name"
+msgstr ""
+
+#: inc/Posts/Question.php:239
+msgid "No question tags found."
+msgstr ""
+
+#: inc/Admin/Welcome.php:224
+msgid "No valid changelog was found."
+msgstr ""
+
+#: inc/Settings.php:577
+msgid "Not Connected"
+msgstr ""
+
+#: inc/Posts/Base.php:397
+msgid "not found"
+msgstr ""
+
+#: inc/Posts/Base.php:398
+msgid "not found in Trash"
+msgstr ""
+
+#: inc/Ajax.php:306 inc/Ajax.php:356
+msgid "Not Found!!!"
+msgstr ""
+
+# @ default
+#: inc/widgets/Latest_Question.php:75 inc/widgets/Popular_Question.php:69
+#: inc/widgets/Closed_Question.php:75 inc/widgets/Related_Question.php:51
+msgid "Number of posts"
+msgstr ""
+
+# @ emqa
+#: inc/Posts/Answer.php:306
+msgid "on"
+msgstr "Trên"
+
+#: templates/question-submit-form.php:26 templates/answer-submit-form.php:36
+msgid "Only Me &amp; Admin"
+msgstr ""
+
+# @ emqa
+#: inc/Metaboxes.php:15 inc/Status.php:312
+#: templates/content-single-question.php:46
+#: templates/archive-question-filter.php:18
+msgid "Open"
+msgstr "Mở"
+
+#: inc/Settings.php:919
+msgid "Other Question Settings"
+msgstr ""
+
+# @ emqa
+#: inc/Helptab.php:47
+msgid "Overview"
+msgstr "Tổng quan"
+
+#: inc/Settings.php:838
+msgid "Page Settings"
+msgstr ""
+
+#: inc/Posts/Question.php:200
+msgid "Parent Question Category"
+msgstr ""
+
+#: inc/Posts/Question.php:201
+msgid "Parent Question Category:"
+msgstr ""
+
+#: inc/Posts/Base.php:399
+msgid "Parent:"
+msgstr ""
+
+# @ emqa
+#: inc/Metaboxes.php:16 inc/Status.php:295
+msgid "Pending"
+msgstr "Đang chờ"
+
+# @ emqa
+#: inc/Settings.php:1073
+msgid "Permalink Settings"
+msgstr "Cài đặt permalink"
+
+#: inc/Settings.php:1294
+msgid "Permissions"
+msgstr ""
+
+# @ emqa
+#: inc/Metaboxes.php:29
+msgid "Pin question to top of archive page."
+msgstr "Ghim câu hỏi lên đầu trang lưu trữ"
+
+# @ emqa
+#: inc/Handle.php:290
+msgid "Please enter your comment content"
+msgstr "Vui lòng nhập nội dung bình luận của bạn"
+
+# @ emqa
+#: inc/Settings.php:786
+msgid "Plugin Settings"
+msgstr "Các cài đặt plugin"
+
+#: inc/Updater.php:176
+msgid "Plugin was activated"
+msgstr ""
+
+#: inc/Posts/Question.php:228
+msgid "Popular Question Tags"
+msgstr ""
+
+# @ emqa
+#: inc/Shortcode.php:122 inc/widgets/Popular_Question.php:21
+msgid "Popular Questions"
+msgstr "Các câu hỏi phổ biến"
+
+# @ emqa
+#: inc/Settings.php:401
+msgid "Post"
+msgstr "Viết bài"
+
+# @ emqa
+#: inc/Template.php:487
+msgid "Post Comment"
+msgstr "Đăng bình luận"
+
+# @ emqa
+#: inc/Status.php:345
+msgid "Post does not exist"
+msgstr "Bài viết không tồn tại"
+
+#: inc/Akismet.php:665
+msgid "Post not found!"
+msgstr ""
+
+# @ default
+#. %s is replaced with the display name of the author
+#: inc/Posts/Base.php:294
+#, php-format
+msgid "Posts by %s"
+msgstr ""
+
+# @ emqa
+#: templates/content-single-answer.php:35
+msgid "Private"
+msgstr "Riêng tư"
+
+# @ emqa
+#: templates/question-submit-form.php:25 templates/answer-submit-form.php:35
+msgid "Public"
+msgstr "Đăng công bố"
+
+# @ emqa
+#: inc/Posts/Question.php:101
+msgid "Question"
+msgstr "Câu hỏi"
+
+#: inc/Settings.php:1080
+msgid "Question Base"
+msgstr ""
+
+# @ emqa
+#: inc/Posts/Question.php:206
+msgid "Question Category"
+msgstr "Danh mục câu hỏi"
+
+#: inc/Settings.php:1088
+msgid "Question Category Base"
+msgstr ""
+
+#: inc/Posts/Answer.php:341
+msgid "Question ID"
+msgstr ""
+
+#: inc/Handle.php:50
+msgid "Question is empty"
+msgstr ""
+
+#: inc/Ajax.php:206 inc/Handle.php:582
+msgid "Question is missing."
+msgstr ""
+
+# @ emqa
+#: inc/Posts/Question.php:479
+msgid "Question is not valid"
+msgstr "Câu hỏi không hợp lệ"
+
+#: inc/Shortcode.php:247
+msgid "Question List"
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:845
+msgid "Question List Page"
+msgstr "Trang danh sách câu hỏi"
+
+# @ emqa
+#: inc/Metaboxes.php:65
+msgid "Question Meta Data"
+msgstr "Meta Data câu hỏi"
+
+#: inc/Settings.php:613
+msgid "Question must be manually approved."
+msgstr ""
+
+#: inc/extend/buddypress/notifications.php:31
+msgid "Question Replies"
+msgstr ""
+
+#: inc/Settings.php:896
+msgid "Question Settings"
+msgstr ""
+
+#: inc/Settings.php:1096
+msgid "Question Tag Base"
+msgstr ""
+
+# @ default
+# @ emqa
+#: inc/Posts/Question.php:240
+msgid "Question Tags"
+msgstr "Nhãn cho câu hỏi"
+
+#: templates/content-single-question.php:39
+msgid "Question Tags: "
+msgstr ""
+
+#: inc/Settings.php:395 templates/archive-question-filter.php:28
+#: inc/Posts/Question.php:100 inc/Posts/Question.php:102
+#: inc/Posts/Question.php:266 inc/extend/buddypress/loader.php:81
+#: inc/extend/buddypress/loader.php:118
+msgid "Questions"
+msgstr ""
+
+#: inc/Settings.php:546
+msgid "questions."
+msgstr ""
+
+# @ emqa
+#: inc/Metaboxes.php:18 inc/Status.php:298
+msgid "Re-Open"
+msgstr "Mở lại"
+
+# @ emqa
+#: inc/Settings.php:400
+msgid "Read"
+msgstr "Đọc"
+
+# @ emqa
+#: inc/Answer_List_Table.php:106 inc/Helptab.php:142
+msgid "Read more"
+msgstr "Xem thêm"
+
+#: inc/Akismet.php:74 inc/Akismet.php:691
+msgid "Report Spam"
+msgstr ""
+
+#: inc/Akismet.php:74
+msgid "Report Spam List"
+msgstr ""
+
+#: inc/Akismet.php:685
+msgid "Reported to admin"
+msgstr ""
+
+# @ default
+#. %s is replaced with the login URL
+#: inc/Template.php:454
+#, php-format
+msgid "Required fields are marked %s"
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:429 inc/Settings.php:465 inc/Settings.php:500
+msgid "Reset Default"
+msgstr "Thiết lập lại mặc định"
+
+# @ emqa
+#: inc/Metaboxes.php:17 inc/Status.php:292
+#: templates/content-single-question.php:48
+#: templates/archive-question-filter.php:19
+msgid "Resolved"
+msgstr "Đã hoàn thành"
+
+# @ emqa
+#: inc/Settings.php:1457
+msgid "Save all changes"
+msgstr "Lưu tất cả sự thay đổi"
+
+#: templates/content-edit.php:52
+msgid "Save Changes"
+msgstr ""
+
+#: inc/Posts/Base.php:396
+msgid "Search "
+msgstr "Tìm kiếm"
+
+#: inc/extend/buddypress/loader.php:44
+msgid "Search EMQA..."
+msgstr ""
+
+#: inc/Posts/Question.php:198
+msgid "Search Question Categories"
+msgstr ""
+
+#: inc/Posts/Question.php:227
+msgid "Search Question Tags"
+msgstr ""
+
+#: inc/Permission.php:220
+msgid "Security check failed. Please try again."
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:65
+#, fuzzy
+#| msgid "Select 404 EMQA Page"
+msgid "Select 404 emQA Page"
+msgstr "Chọn trang 404 EMQA"
+
+# @ emqa
+#: inc/Settings.php:20
+msgid "Select Archive Question Page"
+msgstr "Lựa chọn trang lưu trữ câu hỏi"
+
+# @ emqa
+#: templates/question-submit-form.php:38 templates/content-edit.php:36
+msgid "Select question category"
+msgstr "Lựa chọn danh mục câu hỏi"
+
+# @ emqa
+#: inc/Settings.php:47
+msgid "Select Submit Question Page"
+msgstr "Chọn gửi trang câu hỏi"
+
+# @ emqa
+#: inc/Settings.php:642
+#, fuzzy
+msgid "Select template for Single Quesiton page"
+msgstr "Captcha trên trang câu hỏi đơn"
+
+#: inc/Settings.php:1543
+msgid "Send a copy of every email to admin."
+msgstr ""
+
+#: inc/Posts/Question.php:236
+msgid "Separate question tags with commas"
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:786
+msgid "Settings"
+msgstr "Cấu hình"
+
+# @ emqa
+#: inc/Helptab.php:56
+msgid "Setup Ask Question Page"
+msgstr "Thiết lập trang đặt câu hỏi"
+
+# @ emqa
+#: inc/Helptab.php:52
+msgid "Setup Question List Page"
+msgstr "Thiết lập trang danh sách câu hỏi"
+
+# @ emqa
+#: inc/Helptab.php:60
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: inc/widgets/Latest_Question.php:10
+msgid "Show a list of latest questions."
+msgstr ""
+
+#: inc/widgets/Popular_Question.php:13
+msgid "Show a list of popular questions."
+msgstr ""
+
+#: inc/widgets/Closed_Question.php:11
+msgid "Show a list of questions marked as closed."
+msgstr ""
+
+# @ emqa
+#: inc/widgets/Related_Question.php:11
+msgid ""
+"Show a list of questions that related to a question. Just show in single "
+"question page"
+msgstr ""
+"Hiện danh sách các câu hỏi có liên quan. Chỉ hiện trong trang câu hỏi đơn"
+
+#: inc/Settings.php:631
+msgid "Show all answers on single question page."
+msgstr ""
+
+#: inc/widgets/Latest_Question.php:80
+msgid "Show question date"
+msgstr ""
+
+#: inc/Template.php:43
+msgid "Showing search results for"
+msgstr ""
+
+#: inc/Settings.php:1061
+msgid "Single Question Page"
+msgstr ""
+
+#: templates/content-none.php:12
+msgid "Sorry, but nothing matched your filter"
+msgstr ""
+
+#: templates/archive-question-filter.php:32
+msgid "Sort by"
+msgstr "Sắp xếp theo"
+
+# @ emqa
+#: inc/User.php:218
+msgid "Staff"
+msgstr "Nhân viên"
+
+# @ emqa
+#: inc/Metaboxes.php:13 templates/content-single-question.php:45
+#: templates/question-submit-form.php:22
+msgid "Status"
+msgstr "Trạng thái"
+
+# @ emqa
+#: inc/Metaboxes.php:25
+msgid "Sticky"
+msgstr "Dính"
+
+# @ emqa
+#: inc/Template.php:663
+msgid "Sticky Question"
+msgstr "Câu hỏi dính"
+
+# @ emqa
+#: inc/Posts/Question.php:445
+msgid "Sticky Questions"
+msgstr "Câu hỏi cần chú ý"
+
+# @ emqa
+#: inc/Helptab.php:64
+msgid "Style integration"
+msgstr "Tích hợp Style"
+
+#: templates/question-submit-form.php:65 templates/answer-submit-form.php:40
+msgid "Submit"
+msgstr ""
+
+# @ emqa
+#: inc/Posts/Answer.php:305
+msgid "Submitted"
+msgstr "Đã gửi"
+
+#: inc/Template.php:160
+msgid "Subscribe"
+msgstr "Theo dõi"
+
+#: templates/archive-question-filter.php:29
+msgid "Subscribes"
+msgstr "Theo dõi"
+
+#: inc/Template.php:19 templates/question-submit-form.php:46
+#: templates/content-edit.php:44
+msgid "Tag"
+msgstr ""
+
+#: inc/Posts/Question.php:196
+msgctxt "taxonomy general name"
+msgid "Question Categories"
+msgstr ""
+
+#: inc/Posts/Question.php:225
+msgctxt "taxonomy general name"
+msgid "Question Tags"
+msgstr ""
+
+#: inc/Posts/Question.php:197
+msgctxt "taxonomy singular name"
+msgid "Question Category"
+msgstr ""
+
+#: inc/Posts/Question.php:226
+msgctxt "taxonomy singular name"
+msgid "Question Tag"
+msgstr ""
+
+#: inc/Admin/Welcome.php:64
+msgid ""
+"Thank you for installing our WordPress plugin. If you have any question "
+"about this plugin, please submit to our <a target=\"_blank\" href=\"https:"
+"//www.emohelp.com/question/\">Q&A section</a>."
+msgstr ""
+
+#: upgrades/upgrades.php:41
+msgid ""
+"The upgrade process has started, please be patient. This could take several "
+"minutes. You will be automatically redirected when the upgrade is finished..."
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:1537
+msgid "This address will be used as the sender of the outgoing emails."
+msgstr "Địa chỉ này được người gửi sử dụng cho các email gửi đi"
+
+# @ emqa
+#: inc/Handle.php:492
+msgid "This email is already registered, please choose another one."
+msgstr "Địa chỉ email này đã được đăng ký, vui lòng chọn địa chỉ email khác"
+
+#: inc/Session.php:68 inc/Session.php:85 inc/Session.php:95 inc/Session.php:118
+msgid "This function should not be called before init."
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:70
+msgid ""
+"This page will be redirected when users without authority click on a private "
+"question. You can customize the message of this page in.If not, a default "
+"404 page will be used."
+msgstr ""
+"Trang này sẽ được chuyển hướng khi người dùng không có quyền nhấp chuột vào "
+"câu hỏi riêng tư. Bạn có thể tùy chỉnh thông báo của trang này. Nếu không, "
+"một trang mặc định 404 sẽ được sử dụng"
+
+#: inc/Ajax.php:210
+msgid "This post is not a question."
+msgstr ""
+
+#: inc/Ajax.php:59 inc/Handle.php:167
+msgid "This post is not answer."
+msgstr "Nội dung này không phải câu trả lời."
+
+#: inc/Handle.php:586
+msgid "This post is not question."
+msgstr "Nội dung này không phải câu hỏi."
+
+#: templates/content-single-question.php:43
+msgid "This question is:"
+msgstr ""
+
+# @ emqa
+#: inc/Handle.php:495
+msgid "This username is already registered. Please use another one."
+msgstr "Tên đăng nhập này đã được đăng ký. Vui lòng dùng tên đăng nhập khác"
+
+#: inc/Akismet.php:84 templates/question-submit-form.php:13
+#: templates/content-edit.php:21
+msgid "Title"
+msgstr ""
+
+#: inc/Settings.php:1045 inc/Akismet.php:85
+msgid "Type"
+msgstr ""
+
+#: templates/archive-question-filter.php:22
+msgid "Unanswered"
+msgstr "Chưa trả lời"
+
+#: inc/Posts/Question.php:203
+msgid "Update Question Category"
+msgstr ""
+
+#: inc/Posts/Question.php:233
+msgid "Update Question Tag"
+msgstr ""
+
+#: upgrades/upgrades.php:177
+msgid "Upgrade process is done"
+msgstr ""
+
+# @ emqa
+#: inc/Settings.php:87
+msgid "Upload"
+msgstr "Tải lên"
+
+#: inc/Settings.php:87
+msgid "Upload or choose a logo to be displayed at the top of the email."
+msgstr ""
+
+#: inc/Settings.php:991
+msgid "Use Akismet anti-spam"
+msgstr ""
+
+#: inc/Settings.php:1021
+msgid "Use Auto Closure"
+msgstr ""
+
+# @ emqa
+#: inc/Handle.php:489
+msgid "User Registration was disabled."
+msgstr "Đăng ký thành viên đã bị vô hiệu hóa"
+
+# @ edd-em-membersip
+# @ emqa
+#: inc/Akismet.php:159 inc/Posts/Base.php:395
+msgid "View"
+msgstr "Lượt xem"
+
+#: templates/archive-question-filter.php:33
+msgid "Views"
+msgstr "Lượt xem"
+
+# @ emqa
+#: inc/Posts/Question.php:289
+msgid "views"
+msgstr "xem"
+
+# @ emqa
+#: templates/content-single-question.php:15
+#: templates/content-single-answer.php:13
+msgid "Vote Down"
+msgstr "Không đồng ý"
+
+#: inc/Settings.php:968
+msgid "Vote Settings"
+msgstr ""
+
+# @ emqa
+#: templates/content-single-question.php:14
+#: templates/content-single-answer.php:12
+msgid "Vote Up"
+msgstr "Đồng ý"
+
+# @ emqa
+#: inc/Posts/Question.php:288
+msgid "voted"
+msgstr "đã ủng hộ"
+
+#: templates/archive-question-filter.php:35
+msgid "Votes"
+msgstr "Lượt ủng hộ"
+
+#: inc/Admin/Welcome.php:27 inc/Admin/Welcome.php:28
+msgid "Welcome to EMO Questalk"
+msgstr ""
+
+#. %1$s is replaced with the version number
+#: inc/Admin/Welcome.php:63
+#, php-format
+msgid "Welcome to EMO Questalk %1$s"
+msgstr ""
+
+#. %1$s is replaced with the subject being voted for
+#: inc/Posts/Base.php:49
+#, php-format
+msgid "What %1$s are you looking for?"
+msgstr ""
+
+#: inc/Template.php:77
+msgid "What do you want to know?"
+msgstr "Bạn muốn biết gì?"
+
+#: templates/question-submit-form.php:24 templates/answer-submit-form.php:34
+msgid "Who can see this?"
+msgstr ""
+
+# @ default
+#: inc/widgets/Latest_Question.php:72 inc/widgets/Popular_Question.php:66
+#: inc/widgets/Closed_Question.php:72 inc/widgets/Related_Question.php:48
+msgid "Widget title"
+msgstr ""
+
+#. %1$s is replaced with the subject being voted for
+#: inc/Posts/Base.php:104
+#, php-format
+msgid "You aren't allowed voted for this %1$s"
+msgstr ""
+
+# @ emqa
+#: inc/Handle.php:279
+msgid "You can't post comment"
+msgstr "Bạn không thể đăng bình luận"
+
+#: inc/Ajax.php:63 inc/Ajax.php:214
+msgid "You do not have permission to delete this post."
+msgstr "Bạn không có quyền xoá bài viết này."
+
+# @ emqa
+#: inc/Posts/Question.php:505
+msgid "You do not have permission to delete this question"
+msgstr "Bạn không có quyền xóa câu hỏi này"
+
+#: upgrades/upgrades.php:134
+msgid "You do not have permission to do this task"
+msgstr ""
+
+#: inc/Handle.php:148
+msgid "You do not have permission to edit answer."
+msgstr "Bạn không có quyền để sửa câu trả lời."
+
+#: inc/Ajax.php:35 inc/Handle.php:365
+msgid "You do not have permission to edit comment."
+msgstr "Bạn không có quyền để chỉnh sửa bình luận."
+
+# @ emqa
+#: inc/Handle.php:571 inc/Status.php:355
+msgid "You do not have permission to edit question"
+msgstr "Bạn không được phép sửa câu hỏi"
+
+# @ emqa
+#: inc/Ajax.php:289
+msgid "You do not have permission to edit question status"
+msgstr "Bạn không được phép sửa trạng thái câu hỏi"
+
+#: inc/extend/buddypress/notifications.php:111
+msgid "You do not have permission to mark notifications for that user."
+msgstr ""
+
+# @ emqa
+#: templates/question-submit-form.php:69
+msgid "You do not have permission to submit a question"
+msgstr "Bạn không được phép gửi câu hỏi"
+
+# @ emqa
+#: inc/Handle.php:54 inc/Handle.php:537
+msgid "You do not have permission to submit question."
+msgstr "Bạn không có quyền gửi câu hỏi."
+
+# @ emqa
+#: templates/content-none.php:10
+msgid "You do not have permission to view questions"
+msgstr "Bạn không đủ quyền để xem câu hỏi"
+
+#: inc/extend/buddypress/notifications.php:47
+#, php-format
+msgid "You have %1$d new reply to %2$s"
+msgstr ""
+
+#: inc/extend/buddypress/notifications.php:42
+#, php-format
+msgid "You have %1$d new reply to %2$s from %3$s"
+msgstr ""
+
+#: inc/extend/buddypress/notifications.php:36
+msgid "You have %d new replies"
+msgstr ""
+
+# @ emqa
+#. %s is replaced with HTML tags and attributes allowed in comments
+#: inc/Template.php:478
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+"Bạn có thể sử dụng <abbr title=\"HyperText Markup Language\">HTML</abbr> "
+"tags and attributes: %s"
+
+# @ emqa
+#. %s is replaced with the login URL
+#: inc/Template.php:471
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Bạn cần phải <a href=\"%s\">đăng nhập</a> để viết bình luận"
+
+#: inc/Handle.php:157
+msgid "You must enter a valid answer content."
+msgstr ""
+
+#: inc/Handle.php:399 inc/Handle.php:576
+msgid "You must enter a valid question title."
+msgstr ""
+
+#: inc/Akismet.php:662
+msgid "You need login to report spam!"
+msgstr ""
+
+#: inc/Akismet.php:680
+msgid "You reported this post before!"
+msgstr ""
+
+# @ emqa
+#. %1$s is replaced with the subject being voted for
+#: inc/Posts/Base.php:97
+#, fuzzy, php-format
+#| msgid "You voted for this "
+msgid "You voted for this %1$s"
+msgstr "Bạn ủng hộ cho điều này"
+
+#: templates/answer-submit-form.php:12
+msgid "Your Answer"
+msgstr ""
+
+#: templates/question-submit-form.php:52 templates/answer-submit-form.php:22
+msgid "Your Email"
+msgstr ""
+
+#: templates/question-submit-form.php:57 templates/answer-submit-form.php:27
+msgid "Your Name"
+msgstr ""
+
+#: inc/Handle.php:549
+msgid "Your question is waiting moderator."
+msgstr "Câu trả lời của bạn đang chờ kiểm duyệt."

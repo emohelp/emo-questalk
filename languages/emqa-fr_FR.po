@@ -1,145 +1,144 @@
-# Ruly Aperta <globalaperta@gmail.com>, 2014.
 msgid ""
 msgstr ""
-"Project-Id-Version: DW Question Answer\n"
+"Project-Id-Version: EMO Questalk \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-17 16:32+0700\n"
-"PO-Revision-Date: 2016-08-17 16:32+0700\n"
-"Last-Translator: DesignWall <webmaster@designwall.com>\n"
-"Language-Team: IT Solutions\n"
-"Language: id\n"
+"POT-Creation-Date: 2016-08-17 16:31+0700\n"
+"PO-Revision-Date: 2016-08-17 16:31+0700\n"
+"Last-Translator: \n"
+"Language-Team: Emohelp <dm@emohelp.com>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 1.8.7\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
 "X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: dw-question-answer.php:147
-msgid "DWQA Questions"
-msgstr ""
+#: em-question-answer.php:147
+msgid "EMQA Questions"
+msgstr "Questions"
 
-#: dw-question-answer.php:164
-msgid "DWQA Ask Question"
-msgstr ""
+#: em-question-answer.php:164
+msgid "EMQA Ask Question"
+msgstr "Poser une Question"
 
 #: inc/Admin/Extensions.php:13
-msgid "DWQA Markdown"
-msgstr ""
+msgid "EMQA Markdown"
+msgstr "EMQA Markdown"
 
 #: inc/Admin/Extensions.php:19
-msgid "DWQA Leaderboard"
-msgstr ""
+msgid "EMQA Leaderboard"
+msgstr "EMQA Leaderboard"
 
 #: inc/Admin/Extensions.php:25
-msgid "DWQA Captcha"
-msgstr ""
+msgid "EMQA Captcha"
+msgstr "EMQA Captcha"
 
 #: inc/Admin/Extensions.php:31
-msgid "DWQA Embed Question"
-msgstr ""
+msgid "EMQA Embed Question"
+msgstr "EMQA question intégrée"
 
 #: inc/Admin/Extensions.php:37
-msgid "DWQA Widgets"
+msgid "EMQA Widgets"
 msgstr ""
 
 #: inc/Admin/Extensions.php:47
 msgid "Extensions"
-msgstr ""
+msgstr "Extensions"
 
 #: inc/Admin/Extensions.php:75
 msgid "Get It Now!"
-msgstr ""
+msgstr "Récupérez le maintenant!"
 
 #: inc/Admin/Welcome.php:27 inc/Admin/Welcome.php:28
-msgid "Welcome to DW Question & Answer"
-msgstr ""
+msgid "Welcome to EMO Questalk"
+msgstr "Bienvenue sur EMQA"
 
 #: inc/Admin/Welcome.php:35 inc/Admin/Welcome.php:36
-msgid "DW Question & Answer Changelog"
-msgstr ""
+msgid "EMO Questalk Changelog"
+msgstr "EMQA Changelog"
 
 #: inc/Admin/Welcome.php:43 inc/Admin/Welcome.php:44
-msgid "DW Question & Answer Credits"
-msgstr ""
+msgid "EMO Questalk Credits"
+msgstr "EMQA Crédits"
 
 #: inc/Admin/Welcome.php:60
 #, php-format
-msgid "Welcome to DW Question & Answer %s"
-msgstr ""
+msgid "Welcome to EMO Questalk %s"
+msgstr "Bienvenue sur EMQA %s"
 
 #: inc/Admin/Welcome.php:61
 msgid ""
 "Thank you for installing our WordPress plugin. If you have any question "
 "about this plugin, please submit to our <a target=\"_blank\" href=\"https://"
-"www.designwall.com/question/\">Q&A section</a>."
+"www.Emohelp.com/question/\">Q&A section</a>."
 msgstr ""
 
 #: inc/Admin/Welcome.php:69
 msgid "What&#8217;s New"
-msgstr ""
+msgstr "Quoi de neuf"
 
 #: inc/Admin/Welcome.php:70
 msgid "Changelog"
-msgstr ""
+msgstr "Changelog"
 
 #: inc/Admin/Welcome.php:71
 msgid "Credits"
-msgstr ""
+msgstr "Crédits"
 
 #: inc/Admin/Welcome.php:199
 msgid "Contributors"
-msgstr ""
+msgstr "Contributeurs"
 
 #: inc/Admin/Welcome.php:218
 msgid "No valid changelog was found."
-msgstr ""
+msgstr "Aucun changelog valide n'a été trouvé."
 
 #: inc/Ajax.php:29 inc/Ajax.php:47 inc/Ajax.php:83 inc/Ajax.php:113
 #: inc/Ajax.php:132 inc/Ajax.php:150 inc/Ajax.php:215 inc/Handle.php:256
 #: inc/Handle.php:455 inc/Permission.php:286 inc/Status.php:319
 msgid "Are you cheating huh?"
-msgstr "Apakah Anda Kehilangan Arah?"
+msgstr "Est ce que vous trichez hein?"
 
 #: inc/Ajax.php:33 inc/Handle.php:260
 msgid "You do not have permission to edit comment."
-msgstr ""
+msgstr "Vous n'avez pas la permission de modifier le commentaire."
 
 #: inc/Ajax.php:37
 #, fuzzy
 msgid "Comment ID must be showed."
-msgstr "ID komentar harus ditampilkan."
+msgstr "L'ID du Commentaire doit être visible!!."
 
 #: inc/Ajax.php:51 inc/Handle.php:154
 msgid "Answer is missing."
-msgstr ""
+msgstr "Réponse manquante."
 
 #: inc/Ajax.php:55 inc/Handle.php:158
 msgid "This post is not answer."
-msgstr ""
+msgstr "Cet article n'est pas une réponse."
 
 #: inc/Ajax.php:59 inc/Ajax.php:162
 msgid "You do not have permission to delete this post."
-msgstr ""
+msgstr "Vous n'avez pas la permission de supprimer cet article."
 
 #: inc/Ajax.php:86
 msgid "Missing id of answer"
-msgstr "ID jawaban hilang"
+msgstr "ID manquant pour répondre"
 
 #: inc/Ajax.php:154 inc/Handle.php:477
 msgid "Question is missing."
-msgstr ""
+msgstr "Question manquante."
 
 #: inc/Ajax.php:158 inc/Handle.php:481
 msgid "This post is not question."
-msgstr ""
+msgstr "Cet article n'est pas une question."
 
 #: inc/Ajax.php:206
 #, fuzzy
 msgid "You do not have permission to edit question status"
-msgstr "Anda tidak punya hak akses untuk melihat pertanyaan."
+msgstr "Vous n'avez pas la permission de voir les questions"
 
 #: inc/Ajax.php:223 inc/Ajax.php:273
 msgid "Not Found!!!"
@@ -147,303 +146,302 @@ msgstr ""
 
 #: inc/Answer_List_Table.php:81 inc/Posts/Answer.php:271 inc/Template.php:48
 msgid "Author"
-msgstr "Penulis"
+msgstr "Auteur"
 
 #: inc/Answer_List_Table.php:82
 msgid "Detail"
-msgstr "Rincian"
+msgstr "détail"
 
 #: inc/Answer_List_Table.php:92 inc/Notifications.php:116
 #: inc/Notifications.php:214 inc/Notifications.php:233 inc/Posts/Base.php:230
 #: inc/Posts/Comment.php:102 inc/Settings.php:419 inc/Settings.php:455
 #: inc/Settings.php:490 inc/User.php:155
 msgid "Anonymous"
-msgstr "Anonim"
+msgstr "anonyme"
 
 #: inc/Answer_List_Table.php:101
 msgid "Answered on "
-msgstr "Dijawab pada"
+msgstr "Répondu"
 
 #: inc/Answer_List_Table.php:112 inc/Helptab.php:153
 msgid "Read more"
-msgstr "Selanjutnya"
+msgstr "Lire la suite"
 
 #: inc/Handle.php:29
 msgid "&quot;Helllo&quot;, Are you cheating huh?."
-msgstr ""
+msgstr "&quot;Hey !&quot;, vous trichez ?."
 
 #: inc/Handle.php:32
 msgid "Delete draft"
-msgstr "Hapus draf"
+msgstr "Supprimer le brouillon "
 
 #: inc/Handle.php:39
 msgid "Answer content is empty"
-msgstr ""
+msgstr "Réponse vide"
 
 #: inc/Handle.php:42
 msgid "Question is empty"
-msgstr ""
+msgstr "Question vide"
 
 #: inc/Handle.php:46 inc/Handle.php:432
 msgid "You do not have permission to submit question."
-msgstr "Anda tidak punya hak akses untuk menulis pertanyaan."
+msgstr "Vous n'avez pas la permission de soumettre des questions."
 
 #: inc/Handle.php:50 inc/Handle.php:218 inc/Handle.php:300
 #, fuzzy
 msgid "Missing email information"
-msgstr "Informasi email tidak diketahui"
+msgstr "Email Manquant"
 
 #: inc/Handle.php:54 inc/Handle.php:222 inc/Handle.php:305
 #, fuzzy
 msgid "Missing name information"
-msgstr "Informasi nama tidak diketahui"
+msgstr "Nom Manquant"
 
 #: inc/Handle.php:58 inc/Handle.php:451
 msgid "Captcha is not correct"
-msgstr "Captcha salah"
+msgstr "Le Captcha n'est pas correcte"
 
 #: inc/Handle.php:77
 msgid "Answer for "
-msgstr "Jawaban untuk"
+msgstr "répondre"
 
 #: inc/Handle.php:139
 msgid "You do not have permission to edit answer."
-msgstr ""
+msgstr "Vous n'avez pas la permission de modifier la réponse."
 
 #: inc/Handle.php:143 inc/Handle.php:520 inc/Posts/Question.php:473
 #, fuzzy
 msgid "Hello, Are you cheating huh?"
-msgstr "\"Hallo\", Apakah Anda Salah Jalan?"
+msgstr "Est ce que vous trichez hein?"
 
 #: inc/Handle.php:148
 msgid "You must enter a valid answer content."
-msgstr ""
+msgstr "Vous devez indiquer une réponse valide."
 
 #: inc/Handle.php:194
 msgid "You can't post comment"
-msgstr "Anda tidak dapat menuliskan komentar"
+msgstr "Vous ne pouvez pas poster de commentaire"
 
 #: inc/Handle.php:197
 msgid "Missing post id."
-msgstr ""
+msgstr "ID d'article manquant"
 
 #: inc/Handle.php:203
 msgid "Please enter your comment content"
-msgstr "Silahkan tuliskan komentar"
+msgstr "Veuillez entrez votre commentaire"
 
 #: inc/Handle.php:249
 msgid "Comment is missing"
-msgstr ""
+msgstr "Commentaire manquant"
 
 #: inc/Handle.php:264
 msgid "Comment content must not be empty."
-msgstr "Komentar tidak boleh kosong."
+msgstr "Le commentaire ne doit pas être vide."
 
 #: inc/Handle.php:294 inc/Handle.php:471
 msgid "You must enter a valid question title."
-msgstr ""
+msgstr "Vous devez indiquer un titre de question valide."
 
 #: inc/Handle.php:384
 msgid "User Registration was disabled."
-msgstr "Pedaftaran User Ditutup"
+msgstr "Enregistrement désactivé."
 
 #: inc/Handle.php:387
 msgid "This email is already registered, please choose another one."
-msgstr "Email ini sudah terdaftar, silahkan pilih yang lainnya."
+msgstr "Cet e-mail est déjà enregistré, s'il vous plaît choisir un autre .."
 
 #: inc/Handle.php:390
 #, fuzzy
 msgid "This username is already registered. Please use another one."
-msgstr "Nama pengguna telah dipakai. Silakan pilih lainnya."
+msgstr ""
+"Ce nom d'utilisateur est déjà enregistré. S'il vous plaît choisir un autre."
 
 #: inc/Handle.php:444
 msgid "Your question is waiting moderator."
-msgstr ""
+msgstr "Votre question est en attente de modération."
 
 #: inc/Handle.php:466 inc/Status.php:347
 #, fuzzy
 msgid "You do not have permission to edit question"
-msgstr "Anda tidak punya hak akses untuk menulis pertanyaan."
+msgstr "Vous n'avez pas la permission de soumettre des questions."
 
 #: inc/Helptab.php:47
 msgid "Overview"
-msgstr "Ringkasan"
+msgstr "Vue d'ensemble"
 
 #: inc/Helptab.php:48
-#, fuzzy
-msgid "DW Question Answer Plugin"
-msgstr "Mengapa menggunakan DW Question & Answer"
+msgid "EMO Questalk  Plugin"
+msgstr "EMO Questalk  Plugin"
 
 #: inc/Helptab.php:49
 msgid ""
-"DW Question Answer is a WordPress Plugin which helps you build a Question & "
+"EMO Questalk  is a WordPress Plugin which helps you build a Question & "
 "Answer system on your WordPress sites. The plugin is easy to install and set "
 "up. Let start building up your community with this WordPress question & "
 "answer system."
 msgstr ""
+"em Question Réponse est un plugin WordPress qui vous aide à construire une "
+"question & réponse système sur vos sites WordPress. Le plugin est facile à "
+"installer et à configurer. Laissez commencer à construire votre communauté à "
+"cette question WordPress et système de réponse."
 
 #: inc/Helptab.php:52
-#, fuzzy
 msgid "Setup Question List Page"
-msgstr "Halaman Daftar Pertanyaan"
+msgstr "Configuration de la page Liste de questions"
 
 #: inc/Helptab.php:56
-#, fuzzy
 msgid "Setup Ask Question Page"
-msgstr "Halaman Mengajukan Pertanyaan"
+msgstr "Configuration de la page Poser une question"
 
 #: inc/Helptab.php:60
 msgid "Shortcode"
-msgstr ""
+msgstr "Shortcode"
 
 #: inc/Helptab.php:64
 msgid "Style integration"
-msgstr ""
+msgstr "Intégration de style"
 
 #: inc/Helptab.php:173
 msgid "For more information:"
-msgstr "Temukan lebih banyak informasi:"
+msgstr "Pour plus d'informations:"
 
 #: inc/Helptab.php:174
-#, fuzzy
-msgid "DW Question Answer Guide"
-msgstr "Mengapa menggunakan DW Question & Answer"
+msgid "EMO Questalk  Guide"
+msgstr "Guide EMO Questalk "
 
 #: inc/Helptab.php:175
-#, fuzzy
 msgid "Community"
-msgstr "Komentar"
+msgstr "Communauté"
 
 #: inc/Helptab.php:176
-msgid "DesignWall Wordpress Themes"
-msgstr "Tema Wordpress DesignWall"
+msgid "Emohelp Wordpress Themes"
+msgstr "Thèmes Wordpress par Emohelp"
 
 #: inc/Helptab.php:177
-#, fuzzy
-msgid "DesignWall Wordpress Plugins"
-msgstr "Tema Wordpress DesignWall"
+msgid "Emohelp Wordpress Plugins"
+msgstr "Plugins Wordpress par Emohelp"
 
 #: inc/Metaboxes.php:13 templates/content-single-question.php:31
 #: templates/question-submit-form.php:22
 msgid "Status"
-msgstr "Status"
+msgstr "Statut"
 
 #: inc/Metaboxes.php:15 inc/Status.php:304
 #: templates/archive-question-filter.php:18
 #: templates/content-single-question.php:32
 msgid "Open"
-msgstr "Dibuka"
+msgstr "Ouvertes"
 
 #: inc/Metaboxes.php:16 inc/Status.php:287
 msgid "Pending"
-msgstr "Ditunda"
+msgstr "En attente"
 
 #: inc/Metaboxes.php:17 inc/Status.php:284
 #: templates/archive-question-filter.php:19
 #: templates/content-single-question.php:34
 msgid "Resolved"
-msgstr "Diselesaikan"
+msgstr "Résolues"
 
 #: inc/Metaboxes.php:18 inc/Status.php:290
 msgid "Re-Open"
-msgstr "Dibuka Kembali"
+msgstr "Ré-ouvertes"
 
 #: inc/Metaboxes.php:19 inc/Status.php:293
 #: templates/archive-question-filter.php:20
 #: templates/content-single-question.php:33
 msgid "Closed"
-msgstr "Ditutup"
+msgstr "Fermées"
 
 #: inc/Metaboxes.php:25
 msgid "Sticky"
-msgstr ""
+msgstr "Sticky"
 
 #: inc/Metaboxes.php:29
+#, fuzzy
 msgid "Pin question to top of archive page."
-msgstr ""
+msgstr "Question toujours en haut de la page d'archive."
 
 #: inc/Metaboxes.php:45 inc/Posts/Answer.php:225 inc/Posts/Answer.php:227
 #: inc/Settings.php:431 templates/archive-question-filter.php:34
 msgid "Answers"
-msgstr "Jawaban"
+msgstr "Réponses"
 
 #: inc/Metaboxes.php:65
-#, fuzzy
 msgid "Question Meta Data"
-msgstr "Rincian Pertanyaan"
+msgstr "Métadonnées du Question"
 
 #: inc/Notifications.php:29
 msgid "A new question was posted on {site_name}"
-msgstr "Pertanyaan baru telah ditulis di {site_name}"
+msgstr "Une nouvelle question a été publiée le {site_name}"
 
 #: inc/Notifications.php:132
 #, fuzzy
 msgid "You have a new answer for your followed question"
-msgstr "Jawaban baru dari pertanyaan yang Anda ikuti"
+msgstr "Vous avez une nouvelle réponse à une question suivie"
 
 #: inc/Notifications.php:250
 msgid "A new answer for \"{question_title}\" was posted on {site_name}"
 msgstr ""
-"Jawaban baru untuk \"{question_title}\" telah di tulis pada {site_name}"
+"Une nouvelle réponse à \"{question_title}\" a été postée sur {site_name}"
 
 #: inc/Notifications.php:334 inc/Notifications.php:380
-#, fuzzy
 msgid "[{site_name}] You have a new comment for question {question_title}"
 msgstr ""
-"[{site_name}] Anda mendapat tanggapan untuk pertanyaan {question_title}"
+"[{site_name}] Vous avez un nouveau commentaire à la question {question_title}"
 
 #: inc/Notifications.php:339 inc/Notifications.php:385
 msgid "[{site_name}] You have a new comment for answer"
-msgstr "[{site_name}] Anda mendapatkan tanggapan untuk jawaban Anda"
+msgstr "[{site_name}] Vous avez un nouveau commentaire pour une réponse"
 
 #: inc/PointerHelper.php:60
-#, fuzzy
-msgid "How to use DW Question Answer"
-msgstr "Mengapa menggunakan DW Question & Answer"
+msgid "How to use EMO Questalk "
+msgstr "Comment utiliser EMO Questalk "
 
 #: inc/PointerHelper.php:61
-msgid "Documents, Support From DesignWall (help)"
-msgstr ""
+msgid "Documents, Support From Emohelp (help)"
+msgstr "Documents, support par Emohelp (aide)"
 
 #: inc/PointerHelper.php:70
 msgid "Config your support channel"
-msgstr "Pengaturan halaman support"
+msgstr "Configurez votre canal de support"
 
 #: inc/PointerHelper.php:71
 #, fuzzy
 msgid "Change comment settings, and create the Submit question page."
-msgstr "Ubah pengaturan komentar, dan halaman mengirim pertanyaan."
+msgstr ""
+"Modifier le réglage de commentaires, et créer une page de soumisson de "
+"questions."
 
 #: inc/Posts/Answer.php:226 inc/Posts/Answer.php:270
 msgid "Answer"
-msgstr "Jawaban"
+msgstr "Réponse"
 
 #: inc/Posts/Answer.php:273
 msgid "In Response To"
-msgstr "Tanggapan untuk"
+msgstr "En réponse à"
 
 #: inc/Posts/Answer.php:317 inc/Posts/Base.php:320 inc/Settings.php:402
 #: inc/Template.php:58 inc/Template.php:163 inc/Template.php:180
 #: templates/content-comment.php:19
 msgid "Edit"
-msgstr "Ubah"
+msgstr "Editer"
 
 #: inc/Posts/Answer.php:318 inc/Settings.php:403 inc/Template.php:168
 #: inc/Template.php:185 templates/content-comment.php:22
 msgid "Delete"
-msgstr "Hapus"
+msgstr "Effacer"
 
 #: inc/Posts/Answer.php:319 inc/Posts/Base.php:322
 msgid "View"
-msgstr "Lihat"
+msgstr "Vue"
 
 #: inc/Posts/Answer.php:323
 msgid "Submitted"
-msgstr "Dikirimkan"
+msgstr "Soumis"
 
 #: inc/Posts/Answer.php:324
 msgid "on"
-msgstr "pada"
+msgstr "sur"
 
 #: inc/Posts/Answer.php:359
 msgid "Question ID"
@@ -455,260 +453,260 @@ msgstr ""
 
 #: inc/Posts/Base.php:5
 msgid "Are you cheating, huh?"
-msgstr "Apakah Anda Kehilangan Arah?"
+msgstr "Est ce que vous trichez, hein?"
 
 #: inc/Posts/Base.php:18
 msgid "What "
-msgstr "Apa"
+msgstr "Quoi"
 
 #: inc/Posts/Base.php:46
 msgid "You voted for this "
-msgstr "Anda memberi nilai untuk ini"
+msgstr "Vous avez voté pour cette "
 
 #: inc/Posts/Base.php:242
 #, php-format
 msgid "Posts by %s"
-msgstr "Dikirimkan oleh %s"
+msgstr "Les messages de% s"
 
 #: inc/Posts/Base.php:251 inc/Posts/Base.php:255
 #, php-format
-msgid "%s answered <span class=\"dwqa-date\">%s</span> ago"
-msgstr ""
+msgid "%s answered <span class=\"emqa-date\">%s</span> ago"
+msgstr "%s répondues il y a <span class=\"emqa-date\">%s</span>"
 
 #: inc/Posts/Base.php:257
 #, php-format
-msgid "%s asked <span class=\"dwqa-date\">%s</span> ago"
-msgstr ""
+msgid "%s asked <span class=\"emqa-date\">%s</span> ago"
+msgstr "%s posées il y a<span class=\"emqa-date\">%s</span> "
 
 #: inc/Posts/Base.php:306
-msgid "DWQA Posts"
-msgstr ""
+msgid "EMQA Posts"
+msgstr "EMQA Articles"
 
 #: inc/Posts/Base.php:307
-msgid "DWQA Post"
-msgstr ""
+msgid "EMQA Post"
+msgstr "EMQA Article"
 
 #: inc/Posts/Base.php:318
-msgctxt "dwqa"
+msgctxt "EMQA"
 msgid "Add New"
-msgstr ""
+msgstr "Ajouter"
 
 #: inc/Posts/Base.php:319
 #, fuzzy
 msgid "Add New"
-msgstr "Tambah"
+msgstr "Nouveau"
 
 #: inc/Posts/Base.php:321 inc/Status.php:296
 msgid "New"
-msgstr "Baru"
+msgstr "Nouveau"
 
 #: inc/Posts/Base.php:323
 msgid "Search "
-msgstr ""
+msgstr "Rechercher"
 
 #: inc/Posts/Base.php:324
 msgid "not found"
-msgstr ""
+msgstr "non trouvé"
 
 #: inc/Posts/Base.php:325
 msgid "not found in Trash"
-msgstr ""
+msgstr "non trouvé dans la corbeille"
 
 #: inc/Posts/Base.php:326
 msgid "Parent:"
-msgstr ""
+msgstr "Parent:"
 
 #: inc/Posts/Question.php:56 inc/Shortcode.php:138
 #: inc/widgets/Closed_Question.php:49 inc/widgets/Latest_Question.php:42
 #: inc/widgets/Popular_Question.php:43
 msgid "asked by"
-msgstr "ditanyakan oleh"
+msgstr "demandé par"
 
 #: inc/Posts/Question.php:100 inc/Posts/Question.php:102
 #: inc/Posts/Question.php:266 inc/Settings.php:395
 #: templates/archive-question-filter.php:28
 msgid "Questions"
-msgstr ""
+msgstr "Questions"
 
 #: inc/Posts/Question.php:101
 msgid "Question"
-msgstr "Pertanyaan"
+msgstr "Question"
 
 #: inc/Posts/Question.php:196
 msgctxt "taxonomy general name"
 msgid "Question Categories"
-msgstr ""
+msgstr "Catégories"
 
 #: inc/Posts/Question.php:197
 msgctxt "taxonomy singular name"
 msgid "Question Category"
-msgstr ""
+msgstr "Catégorie"
 
 #: inc/Posts/Question.php:198
 msgid "Search Question Categories"
-msgstr ""
+msgstr "Rechercher par catégorie"
 
 #: inc/Posts/Question.php:199
 msgid "All Question Categories"
-msgstr ""
+msgstr "Toutes les catégories"
 
 #: inc/Posts/Question.php:200
 msgid "Parent Question Category"
-msgstr ""
+msgstr "Catégorie parente"
 
 #: inc/Posts/Question.php:201
 msgid "Parent Question Category:"
-msgstr ""
+msgstr "Catégorie parente:"
 
 #: inc/Posts/Question.php:202
 msgid "Edit Question Category"
-msgstr ""
+msgstr "Modifier une catégorie"
 
 #: inc/Posts/Question.php:203
 msgid "Update Question Category"
-msgstr ""
+msgstr "Mettre à jour une catégorie"
 
 #: inc/Posts/Question.php:204
 msgid "Add New Question Category"
-msgstr ""
+msgstr "Ajouter une catégorie"
 
 #: inc/Posts/Question.php:205
 msgid "New Question Category Name"
-msgstr ""
+msgstr "Nouveau nom de catégorie"
 
 #: inc/Posts/Question.php:206
 msgid "Question Category"
-msgstr "Kategori Pertanyaan"
+msgstr "Catégorie de la Question"
 
 #: inc/Posts/Question.php:225
 msgctxt "taxonomy general name"
 msgid "Question Tags"
-msgstr ""
+msgstr "Tags"
 
 #: inc/Posts/Question.php:226
 msgctxt "taxonomy singular name"
 msgid "Question Tag"
-msgstr ""
+msgstr "Tag"
 
 #: inc/Posts/Question.php:227
 msgid "Search Question Tags"
-msgstr ""
+msgstr "Rechercher par tags"
 
 #: inc/Posts/Question.php:228
 msgid "Popular Question Tags"
-msgstr ""
+msgstr "Tags populaires"
 
 #: inc/Posts/Question.php:229
 msgid "All Question Tags"
-msgstr ""
+msgstr "Tous les tags"
 
 #: inc/Posts/Question.php:232
 msgid "Edit Question Tag"
-msgstr ""
+msgstr "Modifier le tag"
 
 #: inc/Posts/Question.php:233
 msgid "Update Question Tag"
-msgstr ""
+msgstr "Mettre à jour le tag"
 
 #: inc/Posts/Question.php:234
 msgid "Add New Question Tag"
-msgstr ""
+msgstr "Ajouter un tag"
 
 #: inc/Posts/Question.php:235
 msgid "New Question Tag Name"
-msgstr ""
+msgstr "Nom du tag"
 
 #: inc/Posts/Question.php:236
 msgid "Separate question tags with commas"
-msgstr ""
+msgstr "Séparer les tags par une virgule"
 
 #: inc/Posts/Question.php:237
 msgid "Add or remove question tags"
-msgstr ""
+msgstr "Ajouter ou supprimer des tags"
 
 #: inc/Posts/Question.php:238
 msgid "Choose from the most used question tags"
-msgstr ""
+msgstr "Choisir parmi les tags les plus utilisés"
 
 #: inc/Posts/Question.php:239
 msgid "No question tags found."
-msgstr ""
+msgstr "Aucun tag de trouvé."
 
 #: inc/Posts/Question.php:240
 msgid "Question Tags"
-msgstr "Tag Pertanyaan"
+msgstr "Question Tags"
 
 #: inc/Posts/Question.php:276
 msgid "Info"
-msgstr "Informasi"
+msgstr "Info"
 
 #: inc/Posts/Question.php:287 templates/content-question.php:22
 msgid "answered"
-msgstr "Sudah dijawab"
+msgstr "répondu"
 
 #: inc/Posts/Question.php:288
 msgid "voted"
-msgstr "ditilai"
+msgstr "voté"
 
 #: inc/Posts/Question.php:289
 msgid "views"
-msgstr "lihat"
+msgstr "vues"
 
 #: inc/Posts/Question.php:410 inc/User.php:266
 msgid "Invalid Post"
-msgstr "Tulisan tidak valid"
+msgstr "Poste invalide"
 
 #: inc/Posts/Question.php:445
-#, fuzzy
 msgid "Sticky Questions"
-msgstr "Ajukan _Pertanyaan"
+msgstr "Questions collantes"
 
 #: inc/Posts/Question.php:479
 #, fuzzy
 msgid "Question is not valid"
-msgstr "Halaman Daftar Pertanyaan"
+msgstr "Page de liste des Questions"
 
 #: inc/Posts/Question.php:500
 msgid "Delete Action was failed"
-msgstr ""
+msgstr "La suppression a échoué"
 
 #: inc/Posts/Question.php:505
 #, fuzzy
 msgid "You do not have permission to delete this question"
-msgstr "Anda tidak punya hak akses untuk melihat pertanyaan."
+msgstr "Vous n'avez pas la permission de voir les questions"
 
 #: inc/Session.php:68 inc/Session.php:85 inc/Session.php:95 inc/Session.php:118
 msgid "This function should not be called before init."
-msgstr ""
+msgstr "Cette fonction ne doit pas être appelée avant l'init."
 
 #: inc/Settings.php:8
 #, fuzzy
 msgid "Login required. No anonymous post allowed"
-msgstr "Harus masuk terlebih dahulu. Tamu tidak diperbolehkan"
+msgstr "Connexion requise. Aucun accès anonyme permis"
 
 #: inc/Settings.php:20
 msgid "Select Archive Question Page"
-msgstr "Pilih Halaman Arsip Pertanyaan "
+msgstr "Sélectionnez une Archive de Question"
 
 #: inc/Settings.php:24
 msgid ""
-"A page where displays all questions. The <code>[dwqa-list-questions]</code> "
+"A page where displays all questions. The <code>[EMQA-list-questions]</code> "
 "short code must be on this page."
 msgstr ""
 
 #: inc/Settings.php:31
 msgid "hours"
-msgstr "jam"
+msgstr "heures"
 
 #: inc/Settings.php:31
 msgid ""
 "A period of time in which new questions are highlighted and marked as New"
 msgstr ""
-"Periode waktu dimana pertanyaan baru di sorot dan ditandai sebagai Baru"
+"Une période de temps pendant laquelle de nouvelles questions sont mises en "
+"évidence et marqués comme nouveau"
 
 #: inc/Settings.php:36
 msgid "days"
-msgstr "hari"
+msgstr "jours"
 
 #: inc/Settings.php:36
 #, fuzzy
@@ -716,22 +714,22 @@ msgid ""
 "A Question will be marked as overdue if it passes this period of time, "
 "starting from the time the question was submitted"
 msgstr ""
-"Pertanyaan akan di tandai sebagai kadaluarsa, jika sudah melebihi batas "
-"waktu yang ditentukan, dimulai dari saat pertanyaan dikirim "
+"Une question sera marqué comme étant en alérte si passe cette période de "
+"temps, à partir de la date à laquelle la question a été soumise"
 
 #: inc/Settings.php:47
 msgid "Select Submit Question Page"
-msgstr "Pilih halaman Mengirimkan Pertanyaan"
+msgstr "Page de sélection et de soumission de questions "
 
 #: inc/Settings.php:52
 msgid ""
-"A page where users can submit questions. The <code>[dwqa-submit-question-"
+"A page where users can submit questions. The <code>[EMQA-submit-question-"
 "form]</code> short code must be on this page."
 msgstr ""
 
 #: inc/Settings.php:65
-msgid "Select 404 DWQA Page"
-msgstr ""
+msgid "Select 404 EMQA Page"
+msgstr "Choisir la page 404 EMQA"
 
 #: inc/Settings.php:70
 msgid ""
@@ -739,10 +737,13 @@ msgid ""
 "question. You can customize the message of this page in.If not, a default "
 "404 page will be used."
 msgstr ""
+"Cette page sera redirigée lorsque l'utilisateur sans permission cliquera sur "
+"une question privée. Vous pouvez personnaliser le message dans cette page. "
+"Sinon, une page 404 sera utilisée."
 
 #: inc/Settings.php:87
 msgid "Upload"
-msgstr "Unggah"
+msgstr "Uploader"
 
 #: inc/Settings.php:87
 msgid "Upload or choose a logo to be displayed at the top of the email."
@@ -762,13 +763,13 @@ msgstr ""
 #: inc/Settings.php:238 inc/Settings.php:273 inc/Settings.php:308
 #: inc/Settings.php:343
 msgid "Email subject"
-msgstr "Judul Email"
+msgstr "Sujet de l'email"
 
 #: inc/Settings.php:136 inc/Settings.php:171 inc/Settings.php:207
 #: inc/Settings.php:243 inc/Settings.php:278 inc/Settings.php:313
 #: inc/Settings.php:348
 msgid "Email Content"
-msgstr "Isi Email"
+msgstr "Contenu de l'email"
 
 #: inc/Settings.php:161
 msgid "Enable notification for new answer."
@@ -789,16 +790,16 @@ msgstr ""
 #: inc/Settings.php:400
 #, fuzzy
 msgid "Read"
-msgstr "Selanjutnya"
+msgstr "Lire la suite"
 
 #: inc/Settings.php:401
 #, fuzzy
 msgid "Post"
-msgstr "Dikirimkan oleh"
+msgstr "Poster par"
 
 #: inc/Settings.php:429 inc/Settings.php:465 inc/Settings.php:500
 msgid "Reset Default"
-msgstr "Set Ulang ke Standar"
+msgstr "Réinitialiser par défaut"
 
 #: inc/Settings.php:467
 msgid "Comments"
@@ -814,7 +815,7 @@ msgstr ""
 
 #: inc/Settings.php:533
 msgid "Default"
-msgstr ""
+msgstr "Défaut"
 
 #: inc/Settings.php:546
 msgid "questions."
@@ -847,13 +848,15 @@ msgstr ""
 #: inc/Settings.php:593
 #, fuzzy
 msgid "Select template for Single Quesiton page"
-msgstr "Pilih Halaman Arsip Pertanyaan "
+msgstr "Captcha dans la page Question unique"
 
 #: inc/Settings.php:599
 msgid ""
 "By default, your single.php template file will be used if you do not choose "
 "any template"
 msgstr ""
+"Par défaut, votre page single.php sera utilisée si vous ne choisissez aucun "
+"template"
 
 #: inc/Settings.php:607
 #, php-format
@@ -866,11 +869,11 @@ msgstr ""
 
 #: inc/Settings.php:732
 msgid "Plugin Settings"
-msgstr "Pengaturan Plugin"
+msgstr "Paramètres Plugin"
 
 #: inc/Settings.php:732
 msgid "Settings"
-msgstr "Pengaturan"
+msgstr "Paramètres"
 
 #: inc/Settings.php:768
 msgid "Email Settings"
@@ -894,11 +897,11 @@ msgstr ""
 
 #: inc/Settings.php:791
 msgid "Question List Page"
-msgstr "Halaman Daftar Pertanyaan"
+msgstr "Page de liste des Questions"
 
 #: inc/Settings.php:799 inc/Settings.php:930
 msgid "Ask Question Page"
-msgstr "Halaman Mengajukan Pertanyaan"
+msgstr "Page de soumission de questions"
 
 #: inc/Settings.php:842
 msgid "Question Settings"
@@ -938,7 +941,7 @@ msgstr ""
 
 #: inc/Settings.php:950
 msgid "Permalink Settings"
-msgstr "Pengaturan Permalink"
+msgstr "Paramètres Perma-lien"
 
 #: inc/Settings.php:957
 msgid "Question Base"
@@ -959,15 +962,15 @@ msgstr "Email"
 
 #: inc/Settings.php:1110 inc/Settings.php:1117
 msgid "Group Permission"
-msgstr "Hak akses Kelompok"
+msgstr "Permission de groupe"
 
 #: inc/Settings.php:1145
-msgid "DWQA Settings"
-msgstr "Pengaturan DWQA"
+msgid "EMQA Settings"
+msgstr "Paramètres EMQA"
 
 #: inc/Settings.php:1149
 msgid "General"
-msgstr "Umum"
+msgstr "général"
 
 #: inc/Settings.php:1150
 msgid "Emails"
@@ -979,7 +982,7 @@ msgstr ""
 
 #: inc/Settings.php:1152
 msgid "Licenses"
-msgstr ""
+msgstr "Licences"
 
 #: inc/Settings.php:1166
 msgid "Email settings"
@@ -1019,11 +1022,11 @@ msgstr ""
 
 #: inc/Settings.php:1314
 msgid "Save all changes"
-msgstr "Simpan perubahan"
+msgstr "Enregistrer toutes les modifications"
 
 #: inc/Settings.php:1328
 #, php-format
-msgid "Manage <a href=\"%s\">DWQA Extensions</a> license keys"
+msgid "Manage <a href=\"%s\">EMQA Extensions</a> license keys"
 msgstr ""
 
 #: inc/Settings.php:1346 inc/Settings.php:1351 inc/Settings.php:1356
@@ -1033,44 +1036,42 @@ msgstr ""
 
 #: inc/Settings.php:1366
 msgid "Cc"
-msgstr ""
+msgstr "Cc"
 
 #: inc/Settings.php:1371
 msgid "Bcc"
-msgstr ""
+msgstr "Bcc"
 
 #: inc/Settings.php:1376
 msgid "This address will be used as the sender of the outgoing emails."
-msgstr ""
+msgstr "Cette adresse sera utilisée comme expéditeur de vos messages."
 
 #: inc/Settings.php:1382
 msgid "Send a copy of every email to admin."
 msgstr ""
 
 #: inc/Shortcode.php:115 inc/widgets/Popular_Question.php:21
-#, fuzzy
 msgid "Popular Questions"
-msgstr "DWQA Pertanyaan Populer"
+msgstr "Questions fréquentes"
 
 #: inc/Shortcode.php:152
-#, fuzzy
 msgid "Latest Answers"
-msgstr "Jawaban Baru"
+msgstr "Dernières réponses"
 
 #: inc/Shortcode.php:178
-#, fuzzy
 msgid "Answer at"
-msgstr "Jawaban"
+msgstr "Réponse à"
 
 #: inc/Shortcode.php:178
 msgid "Link to"
-msgstr "Tautkan Ke"
+msgstr "Lien vers"
 
 #: inc/Shortcode.php:206
 #, php-format
 msgid "%d person who is following this question"
 msgid_plural "%d people who are following this question"
-msgstr[0] ""
+msgstr[0] "%d personne suit cette question"
+msgstr[1] "%d personnes suivent cette question"
 
 #: inc/Shortcode.php:236
 msgid "Question List"
@@ -1078,43 +1079,41 @@ msgstr ""
 
 #: inc/Status.php:300
 msgid "Answered"
-msgstr "Sudah dijawab"
+msgstr "Répondu"
 
 #: inc/Status.php:324
-#, fuzzy
 msgid "Missing post ID"
-msgstr "ID pos tidak ditemukan"
+msgstr "ID manquant"
 
 #: inc/Status.php:337
-#, fuzzy
 msgid "Post does not exist"
-msgstr "Tulisan tidak ditemukan"
+msgstr "Entrée inexistante"
 
 #: inc/Status.php:342
 msgid "Invalid post status"
-msgstr "Status tulisan salah"
+msgstr "Statut de poste invalide"
 
 #: inc/Template.php:15 templates/content-edit.php:44
 #: templates/question-submit-form.php:46
 msgid "Tag"
-msgstr ""
+msgstr "Tag"
 
 #: inc/Template.php:15 inc/Template.php:20 templates/content-edit.php:29
 #: templates/question-submit-form.php:32
 msgid "Category"
-msgstr "Katagori"
+msgstr "Catégorie"
 
 #: inc/Template.php:43
 msgid "Showing search results for"
-msgstr ""
+msgstr "Résultats pour"
 
 #: inc/Template.php:78
 msgid "What do you want to know?"
-msgstr ""
+msgstr "Que voulez vous savoir ?"
 
 #: inc/Template.php:157
 msgid "Subscribe"
-msgstr ""
+msgstr "S'inscrire"
 
 #: inc/Template.php:445
 msgid "Email"
@@ -1122,17 +1121,18 @@ msgstr "Email"
 
 #: inc/Template.php:447
 msgid "Name"
-msgstr "Nama"
+msgstr "Nom"
 
 #: inc/Template.php:449
 #, php-format
 msgid "Required fields are marked %s"
-msgstr "File yang harus ada %s"
+msgstr "Les champs obligatoires sont marqués %s"
 
 #: inc/Template.php:461
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr "Anda harus <a href=\"%s\">Masuk</a> untuk menuliskan komentar."
+msgstr ""
+"Vous devez être <a href=\"%s\">connecté</a> pour poster un commentaire."
 
 #: inc/Template.php:464
 #, php-format
@@ -1140,112 +1140,111 @@ msgid ""
 "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
 "and attributes: %s"
 msgstr ""
-"Anda dapat mengunakan <abbr title=\"HyperText Markup Language\">HTML</abbr> "
-"tags dan attribut: %s"
+"Vous pouvez utiliser ces <abbr title=\"HyperText Markup Language\">HTML</"
+"abbr> tags et attributs: %s"
 
 #: inc/Template.php:467
 msgid "Leave a Reply"
-msgstr "Tuliskan Tanggapan"
+msgstr "Laisser un commentaire"
 
 #: inc/Template.php:468
 #, php-format
 msgid "Leave a Reply to %s"
-msgstr "Tulis Tanggapan ke %s"
+msgstr "Laisser un commentaire à %s"
 
 #: inc/Template.php:469
 msgid "Cancel reply"
-msgstr "Batal menanggapi"
+msgstr "Annuler la réponse"
 
 #: inc/Template.php:470
 msgid "Post Comment"
-msgstr "Tuliskan Komentar"
+msgstr "Poster un commentaire"
 
 #: inc/Template.php:645
-#, fuzzy
 msgid "Sticky Question"
-msgstr "Ajukan _Pertanyaan"
+msgstr "Question collant"
 
 #: inc/Template.php:659
 msgid "Ask a question"
-msgstr "Ajukan Pertanyaan"
+msgstr "Poser une question"
 
 #: inc/Template.php:661
 #, fuzzy
 msgid "Login to ask a question"
-msgstr "Masuk untuk mengirimkan pertanyaan"
+msgstr "Connectez-vous pour soumettre votre question"
 
 #: inc/Template.php:1128
 #, fuzzy
 msgid "Choose as the best answer"
-msgstr "Pilih jawaban terbaik"
+msgstr "Choisissez comme meilleure réponse"
 
 #: inc/Updater.php:97
 msgid "License Key"
-msgstr ""
+msgstr "Clé de licence"
 
 #: inc/Updater.php:122
 msgid "Activate"
-msgstr ""
+msgstr "Activer"
 
 #: inc/Updater.php:176
 msgid "Plugin was activated"
-msgstr ""
+msgstr "Le plugin est activé"
 
 #: inc/User.php:230
 msgid "Staff"
-msgstr "Staff"
+msgstr "personnel"
 
 #: inc/Walker/Category.php:20 inc/Walker/Tag.php:20
 #, php-format
 msgid "View all posts filed under %s"
-msgstr "Lihat semua tulisan dalam %s"
+msgstr "Voir les articles classés dans % s"
 
 #: inc/Walker/Category.php:35 inc/Walker/Tag.php:35
 #, php-format
 msgid "Feed for all posts filed under %s"
-msgstr "Feed semua post dalam %s"
+msgstr "Flux pour tous les articles classés dans % s"
 
 #: inc/widgets/Closed_Question.php:11
 msgid "Show a list of questions marked as closed."
-msgstr ""
+msgstr "Voir les questions marquées comme fermées."
 
 #: inc/widgets/Closed_Question.php:12
 #, fuzzy
-msgid "DWQA Closed Questions"
-msgstr "DWQA Pertanyaan Berkaitan"
+msgid "EMQA Closed Questions"
+msgstr "EMQA Questions en relations"
 
 #: inc/widgets/Closed_Question.php:18
 #, fuzzy
 msgid "Closed Questions"
-msgstr "Semua Pertanyaa"
+msgstr "Toutes les Questions"
 
 #: inc/widgets/Closed_Question.php:72 inc/widgets/Latest_Question.php:71
 #: inc/widgets/Popular_Question.php:66 inc/widgets/Related_Question.php:48
 msgid "Widget title"
-msgstr "Judul Widget"
+msgstr "Titre du Widget"
 
 #: inc/widgets/Closed_Question.php:75 inc/widgets/Latest_Question.php:74
 #: inc/widgets/Popular_Question.php:69 inc/widgets/Related_Question.php:51
 msgid "Number of posts"
-msgstr "Jumlah tulisan"
+msgstr "Nombre de messages"
 
 #: inc/widgets/Latest_Question.php:10
 msgid "Show a list of latest questions."
-msgstr ""
+msgstr "Voir les dernières questions."
 
 #: inc/widgets/Latest_Question.php:11
 #, fuzzy
-msgid "DWQA Latest Questions"
-msgstr "DWQA Pertanyaan Berkaitan"
+msgid "EMQA Latest Questions"
+msgstr "EMQA Questions en relations"
 
 #: inc/widgets/Latest_Question.php:17
 #, fuzzy
 msgid "Latest Questions"
-msgstr "Ubah Pertanyaan"
+msgstr "Question privée"
 
 #: inc/widgets/Latest_Question.php:44
 msgid "ago"
-msgstr "yang lalu"
+msgstr ""
 
 #: inc/widgets/Latest_Question.php:79
 msgid "Show question date"
@@ -1253,23 +1252,23 @@ msgstr ""
 
 #: inc/widgets/Popular_Question.php:13
 msgid "Show a list of popular questions."
-msgstr ""
+msgstr "Liste de questions populaires."
 
 #: inc/widgets/Popular_Question.php:15
-msgid "DWQA Popular Questions"
-msgstr "DWQA Pertanyaan Populer"
+msgid "EMQA Popular Questions"
+msgstr "EMQA Questions fréquentes"
 
 #: inc/widgets/Related_Question.php:11
 msgid ""
 "Show a list of questions that related to a question. Just show in single "
 "question page"
 msgstr ""
-"Menampilkan daftar pertanyaan yang berkaitan. Hanya ditampilakan di halaman "
-"detail pertanyaan"
+"Afficher une liste de questions en relation avec une question. a afficher "
+"dans une page a Question unique"
 
 #: inc/widgets/Related_Question.php:12
-msgid "DWQA Related Questions"
-msgstr "DWQA Pertanyaan Berkaitan"
+msgid "EMQA Related Questions"
+msgstr "EMQA Questions en relations"
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:181
 #, php-format
@@ -1277,6 +1276,8 @@ msgid ""
 "There is a new version of %1$s available. <a target=\"_blank\" class="
 "\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
 msgstr ""
+"Nouvelle version disponible de %1$s. <a target=\"_blank\" class=\"thickbox\" "
+"href=\"%2$s\">Voir les détails de la version %3$s</a>."
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:188
 #, php-format
@@ -1285,126 +1286,129 @@ msgid ""
 "\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s"
 "\">update now</a>."
 msgstr ""
+"Nouvelle version disponible de %1$s . <a target=\"_blank\" class=\"thickbox"
+"\" href=\"%2$s\">Voir les détails de la version %3$s </a> ou <a href=\"%4$s"
+"\">mettre à jour</a>."
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:326
 msgid "You do not have permission to install plugin updates"
-msgstr ""
+msgstr "Vous n'avez pas la permission d'installer la mise à jour"
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:326
 msgid "Error"
-msgstr ""
+msgstr "Erreur"
 
 #: templates/answer-submit-form.php:12
 msgid "Your Answer"
-msgstr ""
+msgstr "Votre Réponse"
 
 #: templates/answer-submit-form.php:21 templates/question-submit-form.php:52
 msgid "Your Email"
-msgstr ""
+msgstr "Votre Email"
 
 #: templates/answer-submit-form.php:26 templates/question-submit-form.php:57
 msgid "Your Name"
-msgstr ""
+msgstr "Votre Nom"
 
 #: templates/answer-submit-form.php:33 templates/question-submit-form.php:24
 msgid "Who can see this?"
-msgstr ""
+msgstr "Qui peut voir ceci ?"
 
 #: templates/answer-submit-form.php:34 templates/question-submit-form.php:25
 msgid "Public"
-msgstr "Publik"
+msgstr "Public"
 
 #: templates/answer-submit-form.php:35 templates/question-submit-form.php:26
 msgid "Only Me &amp; Admin"
-msgstr ""
+msgstr "Seulement Moi &amp; Admin"
 
 #: templates/answer-submit-form.php:39 templates/question-submit-form.php:65
 msgid "Submit"
-msgstr ""
+msgstr "Envoyer"
 
 #: templates/answers.php:12
 #, php-format
 msgid "%s Answers"
-msgstr ""
+msgstr "%s Réponses"
 
 #: templates/archive-question-filter.php:14
 msgid "Filter:"
-msgstr ""
+msgstr "Filtre:"
 
 #: templates/archive-question-filter.php:16
 msgid "All"
-msgstr "Semua"
+msgstr "Toutes"
 
 #: templates/archive-question-filter.php:22
 msgid "Unanswered"
-msgstr ""
+msgstr "Non répondues"
 
 #: templates/archive-question-filter.php:24
 msgid "My questions"
-msgstr ""
+msgstr "Mes questions"
 
 #: templates/archive-question-filter.php:25
 msgid "My subscribes"
-msgstr ""
+msgstr "Mes inscriptions"
 
 #: templates/archive-question-filter.php:29
 msgid "Subscribes"
-msgstr ""
+msgstr "Inscription"
 
 #: templates/archive-question-filter.php:32
 msgid "Sort by"
-msgstr ""
+msgstr "Trier par"
 
 #: templates/archive-question-filter.php:33
 msgid "Views"
-msgstr ""
+msgstr "Vues"
 
 #: templates/archive-question-filter.php:35
 msgid "Votes"
-msgstr ""
+msgstr "Votes"
 
 #: templates/archive-question.php:28
 msgid "Ask Question"
-msgstr "Ajukan _Pertanyaan"
+msgstr "Poser une question"
 
 #: templates/captcha-form.php:20
 msgid "Enter the result"
-msgstr ""
+msgstr "Entrer le résultat"
 
 #: templates/content-comment.php:16
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid "replied %s ago"
-msgstr ""
+msgstr "répondue il y a %s"
 
 #: templates/content-edit.php:21 templates/question-submit-form.php:13
 msgid "Title"
-msgstr ""
+msgstr "Titre"
 
 #: templates/content-edit.php:36 templates/question-submit-form.php:38
 msgid "Select question category"
-msgstr "Pilih kategori pertanyaan"
+msgstr "Sélectionnez une catégorie de question"
 
 #: templates/content-edit.php:50
 msgid "Save Changes"
-msgstr ""
+msgstr "Sauvegarder les modifications"
 
 #: templates/content-none.php:10
 msgid "You do not have permission to view questions"
-msgstr "Anda tidak punya hak akses untuk melihat pertanyaan."
+msgstr "Vous n'avez pas la permission de voir les questions"
 
 #: templates/content-none.php:12
 msgid "Sorry, but nothing matched your filter"
-msgstr ""
+msgstr "Désolé, votre filtre ne retourne aucun résultat"
 
 #: templates/content-question.php:18
 msgid "asked"
-msgstr "bertanya"
+msgstr "demandé"
 
 #: templates/content-question.php:25
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s %s ago</span>"
-msgstr ""
+msgstr "<span><a href=\"%s\">%s%s</a> %s il y a %s</span>"
 
 #: templates/content-question.php:26 templates/content-single-answer.php:25
 msgid "&nbsp;&bull;&nbsp;"
@@ -1413,27 +1417,27 @@ msgstr ""
 #: templates/content-question.php:31
 #, php-format
 msgid "<strong>%1$s</strong> views"
-msgstr ""
+msgstr "<strong>%1$s</strong> vues"
 
 #: templates/content-question.php:35
 #, php-format
 msgid "<strong>%1$s</strong> answers"
-msgstr ""
+msgstr "<strong>%1$s</strong> réponses"
 
 #: templates/content-question.php:39
 #, php-format
 msgid "<strong>%1$s</strong> votes"
-msgstr ""
+msgstr "<strong>%1$s</strong> votes"
 
 #: templates/content-single-answer.php:12
 #: templates/content-single-question.php:14
 msgid "Vote Up"
-msgstr "Tilai Positif"
+msgstr "Votez pour"
 
 #: templates/content-single-answer.php:13
 #: templates/content-single-question.php:15
 msgid "Vote Down"
-msgstr "Tilai Negatif"
+msgstr "Votez contre"
 
 #: templates/content-single-answer.php:17
 #: templates/content-single-answer.php:19
@@ -1443,793 +1447,839 @@ msgstr ""
 #: templates/content-single-answer.php:23
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s answered %s ago</span>"
-msgstr ""
+msgstr "<span><a href=\"%s\">%s%s</a> %s répondue il y a %s</span>"
 
 #: templates/content-single-answer.php:26
 msgid "Private"
-msgstr "Pribadi"
+msgstr "Privé"
 
 #: templates/content-single-question.php:19
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s asked %s ago</span>"
-msgstr ""
+msgstr "<span><a href=\"%s\">%s%s</a> %s demandée il y a %s </span>"
 
 #: templates/content-single-question.php:25
 msgid "Question Tags: "
-msgstr ""
+msgstr "Tags de question"
 
 #: templates/content-single-question.php:29
 msgid "This question is:"
-msgstr ""
+msgstr "Cette question est :"
 
 #: templates/question-submit-form.php:69
 #, fuzzy
 msgid "You do not have permission to submit a question"
-msgstr "Anda tidak punya hak akses untuk menulis pertanyaan."
+msgstr "Vous n'avez pas la permission de soumettre des questions."
 
 #: upgrades/upgrades.php:25
 #, php-format
 msgid ""
-"DW Question Answer needs to upgrade the database, click %shere%s to start "
+"EMO Questalk  needs to upgrade the database, click %shere%s to start "
 "the upgrade."
 msgstr ""
 
 #: upgrades/upgrades.php:33
-msgid "DWQA Upgrade"
-msgstr ""
+msgid "EMQA Upgrade"
+msgstr "Mise à jour EMQA"
 
 #: upgrades/upgrades.php:40
 msgid ""
 "The upgrade process has started, please be patient. This could take several "
 "minutes. You will be automatically redirected when the upgrade is finished..."
 msgstr ""
+"La mise à jour commence, merci de patienter. Cela peut prendre quelques "
+"minutes. Vous serez automatiquement redirigé quand la mise à jour sera "
+"terminée..."
 
 #: upgrades/upgrades.php:130
 msgid "You do not have permission to do this task"
-msgstr ""
+msgstr "Vous n'avez pas la permission d'effectuer cette tâche"
 
 #: upgrades/upgrades.php:147
 msgid "Just do it.."
-msgstr ""
+msgstr "Faites le.."
 
 #: upgrades/upgrades.php:155
 #, php-format
 msgid "Move to next step %d"
-msgstr ""
+msgstr "Aller à la prochaine étape %d"
 
 #: upgrades/upgrades.php:172
 msgid "Upgrade process is done"
-msgstr ""
+msgstr "Mise à jour effectuée"
 
 #. Plugin Name of the plugin/theme
-msgid "DW Question Answer"
+msgid "EMO Questalk "
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"A WordPress plugin was make by DesignWall.com to build an Question Answer "
+"A WordPress plugin was make by Emohelp.com to build an Question Answer "
 "system for support, asking and comunitcate with your customer"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "DesignWall"
+msgid "Emohelp"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://www.designwall.com"
+msgid "http://www.Emohelp.com"
 msgstr ""
 
 #~ msgid "Next"
-#~ msgstr "Selanjutnya"
+#~ msgstr "Suivant"
 
 #~ msgid "Prev"
-#~ msgstr "Sebelumnya"
+#~ msgstr "Précédent"
 
 #~ msgid "Please enter your question"
-#~ msgstr "Silakan tuliskan pertanyaan"
+#~ msgstr "Veuillez entrez votre Question"
 
 #~ msgid "Your question must be at least 2 characters in length"
-#~ msgstr "Pertanyaan Anda harus lebih dari 2 karakter"
+#~ msgstr "Votre Question doit au moins avoir 2 caractères"
 
 #~ msgid "Enter a valid email address"
-#~ msgstr "Masukkan alamat email yang valid"
+#~ msgstr "Entrez une adresse email valide"
 
 #~ msgid "Enter a question title"
-#~ msgstr "Tuliskan judul pertanyaan"
+#~ msgstr "Titrr de la Question"
 
-#, fuzzy
 #~ msgid "Please add your name"
-#~ msgstr "Silahkan tuliskan jawaban"
+#~ msgstr "Veuillez indiuer votre Nom"
 
 #~ msgid "Please enter your answer"
-#~ msgstr "Silahkan tuliskan jawaban"
+#~ msgstr "Veuillez entrez votre réponse"
 
 #~ msgid "Comment must have more than 2 characters"
-#~ msgstr "Komentar harus lebih dari 2 karakter"
+#~ msgstr "Votre commentaire doit au moins avoir 2 caractères"
 
 #~ msgid "Not found! Try another keyword."
-#~ msgstr "Tidak ditemukan! Silahkan memakai kata kunci yang lain."
+#~ msgstr "Pas résultat ! Essayez un autre mot-clé."
 
 #~ msgid "Or press <strong>ENTER</strong> to get more questions"
 #~ msgstr ""
-#~ "Atau tekan <strong>ENTER</strong> untuk mendapatkan pertanyaan yang lain"
+#~ "Ou appuyez sur ENTRER <strong> </ strong> pour obtenir plus de questions"
 
 #~ msgid "Update"
-#~ msgstr "Perbarui"
+#~ msgstr "Mettre à jour"
 
 #~ msgid "Cancel"
-#~ msgstr "Batalkan"
+#~ msgstr "Annuler"
 
 #~ msgid "Do you want to delete this comment?"
-#~ msgstr "Apakah Anda ingin menghapus komentar ini?"
+#~ msgstr "Voulez-vous supprimer ce commentaire?"
 
 #~ msgid "Do you want to delete this answer?"
-#~ msgstr "Apakah Anda ingin menghapus jawaban ini?"
+#~ msgstr "Voulez-vous supprimer cette réponse?"
 
 #, fuzzy
 #~ msgid "Do you want to update this answer?"
-#~ msgstr "Apakah Anda ingin memperbarui jawaban ini?"
+#~ msgstr "Voulez-vous mettre à jour cette réponse"
 
 #, fuzzy
 #~ msgid "Do you want to report this answer?"
-#~ msgstr "Apakah Anda ingin melaporkan Jawaban ini"
+#~ msgstr "Voulez-vous signaler cette réponse"
 
 #~ msgid "Report"
-#~ msgstr "Laporkan"
+#~ msgstr "Signaler"
 
 #~ msgid "Undo"
-#~ msgstr "Batalkan"
+#~ msgstr "Annuler"
 
 #~ msgid ""
 #~ "This answer will be marked as spam and hidden. Do you want to flag it?"
 #~ msgstr ""
-#~ "Jawaban ini akan ditandai sebagai spam dan disembunyikan. Apakah Anda "
-#~ "ingin menandainya?"
+#~ "Cette réponse sera marqué comme spam et caché. Voulez-vous la marquer?"
 
 #~ msgid "This answer was flagged as spam. Do you want to show it"
-#~ msgstr ""
-#~ "Jawaban ini telah ditandai sebagai spam. Apakah anda ingin melihatnya?"
+#~ msgstr "Cette réponse a été marqué comme spam. Voulez-vous la montrer"
 
 #~ msgid "This answer was flagged as spam"
-#~ msgstr "Jawaban ditandai sebagai spam"
+#~ msgstr "Cette réponse a été marqué comme spam"
 
 #~ msgid "hide"
-#~ msgstr "Sembunyikan"
+#~ msgstr "Cacher"
 
 #~ msgid "show"
-#~ msgstr "Tampilkan"
+#~ msgstr "Montrer"
 
 #~ msgid "Follow This Question"
-#~ msgstr "Ikuti Pertanyaan  ini."
+#~ msgstr "Suivre Cette Question"
 
 #~ msgid "Unfollow This Question"
-#~ msgstr "Berhenti Mengikuti Pertanyaan  ini."
+#~ msgstr "Ne pas suivre cette question"
 
 #, fuzzy
 #~ msgid "Pin this question to top"
-#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
+#~ msgstr "Collez cette question à la première page"
 
 #, fuzzy
 #~ msgid "Unpin this question from top"
-#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
+#~ msgstr "Décoller cette question à la première page"
 
 #, fuzzy
 #~ msgid "Do you want to delete this question?"
-#~ msgstr "Apakah Anda ingin menghapus komentar ini?"
+#~ msgstr "Voulez-vous supprimer ce commentaire?"
+
+#~ msgid ""
+#~ "Thank you for installing our WordPress plugin. If you have any question "
+#~ "about this theme, please submit to our <a target=\"_blank\" href="
+#~ "\"https://www.Emohelp.com/question/\">Q&A section</a>."
+#~ msgstr ""
+#~ "Merci d'avoir installé ce plugin Wordpress. Si vous avez une question, <a "
+#~ "target=\"_blank\" href=\"https://www.Emohelp.com/question/\">posez la "
+#~ "dans notre section Q&A</a>. "
 
 #~ msgid "Publish"
-#~ msgstr "Terbitkan"
+#~ msgstr "Publier"
 
 #~ msgid "Everyone can see"
-#~ msgstr "Semua bisa melihatnya"
+#~ msgstr "Visible par tous"
 
 #~ msgid "Only Author and Administrator can see"
-#~ msgstr "Hanya Penulis dan Admin yang dapat melihatnya"
+#~ msgstr "Seulement les Auteurs et administrateurs peuvent voir"
 
 #~ msgid "Sorry, but nothing matched your filter. "
-#~ msgstr "Maaf, tapi tidak ditemukan yang pas menurut sortingan Anda."
+#~ msgstr "Désolé, mais rien ne correspond à votre filtre."
 
 #, fuzzy
 #~ msgid "You can ask question"
-#~ msgstr "Anda dapat menulis pertanyaan <a href=\""
+#~ msgstr "Vous pouvez poser une question <a href=\""
 
-#, fuzzy
+#~ msgid "here"
+#~ msgstr "ici"
+
 #~ msgid "Please"
-#~ msgstr "Silahkan masuk"
+#~ msgstr "Veuillez"
+
+#~ msgid "Login"
+#~ msgstr "connexion"
 
 #~ msgid " or"
-#~ msgstr " atau"
+#~ msgstr "ou"
 
 #~ msgid " to submit question."
-#~ msgstr " untuk menulis pertanyaan."
+#~ msgstr "pour soumettre une question."
 
 #, fuzzy
 #~ msgid "Search query is empty"
-#~ msgstr "Hasil pencarian kosong"
+#~ msgstr "Requête de recherche vides "
 
 #~ msgid "A page where displays all questions"
-#~ msgstr "Halaman yang menampilkan semua pertanyaan"
+#~ msgstr "Une page où toutes les questions sont affichées"
 
-#, fuzzy
 #~ msgid "A page where users can submit questions."
-#~ msgstr "Halaman untuk user dapat mengirim pertanyaan."
+#~ msgstr "Une page où les utilisateurs peuvent soumettre des questions."
 
 #~ msgid "Upload or choose a logo to be displayed at the top of the email"
-#~ msgstr "Unggah atau pilih logo untuk ditampilkan di bagian atas email"
+#~ msgstr "Télécharger ou choisir un logo à afficher en haut de l'e-mail"
 
 #~ msgid "Enable notification for new question"
-#~ msgstr "Bolehkan pemberitahuan untuk pertayaan baru"
+#~ msgstr "Activer la notification pour nouvelle question"
 
 #~ msgid "Enable notification for new answer"
-#~ msgstr "Bolehkan pemberitahuan untuk jawaban baru"
+#~ msgstr "Activer la notification pour nouvelle réponse"
 
 #, fuzzy
 #~ msgid "Enable notification for new answer (to Followers )"
-#~ msgstr "Bolehkan pemberitahuan untuk jawaban baru (kepada Pengikut)"
+#~ msgstr "Activer la notification pour nouvelle réponse (aux Abonnés)"
 
 #~ msgid "Enable notification for new comment of question"
-#~ msgstr "Bolehkan pemberitahuan untuk tanggapan baru atas pertanyaan"
+#~ msgstr "Activer la notification pour un commentaire de la question"
 
 #~ msgid "Enable notification for new comment of answer"
-#~ msgstr "Bolehkan pemberitahuan untuk tanggapan baru atas jawaban"
+#~ msgstr "Activer la notification pour un commentaire de réponse"
 
 #~ msgid "Comment"
-#~ msgstr "Komentar"
+#~ msgstr "Commentaire"
 
 #~ msgid "Enable/Disable captcha on submit question page"
-#~ msgstr "Aktif/Non Aktifkan captcha pada halaman mengirim pertanyaan"
+#~ msgstr "Activer / Désactiver captcha sur la page de soumission de questions"
 
 #~ msgid "Enable/Disable captcha on single question page"
-#~ msgstr "Aktif/Non Aktifkan captcha pada halaman pertanyaan tunggal"
+#~ msgstr "Activer / Désactiver captcha à la page de question unique"
 
-#, fuzzy
 #~ msgid "questions"
-#~ msgstr "Pertanyaan"
+#~ msgstr "questions"
+
+#~ msgid "Allow members to post private question"
+#~ msgstr "Permettre aux membres de poster des questions privées"
+
+#~ msgid "Question must be manually approved"
+#~ msgstr "La question doit être approuvée manuellement"
+
+#~ msgid "Email Setup"
+#~ msgstr "Configuration de l'email"
 
 #~ msgid "New Question Notification"
-#~ msgstr "Pemberitahuan Pertanyaan Baru"
+#~ msgstr "Nouvelle notification de Question"
 
 #~ msgid "New Answer Notification"
-#~ msgstr "Pemberitahuan Tanggapan Baru"
+#~ msgstr "Notification de nouvelle réponse"
 
 #, fuzzy
 #~ msgid "New Comment to Question Notification (to Followers )"
-#~ msgstr "Pemberitahuan Tanggapan baru untuk Pertanyaan (untuk Pengikut)"
+#~ msgstr "Nouveau commentaire à la notification de question (aux Abonnés)"
 
 #~ msgid "New Comment to Answer Notification"
-#~ msgstr "Pemberitahuan Tanggapan Baru untuk Jawaban"
+#~ msgstr "Nouveau commentaire à la notification de réponse"
 
 #, fuzzy
 #~ msgid "New Answer Notification (to Followers )"
-#~ msgstr "Pemberitahuan Jawaban Baru (Ke Pengikut)"
+#~ msgstr "Notification de nouvelle réponse (aux Abonnés)"
 
 #, fuzzy
 #~ msgid "New Comment to Answer Notification (to Followers )"
-#~ msgstr "Pemberitahuan Tanggapan baru untuk Jawaban (untuk Pengikut)"
+#~ msgstr "Nouveau commentaire à la notification de réponse  (aux Abonnés)"
 
-#, fuzzy
+#~ msgid "Archive page show at most"
+#~ msgstr "La Page Archives affiche au plus"
+
 #~ msgid "Private Question"
-#~ msgstr "Ubah Pertanyaan"
+#~ msgstr "Question privée"
 
 #, fuzzy
 #~ msgid "Review Question"
-#~ msgstr "Lihat Pertanyaan"
+#~ msgstr "Afficher Question"
 
 #~ msgid "Time settings"
-#~ msgstr "Pengaturan waktu"
+#~ msgstr "Réglage du temp"
 
 #~ msgid "New Question Time Frame"
-#~ msgstr "Pengaturan Waktu Pertanyaan Baru"
+#~ msgstr "Nouveau cadre heure des questions"
 
 #~ msgid "Question Overdue - Time Frame"
-#~ msgstr "Pertanyaan telewat - Pengaturan Waktu"
+#~ msgstr "Question en alérte - Time Frame"
 
 #~ msgid "Captcha settings"
-#~ msgstr "Pengaturan Captcha"
+#~ msgstr "Paramètres de Captcha"
 
 #, fuzzy
 #~ msgid "Captcha on Submit Question Page"
-#~ msgstr "Captcha di halaman Mengirim Pertanyaan"
+#~ msgstr "Captcha dans la page de soumission de Question"
 
 #, fuzzy
 #~ msgid "Captcha on Single Question Page"
-#~ msgstr "Captha di Halaman Detail Pertanyaan"
+#~ msgstr "Captcha dans la page Question unique"
+
+#~ msgid "Captcha Type"
+#~ msgstr "Type de Captcha"
 
 #~ msgid "Single Question"
-#~ msgstr "Pertanyaan Tunggal"
+#~ msgstr "Question Unique"
 
 #~ msgid "Single Category"
-#~ msgstr "Kategori Tunggal"
+#~ msgstr "Catégorie unique"
 
 #~ msgid "Single Tag"
-#~ msgstr "Tag Tunggal"
+#~ msgstr "Tag unique"
 
 #~ msgid "Notification"
-#~ msgstr "Pemberitahuan"
+#~ msgstr "Notification"
 
 #~ msgid "Permission"
-#~ msgstr "Hak Akses"
+#~ msgstr "Autorisation"
 
 #, fuzzy
 #~ msgid "Email setup"
-#~ msgstr "Judul Email"
+#~ msgstr "Sujet de l'email"
+
+#~ msgid "New Comment to Question Notification"
+#~ msgstr "Nouveau commentaire à la notification de question"
+
+#~ msgid "Send to"
+#~ msgstr "Envoyer à"
+
+#~ msgid "Send A Copy Of Every Email To Admin"
+#~ msgstr "Envoyer une copie de chaque e-mail à l'administrateur"
 
 #~ msgid "You need an account to submit question and get answers. Create one:"
 #~ msgstr ""
-#~ "Silahkan mendaftar terlebih dahulu untuk menulis pertanyaan. Daftar "
-#~ "disini:"
+#~ "Vous avez besoin d'un compte pour pouvoir soumettre des questions et "
+#~ "obtenir des réponses. Créer en un:"
 
 #~ msgid "Type your email"
-#~ msgstr "Tulis email anda"
+#~ msgstr "Entrez votre e-mail"
 
 #~ msgid "Already a member?"
-#~ msgstr "Sundah Mendaftar?"
+#~ msgstr "Déjà membre?"
 
 #~ msgid "Log In"
-#~ msgstr "Masuk"
+#~ msgstr "Connexion"
 
 #~ msgid "Login to submit your question"
-#~ msgstr "Masuk untuk mengirimkan pertanyaan"
+#~ msgstr "Connectez-vous pour soumettre votre question"
 
 #, fuzzy
 #~ msgid "Type your username"
-#~ msgstr "Tulis email anda"
+#~ msgstr "Entrez votre e-mail"
 
 #, fuzzy
 #~ msgid "Type your password"
-#~ msgstr "Tulis email anda"
+#~ msgstr "Entrez votre e-mail"
 
 #~ msgid "Not yet a member?"
-#~ msgstr "Belum menjadi anggota?"
+#~ msgstr "Pas encore membre?"
 
 #~ msgid "Register"
-#~ msgstr "Mendaftar"
+#~ msgstr "Enregistrer"
+
+#~ msgid ""
+#~ "Enter your email to receive notification regarding your question. Your "
+#~ "email is safe with us and will not be published."
+#~ msgstr ""
+#~ "Votre adresse email pour recevoir une notification concernant votre "
+#~ "question."
 
 #, fuzzy
 #~ msgid "Your email *"
-#~ msgstr "Tulis email anda"
+#~ msgstr "Entrez votre e-mail"
+
+#~ msgid "Email address ..."
+#~ msgstr "Adresse email ..."
+
+#~ msgid "or <strong><a href=\"%s\">login</a></strong> to submit question"
+#~ msgstr ""
+#~ "ou <strong><a href=\"%s\">connectez-vous</a></strong> pour poser une "
+#~ "question"
 
 #~ msgid "Private: %s"
-#~ msgstr "Pribadi: %s"
+#~ msgstr "Privé:% s"
 
 #~ msgctxt "noun"
 #~ msgid "Comment"
-#~ msgstr "Komentar"
+#~ msgstr "commentaire"
 
 #~ msgid ""
 #~ "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out "
 #~ "of this account\">Log out?</a>"
 #~ msgstr ""
-#~ "Masuk sebagai <a href=\"%1$s\">%2$s</a>.  <a href=\"%3$s\" title=\"Keluar "
-#~ "Akun ini\">Keluar?</a>"
+#~ "Connecté en tant que <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title="
+#~ "\"Déconnectez-vous de ce compte\">Déconnexion?</a>"
 
 #~ msgid "Your email address will not be published."
-#~ msgstr "Email Anda tidak akan dipublikasikan."
+#~ msgstr "Votre adresse de messagerie ne sera pas publiée."
+
+#~ msgid "Write a comment ..."
+#~ msgstr "Écrire un commentaire ..."
+
+#~ msgid "&nbsp; &bull; &nbsp;"
+#~ msgstr "&nbsp; &bull; &nbsp;"
 
 #~ msgid "Add New Question"
-#~ msgstr "Tambah Pertanyan Baru"
+#~ msgstr "Nouvelle Question"
 
 #~ msgid "Edit Question"
-#~ msgstr "Ubah Pertanyaan"
+#~ msgstr "Editer Question"
 
 #~ msgid "New Question"
-#~ msgstr "Pertanyaan Baru"
+#~ msgstr "Nouvelle Question"
 
 #~ msgid "All Questions"
-#~ msgstr "Semua Pertanyaa"
+#~ msgstr "Toutes les Questions"
 
 #~ msgid "View Question"
-#~ msgstr "Lihat Pertanyaan"
+#~ msgstr "Afficher Question"
 
 #~ msgid "Search Question"
-#~ msgstr "Cari Pertanyaan"
+#~ msgstr "Recherche Question"
 
 #~ msgid "No questions found"
-#~ msgstr "Pertanyaan Tidak Ditemukan"
+#~ msgstr "Pas de Questions trouvés"
 
 #~ msgid "No questions found in Trash"
-#~ msgstr "Tidak ada Pertanyaan di Tempat Sampah"
+#~ msgstr "Pas de Questions trouver dans la Corbeille"
 
-#~ msgid "DW Q&A"
-#~ msgstr "DW Q&A"
+#~ msgid "em Q&A"
+#~ msgstr "em Q&A"
 
 #~ msgid "Add new answer"
-#~ msgstr "Tambah jawaban baru"
+#~ msgstr "Ajouter Réponse"
 
 #~ msgid "Edit answer"
-#~ msgstr "Ubah jawaban"
+#~ msgstr "Editer Réponse"
 
 #~ msgid "New Answer"
-#~ msgstr "Jawaban Baru"
+#~ msgstr "Nouvelle Réponse"
 
 #~ msgid "All Answers"
-#~ msgstr "Semua Jawaban"
+#~ msgstr "Toutes les Réponses"
 
 #~ msgid "View Answer"
-#~ msgstr "Lihat Jawaban"
+#~ msgstr "Afficher Réponses"
 
 #~ msgid "Search Answer"
-#~ msgstr "Cari Jawaban"
+#~ msgstr "Rechercher Réponse"
 
 #~ msgid "No Answers found"
-#~ msgstr "Tidak di temukan Jawaban"
+#~ msgstr "Pas de Réponses Trouvées"
 
 #~ msgid "No Answers found in Trash"
-#~ msgstr "Tidak ada Jawaban di Tempat Sampah"
+#~ msgstr "Pas de Réponses Trouvées dans la Corbeille"
 
 #~ msgctxt "taxonomy general name"
 #~ msgid "Categories"
-#~ msgstr "Kategori"
+#~ msgstr "Catégories"
 
 #~ msgctxt "taxonomy singular name"
 #~ msgid "Category"
-#~ msgstr "Kategori"
+#~ msgstr "Catégories"
 
 #~ msgid "Search Categories"
-#~ msgstr "Cari Kategori"
+#~ msgstr "Recherche Catégories"
 
 #~ msgid "All Categories"
-#~ msgstr "Semua Kategori"
+#~ msgstr "Toutes Catégories"
 
 #~ msgid "Parent Category"
-#~ msgstr "Kategori Utama"
+#~ msgstr "Catégorie Parente"
 
 #~ msgid "Parent Category:"
-#~ msgstr "Kategori Utama:"
+#~ msgstr "Catégorie Parente:"
 
 #~ msgid "Edit Category"
-#~ msgstr "Ubah Kategori"
+#~ msgstr "Editer Catégorie"
 
 #~ msgid "Update Category"
-#~ msgstr "Perbarui Kategori"
+#~ msgstr "Mise a jour Catégorie"
 
 #~ msgid "Add New Category"
-#~ msgstr "Kategori Baru"
+#~ msgstr "Nouvelle Catégorie"
 
 #~ msgid "New Category Name"
-#~ msgstr "Nama Kategori Baru"
+#~ msgstr "Nom Catégorie"
 
 #~ msgid "Question Categories"
-#~ msgstr "Kategori Pertanyaan"
+#~ msgstr "Catégories de Question"
 
 #~ msgctxt "taxonomy general name"
 #~ msgid "Tags"
-#~ msgstr "Tag"
+#~ msgstr "Tags"
 
 #~ msgctxt "taxonomy singular name"
 #~ msgid "Tag"
 #~ msgstr "Tag"
 
 #~ msgid "Search Tags"
-#~ msgstr "Cari Tags"
+#~ msgstr "Rechercher Tags"
 
 #~ msgid "Popular Tags"
-#~ msgstr "Tag Populer"
+#~ msgstr "Tags Populaires"
 
 #~ msgid "All Tags"
-#~ msgstr "Semua Tag"
+#~ msgstr "Toutes les Tags"
 
 #~ msgid "Edit Tag"
-#~ msgstr "Ubah Tag"
+#~ msgstr "Editer Tag"
 
 #~ msgid "Update Tag"
-#~ msgstr "Perbarui Tag"
+#~ msgstr "Mise à jour Tag"
 
 #~ msgid "Add New Tag"
-#~ msgstr "Tambah Tag Baru"
+#~ msgstr "Nouvelle Tag"
 
 #~ msgid "New Tag Name"
-#~ msgstr "Nama tag baru"
+#~ msgstr "Nom de Tag"
 
 #~ msgid "Separate tags with commas"
-#~ msgstr "Pisahkan Tag dengan koma"
+#~ msgstr "Séparez les tags par des virgules"
 
 #~ msgid "Add or remove tags"
-#~ msgstr "Tambah atau menghapus tag"
+#~ msgstr "Ajouter ou supprimer des Tags"
 
 #~ msgid "Choose from the most used tags"
-#~ msgstr "Pilih dari tag populer"
+#~ msgstr "Choisissez parmi les Tags les plus courantes"
 
-#, fuzzy
 #~ msgid "%s second"
 #~ msgid_plural "%s seconds"
-#~ msgstr[0] "%s detik"
+#~ msgstr[0] "%s seconds"
+#~ msgstr[1] "%s seconde"
 
-#, fuzzy
+#~ msgid "about %s min"
+#~ msgid_plural "%s mins"
+#~ msgstr[0] "a peu pret %s min"
+#~ msgstr[1] "%s mins"
+
+#~ msgid "about %s hour"
+#~ msgid_plural "%s hours"
+#~ msgstr[0] "a peu pret %s min"
+#~ msgstr[1] "%s mins"
+
 #~ msgid "%s day"
 #~ msgid_plural "%s days"
-#~ msgstr[0] "%s hari"
+#~ msgstr[0] "%s jours"
+#~ msgstr[1] "%s jour"
+
+#~ msgid "%1$s ago"
+#~ msgstr "il y a %1$s"
 
 #~ msgid "Flag"
-#~ msgstr "Tandai"
+#~ msgstr "Marquer"
 
 #~ msgid "Unflag"
-#~ msgstr "Hilangkan Tanda"
+#~ msgstr "Démarquer"
 
 #, fuzzy
 #~ msgid ""
 #~ "This answer will be hidden when flagged. Are you sure you want to flag it?"
-#~ msgstr "Jawaban ini akan disembunyikan jika ditandai, apakah anda yakin?"
+#~ msgstr "Cette réponse sera cacher quand il est marquer. Etes-vous sûr?"
 
 #, fuzzy
 #~ msgid "This answer was flagged as spam. Do you want to show it?"
-#~ msgstr ""
-#~ "Jawaban ini telah ditandai sebagai spam. Apakah anda ingin melihatnya?"
+#~ msgstr "Cette réponse a été marqué comme spam. Voulez-vous la montrer"
 
 #, fuzzy
 #~ msgid "Reset all changes to default"
-#~ msgstr "Ubah ke Pengaturan Awal"
+#~ msgstr "Réinitialiser les valeurs par défaut"
 
 #~ msgid "Save draft"
-#~ msgstr "Simpan Draf"
+#~ msgstr "enregistrer le brouillon"
 
 #, fuzzy
 #~ msgid "Answer is missing"
-#~ msgstr "Jawab Pertanyaan ini"
+#~ msgstr "Répondre à cette question"
 
 #, fuzzy
 #~ msgid "You do not have permission to edit this post"
-#~ msgstr "Anda tidak punya hak akses untuk melihat pertanyaan."
+#~ msgstr "Vous n'avez pas la permission de voir les questions"
 
 #, fuzzy
 #~ msgid "This post is not an answer"
-#~ msgstr "Ini adalah Jawaban teebaik"
+#~ msgstr "C'est la meilleure réponse"
 
 #~ msgid "Missing answer ID"
-#~ msgstr "ID Jawaban salah"
+#~ msgstr "ID de réponse manquant"
+
+#, fuzzy
+#~ msgid "The question is missing"
+#~ msgstr "Cette question a été fermé"
 
 #, fuzzy
 #~ msgid "Single Question Template"
-#~ msgstr "Pertanyaan Tunggal"
+#~ msgstr "Question Unique"
 
 #~ msgid "Google Captcha Public Key"
-#~ msgstr "Google Captcha Public Key"
+#~ msgstr "Clé publique Google Captcha"
 
 #~ msgid "Google Captcha Private Key"
-#~ msgstr "Google Captch Privavte Key"
+#~ msgstr "Clé privée Google Captcha"
 
 #~ msgid "New Comment to Question"
-#~ msgstr "Jawaban Baru untuk Pertanyaan"
+#~ msgstr "Nouveau commentaire à la question"
 
 #~ msgid "New Comment to Answer"
-#~ msgstr "Tanggapan baru untuk Pertanyaan"
+#~ msgstr "Nouveau commentaire a une réponse"
 
 #, fuzzy
 #~ msgid "New Answer (to Followers )"
-#~ msgstr "Jawaban Baru (untuk Pengikut)"
+#~ msgstr "Nouvelle réponse (aux Abonnés)"
 
 #, fuzzy
 #~ msgid "New Comment to Question (to Followers )"
-#~ msgstr "Tanggapan baru untuk Pertanyaan (untuk Pengikut)"
+#~ msgstr "Commentaire à la question (aux Abonnés)"
 
 #, fuzzy
 #~ msgid "New Comment to Answer (to Followers )"
-#~ msgstr "Tanggapan baru untuk Jawaban (untuk Pengikut)"
+#~ msgstr "Nouveau commentaire a une réponse (aux Abonnés)"
 
 #, fuzzy
 #~ msgid "% person who is following this question"
 #~ msgid_plural "% people who are following this question"
-#~ msgstr[0] "Berhenti Mengikuti Pertanyaan  ini."
+#~ msgstr[0] "Personnes suivant cette question."
+#~ msgstr[1] "Personnes suivant cette question."
 
 #~ msgid "Answer this Question"
-#~ msgstr "Jawab Pertanyaan ini"
+#~ msgstr "Répondre à cette question"
 
 #~ msgid "Add answer"
-#~ msgstr "Tambah jawaban"
+#~ msgstr "Ajouter une réponse"
 
 #~ msgid "All questions from"
-#~ msgstr "Semua pertanyaan dari"
+#~ msgstr "Toutes les questions de"
 
 #, fuzzy
 #~ msgid "Unpin this Question from the top"
-#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
+#~ msgstr "Décoller cette question à la première page"
 
 #, fuzzy
 #~ msgid "Pin this Question to top"
-#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
+#~ msgstr "Collez cette question à la première page"
 
-#, fuzzy
 #~ msgid "answer"
 #~ msgid_plural "answers"
-#~ msgstr[0] "Jawaban"
+#~ msgstr[0] "réponse"
+#~ msgstr[1] "réponses"
 
 #~ msgid "You do not have permission to view answers"
-#~ msgstr "Anda tidak punya hak akses untuk melihat pertanyaan"
+#~ msgstr "Vous n'avez pas la permission de voir les réponses"
 
 #, fuzzy
 #~ msgid "This question is now closed"
-#~ msgstr "Pertanyaan ini telah ditutup"
+#~ msgstr "Cette question a été fermé"
 
 #~ msgid "You do not have permission to submit answer."
-#~ msgstr "Anda tidak punya hak akses untuk menulis pertanyaan."
+#~ msgstr "Vous n'avez pas la permission de soumettre une réponse."
 
-#, fuzzy
 #~ msgid "Please login or"
-#~ msgstr "Silahkan masuk"
+#~ msgstr "Veuillez vous connecter ou"
 
-#, fuzzy
 #~ msgid "to Submit Answer"
-#~ msgstr "Kirim Jawaban"
+#~ msgstr "Pour répondre"
 
 #~ msgid "Sorry, but nothing matched your filter."
-#~ msgstr "Maaf, tapi tidak ditemukan yang pas menurut sortingan Anda."
+#~ msgstr "Désolé, mais rien ne correspond à votre filtre."
 
 #~ msgid "View previous comments"
-#~ msgstr "Lihat tanggapan sebelumnya"
+#~ msgstr "Voir les commentaires précédents"
 
 #~ msgid "of"
-#~ msgstr "dari"
+#~ msgstr "de"
+
+#~ msgid "Write a reply..."
+#~ msgstr "Ecrire une réponse ..."
 
 #~ msgid "Link to answer"
-#~ msgstr "Tautan ke jawaban"
+#~ msgstr "Lien vers la réponse"
 
 #~ msgid "Draft"
-#~ msgstr "Draf"
+#~ msgstr "ébauche"
 
 #~ msgid "This answer was flagged as spam."
-#~ msgstr "Jawaban ditandai sebagai spam."
+#~ msgstr "Cette réponse a été marqué comme spam."
 
 #~ msgid "This is the best answer"
-#~ msgstr "Ini adalah Jawaban teebaik"
+#~ msgstr "C'est la meilleure réponse"
 
 #~ msgid "The answer link"
-#~ msgstr "Tautan ke jawaban"
+#~ msgstr "Le lien de la réponse"
 
 #~ msgid "Post by"
-#~ msgstr "Dikirimkan oleh"
+#~ msgstr "Poster par"
 
 #~ msgid "Link to comment"
-#~ msgstr "Tautan ke komentar"
+#~ msgstr "Lien au commentaire"
 
 #~ msgid "Permalink to %s"
-#~ msgstr "Tautan ke %s"
+#~ msgstr "Permalien vers %s"
 
-#, fuzzy
 #~ msgid "view"
 #~ msgid_plural "views"
-#~ msgstr[0] "dilihat"
+#~ msgstr[0] "vue"
+#~ msgstr[1] "vues"
 
-#, fuzzy
 #~ msgid "vote"
 #~ msgid_plural "votes"
-#~ msgstr[0] "ditilai"
+#~ msgstr[0] "Votes"
+#~ msgstr[1] "Vote"
 
 #~ msgid "Status:"
-#~ msgstr "Status:"
+#~ msgstr "Statut:"
 
 #~ msgid "Need Answer"
-#~ msgstr "Butuh jawaban"
+#~ msgstr "Besoin de réponse"
 
 #~ msgid "Overdue"
-#~ msgstr "Lewat Waktu"
+#~ msgstr "Alérte"
 
 #~ msgid "Queue"
-#~ msgstr "Antrian"
+#~ msgstr "File d'attente"
 
 #~ msgid "Select a category"
-#~ msgstr "Pilih Kategorinya"
+#~ msgstr "Sélectionnez une catégorie"
 
 #~ msgid "Empty"
-#~ msgstr "Kosong"
+#~ msgstr "Vide"
 
 #~ msgid "Vote"
-#~ msgstr "Tilai"
+#~ msgstr "Votez"
 
 #~ msgid "tag 1, tag 2,..."
 #~ msgstr "tag 1, tag 2,..."
 
 #~ msgid "Your question"
-#~ msgstr "Pertanyaan Anda"
+#~ msgstr "Votre question"
 
 #~ msgid "How to..."
-#~ msgstr "Bagaimana caranya ..."
+#~ msgstr "Comment ..."
 
 #~ msgid "Question details"
-#~ msgstr "Rincian Pertanyaan"
+#~ msgstr "Détails Question"
 
 #~ msgid "Post this Question as Private."
-#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
+#~ msgstr "Diffusez cette question comme privé."
 
 #~ msgid "Only you as Author and Admin can see the question"
-#~ msgstr "Hanya Anda sebagai penulis dan Admin yang dapat melihatnya"
+#~ msgstr ""
+#~ "Seulement Vous en tant que Auteur et les administrateurs peuvent voir la "
+#~ "question"
 
 #~ msgid "Search"
-#~ msgstr "Cari"
+#~ msgstr "Recherche"
 
 #~ msgid "Posts by"
-#~ msgstr "Dikirimkan oleh"
+#~ msgstr "Messages de"
 
 #~ msgid "Show a list of questions that was ordered by views."
-#~ msgstr "Menampilkan daftar pertanyaan menurut terbanyak dilihat."
+#~ msgstr "Afficher une liste de questions qui a été commandé par des vues."
 
 #, fuzzy
 #~ msgid "Show a list of questions that ordered by views."
-#~ msgstr "Menampilkan daftar pertanyaan menurut terbanyak dilihat."
+#~ msgstr "Afficher une liste de questions qui a été commandé par des vues."
 
 #~ msgctxt "post type general name"
 #~ msgid "Question"
-#~ msgstr "Pertanyaan"
+#~ msgstr "Question"
 
 #~ msgctxt "post type singular name"
 #~ msgid "Question"
-#~ msgstr "Pertanyaan"
+#~ msgstr "Question"
 
 #~ msgctxt "post type general name"
 #~ msgid "Answer"
-#~ msgstr "Jawaban"
+#~ msgstr "Réponse"
 
 #~ msgctxt "post type singular name"
 #~ msgid "Answer"
-#~ msgstr "Jawaban"
+#~ msgstr "Réponse"
+
+#~ msgid "em Q&A Box"
+#~ msgstr "em Q&A Box"
+
+#~ msgid "Container Padding"
+#~ msgstr "Padding duconteneur"
+
+#~ msgid "Container padding size"
+#~ msgstr "Taille du Padding du conteneur"
 
 #, fuzzy
-#~ msgid "Stick This Question on Frontpage"
-#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
-
-#, fuzzy
-#~ msgid "Untick This Question on Frontpage"
-#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
-
-#~ msgid "Website"
-#~ msgstr "Situs web"
-
-#~ msgid "by"
-#~ msgstr "oleh"
-
-#, fuzzy
-#~ msgid "DW Q&A Box"
-#~ msgstr "DW Q&A"
+#~ msgid ""
+#~ "By default, the container does not have a gutter. You can set padding "
+#~ "width to make a gutter. You make it by updating the setting here."
+#~ msgstr ""
+#~ "Par défaut, le conteneur n'est pas encore gouttière. Vous pouvez régler "
+#~ "la largeur de rembourrage pour fabriquer une gouttière. Vous le faites "
+#~ "par réglage de la mise à jour ici."
 
 #~ msgid "You can ask question <a href=\""
-#~ msgstr "Anda dapat menulis pertanyaan <a href=\""
+#~ msgstr "Vous pouvez poser une question <a href=\""
 
 #~ msgid "Please <a href=\""
-#~ msgstr "Silahkan <a href=\""
+#~ msgstr "Veuillez <a href=\""
 
-#~ msgid "YCaptcha is not correct"
-#~ msgstr "Captcha salah"
+#~ msgid "Stick This Question on Frontpage"
+#~ msgstr "Collez Cette question sur l'Accueil"
+
+#~ msgid "Untick This Question on Frontpage"
+#~ msgstr "Décochez cette question sur l'Accueil"
+
+#~ msgid "Admin emails"
+#~ msgstr "E-mails Admin"
 
 #~ msgid "Email Template"
-#~ msgstr "Templat Email"
+#~ msgstr "Modèle d'email"
 
-#~ msgid "Email logo"
-#~ msgstr "Logo Email"
+#~ msgid "Website"
+#~ msgstr "Siteweb"
 
-#~ msgid "You need a support channel inside wordpress page?"
-#~ msgstr "Apakah Anda membutuhkan channel bantuan didalam halama wordpress?"
-
-#~ msgid "Create Submit Question Page"
-#~ msgstr "Buat halaman Mengirim Pertanyaan"
-
-#~ msgid "How to create submit question page?"
-#~ msgstr "Bagaimana carannya menulis halaman mengirim pertanyaan?"
-
-#~ msgid "Go to <strong>Dashboard -> Question -> Settings</strong>"
-#~ msgstr "Pergi ke <strong>Dashboard -> Pertanyaan -> Pengaturan</strong>"
-
-#~ msgid "Available Settings"
-#~ msgstr "Pengaturan Tersedia"
-
-#~ msgid "Go to config your support channel"
-#~ msgstr "Pergi ke Konfigurasi channel bantuan"
-
-#~ msgid "Go to ...?"
-#~ msgstr "Pergi ke ...?"
-
-#~ msgid "DesignWall Team"
-#~ msgstr "Tim DesignWall"
-
-#~ msgid "Documentations"
-#~ msgstr "Dokumentasi"
-
-#~ msgid "Support"
-#~ msgstr "Dukungan"
-
-#~ msgid "DesignWall Homepage"
-#~ msgstr "Website DesignWall"
-
-#~ msgid "or"
-#~ msgstr "atau"
-
-#~ msgid "to"
-#~ msgstr "ke"
+#~ msgid "by"
+#~ msgstr "par"

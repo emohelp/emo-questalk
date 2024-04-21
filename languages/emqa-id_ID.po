@@ -1,95 +1,85 @@
+# Ruly Aperta <globalaperta@gmail.com>, 2014.
 msgid ""
 msgstr ""
-"Project-Id-Version: DW Question Answer v1.2.6\n"
+"Project-Id-Version: EMO Questalk \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-17 16:30+0700\n"
-"PO-Revision-Date: 2016-08-17 16:30+0700\n"
-"Last-Translator: Sam Straka <samstraka@e-levne.com>\n"
-"Language-Team: \n"
-"Language: cs_CZ\n"
+"POT-Creation-Date: 2016-08-17 16:32+0700\n"
+"PO-Revision-Date: 2016-08-17 16:32+0700\n"
+"Last-Translator: Emohelp <dm@emohelp.com>\n"
+"Language-Team: IT Solutions\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 1.8.7\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
-"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
-"X-Poedit-Basepath: ..\n"
-"X-Textdomain-Support: yes\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
 
-# @ dwqa
-#: dw-question-answer.php:147
-msgid "DWQA Questions"
-msgstr "Dotazy"
+#: em-question-answer.php:147
+msgid "EMQA Questions"
+msgstr ""
 
-# @ dwqa
-#: dw-question-answer.php:164
-msgid "DWQA Ask Question"
-msgstr "Položit dotaz"
+#: em-question-answer.php:164
+msgid "EMQA Ask Question"
+msgstr ""
 
 #: inc/Admin/Extensions.php:13
-msgid "DWQA Markdown"
+msgid "EMQA Markdown"
 msgstr ""
 
 #: inc/Admin/Extensions.php:19
-msgid "DWQA Leaderboard"
+msgid "EMQA Leaderboard"
 msgstr ""
 
 #: inc/Admin/Extensions.php:25
-msgid "DWQA Captcha"
-msgstr "DWQA Captcha"
-
-# @ dwqa
-#: inc/Admin/Extensions.php:31
-msgid "DWQA Embed Question"
-msgstr "Uzavřené dotazy"
-
-#: inc/Admin/Extensions.php:37
-msgid "DWQA Widgets"
+msgid "EMQA Captcha"
 msgstr ""
 
-# @ dwqa
+#: inc/Admin/Extensions.php:31
+msgid "EMQA Embed Question"
+msgstr ""
+
+#: inc/Admin/Extensions.php:37
+msgid "EMQA Widgets"
+msgstr ""
+
 #: inc/Admin/Extensions.php:47
 msgid "Extensions"
-msgstr "Rozšíření"
+msgstr ""
 
 #: inc/Admin/Extensions.php:75
 msgid "Get It Now!"
-msgstr "Dostaň to nyní !"
+msgstr ""
 
-# @ dwqa
 #: inc/Admin/Welcome.php:27 inc/Admin/Welcome.php:28
-msgid "Welcome to DW Question & Answer"
-msgstr "Vítejte v systému DW Otázky & Odpovědi"
+msgid "Welcome to EMO Questalk"
+msgstr ""
 
-# @ dwqa
 #: inc/Admin/Welcome.php:35 inc/Admin/Welcome.php:36
-msgid "DW Question & Answer Changelog"
-msgstr "Plugin DW Otázky & Odpovědi Změny"
+msgid "EMO Questalk Changelog"
+msgstr ""
 
-# @ default
 #: inc/Admin/Welcome.php:43 inc/Admin/Welcome.php:44
-msgid "DW Question & Answer Credits"
-msgstr "Zásluhy - DW Otázky & Odpovědi"
+msgid "EMO Questalk Credits"
+msgstr ""
 
-# @ dwqa
 #: inc/Admin/Welcome.php:60
 #, php-format
-msgid "Welcome to DW Question & Answer %s"
-msgstr "Vítejte v systému DW Otázky & Odpovědi %s"
+msgid "Welcome to EMO Questalk %s"
+msgstr ""
 
 #: inc/Admin/Welcome.php:61
 msgid ""
 "Thank you for installing our WordPress plugin. If you have any question "
 "about this plugin, please submit to our <a target=\"_blank\" href=\"https://"
-"www.designwall.com/question/\">Q&A section</a>."
+"www.Emohelp.com/question/\">Q&A section</a>."
 msgstr ""
 
 #: inc/Admin/Welcome.php:69
 msgid "What&#8217;s New"
-msgstr "Co je nového"
+msgstr ""
 
 #: inc/Admin/Welcome.php:70
 msgid "Changelog"
@@ -107,415 +97,353 @@ msgstr ""
 msgid "No valid changelog was found."
 msgstr ""
 
-# @ dwqa
-# @ default
 #: inc/Ajax.php:29 inc/Ajax.php:47 inc/Ajax.php:83 inc/Ajax.php:113
 #: inc/Ajax.php:132 inc/Ajax.php:150 inc/Ajax.php:215 inc/Handle.php:256
 #: inc/Handle.php:455 inc/Permission.php:286 inc/Status.php:319
 msgid "Are you cheating huh?"
-msgstr "Nepodvádíte?"
+msgstr "Apakah Anda Kehilangan Arah?"
 
-# @ dwqa
 #: inc/Ajax.php:33 inc/Handle.php:260
 msgid "You do not have permission to edit comment."
-msgstr "Nemáte práva pro úpravu komentáře"
+msgstr ""
 
-# @ dwqa
 #: inc/Ajax.php:37
+#, fuzzy
 msgid "Comment ID must be showed."
-msgstr "ID komentáře musí být zobrazeno."
+msgstr "ID komentar harus ditampilkan."
 
-# @ dwqa
 #: inc/Ajax.php:51 inc/Handle.php:154
 msgid "Answer is missing."
-msgstr "Odpověď chybí"
+msgstr ""
 
-# @ dwqa
 #: inc/Ajax.php:55 inc/Handle.php:158
 msgid "This post is not answer."
-msgstr "Tento příspěvek není odpověď"
+msgstr ""
 
-# @ dwqa
 #: inc/Ajax.php:59 inc/Ajax.php:162
 msgid "You do not have permission to delete this post."
-msgstr "Nemáte oprávnění k smazání tohoto příspěvku"
+msgstr ""
 
-# @ dwqa
 #: inc/Ajax.php:86
 msgid "Missing id of answer"
-msgstr "Chybí ID odpovědi"
+msgstr "ID jawaban hilang"
 
-# @ dwqa
 #: inc/Ajax.php:154 inc/Handle.php:477
 msgid "Question is missing."
-msgstr "Dotaz chybí"
+msgstr ""
 
-# @ dwqa
 #: inc/Ajax.php:158 inc/Handle.php:481
 msgid "This post is not question."
-msgstr "Tento příspěvek není dotaz"
+msgstr ""
 
-# @ dwqa
 #: inc/Ajax.php:206
+#, fuzzy
 msgid "You do not have permission to edit question status"
-msgstr "Nemáte dostatečná práva k úpravě stavu dotazu"
+msgstr "Anda tidak punya hak akses untuk melihat pertanyaan."
 
 #: inc/Ajax.php:223 inc/Ajax.php:273
 msgid "Not Found!!!"
 msgstr ""
 
-# @ dwqa
 #: inc/Answer_List_Table.php:81 inc/Posts/Answer.php:271 inc/Template.php:48
 msgid "Author"
-msgstr "Autor"
+msgstr "Penulis"
 
-# @ dwqa
 #: inc/Answer_List_Table.php:82
 msgid "Detail"
-msgstr "Podrobnosti"
+msgstr "Rincian"
 
-# @ dwqa
 #: inc/Answer_List_Table.php:92 inc/Notifications.php:116
 #: inc/Notifications.php:214 inc/Notifications.php:233 inc/Posts/Base.php:230
 #: inc/Posts/Comment.php:102 inc/Settings.php:419 inc/Settings.php:455
 #: inc/Settings.php:490 inc/User.php:155
 msgid "Anonymous"
-msgstr "Anonymní"
+msgstr "Anonim"
 
-# @ dwqa
 #: inc/Answer_List_Table.php:101
 msgid "Answered on "
-msgstr "Odpovězeno"
+msgstr "Dijawab pada"
 
-# @ dwqa
 #: inc/Answer_List_Table.php:112 inc/Helptab.php:153
 msgid "Read more"
-msgstr "Zobrazit celé"
+msgstr "Selanjutnya"
 
-# @ dwqa
 #: inc/Handle.php:29
 msgid "&quot;Helllo&quot;, Are you cheating huh?."
-msgstr "Dobrý den, nepodvádíte náhodou?"
+msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:32
 msgid "Delete draft"
-msgstr "Smazat koncept"
+msgstr "Hapus draf"
 
-# @ dwqa
 #: inc/Handle.php:39
 msgid "Answer content is empty"
-msgstr "Obsah odpovědi je prázdný"
+msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:42
 msgid "Question is empty"
-msgstr "Otázka chybí"
+msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:46 inc/Handle.php:432
 msgid "You do not have permission to submit question."
-msgstr "Nemáte práva pro položení dotazu."
+msgstr "Anda tidak punya hak akses untuk menulis pertanyaan."
 
-# @ dwqa
 #: inc/Handle.php:50 inc/Handle.php:218 inc/Handle.php:300
+#, fuzzy
 msgid "Missing email information"
-msgstr "Chybí email"
+msgstr "Informasi email tidak diketahui"
 
-# @ dwqa
 #: inc/Handle.php:54 inc/Handle.php:222 inc/Handle.php:305
+#, fuzzy
 msgid "Missing name information"
-msgstr "Chybí jméno"
+msgstr "Informasi nama tidak diketahui"
 
-# @ dwqa
 #: inc/Handle.php:58 inc/Handle.php:451
 msgid "Captcha is not correct"
-msgstr "Captcha není správně"
+msgstr "Captcha salah"
 
-# @ dwqa
 #: inc/Handle.php:77
 msgid "Answer for "
-msgstr "Odpověď pro"
+msgstr "Jawaban untuk"
 
-# @ dwqa
 #: inc/Handle.php:139
 msgid "You do not have permission to edit answer."
-msgstr "Nemáte práva k odpovědi."
+msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:143 inc/Handle.php:520 inc/Posts/Question.php:473
+#, fuzzy
 msgid "Hello, Are you cheating huh?"
-msgstr "Dobrý den, nepodvádíte náhodou?"
+msgstr "\"Hallo\", Apakah Anda Salah Jalan?"
 
 #: inc/Handle.php:148
 msgid "You must enter a valid answer content."
-msgstr "Musíte vložit validní obsah odpovědi"
+msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:194
 msgid "You can't post comment"
-msgstr "Nemůžete vkládat komentáře"
+msgstr "Anda tidak dapat menuliskan komentar"
 
-# @ dwqa
 #: inc/Handle.php:197
 msgid "Missing post id."
-msgstr "Chybí ID příspěvku"
+msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:203
 msgid "Please enter your comment content"
-msgstr "Zadejte obsah komentáře"
+msgstr "Silahkan tuliskan komentar"
 
 #: inc/Handle.php:249
 msgid "Comment is missing"
-msgstr "Poznámka chybí"
+msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:264
 msgid "Comment content must not be empty."
-msgstr "Obsah komentáře nesmí být prázdný."
+msgstr "Komentar tidak boleh kosong."
 
-# @ dwqa
 #: inc/Handle.php:294 inc/Handle.php:471
 msgid "You must enter a valid question title."
-msgstr "Zadejte nadpis dotazu"
+msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:384
 msgid "User Registration was disabled."
-msgstr "Registrace uživatelů byla zakázána."
+msgstr "Pedaftaran User Ditutup"
 
-# @ dwqa
 #: inc/Handle.php:387
 msgid "This email is already registered, please choose another one."
-msgstr "Tento email již byl zaregistrován, zadejte prosím jiný."
+msgstr "Email ini sudah terdaftar, silahkan pilih yang lainnya."
 
-# @ dwqa
 #: inc/Handle.php:390
+#, fuzzy
 msgid "This username is already registered. Please use another one."
-msgstr "Toto uživatelské jméno již bylo registrováno. Prosíme, zvolte si jiné."
+msgstr "Nama pengguna telah dipakai. Silakan pilih lainnya."
 
 #: inc/Handle.php:444
 msgid "Your question is waiting moderator."
-msgstr "Váš dotaz čeká na schválení moderátorem"
+msgstr ""
 
-# @ dwqa
 #: inc/Handle.php:466 inc/Status.php:347
+#, fuzzy
 msgid "You do not have permission to edit question"
-msgstr "Nemáte práva pro úpravu dotazu."
+msgstr "Anda tidak punya hak akses untuk menulis pertanyaan."
 
-# @ dwqa
 #: inc/Helptab.php:47
 msgid "Overview"
-msgstr "Přehled"
+msgstr "Ringkasan"
 
-# @ dwqa
 #: inc/Helptab.php:48
-msgid "DW Question Answer Plugin"
-msgstr "Plugin DW Otázky & Odpovědi"
+#, fuzzy
+msgid "EMO Questalk  Plugin"
+msgstr "Mengapa menggunakan EMO Questalk"
 
-# @ dwqa
 #: inc/Helptab.php:49
 msgid ""
-"DW Question Answer is a WordPress Plugin which helps you build a Question & "
+"EMO Questalk  is a WordPress Plugin which helps you build a Question & "
 "Answer system on your WordPress sites. The plugin is easy to install and set "
 "up. Let start building up your community with this WordPress question & "
 "answer system."
 msgstr ""
-"DW Otázky & Odpovědi je WordPressový plugin, který vám umožní vytvořit "
-"systém otázek a odpovědí na vaší prezentaci. Plugin je snadné nainstalovat a "
-"nastavit. Začněte budovat svou komunitu s tímto systémem pro otázky a "
-"odpovědi."
 
-# @ dwqa
 #: inc/Helptab.php:52
+#, fuzzy
 msgid "Setup Question List Page"
-msgstr "Nastavit stránku se seznamem dotazů"
+msgstr "Halaman Daftar Pertanyaan"
 
-# @ dwqa
 #: inc/Helptab.php:56
+#, fuzzy
 msgid "Setup Ask Question Page"
-msgstr "Nastavit stránku pro položení dotazu"
+msgstr "Halaman Mengajukan Pertanyaan"
 
-# @ dwqa
 #: inc/Helptab.php:60
 msgid "Shortcode"
-msgstr "Shortcode"
+msgstr ""
 
-# @ dwqa
 #: inc/Helptab.php:64
 msgid "Style integration"
-msgstr "Integrace stylu"
+msgstr ""
 
-# @ default
 #: inc/Helptab.php:173
 msgid "For more information:"
-msgstr "Pro více informací:"
+msgstr "Temukan lebih banyak informasi:"
 
-# @ default
 #: inc/Helptab.php:174
-msgid "DW Question Answer Guide"
-msgstr "Průvodce po DW Otázky & Odpovědi"
+#, fuzzy
+msgid "EMO Questalk  Guide"
+msgstr "Mengapa menggunakan EMO Questalk"
 
-# @ default
 #: inc/Helptab.php:175
+#, fuzzy
 msgid "Community"
-msgstr "Komunita"
+msgstr "Komentar"
 
-# @ default
 #: inc/Helptab.php:176
-msgid "DesignWall Wordpress Themes"
-msgstr "DesignWall Wordpress témata"
+msgid "Emohelp Wordpress Themes"
+msgstr "Tema Wordpress Emohelp"
 
-# @ default
 #: inc/Helptab.php:177
-msgid "DesignWall Wordpress Plugins"
-msgstr "DesignWall Wordpress pluginy"
+#, fuzzy
+msgid "Emohelp Wordpress Plugins"
+msgstr "Tema Wordpress Emohelp"
 
-# @ dwqa
 #: inc/Metaboxes.php:13 templates/content-single-question.php:31
 #: templates/question-submit-form.php:22
 msgid "Status"
-msgstr "Stav"
+msgstr "Status"
 
-# @ dwqa
 #: inc/Metaboxes.php:15 inc/Status.php:304
 #: templates/archive-question-filter.php:18
 #: templates/content-single-question.php:32
 msgid "Open"
-msgstr "Otevřené"
+msgstr "Dibuka"
 
-# @ dwqa
 #: inc/Metaboxes.php:16 inc/Status.php:287
 msgid "Pending"
-msgstr "Neodpovězené"
+msgstr "Ditunda"
 
-# @ dwqa
 #: inc/Metaboxes.php:17 inc/Status.php:284
 #: templates/archive-question-filter.php:19
 #: templates/content-single-question.php:34
 msgid "Resolved"
-msgstr "Vyřešeno"
+msgstr "Diselesaikan"
 
-# @ dwqa
 #: inc/Metaboxes.php:18 inc/Status.php:290
 msgid "Re-Open"
-msgstr "Znovuotevřené"
+msgstr "Dibuka Kembali"
 
-# @ dwqa
 #: inc/Metaboxes.php:19 inc/Status.php:293
 #: templates/archive-question-filter.php:20
 #: templates/content-single-question.php:33
 msgid "Closed"
-msgstr "Uzavřené"
+msgstr "Ditutup"
 
-# @ dwqa
 #: inc/Metaboxes.php:25
 msgid "Sticky"
-msgstr "Zvýrazněný"
+msgstr ""
 
-# @ dwqa
 #: inc/Metaboxes.php:29
 msgid "Pin question to top of archive page."
-msgstr "Připíchnout dotaz nahoru.."
+msgstr ""
 
-# @ dwqa
 #: inc/Metaboxes.php:45 inc/Posts/Answer.php:225 inc/Posts/Answer.php:227
 #: inc/Settings.php:431 templates/archive-question-filter.php:34
 msgid "Answers"
-msgstr "Odpovědi"
+msgstr "Jawaban"
 
-# @ dwqa
 #: inc/Metaboxes.php:65
+#, fuzzy
 msgid "Question Meta Data"
-msgstr "Metadata dotazu"
+msgstr "Rincian Pertanyaan"
 
-# @ dwqa
 #: inc/Notifications.php:29
 msgid "A new question was posted on {site_name}"
-msgstr "Nový dotaz byl zaslán na {site_name}"
+msgstr "Pertanyaan baru telah ditulis di {site_name}"
 
-# @ dwqa
 #: inc/Notifications.php:132
+#, fuzzy
 msgid "You have a new answer for your followed question"
-msgstr "Máte novou odpověd na sledovanou otázku"
+msgstr "Jawaban baru dari pertanyaan yang Anda ikuti"
 
-# @ dwqa
 #: inc/Notifications.php:250
 msgid "A new answer for \"{question_title}\" was posted on {site_name}"
-msgstr "Nová odpověď pro \"{question_title}\" byl zaslána na {site_name}"
+msgstr ""
+"Jawaban baru untuk \"{question_title}\" telah di tulis pada {site_name}"
 
-# @ dwqa
 #: inc/Notifications.php:334 inc/Notifications.php:380
+#, fuzzy
 msgid "[{site_name}] You have a new comment for question {question_title}"
-msgstr "[{site_name}] Máte nový komentář k otázce {question_title}"
+msgstr ""
+"[{site_name}] Anda mendapat tanggapan untuk pertanyaan {question_title}"
 
-# @ dwqa
 #: inc/Notifications.php:339 inc/Notifications.php:385
 msgid "[{site_name}] You have a new comment for answer"
-msgstr "[{site_name}] Máte nový komentář pro odpověď"
+msgstr "[{site_name}] Anda mendapatkan tanggapan untuk jawaban Anda"
 
-# @ dwqa
 #: inc/PointerHelper.php:60
-msgid "How to use DW Question Answer"
-msgstr "Jak používat DW Otázky & Odpovědi"
+#, fuzzy
+msgid "How to use EMO Questalk "
+msgstr "Mengapa menggunakan EMO Questalk"
 
-# @ dwqa
 #: inc/PointerHelper.php:61
-msgid "Documents, Support From DesignWall (help)"
-msgstr "Dokumenty a podpora od DesignWall (nápověda)"
+msgid "Documents, Support From Emohelp (help)"
+msgstr ""
 
-# @ dwqa
 #: inc/PointerHelper.php:70
 msgid "Config your support channel"
-msgstr "Nastavit kanál s podporou"
+msgstr "Pengaturan halaman support"
 
-# @ dwqa
 #: inc/PointerHelper.php:71
+#, fuzzy
 msgid "Change comment settings, and create the Submit question page."
-msgstr "Upravit nastavení komentářů a vytvořit stránku pro zaslání dotazu."
+msgstr "Ubah pengaturan komentar, dan halaman mengirim pertanyaan."
 
-# @ default
-# @ dwqa
 #: inc/Posts/Answer.php:226 inc/Posts/Answer.php:270
 msgid "Answer"
-msgstr "Odpověď"
+msgstr "Jawaban"
 
-# @ dwqa
 #: inc/Posts/Answer.php:273
 msgid "In Response To"
-msgstr "V reakci na"
+msgstr "Tanggapan untuk"
 
-# @ dwqa
-# @ edd-dw-membersip
 #: inc/Posts/Answer.php:317 inc/Posts/Base.php:320 inc/Settings.php:402
 #: inc/Template.php:58 inc/Template.php:163 inc/Template.php:180
 #: templates/content-comment.php:19
 msgid "Edit"
-msgstr "Upravit"
+msgstr "Ubah"
 
-# @ edd-dw-membersip
-# @ dwqa
 #: inc/Posts/Answer.php:318 inc/Settings.php:403 inc/Template.php:168
 #: inc/Template.php:185 templates/content-comment.php:22
 msgid "Delete"
-msgstr "Smazat"
+msgstr "Hapus"
 
-# @ edd-dw-membersip
-# @ dwqa
 #: inc/Posts/Answer.php:319 inc/Posts/Base.php:322
 msgid "View"
-msgstr "Zobrazit"
+msgstr "Lihat"
 
-# @ dwqa
 #: inc/Posts/Answer.php:323
 msgid "Submitted"
-msgstr "Odesláno"
+msgstr "Dikirimkan"
 
-# @ dwqa
 #: inc/Posts/Answer.php:324
 msgid "on"
-msgstr "na"
+msgstr "pada"
 
 #: inc/Posts/Answer.php:359
 msgid "Question ID"
@@ -525,353 +453,296 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
-# @ dwqa
 #: inc/Posts/Base.php:5
 msgid "Are you cheating, huh?"
-msgstr "Nepodvádíte?"
+msgstr "Apakah Anda Kehilangan Arah?"
 
 #: inc/Posts/Base.php:18
 msgid "What "
-msgstr "Co"
+msgstr "Apa"
 
-# @ dwqa
 #: inc/Posts/Base.php:46
 msgid "You voted for this "
-msgstr "Hlasovali jste pro tuto"
+msgstr "Anda memberi nilai untuk ini"
 
-# @ default
 #: inc/Posts/Base.php:242
 #, php-format
 msgid "Posts by %s"
-msgstr "Příspěvky od %s"
+msgstr "Dikirimkan oleh %s"
 
 #: inc/Posts/Base.php:251 inc/Posts/Base.php:255
 #, php-format
-msgid "%s answered <span class=\"dwqa-date\">%s</span> ago"
-msgstr "%s odpověděl(a) <span class=\"dwqa-date\">%s</span>"
+msgid "%s answered <span class=\"emqa-date\">%s</span> ago"
+msgstr ""
 
 #: inc/Posts/Base.php:257
 #, php-format
-msgid "%s asked <span class=\"dwqa-date\">%s</span> ago"
-msgstr "%s se zeptal(a) na <span class=\"dwqa-date\">%s</span>"
+msgid "%s asked <span class=\"emqa-date\">%s</span> ago"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Base.php:306
-msgid "DWQA Posts"
-msgstr "Příspěvky"
+msgid "EMQA Posts"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Base.php:307
-msgid "DWQA Post"
-msgstr "Příspěvek"
+msgid "EMQA Post"
+msgstr ""
 
 #: inc/Posts/Base.php:318
-msgctxt "dwqa"
+msgctxt "EMQA"
 msgid "Add New"
-msgstr "Přidat nový"
+msgstr ""
 
 #: inc/Posts/Base.php:319
+#, fuzzy
 msgid "Add New"
-msgstr "Přidat nový"
+msgstr "Tambah"
 
-# @ dwqa
 #: inc/Posts/Base.php:321 inc/Status.php:296
 msgid "New"
-msgstr "Nový"
+msgstr "Baru"
 
-# @ dwqa
 #: inc/Posts/Base.php:323
 msgid "Search "
-msgstr "Hledat"
+msgstr ""
 
 #: inc/Posts/Base.php:324
 msgid "not found"
-msgstr "nenalezeno"
+msgstr ""
 
-# @ default
 #: inc/Posts/Base.php:325
 msgid "not found in Trash"
-msgstr "V koši nebyly nalezené žádné dotazy"
+msgstr ""
 
-# @ default
 #: inc/Posts/Base.php:326
 msgid "Parent:"
-msgstr "Nadřazená kategorie:"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:56 inc/Shortcode.php:138
 #: inc/widgets/Closed_Question.php:49 inc/widgets/Latest_Question.php:42
 #: inc/widgets/Popular_Question.php:43
 msgid "asked by"
-msgstr "dotaz od"
+msgstr "ditanyakan oleh"
 
-# @ dwqa
 #: inc/Posts/Question.php:100 inc/Posts/Question.php:102
 #: inc/Posts/Question.php:266 inc/Settings.php:395
 #: templates/archive-question-filter.php:28
 msgid "Questions"
-msgstr "Dotaz"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:101
 msgid "Question"
-msgstr "Dotaz"
+msgstr "Pertanyaan"
 
-# @ default
 #: inc/Posts/Question.php:196
 msgctxt "taxonomy general name"
 msgid "Question Categories"
-msgstr "Kategorie dotazů"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:197
 msgctxt "taxonomy singular name"
 msgid "Question Category"
-msgstr "Kategorie dotazu"
+msgstr ""
 
-# @ default
 #: inc/Posts/Question.php:198
 msgid "Search Question Categories"
-msgstr "Hledej kategorii dotazů"
+msgstr ""
 
-# @ default
 #: inc/Posts/Question.php:199
 msgid "All Question Categories"
-msgstr "Všechny kategorie dotazů"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:200
 msgid "Parent Question Category"
-msgstr "Nadřazená kategorie dotazů"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:201
 msgid "Parent Question Category:"
-msgstr "Nadřazená kategorie dotazů:"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:202
 msgid "Edit Question Category"
-msgstr "Uprav kategorii dotazů"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:203
 msgid "Update Question Category"
-msgstr "Aktualizuj kategorii dotazů"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:204
 msgid "Add New Question Category"
-msgstr "Přidej novou kategorii dotazů"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:205
 msgid "New Question Category Name"
-msgstr "Nový název kategorie dotazů"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:206
 msgid "Question Category"
-msgstr "Kategorie dotazu"
+msgstr "Kategori Pertanyaan"
 
-# @ default
-# @ dwqa
 #: inc/Posts/Question.php:225
 msgctxt "taxonomy general name"
 msgid "Question Tags"
-msgstr "Štítky dotazů"
+msgstr ""
 
-# @ default
-# @ dwqa
 #: inc/Posts/Question.php:226
 msgctxt "taxonomy singular name"
 msgid "Question Tag"
-msgstr "Štítky dotazu"
+msgstr ""
 
-# @ default
 #: inc/Posts/Question.php:227
 msgid "Search Question Tags"
-msgstr "Vyhledat štítek dotazů"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:228
 msgid "Popular Question Tags"
-msgstr "Populární štítky dotazů"
+msgstr ""
 
-# @ default
-# @ dwqa
 #: inc/Posts/Question.php:229
 msgid "All Question Tags"
-msgstr "Všechny štítky dotazů"
+msgstr ""
 
-# @ default
 #: inc/Posts/Question.php:232
 msgid "Edit Question Tag"
-msgstr "Upravit štítek dotazu"
+msgstr ""
 
-# @ default
-# @ dwqa
 #: inc/Posts/Question.php:233
 msgid "Update Question Tag"
-msgstr "Aktualizuj štítek dotazu"
+msgstr ""
 
-# @ default
 #: inc/Posts/Question.php:234
 msgid "Add New Question Tag"
-msgstr "Přidat nový štítek dotazu"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:235
 msgid "New Question Tag Name"
-msgstr "Nový název štítku dotazu"
+msgstr ""
 
-# @ default
 #: inc/Posts/Question.php:236
 msgid "Separate question tags with commas"
-msgstr "Oddělte štítky čárkami"
+msgstr ""
 
-# @ default
 #: inc/Posts/Question.php:237
 msgid "Add or remove question tags"
-msgstr "Přidat nebo odebrat štítky"
+msgstr ""
 
-# @ default
 #: inc/Posts/Question.php:238
 msgid "Choose from the most used question tags"
-msgstr "Vyberte z nejpoužívanějších štítků"
+msgstr ""
 
-# @ default
 #: inc/Posts/Question.php:239
 msgid "No question tags found."
-msgstr "Nebyly nalezeny žádné štítky"
+msgstr ""
 
-# @ default
-# @ dwqa
 #: inc/Posts/Question.php:240
 msgid "Question Tags"
-msgstr "Štítky dotazu"
+msgstr "Tag Pertanyaan"
 
-# @ dwqa
 #: inc/Posts/Question.php:276
 msgid "Info"
-msgstr "Info"
+msgstr "Informasi"
 
-# @ dwqa
 #: inc/Posts/Question.php:287 templates/content-question.php:22
 msgid "answered"
-msgstr "odpovězeno"
+msgstr "Sudah dijawab"
 
-# @ dwqa
 #: inc/Posts/Question.php:288
 msgid "voted"
-msgstr "hlasováno"
+msgstr "ditilai"
 
-# @ dwqa
 #: inc/Posts/Question.php:289
 msgid "views"
-msgstr "zobrazení"
+msgstr "lihat"
 
-# @ dwqa
 #: inc/Posts/Question.php:410 inc/User.php:266
 msgid "Invalid Post"
-msgstr "Neplatný příspěvek"
+msgstr "Tulisan tidak valid"
 
-# @ dwqa
 #: inc/Posts/Question.php:445
+#, fuzzy
 msgid "Sticky Questions"
-msgstr "Zvýrazněný dotaz"
+msgstr "Ajukan _Pertanyaan"
 
-# @ dwqa
 #: inc/Posts/Question.php:479
+#, fuzzy
 msgid "Question is not valid"
-msgstr "Neplatná otázka"
+msgstr "Halaman Daftar Pertanyaan"
 
-# @ dwqa
 #: inc/Posts/Question.php:500
 msgid "Delete Action was failed"
-msgstr "Odstranění se nezdařilo"
+msgstr ""
 
-# @ dwqa
 #: inc/Posts/Question.php:505
+#, fuzzy
 msgid "You do not have permission to delete this question"
-msgstr "Nemáte práva ke smazání tohoto dotazu"
+msgstr "Anda tidak punya hak akses untuk melihat pertanyaan."
 
 #: inc/Session.php:68 inc/Session.php:85 inc/Session.php:95 inc/Session.php:118
 msgid "This function should not be called before init."
-msgstr "Tato funkce nemůže být volána před"
+msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:8
+#, fuzzy
 msgid "Login required. No anonymous post allowed"
-msgstr "Vyžadováno přihlášení"
+msgstr "Harus masuk terlebih dahulu. Tamu tidak diperbolehkan"
 
-# @ dwqa
 #: inc/Settings.php:20
 msgid "Select Archive Question Page"
-msgstr "Vybrat stránku s archivem dotazů"
+msgstr "Pilih Halaman Arsip Pertanyaan "
 
 #: inc/Settings.php:24
 msgid ""
-"A page where displays all questions. The <code>[dwqa-list-questions]</code> "
+"A page where displays all questions. The <code>[EMQA-list-questions]</code> "
 "short code must be on this page."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:31
 msgid "hours"
-msgstr "hodin"
+msgstr "jam"
 
-# @ dwqa
 #: inc/Settings.php:31
 msgid ""
 "A period of time in which new questions are highlighted and marked as New"
-msgstr "Časové období, po které bude dotaz zvýrazněn a označen jako Nový"
+msgstr ""
+"Periode waktu dimana pertanyaan baru di sorot dan ditandai sebagai Baru"
 
-# @ dwqa
 #: inc/Settings.php:36
 msgid "days"
-msgstr "dny"
+msgstr "hari"
 
-# @ dwqa
 #: inc/Settings.php:36
+#, fuzzy
 msgid ""
 "A Question will be marked as overdue if it passes this period of time, "
 "starting from the time the question was submitted"
 msgstr ""
-"Dotaz bude označen jako zastaralý, pokud od zadáni uplyne nastavené časové "
-"období-"
+"Pertanyaan akan di tandai sebagai kadaluarsa, jika sudah melebihi batas "
+"waktu yang ditentukan, dimulai dari saat pertanyaan dikirim "
 
-# @ dwqa
 #: inc/Settings.php:47
 msgid "Select Submit Question Page"
-msgstr "Vybrat stránku pro odslání dotazu"
+msgstr "Pilih halaman Mengirimkan Pertanyaan"
 
 #: inc/Settings.php:52
 msgid ""
-"A page where users can submit questions. The <code>[dwqa-submit-question-"
+"A page where users can submit questions. The <code>[EMQA-submit-question-"
 "form]</code> short code must be on this page."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:65
-msgid "Select 404 DWQA Page"
-msgstr "Vybrat 404 stránku"
+msgid "Select 404 EMQA Page"
+msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:70
 msgid ""
 "This page will be redirected when users without authority click on a private "
 "question. You can customize the message of this page in.If not, a default "
 "404 page will be used."
 msgstr ""
-"Na tuto stránku budou přesměrováni uživatelé bez dostatečných práv pro "
-"zobrazení soukromých dotazů. Na této stránce můžete upravit zobrazenou "
-"zprávu. Pokud tak neučiníte, použije se výchozí 404 stránka."
 
-# @ dwqa
 #: inc/Settings.php:87
 msgid "Upload"
-msgstr "Nahrát"
+msgstr "Unggah"
 
 #: inc/Settings.php:87
 msgid "Upload or choose a logo to be displayed at the top of the email."
@@ -887,19 +758,17 @@ msgstr ""
 msgid "Enable notification for new question."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:131 inc/Settings.php:166 inc/Settings.php:202
 #: inc/Settings.php:238 inc/Settings.php:273 inc/Settings.php:308
 #: inc/Settings.php:343
 msgid "Email subject"
-msgstr "Předmět emailu"
+msgstr "Judul Email"
 
-# @ dwqa
 #: inc/Settings.php:136 inc/Settings.php:171 inc/Settings.php:207
 #: inc/Settings.php:243 inc/Settings.php:278 inc/Settings.php:313
 #: inc/Settings.php:348
 msgid "Email Content"
-msgstr "Obsah emailu"
+msgstr "Isi Email"
 
 #: inc/Settings.php:161
 msgid "Enable notification for new answer."
@@ -917,20 +786,19 @@ msgstr ""
 msgid "Enable notification for new comment of answer."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:400
+#, fuzzy
 msgid "Read"
-msgstr "Číst"
+msgstr "Selanjutnya"
 
-# @ dwqa
 #: inc/Settings.php:401
+#, fuzzy
 msgid "Post"
-msgstr "Napsat"
+msgstr "Dikirimkan oleh"
 
-# @ dwqa
 #: inc/Settings.php:429 inc/Settings.php:465 inc/Settings.php:500
 msgid "Reset Default"
-msgstr "Obnovit výchozí"
+msgstr "Set Ulang ke Standar"
 
 #: inc/Settings.php:467
 msgid "Comments"
@@ -944,10 +812,9 @@ msgstr ""
 msgid "Enable captcha on single question page."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:533
 msgid "Default"
-msgstr "Obnovit výchozí"
+msgstr ""
 
 #: inc/Settings.php:546
 msgid "questions."
@@ -978,14 +845,15 @@ msgid "Show all answers on single question page."
 msgstr ""
 
 #: inc/Settings.php:593
+#, fuzzy
 msgid "Select template for Single Quesiton page"
-msgstr "Vyberte šablonu pro stránku s jedním dotazem"
+msgstr "Pilih Halaman Arsip Pertanyaan "
 
 #: inc/Settings.php:599
 msgid ""
 "By default, your single.php template file will be used if you do not choose "
 "any template"
-msgstr "Jako výchozí se použije šablona single.php, pokud nezvolíte jinak"
+msgstr ""
 
 #: inc/Settings.php:607
 #, php-format
@@ -996,15 +864,13 @@ msgid ""
 "<code>%s</code>. If you leave these blank the default will be used."
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:732
 msgid "Plugin Settings"
-msgstr "Nastavení pluginu"
+msgstr "Pengaturan Plugin"
 
-# @ dwqa
 #: inc/Settings.php:732
 msgid "Settings"
-msgstr "Nastavení"
+msgstr "Pengaturan"
 
 #: inc/Settings.php:768
 msgid "Email Settings"
@@ -1026,15 +892,13 @@ msgstr ""
 msgid "Page Settings"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:791
 msgid "Question List Page"
-msgstr "Stránka se seznamem dotazů"
+msgstr "Halaman Daftar Pertanyaan"
 
-# @ dwqa
 #: inc/Settings.php:799 inc/Settings.php:930
 msgid "Ask Question Page"
-msgstr "Stránka s formulářem dotazu"
+msgstr "Halaman Mengajukan Pertanyaan"
 
 #: inc/Settings.php:842
 msgid "Question Settings"
@@ -1072,10 +936,9 @@ msgstr ""
 msgid "Single Question Page"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:950
 msgid "Permalink Settings"
-msgstr "Nastavení permalinků"
+msgstr "Pengaturan Permalink"
 
 #: inc/Settings.php:957
 msgid "Question Base"
@@ -1089,25 +952,22 @@ msgstr ""
 msgid "Question Tag Base"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1042
+#, fuzzy
 msgid "From Email"
-msgstr "Od (email)"
+msgstr "Email"
 
-# @ dwqa
 #: inc/Settings.php:1110 inc/Settings.php:1117
 msgid "Group Permission"
-msgstr "Oprávnění skupiny"
+msgstr "Hak akses Kelompok"
 
-# @ dwqa
 #: inc/Settings.php:1145
-msgid "DWQA Settings"
-msgstr "Nastavení DWQA"
+msgid "EMQA Settings"
+msgstr "Pengaturan EMQA"
 
-# @ dwqa
 #: inc/Settings.php:1149
 msgid "General"
-msgstr "Obecné"
+msgstr "Umum"
 
 #: inc/Settings.php:1150
 msgid "Emails"
@@ -1119,16 +979,15 @@ msgstr ""
 
 #: inc/Settings.php:1152
 msgid "Licenses"
-msgstr "Licence"
+msgstr ""
 
 #: inc/Settings.php:1166
 msgid "Email settings"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1168
 msgid "Email Logo"
-msgstr "Logo emailu"
+msgstr "Logo Email"
 
 #: inc/Settings.php:1182
 msgid "New Question Notifications (to Admin)"
@@ -1158,14 +1017,13 @@ msgstr ""
 msgid "New Comment to Answer Notifications (to Admin)"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1314
 msgid "Save all changes"
-msgstr "Uložit změny"
+msgstr "Simpan perubahan"
 
 #: inc/Settings.php:1328
 #, php-format
-msgid "Manage <a href=\"%s\">DWQA Extensions</a> license keys"
+msgid "Manage <a href=\"%s\">EMQA Extensions</a> license keys"
 msgstr ""
 
 #: inc/Settings.php:1346 inc/Settings.php:1351 inc/Settings.php:1356
@@ -1173,275 +1031,245 @@ msgstr ""
 msgid "Forward to"
 msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1366
 msgid "Cc"
-msgstr "Kopie"
+msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1371
 msgid "Bcc"
-msgstr "Skrytá kopie"
+msgstr ""
 
-# @ dwqa
 #: inc/Settings.php:1376
 msgid "This address will be used as the sender of the outgoing emails."
-msgstr "Tato adresa bude použita jako odesílatel odchozích emailů"
+msgstr ""
 
 #: inc/Settings.php:1382
 msgid "Send a copy of every email to admin."
 msgstr ""
 
-# @ dwqa
 #: inc/Shortcode.php:115 inc/widgets/Popular_Question.php:21
+#, fuzzy
 msgid "Popular Questions"
-msgstr "Populární dotazy"
+msgstr "EMQA Pertanyaan Populer"
 
-# @ dwqa
 #: inc/Shortcode.php:152
+#, fuzzy
 msgid "Latest Answers"
-msgstr "Poslední odpovědi"
+msgstr "Jawaban Baru"
 
-# @ dwqa
 #: inc/Shortcode.php:178
+#, fuzzy
 msgid "Answer at"
-msgstr "Odpověď na"
+msgstr "Jawaban"
 
-# @ dwqa
 #: inc/Shortcode.php:178
 msgid "Link to"
-msgstr "Link k"
+msgstr "Tautkan Ke"
 
-# @ dwqa
 #: inc/Shortcode.php:206
 #, php-format
 msgid "%d person who is following this question"
 msgid_plural "%d people who are following this question"
-msgstr[0] "%d člověk sledujících tento dotaz"
-msgstr[1] "%d lidé sledující tento dotaz"
-msgstr[2] "%d lidí sledujících tento dotaz"
+msgstr[0] ""
 
 #: inc/Shortcode.php:236
 msgid "Question List"
 msgstr ""
 
-# @ dwqa
 #: inc/Status.php:300
 msgid "Answered"
-msgstr "Odpovězen"
+msgstr "Sudah dijawab"
 
-# @ dwqa
 #: inc/Status.php:324
+#, fuzzy
 msgid "Missing post ID"
-msgstr "Chybí ID příspěvku"
+msgstr "ID pos tidak ditemukan"
 
-# @ dwqa
 #: inc/Status.php:337
+#, fuzzy
 msgid "Post does not exist"
-msgstr "Příspěvek neexistuje"
+msgstr "Tulisan tidak ditemukan"
 
-# @ dwqa
 #: inc/Status.php:342
 msgid "Invalid post status"
-msgstr "Neplatný stav příspěvku"
+msgstr "Status tulisan salah"
 
-# @ default
 #: inc/Template.php:15 templates/content-edit.php:44
 #: templates/question-submit-form.php:46
 msgid "Tag"
-msgstr "Štítek"
+msgstr ""
 
-# @ dwqa
 #: inc/Template.php:15 inc/Template.php:20 templates/content-edit.php:29
 #: templates/question-submit-form.php:32
 msgid "Category"
-msgstr "Kategorie dotazu"
+msgstr "Katagori"
 
 #: inc/Template.php:43
 msgid "Showing search results for"
-msgstr "Výsledek hledání pro:"
+msgstr ""
 
 #: inc/Template.php:78
 msgid "What do you want to know?"
-msgstr "Začněte psát hledaný výraz. Hledání začne ihned ..."
+msgstr ""
 
 #: inc/Template.php:157
 msgid "Subscribe"
-msgstr "Odběr"
+msgstr ""
 
-# @ default
 #: inc/Template.php:445
 msgid "Email"
 msgstr "Email"
 
 #: inc/Template.php:447
 msgid "Name"
-msgstr ""
+msgstr "Nama"
 
-# @ default
 #: inc/Template.php:449
 #, php-format
 msgid "Required fields are marked %s"
-msgstr "Povinné položky jsou označeny %s"
+msgstr "File yang harus ada %s"
 
-# @ dwqa
 #: inc/Template.php:461
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr "Musíte být <a href=\"%s\">přihlášen</a> k napsání komentáře."
+msgstr "Anda harus <a href=\"%s\">Masuk</a> untuk menuliskan komentar."
 
-# @ dwqa
 #: inc/Template.php:464
 #, php-format
 msgid ""
 "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
 "and attributes: %s"
 msgstr ""
-"Můžete použít tyto <abbr title=\"HyperText Markup Language\">HTML</abbr> "
-"tagy a atributy: %s"
+"Anda dapat mengunakan <abbr title=\"HyperText Markup Language\">HTML</abbr> "
+"tags dan attribut: %s"
 
-# @ dwqa
 #: inc/Template.php:467
 msgid "Leave a Reply"
-msgstr "Přidejte odpověď"
+msgstr "Tuliskan Tanggapan"
 
-# @ dwqa
 #: inc/Template.php:468
 #, php-format
 msgid "Leave a Reply to %s"
-msgstr "Přidejte odpověď k %s"
+msgstr "Tulis Tanggapan ke %s"
 
-# @ dwqa
 #: inc/Template.php:469
 msgid "Cancel reply"
-msgstr "Zrušit odpověď"
+msgstr "Batal menanggapi"
 
-# @ dwqa
 #: inc/Template.php:470
 msgid "Post Comment"
-msgstr "Odeslat komentář"
+msgstr "Tuliskan Komentar"
 
-# @ dwqa
 #: inc/Template.php:645
+#, fuzzy
 msgid "Sticky Question"
-msgstr "Zvýrazněný dotaz"
+msgstr "Ajukan _Pertanyaan"
 
-# @ dwqa
 #: inc/Template.php:659
 msgid "Ask a question"
-msgstr "Položit dotaz"
+msgstr "Ajukan Pertanyaan"
 
-# @ dwqa
 #: inc/Template.php:661
+#, fuzzy
 msgid "Login to ask a question"
-msgstr "Přihlašte se k položení vašeho dotazu"
+msgstr "Masuk untuk mengirimkan pertanyaan"
 
-# @ dwqa
 #: inc/Template.php:1128
+#, fuzzy
 msgid "Choose as the best answer"
-msgstr "Vyberte nejlepší odpověď"
+msgstr "Pilih jawaban terbaik"
 
 #: inc/Updater.php:97
 msgid "License Key"
-msgstr "Licenční klíč"
+msgstr ""
 
-# @ dwqa
 #: inc/Updater.php:122
 msgid "Activate"
-msgstr "Aktivuj"
+msgstr ""
 
 #: inc/Updater.php:176
 msgid "Plugin was activated"
-msgstr "Plugin byl aktivován"
+msgstr ""
 
-# @ dwqa
 #: inc/User.php:230
 msgid "Staff"
-msgstr "Personál"
+msgstr "Staff"
 
-# @ default
 #: inc/Walker/Category.php:20 inc/Walker/Tag.php:20
 #, php-format
 msgid "View all posts filed under %s"
-msgstr "Zobrazit všechny příspěvky zařazené pod %s"
+msgstr "Lihat semua tulisan dalam %s"
 
-# @ default
 #: inc/Walker/Category.php:35 inc/Walker/Tag.php:35
 #, php-format
 msgid "Feed for all posts filed under %s"
-msgstr "Feed pro všechny zařazené pod %s"
+msgstr "Feed semua post dalam %s"
 
-# @ dwqa
 #: inc/widgets/Closed_Question.php:11
 msgid "Show a list of questions marked as closed."
-msgstr "Zobrazit seznam uzavřených dotazů"
+msgstr ""
 
-# @ dwqa
 #: inc/widgets/Closed_Question.php:12
-msgid "DWQA Closed Questions"
-msgstr "Uzavřené dotazy"
+#, fuzzy
+msgid "EMQA Closed Questions"
+msgstr "EMQA Pertanyaan Berkaitan"
 
-# @ dwqa
 #: inc/widgets/Closed_Question.php:18
+#, fuzzy
 msgid "Closed Questions"
-msgstr "Uzavřené dotazy"
+msgstr "Semua Pertanyaa"
 
-# @ default
 #: inc/widgets/Closed_Question.php:72 inc/widgets/Latest_Question.php:71
 #: inc/widgets/Popular_Question.php:66 inc/widgets/Related_Question.php:48
 msgid "Widget title"
-msgstr "Nadpis widgetu"
+msgstr "Judul Widget"
 
-# @ default
 #: inc/widgets/Closed_Question.php:75 inc/widgets/Latest_Question.php:74
 #: inc/widgets/Popular_Question.php:69 inc/widgets/Related_Question.php:51
 msgid "Number of posts"
-msgstr "Počet příspěvků"
+msgstr "Jumlah tulisan"
 
-# @ dwqa
 #: inc/widgets/Latest_Question.php:10
 msgid "Show a list of latest questions."
-msgstr "Zobrazit seznam posledních dotazů"
+msgstr ""
 
-# @ dwqa
 #: inc/widgets/Latest_Question.php:11
-msgid "DWQA Latest Questions"
-msgstr "Poslední dotazy"
+#, fuzzy
+msgid "EMQA Latest Questions"
+msgstr "EMQA Pertanyaan Berkaitan"
 
-# @ dwqa
 #: inc/widgets/Latest_Question.php:17
+#, fuzzy
 msgid "Latest Questions"
-msgstr "Poslední dotazy"
+msgstr "Ubah Pertanyaan"
 
 #: inc/widgets/Latest_Question.php:44
 msgid "ago"
-msgstr ""
+msgstr "yang lalu"
 
 #: inc/widgets/Latest_Question.php:79
 msgid "Show question date"
 msgstr ""
 
-# @ dwqa
 #: inc/widgets/Popular_Question.php:13
 msgid "Show a list of popular questions."
-msgstr "Zobrazit seznam dotazů seřazený podle počtu zobrazení."
+msgstr ""
 
-# @ dwqa
 #: inc/widgets/Popular_Question.php:15
-msgid "DWQA Popular Questions"
-msgstr "Oblíbené dotazy"
+msgid "EMQA Popular Questions"
+msgstr "EMQA Pertanyaan Populer"
 
-# @ dwqa
 #: inc/widgets/Related_Question.php:11
 msgid ""
 "Show a list of questions that related to a question. Just show in single "
 "question page"
-msgstr "Zobrazit seznam dotazů podobných tomuto."
+msgstr ""
+"Menampilkan daftar pertanyaan yang berkaitan. Hanya ditampilakan di halaman "
+"detail pertanyaan"
 
-# @ dwqa
 #: inc/widgets/Related_Question.php:12
-msgid "DWQA Related Questions"
-msgstr "Podobné dotazy"
+msgid "EMQA Related Questions"
+msgstr "EMQA Pertanyaan Berkaitan"
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:181
 #, php-format
@@ -1458,25 +1286,21 @@ msgid ""
 "\">update now</a>."
 msgstr ""
 
-# @ dwqa
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:326
 msgid "You do not have permission to install plugin updates"
-msgstr "Nemáte dostatečná práva k instalaci update pluginu"
+msgstr ""
 
 #: lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php:326
 msgid "Error"
-msgstr "Chyba"
+msgstr ""
 
-# @ default
-# @ dwqa
 #: templates/answer-submit-form.php:12
 msgid "Your Answer"
-msgstr "Vaše odpověď"
+msgstr ""
 
-# @ dwqa
 #: templates/answer-submit-form.php:21 templates/question-submit-form.php:52
 msgid "Your Email"
-msgstr "Váš email *"
+msgstr ""
 
 #: templates/answer-submit-form.php:26 templates/question-submit-form.php:57
 msgid "Your Name"
@@ -1484,119 +1308,103 @@ msgstr ""
 
 #: templates/answer-submit-form.php:33 templates/question-submit-form.php:24
 msgid "Who can see this?"
-msgstr "Kdo to může vidět ?"
+msgstr ""
 
-# @ dwqa
 #: templates/answer-submit-form.php:34 templates/question-submit-form.php:25
 msgid "Public"
-msgstr "Veřejné"
+msgstr "Publik"
 
 #: templates/answer-submit-form.php:35 templates/question-submit-form.php:26
 msgid "Only Me &amp; Admin"
-msgstr "Pouze já &amp; Admin"
+msgstr ""
 
-# @ dwqa
 #: templates/answer-submit-form.php:39 templates/question-submit-form.php:65
 msgid "Submit"
-msgstr "Odeslat"
+msgstr ""
 
-# @ dwqa
 #: templates/answers.php:12
 #, php-format
 msgid "%s Answers"
-msgstr "%s Odpovědi"
+msgstr ""
 
 #: templates/archive-question-filter.php:14
 msgid "Filter:"
-msgstr "Filtr:"
+msgstr ""
 
-# @ dwqa
 #: templates/archive-question-filter.php:16
 msgid "All"
-msgstr "Všechny"
+msgstr "Semua"
 
-# @ dwqa
 #: templates/archive-question-filter.php:22
 msgid "Unanswered"
-msgstr "Neodpovězeno"
+msgstr ""
 
-# @ dwqa
 #: templates/archive-question-filter.php:24
 msgid "My questions"
-msgstr "Mé otázky"
+msgstr ""
 
 #: templates/archive-question-filter.php:25
 msgid "My subscribes"
-msgstr "Mé odběry"
+msgstr ""
 
 #: templates/archive-question-filter.php:29
 msgid "Subscribes"
-msgstr "Odběry"
+msgstr ""
 
-# @ dwqa
 #: templates/archive-question-filter.php:32
 msgid "Sort by"
-msgstr "Třídit dle"
+msgstr ""
 
-# @ edd-dw-membersip
-# @ dwqa
 #: templates/archive-question-filter.php:33
 msgid "Views"
-msgstr "Zobrazit"
+msgstr ""
 
-# @ dwqa
 #: templates/archive-question-filter.php:35
 msgid "Votes"
-msgstr "Hlasy"
+msgstr ""
 
-# @ dwqa
 #: templates/archive-question.php:28
 msgid "Ask Question"
-msgstr "Položit dotaz"
+msgstr "Ajukan _Pertanyaan"
 
 #: templates/captcha-form.php:20
 msgid "Enter the result"
-msgstr "Vlož výsledek"
+msgstr ""
 
 #: templates/content-comment.php:16
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid "replied %s ago"
-msgstr "odpovězeno před %s"
+msgstr ""
 
 #: templates/content-edit.php:21 templates/question-submit-form.php:13
 msgid "Title"
-msgstr "Titulek"
+msgstr ""
 
-# @ dwqa
 #: templates/content-edit.php:36 templates/question-submit-form.php:38
 msgid "Select question category"
-msgstr "Vyberte kategorii"
+msgstr "Pilih kategori pertanyaan"
 
-# @ dwqa
 #: templates/content-edit.php:50
 msgid "Save Changes"
-msgstr "Uložit změny"
+msgstr ""
 
-# @ dwqa
 #: templates/content-none.php:10
 msgid "You do not have permission to view questions"
-msgstr "Nemáte práva k zobrazení dotazů"
+msgstr "Anda tidak punya hak akses untuk melihat pertanyaan."
 
-# @ dwqa
 #: templates/content-none.php:12
 msgid "Sorry, but nothing matched your filter"
-msgstr "Nic k zobrazení."
+msgstr ""
 
-# @ dwqa
 #: templates/content-question.php:18
 msgid "asked"
-msgstr "dotaz"
+msgstr "bertanya"
 
 #: templates/content-question.php:25
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s %s ago</span>"
-msgstr "<span><a href=\"%s\">%s%s</a> %s před %s</span>"
+msgstr ""
 
 #: templates/content-question.php:26 templates/content-single-answer.php:25
 msgid "&nbsp;&bull;&nbsp;"
@@ -1605,29 +1413,27 @@ msgstr ""
 #: templates/content-question.php:31
 #, php-format
 msgid "<strong>%1$s</strong> views"
-msgstr "<strong>%1$s</strong> shlédnutí"
+msgstr ""
 
 #: templates/content-question.php:35
 #, php-format
 msgid "<strong>%1$s</strong> answers"
-msgstr "<strong>%1$s</strong> odpovědí"
+msgstr ""
 
 #: templates/content-question.php:39
 #, php-format
 msgid "<strong>%1$s</strong> votes"
-msgstr "<strong>%1$s</strong> hlasování"
+msgstr ""
 
-# @ dwqa
 #: templates/content-single-answer.php:12
 #: templates/content-single-question.php:14
 msgid "Vote Up"
-msgstr "Palec nahoru"
+msgstr "Tilai Positif"
 
-# @ dwqa
 #: templates/content-single-answer.php:13
 #: templates/content-single-question.php:15
 msgid "Vote Down"
-msgstr "Palec dolů"
+msgstr "Tilai Negatif"
 
 #: templates/content-single-answer.php:17
 #: templates/content-single-answer.php:19
@@ -1637,43 +1443,39 @@ msgstr ""
 #: templates/content-single-answer.php:23
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s answered %s ago</span>"
-msgstr "<span><a href=\"%s\">%s%s</a> %s odpověděl před %s</span>"
+msgstr ""
 
-# @ dwqa
 #: templates/content-single-answer.php:26
 msgid "Private"
-msgstr "Soukromé"
+msgstr "Pribadi"
 
 #: templates/content-single-question.php:19
 #, php-format
 msgid "<span><a href=\"%s\">%s%s</a> %s asked %s ago</span>"
-msgstr "<span><a href=\"%s\">%s%s</a> %s zeptal se před %s</span>"
+msgstr ""
 
-# @ default
-# @ dwqa
 #: templates/content-single-question.php:25
 msgid "Question Tags: "
-msgstr "Štítky dotazu:"
+msgstr ""
 
-# @ dwqa
 #: templates/content-single-question.php:29
 msgid "This question is:"
-msgstr "Tento dotaz je:"
+msgstr ""
 
-# @ dwqa
 #: templates/question-submit-form.php:69
+#, fuzzy
 msgid "You do not have permission to submit a question"
-msgstr "Nemáte oprávnění k položení dotazu."
+msgstr "Anda tidak punya hak akses untuk menulis pertanyaan."
 
 #: upgrades/upgrades.php:25
 #, php-format
 msgid ""
-"DW Question Answer needs to upgrade the database, click %shere%s to start "
+"EMO Questalk  needs to upgrade the database, click %shere%s to start "
 "the upgrade."
 msgstr ""
 
 #: upgrades/upgrades.php:33
-msgid "DWQA Upgrade"
+msgid "EMQA Upgrade"
 msgstr ""
 
 #: upgrades/upgrades.php:40
@@ -1682,735 +1484,752 @@ msgid ""
 "minutes. You will be automatically redirected when the upgrade is finished..."
 msgstr ""
 
-# @ dwqa
 #: upgrades/upgrades.php:130
 msgid "You do not have permission to do this task"
-msgstr "Nemáte oprávnění k této akci"
+msgstr ""
 
 #: upgrades/upgrades.php:147
 msgid "Just do it.."
-msgstr "Právě to udělej"
+msgstr ""
 
 #: upgrades/upgrades.php:155
 #, php-format
 msgid "Move to next step %d"
-msgstr "Jdi na další krok %d"
+msgstr ""
 
 #: upgrades/upgrades.php:172
 msgid "Upgrade process is done"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "DW Question Answer"
+msgid "EMO Questalk "
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"A WordPress plugin was make by DesignWall.com to build an Question Answer "
+"A WordPress plugin was make by Emohelp.com to build an Question Answer "
 "system for support, asking and comunitcate with your customer"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "DesignWall"
+msgid "Emohelp"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://www.designwall.com"
+msgid "http://www.Emohelp.com"
 msgstr ""
 
-# @ dwqa
 #~ msgid "Next"
-#~ msgstr "Další"
+#~ msgstr "Selanjutnya"
 
-# @ dwqa
 #~ msgid "Prev"
-#~ msgstr "Předchozí"
+#~ msgstr "Sebelumnya"
 
-# @ dwqa
 #~ msgid "Please enter your question"
-#~ msgstr "Prosím zadejte váš dotaz"
+#~ msgstr "Silakan tuliskan pertanyaan"
 
-# @ dwqa
 #~ msgid "Your question must be at least 2 characters in length"
-#~ msgstr "Váš dotaz musí být minimálně 2 znaky dlouhý"
+#~ msgstr "Pertanyaan Anda harus lebih dari 2 karakter"
 
-# @ dwqa
 #~ msgid "Enter a valid email address"
-#~ msgstr "Zadejte platný email"
+#~ msgstr "Masukkan alamat email yang valid"
 
-# @ dwqa
 #~ msgid "Enter a question title"
-#~ msgstr "Zadejte nadpis dotazu"
+#~ msgstr "Tuliskan judul pertanyaan"
 
-# @ dwqa
+#, fuzzy
 #~ msgid "Please add your name"
-#~ msgstr "Zadejte vaše jméno"
+#~ msgstr "Silahkan tuliskan jawaban"
 
-# @ dwqa
 #~ msgid "Please enter your answer"
-#~ msgstr "Zadejte vaši odpověď"
+#~ msgstr "Silahkan tuliskan jawaban"
 
-# @ dwqa
 #~ msgid "Comment must have more than 2 characters"
-#~ msgstr "Komentář musí být delší než 2 znaky"
+#~ msgstr "Komentar harus lebih dari 2 karakter"
 
-# @ dwqa
 #~ msgid "Not found! Try another keyword."
-#~ msgstr "Nenalezeno. Zkuste jiné klíčové slovo."
+#~ msgstr "Tidak ditemukan! Silahkan memakai kata kunci yang lain."
 
-# @ dwqa
 #~ msgid "Or press <strong>ENTER</strong> to get more questions"
-#~ msgstr "Nebo zmáčkněte <strong>ENTER</strong> k zobrazení více dotazů"
+#~ msgstr ""
+#~ "Atau tekan <strong>ENTER</strong> untuk mendapatkan pertanyaan yang lain"
 
-# @ dwqa
 #~ msgid "Update"
-#~ msgstr "Aktualizace"
+#~ msgstr "Perbarui"
 
-# @ dwqa
 #~ msgid "Cancel"
-#~ msgstr "Zrušit"
+#~ msgstr "Batalkan"
 
-# @ dwqa
 #~ msgid "Do you want to delete this comment?"
-#~ msgstr "Chcete smazat tento komentář?"
+#~ msgstr "Apakah Anda ingin menghapus komentar ini?"
 
-# @ dwqa
 #~ msgid "Do you want to delete this answer?"
-#~ msgstr "Chcete smazat tuto odpověď?"
+#~ msgstr "Apakah Anda ingin menghapus jawaban ini?"
 
-# @ dwqa
+#, fuzzy
 #~ msgid "Do you want to update this answer?"
-#~ msgstr "Chcete aktualizovat tuto odpověď?"
+#~ msgstr "Apakah Anda ingin memperbarui jawaban ini?"
 
-# @ dwqa
+#, fuzzy
 #~ msgid "Do you want to report this answer?"
-#~ msgstr "Chcete nahlásit tuto odpověď?"
+#~ msgstr "Apakah Anda ingin melaporkan Jawaban ini"
 
-# @ dwqa
 #~ msgid "Report"
-#~ msgstr "Nahlásit"
+#~ msgstr "Laporkan"
 
-# @ dwqa
 #~ msgid "Undo"
-#~ msgstr "Zpět"
+#~ msgstr "Batalkan"
 
-# @ dwqa
 #~ msgid ""
 #~ "This answer will be marked as spam and hidden. Do you want to flag it?"
 #~ msgstr ""
-#~ "Tato odpověď bude označena jako spam a skryta. Chcete ji tak označit?"
+#~ "Jawaban ini akan ditandai sebagai spam dan disembunyikan. Apakah Anda "
+#~ "ingin menandainya?"
 
-# @ dwqa
 #~ msgid "This answer was flagged as spam. Do you want to show it"
-#~ msgstr "Tato odpověď byla označena jako spam. Chcete ji zobrazit"
-
-# @ dwqa
-#~ msgid "This answer was flagged as spam"
-#~ msgstr "Tato odpověď byla označena jako spam"
-
-# @ dwqa
-#~ msgid "hide"
-#~ msgstr "schovat"
-
-# @ dwqa
-#~ msgid "show"
-#~ msgstr "zobrazit"
-
-# @ dwqa
-#~ msgid "Follow This Question"
-#~ msgstr "Sledovat tento dotaz"
-
-# @ dwqa
-#~ msgid "Unfollow This Question"
-#~ msgstr "Zrušit sledování tohoto dotazu"
-
-# @ dwqa
-#~ msgid "Pin this question to top"
-#~ msgstr "Připíchnout tento dotaz nahoru"
-
-# @ dwqa
-#~ msgid "Unpin this question from top"
-#~ msgstr "Odpíchnout tento dotaz z vrchu"
-
-# @ dwqa
-#~ msgid "Do you want to delete this question?"
-#~ msgstr "Chcete smazat tento dotaz?"
-
-# @ dwqa
-#~ msgid "A page where displays all questions"
-#~ msgstr "Stránka, kde se zobrazí všechny dotazy"
-
-# @ dwqa
-#~ msgid "A page where users can submit questions."
-#~ msgstr "Stránka, kde mohou návštěvníci odeslat své dotazy."
-
-# @ dwqa
-#~ msgid "Upload or choose a logo to be displayed at the top of the email"
-#~ msgstr "Nahrát nebo vybrat logo, které se zobrazí v zápatí emailu."
-
-# @ dwqa
-#~ msgid "Enable notification for new question"
-#~ msgstr "Povolit upozornění na nové dotazy"
-
-# @ dwqa
-#~ msgid "Enable notification for new answer"
-#~ msgstr "Povolit upozornění na novou odpověď"
-
-#~ msgid "Enable notification for new answer (to Followers )"
 #~ msgstr ""
-#~ "Povolit upozornění na novou odpověď (návštěvníkům, kteří sledují dotaz)"
+#~ "Jawaban ini telah ditandai sebagai spam. Apakah anda ingin melihatnya?"
 
-# @ dwqa
+#~ msgid "This answer was flagged as spam"
+#~ msgstr "Jawaban ditandai sebagai spam"
+
+#~ msgid "hide"
+#~ msgstr "Sembunyikan"
+
+#~ msgid "show"
+#~ msgstr "Tampilkan"
+
+#~ msgid "Follow This Question"
+#~ msgstr "Ikuti Pertanyaan  ini."
+
+#~ msgid "Unfollow This Question"
+#~ msgstr "Berhenti Mengikuti Pertanyaan  ini."
+
+#, fuzzy
+#~ msgid "Pin this question to top"
+#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
+
+#, fuzzy
+#~ msgid "Unpin this question from top"
+#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
+
+#, fuzzy
+#~ msgid "Do you want to delete this question?"
+#~ msgstr "Apakah Anda ingin menghapus komentar ini?"
+
+#~ msgid "Publish"
+#~ msgstr "Terbitkan"
+
+#~ msgid "Everyone can see"
+#~ msgstr "Semua bisa melihatnya"
+
+#~ msgid "Only Author and Administrator can see"
+#~ msgstr "Hanya Penulis dan Admin yang dapat melihatnya"
+
+#~ msgid "Sorry, but nothing matched your filter. "
+#~ msgstr "Maaf, tapi tidak ditemukan yang pas menurut sortingan Anda."
+
+#, fuzzy
+#~ msgid "You can ask question"
+#~ msgstr "Anda dapat menulis pertanyaan <a href=\""
+
+#, fuzzy
+#~ msgid "Please"
+#~ msgstr "Silahkan masuk"
+
+#~ msgid " or"
+#~ msgstr " atau"
+
+#~ msgid " to submit question."
+#~ msgstr " untuk menulis pertanyaan."
+
+#, fuzzy
+#~ msgid "Search query is empty"
+#~ msgstr "Hasil pencarian kosong"
+
+#~ msgid "A page where displays all questions"
+#~ msgstr "Halaman yang menampilkan semua pertanyaan"
+
+#, fuzzy
+#~ msgid "A page where users can submit questions."
+#~ msgstr "Halaman untuk user dapat mengirim pertanyaan."
+
+#~ msgid "Upload or choose a logo to be displayed at the top of the email"
+#~ msgstr "Unggah atau pilih logo untuk ditampilkan di bagian atas email"
+
+#~ msgid "Enable notification for new question"
+#~ msgstr "Bolehkan pemberitahuan untuk pertayaan baru"
+
+#~ msgid "Enable notification for new answer"
+#~ msgstr "Bolehkan pemberitahuan untuk jawaban baru"
+
+#, fuzzy
+#~ msgid "Enable notification for new answer (to Followers )"
+#~ msgstr "Bolehkan pemberitahuan untuk jawaban baru (kepada Pengikut)"
+
 #~ msgid "Enable notification for new comment of question"
-#~ msgstr "Povolit upozornění na nový komentář nebo dotaz"
+#~ msgstr "Bolehkan pemberitahuan untuk tanggapan baru atas pertanyaan"
 
-# @ dwqa
 #~ msgid "Enable notification for new comment of answer"
-#~ msgstr "Povolit upozornění na nový komentář nebo odpověď"
+#~ msgstr "Bolehkan pemberitahuan untuk tanggapan baru atas jawaban"
 
-# @ dwqa
 #~ msgid "Comment"
-#~ msgstr "Komentáře"
+#~ msgstr "Komentar"
 
-# @ dwqa
 #~ msgid "Enable/Disable captcha on submit question page"
-#~ msgstr "Povolit/zakázat Captchu na stránce s odesláním dotazu"
+#~ msgstr "Aktif/Non Aktifkan captcha pada halaman mengirim pertanyaan"
 
-# @ dwqa
 #~ msgid "Enable/Disable captcha on single question page"
-#~ msgstr "Povolit/zakázat Captchu na stránce s jedním dotazem"
+#~ msgstr "Aktif/Non Aktifkan captcha pada halaman pertanyaan tunggal"
 
-# @ dwqa
+#, fuzzy
 #~ msgid "questions"
-#~ msgstr "otázky"
+#~ msgstr "Pertanyaan"
 
-# @ dwqa
-#~ msgid "Allow members to post private question"
-#~ msgstr "Povolit návštěvníkům pokládat soukromé dotazy"
-
-# @ dwqa
-#~ msgid "Question must be manually approved"
-#~ msgstr "Dotazy musí být ručně schváleny"
-
-# @ dwqa
-#~ msgid "Archive page show at most"
-#~ msgstr "Stránka z archive zobrazí nejvíce"
-
-# @ dwqa
-#~ msgid "Private Question"
-#~ msgstr "Soukromý dotaz"
-
-# @ dwqa
-#~ msgid "Review Question"
-#~ msgstr "Zhodnotit dotaz"
-
-# @ dwqa
-#~ msgid "DWQA 404 Page"
-#~ msgstr "Stránka 404"
-
-# @ dwqa
-#~ msgid "Single Question Template"
-#~ msgstr "Šablona stránky s jedním dotazem"
-
-# @ dwqa
-#~ msgid "Time settings"
-#~ msgstr "Nastavení času"
-
-# @ dwqa
-#~ msgid "New Question Time Frame"
-#~ msgstr "Časové období nového dotazu"
-
-# @ dwqa
-#~ msgid "Question Overdue - Time Frame"
-#~ msgstr "Zastaralý dotaz - časové období"
-
-# @ dwqa
-#~ msgid "Captcha settings"
-#~ msgstr "Nastavení Captcha"
-
-# @ dwqa
-#~ msgid "Captcha on Submit Question Page"
-#~ msgstr "Captcha na stránce s odesláním dotazu"
-
-# @ dwqa
-#~ msgid "Captcha on Single Question Page"
-#~ msgstr "Captcha na stránce s jedním dotazem"
-
-# @ dwqa
-#~ msgid "Google Captcha Public Key"
-#~ msgstr "Veřejný klíč Google Captcha"
-
-# @ dwqa
-#~ msgid "Google Captcha Private Key"
-#~ msgstr "Privátní klíč Google Captcha"
-
-# @ dwqa
-#~ msgid "Single Question"
-#~ msgstr "Jeden dotaz"
-
-# @ dwqa
-#~ msgid "Single Category"
-#~ msgstr "Jedna kategorie"
-
-# @ dwqa
-#~ msgid "Single Tag"
-#~ msgstr "Jeden štítek"
-
-# @ dwqa
-#~ msgid "Notification"
-#~ msgstr "Upozornění"
-
-# @ dwqa
-#~ msgid "Permission"
-#~ msgstr "Oprávnění"
-
-# @ dwqa
-#~ msgid "Email setup"
-#~ msgstr "Nastavení emailu"
-
-# @ default
-# @ dwqa
-#~ msgid "New Question"
-#~ msgstr "Nový dotaz"
-
-# @ default
-# @ dwqa
-#~ msgid "New Answer"
-#~ msgstr "Nová odpověď"
-
-# @ dwqa
-#~ msgid "New Comment to Question"
-#~ msgstr "Nový komentář k otázce"
-
-# @ dwqa
-#~ msgid "New Comment to Answer"
-#~ msgstr "Nový komentář k dotazu"
-
-#~ msgid "New Answer (to Followers )"
-#~ msgstr "Nová odpověď (followerům)"
-
-#~ msgid "New Comment to Question (to Followers )"
-#~ msgstr "Nový komentář k dotazu (followerům)"
-
-#~ msgid "New Comment to Answer (to Followers )"
-#~ msgstr "Nový komentář k odpovědi (followerům)"
-
-# @ dwqa
 #~ msgid "New Question Notification"
-#~ msgstr "Upozornění na nový dotaz"
+#~ msgstr "Pemberitahuan Pertanyaan Baru"
 
-# @ dwqa
 #~ msgid "New Answer Notification"
-#~ msgstr "Upozornění na novou odpověď"
+#~ msgstr "Pemberitahuan Tanggapan Baru"
 
-#~ msgid "New Answer Notification (to Followers )"
-#~ msgstr "Upozornění na novou odpověď (followerům)"
-
-# @ dwqa
-#~ msgid "New Comment to Question Notification"
-#~ msgstr "Nový komentář na upozornění na dotaz"
-
-# @ dwqa
-#~ msgid "New Comment to Answer Notification"
-#~ msgstr "Nový komentář na upozornění na odpověď"
-
+#, fuzzy
 #~ msgid "New Comment to Question Notification (to Followers )"
-#~ msgstr "Nový komentář na upozornění na dotaz (followerům)"
+#~ msgstr "Pemberitahuan Tanggapan baru untuk Pertanyaan (untuk Pengikut)"
 
+#~ msgid "New Comment to Answer Notification"
+#~ msgstr "Pemberitahuan Tanggapan Baru untuk Jawaban"
+
+#, fuzzy
+#~ msgid "New Answer Notification (to Followers )"
+#~ msgstr "Pemberitahuan Jawaban Baru (Ke Pengikut)"
+
+#, fuzzy
 #~ msgid "New Comment to Answer Notification (to Followers )"
-#~ msgstr "Nový komentář na upozornění na odpověď (followerům)"
+#~ msgstr "Pemberitahuan Tanggapan baru untuk Jawaban (untuk Pengikut)"
 
-# @ dwqa
-#~ msgid "Send to"
-#~ msgstr "Poslat komu"
+#, fuzzy
+#~ msgid "Private Question"
+#~ msgstr "Ubah Pertanyaan"
 
-# @ dwqa
-#~ msgid "Send A Copy Of Every Email To Admin"
-#~ msgstr "Odeslat kopii každého emailu adminovi"
+#, fuzzy
+#~ msgid "Review Question"
+#~ msgstr "Lihat Pertanyaan"
 
-# @ dwqa
+#~ msgid "Time settings"
+#~ msgstr "Pengaturan waktu"
+
+#~ msgid "New Question Time Frame"
+#~ msgstr "Pengaturan Waktu Pertanyaan Baru"
+
+#~ msgid "Question Overdue - Time Frame"
+#~ msgstr "Pertanyaan telewat - Pengaturan Waktu"
+
+#~ msgid "Captcha settings"
+#~ msgstr "Pengaturan Captcha"
+
+#, fuzzy
+#~ msgid "Captcha on Submit Question Page"
+#~ msgstr "Captcha di halaman Mengirim Pertanyaan"
+
+#, fuzzy
+#~ msgid "Captcha on Single Question Page"
+#~ msgstr "Captha di Halaman Detail Pertanyaan"
+
+#~ msgid "Single Question"
+#~ msgstr "Pertanyaan Tunggal"
+
+#~ msgid "Single Category"
+#~ msgstr "Kategori Tunggal"
+
+#~ msgid "Single Tag"
+#~ msgstr "Tag Tunggal"
+
+#~ msgid "Notification"
+#~ msgstr "Pemberitahuan"
+
+#~ msgid "Permission"
+#~ msgstr "Hak Akses"
+
+#, fuzzy
+#~ msgid "Email setup"
+#~ msgstr "Judul Email"
+
 #~ msgid "You need an account to submit question and get answers. Create one:"
 #~ msgstr ""
-#~ "Potřebujte účet k položení dotazu a získání odpovědi. Vytvořte si jej:"
+#~ "Silahkan mendaftar terlebih dahulu untuk menulis pertanyaan. Daftar "
+#~ "disini:"
 
-# @ dwqa
 #~ msgid "Type your email"
-#~ msgstr "Zadejte váš email"
+#~ msgstr "Tulis email anda"
 
-# @ dwqa
 #~ msgid "Already a member?"
-#~ msgstr "Již registrován?"
+#~ msgstr "Sundah Mendaftar?"
 
-# @ dwqa
 #~ msgid "Log In"
-#~ msgstr "Přihlašte se"
+#~ msgstr "Masuk"
 
-# @ dwqa
 #~ msgid "Login to submit your question"
-#~ msgstr "Přihlašte se k položení vašeho dotazu"
+#~ msgstr "Masuk untuk mengirimkan pertanyaan"
 
-# @ dwqa
+#, fuzzy
 #~ msgid "Type your username"
-#~ msgstr "Zadejte vaše uživatelské jméno"
+#~ msgstr "Tulis email anda"
 
-# @ dwqa
+#, fuzzy
 #~ msgid "Type your password"
-#~ msgstr "Zadejte vaše heslo"
+#~ msgstr "Tulis email anda"
 
-# @ dwqa
 #~ msgid "Not yet a member?"
-#~ msgstr "Neregistrován?"
+#~ msgstr "Belum menjadi anggota?"
 
-# @ dwqa
 #~ msgid "Register"
-#~ msgstr "Registrujte se"
+#~ msgstr "Mendaftar"
 
-# @ dwqa
-#~ msgid ""
-#~ "Enter your email to receive notification regarding your question. Your "
-#~ "email is safe with us and will not be published."
-#~ msgstr ""
-#~ "Zadejte váš email, k dostávání notifikací. Nebojte se, váš email "
-#~ "nezobrazujeme."
-
-# @ dwqa
+#, fuzzy
 #~ msgid "Your email *"
-#~ msgstr "Váš email *"
+#~ msgstr "Tulis email anda"
 
-# @ dwqa
-#~ msgid "Email address ..."
-#~ msgstr "Email ..."
-
-# @ dwqa
-#~ msgid "or <strong><a href=\"%s\">login</a></strong> to submit question"
-#~ msgstr ""
-#~ "nebo <strong><a href=\"%s\">se přihlašte</a></strong> k položení dotazu"
-
-# @ default
 #~ msgid "Private: %s"
-#~ msgstr "Soukromé: %s"
+#~ msgstr "Pribadi: %s"
 
-# @ default
 #~ msgctxt "noun"
 #~ msgid "Comment"
-#~ msgstr "Komentovat"
+#~ msgstr "Komentar"
 
-# @ default
 #~ msgid ""
 #~ "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out "
 #~ "of this account\">Log out?</a>"
 #~ msgstr ""
-#~ "Přihlášen jako <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title="
-#~ "\"Odhlásit se z účtu\">Odhlásit?</a>"
+#~ "Masuk sebagai <a href=\"%1$s\">%2$s</a>.  <a href=\"%3$s\" title=\"Keluar "
+#~ "Akun ini\">Keluar?</a>"
 
-# @ dwqa
 #~ msgid "Your email address will not be published."
-#~ msgstr "Váš email nebude zobrazován."
+#~ msgstr "Email Anda tidak akan dipublikasikan."
 
-# @ dwqa
-#~ msgid "Sorry, but nothing matched your filter. "
-#~ msgstr "Nic k zobrazení"
+#~ msgid "Add New Question"
+#~ msgstr "Tambah Pertanyan Baru"
 
-# @ dwqa
-#~ msgid "You can ask question"
-#~ msgstr "Můžete položit dotaz"
+#~ msgid "Edit Question"
+#~ msgstr "Ubah Pertanyaan"
 
-# @ dwqa
-#~ msgid "here"
-#~ msgstr "zde"
+#~ msgid "New Question"
+#~ msgstr "Pertanyaan Baru"
 
-# @ dwqa
-#~ msgid "Please"
-#~ msgstr "Prosíme"
+#~ msgid "All Questions"
+#~ msgstr "Semua Pertanyaa"
 
-# @ dwqa
-#~ msgid "Login"
-#~ msgstr "přihlašte se"
+#~ msgid "View Question"
+#~ msgstr "Lihat Pertanyaan"
 
-# @ dwqa
-#~ msgid " or"
-#~ msgstr "nebo"
+#~ msgid "Search Question"
+#~ msgstr "Cari Pertanyaan"
 
-# @ dwqa
-#~ msgid " to submit question."
-#~ msgstr "k položení dotazu."
+#~ msgid "No questions found"
+#~ msgstr "Pertanyaan Tidak Ditemukan"
 
-# @ dwqa
-#~ msgid "Search query is empty"
-#~ msgstr "Nic nezadáno"
+#~ msgid "No questions found in Trash"
+#~ msgstr "Tidak ada Pertanyaan di Tempat Sampah"
 
-#~ msgid "%s answered <span class=\"dwqa-date\">%s</span>"
-#~ msgstr "%s odpověděl(a) <span class=\"dwqa-date\">%s</span>"
+#~ msgid "em Q&A"
+#~ msgstr "em Q&A"
 
-#~ msgid "%s asked <span class=\"dwqa-date\">%s</span>"
-#~ msgstr "%s se zeptal(a) na <span class=\"dwqa-date\">%s</span>"
+#~ msgid "Add new answer"
+#~ msgstr "Tambah jawaban baru"
 
-# @ dwqa
+#~ msgid "Edit answer"
+#~ msgstr "Ubah jawaban"
+
+#~ msgid "New Answer"
+#~ msgstr "Jawaban Baru"
+
+#~ msgid "All Answers"
+#~ msgstr "Semua Jawaban"
+
+#~ msgid "View Answer"
+#~ msgstr "Lihat Jawaban"
+
+#~ msgid "Search Answer"
+#~ msgstr "Cari Jawaban"
+
+#~ msgid "No Answers found"
+#~ msgstr "Tidak di temukan Jawaban"
+
+#~ msgid "No Answers found in Trash"
+#~ msgstr "Tidak ada Jawaban di Tempat Sampah"
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Categories"
+#~ msgstr "Kategori"
+
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Category"
+#~ msgstr "Kategori"
+
+#~ msgid "Search Categories"
+#~ msgstr "Cari Kategori"
+
+#~ msgid "All Categories"
+#~ msgstr "Semua Kategori"
+
+#~ msgid "Parent Category"
+#~ msgstr "Kategori Utama"
+
+#~ msgid "Parent Category:"
+#~ msgstr "Kategori Utama:"
+
+#~ msgid "Edit Category"
+#~ msgstr "Ubah Kategori"
+
+#~ msgid "Update Category"
+#~ msgstr "Perbarui Kategori"
+
+#~ msgid "Add New Category"
+#~ msgstr "Kategori Baru"
+
+#~ msgid "New Category Name"
+#~ msgstr "Nama Kategori Baru"
+
+#~ msgid "Question Categories"
+#~ msgstr "Kategori Pertanyaan"
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Tags"
+#~ msgstr "Tag"
+
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Tag"
+#~ msgstr "Tag"
+
+#~ msgid "Search Tags"
+#~ msgstr "Cari Tags"
+
+#~ msgid "Popular Tags"
+#~ msgstr "Tag Populer"
+
+#~ msgid "All Tags"
+#~ msgstr "Semua Tag"
+
+#~ msgid "Edit Tag"
+#~ msgstr "Ubah Tag"
+
+#~ msgid "Update Tag"
+#~ msgstr "Perbarui Tag"
+
+#~ msgid "Add New Tag"
+#~ msgstr "Tambah Tag Baru"
+
+#~ msgid "New Tag Name"
+#~ msgstr "Nama tag baru"
+
+#~ msgid "Separate tags with commas"
+#~ msgstr "Pisahkan Tag dengan koma"
+
+#~ msgid "Add or remove tags"
+#~ msgstr "Tambah atau menghapus tag"
+
+#~ msgid "Choose from the most used tags"
+#~ msgstr "Pilih dari tag populer"
+
+#, fuzzy
+#~ msgid "%s second"
+#~ msgid_plural "%s seconds"
+#~ msgstr[0] "%s detik"
+
+#, fuzzy
+#~ msgid "%s day"
+#~ msgid_plural "%s days"
+#~ msgstr[0] "%s hari"
+
+#~ msgid "Flag"
+#~ msgstr "Tandai"
+
+#~ msgid "Unflag"
+#~ msgstr "Hilangkan Tanda"
+
+#, fuzzy
+#~ msgid ""
+#~ "This answer will be hidden when flagged. Are you sure you want to flag it?"
+#~ msgstr "Jawaban ini akan disembunyikan jika ditandai, apakah anda yakin?"
+
+#, fuzzy
+#~ msgid "This answer was flagged as spam. Do you want to show it?"
+#~ msgstr ""
+#~ "Jawaban ini telah ditandai sebagai spam. Apakah anda ingin melihatnya?"
+
+#, fuzzy
+#~ msgid "Reset all changes to default"
+#~ msgstr "Ubah ke Pengaturan Awal"
+
+#~ msgid "Save draft"
+#~ msgstr "Simpan Draf"
+
+#, fuzzy
+#~ msgid "Answer is missing"
+#~ msgstr "Jawab Pertanyaan ini"
+
+#, fuzzy
+#~ msgid "You do not have permission to edit this post"
+#~ msgstr "Anda tidak punya hak akses untuk melihat pertanyaan."
+
+#, fuzzy
+#~ msgid "This post is not an answer"
+#~ msgstr "Ini adalah Jawaban teebaik"
+
+#~ msgid "Missing answer ID"
+#~ msgstr "ID Jawaban salah"
+
+#, fuzzy
+#~ msgid "Single Question Template"
+#~ msgstr "Pertanyaan Tunggal"
+
+#~ msgid "Google Captcha Public Key"
+#~ msgstr "Google Captcha Public Key"
+
+#~ msgid "Google Captcha Private Key"
+#~ msgstr "Google Captch Privavte Key"
+
+#~ msgid "New Comment to Question"
+#~ msgstr "Jawaban Baru untuk Pertanyaan"
+
+#~ msgid "New Comment to Answer"
+#~ msgstr "Tanggapan baru untuk Pertanyaan"
+
+#, fuzzy
+#~ msgid "New Answer (to Followers )"
+#~ msgstr "Jawaban Baru (untuk Pengikut)"
+
+#, fuzzy
+#~ msgid "New Comment to Question (to Followers )"
+#~ msgstr "Tanggapan baru untuk Pertanyaan (untuk Pengikut)"
+
+#, fuzzy
+#~ msgid "New Comment to Answer (to Followers )"
+#~ msgstr "Tanggapan baru untuk Jawaban (untuk Pengikut)"
+
+#, fuzzy
 #~ msgid "% person who is following this question"
 #~ msgid_plural "% people who are following this question"
-#~ msgstr[0] "% lidí sledujících tento dotaz"
-#~ msgstr[1] "% člověk sledující tento dotaz"
-#~ msgstr[2] "% lidí sledujících tento dotaz"
+#~ msgstr[0] "Berhenti Mengikuti Pertanyaan  ini."
 
-# @ dwqa
-#~ msgid "Save draft"
-#~ msgstr "Uložit koncept"
-
-# @ dwqa
-#~ msgid "Answer is missing"
-#~ msgstr "Odpověď chybí"
-
-# @ dwqa
-#~ msgid "You do not have permission to edit this post"
-#~ msgstr "Nemáte oprávnění k úpravám tohoto příspěvku"
-
-# @ dwqa
-#~ msgid "This post is not an answer"
-#~ msgstr "Tento příspěvek není odpověď"
-
-# @ dwqa
-#~ msgid "Missing answer ID"
-#~ msgstr "Chybějící ID odpovědi"
-
-# @ dwqa
-#~ msgid "Publish"
-#~ msgstr "Odeslat"
-
-# @ dwqa
-#~ msgid "Everyone can see"
-#~ msgstr "Všichni mohou zobrazit"
-
-# @ dwqa
-#~ msgid "Only Author and Administrator can see"
-#~ msgstr "Pouze autor a administrátor mohou zobrazit"
-
-# @ dwqa
-#~ msgid "The question is missing"
-#~ msgstr "Tento dotaz chybí"
-
-# @ dwqa
-#~ msgid "Captcha Type"
-#~ msgstr "Zadej Captcha"
-
-# @ dwqa
-#~ msgid "All questions from"
-#~ msgstr "Všechny dotazy z"
-
-#~ msgid "follow"
-#~ msgstr "sledovat"
-
-#~ msgid "following"
-#~ msgstr "sledujete"
-
-#~ msgid "unfollow"
-#~ msgstr "zrušit sledování"
-
-# @ dwqa
-#~ msgid "Unpin this Question from the top"
-#~ msgstr "Zrušit zvýraznění tohoto dotazu"
-
-# @ dwqa
-#~ msgid "Pin this Question to top"
-#~ msgstr "Zvýraznit tento dotaz"
-
-#~ msgid "DWQA ReIndex"
-#~ msgstr "Reindex DWQA"
-
-# @ dwqa
-#~ msgid "Questions Index"
-#~ msgstr "Index dotazů"
-
-#~ msgid "Total questions: %d ( %d publish - %d private )"
-#~ msgstr "Celkem otázek: %d ( %d publikovaných - %d privátních )"
-
-# @ dwqa
 #~ msgid "Answer this Question"
-#~ msgstr "Odpovědět na tento dotaz"
+#~ msgstr "Jawab Pertanyaan ini"
 
-# @ dwqa
 #~ msgid "Add answer"
-#~ msgstr "Přidat odpověď"
+#~ msgstr "Tambah jawaban"
 
-# @ dwqa
+#~ msgid "All questions from"
+#~ msgstr "Semua pertanyaan dari"
+
+#, fuzzy
+#~ msgid "Unpin this Question from the top"
+#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
+
+#, fuzzy
+#~ msgid "Pin this Question to top"
+#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
+
+#, fuzzy
 #~ msgid "answer"
 #~ msgid_plural "answers"
-#~ msgstr[0] "odpověď"
-#~ msgstr[1] "odpověď"
-#~ msgstr[2] "odpovědí"
+#~ msgstr[0] "Jawaban"
 
-# @ dwqa
 #~ msgid "You do not have permission to view answers"
-#~ msgstr "Nemáte práva k zobrazení odpovědí"
+#~ msgstr "Anda tidak punya hak akses untuk melihat pertanyaan"
 
-# @ dwqa
-#~ msgid "Answer page %d"
-#~ msgstr "Odpověď strana %d"
-
-# @ dwqa
+#, fuzzy
 #~ msgid "This question is now closed"
-#~ msgstr "Tento dotaz je nyní uzavřen"
+#~ msgstr "Pertanyaan ini telah ditutup"
 
-# @ dwqa
 #~ msgid "You do not have permission to submit answer."
-#~ msgstr "Nemáte práva k odpovědi."
+#~ msgstr "Anda tidak punya hak akses untuk menulis pertanyaan."
 
-# @ dwqa
+#, fuzzy
 #~ msgid "Please login or"
-#~ msgstr "Prosíme přihlašte se nebo"
+#~ msgstr "Silahkan masuk"
 
-# @ dwqa
+#, fuzzy
 #~ msgid "to Submit Answer"
-#~ msgstr "k odeslání odpovědi"
+#~ msgstr "Kirim Jawaban"
 
-# @ dwqa
-#~ msgid "Search"
-#~ msgstr "Hledat"
-
-# @ dwqa
-#~ msgid "Unflag"
-#~ msgstr "Odznačit"
-
-# @ dwqa
-#~ msgid "Flag"
-#~ msgstr "Označit"
-
-# @ dwqa
-#~ msgid "Link to answer"
-#~ msgstr "Link k odpovědi"
-
-# @ dwqa
-#~ msgid "Draft"
-#~ msgstr "Koncept"
-
-# @ dwqa
-#~ msgid "This answer was flagged as spam."
-#~ msgstr "Tato odpověď byla označena jako spam."
-
-# @ dwqa
-#~ msgid "This is the best answer"
-#~ msgstr "Toto je nejlepší odpověď"
-
-# @ dwqa
-#~ msgid "The answer link"
-#~ msgstr "Link odpovědi"
-
-# @ default
-#~ msgid "Status:"
-#~ msgstr "Stav:"
-
-# @ dwqa
-#~ msgid "Need Answer"
-#~ msgstr "Bez odpovědi"
-
-# @ dwqa
-#~ msgid "Overdue"
-#~ msgstr "Expirován"
-
-# @ dwqa
-#~ msgid "Queue"
-#~ msgstr "Fronta"
-
-# @ dwqa
-#~ msgid "Select a category"
-#~ msgstr "Vyberte kategorii"
-
-# @ dwqa
-#~ msgid "Empty"
-#~ msgstr "Prázdné"
-
-# @ dwqa
-#~ msgid "Vote"
-#~ msgstr "Hlasovat"
-
-# @ dwqa
-#~ msgid "View previous comments"
-#~ msgstr "Zobrazit předchozí komentáře"
-
-# @ dwqa
-#~ msgid "of"
-#~ msgstr "z"
-
-# @ dwqa
-#~ msgid "Write a reply..."
-#~ msgstr "Napište odpověď..."
-
-# @ dwqa
-#~ msgid "Post by"
-#~ msgstr "Napsal"
-
-# @ dwqa
-#~ msgid "Link to comment"
-#~ msgstr "Link komentáře"
-
-# @ dwqa
 #~ msgid "Sorry, but nothing matched your filter."
-#~ msgstr "Nic k zobrazení."
+#~ msgstr "Maaf, tapi tidak ditemukan yang pas menurut sortingan Anda."
 
-# @ dwqa
-#~ msgid "Your question has been submitted and is currently awaiting approval"
-#~ msgstr "Váš dotaz byl položen a nyní čeká na schválení"
+#~ msgid "View previous comments"
+#~ msgstr "Lihat tanggapan sebelumnya"
 
-# @ dwqa
-#~ msgid "This question is currently awaiting approval"
-#~ msgstr "Tento dotaz nyní čeká na schválení"
+#~ msgid "of"
+#~ msgstr "dari"
 
-# @ dwqa
-#~ msgid "Posts by"
-#~ msgstr "Napsal"
+#~ msgid "Link to answer"
+#~ msgstr "Tautan ke jawaban"
 
-# @ dwqa
+#~ msgid "Draft"
+#~ msgstr "Draf"
+
+#~ msgid "This answer was flagged as spam."
+#~ msgstr "Jawaban ditandai sebagai spam."
+
+#~ msgid "This is the best answer"
+#~ msgstr "Ini adalah Jawaban teebaik"
+
+#~ msgid "The answer link"
+#~ msgstr "Tautan ke jawaban"
+
+#~ msgid "Post by"
+#~ msgstr "Dikirimkan oleh"
+
+#~ msgid "Link to comment"
+#~ msgstr "Tautan ke komentar"
+
 #~ msgid "Permalink to %s"
-#~ msgstr "Permalink k %s"
+#~ msgstr "Tautan ke %s"
 
-# @ dwqa
+#, fuzzy
 #~ msgid "view"
 #~ msgid_plural "views"
-#~ msgstr[0] "zobrazení"
-#~ msgstr[1] "zobrazení"
-#~ msgstr[2] "zobrazení"
+#~ msgstr[0] "dilihat"
 
-# @ dwqa
+#, fuzzy
 #~ msgid "vote"
 #~ msgid_plural "votes"
-#~ msgstr[0] "hlasů"
-#~ msgstr[1] "hlas"
-#~ msgstr[2] "hlasů"
+#~ msgstr[0] "ditilai"
 
-# @ dwqa
+#~ msgid "Status:"
+#~ msgstr "Status:"
+
+#~ msgid "Need Answer"
+#~ msgstr "Butuh jawaban"
+
+#~ msgid "Overdue"
+#~ msgstr "Lewat Waktu"
+
+#~ msgid "Queue"
+#~ msgstr "Antrian"
+
+#~ msgid "Select a category"
+#~ msgstr "Pilih Kategorinya"
+
+#~ msgid "Empty"
+#~ msgstr "Kosong"
+
+#~ msgid "Vote"
+#~ msgstr "Tilai"
+
 #~ msgid "tag 1, tag 2,..."
-#~ msgstr "štítek 1, štítek 2,..."
+#~ msgstr "tag 1, tag 2,..."
 
-# @ dwqa
 #~ msgid "Your question"
-#~ msgstr "Váš dotaz"
+#~ msgstr "Pertanyaan Anda"
 
-# @ dwqa
 #~ msgid "How to..."
-#~ msgstr "Jak a co ..."
+#~ msgstr "Bagaimana caranya ..."
 
-# @ dwqa
 #~ msgid "Question details"
-#~ msgstr "Detaily dotazu"
+#~ msgstr "Rincian Pertanyaan"
 
-# @ dwqa
 #~ msgid "Post this Question as Private."
-#~ msgstr "Odeslat tento dotaz jako soukromý."
+#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
 
-# @ dwqa
 #~ msgid "Only you as Author and Admin can see the question"
-#~ msgstr "Pouze autor a admin můžou vidět dotaz"
+#~ msgstr "Hanya Anda sebagai penulis dan Admin yang dapat melihatnya"
 
-# @ dwqa
+#~ msgid "Search"
+#~ msgstr "Cari"
+
+#~ msgid "Posts by"
+#~ msgstr "Dikirimkan oleh"
+
 #~ msgid "Show a list of questions that was ordered by views."
-#~ msgstr "Zobrazit seznam dotazů seřazen podle počtu zobrazení."
+#~ msgstr "Menampilkan daftar pertanyaan menurut terbanyak dilihat."
 
-# @ dwqa
+#, fuzzy
 #~ msgid "Show a list of questions that ordered by views."
-#~ msgstr "Zobrazit seznam dotazů seřazený podle počtu zobrazení."
+#~ msgstr "Menampilkan daftar pertanyaan menurut terbanyak dilihat."
 
-# @ dwqa
-#~ msgid "Write a comment ..."
-#~ msgstr "Napište komentář..."
+#~ msgctxt "post type general name"
+#~ msgid "Question"
+#~ msgstr "Pertanyaan"
 
-#~ msgid "&nbsp; &bull; &nbsp;"
-#~ msgstr "&nbsp; &bull; &nbsp;"
+#~ msgctxt "post type singular name"
+#~ msgid "Question"
+#~ msgstr "Pertanyaan"
+
+#~ msgctxt "post type general name"
+#~ msgid "Answer"
+#~ msgstr "Jawaban"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Answer"
+#~ msgstr "Jawaban"
+
+#, fuzzy
+#~ msgid "Stick This Question on Frontpage"
+#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
+
+#, fuzzy
+#~ msgid "Untick This Question on Frontpage"
+#~ msgstr "Tulis pertanyaan ini secara Tersembunyi."
+
+#~ msgid "Website"
+#~ msgstr "Situs web"
+
+#~ msgid "by"
+#~ msgstr "oleh"
+
+#, fuzzy
+#~ msgid "em Q&A Box"
+#~ msgstr "em Q&A"
+
+#~ msgid "You can ask question <a href=\""
+#~ msgstr "Anda dapat menulis pertanyaan <a href=\""
+
+#~ msgid "Please <a href=\""
+#~ msgstr "Silahkan <a href=\""
+
+#~ msgid "YCaptcha is not correct"
+#~ msgstr "Captcha salah"
+
+#~ msgid "Email Template"
+#~ msgstr "Templat Email"
+
+#~ msgid "Email logo"
+#~ msgstr "Logo Email"
+
+#~ msgid "You need a support channel inside wordpress page?"
+#~ msgstr "Apakah Anda membutuhkan channel bantuan didalam halama wordpress?"
+
+#~ msgid "Create Submit Question Page"
+#~ msgstr "Buat halaman Mengirim Pertanyaan"
+
+#~ msgid "How to create submit question page?"
+#~ msgstr "Bagaimana carannya menulis halaman mengirim pertanyaan?"
+
+#~ msgid "Go to <strong>Dashboard -> Question -> Settings</strong>"
+#~ msgstr "Pergi ke <strong>Dashboard -> Pertanyaan -> Pengaturan</strong>"
+
+#~ msgid "Available Settings"
+#~ msgstr "Pengaturan Tersedia"
+
+#~ msgid "Go to config your support channel"
+#~ msgstr "Pergi ke Konfigurasi channel bantuan"
+
+#~ msgid "Go to ...?"
+#~ msgstr "Pergi ke ...?"
+
+#~ msgid "Emohelp Team"
+#~ msgstr "Tim Emohelp"
+
+#~ msgid "Documentations"
+#~ msgstr "Dokumentasi"
+
+#~ msgid "Support"
+#~ msgstr "Dukungan"
+
+#~ msgid "Emohelp Homepage"
+#~ msgstr "Website Emohelp"
+
+#~ msgid "or"
+#~ msgstr "atau"
+
+#~ msgid "to"
+#~ msgstr "ke"
