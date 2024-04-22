@@ -66,18 +66,15 @@ class EMQA_Admin_Welcome {
 	}
 
 	public function tabs() {
-    $current_tab = isset( $_GET['page'] ) ? $_GET['page'] : 'emqa-about';
-
-    // Nonce verification
-    $nonce_url = wp_nonce_url( admin_url( 'index.php?page=' . $current_tab ), 'emqa_tab_' . $current_tab );
-
-    ?>
-    <h2 class="nav-tab-wrapper">
-        <a href="<?php echo esc_url( add_query_arg( array( 'page' => 'emqa-about' ), admin_url( 'index.php' ) ) ) ?>" class="nav-tab <?php echo 'emqa-about' == $current_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'What&#8217;s New' ); ?></a>
-        <a href="<?php echo esc_url( add_query_arg( array( 'page' => 'emqa-changelog' ), admin_url( 'index.php' ) ) ) ?>" class="nav-tab <?php echo 'emqa-changelog' == $current_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'Changelog' ); ?></a>
-        <a href="<?php echo esc_url( add_query_arg( array( 'page' => 'emqa-credits' ), admin_url( 'index.php' ) ) ) ?>" class="nav-tab <?php echo 'emqa-credits' == $current_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'Credits' ); ?></a>
-    </h2>
-    <?php
+		$current_tab = isset( $_GET['page'] ) ? $_GET['page'] : 'emqa-about';
+	
+		?>
+		<h2 class="nav-tab-wrapper">
+			<a href="<?php echo esc_url( add_query_arg( array( 'page' => 'emqa-about' ), admin_url( 'index.php' ) ) ) ?>" class="nav-tab <?php echo 'emqa-about' == $current_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'What&#8217;s New' ); ?></a>
+			<a href="<?php echo esc_url( add_query_arg( array( 'page' => 'emqa-changelog' ), admin_url( 'index.php' ) ) ) ?>" class="nav-tab <?php echo 'emqa-changelog' == $current_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'Changelog' ); ?></a>
+			<a href="<?php echo esc_url( add_query_arg( array( 'page' => 'emqa-credits' ), admin_url( 'index.php' ) ) ) ?>" class="nav-tab <?php echo 'emqa-changelog' == $current_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'Credits' ); ?></a>
+		</h2>
+		<?php
 	}
 
 
@@ -223,7 +220,7 @@ class EMQA_Admin_Welcome {
 		if ( !$file ) {
 			$changelog = '<p>' . __( 'No valid changelog was found.', 'emqa' ) . '</p>';
 		} else {
-			$changelog_content = file_get_contents( $file );
+			$changelog_content = wp_remote_get( $file );
 			$changelog = nl2br( esc_html( $changelog_content ) );
 		}
 	
