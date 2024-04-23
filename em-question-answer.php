@@ -53,7 +53,7 @@ class EM_Question_Answer {
 		$this->helptab = new EMQA_Helptab();
 		$this->pointer_helper = new EMQA_PointerHelper();
 
-		new EMQA_Admin_Extensions();
+		// new EMQA_Admin_Extensions();
 		new EMQA_Admin_Welcome();
 
 		// All init action of plugin will be included in
@@ -88,7 +88,7 @@ class EM_Question_Answer {
 	public function includes() {
 		require_once EMQA_DIR . 'inc/autoload.php';
 		require_once EMQA_DIR . 'inc/helper/functions.php';
-		//require_once EMQA_DIR . 'upgrades/upgrades.php';
+		// require_once EMQA_DIR . 'upgrades/upgrades.php';
 		require_once EMQA_DIR . 'inc/deprecated.php';
 		require_once EMQA_DIR . 'inc/helper/plugin-compatibility.php';
 		require_once EMQA_DIR . 'inc/helper/theme-compatibility.php';
