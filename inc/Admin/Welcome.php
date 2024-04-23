@@ -167,7 +167,7 @@ class EMQA_Admin_Welcome {
 				</div>
 				<div class="col">
 					<h3>Template Structure Updates</h3>
-					<p>We’ve rewrite the entire structure of the EMO Questalk template, so we highly recommend you use new these new template files to take advantage of the latest features. We also had the entire functions optimized; in each template file, instead of deploying too many PHP functions, we use “add_action” snippet to allow you integrate EMO Questalk quickly and easily into your themes.</p>
+					<p>We've rewrite the entire structure of the EMO Questalk template, so we highly recommend you use new these new template files to take advantage of the latest features. We also had the entire functions optimized; in each template file, instead of deploying too many PHP functions, we use “add_action” snippet to allow you integrate EMO Questalk quickly and easily into your themes.</p>
 				</div>
 			</div>
 			<hr>
@@ -215,18 +215,22 @@ class EMQA_Admin_Welcome {
 	}
 
 	public function parse_changelog() {
-		$file = file_exists( EMQA_DIR . 'changelog.txt' ) ? EMQA_DIR . 'changelog.txt' : false;
-	
-		if ( !$file ) {
-			$changelog = '<p>' . __( 'No valid changelog was found.', 'emqa' ) . '</p>';
-		} else {
-			$changelog_content = wp_remote_get( $file );
-			$changelog = nl2br( esc_html( $changelog_content ) );
-		}
-	
-		return $changelog;
-	}
-	
+    $file_url = EMQA_URI . 'changelog.txt';
+
+    $response = wp_remote_get( $file_url );
+
+    if ( is_wp_error( $response ) ) {
+        $error_message = $response->get_error_message();
+        $changelog = '<p>' . sprintf( __( 'Error fetching changelog: %s', 'emqa' ), $error_message ) . '</p>';
+    } elseif ( wp_remote_retrieve_response_code( $response ) !== 200 ) {
+        $changelog = '<p>' . __( 'No valid changelog was found.', 'emqa' ) . '</p>';
+    } else {
+        $changelog_content = wp_remote_retrieve_body( $response );
+        $changelog = nl2br( esc_html( $changelog_content ) );
+    }
+
+    return $changelog;
+}
 
 	public function get_contributors() {
 		$response = wp_remote_get( 'https://api.github.com/repos/emohelp/emo-questlak/contributors?per_page=999', array( 'sslverify' => false ) );

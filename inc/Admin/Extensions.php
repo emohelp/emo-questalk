@@ -9,11 +9,11 @@ class EMQA_Admin_Extensions {
 	function register_extensions() {
 		global $emqa;
 		$extension = array(
-			'emqa-markdown' => array(
-				'name' => __( 'EMQA Markdown', 'emqa' ),
-				'url' => 'http://bit.ly/emqa-markdown',
-				'img_url' => $emqa->uri . 'assets/img/em-markdown.png'
-			),
+			// 'emqa-markdown' => array(
+			// 	'name' => __( 'EMQA Markdown', 'emqa' ),
+			// 	'url' => 'http://bit.ly/emqa-markdown',
+			// 	'img_url' => $emqa->uri . 'assets/img/em-markdown.png'
+			// ),
 
 			'emqa-leaderboard' => array(
 				'name' => __( 'EMQA Leaderboard', 'emqa' ),
@@ -27,11 +27,11 @@ class EMQA_Admin_Extensions {
 				'img_url' => $emqa->uri . 'assets/img/em-captcha.png',
 			),
 
-			'emqa-embed-question' => array(
-				'name' => __( 'EMQA Embed Question', 'emqa' ),
-				'url' => 'http://bit.ly/emqa-embed-questions',
-				'img_url' => $emqa->uri . 'assets/img/em-embedquestion.png'
-			),
+			// 'emqa-embed-question' => array(
+			// 	'name' => __( 'EMQA Embed Question', 'emqa' ),
+			// 	'url' => 'http://bit.ly/emqa-embed-questions',
+			// 	'img_url' => $emqa->uri . 'assets/img/em-embedquestion.png'
+			// ),
 
 			'emqa-widgets' => array(
 				'name' => __( 'EMQA Widgets', 'emqa' ),
