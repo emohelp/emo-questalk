@@ -4,6 +4,10 @@ A WordPress plugin to build a complete Question & Answer system on WordPress lik
 
 More information can be found at [emohelp.com](https://www.emohelp.com/wordpress/plugins/emo-questalk/).
 
+Screenshots: 
+1. [Question list](https://i.imgur.com/a28Wpvv.png).
+2. [Single Question](https://i.imgur.com/5Pohy6n.png).
+3. [Answer list](https://i.imgur.com/22z1mrY.png).
 ## Installation ##
 
 For detailed setup instructions, visit the official [Documentation](https://emohelp.gitbook.io/emo-questalk-pro) page.
