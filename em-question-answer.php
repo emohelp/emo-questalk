@@ -137,9 +137,9 @@ class EM_Question_Answer {
 		$locale = get_locale();
 		$mo = 'em-question-answer-' . $locale . '.mo';
 		
-		load_textdomain( 'em-question-answer', WP_LANG_DIR . '/em-questalk-free/' . $mo );
-		load_textdomain( 'em-question-answer', plugin_dir_path( __FILE__ ) . 'languages/' . $mo );
-		load_plugin_textdomain( 'em-question-answer' );
+		load_textdomain( 'emqa', WP_LANG_DIR . '/em-questalk-free/' . $mo );
+		load_textdomain( 'emqa', plugin_dir_path( __FILE__ ) . 'languages/' . $mo );
+		load_plugin_textdomain( 'emqa' );
 
 		//Scripts var
 
