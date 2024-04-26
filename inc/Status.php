@@ -342,12 +342,12 @@ class EMQA_Status {
 					wp_send_json_success( array( 'ID' => $update ) );
 				} else {
 					wp_send_json_error(  array(
-						'message'   => __( 'Post does not exist','em-question-answer' )
+						'message'   => __( 'Post does not exist','emqa' )
 					) );
 				}
 			} else {
 				wp_send_json_error( array(
-					'message'   => __( 'Invalid post status','em-question-answer' )
+					'message'   => __( 'Invalid post status','emqa' )
 				) );
 			}
 		} else {

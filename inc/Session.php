@@ -15,7 +15,7 @@ add_action( 'emqa_before_question_submit_form', 'emqa_print_notices' );
 add_action( 'emqa_before_single_question_comment_notice', 'emqa_print_notices');
 function emqa_print_notices( $comment = false ) {
 	global $emqa;
-	echo $emqa->session->print_notices( $comment );
+	echo esc_html($emqa->session->print_notices( $comment ));
 	emqa_clear_notices($comment);
 }
 
@@ -90,7 +90,7 @@ class EMQA_Session {
 
 	public function add( $message, $type = 'success', $comment = false ) {
 		if ( ! did_action( 'init' ) ) {
-			_doing_it_wrong( __FUNCTION__, __( 'This function should not be called before init.', 'emqa' ), '1.4.0' );
+			_doing_it_wrong( __FUNCTION__, esc_html(__( 'This function should not be called before init.', 'emqa' )), '1.4.0' );
 			return;
 		}
 
@@ -107,7 +107,7 @@ class EMQA_Session {
 
 	public function clear($comment = false) {
 		if ( ! did_action( 'init' ) ) {
-			_doing_it_wrong( __FUNCTION__, __( 'This function should not be called before init.', 'emqa' ), '1.4.0' );
+			_doing_it_wrong( __FUNCTION__, esc_html(__( 'This function should not be called before init.', 'emqa' )), '1.4.0' );
 			return;
 		}
 
@@ -124,7 +124,7 @@ class EMQA_Session {
 
 	public function print_notices( $comment = false ) {
 		if ( ! did_action( 'init' ) ) {
-			_doing_it_wrong( __FUNCTION__, __( 'This function should not be called before init.', 'emqa' ), '1.4.0' );
+			_doing_it_wrong( __FUNCTION__, esc_html(__( 'This function should not be called before init.', 'emqa' )), '1.4.0' );
 			return;
 		}
 
@@ -146,7 +146,7 @@ class EMQA_Session {
 
 	public function count( $type = '', $comment = false ) {
 		if ( ! did_action( 'init' ) ) {
-			_doing_it_wrong( __FUNCTION__, __( 'This function should not be called before init.', 'emqa' ), '1.4.0' );
+			_doing_it_wrong( __FUNCTION__, esc_html(__( 'This function should not be called before init.', 'emqa' )), '1.4.0' );
 			return;
 		}
 

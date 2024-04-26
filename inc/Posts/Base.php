@@ -186,7 +186,7 @@ function emqa_vote_count( $post_id = false, $echo = false ) {
 		return 0;
 	} 
 	if ( $echo ) {
-		echo $votes;
+		echo esc_html($votes);
 	}
 	return ( int ) $votes;
 }

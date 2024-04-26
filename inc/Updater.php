@@ -119,7 +119,7 @@ class EMQA_Updater {
 			echo '<p class="description">Your license key was activated</p>';
 		}
 		if ( $license_key && 'valid' != $status ) {
-			echo '<br><button id="'.$this->slug.'-activate-license" class="button btn" type="button">'.__('Activate','em-question-answer').'</button>';
+			echo '<br><button id="'.$this->slug.'-activate-license" class="button btn" type="button">'.__('Activate','emqa').'</button>';
 			?>
 			<script type="text/javascript">
 			jQuery('#<?php echo $this->slug ?>-activate-license').on('click', function(e){

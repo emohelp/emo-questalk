@@ -217,7 +217,7 @@ class EMQA_Permission {
             wp_redirect(admin_url('edit.php?post_type=emqa-question&page=emqa-settings&tab=permission'));
             exit;
         } else {
-            wp_die(__('Security check failed. Please try again.', 'emqa') );
+            wp_die( esc_html(__('Security check failed. Please try again.', 'emqa') ) );
         }
     }
 	}

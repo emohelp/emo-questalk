@@ -62,8 +62,8 @@ class EMQA_Answer_List_Table extends WP_List_Table {
 		extract( wp_parse_args( $this->_args,  array( 'dev' => false ) ) );
 		$this->prepare_items();
 		?>
-		<table class="wp-list-table emqa-answer-list-table <?php echo implode( ' ', $this->get_table_classes() ); ?>" cellspacing="0">
-			<tbody id="the-list"<?php if ( $singular ) echo " data-wp-lists='list:$singular'"; ?>>
+		<table class="wp-list-table emqa-answer-list-table <?php echo esc_attr(implode( ' ', $this->get_table_classes() );) ?>" cellspacing="0">
+			<tbody id="the-list"<?php if ( $singular ) echo esc_attr(" data-wp-lists='list:$singular'");?>>
 				<?php $this->display_rows_or_placeholder(); ?>
 			</tbody>
 		</table>
@@ -83,16 +83,16 @@ class EMQA_Answer_List_Table extends WP_List_Table {
 			case 'author':
 				$user_info = get_userdata( $item->post_author );
 				if ( ! $user_info ) {
-					echo '<strong>'.__( 'Anonymous','em-question-answer' ).'</strong>';
+					echo '<strong>'.esc_html(__( 'Anonymous','emqa' )).'</strong>';
 				} else {
-					echo '<strong>'.get_avatar( $item->post_author, $size = '32' ) . ' ' .$user_info->display_name . '</strong>';
+					echo '<strong>' . get_avatar( $item->post_author, $size = '32' ) . ' ' . esc_html( $user_info->display_name ) . '</strong>';
 				}
 				break;
 			case 'detail':
 				global $post;
 				setup_postdata( $item );
 				?>
-				<div class="submitted-on"><?php _e( 'Answered on ', 'emqa' ) ?><a href="<?php echo get_permalink( $item->ID ) ?>"><?php echo $item->post_date ?></a></div>
+				<div class="submitted-on"><?php esc_html_e( 'Answered on ', 'emqa' ) ?><a href="<?php echo esc_attr(get_permalink( $item->ID )) ?>"><?php echo esc_html($item->post_date) ?></a></div>
 				<?php the_excerpt(); ?>
 				<?php
 				break;

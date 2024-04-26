@@ -35,7 +35,7 @@ class EMQA_Handle {
 
 		if ( ! isset( $_POST['_wpnonce'] ) || ! wp_verify_nonce( esc_html(  $_POST['_wpnonce'] ), '_emqa_add_new_answer' ) ) {
 			// emqa_add_notice( __( '&quot;Helllo&quot;, Are you cheating huh?.', 'emqa' ), 'error' );
-			wp_die( __( '&quot;Hello&quot;, Are you cheating huh?', 'emqa' ) );
+			wp_die( esc_html(__( '&quot;Hello&quot;, Are you cheating huh?', 'emqa' ) ) );
 		}
 
 		if ( $_POST['submit-answer'] == __( 'Delete draft', 'emqa' ) ) {
@@ -139,7 +139,9 @@ class EMQA_Handle {
 			do_action( 'emqa_add_answer', $answer_id, $question_id );
 			$this->update_modified_date( $question_id , current_time( 'timestamp', 0 ), current_time( 'timestamp', 1 ) );
 
-			exit( wp_redirect( get_permalink( $question_id ) ) );
+			wp_redirect( esc_url(get_permalink( $question_id ) ) );
+			exit;
+
 		} else {
 			emqa_add_wp_error_message( $answer_id );
 		}
@@ -153,7 +155,7 @@ class EMQA_Handle {
 
 			if ( !isset( $_POST['_wpnonce'] ) && !wp_verify_nonce( esc_html( $_POST['_wpnonce'] ), '_emqa_edit_answer' ) ) {
 				// emqa_add_notice( __( 'Hello, Are you cheating huh?', 'emqa' ), 'error' );
-				wp_die( __( 'Hello, Are you cheating huh?', 'emqa' ) );			
+				wp_die( esc_html(__( 'Hello, Are you cheating huh?', 'emqa' ) ) );			
 			}
 
 			$answer_content = apply_filters( 'emqa_prepare_edit_answer_content', $_POST['answer_content'] );
@@ -332,9 +334,9 @@ class EMQA_Handle {
 				}
 
 				$redirect_to = apply_filters( 'emqa_submit_comment_error_redirect', $redirect_to, $question_id);
-
-				exit(wp_safe_redirect( $redirect_to ));
-				return false;
+    		wp_safe_redirect( $redirect_to );
+    		exit; // No need for parentheses around wp_safe_redirect
+				// return false;
 			}
 
 			$args = apply_filters( 'emqa_insert_comment_args', $args );
@@ -384,7 +386,8 @@ class EMQA_Handle {
 			}
 
 			$redirect_to = apply_filters( 'emqa_submit_comment_redirect', $redirect_to, $question_id, $comment );
-			exit(wp_safe_redirect( $redirect_to ));
+			wp_safe_redirect( esc_url($redirect_to ));
+			exit;
 		}
 	}
 
@@ -401,7 +404,7 @@ class EMQA_Handle {
 
 			if ( ! isset( $_POST['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_POST['_wpnonce'] ), '_emqa_edit_comment' ) ) {
 				// emqa_add_notice( __( 'Are you cheating huh?', 'emqa' ), 'error' );
-				wp_die( __( 'Are you cheating huh?', 'emqa' ) );
+				wp_die( esc_html(__( 'Are you cheating huh?', 'emqa' ) ) );
 			}
 
 			if ( !emqa_current_user_can( 'edit_comment', $comment_id ) && !emqa_current_user_can( 'manage_comment' ) ) {
@@ -431,7 +434,8 @@ class EMQA_Handle {
 				$intval = wp_update_comment( $commentarr );
 				if ( !is_wp_error( $intval ) ) {
 					$comment = get_comment( $comment_id );
-					exit( wp_safe_redirect( emqa_get_question_link( $comment->comment_post_ID ) ) );
+					wp_safe_redirect( esc_url(emqa_get_question_link( $comment->comment_post_ID ) ) ) ;
+					exit;
 				}else {
 					emqa_add_wp_error_message( $intval );
 				}
@@ -541,13 +545,13 @@ class EMQA_Handle {
 							} else {
 								$message = '';
 								if ( ! $users_can_register ) {
-									$message .= __( 'User Registration was disabled.','em-question-answer' ).'<br>';
+									$message .= __( 'User Registration was disabled.','emqa' ).'<br>';
 								}
 								if ( isset( $_POST['user-name'] ) && email_exists( sanitize_email( $_POST['user-email'] ) ) ) {
-									$message .= __( 'This email is already registered, please choose another one.','em-question-answer' ).'<br>';
+									$message .= __( 'This email is already registered, please choose another one.','emqa' ).'<br>';
 								}
 								if ( isset( $_POST['user-name'] ) && username_exists( esc_html( $_POST['user-name'] ) ) ) {
-									$message .= __( 'This username is already registered. Please use another one.','em-question-answer' ).'<br>';
+									$message .= __( 'This username is already registered. Please use another one.','emqa' ).'<br>';
 								}
 								// $emqa_current_error = new WP_Error( 'submit_question', $message );
 								emqa_add_notice( $message, 'error' );
@@ -603,15 +607,16 @@ class EMQA_Handle {
 						if ( isset( $emqa_options['enable-review-question'] ) && $emqa_options['enable-review-question'] && !current_user_can( 'manage_options' ) && $post_status != 'private' ) {
 							emqa_add_notice( __( 'Your question is waiting moderator.', 'emqa' ), 'success' );
 						} else {
-							exit( wp_safe_redirect( get_permalink( $new_question ) ) );
+							wp_safe_redirect( esc_url(get_permalink( $new_question ) ) );
+							exit;
 						}
 					}
 				} else {
-					// $emqa_submit_question_errors->add( 'submit_question', __( 'Captcha is not correct','em-question-answer' ) );
+					// $emqa_submit_question_errors->add( 'submit_question', __( 'Captcha is not correct','emqa' ) );
 					emqa_add_notice( __( 'Captcha is not correct', 'emqa' ), 'error' );
 				}
 			} else {
-				// $emqa_submit_question_errors->add( 'submit_question', __( 'Are you cheating huh?','em-question-answer' ) );
+				// $emqa_submit_question_errors->add( 'submit_question', __( 'Are you cheating huh?','emqa' ) );
 				emqa_add_notice( __( 'Are you cheating huh?', 'emqa' ), 'error' );
 			}
 			//$emqa_current_error = $emqa_submit_question_errors;

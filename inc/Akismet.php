@@ -71,7 +71,7 @@ class EMQA_Akismet {
 	
 	// Create reported list admin
 	public function reported_list_admin(){
-		$emqa_reported_page = add_submenu_page( 'edit.php?post_type=emqa-question', __( 'Report Spam List','em-question-answer' ), __( 'Report Spam','em-question-answer' ), 'manage_options', 'emqa-report-spam-list', array( $this, 'reported_list_admin_display' )  );
+		$emqa_reported_page = add_submenu_page( 'edit.php?post_type=emqa-question', __( 'Report Spam List','emqa' ), __( 'Report Spam','emqa' ), 'manage_options', 'emqa-report-spam-list', array( $this, 'reported_list_admin_display' )  );
 	}
 	public function reported_list_admin_display(){
 		require_once EMQA_DIR . 'inc/class/class-display-reported-list-table.php';
@@ -156,7 +156,7 @@ class EMQA_Akismet {
 										admin_url().'post.php?post='.$id.'&action=edit',
 										// translators: %1$s is replaced with the version number
 										esc_attr( sprintf( __( 'View %1$s' ), $item->post_title ) ),
-										__( 'View','em-question-answer' )
+										__( 'View','emqa' )
 									),
 					'delete'    => sprintf( 
 										'<span class="delete"><a href="%s">%s</a><span>',

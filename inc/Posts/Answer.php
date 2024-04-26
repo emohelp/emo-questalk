@@ -291,7 +291,7 @@ class EMQA_Posts_Answer extends EMQA_Posts_Base {
 		switch ( $column_name ) {
 			case 'comment' :
 				$comment_count = get_comment_count( $post_ID );
-				echo '<a href="'.admin_url( 'edit-comments.php?p='.$post_ID ).'"  class="post-com-count"><span class="comment-count">'.$comment_count['approved'].'</span></a>';
+				echo '<a href="'.esc_url(admin_url( 'edit-comments.php?p='.$post_ID )).'"  class="post-com-count"><span class="comment-count">'.esc_html($comment_count['approved']).'</span></a>';
 				break;
 			case 'info':
 				//Build row actions
@@ -302,20 +302,21 @@ class EMQA_Posts_Answer extends EMQA_Posts_Base {
 				);
 				printf(
 					'%s %s <a href="%s">%s %s</a> <br /> %s %s',
-					__( 'Submitted', 'emqa' ),
-					__( 'on', 'emqa' ),
-					get_permalink(),
+					esc_html(__( 'Submitted', 'emqa' )),
+					esc_html(__( 'on', 'emqa' )),
+					esc_url(get_permalink()),
 					gmdate( 'M d Y', get_post_time( 'U', true, $answer ) ),
-					( time() - get_post_time( 'U', true, $answer ) ) > 60 * 60 * 24 * 2 ? '' : ' at ' . human_time_diff( get_post_time( 'U', true, $answer ) ) . ' ago',
-					substr( get_the_content(), 0 , 140 ) . ' ...',
+					( time() - get_post_time( 'U', true, $answer ) ) > 60 * 60 * 24 * 2 ? '' : ' at ' . esc_html( human_time_diff( get_post_time( 'U', true, $answer ) ) ) . ' ago',
+					esc_html( substr( get_the_content(), 0 , 140 ) ) . ' ...',
 					$this->row_actions( $actions )
-				);
+			);
+			
 				break;
 			case 'emqa-question':
 				$question_id = emqa_get_post_parent_id( $post_ID );
 				if ( $question_id ) {
 					$question = get_post( $question_id );
-					echo '<a href="' . get_permalink( $question_id ) . '" >' . $question->post_title . '</a><br>';
+					echo '<a href="' . esc_url(get_permalink( $question_id )) . '" >' .esc_html( $question->post_title) . '</a><br>';
 				}
 				break;
 		}
@@ -349,10 +350,10 @@ class EMQA_Posts_Answer extends EMQA_Posts_Base {
 		$question = $post->post_parent ? $post->post_parent : 0;
 		?>
 		<p>
-			<strong><?php _e( 'ID', 'emqa' ) ?></strong>
+			<strong><?php esc_html_e( 'ID', 'emqa' ) ?></strong>
 		</p>
 		<p>
-			<label class="screen-reader-text"><?php _e( 'ID', 'emqa' ) ?></label>
+			<label class="screen-reader-text"><?php esc_html_e( 'ID', 'emqa' ) ?></label>
 			<input name="_question" type="text" size="4" id="_question" value="<?php echo (int) $question ?>">
 		</p>
 		<?php

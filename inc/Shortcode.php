@@ -208,7 +208,7 @@ class EMQA_Shortcode {
 		$followers[] = $question->post_author;
 		if ( ! empty( $followers ) ) :
 			echo '<div class="question-followers">';
-			echo $before_title;
+			echo wp_kses_post($before_title);
 			$count = count( $followers );
 			printf(
 				// translators: %d is replaced with the number of people following the question

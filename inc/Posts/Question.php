@@ -53,7 +53,7 @@ function emqa_related_question( $question_id = false, $number = 5, $echo = true 
 		if ( $echo ) {
 			echo '<ul>';
 			while ( $related_questions->have_posts() ) { $related_questions->the_post();
-				echo '<li><a href="'.get_permalink().'" class="question-title">'.get_the_title().'</a> '.__( 'asked by', 'emqa' ).' ';
+				echo '<li><a href="'.esc_url(get_permalink()).'" class="question-title">'.esc_html(get_the_title()).'</a> '.esc_html(__( 'asked by', 'emqa' )).' ';
 				the_author_posts_link();
 				echo '</li>';
 			}
@@ -283,10 +283,12 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 	public function columns_content( $column_name, $post_ID ) {
 		switch ( $column_name ) {
 			case 'info':
-				echo ucfirst( get_post_meta( $post_ID, '_emqa_status', true ) ) . '<br>';
-				echo '<strong>'.emqa_question_answers_count( $post_ID ) . '</strong> '.__( 'answered', 'emqa' ) . '<br>';
-				echo '<strong>'.emqa_vote_count( $post_ID ).'</strong> '.__( 'voted', 'emqa' ) . '<br>';
-				echo '<strong>'.emqa_question_views_count( $post_ID ).'</strong> '.__( 'views', 'emqa' ) . '<br>';
+				$status = get_post_meta( $post_ID, '_emqa_status', true );
+				$sanitized_status = sanitize_text_field( $status );
+				echo esc_html(ucfirst( $sanitized_status ) ). '<br>';
+				echo '<strong>'.esc_html(emqa_question_answers_count( $post_ID ) ). '</strong> '.esc_html(__( 'answered', 'emqa' ) ). '<br>';
+				echo '<strong>'.esc_html(emqa_vote_count( $post_ID )).'</strong> '.esc_html(__( 'voted', 'emqa' ) ). '<br>';
+				echo '<strong>'.esc_html(emqa_question_views_count( $post_ID )).'</strong> '.esc_html(__( 'views', 'emqa' ) ). '<br>';
 				break;
 			case 'question-category':
 				$terms = wp_get_post_terms( $post_ID, 'emqa-question_category' );
@@ -295,7 +297,7 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 					if ( $i > 0 ) {
 						echo ', ';
 					}
-					echo '<a href="'.get_term_link( $term, 'emqa-question_category' ).'">'.$term->name . '</a> ';
+					echo '<a href="'.esc_url(get_term_link( $term, 'emqa-question_category' )).'">'.esc_html($term->name) . '</a> ';
 					$i++;
 				}
 				break;
@@ -306,7 +308,7 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 					if ( $i > 0 ) {
 						echo ', ';
 					}
-					echo '<a href="'.get_term_link( $term, 'emqa-question_tag' ).'">' . $term->name . '</a> ';
+					echo '<a href="'.esc_url(esc_url(get_term_link( $term, 'emqa-question_tag' ))).'">' . esc_html($term->name) . '</a> ';
 					$i++;
 				}
 				break;
@@ -442,7 +444,7 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 		//only add filter to post type you want
 		if ( 'emqa-question' == $type ) {
 			?>
-			<label for="emqa-filter-sticky-questions" style="line-height: 32px"><input type="checkbox" name="emqa-filter-sticky-questions" id="emqa-filter-sticky-questions" value="1" <?php checked( true, ( isset( $_GET['emqa-filter-sticky-questions'] ) && sanitize_text_field( $_GET['post_type'] ) ) ? true : false, true ); ?>> <span class="description"><?php _e( 'Sticky Questions','em-question-answer' ) ?></span></label>
+			<label for="emqa-filter-sticky-questions" style="line-height: 32px"><input type="checkbox" name="emqa-filter-sticky-questions" id="emqa-filter-sticky-questions" value="1" <?php checked( true, ( isset( $_GET['emqa-filter-sticky-questions'] ) && sanitize_text_field( $_GET['post_type'] ) ) ? true : false, true ); ?>> <span class="description"><?php esc_html_e( 'Sticky Questions','emqa' ) ?></span></label>
 			<?php
 		}
 	}
@@ -476,7 +478,7 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 
 		if ( ! isset( $_POST['question'] ) ) {
 			wp_send_json_error( array(
-				'message'   => __( 'Question is not valid','em-question-answer' )
+				'message'   => __( 'Question is not valid','emqa' )
 			) );
 		}
 
@@ -497,12 +499,12 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 			} else {
 				wp_send_json_error( array(
 					'question'  => $question->ID,
-					'message'   => __( 'Delete Action was failed','em-question-answer' )
+					'message'   => __( 'Delete Action was failed','emqa' )
 				) );
 			}
 		} else {
 			wp_send_json_error( array(
-				'message'   => __( 'You do not have permission to delete this question','em-question-answer' )
+				'message'   => __( 'You do not have permission to delete this question','emqa' )
 			) );
 		}
 	}

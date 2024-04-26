@@ -139,7 +139,7 @@ class EMQA_Helptab {
 		ob_start();
 		?>
 		<h3 id="Style_integration">Style integration</h3>
-		The EMO Questalk plugin can work well on any WordPress site, however, in order to get the plugin fit well in the style, we will need to work on CSS a bit. <a target="_blank" href=""><?php _e( 'Read more', 'emqa' ) ?></a>
+		The EMO Questalk plugin can work well on any WordPress site, however, in order to get the plugin fit well in the style, we will need to work on CSS a bit. <a target="_blank" href=""><?php esc_html_e( 'Read more', 'emqa' ) ?></a>
 		<?php
 		$html = ob_get_contents();
 		ob_end_clean();

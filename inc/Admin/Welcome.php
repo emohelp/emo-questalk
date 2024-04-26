@@ -60,8 +60,8 @@ class EMQA_Admin_Welcome {
 		
 		<h1><?php
 		// translators: %1$s is replaced with the version number
-		 printf( __( 'Welcome to EMO Questalk %1$s', 'emqa' ), $emqa->version ) ?></h1>
-		<p class="about-text"><?php _e( 'Thank you for installing our WordPress plugin. If you have any question about this plugin, please submit to our <a target="_blank" href="https://www.emohelp.com/question/">Q&A section</a>.', 'emqa' ); ?></p>
+		 printf( esc_html_e(__( 'Welcome to EMO Questalk %1$s', 'emqa' ), $emqa->version )) ?></h1>
+		<p class="about-text"><?php esc_html_e( 'Thank you for installing our WordPress plugin. If you have any question about this plugin, please submit to our <a target="_blank" href="https://www.emohelp.com/question/">Q&A section</a>.', 'emqa' ); ?></p>
 		<?php
 	}
 
@@ -70,9 +70,9 @@ class EMQA_Admin_Welcome {
 	
 		?>
 		<h2 class="nav-tab-wrapper">
-			<a href="<?php echo esc_url( add_query_arg( array( 'page' => 'emqa-about' ), admin_url( 'index.php' ) ) ) ?>" class="nav-tab <?php echo 'emqa-about' == $current_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'What&#8217;s New' ); ?></a>
-			<a href="<?php echo esc_url( add_query_arg( array( 'page' => 'emqa-changelog' ), admin_url( 'index.php' ) ) ) ?>" class="nav-tab <?php echo 'emqa-changelog' == $current_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'Changelog' ); ?></a>
-			<a href="<?php echo esc_url( add_query_arg( array( 'page' => 'emqa-credits' ), admin_url( 'index.php' ) ) ) ?>" class="nav-tab <?php echo 'emqa-changelog' == $current_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'Credits' ); ?></a>
+			<a href="<?php echo esc_url( add_query_arg( array( 'page' => 'emqa-about' ), admin_url( 'index.php' ) ) ) ?>" class="nav-tab <?php echo 'emqa-about' == $current_tab ? 'nav-tab-active' : ''; ?>"><?php esc_html_e( 'What&#8217;s New', 'emqa' ); ?></a>
+			<a href="<?php echo esc_url( add_query_arg( array( 'page' => 'emqa-changelog' ), admin_url( 'index.php' ) ) ) ?>" class="nav-tab <?php echo 'emqa-changelog' == $current_tab ? 'nav-tab-active' : ''; ?>"><?php esc_html_e( 'Changelog', 'emqa' ); ?></a>
+			<a href="<?php echo esc_url( add_query_arg( array( 'page' => 'emqa-credits' ), admin_url( 'index.php' ) ) ) ?>" class="nav-tab <?php echo 'emqa-changelog' == $current_tab ? 'nav-tab-active' : ''; ?>"><?php esc_html_e( 'Credits', 'emqa' ); ?></a>
 		</h2>
 		<?php
 	}
@@ -84,7 +84,7 @@ class EMQA_Admin_Welcome {
 		<div class="wrap about-wrap">
 			<?php $this->page_head(); ?>
 			<?php $this->tabs(); ?>
-			<p class="about-description">In recent weeks, we have been working hard to enhance our EMO Questalk plugin. Apart from getting bugs fixed and providing technical assistance to our users, our team implemented some new cool features to extend functionality for EMO Questalk.</p>
+			<p class="about-description"><?php esc_html_e('In recent weeks, we have been working hard to enhance our EMO Questalk plugin. Apart from getting bugs fixed and providing technical assistance to our users, our team implemented some new cool features to extend functionality for EMO Questalk.')?></p>
 
 			
 			<div class="feature-section two-col">
@@ -184,7 +184,7 @@ class EMQA_Admin_Welcome {
 			<?php $this->tabs(); ?>
 
 			<div class="changelog">
-				<p><?php echo $this->parse_changelog(); ?></p>
+				<p><?php echo esc_html( $this->parse_changelog() ); ?></p>
 			</div>
 		</div>
 		<?php
@@ -199,7 +199,7 @@ class EMQA_Admin_Welcome {
 
 			<ul class="wp-people-group" id="wp-people-group-project-leaders">
 			<?php if ( !empty( $contributors ) ) : ?>
-				<h3 class="wp-people-group"><?php _e( 'Contributors', 'emqa' ); ?></h3>
+				<h3 class="wp-people-group"><?php esc_html_e( 'Contributors', 'emqa' ); ?></h3>
 				<?php foreach( $contributors as $contributor ) : ?>
 					<li class="wp-person" id="wp-person-nacin">
 						<a href="<?php echo esc_url( $contributor->html_url ) ?>">

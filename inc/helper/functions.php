@@ -35,7 +35,7 @@ if ( ! function_exists( 'em_strip_email_to_display' ) ) {
 			$text = $matches[1] . '@...';
 		}
 		if ( $echo ) {
-			echo $text;
+			echo esc_html($text);
 		}
 		return $text;
 	}
@@ -105,7 +105,7 @@ function emqa_get_tag_list( $question = false, $echo = false ) {
 	}
 
 	if ( $echo ) {
-		echo $lists;
+		echo esc_html($lists);
 	}
 
 	return $lists;

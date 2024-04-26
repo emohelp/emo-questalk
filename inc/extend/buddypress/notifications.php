@@ -33,18 +33,18 @@ function bp_emqa_format_buddypress_notifications( $action, $item_id, $secondary_
 		if ( (int) $total_items > 1 ) {
 			$text   = sprintf(
 				// translators: %d is replaced with the number of new replies
-				__('EMQA: ','em-question-answer') .__( 'You have %d new replies', 'emqa' ), (int) $total_items );
+				__('EMQA: ','emqa') .__( 'You have %d new replies', 'emqa' ), (int) $total_items );
 			$filter = 'bp_emqa_multiple_new_subscription_notification';
 		} else {
 			if ( !empty( $secondary_item_id ) ) {
 				$text = sprintf( 
 					// translators: %1$d is replaced with the number of new replies, %2$s is replaced with the recipient's name, %3$s is replaced with the sender's name
-					__('EMQA: ','em-question-answer') .__( 'You have %1$d new reply to %2$s from %3$s', 'emqa' ), (int) $total_items, $emqa_notif_title, bp_core_get_user_displayname( $secondary_item_id ) );
+					__('EMQA: ','emqa') .__( 'You have %1$d new reply to %2$s from %3$s', 'emqa' ), (int) $total_items, $emqa_notif_title, bp_core_get_user_displayname( $secondary_item_id ) );
 				
 			} else {
 				$text = sprintf( 
 					// translators: %1$d is replaced with the number of new replies, %2$s is replaced with the recipient's name
-					__('EMQA: ','em-question-answer') .__( 'You have %1$d new reply to %2$s', 'emqa' ), (int) $total_items, $emqa_notif_title );
+					__('EMQA: ','emqa') .__( 'You have %1$d new reply to %2$s', 'emqa' ), (int) $total_items, $emqa_notif_title );
 				
 			}
 			$filter = 'bp_emqa_single_new_subscription_notification';

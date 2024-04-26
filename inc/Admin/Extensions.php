@@ -52,7 +52,7 @@ class EMQA_Admin_Extensions {
 		?>
 		<div class="wrap">
 			<h1>
-				<?php echo get_admin_page_title() ?>
+				<?php echo esc_html(get_admin_page_title()); ?>
 				<span class="title-count theme-count"><?php echo count( $extensions ); ?></span>
 			</h1>
 			<br>
@@ -72,7 +72,7 @@ class EMQA_Admin_Extensions {
 
 							<h2 class="theme-name" id="<?php echo esc_attr( $slug ) ?>"><span><?php echo esc_attr( $info['name'] ) ?></span></h2>
 							<div class="theme-actions">
-								<a class="button button-primary" target="_blank" href="<?php echo esc_url( $info['url'] ) ?>"><?php _e( 'Get It Now!', 'emqa' ); ?></a>
+								<a class="button button-primary" target="_blank" href="<?php echo esc_url( $info['url'] ) ?>"><?php esc_html_e( 'Get It Now!', 'emqa' ); ?></a>
 							</div>
 						</div>
 					<?php endforeach; ?>

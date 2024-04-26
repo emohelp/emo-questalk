@@ -1137,7 +1137,7 @@ function emqa_vote_best_answer_button() {
 	if ( $best_answer == get_the_ID() || ( is_user_logged_in() && ( $current_user->ID == $question->post_author || current_user_can( 'edit_posts' ) ) ) ) {
 		?>
 		<div class="entry-vote-best <?php echo $best_answer == get_the_ID() ? 'active' : ''; ?>" <?php echo $data ?> >
-			<a href="javascript:void( 0 );" title="<?php _e( 'Choose as the best answer','em-question-answer' ) ?>">
+			<a href="javascript:void( 0 );" title="<?php _e( 'Choose as the best answer','emqa' ) ?>">
 				<div class="entry-vote-best-bg"></div>
 				<i class="icon-thumbs-up"></i>
 			</a>

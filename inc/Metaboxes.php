@@ -10,23 +10,23 @@ function emqa_question_status_box_html( $post ){
 	?>
 	<p>
 		<label for="emqa-question-status">
-			<?php _e( 'Status','em-question-answer' ) ?><br>&nbsp;
+			<?php esc_html_e( 'Status','emqa' ) ?><br>&nbsp;
 			<select name="emqa-question-status" id="emqa-question-status" class="widefat">
-				<option <?php selected( $meta, 'open' ); ?> value="open"><?php _e( 'Open','em-question-answer' ) ?></option>
-				<option <?php selected( $meta, 'pending' ); ?> value="pending"><?php _e( 'Pending','em-question-answer' ) ?></option>
-				<option <?php selected( $meta, 'resolved' ); ?> value="resolved"><?php _e( 'Resolved','em-question-answer' ) ?></option>
-				<option <?php selected( $meta, 're-open' ); ?> value="re-open"><?php _e( 'Re-Open','em-question-answer' ) ?></option>
-				<option <?php selected( $meta, 'closed' ); ?> value="closed"><?php _e( 'Closed','em-question-answer' ) ?></option>
+				<option <?php selected( $meta, 'open' ); ?> value="open"><?php esc_html_e( 'Open','emqa' ) ?></option>
+				<option <?php selected( $meta, 'pending' ); ?> value="pending"><?php esc_html_e( 'Pending','emqa' ) ?></option>
+				<option <?php selected( $meta, 'resolved' ); ?> value="resolved"><?php esc_html_e( 'Resolved','emqa' ) ?></option>
+				<option <?php selected( $meta, 're-open' ); ?> value="re-open"><?php esc_html_e( 'Re-Open','emqa' ) ?></option>
+				<option <?php selected( $meta, 'closed' ); ?> value="closed"><?php esc_html_e( 'Closed','emqa' ) ?></option>
 			</select>
 		</label>
 	</p>    
 	<p>
 		<label for="emqa-question-sticky">
-			<?php _e( 'Sticky','em-question-answer' ); ?><br><br>&nbsp;
+			<?php esc_html_e( 'Sticky','emqa' ); ?><br><br>&nbsp;
 			<?php
 				$sticky_questions = get_option( 'emqa_sticky_questions', array() );
 			?>
-			<input <?php checked( true, in_array( $post->ID, $sticky_questions ), true ); ?> type="checkbox" name="emqa-question-sticky" id="emqa-question-sticky" value="1" ><span class="description"><?php _e( 'Pin question to top of archive page.','em-question-answer' ); ?></span>
+			<input <?php checked( true, in_array( $post->ID, $sticky_questions ), true ); ?> type="checkbox" name="emqa-question-sticky" id="emqa-question-sticky" value="1" ><span class="description"><?php esc_html_e( 'Pin question to top of archive page.','emqa' ); ?></span>
 		</label>
 	</p>
 	<?php
@@ -42,7 +42,7 @@ class EMQA_Metaboxes {
 
 	//Add a metabox that was used for display list of answers of a questions
 	public function answers_metabox(){
-		add_meta_box( 'emqa-answers', __( 'Answers','em-question-answer' ), array( $this, 'metabox_answers_list' ), 'emqa-question' );
+		add_meta_box( 'emqa-answers', __( 'Answers','emqa' ), array( $this, 'metabox_answers_list' ), 'emqa-question' );
 	}
 
 	/**
@@ -62,7 +62,7 @@ class EMQA_Metaboxes {
 	 * @return void
 	 */
 	public function add_status_metabox(){
-		add_meta_box( 'emqa-post-status', __( 'Question Meta Data','em-question-answer' ), 'emqa_question_status_box_html', 'emqa-question', 'side', 'high' );
+		add_meta_box( 'emqa-post-status', __( 'Question Meta Data','emqa' ), 'emqa_question_status_box_html', 'emqa-question', 'side', 'high' );
 	}
 
 	public function question_status_save( $post_id ){

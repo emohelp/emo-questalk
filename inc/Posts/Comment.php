@@ -99,7 +99,7 @@ class EMQA_Posts_Comment {
 	public function comment_author_link_anonymous( $comment ) {
 		// global $current_comment;
 		if ( $comment->user_id <= 0 && ( get_post_type( $comment->comment_post_ID ) == 'emqa-question' || get_post_type( $comment->comment_post_ID ) == 'emqa-answer' ) ) {
-			$comment->comment_author = __( 'Anonymous','em-question-answer' );
+			$comment->comment_author = __( 'Anonymous','emqa' );
 		}
 		return $comment;
 	}
