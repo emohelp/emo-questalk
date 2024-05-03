@@ -66,5 +66,5 @@
 	</form>
 	<?php do_action( 'emqa_after_question_submit_form' ); ?>
 <?php else : ?>
-	<div class="alert"><?php _e( 'You do not have permission to submit a question','em-question-answer' ) ?></div>
+	<div class="alert"><?php _e( 'You do not have permission to submit a question','emqa' ) ?></div>
 <?php endif; ?>
