@@ -89,33 +89,43 @@ function emqa_class_for_question_details_container(){
 
 add_action( 'emqa_after_answers_list', 'emqa_answer_paginate_link' );
 function emqa_answer_paginate_link() {
-	global $wp_query;
-	$question_url = get_permalink();
-	$page = isset( $_GET['ans-page'] ) ? intval( $_GET['ans-page'] ) : 1;
+    global $wp_query;
+    $question_url = get_permalink();
+    $page = isset( $_GET['ans-page'] ) ? $_GET['ans-page'] : 1;
 
-	$args = array(
-		'base' => add_query_arg( 'ans-page', '%#%', $question_url ),
-		'format' => '',
-		'current' => $page,
-		'total' => $wp_query->emqa_answers->max_num_pages
-	);
+    $args = array(
+        'base' => add_query_arg( 'ans-page', '%#%', $question_url ),
+        'format' => '',
+        'current' => $page,
+        'total' => $wp_query->emqa_answers->max_num_pages
+    );
 
-	$paginate = paginate_links( $args );
-	$paginate = str_replace( 'page-number', 'emqa-page-number', $paginate );
-	$paginate = str_replace( 'current', 'emqa-current', $paginate );
-	$paginate = str_replace( 'next', 'emqa-next', $paginate );
-	$paginate = str_replace( 'prev ', 'emqa-prev ', $paginate );
-	$paginate = str_replace( 'dots', 'emqa-dots', $paginate );
+    $args = apply_filters( 'emqa_answer_paginate_link_args', $args, $wp_query->emqa_answers );
 
-	if ( $wp_query->emqa_answers->max_num_pages > 1 ) {
-		echo '<div class="emqa-pagination">';
-		echo $paginate;
-		echo '</div>';
-	}
+    $paginate = paginate_links( $args );
+    
+    // Perform replacements only if $paginate is not null
+    if ($paginate !== null) {
+        $paginate = str_replace( 'page-number', 'emqa-page-number', $paginate );
+        $paginate = str_replace( 'current', 'emqa-current', $paginate );
+        $paginate = str_replace( 'next', 'emqa-next', $paginate );
+        $paginate = str_replace( 'prev ', 'emqa-prev ', $paginate );
+        $paginate = str_replace( 'dots', 'emqa-dots', $paginate );
+    }
+    
+    $output = '';
+    if ( $wp_query->emqa_answers->max_num_pages > 1 && $paginate !== null) {
+        $output .= '<div class="emqa-pagination">';
+        $output .= $paginate;
+        $output .= '</div>';
+    }
+
+    echo apply_filters( 'emqa_answer_paginate_link', $output );
 }
 
 function emqa_question_paginate_link() {
-	global $wp_query, $emqa_general_settings, $emqa_atts;
+	global $wp_query, $emqa_general_settings;
+	if ( $wp_query->emqa_questions->max_num_pages < 2 ) return;
 
 	$archive_question_url = get_permalink( $emqa_general_settings['pages']['archive-question'] );
 	$page_text = emqa_is_front_page() ? 'page' : 'paged';
@@ -128,29 +138,38 @@ function emqa_question_paginate_link() {
 			? get_term_link( $cat, get_query_var( 'taxonomy' ) ) 
 			: ( $tag ? get_term_link( $tag, get_query_var( 'taxonomy' ) ) : $archive_question_url );
 
-	if(isset($emqa_atts['category']) && isset($emqa_atts['page_id']) && $emqa_atts['page_id']){
-		$url = get_permalink($emqa_atts['page_id']);
+
+	if(isset( $emqa_general_settings['pages']['user-profile'] ) && $emqa_general_settings['pages']['user-profile'] && is_page($emqa_general_settings['pages']['user-profile'])){
+
+		$user_id = emqa_profile_displayed_user_id();
+		$tab = emqa_profile_tab();
+		$url = trailingslashit(emqa_profile_tab_url($user_id, $tab));
+
 	}
 
 	$args = array(
-		'base' => add_query_arg( $page_text, '%#%', $url ),
-		'format' => '',
+		'base' => $url.'page/%#%',
+		'format' => '%#%',
 		'current' => $page,
 		'total' => $wp_query->emqa_questions->max_num_pages
 	);
 
+	$args = apply_filters( 'emqa_question_paginate_link_args', $args, $wp_query->emqa_questions );
+
 	$paginate = paginate_links( $args );
 	$paginate = str_replace( 'page-number', 'emqa-page-number', $paginate );
 	$paginate = str_replace( 'current', 'emqa-current', $paginate );
-	// $paginate = str_replace( 'next', 'emqa-next', $paginate );
-	// $paginate = str_replace( 'prev ', 'emqa-prev ', $paginate );
-	// $paginate = str_replace( 'dots', 'emqa-dots', $paginate );
+	$paginate = str_replace( 'next', 'emqa-next', $paginate );
+	$paginate = str_replace( 'prev ', 'emqa-prev ', $paginate );
+	$paginate = str_replace( 'dots', 'emqa-dots', $paginate );
 
-	if ( $wp_query->emqa_questions->max_num_pages > 1 ) {
-		echo '<div class="emqa-pagination">';
-		echo $paginate;
-		echo '</div>';
-	}
+	$output = '';
+	
+	$output .= '<div class="emqa-pagination">';
+	$output .= $paginate;
+	$output .= '</div>';
+
+	echo apply_filters( 'emqa_question_paginate_link', $output );
 }
 
 function emqa_question_button_action() {
