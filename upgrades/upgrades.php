@@ -38,7 +38,7 @@ class EMQA_Upgrades {
 		?>
 		<div class="wrap">
 			<h2><?php echo get_admin_page_title(); ?></h2>
-			<p><?php _e('The upgrade process has started, please be patient. This could take several minutes. You will be automatically redirected when the upgrade is finished...','em-question-answer') ?></p>
+			<p><?php _e('The upgrade process has started, please be patient. This could take several minutes. You will be automatically redirected when the upgrade is finished...','emqa') ?></p>
 			<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				function emqaUpgradeSendRequest( restart ) {
@@ -174,11 +174,11 @@ class EMQA_Upgrades {
 				wp_send_json_success( array(
 					'start' => $start,
 					'finish' => 1,
-					'message' => __('Upgrade process is done','em-question-answer')
+					'message' => __('Upgrade process is done','emqa')
 				) );
 				break;
 		}
 	}
 }
-emQA_Upgrades::init();
+EMQA_Upgrades::init();
 ?>
