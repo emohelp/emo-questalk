@@ -211,16 +211,24 @@ class EMQA_Shortcode {
 			echo wp_kses_post($before_title);
 			$count = count( $followers );
 			printf(
-				// translators: %d is replaced with the number of people following the question
-				_n( '%d person who is following this question', '%d people who are following this question', $count, 'emqa' ),
-				$count
+    		// translators: %d is replaced with the number of people following the question
+					esc_html__(
+						_n(
+								'%d person who is following this question',
+								'%d people who are following this question',
+								$count,
+								'emqa'
+						),
+						'emqa'
+				),
+				esc_html( $count )
 			);
-			echo $after_title;
+			echo wp_kses_post($after_title);
 
 			foreach ( $followers as $follower ) :
 				$user_info = get_userdata( $follower );
 				if ( $user_info ) :
-				 echo '<a href="'.home_url().'/profile/'.$user_info->user_nicename . '" title="'.$user_info->display_name.'">'.get_avatar( $follower, 32 ).'</a>&nbsp;';
+					echo '<a href="' . esc_url( home_url() . '/profile/' . $user_info->user_nicename ) . '" title="' . esc_attr( $user_info->display_name ) . '">' . get_avatar( $follower, 32 ) . '</a>&nbsp;';
 				endif;
 			endforeach;
 			echo '</div>';
