@@ -1,5 +1,5 @@
 ﻿=== EMO Questalk ===
-Contributors: designwall, Farid-Gh, scheunemann, gciprian, Ahmet Kolcu, Astrotenko Roman, David Robles, Nidhal Naji, developez, markhall1971
+Contributors: emohelp, Dominic
 Tags: question, answer, support, quora, stackoverflow
 Requires at least: 6.3
 Tested up to: 6.5.2
@@ -25,10 +25,11 @@ Emo Questalk is a WordPress plugin which builds a complete Question & Answer sys
 * Private/ Public for Question and Answer
 * Questions / Answers follow function
 * Sticky Question
-
 * More to come
 
+
 = Documents and Support: =
+
 You can find [Documents]() and more detailed information about Emo Questalk plugin on [emohelp.com](https://www.emohelp.com/). 
 We provide support both on support forum on WordPress.org and our [support page](https://www.emohelp.com/question/) on EmoHelp.
 
