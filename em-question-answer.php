@@ -4,9 +4,8 @@
  *  Description: A WordPress plugin was make by emohelp.com to build an Question Answer system for support, asking and comunitcate with your customer
  *  Author: Emohelp
  *  Author URI: http://www.emohelp.com
- *  Version: 1.0.0
+ *  Version: 1.0
  *  Text Domain: em-question-answer
- *  @since 1.4.0
  */
 
 if ( !class_exists( 'EM_Question_Answer' ) ) :
