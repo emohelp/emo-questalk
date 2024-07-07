@@ -66,7 +66,7 @@ class EMQA_Admin_Welcome {
 	}
 
 	public function tabs() {
-		$current_tab = isset( $_GET['page'] ) ? $_GET['page'] : 'emqa-about';
+		$current_tab = isset( $_GET['page'] ) ? absint( ['page'] ) : 'emqa-about';
 	
 		?>
 		<h2 class="nav-tab-wrapper">

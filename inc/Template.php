@@ -4,64 +4,63 @@
  * Print class for question detail container
  */
 function emqa_breadcrumb() {
-	$wpseo_internallinks = get_option('wpseo_internallinks');
-	if ( function_exists( 'yoast_breadcrumb' ) && $wpseo_internallinks['breadcrumbs-enable'] === true) :
-		yoast_breadcrumb( '<div class="breadcrumbs emqa-breadcrumbs">', '</div>' );
-	else:
-		global $emqa_general_settings;
-		$title  = get_the_title( $emqa_general_settings['pages']['archive-question'] );
-		$search = isset( $_GET['qs'] ) ? esc_html( $_GET['qs'] ) : false;
-		$author = isset( $_GET['user'] ) ? esc_html( $_GET['user'] ) : false;
-		$output = '';
-		if ( ! is_singular( 'emqa-question' ) ) {
-			$term     = get_query_var( 'emqa-question_category' ) ? get_query_var( 'emqa-question_category' ) : ( get_query_var( 'emqa-question_tag' ) ? get_query_var( 'emqa-question_tag' ) : false );
-			$term     = get_term_by( 'slug', $term, get_query_var( 'taxonomy' ) );
-			$tax_name = 'emqa-question_tag' == get_query_var( 'taxonomy' ) ? __( 'Tag', 'emqa' ) : __( 'Category', 'emqa' );
-		} else {
-			$term = wp_get_post_terms( get_the_ID(), 'emqa-question_category' );
-			if ( $term ) {
-				$term     = $term[0];
-				$tax_name = __( 'Category', 'emqa' );
-			}
-		}
-		if ( is_singular( 'emqa-question' ) || $search || $author || $term ) {
-			$output .= '<div class="emqa-breadcrumbs">';
-		}
-		if ( $term || is_singular( 'emqa-question' ) || $search || $author ) {
-			$output .= '<a href="' . get_permalink( $emqa_general_settings['pages']['archive-question'] ) . '">' . $title . '</a>';
-		}
-		if ( $term ) {
-			$output .= '<span class="emqa-sep"> &rsaquo; </span>';
-			if ( is_singular( 'emqa-question' ) ) {
-				$output .= '<a href="' . esc_url( get_term_link( $term, get_query_var( 'taxonomy' ) ) ) . '">' . $tax_name . ': ' . $term->name . '</a>';
-			} else {
-				$output .= '<span class="emqa-current">' . $tax_name . ': ' . $term->name . '</span>';
-			}
-		}
-		if ( $search ) {
-			$output .= '<span class="emqa-sep"> &rsaquo; </span>';
-			$output .= sprintf( '<span class="emqa-current">%s "%s"</span>', __( 'Showing search results for', 'emqa' ), htmlspecialchars( $search ) );
-		}
-		if ( $author ) {
-			$output .= '<span class="emqa-sep"> &rsaquo; </span>';
-			$output .= sprintf( '<span class="emqa-current">%s "%s"</span>', __( 'Author', 'emqa' ), htmlspecialchars( $author ) );
-		}
-		if ( is_singular( 'emqa-question' ) ) {
-			$output .= '<span class="emqa-sep"> &rsaquo; </span>';
-			if ( ! emqa_is_edit() ) {
-				$output .= '<span class="emqa-current">' . get_the_title() . '</span>';
-			} else {
-				$output .= '<a href="' . get_permalink() . '">' . get_the_title() . '</a>';
-				$output .= '<span class="emqa-sep"> &rsaquo; </span>';
-				$output .= '<span class="emqa-current">' . __( 'Edit', 'emqa' ) . '</span>';
-			}
-		}
-		if ( is_singular( 'emqa-question' ) || $search || $author || $term ) {
-			$output .= '</div>';
-		}
-		echo apply_filters( 'emqa_breadcrumb', $output );
-	endif;
-	
+    $wpseo_internallinks = get_option( 'wpseo_internallinks' );
+    if ( function_exists( 'yoast_breadcrumb' ) && ! empty( $wpseo_internallinks['breadcrumbs-enable'] ) && $wpseo_internallinks['breadcrumbs-enable'] === true ) :
+        yoast_breadcrumb( '<div class="breadcrumbs emqa-breadcrumbs">', '</div>' );
+    else:
+        global $emqa_general_settings;
+        $title  = esc_html( get_the_title( $emqa_general_settings['pages']['archive-question'] ) );
+        $search = isset( $_GET['qs'] ) ? esc_html( $_GET['qs'] ) : false;
+        $author = isset( $_GET['user'] ) ? esc_html( $_GET['user'] ) : false;
+        $output = '';
+        if ( ! is_singular( 'emqa-question' ) ) {
+            $term     = get_query_var( 'emqa-question_category' ) ? get_query_var( 'emqa-question_category' ) : ( get_query_var( 'emqa-question_tag' ) ? get_query_var( 'emqa-question_tag' ) : false );
+            $term     = get_term_by( 'slug', $term, get_query_var( 'taxonomy' ) );
+            $tax_name = 'emqa-question_tag' == get_query_var( 'taxonomy' ) ? esc_html__( 'Tag', 'emqa' ) : esc_html__( 'Category', 'emqa' );
+        } else {
+            $term = wp_get_post_terms( get_the_ID(), 'emqa-question_category' );
+            if ( $term ) {
+                $term     = $term[0];
+                $tax_name = esc_html__( 'Category', 'emqa' );
+            }
+        }
+        if ( is_singular( 'emqa-question' ) || $search || $author || $term ) {
+            $output .= '<div class="emqa-breadcrumbs">';
+        }
+        if ( $term || is_singular( 'emqa-question' ) || $search || $author ) {
+            $output .= '<a href="' . esc_url( get_permalink( $emqa_general_settings['pages']['archive-question'] ) ) . '">' . esc_html( $title ) . '</a>';
+        }
+        if ( $term ) {
+            $output .= '<span class="emqa-sep"> &rsaquo; </span>';
+            if ( is_singular( 'emqa-question' ) ) {
+                $output .= '<a href="' . esc_url( get_term_link( $term, get_query_var( 'taxonomy' ) ) ) . '">' . esc_html( $tax_name ) . ': ' . esc_html( $term->name ) . '</a>';
+            } else {
+                $output .= '<span class="emqa-current">' . esc_html( $tax_name ) . ': ' . esc_html( $term->name ) . '</span>';
+            }
+        }
+        if ( $search ) {
+            $output .= '<span class="emqa-sep"> &rsaquo; </span>';
+            $output .= sprintf( '<span class="emqa-current">%s "%s"</span>', esc_html__( 'Showing search results for', 'emqa' ), esc_html( $search ) );
+        }
+        if ( $author ) {
+            $output .= '<span class="emqa-sep"> &rsaquo; </span>';
+            $output .= sprintf( '<span class="emqa-current">%s "%s"</span>', esc_html__( 'Author', 'emqa' ), esc_html( $author ) );
+        }
+        if ( is_singular( 'emqa-question' ) ) {
+            $output .= '<span class="emqa-sep"> &rsaquo; </span>';
+            if ( ! emqa_is_edit() ) {
+                $output .= '<span class="emqa-current">' . esc_html( get_the_title() ) . '</span>';
+            } else {
+                $output .= '<a href="' . esc_url( get_permalink() ) . '">' . esc_html( get_the_title() ) . '</a>';
+                $output .= '<span class="emqa-sep"> &rsaquo; </span>';
+                $output .= '<span class="emqa-current">' . esc_html__( 'Edit', 'emqa' ) . '</span>';
+            }
+        }
+        if ( is_singular( 'emqa-question' ) || $search || $author || $term ) {
+            $output .= '</div>';
+        }
+        echo wp_kses_post(apply_filters( 'emqa_breadcrumb', $output ) ); // Ensure the filter callback also handles escaping if necessary
+    endif;
 }
 add_action( 'emqa_before_questions_archive', 'emqa_breadcrumb' );
 add_action( 'emqa_before_single_question', 'emqa_breadcrumb' );
@@ -74,7 +73,7 @@ add_action( 'emqa_before_questions_archive', 'emqa_archive_question_filter_layou
 function emqa_search_form() {
 	?>
 	<form id="emqa-search" class="emqa-search">
-		<input data-nonce="<?php echo wp_create_nonce( '_emqa_filter_nonce' ) ?>" type="text" placeholder="<?php _e( 'What do you want to know?', 'emqa' ); ?>" name="qs" value="<?php echo isset( $_GET['qs'] ) ? esc_html( $_GET['qs'] ) : '' ?>">
+		<input data-nonce="<?php echo esc_attr( wp_create_nonce( '_emqa_filter_nonce' ) ); ?>" type="text" placeholder="<?php esc_attr_e( 'What do you want to know?', 'emqa' ); ?>" name="qs" value="<?php echo isset( $_GET['qs'] ) ? esc_attr( $_GET['qs'] ) : ''; ?>">
 	</form>
 	<?php
 }
@@ -84,14 +83,14 @@ function emqa_class_for_question_details_container(){
 	$class = array();
 	$class[] = 'question-details';
 	$class = apply_filters( 'emqa-class-questions-details-container', $class );
-	echo implode( ' ', $class );
+	echo esc_attr(implode( ' ', $class ));
 }
 
 add_action( 'emqa_after_answers_list', 'emqa_answer_paginate_link' );
 function emqa_answer_paginate_link() {
     global $wp_query;
     $question_url = get_permalink();
-    $page = isset( $_GET['ans-page'] ) ? $_GET['ans-page'] : 1;
+    $page = isset( $_GET['ans-page'] ) ? absint( $_GET['ans-page'] ) : 1;
 
     $args = array(
         'base' => add_query_arg( 'ans-page', '%#%', $question_url ),
@@ -105,7 +104,7 @@ function emqa_answer_paginate_link() {
     $paginate = paginate_links( $args );
     
     // Perform replacements only if $paginate is not null
-    if ($paginate !== null) {
+    if ( $paginate !== null ) {
         $paginate = str_replace( 'page-number', 'emqa-page-number', $paginate );
         $paginate = str_replace( 'current', 'emqa-current', $paginate );
         $paginate = str_replace( 'next', 'emqa-next', $paginate );
@@ -114,14 +113,15 @@ function emqa_answer_paginate_link() {
     }
     
     $output = '';
-    if ( $wp_query->emqa_answers->max_num_pages > 1 && $paginate !== null) {
+    if ( $wp_query->emqa_answers->max_num_pages > 1 && $paginate !== null ) {
         $output .= '<div class="emqa-pagination">';
         $output .= $paginate;
         $output .= '</div>';
     }
 
-    echo apply_filters( 'emqa_answer_paginate_link', $output );
+    echo wp_kses_post( apply_filters( 'emqa_answer_paginate_link', $output ) );
 }
+
 
 function emqa_question_paginate_link() {
 	global $wp_query, $emqa_general_settings;
@@ -169,46 +169,47 @@ function emqa_question_paginate_link() {
 	$output .= $paginate;
 	$output .= '</div>';
 
-	echo apply_filters( 'emqa_question_paginate_link', $output );
+	echo wp_kses_post(apply_filters( 'emqa_question_paginate_link', $output ));
 }
 
 function emqa_question_button_action() {
-	$html = '';
-	if ( is_user_logged_in() ) {
-		$followed = emqa_is_followed() ? 'followed' : 'follow';
-		$text = __( 'Subscribe', 'emqa' );
-		$html .= '<label for="emqa-favorites">';
-		$html .= '<input type="checkbox" id="emqa-favorites" data-post="'. get_the_ID() .'" data-nonce="'. wp_create_nonce( '_emqa_follow_question' ) .'" value="'. $followed .'" '. checked( $followed, 'followed', false ) .'/>';
-		$html .= '<span>' . $text . '</span>';
-		$html .= '</label>';
-		if ( emqa_current_user_can( 'edit_question' ) ) {
-			$html .= '<a class="emqa_edit_question" href="'. add_query_arg( array( 'edit' => get_the_ID() ), get_permalink() ) .'">' . __( 'Edit', 'emqa' ) . '</a> ';
-		}
+    $html = '';
+    if ( is_user_logged_in() ) {
+        $followed = emqa_is_followed() ? 'followed' : 'follow';
+        $text = esc_html__( 'Subscribe', 'emqa' );
+        $html .= '<label for="emqa-favorites">';
+        $html .= '<input type="checkbox" id="emqa-favorites" data-post="'. esc_attr( get_the_ID() ) .'" data-nonce="'. esc_attr( wp_create_nonce( '_emqa_follow_question' ) ) .'" value="'. esc_attr( $followed ) .'" '. checked( $followed, 'followed', false ) .'/>';
+        $html .= '<span>' . esc_html( $text ) . '</span>';
+        $html .= '</label>';
+        if ( emqa_current_user_can( 'edit_question' ) ) {
+            $html .= '<a class="emqa_edit_question" href="'. esc_url( add_query_arg( array( 'edit' => get_the_ID() ), get_permalink() ) ) .'">' . esc_html__( 'Edit', 'emqa' ) . '</a> ';
+        }
 
-		if ( emqa_current_user_can( 'delete_question' ) ) {
-			$action_url = add_query_arg( array( 'action' => 'emqa_delete_question', 'question_id' => get_the_ID() ), admin_url( 'admin-ajax.php' ) );
-			$html .= '<a class="emqa_delete_question" href="'. wp_nonce_url( $action_url, '_emqa_action_remove_question_nonce' ) .'">' . __( 'Delete', 'emqa' ) . '</a> ';
-		}
-	}
+        if ( emqa_current_user_can( 'delete_question' ) ) {
+            $action_url = add_query_arg( array( 'action' => 'emqa_delete_question', 'question_id' => get_the_ID() ), admin_url( 'admin-ajax.php' ) );
+            $html .= '<a class="emqa_delete_question" href="'. esc_url( wp_nonce_url( $action_url, '_emqa_action_remove_question_nonce' ) ) .'">' . esc_html__( 'Delete', 'emqa' ) . '</a> ';
+        }
+    }
 
-	echo apply_filters( 'emqa_question_button_action', $html );
+    echo wp_kses_post( apply_filters( 'emqa_question_button_action', $html ) );
 }
 
+
 function emqa_answer_button_action() {
-	$html = '';
-	if ( is_user_logged_in() ) {
-		if ( emqa_current_user_can( 'edit_answer' ) ) {
-			$parent_id = emqa_get_question_from_answer_id();
-			$html .= '<a class="emqa_edit_question" href="'. add_query_arg( array( 'edit' => get_the_ID() ), get_permalink( $parent_id ) ) .'">' . __( 'Edit', 'emqa' ) . '</a> ';
-		}
+    $html = '';
+    if ( is_user_logged_in() ) {
+        if ( emqa_current_user_can( 'edit_answer' ) ) {
+            $parent_id = emqa_get_question_from_answer_id();
+            $html .= '<a class="emqa_edit_question" href="'. esc_url( add_query_arg( array( 'edit' => get_the_ID() ), get_permalink( $parent_id ) ) ) .'">' . esc_html__( 'Edit', 'emqa' ) . '</a> ';
+        }
 
-		if ( emqa_current_user_can( 'delete_answer' ) ) {
-			$action_url = add_query_arg( array( 'action' => 'emqa_delete_answer', 'answer_id' => get_the_ID() ), admin_url( 'admin-ajax.php' ) );
-			$html .= '<a class="emqa_delete_answer" href="'. wp_nonce_url( $action_url, '_emqa_action_remove_answer_nonce' ) .'">' . __( 'Delete', 'emqa' ) . '</a> ';
-		}
-	}
+        if ( emqa_current_user_can( 'delete_answer' ) ) {
+            $action_url = add_query_arg( array( 'action' => 'emqa_delete_answer', 'answer_id' => get_the_ID() ), admin_url( 'admin-ajax.php' ) );
+            $html .= '<a class="emqa_delete_answer" href="'. esc_url( wp_nonce_url( $action_url, '_emqa_action_remove_answer_nonce' ) ) .'">' . esc_html__( 'Delete', 'emqa' ) . '</a> ';
+        }
+    }
 
-	echo apply_filters( 'emqa_answer_button_action', $html );
+    echo wp_kses_post( apply_filters( 'emqa_answer_button_action', $html ) );
 }
 
 
@@ -512,7 +513,7 @@ function emqa_comment_form( $args = array(), $post_id = null ) {
 		?>
 		<div class="emqa-comment-form">
 		<?php if ( !emqa_current_user_can( 'post_comment' ) ) : ?>
-			<?php echo $args['must_log_in']; ?>
+			<?php echo wp_kses_post($args['must_log_in']); ?>
 			<?php
 			/**
 			 * Fires after the HTML-formatted 'must log in after' message in the comment form.
@@ -542,7 +543,7 @@ function emqa_comment_form( $args = array(), $post_id = null ) {
 				 * @param array  $commenter            An array containing the comment author's username, email, and URL.
 				 * @param string $user_identity        If the commenter is a registered user, the display name, blank otherwise.
 				 */
-				echo apply_filters( 'comment_form_logged_in', $args['logged_in_as'], $commenter, $user_identity );
+				echo wp_kses_post(apply_filters( 'comment_form_logged_in', $args['logged_in_as'], $commenter, $user_identity ));
 				?>
 				<?php
 				/**
@@ -556,7 +557,7 @@ function emqa_comment_form( $args = array(), $post_id = null ) {
 				do_action( 'comment_form_logged_in_after', $commenter, $user_identity );
 				?>
 			<?php else : ?>
-				<?php echo $args['comment_notes_before']; ?>
+				<?php echo wp_kses_post($args['comment_notes_before']); ?>
 				<?php
 				/**
 				 * Fires before the comment fields in the comment form.
@@ -576,7 +577,7 @@ function emqa_comment_form( $args = array(), $post_id = null ) {
 					 *
 					 * @param string $field The HTML-formatted output of the comment form field.
 					 */
-					echo apply_filters( "comment_form_field_{$name}", $field ) . "\n";
+					echo wp_kses_post(apply_filters( "comment_form_field_{$name}", $field )) . "\n";
 				}
 				echo '</div>';
 				/**
@@ -595,7 +596,7 @@ function emqa_comment_form( $args = array(), $post_id = null ) {
 			 *
 			 * @param string $args['comment_field'] The content of the comment textarea field.
 			 */
-			echo apply_filters( 'comment_form_field_comment', $args['comment_field'] );
+			echo wp_kses_post(apply_filters( 'comment_form_field_comment', $args['comment_field'] ));
 			?>
 			<div class="emqa-comment-hide">
 				<?php do_action('emqa_show_captcha_comment', $post_id);?>
@@ -673,33 +674,35 @@ function emqa_question_states( $states, $post ){
 }
 add_filter( 'display_post_states', 'emqa_question_states', 10, 2 );
 
+function emqa_get_ask_question_link( $echo = true, $label = false, $class = false ) {
+    global $emqa_options;
+    $submit_question_link = get_permalink( $emqa_options['pages']['submit-question'] );
+    if ( $emqa_options['pages']['submit-question'] && $submit_question_link ) {
 
-function emqa_get_ask_question_link( $echo = true, $label = false, $class = false ){
-	global $emqa_options;
-	$submit_question_link = get_permalink( $emqa_options['pages']['submit-question'] );
-	if ( $emqa_options['pages']['submit-question'] && $submit_question_link ) {
+        if ( emqa_current_user_can( 'post_question' ) ) {
+            $label = $label ? $label : __( 'Ask a question', 'emqa' );
+        } elseif ( ! is_user_logged_in() ) {
+            $label = $label ? $label : __( 'Login to ask a question', 'emqa' );
+            $submit_question_link = wp_login_url( $submit_question_link );
+        } else {
+            return false;
+        }
+        
+        // Add filter to change ask question link text
+        $label = apply_filters( 'emqa_ask_question_link_label', $label );
 
+        $class = $class ? $class : 'emqa-btn-success';
+        $button = '<a href="' . esc_url( $submit_question_link ) . '" class="emqa-btn ' . esc_attr( $class ) . '">' . esc_html( $label ) . '</a>';
+        $button = apply_filters( 'emqa_ask_question_link', $button, $submit_question_link );
 
-		if ( emqa_current_user_can( 'post_question' ) ) {
-			$label = $label ? $label : __( 'Ask a question', 'emqa' );
-		} elseif ( ! is_user_logged_in() ) {
-			$label = $label ? $label : __( 'Login to ask a question', 'emqa' );
-			$submit_question_link = wp_login_url( $submit_question_link );
-		} else {
-			return false;
-		}
-		//Add filter to change ask question link text
-		$label = apply_filters( 'emqa_ask_question_link_label', $label );
+        if ( ! $echo ) {
+            return $button;
+        }
 
-		$class = $class ? $class  : 'emqa-btn-success';
-		$button = '<a href="'.$submit_question_link.'" class="emqa-btn '.$class.'">'.$label.'</a>';
-		$button = apply_filters( 'emqa_ask_question_link', $button, $submit_question_link );
-		if ( ! $echo ) {
-			return $button;
-		}
-		echo $button;
-	}
+        echo wp_kses_post( $button );
+    }
 }
+
 
 function emqa_get_template( $template = false ) {
 	$templates = apply_filters( 'emqa_get_template', array(
@@ -760,7 +763,7 @@ function emqa_load_answers() {
 	$emqa->template->load_template( 'answers' );
 }
 
-class emQA_Template {
+class EMQA_Template {
 	private $active = 'default';
 	private $page_template = 'page.php';
 	public $filters;
@@ -1113,7 +1116,7 @@ class emQA_Template {
 		$template = apply_filters( 'emqa-load-template', $template, $name );
 
 		if ( !$template || !file_exists( $template ) ) {
-			_doing_it_wrong( __FUNCTION__, sprintf( "<strong>%s</strong> does not exists in <code>%s</code>.", $name, $template ), '1.4.0' );
+			_doing_it_wrong( __FUNCTION__, sprintf( "<strong>%s</strong> does not exists in <code>%s</code>.", esc_html($name), esc_html($template) ), '1.4.0' );
 			return false;
 		}
 
@@ -1155,8 +1158,8 @@ function emqa_vote_best_answer_button() {
 	}
 	if ( $best_answer == get_the_ID() || ( is_user_logged_in() && ( $current_user->ID == $question->post_author || current_user_can( 'edit_posts' ) ) ) ) {
 		?>
-		<div class="entry-vote-best <?php echo $best_answer == get_the_ID() ? 'active' : ''; ?>" <?php echo $data ?> >
-			<a href="javascript:void( 0 );" title="<?php _e( 'Choose as the best answer','emqa' ) ?>">
+		<div class="entry-vote-best <?php echo esc_attr($best_answer == get_the_ID() ? 'active' : ''); ?>" <?php echo esc_attr($data) ?> >
+			<a href="javascript:void( 0 );" title="<?php esc_attr_e( 'Choose as the best answer','emqa' ) ?>">
 				<div class="entry-vote-best-bg"></div>
 				<i class="icon-thumbs-up"></i>
 			</a>

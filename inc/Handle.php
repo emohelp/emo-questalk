@@ -23,7 +23,7 @@ class EMQA_Handle {
 		// do_action( 'emqa_add_answer', $answer_id, $question_id );
 		// die();
 
-		if ( isset( $_POST['emqa_add_answer_nonce'] ) && wp_verify_nonce( $_POST['emqa_add_answer_nonce'], 'emqa_add_answer_nonce' ) ) {
+		if ( isset( $_POST['emqa_add_answer_nonce'] ) && wp_verify_nonce( sanitize_text_field( $_POST['emqa_add_answer_nonce'] ), 'emqa_add_answer_nonce' ) ) {
 			// Nonce is valid, proceed with processing the form data
 			if ( 'add-answer' !== sanitize_text_field( $_POST['emqa-action'] ) ) {
 				return false;
@@ -86,7 +86,9 @@ class EMQA_Handle {
 		$question_id = intval( $_POST['question_id'] );
 
 		$answer_title = __( 'Answer for ', 'emqa' ) . get_post_field( 'post_title', $question_id );
-		$answ_content = apply_filters( 'emqa_prepare_answer_content', $_POST['answer-content'] );
+
+		$answ_content = isset( $_POST['answer-content']) ? sanitize_text_field($_POST['answer-content']) : '';
+		$answ_content = apply_filters( 'emqa_prepare_answer_content', $answ_content );
 
 		$answers = array(
 			'comment_status' => 'open',
@@ -158,7 +160,9 @@ class EMQA_Handle {
 				wp_die( esc_html(__( 'Hello, Are you cheating huh?', 'emqa' ) ) );			
 			}
 
-			$answer_content = apply_filters( 'emqa_prepare_edit_answer_content', $_POST['answer_content'] );
+			$answer_content =  isset( $_POST['answer_content']) ? sanitize_text_field($_POST['answer_content']) : '';
+			$answer_content = apply_filters( 'emqa_prepare_edit_answer_content', $answer_content );
+
 			if ( empty( $answer_content ) ) {
 				emqa_add_notice( __( 'You must enter a valid answer content.', 'emqa' ), 'error' );
 			}
@@ -289,7 +293,7 @@ class EMQA_Handle {
 			if ( ! isset( $_POST['comment_post_ID'] ) ) {
 				emqa_add_notice( __( 'Missing post id.', 'emqa' ), 'error', true );
 			}
-			$comment_content = isset( $_POST['comment'] ) ? $_POST['comment'] : '';
+			$comment_content = isset( $_POST['comment'] ) ? sanitize_text_field($_POST['comment']) : '';
 			$comment_content = apply_filters( 'emqa_pre_comment_content', $comment_content );
 
 			if ( empty( $comment_content ) ) {
@@ -315,7 +319,7 @@ class EMQA_Handle {
 					emqa_add_notice( __( 'Missing name information', 'emqa' ), 'error', true );
 				}
 				$_POST['name'] = sanitize_text_field( wp_filter_kses( _wp_specialchars( $_POST['name'] ) ) );
-				$args['comment_author'] = isset( $_POST['name'] ) ? $_POST['name'] : 'Anonymous';
+				$args['comment_author'] = isset( $_POST['name'] ) ? sanitize_text_field($_POST['name']) : 'Anonymous';
 				$args['comment_author_email'] = sanitize_email(  $_POST['email'] );
 				$args['comment_author_url'] = isset( $_POST['url'] ) ? esc_url( $_POST['url'] ) : '';
 				$args['user_id']    = -1;
@@ -482,7 +486,7 @@ class EMQA_Handle {
 					$tags = isset( $_POST['question-tag'] ) ?
 								esc_html( $_POST['question-tag'] ): '';
 
-					$content = isset( $_POST['question-content'] ) ?  $_POST['question-content']  : '';
+					$content = isset( $_POST['question-content'] ) ?  sanitize_text_field( $_POST['question-content'] )  : '';
 					$content = apply_filters( 'emqa_prepare_question_content', $content );
 
 					$user_id = 0;
@@ -565,7 +569,7 @@ class EMQA_Handle {
 						}
 					}
 
-					$post_status = ( isset( $_POST['question-status'] ) && esc_html( $_POST['question-status'] ) ) ? $_POST['question-status'] : 'publish';
+					$post_status = ( isset( $_POST['question-status'] ) && esc_html( $_POST['question-status'] ) ) ? sanitize_text_field($_POST['question-status']) : 'publish';
 
 					//Enable review mode
 					global $emqa_general_settings;
@@ -646,7 +650,10 @@ class EMQA_Handle {
 					emqa_add_notice( __( 'This post is not question.', 'emqa' ), 'error' );
 				}
 
-				$question_content = apply_filters( 'emqa_prepare_edit_question_content', $_POST['question_content'] );
+				$question_content = isset( $_POST['question_content'] ) ? sanitize_textarea_field( $_POST['question_content'] ) : '';
+				$question_content = apply_filters( 'emqa_prepare_edit_question_content', $question_content );
+				
+				// $question_content = apply_filters( 'emqa_prepare_edit_question_content', $_POST['question_content'] );
 
 				$tags = isset( $_POST['question-tag'] ) ? esc_html( $_POST['question-tag'] ): '';
 				$category = isset( $_POST['question-category'] ) ? intval( $_POST['question-category'] ) : 0;

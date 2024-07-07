@@ -455,7 +455,7 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 		if ( isset( $_GET['post_type'] ) ) {
 			$type = sanitize_text_field( $_GET['post_type'] );
 		}
-		if ( 'emqa-question' == $type && is_admin() && $pagenow == 'edit.php' && isset( $_GET['emqa-filter-sticky-questions'] ) && $_GET['emqa-filter-sticky-questions'] ) {
+		if ( 'emqa-question' == $type && is_admin() && $pagenow == 'edit.php' && isset( $_GET['emqa-filter-sticky-questions'] ) && sanitize_text_field( $_GET['emqa-filter-sticky-questions'] )  ) {
 
 			$sticky_questions = get_option( 'emqa_sticky_questions' );
 
@@ -547,6 +547,7 @@ class EMQA_Posts_Question extends EMQA_Posts_Base {
 		if ( false == $closed_questions ) {
 			global $wpdb;
 			$query = "SELECT `{$wpdb->posts}`.ID FROM `{$wpdb->posts}` JOIN `{$wpdb->postmeta}` ON `{$wpdb->posts}`.ID = `{$wpdb->postmeta}`.post_id WHERE 1=1 AND `{$wpdb->postmeta}`.meta_key = '_emqa_status' AND `{$wpdb->postmeta}`.meta_value = 'closed' AND `{$wpdb->posts}`.post_status = 'publish' AND `{$wpdb->posts}`.post_type = 'emqa-question'";
+			// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
 			$closed_questions = $wpdb->get_results( $query );
 
 			wp_cache_set( 'emqa-closed-question', $closed_questions );

@@ -274,7 +274,7 @@ class EMQA_Shortcode {
 
 		if ( $title ) {
 			echo '<h3>';
-			echo $title;
+			echo esc_html($title);
 			echo '</h3>';
 		}
 

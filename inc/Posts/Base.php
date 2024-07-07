@@ -24,9 +24,11 @@ function emqa_anonymous_create_session() {
 	}
 }
 
+
 function emqa_get_current_user_session() {
-	return isset( $_COOKIE['emqa_anonymous'] ) && !empty( $_COOKIE['emqa_anonymous'] ) ? $_COOKIE['emqa_anonymous'] : false;
+    return isset( $_COOKIE['emqa_anonymous'] ) && ! empty( $_COOKIE['emqa_anonymous'] ) ? sanitize_text_field( $_COOKIE['emqa_anonymous'] ) : false;
 }
+
 
 function emqa_action_vote( ) {
 	$result = array(

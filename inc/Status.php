@@ -34,7 +34,7 @@ function emqa_question_print_status( $question_id = false, $echo = true ) {
 
 
 		if ( $echo ) {
-			echo $return;
+			echo wp_kses_post($return);
 			return;
 		}
 		return $return;

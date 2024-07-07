@@ -99,7 +99,7 @@ class EMQA_Updater {
 
 	public function display_description() {
 		if( $this->description ) {
-			echo '<p class="description">'.$this->description.'</p>';
+			echo '<p class="description">'.esc_html($this->description).'</p>';
 		}
 	}
 
@@ -114,29 +114,29 @@ class EMQA_Updater {
 	public function license_setting_field() {
 		$license_key = get_option( $this->license_option_key );
 		$status = get_option( $this->license_status_key );
-		echo '<input type="text" name="'.$this->license_option_key.'" id="'.$this->license_option_key.'" class="regular-text" value="'.$license_key.'" >';
+		echo '<input type="text" name="'.esc_attr($this->license_option_key).'" id="'.esc_attr($this->license_option_key).'" class="regular-text" value="'.esc_attr($license_key).'" >';
 		if ( 'valid' == $status ) {
 			echo '<p class="description">Your license key was activated</p>';
 		}
 		if ( $license_key && 'valid' != $status ) {
-			echo '<br><button id="'.$this->slug.'-activate-license" class="button btn" type="button">'.__('Activate','emqa').'</button>';
+			echo wp_kses_post('<br><button id="'.esc_attr($this->slug).'-activate-license" class="button btn" type="button">'.__('Activate','emqa').'</button>');
 			?>
 			<script type="text/javascript">
-			jQuery('#<?php echo $this->slug ?>-activate-license').on('click', function(e){
-				e.preventDefault();
-				jQuery.ajax({
-					url: '<?php echo admin_url('admin-ajax.php'); ?>',
-					type: 'POST',
-					dataType: 'json',
-					data: {
-						action: '<?php echo $this->slug ?>_activate_license',
-						nonce: '<?php echo wp_create_nonce( $this->slug . '_activate_license' ) ?>'
-					},
-				})
-				.done(function() {
-					document.location.href = document.location.href;
+				jQuery('#<?php echo esc_js($this->slug);?>-activate-license').on('click', function(e){
+					e.preventDefault();
+					jQuery.ajax({
+						url: '<?php echo esc_url(admin_url('admin-ajax.php'));?>',
+						type: 'POST',
+						dataType: 'json',
+						data: {
+							action: '<?php echo esc_js($this->slug);?>_activate_license',
+							nonce: '<?php echo esc_js( wp_create_nonce( $this->slug . '_activate_license' ) ); ?>'
+						},
+					})
+					.done(function() {
+						document.location.href = document.location.href;
+					});
 				});
-			});
 			</script>
 			<?php
 		}

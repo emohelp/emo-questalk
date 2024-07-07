@@ -87,6 +87,7 @@ function emqa_user_most_answer( $number = 10, $from = false, $to = false ) {
 				ORDER BY `answer_count` DESC LIMIT 0,{$number}";
 	$users = wp_cache_get( 'emqa-most-answered' . $prefix );
 	if ( false == $users ) {
+		// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
 		$users = $wpdb->get_results( $query, ARRAY_A  );
 		wp_cache_set( 'emqa-most-answered', $users );
 	}
@@ -231,12 +232,12 @@ function emqa_print_user_badge( $user_id = false, $echo = false ) {
 	if ( $badges && !empty( $badges ) ) {
 		foreach( $badges as $k => $badge ) {
 			$k = str_replace( ' ', '-', $k );
-			$result .= '<span class="emqa-label emqa-'. strtolower( $k ) .'">'.$badge.'</span>';
+			$result .= '<span class="emqa-label emqa-'. esc_attr(strtolower( $k )) .'">'.wp_kses_post( $badge ).'</span>';
 		}
 	}
 
 	if ( $echo ) {
-		echo $result;
+		echo wp_kses_post($result);
 	}
 
 	return $result;

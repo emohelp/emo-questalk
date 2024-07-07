@@ -1489,8 +1489,11 @@ class EMQA_Settings {
 
 			?>
 			</form>
+			<?php 
+				$EmqaTab = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : 'general'; 
+				if ( ! isset( $_GET['tab'] ) || ( isset( $_GET['tab'] ) && $EmqaTab == 'general' ) ):
+			?>
 
-			<?php if(!isset($_GET['tab']) ||(isset($_GET['tab']) && $_GET['tab'] == 'general')):?>
 			<!-- Get blog from emohelp.com -->
 			<div id="blog-emohelp">
 				<?php  

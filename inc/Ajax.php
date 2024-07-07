@@ -118,9 +118,12 @@ class EMQA_Ajax {
 
 	public function vote_best_answer() {
 		global $current_user;
-		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( $_GET['_wpnonce'], '_emqa_vote_best_answer' ) ) {
+		// if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( $_GET['_wpnonce'], '_emqa_vote_best_answer' ) ) {
+		// 	wp_die( esc_html( __( 'Are you cheating huh?', 'emqa' ) ) );
+		// }
+		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_GET['_wpnonce'] ), '_emqa_vote_best_answer' ) ) {
 			wp_die( esc_html( __( 'Are you cheating huh?', 'emqa' ) ) );
-		}
+		}		
 		if ( ! isset( $_GET['answer'] ) ) {
 			exit( 0 );
 		}
@@ -140,7 +143,7 @@ class EMQA_Ajax {
 
 	public function unvote_best_answer() {
 		global $current_user;
-		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( $_GET['_wpnonce'], '_emqa_vote_best_answer' ) ) {
+		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_GET['_wpnonce'] ), '_emqa_vote_best_answer' ) ) {
 			wp_die( esc_html( __( 'Are you cheating huh?', 'emqa' ) ) );
 		}
 		if ( ! isset( $_GET['answer'] ) ) {
@@ -197,7 +200,7 @@ class EMQA_Ajax {
 	// Updated delete_question() method
 	public function delete_question() {
 		global $emqa_general_settings;
-		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( $_GET['_wpnonce'], '_emqa_action_remove_question_nonce' ) || 'emqa_delete_question' !== $_GET['action'] ) {
+		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_GET['_wpnonce'] ), '_emqa_action_remove_question_nonce' ) || 'emqa_delete_question' !== $_GET['action'] ) {
 			wp_die( esc_html( __( 'Are you cheating huh?', 'emqa' )));
 		}
 	

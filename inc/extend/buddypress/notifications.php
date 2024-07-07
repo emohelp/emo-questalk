@@ -93,9 +93,10 @@ function bp_emqa_buddypress_mark_notifications() {
 		return;
 	}
 
-	if ( !isset( $_GET['action']) || 'bp_emqa_mark_read' !== $_GET['action'] ) {
+	if ( ! isset( $_GET['action'] ) || 'bp_emqa_mark_read' !== sanitize_text_field( $_GET['action'] ) ) {
 		return;
 	}
+	
 
 	// Get required data
 	$user_id  = bp_loggedin_user_id();
@@ -103,10 +104,11 @@ function bp_emqa_buddypress_mark_notifications() {
 	$question_id = intval( $_GET['question_id'] );
 
 	// Check nonce
-	$nonce = $_REQUEST['_wpnonce'];
+	$nonce = isset( $_REQUEST['_wpnonce'] ) ? sanitize_text_field( $_REQUEST['_wpnonce'] ) : '';
+
 	if ( ! wp_verify_nonce( $nonce, 'bp_emqa_mark_answer_' . $answer_id ) ) {
 		emqa_add_notice( __( "Hello, Are you cheating huh?", 'emqa' ), 'error' );
-	// Check current user's ability to edit the user
+		// Check current user's ability to edit the user
 	} elseif ( !current_user_can( 'edit_user', $user_id ) ) {
 		emqa_add_notice( __( "You do not have permission to mark notifications for that user.", 'emqa' ), 'error' );
 	}

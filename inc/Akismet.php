@@ -31,8 +31,8 @@ class EMQA_Akismet {
 					'blog_charset' => get_option( 'blog_charset' ),
 					'blog_lang' => get_locale(),
 					'user_ip' => $this->get_user_ip(),
-					'user_agent' => (isset($_SERVER['HTTP_USER_AGENT'])?$_SERVER['HTTP_USER_AGENT']:''),
-					'referrer' => (isset($_SERVER['HTTP_REFERER'])?$_SERVER['HTTP_REFERER']:''),
+					'user_agent' => isset( $_SERVER['HTTP_USER_AGENT'] ) ? sanitize_text_field( $_SERVER['HTTP_USER_AGENT'] ) : '',
+					'referrer' => isset( $_SERVER['HTTP_REFERER'] ) ? sanitize_text_field( $_SERVER['HTTP_REFERER'] ) : '',
 					'permalink' => '',
 					'comment_type' => '',
 					'comment_author' => '',
@@ -606,51 +606,118 @@ public function akismet_comment_check( $key, $data ) {
 		return $actions;
 	}
 
+	// public function emqa_akismet_mark_spam(){
+	// 	// if(isset($_GET['post_type']) && ($_GET['post_type']=='emqa-question' || $_GET['post_type']=='emqa-answer')){
+	// 	if ( isset( $_GET['post_type'] ) && in_array( $_GET['post_type'], ['emqa-question', 'emqa-answer'], true ) ) {
+	// 		$post_type = sanitize_text_field( $_GET['post_type'] );
+
+	// 		if(isset($_GET['post']) && $_GET['post'] && is_numeric($_GET['post'])){
+
+	// 			if (isset($_GET['action']) && ! wp_verify_nonce( $_REQUEST['_wpnonce'], "{$_GET['action']}-post_{$_GET['post']}" ) ) {
+	// 				 die( 'Security check' ); 
+	// 			}
+				
+	// 			if($_GET['action']=='spam'){
+	// 				if ( !current_user_can( 'delete_post', $_GET['post'] ) )
+	// 					die( 'Security check' ); 
+					
+	// 				$args = array(
+	// 					  'ID'           => $_GET['post'],
+	// 					  'post_status'   => 'spam'
+	// 				  );
+	// 				wp_update_post( $args );
+	// 				if(!$this->akismet_submit_spam($this->akismetAPIKey, get_post($_GET['post']))){
+	// 					//is spam
+	// 				}
+	// 				// do_action("emqa_after_mark_spam");
+	// 				wp_redirect(admin_url( 'edit.php?post_type='.$_GET['post_type']));
+	// 				exit();
+	// 			}
+	// 			if($_GET['action']=='unspam'){
+	// 				if($_GET['post_type']=='emqa-question'){
+	// 					$args = array(
+	// 					  'ID'           => $_GET['post'],
+	// 					  'post_status'   => 'publish'
+	// 					);
+	// 				}else{
+	// 					$args = array(
+	// 					  'ID'           => $_GET['post'],
+	// 					  'post_status'   => 'inherit'
+	// 					);
+	// 				}
+					
+	// 				wp_update_post( $args );
+	// 				if(!$this->akismet_submit_ham($this->akismetAPIKey, get_post($_GET['post']))){
+	// 					//is spam
+	// 				}
+	// 				// do_action("emqa_after_mark_unspam");
+	// 				wp_redirect(admin_url( 'edit.php?post_type='.$_GET['post_type']));
+	// 				exit();
+	// 			}
+				
+	// 		}
+	// 	}
+	// 	return;
+	// }
+	
 	public function emqa_akismet_mark_spam(){
-		if(isset($_GET['post_type']) && ($_GET['post_type']=='emqa-question' || $_GET['post_type']=='emqa-answer')){
-			if(isset($_GET['post']) && $_GET['post'] && is_numeric($_GET['post'])){
-				if (isset($_GET['action']) && ! wp_verify_nonce( $_REQUEST['_wpnonce'], "{$_GET['action']}-post_{$_GET['post']}" ) ) {
-					 die( 'Security check' ); 
-				}
-				
-				if($_GET['action']=='spam'){
-					if ( !current_user_can( 'delete_post', $_GET['post'] ) )
+		if ( isset( $_GET['post_type'] ) && in_array( $_GET['post_type'], ['emqa-question', 'emqa-answer'], true ) ) {
+			$post_type = sanitize_text_field( $_GET['post_type'] );
+	
+			if ( isset( $_GET['post'] ) && $_GET['post'] && is_numeric( $_GET['post'] ) ) {
+				$post_id = absint( $_GET['post'] );
+	
+				if ( isset( $_GET['action'] ) ) {
+					$action = sanitize_text_field( $_GET['action'] );
+	
+					if ( ! wp_verify_nonce( sanitize_text_field( $_REQUEST['_wpnonce'] ), "{$action}-post_{$post_id}" ) ) {
 						die( 'Security check' ); 
-					
-					$args = array(
-						  'ID'           => $_GET['post'],
-						  'post_status'   => 'spam'
-					  );
-					wp_update_post( $args );
-					if(!$this->akismet_submit_spam($this->akismetAPIKey, get_post($_GET['post']))){
-						//is spam
 					}
-					// do_action("emqa_after_mark_spam");
-					wp_redirect(admin_url( 'edit.php?post_type='.$_GET['post_type']));
-					exit();
-				}
-				if($_GET['action']=='unspam'){
-					if($_GET['post_type']=='emqa-question'){
+	
+					if ( $action == 'spam' ) {
+						if ( ! current_user_can( 'delete_post', $post_id ) ) {
+							die( 'Security check' );
+						}
+	
 						$args = array(
-						  'ID'           => $_GET['post'],
-						  'post_status'   => 'publish'
+							'ID' => $post_id,
+							'post_status' => 'spam'
 						);
-					}else{
-						$args = array(
-						  'ID'           => $_GET['post'],
-						  'post_status'   => 'inherit'
-						);
+						wp_update_post( $args );
+	
+						if ( ! $this->akismet_submit_spam( $this->akismetAPIKey, get_post( $post_id ) ) ) {
+							// Handle spam submission failure
+						}
+	
+						// do_action("emqa_after_mark_spam");
+						wp_redirect( admin_url( 'edit.php?post_type=' . $post_type ) );
+						exit();
 					}
-					
-					wp_update_post( $args );
-					if(!$this->akismet_submit_ham($this->akismetAPIKey, get_post($_GET['post']))){
-						//is spam
+	
+					if ( $action == 'unspam' ) {
+						if ( $post_type == 'emqa-question' ) {
+							$args = array(
+								'ID' => $post_id,
+								'post_status' => 'publish'
+							);
+						} else {
+							$args = array(
+								'ID' => $post_id,
+								'post_status' => 'inherit'
+							);
+						}
+	
+						wp_update_post( $args );
+	
+						if ( ! $this->akismet_submit_ham( $this->akismetAPIKey, get_post( $post_id ) ) ) {
+							// Handle ham submission failure
+						}
+	
+						// do_action("emqa_after_mark_unspam");
+						wp_redirect( admin_url( 'edit.php?post_type=' . $post_type ) );
+						exit();
 					}
-					// do_action("emqa_after_mark_unspam");
-					wp_redirect(admin_url( 'edit.php?post_type='.$_GET['post_type']));
-					exit();
 				}
-				
 			}
 		}
 		return;
@@ -667,7 +734,7 @@ public function akismet_comment_check( $key, $data ) {
 		if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), '_emqa_action_report_spam_to_admin' ) ) {
 			wp_send_json_error( array( 'message' => __( 'Are you cheating huh?', 'emqa' ) ) );
 		}
-		$post_id = $_POST['post_id'];
+		$post_id = absint($_POST['post_id']);
 		$key = '_emqa_spam_reported';
 		$args = get_post_meta($post_id , $key, true);
 		if($args=='' || !$args){

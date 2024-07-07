@@ -22,10 +22,10 @@ class EMQA_Widgets_Popular_Question extends WP_Widget {
 			'number' => 5,
 		) );
 		
-		echo $before_widget;
-		echo $before_title;
-		echo $instance['title'];
-		echo $after_title;
+		echo wp_kses_post($before_widget);
+		echo wp_kses_post($before_title);
+		echo esc_html($instance['title']);
+		echo wp_kses_post($after_title);
 		
 		$args = array(
 			'posts_per_page'       => $instance['number'],
@@ -40,14 +40,14 @@ class EMQA_Widgets_Popular_Question extends WP_Widget {
 			echo '<div class="emqa-popular-questions">';
 			echo '<ul>';
 			while ( $questions->have_posts() ) { $questions->the_post();
-				echo '<li><a href="'.get_permalink().'" class="question-title">'.get_the_title().'</a> '.__( 'asked by', 'emqa' ).' ' . get_the_author_link() . '</li>';
+				echo '<li><a href="'.  esc_url(get_permalink()) .'" class="question-title">'.esc_html(get_the_title()).'</a> '.esc_html__( 'asked by', 'emqa' ).' ' . get_the_author_link() . '</li>';
 			}   
 			echo '</ul>';
 			echo '</div>';
 		}
 		wp_reset_query();
 		wp_reset_postdata();
-		echo $after_widget;
+		echo wp_kses_post($after_widget);
 	}
 
 	function update( $new_instance, $old_instance ) {
@@ -63,11 +63,11 @@ class EMQA_Widgets_Popular_Question extends WP_Widget {
 			'number' => 5,
 		) );
 		?>
-		<p><label for="<?php echo $this->get_field_id( 'title' ) ?>"><?php _e( 'Widget title', 'emqa' ) ?></label>
-		<input type="text" name="<?php echo $this->get_field_name( 'title' ) ?>" id="<?php echo $this->get_field_id( 'title' ) ?>" value="<?php echo $instance['title'] ?>" class="widefat">
+		<p><label for="<?php echo esc_attr($this->get_field_id( 'title' ) ) ?>"><?php esc_html_e( 'Widget title', 'emqa' ) ?></label>
+		<input type="text" name="<?php echo esc_attr($this->get_field_name( 'title' )) ?>" id="<?php echo esc_attr($this->get_field_id( 'title' ) )?>" value="<?php echo esc_attr($instance['title']) ?>" class="widefat">
 		</p>
-		<p><label for="<?php echo $this->get_field_id( 'number' ) ?>"><?php _e( 'Number of posts', 'emqa' ) ?></label>
-		<input type="text" name="<?php echo $this->get_field_name( 'number' ) ?>" id="<?php echo $this->get_field_id( 'number' ) ?>" value="<?php echo $instance['number'] ?>" class="widefat">
+		<p><label for="<?php echo esc_attr($this->get_field_id( 'number' )) ?>"><?php esc_html_e( 'Number of posts', 'emqa' ) ?></label>
+		<input type="text" name="<?php echo esc_attr($this->get_field_name( 'number' )) ?>" id="<?php echo esc_attr($this->get_field_id( 'number' ) )?>" value="<?php echo esc_attr($instance['number']) ?>" class="widefat">
 		</p>
 		<?php
 	}

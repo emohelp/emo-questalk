@@ -18,10 +18,10 @@ class EMQA_Widgets_Latest_Question extends WP_Widget {
 			'number' => 5,
 		) );
 		
-		echo $before_widget;
-		echo $before_title;
-		echo $instance['title'];
-		echo $after_title;
+		echo wp_kses_post($before_widget);
+		echo wp_kses_post($before_title);
+		echo esc_html($instance['title']);
+		echo wp_kses_post($after_title);
 		
 		$args = array(
 			'posts_per_page'    => $instance['number'],
@@ -36,13 +36,13 @@ class EMQA_Widgets_Latest_Question extends WP_Widget {
 			echo '<ul>';
 			while ( $questions->have_posts() ) { $questions->the_post( );
 				echo '<li>';
-				echo '<a href="'. get_permalink() .'" class="question-title">';
+				echo '<a href="'. esc_url(get_permalink()) .'" class="question-title">';
 				the_title();
 				echo '</a>';
-				echo ' '.__( 'asked by', 'emqa' ) . ' ' . get_the_author_link();
+				echo ' '.esc_html__( 'asked by', 'emqa' ) . ' ' . get_the_author_link();
 				if ( isset( $instance['question_date'] ) && $instance['question_date'] ) {
 					// translators: %s is replaced with the login URL
-					echo ', ' . sprintf( esc_html__( '%s ago', 'emqa' ), human_time_diff( get_post_time('U', true, get_the_ID() ) ) ) . '.';
+					echo ', ' . sprintf( esc_html__( '%s ago', 'emqa' ), esc_html(human_time_diff( get_post_time('U', true, get_the_ID() ) ) ) ) . '.';
 				}
 				echo '</li>';
 			}   
@@ -51,7 +51,7 @@ class EMQA_Widgets_Latest_Question extends WP_Widget {
 		}
 		wp_reset_query( );
 		wp_reset_postdata( );
-		echo $after_widget;
+		echo wp_kses_post($after_widget);
 	}
 
 	function update( $new_instance, $old_instance ) {
@@ -69,15 +69,15 @@ class EMQA_Widgets_Latest_Question extends WP_Widget {
 		) );
 
 		?>
-		<p><label for="<?php echo $this->get_field_id( 'title' ) ?>"><?php _e( 'Widget title', 'emqa' ) ?></label>
-		<input type="text" name="<?php echo $this->get_field_name( 'title' ) ?>" id="<?php echo $this->get_field_id( 'title' ) ?>" value="<?php echo $instance['title'] ?>" class="widefat">
+		<p><label for="<?php echo esc_attr($this->get_field_id( 'title' ) ) ?>"><?php esc_html_e( 'Widget title', 'emqa' ) ?></label>
+		<input type="text" name="<?php echo esc_attr($this->get_field_name( 'title' )) ?>" id="<?php echo esc_attr($this->get_field_id( 'title' )) ?>" value="<?php echo esc_attr($instance['title']) ?>" class="widefat">
 		</p>
-		<p><label for="<?php echo $this->get_field_id( 'number' ) ?>"><?php _e( 'Number of posts', 'emqa' ) ?></label>
-		<input type="text" name="<?php echo $this->get_field_name( 'number' ) ?>" id="<?php echo $this->get_field_id( 'number' ) ?>" value="<?php echo $instance['number'] ?>" class="widefat">
+		<p><label for="<?php echo esc_attr($this->get_field_id( 'number' )) ?>"><?php esc_html_e( 'Number of posts', 'emqa' ) ?></label>
+		<input type="text" name="<?php echo esc_attr($this->get_field_name( 'number' )) ?>" id="<?php echo esc_attr($this->get_field_id( 'number' )) ?>" value="<?php echo esc_attr($instance['number']) ?>" class="widefat">
 		</p>
 		<p>
-			<input type="checkbox" name="<?php echo $this->get_field_name( 'question_date' ) ?>" id="<?php echo $this->get_field_id( 'question_date' ) ?>" <?php checked( 'on', $instance['question_date'] ) ?> class="widefat">
-			<label for="<?php echo $this->get_field_id( 'question_date' ) ?>"><?php _e( 'Show question date', 'emqa' ) ?></label>
+			<input type="checkbox" name="<?php echo esc_attr($this->get_field_name( 'question_date' )) ?>" id="<?php echo esc_attr($this->get_field_id( 'question_date' )) ?>" <?php checked( 'on', $instance['question_date'] ) ?> class="widefat">
+			<label for="<?php echo esc_attr($this->get_field_id( 'question_date' )) ?>"><?php esc_html_e( 'Show question date', 'emqa' ) ?></label>
 		</p>
 		<?php
 	}
