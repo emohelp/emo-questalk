@@ -3,7 +3,7 @@ Contributors: emohelp, Dominic
 Tags: question, answer, support, quora, stackoverflow
 Requires at least: 6.3
 Tested up to: 6.5.2
-Stable tag: 1.0.0
+Stable tag: 1.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
