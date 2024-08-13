@@ -17,7 +17,7 @@
 	<span class="emqa-plus">&#43;</span>
 	<span class="emqa-number-one"><?php echo esc_attr( $number_2 ) ?></span>
 	<span class="emqa-plus">&#61;</span>
-	<input type="text" name="emqa-captcha-result" id="emqa-captcha-result" value="" placeholder="<?php _e( 'Enter the result', 'emqa' ) ?>">
+	<input type="text" name="emqa-captcha-result" id="emqa-captcha-result" value="" placeholder="<?php esc_html_e( 'Enter the result', 'emqa' ) ?>">
 	<input type="hidden" name="emqa-captcha-number-1" id="emqa-captcha-number-1" value="<?php echo esc_attr( $number_1 ) ?>">
 	<input type="hidden" name="emqa-captcha-number-2" id="emqa-captcha-number-2" value="<?php echo esc_attr( $number_2 ) ?>">
 </p>

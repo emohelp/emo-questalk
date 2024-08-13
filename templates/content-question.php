@@ -7,7 +7,7 @@
  */
 
 ?>
-<div class="<?php echo emqa_post_class(); ?>">
+<div class="<?php echo esc_attr(emqa_post_class()); ?>">
 	<div class="emqa-question-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
 	<div class="emqa-question-meta">
 		<?php emqa_question_print_status() ?>
@@ -24,34 +24,38 @@
 		?>
 		<?php printf(
 			// translators: %1$s is replaced with the author link, %2$s is replaced with the avatar image, %3$s is replaced with the author name, %4$s is replaced with additional text, %5$s is replaced with the time difference
-			( '<span><a href="%1$s">%2$s%3$s</a> %4$s %5$s '.__('ago', 'emqa').'</span>'),
-			emqa_get_author_link( $user_id ),
-			get_avatar( $user_id, 48 ),
-			get_the_author(),
-			$text,
-			$time
+			'<span><a href="%1$s">%2$s%3$s</a> %4$s %5$s ' . esc_html__('ago', 'emqa') . '</span>',
+			esc_url( emqa_get_author_link( $user_id ) ), // Escaping URL
+			get_avatar( $user_id, 48 ), // Assuming `get_avatar()` is safe
+			esc_html( get_the_author() ), // Escaping author name
+			esc_html( $text ), // Escaping additional text
+			esc_html( $time ) // Escaping time difference
 		); ?>
+
 
 		<?php echo get_the_term_list( get_the_ID(), 'emqa-question_category', '<span class="emqa-question-category">' . __( '&nbsp;&bull;&nbsp;', 'emqa' ), ', ', '</span>' ); ?>
 	</div>
 	<div class="emqa-question-stats">
 		<span class="emqa-views-count">
-			<?php $views_count = emqa_question_views_count() ?>
+			<?php $views_count_escaped = emqa_question_views_count(); ?>
 			<?php printf(
 				// translators: %1$s is replaced with the version number
-				__( '<strong>%1$s</strong> views', 'emqa' ), $views_count ); ?>
+				wp_kses( __( '<strong>%1$s</strong> views', 'emqa' ), array( 'strong' => array() ) ),
+				esc_html($views_count_escaped ) );  ?>
 		</span>
 		<span class="emqa-answers-count">
-			<?php $answers_count = emqa_question_answers_count(); ?>
+			<?php $answers_count_escaped = emqa_question_answers_count(); ?>
 			<?php printf(
 				// translators: %1$s is replaced with the version number
-				__( '<strong>%1$s</strong> answers', 'emqa' ), $answers_count ); ?>
+				wp_kses( __( '<strong>%1$s</strong> answers', 'emqa' ), array('strong' => array() ) ), 
+				esc_html($answers_count_escaped) ); ?>
 		</span>
 		<span class="emqa-votes-count">
-			<?php $vote_count = emqa_vote_count() ?>
+			<?php $vote_count_escaped = emqa_vote_count(); ?>
 			<?php printf(
 				// translators: %1$s is replaced with the version number
-				__( '<strong>%1$s</strong> votes', 'emqa' ), $vote_count ); ?>
+				wp_kses( __( '<strong>%1$s</strong> votes', 'emqa' ), array('strong' => array() ) ), 
+				esc_html($vote_count_escaped) ); ?>
 		</span>
 	</div>
 </div>

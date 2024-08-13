@@ -7,7 +7,7 @@
  */
 ?>
 <?php if ( ! emqa_current_user_can( 'read_question' ) ) : ?>
-	<div class="emqa-alert emqa-alert-info"><?php _e( 'You do not have permission to view questions', 'emqa' ) ?></div>
+	<div class="emqa-alert emqa-alert-info"><?php esc_html_e( 'You do not have permission to view questions', 'emqa' ) ?></div>
 <?php else : ?>
-	<div class="emqa-alert emqa-alert-info"><?php _e( 'Sorry, but nothing matched your filter', 'emqa' ) ?></div>
+	<div class="emqa-alert emqa-alert-info"><?php esc_html_e( 'Sorry, but nothing matched your filter', 'emqa' ) ?></div>
 <?php endif; ?>
