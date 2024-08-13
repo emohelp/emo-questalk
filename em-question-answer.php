@@ -4,8 +4,10 @@
  *  Description: A WordPress plugin was make by emohelp.com to build an Question Answer system for support, asking and comunitcate with your customer
  *  Author: Emohelp
  *  Author URI: http://www.emohelp.com
+ *  License: GPLv3
+ *  License URI: http://www.gnu.org/licenses/gpl-3.0.html
  *  Version: 1.0
- *  Text Domain: em-question-answer
+ *  Text Domain: emqa
  */
 
 if ( !class_exists( 'EM_Question_Answer' ) ) :
