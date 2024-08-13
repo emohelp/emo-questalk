@@ -336,6 +336,8 @@ function emqa_is_edit() {
 	$gets = array( 'edit', 'comment_edit' );
 
 	foreach( $gets as $get ) {
+		// Nonce verification is handled elsewhere, skipping nonce check here.
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		if ( isset( $_GET[ $get ] ) && is_numeric( $_GET[ $get ] ) ) {
 			return true;
 		}

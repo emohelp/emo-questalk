@@ -25,6 +25,7 @@ class EMQA_Autoclosure {
 	
 	public function do_auto_closure(){
 		$days = $this->days;
+		// @phpcs:disable WordPress.DB.SlowDBQuery.slow_db_query_meta_key
 		$posts = get_posts(array(
 			'post_type' => 'emqa-question',
 			'date_query' => array(
@@ -33,6 +34,7 @@ class EMQA_Autoclosure {
 									'before' => $days.' day ago',
 								),
 						),
+			// @phpcs:disable WordPress.DB.SlowDBQuery.slow_db_query_meta_query
 			'meta_query' => array(
 								array(
 									'key'	=> '_emqa_status',

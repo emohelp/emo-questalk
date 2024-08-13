@@ -89,11 +89,20 @@ add_action( 'emqa_add_answer', 'bp_emqa_add_answer_notification', 99, 2 );
 
 function bp_emqa_buddypress_mark_notifications() {
 
-	if ( !isset( $_GET['answer_id'] ) || !is_numeric($_GET['answer_id']) ) {
+   // Check nonce
+   if ( ! isset( $_REQUEST['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_REQUEST['_wpnonce'] ), 'bp_emqa_mark_answer_' . ( isset( $_GET['answer_id'] ) ? intval( $_GET['answer_id'] ) : 0 ) ) ) {
+	emqa_add_notice( __( "Invalid nonce specified. Please try again.", 'emqa' ), 'error' );
 		return;
 	}
 
-	if ( ! isset( $_GET['action'] ) || 'bp_emqa_mark_read' !== sanitize_text_field( $_GET['action'] ) ) {
+	// Check if 'answer_id' is set and is a number
+	if ( !isset( $_GET['answer_id'] ) || !is_numeric( $_GET['answer_id'] ) ) {
+		return;
+	}
+
+	// Check if 'action' is set and matches the expected value
+	if ( !isset( $_GET['action'] ) || 'bp_emqa_mark_read' !== sanitize_text_field( $_GET['action'] ) ) {
+		emqa_add_notice( __( "Invalid action specified.", 'emqa' ), 'error' );
 		return;
 	}
 	

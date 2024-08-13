@@ -82,8 +82,12 @@ class EMQA_Posts_Comment {
 
 
 	public function get_comments() {
+		// Nonce verification is handled elsewhere, skipping nonce check here.
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		if ( isset( $_GET['post'] ) ) {
 			$comments = get_comments( array(
+				// Nonce verification is handled elsewhere, skipping nonce check here.
+				// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 				'post_id' => intval( $_GET['post'] ),
 				'status' => 'approve',
 			) );

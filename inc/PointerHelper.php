@@ -46,8 +46,14 @@ class EMQA_PointerHelper {
 		wp_enqueue_style( 'wp-pointer' );
 	 
 		// Add pointers script to queue. Add custom script.
-		wp_enqueue_script( 'emqa-pointer', EMQA_URI . 'assets/js/admin-pointer-helper.js', array( 'jquery', 'wp-pointer' ) );
-	 
+		wp_enqueue_script(
+			'emqa-pointer',                        // Handle
+			EMQA_URI . 'assets/js/admin-pointer-helper.js', // Script URL
+			array('jquery', 'wp-pointer'),         // Dependencies
+			'1.0.0',                               // Version (update this when the script changes)
+			true                                   // Load in footer (set to `true` for footer, `false` for header)
+		);
+			 
 		// Add pointer options to script.
 		wp_localize_script( 'emqa-pointer', 'emqaPointer', $valid_pointers );
 	}

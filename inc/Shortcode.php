@@ -121,7 +121,7 @@ class EMQA_Shortcode {
 			'number' => 5,
 			'title' => __( 'Popular Questions', 'emqa' ),
 		), $atts ) );
-
+		// @phpcs:disable WordPress.DB.SlowDBQuery.slow_db_query_meta_key
 		$args = array(
 			'posts_per_page'       => $number,
 			'order'             => 'DESC',
@@ -210,19 +210,21 @@ class EMQA_Shortcode {
 			echo '<div class="question-followers">';
 			echo wp_kses_post($before_title);
 			$count = count( $followers );
-			printf(
-    		// translators: %d is replaced with the number of people following the question
-					esc_html__(
-						_n(
-								'%d person who is following this question',
-								'%d people who are following this question',
-								$count,
-								'emqa'
-						),
-						'emqa'
+			
+			$text = sprintf(
+				// translators: %d is replaced with the number of people following the question
+				_n(
+					'%d person who is following this question',
+					'%d people who are following this question',
+					$count,
+					'emqa'
 				),
-				esc_html( $count )
+				$count
 			);
+
+			// Then safely escape and output the string
+			echo esc_html( $text );
+
 			echo wp_kses_post($after_title);
 
 			foreach ( $followers as $follower ) :

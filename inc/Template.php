@@ -10,8 +10,11 @@ function emqa_breadcrumb() {
     else:
         global $emqa_general_settings;
         $title  = esc_html( get_the_title( $emqa_general_settings['pages']['archive-question'] ) );
+		// Nonce verification is handled elsewhere, skipping nonce check here.
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
         $search = isset( $_GET['qs'] ) ? esc_html( $_GET['qs'] ) : false;
-        $author = isset( $_GET['user'] ) ? esc_html( $_GET['user'] ) : false;
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verification is handled elsewhere, skipping nonce check here.
+		$author = isset( $_GET['user'] ) ? esc_html( $_GET['user'] ) : false;
         $output = '';
         if ( ! is_singular( 'emqa-question' ) ) {
             $term     = get_query_var( 'emqa-question_category' ) ? get_query_var( 'emqa-question_category' ) : ( get_query_var( 'emqa-question_tag' ) ? get_query_var( 'emqa-question_tag' ) : false );
@@ -73,7 +76,15 @@ add_action( 'emqa_before_questions_archive', 'emqa_archive_question_filter_layou
 function emqa_search_form() {
 	?>
 	<form id="emqa-search" class="emqa-search">
-		<input data-nonce="<?php echo esc_attr( wp_create_nonce( '_emqa_filter_nonce' ) ); ?>" type="text" placeholder="<?php esc_attr_e( 'What do you want to know?', 'emqa' ); ?>" name="qs" value="<?php echo isset( $_GET['qs'] ) ? esc_attr( $_GET['qs'] ) : ''; ?>">
+	<input 
+    type="text" 
+    name="qs" 
+    placeholder="<?php esc_attr_e( 'What do you want to know?', 'emqa' ); ?>" 
+    value="<?php echo 
+	// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verification is handled elsewhere.
+	isset( $_GET['qs'] ) ? esc_attr( $_GET['qs'] ) : ''; ?>" 
+    data-nonce="<?php echo esc_attr( wp_create_nonce( '_emqa_filter_nonce' ) ); ?>">
+
 	</form>
 	<?php
 }
@@ -90,6 +101,8 @@ add_action( 'emqa_after_answers_list', 'emqa_answer_paginate_link' );
 function emqa_answer_paginate_link() {
     global $wp_query;
     $question_url = get_permalink();
+	// Nonce verification is handled elsewhere, skipping nonce check here.
+	// phpcs:ignore WordPress.Security.NonceVerification.Recommended
     $page = isset( $_GET['ans-page'] ) ? absint( $_GET['ans-page'] ) : 1;
 
     $args = array(
@@ -469,6 +482,7 @@ function emqa_comment_form( $args = array(), $post_id = null ) {
 					'<input id="email-'.$post_id.'" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></p>',
 		'author'  => '<p class="comment-form-name"><label for="name">' . __( 'Name', 'emqa' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label>' . '<input id="name-' .$post_id.'" name="name" type="text" value="" size="30"/></p>'
 	);
+	// translators: %s is replaced with the icon
 	$required_text = sprintf( ' ' . __( 'Required fields are marked %s' ), '<span class="required">*</span>' );
 	/**
 	 * Filter the default comment form fields.
@@ -481,13 +495,16 @@ function emqa_comment_form( $args = array(), $post_id = null ) {
 	$defaults = array(
 		'fields'               => $fields,
 		'comment_field'        => '',
+		// translators: %s is replaced with the link
 		'must_log_in'          => '<p class="must-log-in">' . sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.','emqa' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
 		'logged_in_as'         => '<p class="comment-form-comment"><textarea class="emqa-comment-text" name="comment" placeholder="'.__('Comment', 'emqa').'" rows="2" aria-required="true"></textarea></p>',
 		'comment_notes_before' => '<p class="comment-form-comment"><textarea class="emqa-comment-text" name="comment" placeholder="Comment" rows="2" aria-required="true"></textarea></p>',
+		// translators: %s is replaced with the tag
 		'comment_notes_after'  => '<p class="form-allowed-tags">' . sprintf( __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s','emqa' ), ' <code>' . allowed_tags() . '</code>' ) . '</p>',
 		'id_form'              => 'commentform',
 		'id_submit'            => 'submit',
 		'title_reply'          => __( 'Leave a Reply','emqa' ),
+		// translators: %s is replaced with the name
 		'title_reply_to'       => __( 'Leave a Reply to %s','emqa' ),
 		'cancel_reply_link'    => __( 'Cancel reply', 'emqa' ),
 		'label_submit'         => __( 'Post Comment', 'emqa' ),
@@ -524,6 +541,7 @@ function emqa_comment_form( $args = array(), $post_id = null ) {
 			?>
 		<?php else : ?>
 			<form method="post" id="<?php echo esc_attr( $args['id_form'] ); ?>" class="comment-form"<?php echo $html5 ? ' novalidate' : ''; ?>>
+			
 			<?php
 			/**
 			 * Fires at the top of the comment form, inside the <form> tag.

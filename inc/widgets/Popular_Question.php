@@ -26,7 +26,7 @@ class EMQA_Widgets_Popular_Question extends WP_Widget {
 		echo wp_kses_post($before_title);
 		echo esc_html($instance['title']);
 		echo wp_kses_post($after_title);
-		
+		// @phpcs:disable WordPress.DB.SlowDBQuery.slow_db_query_meta_key
 		$args = array(
 			'posts_per_page'       => $instance['number'],
 			'order'             => 'DESC',

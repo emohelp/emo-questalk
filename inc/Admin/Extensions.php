@@ -9,11 +9,11 @@ class EMQA_Admin_Extensions {
 	function register_extensions() {
 		global $emqa;
 		$extension = array(
-			// 'emqa-markdown' => array(
-			// 	'name' => __( 'EMQA Markdown', 'emqa' ),
-			// 	'url' => 'http://bit.ly/emqa-markdown',
-			// 	'img_url' => $emqa->uri . 'assets/img/em-markdown.png'
-			// ),
+			'emqa-markdown' => array(
+				'name' => __( 'EMQA Markdown', 'emqa' ),
+				'url' => 'http://bit.ly/emqa-markdown',
+				'img_url' => $emqa->uri . 'assets/img/em-markdown.png'
+			),
 
 			'emqa-leaderboard' => array(
 				'name' => __( 'EMQA Leaderboard', 'emqa' ),
@@ -27,11 +27,11 @@ class EMQA_Admin_Extensions {
 				'img_url' => $emqa->uri . 'assets/img/em-captcha.png',
 			),
 
-			// 'emqa-embed-question' => array(
-			// 	'name' => __( 'EMQA Embed Question', 'emqa' ),
-			// 	'url' => 'http://bit.ly/emqa-embed-questions',
-			// 	'img_url' => $emqa->uri . 'assets/img/em-embedquestion.png'
-			// ),
+			'emqa-embed-question' => array(
+				'name' => __( 'EMQA Embed Question', 'emqa' ),
+				'url' => 'http://bit.ly/emqa-embed-questions',
+				'img_url' => $emqa->uri . 'assets/img/em-embedquestion.png'
+			),
 
 			'emqa-widgets' => array(
 				'name' => __( 'EMQA Widgets', 'emqa' ),
@@ -71,7 +71,7 @@ class EMQA_Admin_Extensions {
 							<div class="theme-author"></div>
 
 							<h2 class="theme-name" id="<?php echo esc_attr( $slug ) ?>"><span><?php echo esc_attr( $info['name'] ) ?></span></h2>
-							<div class="theme-actions">
+							<div class="theme-actions"s>
 								<a class="button button-primary" target="_blank" href="<?php echo esc_url( $info['url'] ) ?>"><?php esc_html_e( 'Get It Now!', 'emqa' ); ?></a>
 							</div>
 						</div>
@@ -196,7 +196,7 @@ class EMQA_Admin_Extensions {
 						<tr>
 							<td>Get EMO Questalk Pro</td>
 							<td>
-								<a href="https://bit.ly/3vVuxYW" target="_blank" class="btn btn-sm btn-danger">Get Pro Version</a>
+								<a href="https://codecanyon.net/item/emo-questalk-pro-your-ultimate-question-answer-wordpress-plugin/15057949" target="_blank" class="btn btn-sm btn-danger">Get Pro Version</a>
 							<td>
 								
 							</td>

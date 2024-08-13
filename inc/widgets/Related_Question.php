@@ -21,14 +21,14 @@ class EMQA_Widgets_Related_Question extends WP_Widget {
 		$post_type = get_post_type();
 		if ( is_single() && ( $post_type == 'emqa-question' || $post_type == 'emqa-answer' ) ) {
 
-			echo $before_widget;
-			echo $before_title;
-			echo $instance['title'];
-			echo $after_title;
+			echo wp_kses_post($before_widget);
+			echo wp_kses_post($before_title);
+			echo wp_kses_post($instance['title']);
+			echo wp_kses_post($after_title);
 			echo '<div class="related-questions">';
 			emqa_related_question( false, $instance['number'] );
 			echo '</div>';
-			echo $after_widget;
+			echo wp_kses_post($after_widget);
 		}
 	}
 
@@ -45,11 +45,11 @@ class EMQA_Widgets_Related_Question extends WP_Widget {
 			'number' => 5,
 		) );
 		?>
-		<p><label for="<?php echo $this->get_field_id( 'title' ) ?>"><?php _e( 'Widget title', 'emqa' ) ?></label>
-		<input type="text" name="<?php echo $this->get_field_name( 'title' ) ?>" id="<?php echo $this->get_field_id( 'title' ) ?>" value="<?php echo sanitize_text_field( $instance['title'] ); ?>" class="widefat">
+		<p><label for="<?php echo esc_attr($this->get_field_id( 'title' )) ?>"><?php esc_html_e( 'Widget title', 'emqa' ) ?></label>
+		<input type="text" name="<?php echo esc_attr($this->get_field_name( 'title' )) ?>" id="<?php echo esc_attr($this->get_field_id( 'title' )) ?>" value="<?php echo esc_attr(sanitize_text_field( $instance['title'] )); ?>" class="widefat">
 		</p>
-		<p><label for="<?php echo $this->get_field_id( 'number' ) ?>"><?php _e( 'Number of posts', 'emqa' ) ?></label>
-		<input type="text" name="<?php echo $this->get_field_name( 'number' ) ?>" id="<?php echo $this->get_field_id( 'number' ) ?>" value="<?php echo intval( $instance['number'] ); ?>" class="widefat">
+		<p><label for="<?php echo esc_attr($this->get_field_id( 'number' )) ?>"><?php esc_html_e( 'Number of posts', 'emqa' ) ?></label>
+		<input type="text" name="<?php echo esc_attr($this->get_field_name( 'number' )) ?>" id="<?php echo esc_attr($this->get_field_id( 'number' )) ?>" value="<?php echo esc_attr(intval( $instance['number'] )); ?>" class="widefat">
 		</p>
 		<?php
 	}

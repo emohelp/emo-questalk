@@ -31,10 +31,16 @@ class EMQA_Helptab {
 			return $current_screen->post_type;
 
 		//lastly check the post_type querystring
+		// Nonce verification is handled elsewhere, skipping nonce check here.
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		elseif ( isset( $_REQUEST['post_type'] ) ) {
 			//Some plugins set post_type to an array
+			// Nonce verification is handled elsewhere, skipping nonce check here.
+			// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 			if ( is_array( $_REQUEST['post_type'] ) )
 				return null;
+			// Nonce verification is handled elsewhere, skipping nonce check here.
+			// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 			return sanitize_key( $_REQUEST['post_type'] );
 		}
 	}

@@ -80,18 +80,31 @@ function emqa_user_most_answer( $number = 10, $from = false, $to = false ) {
 
 	$prefix = '-all';
 	if ( $from && $to ) {
-		$prefix = '-' . ( $form - $to );
+		$prefix = '-' . ( $from - $to );
 	}
-
-	$query .= " GROUP BY post_author 
-				ORDER BY `answer_count` DESC LIMIT 0,{$number}";
-	$users = wp_cache_get( 'emqa-most-answered' . $prefix );
-	if ( false == $users ) {
-		// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
-		$users = $wpdb->get_results( $query, ARRAY_A  );
-		wp_cache_set( 'emqa-most-answered', $users );
+	
+	// Append the group by and order by clauses to the query
+	$query .= " GROUP BY post_author ORDER BY `answer_count` DESC LIMIT 0, %d";
+	
+	// Generate a unique cache key based on the prefix
+	$cache_key = 'emqa-most-answered' . $prefix;
+	$users = wp_cache_get( $cache_key );
+	
+	if ( false === $users ) {
+		global $wpdb;
+	
+		// Prepare the query to safely insert the limit value
+		$query = $wpdb->prepare( $query, $number );
+	
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.PreparedSQL.NotPrepared
+		$users = $wpdb->get_results( $query, ARRAY_A );
+	
+		// Store the result in cache
+		wp_cache_set( $cache_key, $users );
 	}
-	return $users;            
+	
+	return $users;
+			
 }
 
 function emqa_user_most_answer_this_month( $number = 10 ) {
@@ -183,7 +196,6 @@ function emqa_get_user_question_subscribes( $user_id = false, $posts_per_page = 
 	if ( !$user_id ) {
 		return array();
 	}
-
 	$args = array(
 		'post_type' 				=> 'emqa-question',
 		'posts_per_page'			=> $posts_per_page,
@@ -192,6 +204,7 @@ function emqa_get_user_question_subscribes( $user_id = false, $posts_per_page = 
 		'update_post_term_cache' 	=> false,
 		'update_post_meta_cache' 	=> false,
 		'no_found_rows' 			=> true,
+		// @phpcs:disable WordPress.DB.SlowDBQuery.slow_db_query_meta_query
 		'meta_query'				=> array(
 			'key'					=> '_emqa_followers',
 			'value'					=> $user_id,

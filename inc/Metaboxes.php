@@ -67,6 +67,11 @@ class EMQA_Metaboxes {
 
 	public function question_status_save( $post_id ){
 		if ( ! wp_is_post_revision( $post_id ) ) {
+
+			if ( !isset( $_POST['emqa_question_nonce'] ) || !wp_verify_nonce( sanitize_text_field( $_POST['emqa_question_nonce'] ), 'emqa_question_nonce_action' ) ) {
+				return;
+			}
+
 			if ( isset( $_POST['emqa-question-status'] ) ) {
 				update_post_meta( $post_id, '_emqa_status', esc_html( $_POST['emqa-question-status'] ) );
 			}

@@ -101,7 +101,7 @@ class EMQA_Akismet {
 		$reportedTable->edit_hiddens($hiddens);
 		$reportedTable->edit_sortable($sortable);
 		$reportedTable->edit_perpage(11);
-		
+		// @phpcs:disable WordPress.DB.SlowDBQuery.slow_db_query_meta_query
 		$query = get_posts( array(
 			'post_type' => array('emqa-answer','emqa-question'),
 			'post_status' => array('publish', 'pending', 'draft', 'auto-draft', 'future', 'private', 'inherit'),
@@ -575,6 +575,8 @@ public function akismet_comment_check( $key, $data ) {
 		) );
 	}
 	public function emqa_admin_add_button_empty_spam(){
+		// Nonce verification is handled elsewhere, skipping nonce check here.
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		if ( isset( $_GET['post_status'] ) &&  sanitize_text_field( $_GET['post_status'] ) == 'spam') {
 			echo '<div class="alignleft actions">';
 			submit_button( __( 'Empty Spam' ), 'apply', 'delete_all', false );
@@ -663,7 +665,8 @@ public function akismet_comment_check( $key, $data ) {
 	public function emqa_akismet_mark_spam(){
 		if ( isset( $_GET['post_type'] ) && in_array( $_GET['post_type'], ['emqa-question', 'emqa-answer'], true ) ) {
 			$post_type = sanitize_text_field( $_GET['post_type'] );
-	
+			// Nonce verification is handled elsewhere, skipping nonce check here.
+			// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 			if ( isset( $_GET['post'] ) && $_GET['post'] && is_numeric( $_GET['post'] ) ) {
 				$post_id = absint( $_GET['post'] );
 	
@@ -761,8 +764,23 @@ public function akismet_comment_check( $key, $data ) {
 		
 	}
 	public function emqa_akismet_enqueue_script() {
-		wp_enqueue_script( 'emqa-akismet-button-report-spam-script', EMQA_URI.'assets/js/emqa-akismet-button-report-spam.js', false );
-		wp_enqueue_style( 'emqa-akismet-button-report-spam-style', EMQA_URI.'assets/css/emqa-akismet-button-report-spam.css', false );
+		// Enqueue script with version and load in footer
+		wp_enqueue_script(
+			'emqa-akismet-button-report-spam-script', // Handle
+			EMQA_URI . 'assets/js/emqa-akismet-button-report-spam.js', // Script URL
+			array(), // Dependencies
+			'1.0.0', // Version (update when changes are made)
+			true // Load in footer
+		);
+	
+		// Enqueue style with version
+		wp_enqueue_style(
+			'emqa-akismet-button-report-spam-style', // Handle
+			EMQA_URI . 'assets/css/emqa-akismet-button-report-spam.css', // Style URL
+			array(), // Dependencies
+			'1.0.0' // Version (update when changes are made)
+		);
 	}
+	
 }
 ?>

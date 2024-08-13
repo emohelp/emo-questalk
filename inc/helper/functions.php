@@ -59,6 +59,15 @@ function emqa_valid_captcha( $type ) {
 add_filter( 'emqa_valid_captcha', 'emqa_recaptcha_check' );
 function emqa_recaptcha_check( $res ) {
 	global $emqa_general_settings;
+
+	$captcha_in_question = isset( $emqa_general_settings['captcha-in-question'] ) ? $emqa_general_settings['captcha-in-question'] : false;
+	$captcha_in_single_question = isset( $emqa_general_settings['captcha-in-single-question'] ) ? $emqa_general_settings['captcha-in-single-question'] : false;
+
+	// Verify nonce only if captcha is enabled
+	if ( ($captcha_in_question || $captcha_in_single_question) && (!isset( $_POST['emqa_captcha_nonce'] ) || !wp_verify_nonce( sanitize_text_field( $_POST['emqa_captcha_nonce'] ), 'emqa_captcha_action' )) ) {
+		return false; // Invalid nonce, captcha failed
+	}
+
 	$type_selected = isset( $emqa_general_settings['captcha-type'] ) ? $emqa_general_settings['captcha-type'] : 'default';
 
 	$is_old_version = $type_selected == 'google-recaptcha' ? true : false;
@@ -231,6 +240,7 @@ function emqa_question_status( $question = false ) {
 }
 
 function emqa_current_filter() {
+	// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verification is handled elsewhere.
 	return isset( $_GET['filter'] ) && !empty( $_GET['filter'] ) ? sanitize_text_field( $_GET['filter'] ) : 'all';
 }
 

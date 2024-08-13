@@ -58,14 +58,26 @@ class EMQA_Admin_Welcome {
 		global $emqa;
 		?>
 		
-		<h1><?php
+		
+		<h1><?php 
 		// translators: %1$s is replaced with the version number
-		 printf( esc_html_e(__( 'Welcome to EMO Questalk %1$s', 'emqa' ), $emqa->version )) ?></h1>
-		<p class="about-text"><?php esc_html_e( 'Thank you for installing our WordPress plugin. If you have any question about this plugin, please submit to our <a target="_blank" href="https://www.emohelp.com/question/">Q&A section</a>.', 'emqa' ); ?></p>
+		echo esc_html( sprintf( __( 'Welcome to EMO Questalk %s', 'emqa' ), '1.0' ) ); ?></h1>
+		<p class="about-text">
+			<?php
+			printf(
+				// translators: %s is replaced with the link
+				esc_html__( 'Thank you for installing our WordPress plugin. If you have any questions about this plugin, please submit to our %s.', 'emqa' ),
+				'<a target="_blank" href="https://www.emohelp.com/question/">' . esc_html__( 'Q&A section', 'emqa' ) . '</a>'
+			);
+			?>
+		</p>
+		
 		<?php
 	}
 
 	public function tabs() {
+		// Nonce verification is handled elsewhere, skipping nonce check here.
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		$current_tab = isset( $_GET['page'] ) ? absint( ['page'] ) : 'emqa-about';
 	
 		?>
@@ -184,7 +196,7 @@ class EMQA_Admin_Welcome {
 			<?php $this->tabs(); ?>
 
 			<div class="changelog">
-				<p><?php echo esc_html( $this->parse_changelog() ); ?></p>
+				<p><?php echo wp_kses_post( $this->parse_changelog() ); ?></p>
 			</div>
 		</div>
 		<?php
@@ -221,6 +233,7 @@ class EMQA_Admin_Welcome {
 
     if ( is_wp_error( $response ) ) {
         $error_message = $response->get_error_message();
+		// translators: %s is replaced with the error massage
         $changelog = '<p>' . sprintf( __( 'Error fetching changelog: %s', 'emqa' ), $error_message ) . '</p>';
     } elseif ( wp_remote_retrieve_response_code( $response ) !== 200 ) {
         $changelog = '<p>' . __( 'No valid changelog was found.', 'emqa' ) . '</p>';

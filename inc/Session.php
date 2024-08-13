@@ -15,7 +15,7 @@ add_action( 'emqa_before_question_submit_form', 'emqa_print_notices' );
 add_action( 'emqa_before_single_question_comment_notice', 'emqa_print_notices');
 function emqa_print_notices( $comment = false ) {
 	global $emqa;
-	echo esc_html($emqa->session->print_notices( $comment ));
+	echo wp_kses_post($emqa->session->print_notices( $comment ));
 	emqa_clear_notices($comment);
 }
 
