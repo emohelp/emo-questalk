@@ -1,11 +1,14 @@
 ﻿=== EMO Questalk ===
+Description: A WordPress plugin was make by emohelp.com to build an Question Answer system for support, asking and comunitcate with your customer
 Contributors: emohelp, Dominic
+Donate link: leetran2512@gmail.com 
 Tags: question, answer, support, quora, stackoverflow
 Requires at least: 6.3
-Tested up to: 6.5.2
+Tested up to: 6.6
 Stable tag: 1.0
-License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Requires PHP: 8.0
+License: GPLv2
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Your WordPress site will have a full-featured Question & Answer section like Stack Overflow, Quora or Yahoo Answers
 
@@ -30,7 +33,7 @@ Emo Questalk is a WordPress plugin which builds a complete Question & Answer sys
 
 = Documents and Support: =
 
-You can find [Documents]() and more detailed information about Emo Questalk plugin on [emohelp.com](https://www.emohelp.com/). 
+You can find [Documents]() and more detailed information about Emo Questalk plugin on [here](https://emohelp.gitbook.io/emo-questalk-pro). 
 We provide support both on support forum on WordPress.org and our [support page](https://www.emohelp.com/question/) on EmoHelp.
 
 = Source =
@@ -41,19 +44,19 @@ We provide support both on support forum on WordPress.org and our [support page]
 * Arabic (ar_AR) - by Nidhal Naji
 * Chinese (zh_CN) - by Jack Cai
 * Traditional Chinese ( zh_TW ) - by Andy ( im@andy-cheung.me )
-* French (fr_FR) - by [Kanzari Haithem](http://www.designwall.com/profile/kanzari/)
+* French (fr_FR) - by [Kanzari Haithem]
 * German (de_DE) - by [scheunemann](https://github.com/scheunemann)
 * Indonesian (id_ID) - by Ruby Aperta
 * Persian (fa_IR) - by [Farid-Gh](https://github.com/Farid-Gh)
 * Polish (pl_PL) - by Karol Pergot
 * Romanian (ro_RO) - by [gciprian](https://github.com/gciprian)
-* Russian (ru_RU) - by [Roman Astrotenko](http://www.designwall.com/profile/shtirlitz/),[shalomanov](https://github.com/shalomanov)
+* Russian (ru_RU) - by [Roman Astrotenko][shalomanov](https://github.com/shalomanov)
 * Spanish (es_ES) - by David Robles, [Developez](https://github.com/developez)
 * Turkish (tr_TR) - by Ahmet Kolcu
 * Thai (th) - by [Varut Vutipongsatorn](http://www.arika.co/questions)
 * Hindi (hi_IN) - by [Gaurav Tiwari](http://gauravtiwari.org)
 * Catalan (ca) - by [dactil](http://www.dactil.net/sag/)
-* Vietnamese (vi_VN) - by [Le Nghia](http://www.designwall.com/profile/delatdecatsini/)
+* Vietnamese (vi_VN) - by [Le Nghia]
 * Czech ( cs_CZ ) - by [Karel Baláč](karel.balac@gmail.com)
 * Italian ( it_IT ) - by [Alberto Lusoli](alberto.lusoli@gmail.com)
 * Croatian ( hr ) - by [Tammara Bugg](tammara.bugg@gmail.com)
